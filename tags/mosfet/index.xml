@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mosfet on Embedded Systems Design</title><link>https://embedded-systems-design.github.io/tags/mosfet/</link><description>Recent content in mosfet on Embedded Systems Design</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/mosfet/index.xml" rel="self" type="application/rss+xml"/><item><title>Choosing transistors for high-power digital switching</title><link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid><description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mosfet on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/mosfet/</link>
+    <description>Recent content in mosfet on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/mosfet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choosing transistors for high-power digital switching</title>
+      <link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
+      <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
+    </item>
+    
+  </channel>
+</rss>

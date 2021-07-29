@@ -1,1 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Manufacturing PCBs on Embedded Systems Design</title><link>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/</link><description>Recent content in Manufacturing PCBs on Embedded Systems Design</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/index.xml" rel="self" type="application/rss+xml"/><item><title>ASU PCB Fabrication Process</title><link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid><description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description></item><item><title>Exporting Gerber files from Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid><description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description></item><item><title>Exporting Solder Mask Layers from Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</guid><description>What is a solder mask? Solder mask is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections.</description></item><item><title>Printing a PCB Design in DFM Now</title><link>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</guid><description>Note: This tutorial shows how to print a PCB design on paper.</description></item><item><title>Printing a PCB Layout in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</guid><description>Note: This tutorial shows how to print a PCB design on paper.</description></item><item><title>Running a Design for Manufacturing Check in DFM Now</title><link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid><description>Introduction Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment.</description></item><item><title>Running Design Rules Check in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</guid><description>What is a Design Rules Check? Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manufacturing PCBs on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/</link>
+    <description>Recent content in Manufacturing PCBs on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASU PCB Fabrication Process</title>
+      <link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid>
+      <description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description>
+    </item>
+    
+    <item>
+      <title>Exporting Gerber files from Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid>
+      <description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
+    </item>
+    
+    <item>
+      <title>Exporting Solder Mask Layers from Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</guid>
+      <description>What is a solder mask? Solder mask is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections.</description>
+    </item>
+    
+    <item>
+      <title>Printing a PCB Design in DFM Now</title>
+      <link>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</guid>
+      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+    </item>
+    
+    <item>
+      <title>Printing a PCB Layout in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</guid>
+      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+    </item>
+    
+    <item>
+      <title>Running a Design for Manufacturing Check in DFM Now</title>
+      <link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid>
+      <description>Introduction Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment.</description>
+    </item>
+    
+    <item>
+      <title>Running Design Rules Check in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</guid>
+      <description>What is a Design Rules Check? Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s).</description>
+    </item>
+    
+  </channel>
+</rss>

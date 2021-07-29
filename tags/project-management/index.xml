@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>project management on Embedded Systems Design</title><link>https://embedded-systems-design.github.io/tags/project-management/</link><description>Recent content in project management on Embedded Systems Design</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/project-management/index.xml" rel="self" type="application/rss+xml"/><item><title>What is a Gantt Chart?</title><link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</guid><description>A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project management on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/project-management/</link>
+    <description>Recent content in project management on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/project-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is a Gantt Chart?</title>
+      <link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</guid>
+      <description>A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks.</description>
+    </item>
+    
+  </channel>
+</rss>

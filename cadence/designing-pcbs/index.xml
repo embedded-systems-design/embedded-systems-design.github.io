@@ -1,2 +1,137 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Designing PCBs on Embedded Systems Design</title><link>https://embedded-systems-design.github.io/cadence/designing-pcbs/</link><description>Recent content in Designing PCBs on Embedded Systems Design</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://embedded-systems-design.github.io/cadence/designing-pcbs/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding Text to a Layout in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</guid><description>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</description></item><item><title>Altering Trace Widths</title><link>https://embedded-systems-design.github.io/altering-trace-widths/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/altering-trace-widths/</guid><description>Altering Trace Widths
-Sometimes you need to globally change trace widths in your board after designing it.</description></item><item><title>ASU PCB Mill Specs</title><link>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</guid><description>Please see this link</description></item><item><title>Changing a Hole Diameter in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</guid><description>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</description></item><item><title>Changing the Default Via Padstack in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</guid><description>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</description></item><item><title>Changing the Library Search Path in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</guid><description>Why would I need to change the library search path?</description></item><item><title>Creating a Board Outline in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</guid><description>What is a board outline? A board outline is the outermost boundary of a printed circuit board design.</description></item><item><title>Creating a Ground Plane in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</guid><description>What is a ground plane? A ground plane is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</description></item><item><title>Getting Started with Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</guid><description>What is a printed circuit board (PCB)? See the What is a Printed Circuit Board?</description></item><item><title>Manual Routing in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</guid><description>How do I manually route a design in PCB Editor?</description></item><item><title>Measurement in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/measurement-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/measurement-in-cadence-pcb-editor/</guid><description>How do I measure the spacing between pins to make sure my footprint matches the Datasheet?</description></item><item><title>Placing and moving components in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</guid><description>While it is easy to place components using the mouse, most designs require precise placement of some components (e.</description></item><item><title>Routing Traces</title><link>https://embedded-systems-design.github.io/routing-traces/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/routing-traces/</guid><description>See this video</description></item><item><title>Trace Width Calculator</title><link>https://embedded-systems-design.github.io/trace-width-calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/trace-width-calculator/</guid><description>Check this link</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Designing PCBs on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/cadence/designing-pcbs/</link>
+    <description>Recent content in Designing PCBs on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/cadence/designing-pcbs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Text to a Layout in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</guid>
+      <description>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</description>
+    </item>
+    
+    <item>
+      <title>Altering Trace Widths</title>
+      <link>https://embedded-systems-design.github.io/altering-trace-widths/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/altering-trace-widths/</guid>
+      <description>Altering Trace Widths
+      Figure 1   Sometimes you need to globally change trace widths in your board after designing it.</description>
+    </item>
+    
+    <item>
+      <title>ASU PCB Mill Specs</title>
+      <link>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</guid>
+      <description>Please see this link</description>
+    </item>
+    
+    <item>
+      <title>Changing a Hole Diameter in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</guid>
+      <description>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</description>
+    </item>
+    
+    <item>
+      <title>Changing the Default Via Padstack in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</guid>
+      <description>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</description>
+    </item>
+    
+    <item>
+      <title>Changing the Library Search Path in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</guid>
+      <description>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Board Outline in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</guid>
+      <description>What is a board outline? A board outline is the outermost boundary of a printed circuit board design.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Ground Plane in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</guid>
+      <description>What is a ground plane? A ground plane is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</guid>
+      <description>What is a printed circuit board (PCB)? See the What is a Printed Circuit Board?</description>
+    </item>
+    
+    <item>
+      <title>Manual Routing in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</guid>
+      <description>How do I manually route a design in PCB Editor? Your design should have a board outline and components placed, and blue lines (the &amp;ldquo;rats nest&amp;rdquo;) between the components (see example, Figure 1).</description>
+    </item>
+    
+    <item>
+      <title>Measurement in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/measurement-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/measurement-in-cadence-pcb-editor/</guid>
+      <description>How do I measure the spacing between pins to make sure my footprint matches the Datasheet?</description>
+    </item>
+    
+    <item>
+      <title>Placing and moving components in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</guid>
+      <description>While it is easy to place components using the mouse, most designs require precise placement of some components (e.</description>
+    </item>
+    
+    <item>
+      <title>Routing Traces</title>
+      <link>https://embedded-systems-design.github.io/routing-traces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/routing-traces/</guid>
+      <description>See this video</description>
+    </item>
+    
+    <item>
+      <title>Trace Width Calculator</title>
+      <link>https://embedded-systems-design.github.io/trace-width-calculator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/trace-width-calculator/</guid>
+      <description>Check this link</description>
+    </item>
+    
+  </channel>
+</rss>

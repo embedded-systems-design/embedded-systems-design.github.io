@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>interfacing on Embedded Systems Design</title><link>https://embedded-systems-design.github.io/tags/interfacing/</link><description>Recent content in interfacing on Embedded Systems Design</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/interfacing/index.xml" rel="self" type="application/rss+xml"/><item><title>All About Serial</title><link>https://embedded-systems-design.github.io/all-about-serial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/all-about-serial/</guid><description>What are serial protocols? I2C, SPI, and UART are three of the most common protocols for serial data transmission.</description></item><item><title>Choosing transistors for high-power digital switching</title><link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid><description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interfacing on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/interfacing/</link>
+    <description>Recent content in interfacing on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/interfacing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All About Serial</title>
+      <link>https://embedded-systems-design.github.io/all-about-serial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/all-about-serial/</guid>
+      <description>What are serial protocols? I2C, SPI, and UART are three of the most common protocols for serial data transmission.</description>
+    </item>
+    
+    <item>
+      <title>Choosing transistors for high-power digital switching</title>
+      <link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
+      <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
+    </item>
+    
+  </channel>
+</rss>

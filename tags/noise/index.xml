@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>noise on Embedded Systems Design</title><link>https://embedded-systems-design.github.io/tags/noise/</link><description>Recent content in noise on Embedded Systems Design</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/noise/index.xml" rel="self" type="application/rss+xml"/><item><title>Bypass capacitor basics</title><link>https://embedded-systems-design.github.io/bypass-capacitor-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/bypass-capacitor-basics/</guid><description>A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC.</description></item><item><title>Power Supplies 101</title><link>https://embedded-systems-design.github.io/power-supplies-101/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/power-supplies-101/</guid><description>What are the components of a basic power supply subsystem?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>noise on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/noise/</link>
+    <description>Recent content in noise on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/noise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bypass capacitor basics</title>
+      <link>https://embedded-systems-design.github.io/bypass-capacitor-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/bypass-capacitor-basics/</guid>
+      <description>A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC.</description>
+    </item>
+    
+    <item>
+      <title>Power Supplies 101</title>
+      <link>https://embedded-systems-design.github.io/power-supplies-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/power-supplies-101/</guid>
+      <description>What are the components of a basic power supply subsystem?  Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit  What are the design considerations for a battery-operated circuit?</description>
+    </item>
+    
+  </channel>
+</rss>

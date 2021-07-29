@@ -1,1 +1,289 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pcb on Embedded Systems Design</title><link>https://embedded-systems-design.github.io/tags/pcb/</link><description>Recent content in pcb on Embedded Systems Design</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/pcb/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding Text to a Layout in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</guid><description>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</description></item><item><title>ASU PCB Fabrication Process</title><link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid><description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description></item><item><title>Cadence Walkthrough: PSoC 4 BLE Module</title><link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid><description>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</description></item><item><title>Changing a Hole Diameter in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</guid><description>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</description></item><item><title>Changing the Default Via Padstack in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</guid><description>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</description></item><item><title>Changing the Library Search Path in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</guid><description>Why would I need to change the library search path?</description></item><item><title>Configuring Cadence</title><link>https://embedded-systems-design.github.io/configuring-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/configuring-cadence/</guid><description>Before using Cadence, configure it for optimal performance by following the instructions below.</description></item><item><title>Creating a Board Outline in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</guid><description>What is a board outline? A board outline is the outermost boundary of a printed circuit board design.</description></item><item><title>Creating a custom padstack in Cadence</title><link>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</guid><description>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</description></item><item><title>Creating a custom PCB footprint manually in Cadence</title><link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</guid><description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description></item><item><title>Creating a custom PCB footprint using Package Designer in Cadence</title><link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</guid><description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description></item><item><title>Creating a custom SMD footprint manually in Cadence</title><link>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</guid><description>Introduction This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually.</description></item><item><title>Creating a Ground Plane in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</guid><description>What is a ground plane? A ground plane is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</description></item><item><title>Creating Custom Footprints</title><link>https://embedded-systems-design.github.io/creating-custom-footprints/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/creating-custom-footprints/</guid><description>You can try to find existing footprints for components, but most components will require custom footprints.</description></item><item><title>Exporting Gerber files from Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid><description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description></item><item><title>Exporting Solder Mask Layers from Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</guid><description>What is a solder mask? Solder mask is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections.</description></item><item><title>Finding existing PCB footprints for Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</guid><description>Where can I find a list of existing PCB footprints for Cadence PCB Editor?</description></item><item><title>Getting Started with Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</guid><description>What is a printed circuit board (PCB)? See the What is a Printed Circuit Board?</description></item><item><title>Installing Cadence</title><link>https://embedded-systems-design.github.io/installing-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/installing-cadence/</guid><description>Installation System Requirements PC: Windows 7, 8, 8.1, 10, or greater (Hardware and Software Requirements) Mac: Windows 7, 8, 8.</description></item><item><title>Manual Routing in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</guid><description>How do I manually route a design in PCB Editor?</description></item><item><title>Packaging Cadence Files for Submission</title><link>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</guid><description>Introduction This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.</description></item><item><title>PCB design checklist</title><link>https://embedded-systems-design.github.io/pcb-design-checklist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/pcb-design-checklist/</guid><description>Before exporting your PCB design for fabrication, you must verify the design and fix any errors.</description></item><item><title>Placing and moving components in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</guid><description>While it is easy to place components using the mouse, most designs require precise placement of some components (e.</description></item><item><title>Printing a PCB Design in DFM Now</title><link>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</guid><description>Note: This tutorial shows how to print a PCB design on paper.</description></item><item><title>Printing a PCB Layout in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</guid><description>Note: This tutorial shows how to print a PCB design on paper.</description></item><item><title>Pushing PCB changes back to a schematic in Cadence</title><link>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</guid><description>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</description></item><item><title>Running a Design for Manufacturing Check in DFM Now</title><link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid><description>Introduction Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment.</description></item><item><title>Running Design Rules Check in Cadence PCB Editor</title><link>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</guid><description>What is a Design Rules Check? Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s).</description></item><item><title>Transferring a Cadence schematic to PCB Editor</title><link>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</guid><description>Introduction In order to create a PCB, you must first prepare the schematic and check for errors, export a netlist of the schematic, import the netlist into PCB editor, and design the PCB.</description></item><item><title>What is a printed circuit board?</title><link>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</guid><description>A printed circuit board (PCB) is a board made of both conducive and non-conductive materials onto which components can be soldered to create a circuit.</description></item><item><title>What is Cadence?</title><link>https://embedded-systems-design.github.io/what-is-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://embedded-systems-design.github.io/what-is-cadence/</guid><description>Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pcb on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/pcb/</link>
+    <description>Recent content in pcb on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/pcb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Text to a Layout in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</guid>
+      <description>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</description>
+    </item>
+    
+    <item>
+      <title>ASU PCB Fabrication Process</title>
+      <link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid>
+      <description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description>
+    </item>
+    
+    <item>
+      <title>Cadence Walkthrough: PSoC 4 BLE Module</title>
+      <link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid>
+      <description>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</description>
+    </item>
+    
+    <item>
+      <title>Changing a Hole Diameter in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</guid>
+      <description>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</description>
+    </item>
+    
+    <item>
+      <title>Changing the Default Via Padstack in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</guid>
+      <description>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</description>
+    </item>
+    
+    <item>
+      <title>Changing the Library Search Path in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</guid>
+      <description>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Cadence</title>
+      <link>https://embedded-systems-design.github.io/configuring-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/configuring-cadence/</guid>
+      <description>Before using Cadence, configure it for optimal performance by following the instructions below.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Board Outline in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</guid>
+      <description>What is a board outline? A board outline is the outermost boundary of a printed circuit board design.</description>
+    </item>
+    
+    <item>
+      <title>Creating a custom padstack in Cadence</title>
+      <link>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</guid>
+      <description>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</description>
+    </item>
+    
+    <item>
+      <title>Creating a custom PCB footprint manually in Cadence</title>
+      <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</guid>
+      <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
+    </item>
+    
+    <item>
+      <title>Creating a custom PCB footprint using Package Designer in Cadence</title>
+      <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</guid>
+      <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
+    </item>
+    
+    <item>
+      <title>Creating a custom SMD footprint manually in Cadence</title>
+      <link>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</guid>
+      <description>Introduction This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Ground Plane in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</guid>
+      <description>What is a ground plane? A ground plane is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</description>
+    </item>
+    
+    <item>
+      <title>Creating Custom Footprints</title>
+      <link>https://embedded-systems-design.github.io/creating-custom-footprints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/creating-custom-footprints/</guid>
+      <description>You can try to find existing footprints for components, but most components will require custom footprints.</description>
+    </item>
+    
+    <item>
+      <title>Exporting Gerber files from Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid>
+      <description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
+    </item>
+    
+    <item>
+      <title>Exporting Solder Mask Layers from Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</guid>
+      <description>What is a solder mask? Solder mask is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections.</description>
+    </item>
+    
+    <item>
+      <title>Finding existing PCB footprints for Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</guid>
+      <description>Where can I find a list of existing PCB footprints for Cadence PCB Editor?</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</guid>
+      <description>What is a printed circuit board (PCB)? See the What is a Printed Circuit Board?</description>
+    </item>
+    
+    <item>
+      <title>Installing Cadence</title>
+      <link>https://embedded-systems-design.github.io/installing-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
+      <description>Installation System Requirements  PC: Windows 7, 8, 8.1, 10, or greater (Hardware and Software Requirements) Mac: Windows 7, 8, 8.</description>
+    </item>
+    
+    <item>
+      <title>Manual Routing in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</guid>
+      <description>How do I manually route a design in PCB Editor? Your design should have a board outline and components placed, and blue lines (the &amp;ldquo;rats nest&amp;rdquo;) between the components (see example, Figure 1).</description>
+    </item>
+    
+    <item>
+      <title>Packaging Cadence Files for Submission</title>
+      <link>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</guid>
+      <description>Introduction This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.</description>
+    </item>
+    
+    <item>
+      <title>PCB design checklist</title>
+      <link>https://embedded-systems-design.github.io/pcb-design-checklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pcb-design-checklist/</guid>
+      <description>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors.</description>
+    </item>
+    
+    <item>
+      <title>Placing and moving components in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</guid>
+      <description>While it is easy to place components using the mouse, most designs require precise placement of some components (e.</description>
+    </item>
+    
+    <item>
+      <title>Printing a PCB Design in DFM Now</title>
+      <link>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</guid>
+      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+    </item>
+    
+    <item>
+      <title>Printing a PCB Layout in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</guid>
+      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+    </item>
+    
+    <item>
+      <title>Pushing PCB changes back to a schematic in Cadence</title>
+      <link>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</guid>
+      <description>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</description>
+    </item>
+    
+    <item>
+      <title>Running a Design for Manufacturing Check in DFM Now</title>
+      <link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid>
+      <description>Introduction Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment.</description>
+    </item>
+    
+    <item>
+      <title>Running Design Rules Check in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</guid>
+      <description>What is a Design Rules Check? Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s).</description>
+    </item>
+    
+    <item>
+      <title>Transferring a Cadence schematic to PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</guid>
+      <description>Introduction In order to create a PCB, you must first prepare the schematic and check for errors, export a netlist of the schematic, import the netlist into PCB editor, and design the PCB.</description>
+    </item>
+    
+    <item>
+      <title>What is a printed circuit board?</title>
+      <link>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</guid>
+      <description>A printed circuit board (PCB) is a board made of both conducive and non-conductive materials onto which components can be soldered to create a circuit.</description>
+    </item>
+    
+    <item>
+      <title>What is Cadence?</title>
+      <link>https://embedded-systems-design.github.io/what-is-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/what-is-cadence/</guid>
+      <description>Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards.</description>
+    </item>
+    
+  </channel>
+</rss>
