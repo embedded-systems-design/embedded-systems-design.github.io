@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Cadence Walkthrough: PSoC 4 BLE Module</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p>
+<h2 id="step-1-find-part-information-in-datasheets">Step 1: Find part information in datasheets</h2>
+<ol>
+<li>Download the PSoC® 4 BLE module data sheet from the <a href="http://www.cypress.com/file/140711/download">Cypress website</a>. You will need the pin names in Step 2.</li>
+<li>Download the <a href="https://drive.google.com/open?id=0ByRWb7dgVD-rLUNBdGoyRTJsek0">PSoC® 4 BLE module mechanical drawing</a>. You will need the dimensions in Step 3.</li>
+</ol>
+<h2 id="step-2-create-the-custom-schematic-symbol">Step 2: Create the custom schematic symbol</h2>
+<ol>
+<li>
+<p>In Windows, open &ldquo;Capture CIS&rdquo;</p>
+</li>
+<li>
+<p><a href="/creating-a-custom-library-in-cadence/">Create a custom library</a></p>
+</li>
+<li>
+<p>Right-click on your custom library and choose &ldquo;New Part&rdquo; (see Figure 1). The New Part Properties window will appear (see Figure 2).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0012.png"><img src="/larger/image0012.png" alt="Figure 1: Creating a new part in your custom library"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Creating a new part in your custom library</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0013.png"><img src="/larger/image0013.png" alt="Figure 2: New Part Properties window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: New Part Properties window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the New Part Properties window (see Figure 2), name the part and click OK. The new part creation window will appear (see Figure 3).</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0014.png"><img src="/larger/image0014.png" alt="Figure 3: New part creation window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: New part creation window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="5">
+<li>Click the &ldquo;Place pin array&rdquo; button in the toolbar (see Figure 4). The &ldquo;Place Pin Array&rdquo; configuration window will appear (see Figure 5).</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0015.png"><img src="/larger/image0015.png" alt="Figure 4: Place pin array tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: Place pin array tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0016.png"><img src="/larger/image0016.png" alt="Figure 5: Place Pin Array configuration window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Place Pin Array configuration window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="6">
+<li>Complete the configuration as shown in Figure 5 and click OK.</li>
+</ol>
+<p><strong>Pro Tip:</strong> Instead of configuring Place Pin Array as shown in Figure 5, repeat this step twice: Once for the first 20 pins, and a second time for the remaining 24 pins. This will eliminate the need to move pins from one side of the symbol to the other.</p>
+<ol start="7">
+<li>
+<p>Place the pins on the symbol. You may need to adjust the size of the dotted rectangle in.</p>
+</li>
+<li>
+<p>Click the &ldquo;Place rectangle&rdquo; button in the toolbar (See Figure 6) and add a rectangle box along the dotted lines inside the pins (see Figure 7).</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0017.png"><img src="/larger/image0017.png" alt="Figure 6: Place rectangle tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: Place rectangle tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0018.png"><img src="/larger/image0018.png" alt="Figure 7: Schematic symbol with pins and rectangle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: Schematic symbol with pins and rectangle</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="8">
+<li>Double-click on each pin individually to show the Pin Properties window (see Figure 8). Configure each pin according to the pin names in the <a href="http://www.cypress.com/file/140711/download">PSoC® 4 BLE module datasheet</a>. Table 1 shows the basic pin types for each of the pins on the PSoC® 4 BLE module.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0019.png"><img src="/larger/image0019.png" alt="Figure 8: Pin Properties window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Pin Properties window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Pin Name</th>
+<th style="text-align:left">Pin Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">All GPIO pins</td>
+<td style="text-align:left">Bidirectional</td>
+</tr>
+<tr>
+<td style="text-align:left">VDDD, VDDA, VDDR, and all GNDs</td>
+<td style="text-align:left">Power</td>
+</tr>
+<tr>
+<td style="text-align:left">XRES</td>
+<td style="text-align:left">Input</td>
+</tr>
+<tr>
+<td style="text-align:left">VREF</td>
+<td style="text-align:left">Output</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1: Pin types for the PSoC® 4 BLE module</p>
+<ol start="9">
+<li>The final custom schematic symbol is shown in Figure 9</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0020.png"><img src="/larger/image0020.png" alt="Figure 9: Final custom schematic symbol for the PSoC® 4 BLE module
+"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Final custom schematic symbol for the PSoC® 4 BLE module
+</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="10">
+<li>Save the symbol to your library by right-clicking on the symbol editor tab and choose &ldquo;Save&rdquo; (see Figure 10).</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0021.png"><img src="/larger/image0021.png" alt="Figure 10: Saving the schematic symbol"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Saving the schematic symbol</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="11">
+<li>You have successfully created a custom schematic symbol for the PSoC® 4 BLE module that you can now use in your schematic. You can continue creating the remainder of your schematic now and make the PCB footprint later, or continue with this tutorial to create the footprint now.</li>
+</ol>
+<h2 id="step-3-create-the-custom-pcb-padstack">Step 3: Create the custom PCB padstack</h2>
+<p>The custom PCB padstack definition includes mechanical dimensions for the copper pads and the hole to be drilled in the board for each pin in the custom PCB footprint that you will design in Step 4.</p>
+<ol>
+<li>
+<p>In Windows, open &ldquo;Padstack Editor&rdquo;</p>
+</li>
+<li>
+<p>Choose File &gt; New&hellip; The New Padstack window appears (see Figure 11).</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0022.png"><img src="/larger/image0022.png" alt="Figure 11: New Padstack window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 11: New Padstack window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="3">
+<li>
+<p>In the &ldquo;New Padstack&rdquo; window (see Figure 11), click &ldquo;Browse&hellip;&rdquo; and select the location of your custom symbols folder (e.g., Desktop/Cadence/symbols)</p>
+</li>
+<li>
+<p>In the &ldquo;New Padstack&rdquo; window (see Figure 11), enter a pad stack name of pad70cir40d_AB (where AB are your initials) and click OK.</p>
+</li>
+<li>
+<p>On the &ldquo;Start&rdquo; tab, configure the parameters to match Figure 12 below.</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0023.png"><img src="/larger/image0023.png" alt="Figure 12: Start tab configuration"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 12: Start tab configuration</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="6">
+<li>Click on the &ldquo;Drill&rdquo; tab and configure the parameters to match Figure 13 below.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0024.png"><img src="/larger/image0024.png" alt="Figure 13: Drill tab configuration"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 13: Drill tab configuration</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="7">
+<li>Do not change any settings on the &ldquo;Secondary Drill&rdquo; tab. Click on the &ldquo;Drill Symbol&rdquo; tab and configure the parameters to match Figure 14 below.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0025.png"><img src="/larger/image0025.png" alt="Figure 14: Drill Symbol tab configuration"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 14: Drill Symbol tab configuration</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="8">
+<li>Do not change any settings on the &ldquo;Drill Offset&rdquo; tab. Click on the &ldquo;Design Layers&rdquo; tab and configure the parameters to match Figure 15 below.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0026.png"><img src="/larger/image0026.png" alt="Figure 15: Design Layers tab configuration"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 15: Design Layers tab configuration</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="9">
+<li>Click on the &ldquo;Mask Layers&rdquo; tab and configure the parameters to match Figure 16 below.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0027.png"><img src="/larger/image0027.png" alt="Figure 16: Mask Layers tab configuration"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 16: Mask Layers tab configuration</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="10">
+<li>
+<p>Do not change any settings on the &ldquo;Options&rdquo; tab. Click on the &ldquo;Summary&rdquo; tab and confirm that your padstack matches <a href="https://drive.google.com/file/d/1TDb6ff3U5i5ZXvcrdE5s5MCJ7vWOGRdd/view?usp=sharing">this example</a>.</p>
+</li>
+<li>
+<p>Choose File &gt; Save  and close &ldquo;Padstack Editor&rdquo;</p>
+</li>
+</ol>
+<h2 id="step-4-create-the-custom-pcb-footprint">Step 4: Create the custom PCB footprint</h2>
+<ol>
+<li>
+<p>In Windows, open &ldquo;PCB Editor&rdquo;</p>
+</li>
+<li>
+<p>Choose File &gt; New&hellip; The &ldquo;New Drawing&rdquo; window appears (see Figure 17).</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0028.png"><img src="/larger/image0028.png" alt="Figure 17: New Drawing window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 17: New Drawing window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="3">
+<li>
+<p>In the &ldquo;New Drawing&rdquo; window (see Figure 17), click &ldquo;Browse&hellip;&rdquo; and select the location of your custom symbols folder (e.g., Desktop/Cadence/symbols). Then, enter a drawing name of your choice. <strong>Do not use spaces in the drawing name.</strong> Choose a &ldquo;Drawing Type&rdquo; of &ldquo;Package symbol&rdquo; and click OK to return to the empty drawing window.</p>
+</li>
+<li>
+<p>Next, you need to create the <em>package geometry</em> for the footprint. The <em>package geometry</em> is a visual representation of the physical dimensions of the part. Click the &ldquo;Shape Add Rect&rdquo; button in the toolbar (see Figure 18) and click on the Options tab on the right hand side of the screen. Configure the settings in the Options tab to match those shown in Figure 19. The dimensions of the rectangle and the rounded corners came from the <a href="https://drive.google.com/file/d/0ByRWb7dgVD-rLUNBdGoyRTJsek0/view?usp=sharing">PSoC® 4 BLE mechanical drawing</a>.</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0029.png"><img src="/larger/image0029.png" alt="Figure 18: Shape Add Rect tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 18: Shape Add Rect tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0030.png"><img src="/larger/image0030.png" alt="Figure 19: Options tab for the Shape Add Rect tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 19: Options tab for the Shape Add Rect tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="5">
+<li>Click in the Command window at the bottom of the screen and enter the coordinates to place the package geometry: x 0 1800. The rounded rectangle package geometry will appear with the lower left corner of the window at (0,0) and the upper right corner at (1100,1800) (see Figure 20).</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0031.png"><img src="/larger/image0031.png" alt="Figure 20: Package geometry and Command window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 20: Package geometry and Command window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="6">
+<li>Next, lay out the pads for the left side of the PSoC® module. Choose Layout &gt; Pins and click on the Options tab on the right hand side of the screen. Configure the settings in the Options tab to match those shown in Figure 18.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0032.png"><img src="/larger/image0032.png" alt="Figure 18: Layout &amp;gt; Pins Options tab configured for the left header"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 18: Layout &amp;gt; Pins Options tab configured for the left header</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="7">
+<li>Click in the Command window at the bottom of the screen and enter the coordinates to place the left header: x 180 367 (see Figure 19). This will place pin 1 at (180, 367) on the lower right hand corner of the left header, pin 2 on the lower left hand corner of the header, pin 19 in the upper right hand corner of the header, and pin 20 in the upper left hand corner of the header.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0033.png"><img src="/larger/image0033.png" alt="Figure 19: Left header placed using the command prompt"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 19: Left header placed using the command prompt</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="8">
+<li>Click the Options tab again and configure it to match the settings shown in Figure 20. Note the updated values for the Y Qty, X and Y Order, and Pin #.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0034.png"><img src="/larger/image0034.png" alt="Figure 20: Layout &amp;gt; Pins Options tab configured for the right header"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 20: Layout &amp;gt; Pins Options tab configured for the right header</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="9">
+<li>Click in the Command window at the bottom of the screen and enter the coordinates to place the right header: x 920 1267 (see Figure 21). This will place pin 21 at (920, 1267) in the upper left hand corner of the right header, pin 22 in the upper right hand corner of the header, pin 43 in the lower left hand corner of the header, and pin 44 in the lower right hand corner of the header.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0035.png"><img src="/larger/image0035.png" alt="Figure 21: Right hand header placed using the command prompt"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 21: Right hand header placed using the command prompt</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="10">
+<li>Next, you need to give the footprint a <em>reference designator</em> that matches the reference designator in your custom schematic symbol (typically U). Click the &ldquo;Label Refdes&rdquo; button in the toolbar (see Figure 22) and click on the Options tab on the right hand side of the screen. Configure the settings in the Options tab to match those shown in Figure 23.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0036.png"><img src="/larger/image0036.png" alt="Figure 22: Label Refdes tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 22: Label Refdes tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0037.png"><img src="/larger/image0037.png" alt="Figure 23: Options tab for the Label Refdes tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 23: Options tab for the Label Refdes tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="11">
+<li>Click on or around the part and type U* (see Figure 24). The * will be replaced with the part number assigned in the schematic (e.g., U1).</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0038.png"><img src="/larger/image0038.png" alt="Figure 24: Footprint with reference designator"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 24: Footprint with reference designator</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="12">
+<li>Close PCB Editor and save changes</li>
+</ol>
+<h2 id="step-5-link-the-custom-pcb-footprint-to-the-custom-schematic-symbol">Step 5: Link the Custom PCB Footprint to the Custom Schematic Symbol</h2>
+<ol>
+<li>
+<p>Open a schematic that uses the custom symbol in Capture CIS.</p>
+</li>
+<li>
+<p>In your schematic, double-click on the placed custom symbol. The Property Editor window will open (see Figure 25).</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0039.png"><img src="/larger/image0039.png" alt="Figure 25: Property Editor window for PSoC® 4 BLE module"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 25: Property Editor window for PSoC® 4 BLE module</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="3">
+<li>
+<p>Type the filename for the footprint into the &ldquo;PCB Footprint&rdquo; field and close the Property Editor window.</p>
+</li>
+<li>
+<p>To confirm that the footprint was properly linked to the custom schematic symbol, right-click on the part in the schematic and select &ldquo;Show Footprint&rdquo;. The &ldquo;Footprint Viewer&rdquo; window will open and show the footprint (see Figure 26).</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0040.png"><img src="/larger/image0040.png" alt="Figure 26: Footprint successfully linked to the custom schematic symbol"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 26: Footprint successfully linked to the custom schematic symbol</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>If the footprint does not show up, confirm that the name of the footprint in the Property Editor matches the filename of the footprint, and that the symbols folder is <a href="/configuring-cadence/">configured correctly in Cadence</a>.</p>
+<p>The following video shows the process described in this tutorial from start to finish. Note that the Cadence interface has changed for padstack editing since the time the video was created.</p>
+<p><em>Based on a video and tutorial created by Robert Goby</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/cadence-walkthrough-psoc-4-ble-module.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

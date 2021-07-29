@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Running a Design for Manufacturing Check in DFM Now</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment. This tutorial walks through how to use the program <a href="https://www.numericalinnovations.com/pages/dfm-now-free-gerber-viewer">DFM Now</a> to verify that a design is able to be manufactured by the <a href="https://www.lpkfusa.com/datasheets/prototyping/s63.pdf">LPKF ProtoMat S63</a> in PRLTA 109.</p>
+<p>This tutorial requires that you have already <a href="/exporting-gerber-files-from-cadence-pcb-editor/">exported Gerber files</a> of your design from Cadence.</p>
+<p>The following video shows the process described in this tutorial from start to finish.</p>
+<h2 id="step-1-install-and-configure-dfm-now">Step 1: Install and Configure DFM Now</h2>
+<ol>
+<li><a href="https://www.numericalinnovations.com/pages/dfm-now-download-now">Download</a> and install DFM Now</li>
+<li><a href="https://drive.google.com/open?id=0ByRWb7dgVD-rYlRJMWZZM0V4QXc">Download the Peralta Mill Specs.drf</a> configuration file and save it to a known location. This file contains customized settings that will allow you to use DFM </li>
+</ol>
+<h2 id="step-2-run-dfm-now-on-the-gerber-files">Step 2: Run DFM Now on the Gerber Files</h2>
+<ol>
+<li>
+<p>In Windows, launch DFM Now!</p>
+</li>
+<li>
+<p>Choose Import &gt; AutoLoad (Gerber/Drill)&hellip;, select the folder that contains the Gerber and drill files for your project, and click Next (see Figures 1 and 2).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0222.JPG"><img src="/larger/image0222.JPG" alt="Figure 1: AutoLoad import menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: AutoLoad import menu</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0223.png"><img src="/larger/image0223.png" alt="Figure 2: Select Folder to Load window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Select Folder to Load window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the File Description: window (see Figure 3), choose the correct layer type for each layer. Common layer types include:</p>
+<ul>
+<li>Top Art = Top</li>
+<li>Bottom Art = Bottom</li>
+<li>Outline = Border (this is typically a graphic and may be the only one that you need to change)</li>
+<li>Soldermask Top = Mask Top</li>
+<li>Soldermask Bottom = Mask Bottom</li>
+<li>Drill = Drill ThruHole</li>
+</ul>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0224.JPG"><img src="/larger/image0224.JPG" alt="Figure 3: File Description window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: File Description window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click Next and Finish.</p>
+</li>
+<li>
+<p>Review your design and make sure all of the layers were loaded properly.</p>
+</li>
+<li>
+<p>Choose DFM &gt; DFM Rules Management&hellip; (see Figure 4). The DFM Check Settings window will appear (see Figure 5).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0225.JPG"><img src="/larger/image0225.JPG" alt="Figure 4: DFM Rules Management menu selection"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: DFM Rules Management menu selection</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0226.JPG"><img src="/larger/image0226.JPG" alt="Figure 5: Default DFM Check Settings window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Default DFM Check Settings window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the DFM Rules Settings window under Rules File Management, click Open&hellip; and choose the <a href="https://drive.google.com/open?id=0ByRWb7dgVD-rYlRJMWZZM0V4QXc">Peralta Mill Spec.drf</a> file that is saved to your hard drive. Under Rules File Management, click Save As&hellip; and save the rules so they are available next time you open the program. New DFM settings will appear in the Signal tab (see Figure 6). Click Finish.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0227.png"><img src="/larger/image0227.png" alt="Figure 6: Custom Peralta Mill Spec DFM Rules Settings"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: Custom Peralta Mill Spec DFM Rules Settings</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Choose DFM &gt; DFM Check&hellip;. The General Settings window will appear (see Figure 7). Make sure that the DFM Rule Set is set to Peralta Mill Specs.drf and click Next to begin the design for manufacturing process.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0228.png"><img src="/larger/image0228.png" alt="Figure 7: General Settings window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: General Settings window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Depending on the complexity of your board, the DFM check will take several seconds to several minutes to run. If it uncovers any errors, you will need to find and correct them within PCB Editor, re-<a href="/exporting-gerber-files-from-cadence-pcb-editor/">export your Gerber files</a>, and re-run the DFM Check on the new Gerber files.</p>
+</li>
+<li>
+<p>Once you have corrected all of the errors, you will receive a green checkmark. Success! (see Figure 8)</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0229.png"><img src="/larger/image0229.png" alt="Figure 8: Example errors and success"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Example errors and success</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Bring your computer to a TA or professor during office hours and show them the results of your DFM check to receive approval for submitting your PCB design to Peralta for milling.</p>
+</li>
+</ol>
+<p><em>Based on a video and tutorial created by Robert Goby</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/manufacturing-pcbs/running-a-design-for-manufacturing-check-in-dfm-now.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

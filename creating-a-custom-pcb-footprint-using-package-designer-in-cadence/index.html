@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Creating a custom PCB footprint using Package Designer in Cadence</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Footprint_(electronics)">PCB footprint</a> is the physical layout on a PCB to which a component is soldered. Usually, you must create a custom PCB footprint for each custom schematic symbol that you create. This tutorial details the easiest way to make custom footprints using the Package Symbol (Wizard).</p>
+<p>The example custom PCB footprint created in this tutorial will be a <a href="http://www.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-049-4xxx-prototyping-kits">Cypress PSoC® 4 CY8CKIT-049 4xxx Prototyping Kit</a> (see Figure 1).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0112.jpg"><img src="/larger/image0112.jpg" alt="Figure 1: PSoC® 4 Prototyping Kit"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: PSoC® 4 Prototyping Kit</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="1-search-the-datasheet-for-the-footprint-specifications">1. Search the Datasheet for the Footprint Specifications</h2>
+<p>In order to build a custom footprint, you first need to find the footprint specifications in the datasheet for the component. However, sometimes a datasheet does not include a footprint. In this example, Cypress provides the <a href="http://www.cypress.com/file/126221/download">PCB design files for the PSoC® 4 CY8CKIT-049 4xxx Prototyping Kit</a>, where you can get more useful information. Figure 2 shows the PCB layout provided by Cypress. Of note is that while it does show the dimensions of the PCB, it does not show the spacing or position of the pins in relation to the edges of the PCB. In this case, you will need a pair of calipers to measure the pin spacing and position of the pins in relation to the edge. Most standard header pins in embedded systems have a 100 mil (0.1&quot;) spacing between pins, but it is always good to double-check to avoid unnecessary PCB respins later. Additionally, this board can be&quot;snapped&quot; to separate the programmer (left) from the processor (right). This tutorial will assume that the programmer will be snapped off and only the processor module will be used.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0113.png"><img src="/larger/image0113.png" alt="Figure 2: Prototyping Kit PCB layout from Cypress"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Prototyping Kit PCB layout from Cypress</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Using this drawing and a pair of calipers to fill in missing information, the final dimensions were determined to be:</p>
+<ul>
+<li>Number of pins = 44 (22 per side)</li>
+<li>Lead pitch = 100 mils (0.1&quot;) - <em>spacing from the center of one pin to the center of the next pin in a row</em></li>
+<li>Terminal row spacing = 750 mils (0.75&quot;) - <em>spacing from the center of one row of pins to the center of the other row of pins</em></li>
+<li>Package width = 950 mils (0.95&quot;)</li>
+<li>Package length = 2300 mils (2.3&quot;)</li>
+</ul>
+<h2 id="2-create-a-new-footprint">2. Create a New Footprint</h2>
+<ol>
+<li>
+<p>In Windows, open the PCB Editor application. (You can also use the Package Designer application).</p>
+</li>
+<li>
+<p>Choose &ldquo;File &gt; New&hellip;&rdquo;. The New Drawing window shown in Figure 3 will appear.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0114.png"><img src="/larger/image0114.png" alt="Figure 3: New Drawing window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: New Drawing window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Name your drawing (do not use spaces in drawing names), select &ldquo;Package symbol (wizard)&rdquo; and click OK. The Package Symbol Wizard window shown in Figure 4 will appear.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0115.png"><img src="/larger/image0115.png" alt="Figure 4: Package Symbol Wizard window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: Package Symbol Wizard window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the Package Type closest to the footprint that you are trying to make and click &ldquo;Next &gt;&rdquo;. The Package Symbol Wizard - Template window shown in Figure 5 will appear. For more information on package types, see the <a href="https://learn.sparkfun.com/tutorials/integrated-circuits/ic-packages">IC Packages tutorial on Sparkfun</a>. In this tutorial, the PSoC® footprint is closest to a Dual In-line Package (DIP), which is a common through-hole package.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0116.png"><img src="/larger/image0116.png" alt="Figure 5: Package Symbol Wizard - Template window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Package Symbol Wizard - Template window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the Package Symbol Wizard - Template window, select &ldquo;Default Cadence supplied template&rdquo; and click &ldquo;Load Template&rdquo;. Click &ldquo;Next&gt;&rdquo; to continue to the &ldquo;General Parameters&rdquo; window (shown in Figure 6). The default template is generally good for most all footprints made using this wizard. Custom templates are required when the grid spacing is different, or if making very small parts (e.g., with QFN packages).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0117.png"><img src="/larger/image0117.png" alt="Figure 6: Package Symbol Wizard - General Parameters window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: Package Symbol Wizard - General Parameters window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>The General Parameters window allows you to set the units that will be used to enter dimensions (typically &ldquo;mils&rdquo; for electronics applications) and the default prefix for the reference designator for this part. A reference designator is the unique ID labeling each part in a schematic (e.g., U1, U2, U3 for ICs). Click &ldquo;Next &gt;&rdquo; to continue to the &ldquo;DIP Parameters&rdquo; window (see Figure 7).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0118.png"><img src="/larger/image0118.png" alt="Figure 7: Package Symbol Wizard - DIP Parameters window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: Package Symbol Wizard - DIP Parameters window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>The DIP Parameters window allows you to enter the number of pins, spacing, width, and length of the footprint determined from the manufacturer (see step 1, above). Enter the appropriate information and click &ldquo;Next &gt;&rdquo; to continue to the &ldquo;Padstacks&rdquo; window (See Figure 8).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0119.png"><img src="/larger/image0119.png" alt="Figure 8: Package Symbol Wizard - Padstacks window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Package Symbol Wizard - Padstacks window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>A padstack is a specification for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered. In our example, there are 44 pins that each use the same padstack. Click the &ldquo;&hellip;&rdquo; button next to &ldquo;Default padstack to use for symbol pins&rdquo; to display the padstack browser (see Figure 9).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0120.png"><img src="/larger/image0120.png" alt="Figure 9: Package Symbol Wizard Padstack Browser"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Package Symbol Wizard Padstack Browser</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the Padstack Browser window, choose a padstack that is appropriate for your component and click &ldquo;Next &gt;&rdquo;. The numbers are typically in mils (e.g., &ldquo;Pad60cir42d&rdquo; is a circular pad with diameter 60 mils and drill diameter of 42 mils). For through-hole components, it&rsquo;s usually better to have larger padstacks to allow for plenty of soldering area. For surface-mount components, the padstack should match the recommendations in the datasheet from the manufacturer. When in doubt, it&rsquo;s sometimes easier to make a custom padstack (see the <a href="/creating-a-custom-padstack-in-cadence/">Creating a Custom Padstack in Cadence page</a>).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0121.png"><img src="/larger/image0121.png" alt="Figure 10: Package Symbol Wizard - Symbol Compilation window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Package Symbol Wizard - Symbol Compilation window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>The Symbol Compilation window appears (see Figure 10). Leave the default options selected and click &ldquo;Next &gt;&rdquo; to show the Summary window (see Figure 11).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0122.png"><img src="/larger/image0122.png" alt="Figure 11: Package Symbol Wizard - Summary"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 11: Package Symbol Wizard - Summary</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Finally, click &ldquo;Finish&rdquo; to complete the creation of the new symbol. A new window appears with the finished symbol (see Figure 12). Note that the Package Wizard creates two files: a DRA file (drawing of the package) and a PSM file (package symbol, footprint).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0123.png"><img src="/larger/image0123.png" alt="Figure 12: Finished PCB footprint"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 12: Finished PCB footprint</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/">Quick Guide: Creating a Custom PCB Footprint using Package Designer</a></li>
+<li><a href="https://www.youtube.com/watch?v=cEmX-KElXdw">Part 20: Package Symbol Wizard video</a> from iEngineered</li>
+</ul>
+<p><em>Based on a tutorial by Josh Carroll</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/schematics-to-pcbs/footprints/creating-a-custom-pcb-footprint-using-package-designer-in-cadence.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Configuring Cadence</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>Before using Cadence, configure it for optimal performance by following the instructions below.</p>
+<h2 id="step-1-create-a-cadence-folder-hierarchy">Step 1. Create a Cadence Folder Hierarchy</h2>
+<p>In order for both you and Cadence to find your files easily, download the <a href="https://drive.google.com/file/d/1Rb3sLhvu83eYboJO5tiLt3nEM1PjEGoA/view?usp=sharing">custom Cadence folder hierarchy ZIP file</a> to your computer and decompress it on the desktop. The resultant folder hierarchy is as follows:</p>
+<ul>
+<li>Desktop/Cadence/Backups - All backups saved by Design Entry CIS and PCB Editor will be saved here.</li>
+<li>Desktop/Cadence/Projects - All project files that you generate should be saved here. Inside this folder, create a separate folder for each project or schematic so that the files do not get mixed up when you create a new project.</li>
+<li>Desktop/Cadence/step - All .step files that you download or make to use with the PCB Editor 3-D View function should be stored in this folder. Downloadable .step files can be found at <a href="https://www.3dcontentcentral.com/">3D Content Central</a>.</li>
+<li>Desktop/Cadence/symbols - All .pad, .bsm, .psm, and .dra files that you download or make should be stored in this folder. These files contain component footprints and mechanical pins that are used by Cadence. This folder also contains a special ASU <a href="https://en.wikipedia.org/wiki/Via_(electronics)">via</a> padstack (asuvia.pad) that improves manufacturability on the LPKF PCB mill in PRLTA 109. </li>
+</ul>
+<h2 id="step-2-configure-capture-cis">Step 2. Configure Capture CIS</h2>
+<p>CAPTURE.INI is the primary file in which Cadence stores all of the program settings for schematic editing in Capture CIS. We have created a custom CAPTURE.INI file for the ASU Polytechnic School engineering programs. Follow the instructions below to install and modify the custom CAPTURE.INI file:</p>
+<ol>
+<li>Open the Capture CIS application, which you will use to design schematics. When the &ldquo;Cadence Product Choices&rdquo; window (see Figure 4) appears, select Allegro PCB Design CIS L and click the checkbox next to Use as default. Click OK to continue.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0063.png"><img src="/larger/image0063.png" alt="Figure 1: Cadence Product Choices window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Cadence Product Choices window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="2">
+<li>
+<p>Quit the &ldquo;Capture CIS 17.4&rdquo; application.</p>
+</li>
+<li>
+<p>Download the ASU Polytechnic School <a href="https://drive.google.com/file/d/1wPGlv_hOVaj9csTwlRAfMQQq178dtzpR/view?usp=sharing">custom Capture.INI file</a> to your computer. This custom file configures Cadence as follows:</p>
+</li>
+</ol>
+<p>Tells Capture CIS to look for PCB footprints in both C:/Program Files/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols and in C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols.</p>
+<p>Turns on autosave to save your Capture CIS design every 10 minutes.</p>
+<p>Turns on auto backup to back up your Capture CIS design every 10 minutes to C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/Backups.</p>
+<p>Adds two custom help links to the Capture CIS &gt; Help &gt; Web Resources menu</p>
+<ul>
+<li><a href="/cadence/">Embedded System Design Resources Blog - Cadence Posts</a></li>
+<li><a href="/cadence-manuals/">Cadence Manuals</a></li>
+</ul>
+<ol start="4">
+<li>Edit the custom CAPTURE.INI file to replace the two instances of the text YOURWINDOWSLOGIN with your Windows login (where your home directory is located) on your computer. Examples:</li>
+</ol>
+<p>DIR1=C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols</p>
+<p>to</p>
+<p>DIR1=C:/Users/ssjorda1/Desktop/Cadence/symbols</p>
+<p>Backup Direcory Path=C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/Backups</p>
+<p>to</p>
+<p>Backup Direcory Path=C:/Users/ssjorda1/Desktop/Cadence/Backups</p>
+<p>Figure 2 below shows the original custom CAPTURE.INI file, and Figure 3 below shows an edited example.</p>
+<ol start="5">
+<li>Copy your edited custom CAPTURE.INI file to replace the default CAPTURE.INI file at one of the following paths:</li>
+</ol>
+<p>C:/ProgramData/SPB_Data/cdssetup/OrCAD_Capture/17.4.0/Capture.ini</p>
+<p>or</p>
+<p>C:/Cadence/SPB_Data-Silent/cdssetup/OrCAD_Capture/17.4.0/Capture.ini</p>
+<p>or if you have defined your home directory differently according to the installation instructions, use</p>
+<p>%HOME%/cdssetup/OrCAD_Capture/17.4.0/Capture.ini where %HOME% is the location you set as your home directory (typcically &ldquo;c:/users/YOURUSERNAME&rdquo;)</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0064.png"><img src="/larger/image0064.png" alt="Figure 2: Original custom CAPTURE.INI template"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Original custom CAPTURE.INI template</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0065.png"><img src="/larger/image0065.png" alt="Figure 3: Example edited custom CAPTURE.INI template"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: Example edited custom CAPTURE.INI template</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="step-3-configure-pcb-editor">Step 3. Configure PCB Editor</h2>
+<ol>
+<li>
+<p>Open the PCB Editor application, which you will use to create PCB designs. When the &ldquo;17.4 Allegro PCB Designer Product Choices&rdquo; window (see Figure 4) appears, select Allegro PCB Designer and click the checkbox next to Use as default. Click OK to continue.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0066.png"><img src="/larger/image0066.png" alt="Allegro PCB Designer Product Choices window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Allegro PCB Designer Product Choices window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Choose Setup &gt; User Preferences&hellip; (see Figure 5).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0067.png"><img src="/larger/image0067.png" alt="Figure 5: Setup &amp;gt; User Preferences&amp;hellip; menu option"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Setup &amp;gt; User Preferences&amp;hellip; menu option</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Turn on autosave in PCB Editor to automatically back up your design in case of a system crash by selecting the File_management &gt; Autosave category and changing the settings to match the configuration shown in Figure 6 below. <em>Note: By selecting the Favorite check box, PCB Editor will make it easier to access these settings in the future by saving them in the My_favorites folder at the top of the Categories list.</em></p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0068.png"><img src="/larger/image0068.png" alt="Figure 6: User Preferences Editor Autosave category configuration"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: User Preferences Editor Autosave category configuration</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Configure the search paths in PCB Editor by selecting the Paths &gt; Library category and selecting the Favorite checkboxes next to padpath, psmpath, and steppath (see Figure 7).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0069.png"><img src="/larger/image0069.png" alt="Figure 7: User Preferences Editor Paths &amp;gt; Library window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: User Preferences Editor Paths &amp;gt; Library window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click the &hellip; next to padpath and add the path to the symbols folder in the Cadence folder on your desktop (C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols) (see Figure 8). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0070.png"><img src="/larger/image0070.png" alt="Figure 8: Adding to the padpath example"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Adding to the padpath example</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click the &hellip; next to psmpath and add the path to the symbols folder in the Cadence folder on your desktop (C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols) (see Figure 9). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0071.png"><img src="/larger/image0071.png" alt="Figure 9: Adding to the psmpath example"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Adding to the psmpath example</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click the &hellip; next to steppath and add the path to the step folder in the Cadence folder on your desktop (C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/step) (see Figure 10). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0072.png"><img src="/larger/image0072.png" alt="Figure 10: Adding to the steppath example"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Adding to the steppath example</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click OK to save changes.</p>
+</li>
+</ol>
+<h2 id="congratulations-you-have-configured-cadence">Congratulations, you have configured Cadence!</h2>
+<p>Next: <a href="/getting-started-with-cadence/">Get started creating a schematic</a></p>
+<h2 id="common-issues">Common Issues</h2>
+<p>If you can&rsquo;t find your config.ini file, make sure you </p>
+<p>Also, here is a video documenting an older version of this process:</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/getting-started/configuring-cadence.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Particle Argon Wifi Board</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="what-is-the-particle-argon-what-does-it-do">What is the Particle Argon? What does it do?</h2>
+<p>The <a href="https://docs.particle.io/argon/">Particle Argon</a> is a &ldquo;wi-fi for everything&rdquo; development kit that includes a microcontroller, wi-fi hardware, and easy-to-use web-based IDE (Integrated Development Environment). It is typically used to add wi-fi functionality into products without spending a huge amount of development time on the wi-fi hardware and software. A more detailed introduction is available <a href="https://docs.particle.io/quickstart/argon/">here</a>.</p>
+<p><em>Note:</em> The Particle Argon was previously known as the Photon and the Spark Core, so you may see documentation referring to Spark Core or Photon instead. The software API is basically the same for all of them.</p>
+<h2 id="where-can-i-get-an-argon-board">Where can I get an Argon board?</h2>
+<ul>
+<li>Each team can check out one (1) Argon board in PRLTA 109. If you need additional Argon boards, please see Dr. Jordan</li>
+<li>If you want to buy your own Argons, you can <a href="https://store.particle.io/collections/wifi">purchase them from Particle</a></li>
+</ul>
+<h2 id="where-can-i-find-the-hardware-specifications-for-the-argon">Where can I find the hardware specifications for the Argon?</h2>
+<ul>
+<li><a href="https://docs.particle.io/datasheets/wi-fi/argon-datasheet/">Argon Datasheet</a> from Particle</li>
+</ul>
+<h2 id="where-can-i-find-the-firmwaresoftware-for-the-argon">Where can I find the firmware/software for the Argon?</h2>
+<p><em>Notes: Firmware is a term used to describe software that directly interfaces with hardware. An API (Application Programming Interface) is a guide to the software/firmware functions you can use in your code.</em></p>
+<ul>
+<li><a href="https://docs.particle.io/reference/device-os/firmware/photon/">Particle Device OS Firmware API</a> API from Particle</li>
+<li><a href="https://support.particle.io/hc/en-us/articles/360039251774">Firmware Upgrades</a> from Particle</li>
+</ul>
+<h2 id="how-do-i-configure-the-argon-to-run-on-my-computer">How do I configure the Argon to run on my computer?</h2>
+<ul>
+<li><a href="https://docs.particle.io/quickstart/argon/">Getting Started</a> guide from Particle</li>
+</ul>
+<h2 id="how-do-i-communicate-between-the-argon-and-my-microcontroller">How do I communicate between the Argon and my microcontroller?</h2>
+<p>There are two major ways to communicate between the devices:</p>
+<ol>
+<li>Using a UART (Universal Asynchronous Receiver Transmitter). UART connections transmit ASCII text, meaning that if you are trying to send numbers you will first need to convert them into strings (see FAQ question below). This strategy allows you to send data either to or from the Argon by either reading from or writing to the UART. An older example of how to do this is available <a href="https://docs.google.com/document/d/1ArfviVWar79W0KfDVcT3e13jerVyXOeRsWhZUyI3jHg/edit?usp=sharing">here</a> (note that it is for the older version of the Argon called the Spark Core, so some of the code may not work).</li>
+<li>Using the I/O pins on the Argon <em>(Note: This is <strong>not</strong> a form of serial communication)</em>. If you only need to turn something on and off, or read a simple bit or analog value, then this is a simpler solution than using the UART. See the <a href="https://docs.particle.io/datasheets/wi-fi/argon-datasheet/#pins-and-button-definitions">Pins and button definitions</a> section of the datasheet and the <a href="https://docs.particle.io/reference/device-os/firmware/photon/#input-output">Input/Output API</a> pages on the Argon for more information.</li>
+<li>Here is a <a href="/uart-pic-to-argon-tutorial/">UART PIC to Argon Tutorial</a> written by Mykol Reklaitis</li>
+</ol>
+<h2 id="how-do-i-send-numeric-or-formatted-data-over-a-uart-connection">How do I send numeric or formatted data over a UART connection?</h2>
+<ul>
+<li>Use the sprintf() function for your microcontroller. sprintf() prints formatted data to a string that can be sent over a UART connection. See <a href="http://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">this tutorial</a> from tutorialspoint for more information.</li>
+</ul>
+<h2 id="where-can-i-find-examples-of-argon-projects">Where can I find examples of Argon projects?</h2>
+<ul>
+<li><a href="https://community.particle.io/">Particle Community</a></li>
+<li><a href="http://spolearninglab.com/curriculum/lessonPlans/hacking/hardware/sparkcore/intro.html">SPO Learning Lab</a></li>
+</ul>
+<h2 id="how-do-i-communicate-between-a-argon-and-a-phone-app">How do I communicate between a Argon and a phone app?</h2>
+<h3 id="option-1-tinker-mobile-app">Option 1: Tinker Mobile App</h3>
+<p>One option is use the <a href="https://docs.particle.io/tutorials/developer-tools/tinker/photon/">Tinker mobile app</a> from Particle. This off-the-shelf app is a good option if your project only needs to send simple information between Argon and the microcontroller.</p>
+<p><em>Advantages of Tinker app</em></p>
+<ul>
+<li>Off-the-shelf multi-platform option to control individual analog and digital I/O pins through a standard interface</li>
+<li>Easy to use</li>
+<li>Useful to test whether a problem is in software or hardware (because since it&rsquo;s provided by the manufacturer, it will hopefully work correctly)</li>
+<li>You can modify the callback functions to include your own code</li>
+</ul>
+<p><em>Disadvantages of Tinker app</em></p>
+<ul>
+<li>App can not be modified, so you don&rsquo;t have control over the user interface on the phone. (This may be OK for a proof of concept)</li>
+<li>Does not support entering text into the app directly (though you can send ASCII text over the UART in the firmware code)</li>
+</ul>
+<h3 id="option-2-ubidots-app-framework">Option 2: UbiDots App Framework</h3>
+<p>The <a href="http://ubidots.com/">UbiDots app framework</a> is designed to capture and display sensor data using an off-the-shelf app provided by the company. This is a good option if your project primarily needs to display and/or log sensor data (e.g., body temperature).</p>
+<p><em>Advantages of UbiDots</em></p>
+<ul>
+<li>You have some control over the user interface in the app</li>
+<li><a href="https://help.ubidots.com/en/articles/513304-connect-your-particle-device-to-ubidots-using-particle-webhooks">Connect your Particle device to Ubidots</a> tutorial from UbiDots</li>
+</ul>
+<p><em>Disadvantages of UbiDots</em></p>
+<ul>
+<li>UbiDots is primarily for gathering and displaying information (microcontroller &ndash;&gt; Argon &ndash;&gt; UbiDots &ndash;&gt; UbiDots app), and may not be able to send information back to your microcontroller easily.</li>
+</ul>
+<h3 id="option-3-write-your-own-phone-app">Option 3: Write your own phone app</h3>
+<p>You will need to create functions in the Argon firmware and call those functions via the <a href="https://docs.particle.io/reference/api/">Particle Cloud REST API</a>. This is a good option if someone in your group has prior coding experience and/or time to figure out how to write an app.</p>
+<p><em>Advantages of custom apps</em></p>
+<ul>
+<li>Full access to send and receive data between the Particle and the microcontroller</li>
+<li>Full access to modify the user interface (within Android/iOS limitations)</li>
+</ul>
+<p><em>Disadvantages of custom apps</em></p>
+<ul>
+<li>Apps are usually platform-specific, meaning that if you write an app for Android it will likely not be compatible with iOS and vice-versa</li>
+</ul>
+<p>More information on custom app development is provided below.</p>
+<h3 id="option-4-run-a-web-server-on-the-argon">Option 4: Run a web server on the Argon</h3>
+<p>You can run a web server (based on <a href="https://github.com/m-mcgowan/webduino">Webduino</a>, documentation <a href="http://ten-fingers-and-a-brain.com/arduino-projects/webduino/webserver/">here</a>) on the Argon and then log into it from a phone or computer. This is a good option if you want to have full control via HTML over what is displayed.</p>
+<p><em>Advantages of a web server</em></p>
+<ul>
+<li>Platform-independent</li>
+<li>Allows use of JavaScript and HTML to sculpt your &ldquo;app&rdquo;</li>
+</ul>
+<p><em>Disadvantages of a web server</em></p>
+<ul>
+<li>Programming is time consuming and somewhat unintuitive</li>
+</ul>
+<h3 id="option-5-use-particlepublish-to-post-data-to-a-web-page-on-your-computer">Option 5: Use Particle.publish() to post data to a web page on your computer</h3>
+<p><em>Advantages of Particle.publish()</em></p>
+<ul>
+<li>Platform-independent</li>
+<li>Tutorial available <a href="https://community.particle.io/t/tutorial-getting-started-with-spark-publish/3422?redirected=true">here</a></li>
+</ul>
+<p><em>Disadvantages of Particle.publish()</em></p>
+<ul>
+<li>Requires the use of HTML and JavaScript</li>
+</ul>
+<h2 id="how-do-i-create-an-android-app">How do I create an Android app?</h2>
+<ul>
+<li><a href="https://docs.particle.io/reference/android/">Particle Android Cloud SDK</a> (Software Development Kit) from Particle</li>
+</ul>
+<p>You will need an app development environment. Suggested environments include:</p>
+<ul>
+<li><a href="http://appinventor.mit.edu/">MIT App Inventor</a></li>
+<li><a href="https://dotnet.microsoft.com/apps/xamarin">Xamarin</a> (cross-platform, free for academic use)</li>
+<li><a href="http://phonegap.com/">Phonegap</a> (cross-platform)</li>
+</ul>
+<h2 id="where-can-i-find-examples-of-custom-android-apps-that-work-with-argon">Where can I find examples of custom Android apps that work with Argon?</h2>
+<ul>
+<li><a href="https://community.particle.io/t/connect-spark-core-with-android-app-made-in-appinventor/7378/2">MIT App Inventor example</a></li>
+</ul>
+<h2 id="how-do-i-create-an-ios-app">How do I create an iOS app?</h2>
+<ul>
+<li><a href="https://docs.particle.io/reference/ios/">Particle iOS Cloud SDK</a> (Software Development Kit) from Particle</li>
+</ul>
+<p>You will need an app development environment. Suggested environments include:</p>
+<ul>
+<li><a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/">Start Developing iOS Apps (Swift)</a> from Apple</li>
+<li><a href="https://dotnet.microsoft.com/apps/xamarin">Xamarin</a> (cross-platform, free for academic use)</li>
+<li><a href="http://phonegap.com/">Phonegap</a> (cross-platform)</li>
+</ul>
+<h2 id="where-can-i-find-examples-of-custom-ios-apps-that-work-with-argon">Where can I find examples of custom iOS apps that work with Argon?</h2>
+<ul>
+<li>Coming soon</li>
+</ul>
+<h2 id="how-do-i-communicate-between-a-argon-and-a-computer">How do I communicate between a Argon and a computer?</h2>
+<ul>
+<li>Coming soon</li>
+</ul>
+<h2 id="how-do-i-communicate-between-a-argon-and-another-argon">How do I communicate between a Argon and another Argon?</h2>
+<ul>
+<li><a href="https://community.particle.io/t/connecting-two-photons-together/17617">Connecting Two Photons Together</a></li>
+<li><a href="https://community.particle.io/t/tcp-server-and-client-between-two-photons/16865">TCP Server and Client between two Photons</a></li>
+<li><a href="https://docs.particle.io/guide/getting-started/examples/photon/#the-buddy-system-publish-and-subscribe">The Buddy System: Publish and Subscribe</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/tutorials/wireless/particle-argon-wifi-board.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

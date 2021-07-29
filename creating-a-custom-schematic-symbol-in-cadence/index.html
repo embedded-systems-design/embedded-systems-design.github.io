@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Creating a custom schematic symbol in Cadence</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>In most designs, some components will not be available in built-in libraries. The purpose of this tutorial is to show how to make a custom schematic symbol that can be used in the design of schematics in Cadence.</p>
+<p>The example custom schematic symbol created in this tutorial will be a <a href="http://www.ti.com/product/cc2541">Texas Instruments CC2541 Bluetooth-enabled microcontroller</a>.</p>
+<h3 id="limitations">Limitations</h3>
+<p>This guide will not cover how to add the custom fields required for PSpice simulations. Unless you are planning to run circuit simulations, PSpice models are not required (and are often not part of the built-in parts).</p>
+<h2 id="1-search-the-datasheet-for-the-pin-layout">1. Search the Datasheet for the Pin Layout</h2>
+<p>In order to build a custom schematic symbol, you need to find the pin layout in the data sheet of the component. Figure 1 shows the pin layout from the <a href="http://www.ti.com/lit/ds/symlink/cc2541.pdf">CC2541 datasheet</a>.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures2/figure_269.jpg"><img src="/figures2/figure_269.jpg" alt="Figure 1: Pin layout for the CC2541 microcontroller"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Pin layout for the CC2541 microcontroller</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="2-create-a-new-project-and-custom-library">2. Create a New Project and Custom Library</h2>
+<p>See the <a href="/creating-a-new-project-in-cadence/">Creating a New Project in Cadence page</a> for instructions.</p>
+<h2 id="3-create-a-new-schematic-symbol">3. Create a New Schematic Symbol</h2>
+<p>Right-click on your custom library and choose &ldquo;New Part&rdquo; (see Figure 2). The New Part Properties window will appear (see Figure 3). Note that the file path at the bottom of the window will be the path of your custom library.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0124.png"><img src="/larger/image0124.png" alt="Figure 2: Creating a new part in your custom library"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Creating a new part in your custom library</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures2/figure_109.jpg"><img src="/figures2/figure_109.jpg" alt="Figure 3: New Part Properties window."  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: New Part Properties window.</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Name your part with the part number from the component datasheet. If you have not yet created a footprint for your part, you can add it at a later time.</p>
+<p>Next, use the Place Rectangle tool in the toolbar (see Figure 4) to make an outline for your part within the dashed lines. If the area enclosed by the dashed lines is not big enough, you can enlarge it with the arrow tool. IEEE schematic formatting standards dictate that schematic symbols are usually rectangular.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures2/place_rectangle_vertical.png"><img src="/figures2/place_rectangle_vertical.png" alt="Figure 4: Place rectangle tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: Place rectangle tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Once your rectangle is complete, you can begin placing pins using the Place Pin tool in the toolbar (see Figure 5). It is a good idea to place pins on the same sides of the chip as its physical layout (see the data sheet) to make circuit debugging easier. In the case of the CC2541, there are 10 pins on each side for a total of 40 pins.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures2/place_pin_vertical.png"><img src="/figures2/place_pin_vertical.png" alt="Figure 5: Place pin tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Place pin tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Upon clicking the Place Pin tool, a window will appear (see Figure 6). The name should be the same as the pin name in the data sheet but different than all other pins on the chip. If there are multiple pins with the same name in the data sheet, add a number to each one to differentiate (e.g., GND1, GND2). The pin number should be the pin number on the chip package, which can also be found in the data sheet. The shape can be a line (common) or other shape depending on the function of the pin. The pin type can be passive, but setting the pin type correctly will help the Electrical Rules Check (ERC) find errors in your design more easily. When you are finished configuring the pin, click OK.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures2/place_pin_menu.png"><img src="/figures2/place_pin_menu.png" alt="Figure 6: Place Pin window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: Place Pin window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Once you are finished adding <strong>all</strong> of the pins for the component, your final product should look something like the symbol in Figure 7.</p>
+<p><strong>PRO TIP:</strong> When designing a custom schematic symbol, consider the schematic in which it needs to fit. The location of the schematic pins in the custom schematic symbol need not be identical to the physical part, but changing the order might complicate troubleshooting for beginners.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures2/figure_083.jpg"><img src="/figures2/figure_083.jpg" alt="Figure 7: Completed schematic symbol"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: Completed schematic symbol</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Finally, save your part by choosing &ldquo;File &gt; Save As&hellip;&rdquo; and double-checking to make sure it is saving to your custom library. Do not use spaces in filenames. Your custom schematic symbol will now be stored in your custom library and will be available for placing into your schematic.</p>
+<h2 id="4-editing-a-custom-schematic-symbol">4. Editing a Custom Schematic Symbol</h2>
+<p>If you need to edit a custom schematic symbol, save the symbol first. Then, open the Design Cache folder in the project browser (see Figure 8), right-click on the edited schematic symbol in the design cache, and select &ldquo;Replace Cache&rdquo; from the drop down menu to update the schematic symbol in your schematic (see Figure 9)</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0125.png"><img src="/larger/image0125.png" alt="Figure 8: Design Cache folder"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Design Cache folder</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0126.png"><img src="/larger/image0126.png" alt="Figure 9: Right-click menu options"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Right-click menu options</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p><em>Based on tutorials by Josh Carroll, Cody Van Cleve, and Robert Goby</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/schematics/creating-a-custom-schematic-symbol-in-cadence.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

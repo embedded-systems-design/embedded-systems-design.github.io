@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Creating a Custom Padstack (old)</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a>A <a href="https://www.speedingedge.com/PDF-Files/anatomy%20of%20a%20plated%20hole.pdf">padstack</a> is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1). You may need to create a custom padstack when creating custom parts to ensure that the pad and hole are big enough to be reliable. This tutorial describes the manual creation of custom padstacks using the Pad Designer application.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0091.jpg"><img src="/larger/image0091.jpg" alt="Figure 1: Padstack examples for through-hole and surface mount devies"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Padstack examples for through-hole and surface mount devies</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>The example custom padstacks created in this tutorial will be for <a href="http://www.ti.com/product/lm2676">TI LM2676 SIMPLE SWITCHER® 8V to 40V, 3A Low Component Count Step-Down Regulator</a> (see Figure 2).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0092.jpg"><img src="/larger/image0092.jpg" alt="Figure 2: LM2676 Switching Power Supply IC"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: LM2676 Switching Power Supply IC</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="search-the-datasheet-for-the-footprint-specifications">Search the Datasheet for the Footprint Specifications</h2>
+<p>In order to build a custom padstack, you first need to find the footprint (sometimes called &ldquo;land pattern&rdquo; specifications in the datasheet for the component. Figure 2 shows the land pattern of the IC package from page 34 of the <a href="http://www.ti.com/lit/ds/symlink/lm2676.pdf">LM2676 datasheet</a>.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0093.png"><img src="/larger/image0093.png" alt="Figure 3: Land pattern from the LM2676 datasheet. Dimensions are in mils, with brackets in mm."  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: Land pattern from the LM2676 datasheet. Dimensions are in mils, with brackets in mm.</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>By interpreting Figure 3, the following key dimensions were determined:</p>
+<p>Pad - Pins</p>
+<ul>
+<li>7 total pins</li>
+<li>Pad length = 36 mils</li>
+<li>Pad width = 85 mils</li>
+<li>Pad spacing = 50 mils <em>(center of one pad to center of the next pad)</em></li>
+</ul>
+<p>Mechanical/Thermal Un-Plated Pad* (underneath the body of the chip)*</p>
+<ul>
+<li>Length = 410 mils</li>
+<li>Width = 425 mils</li>
+</ul>
+<h2 id="create-a-custom-electrical-padstack">Create a Custom Electrical Padstack</h2>
+<p>7 pins of the LM2676 will be soldered to (7) 36 mil x 85 mil (L x W) pads spaced 50 mils apart (center to center). Since the 7 pads are all the same, we can create a single padstack and use it for all of the pins.</p>
+<ol>
+<li>In Windows, open the &ldquo;Pad Designer&rdquo; application. The Pad Designer window shown in Figure 4 will appear and default to editing the parameters for a new unnamed padstack. For a surface mount padstack, the options on the Parameters tab can be left at their defaults.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0094.png"><img src="/larger/image0094.png" alt="Figure 4: Pad Designer window, Parameters tab"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: Pad Designer window, Parameters tab</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>The <em>Summary</em> box shows the overall specifications for the currently loaded pad.</p>
+<p>The <em>Units</em> box shows the units to be used in the creation of the pad, and the number of decimal places that can be used to specify a unit. The <em>mil</em> (1/100th of an inch) is standard for most electronic applications. Higher precision numbers may not improve the overall accuracy due to limitations in manufacturing processes.</p>
+<p>The <em>Usage options</em> box shows several unused options for padstacks.</p>
+<ul>
+<li><a href="http://www.we-online.com/web/en/leiterplatten/produkte_/microvia_hdi_leiterplatten/Einleitung_HDI.php">Microvias</a> (option usually dimmed) are tiny laser-drilled holes used to improve the electrical connection between the layers of a multilayer PCB.</li>
+<li>&ldquo;Suppress unconnected int. pads; legacy artwork&rdquo; allows for the use of older pads in new designs. Since we are only able to print double-layer (two-sided) PCBs, this option can remain unselected.</li>
+<li>&ldquo;Mech pins use antipads as Route Keepout; ARK&rdquo; limits routing of traces near mechanical (e.g., thermal or mechanical attachment) pads on the PCB. This option can remain unselected.</li>
+</ul>
+<p>The <em>Multiple drill</em> box is not used.</p>
+<p>The *Drill/Slot hole *box shows multiple options for padstack holes. 3 hole types are supported:</p>
+<ul>
+<li>**Circle Drill - most common **(even if the part is surface mount and has no holes)</li>
+<li>Oval Slot - uncommon.</li>
+<li>Rectangle slot - used when cutting slots around pads. Uncommon.</li>
+</ul>
+<p>Plating is a conductive coating that makes a connection through holes in a PCB. 3 plating types are supported:</p>
+<ul>
+<li>**Plated - most common. **A pad will be created and then a hole will be drilled through the pad. Then, the hole will be plated after the PCB mill is finished.</li>
+<li>Non-plated - uncommon. An area without copper will be milled, and then a hole will be drilled through the PCB. The Thieving tool is more effective for creating mounting holes.</li>
+<li>Optional - uncommon. This allows the computer to decide.</li>
+</ul>
+<p>Drill diameter - this is where you will enter the diameter (in the units specified above) of the drill hole. Applies to through-hole designs only.</p>
+<p>Tolerance - uncommon (leave 0.0). Acceptable tolerances for drilling that are communicated to the PCB mill. A tolerance of 0.0 means that the hole should be as close to the actual dimensions as possible.</p>
+<p>Offset X and Y - uncommon (leave 0.0). This allows for corrections if the PCB mill is drilling holes in the wrong places. This can be fixed more easily in the PCB mill control software.</p>
+<p>Non-standard drill - uncommon (leave blank). This option allows for methods of drilling that are beyond what we have available.</p>
+<p>The <em>Drill/Slot symbol</em> box allows for the creation of silkscreen shapes around the pad. Circle and square are most typical.</p>
+<p>The Top view box shows the padstack under design.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0095.png"><img src="/larger/image0095.png" alt="Figure 5: Pad Designer window, Layers tab "  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Pad Designer window, Layers tab </div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>The Layers tab is shown in Figure 5.</p>
+<p>The *Padstack layers *box provides options for editing individual layers or the entire PCB. The &ldquo;Single layer mode&rdquo; allows for simplifying the padstack for a single-sided (single-layer) board. You can click on layers and make changes via the Regular Pad, Thermal Relief, and Anti Pad boxes described below.</p>
+<p>The default layers for a padstack are:</p>
+<ul>
+<li>BEGIN LAYER - top copper layer of the PCB</li>
+<li>DEFAULT INTERNAL - inner layers of the PCB (our PCB mill is limited to 2 layers)</li>
+<li>END LAYER - bottom copper layer of the PCB</li>
+<li>SOLDERMASK_TOP - top colored soldermask layer of the PCB</li>
+<li>SOLDERMASK_BOTTOM - bottom colored soldermask layer of the PCB</li>
+<li>PASTEMASK_TOP - top solder paste layer of the PCB (uncommon in class)</li>
+<li>PASTEMASK_BOTTOM - bottom solder paste layer of the PCB (uncommon in class)</li>
+<li>FILMMASK_TOP - top conformal coating layer of the PCB (uncommon in class)</li>
+<li>FILMMASK_BOTTOM - bottom conformal coating layer of the PCB (uncommon in class)</li>
+</ul>
+<p>The <em>Views</em> box shows the current padstack under design, either as a horizontal cross-section or a top view. <a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a><a href="https://draft.blogger.com/blogger.g?rinli=1&amp;pli=1&amp;blogID=6469592703220698319"></a> The <em>Regular Pad</em> box allows editing of the size of the pad itself. The <em>Thermal Relief</em> box allows editing for the thermal relief pads necessary for parts that create a lot of heat (e.g., high-power MOSFETs and voltage regulators). The <em>Anti Pad</em> box allows editing of the keep-out area that limits the space that can be milled around the pad. All three types have the following options:</p>
+<ul>
+<li>Geometry - shape of the pad (circle, square, and rectangle most common). Set &ldquo;Thermal Relief&rdquo; and &ldquo;Anti Pad&rdquo; to Null if you do not want to use them.</li>
+<li>Shape - allows the creation of custom pad shapes. Especially useful for complex SMD devices.</li>
+<li>Flash - uncommon. Allows the protection of a layer from heat stress.</li>
+<li>Width and Height- size of the pad on the PCB</li>
+<li>Offset X and Y - uncommon. This allows for corrections if the PCB mill is not aligned. This can be fixed more easily in the PCB mill control software.</li>
+</ul>
+<p>In this example, the pad dimensions from the datasheet are entered to create the pad shown in Figure 4.</p>
+<p>Finally, choose &ldquo;File &gt; Save As&hellip;&rdquo; and save the padstack to your project folder with a useful name (e.g., &ldquo;SMD85W36L&rdquo; which means a surface mount pad with width of 85 mil and length of 36 mil). Do not use spaces in filenames.</p>
+<h2 id="create-a-custom-mechanical-padstack">Create a Custom Mechanical Padstack</h2>
+<p>In this example, there is also a mechanical pad with dimensions 410 mils x 425 mils (L x W). Follow the instructions above to create the mechanical pad as a &ldquo;Thermal Relief&rdquo; instead of a &ldquo;Regular Pad&rdquo;.</p>
+<p>&ldquo;File &gt; Save As&hellip;&rdquo; and save the padstack to your project folder with a useful name (e.g., &ldquo;LM2676mech&rdquo;). Do not use spaces in filenames.</p>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SMYi7eS94J8">Part 19: Designing Pads video</a> from iEngineered</li>
+</ul>
+<p><em>Based on a tutorial by Josh Carroll</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/misc/creating-a-custom-padstack-old.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Transferring a Cadence schematic to PCB Editor</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>In order to create a PCB, you must first prepare the schematic and check for errors, export a <em>netlist</em> of the schematic, import the netlist into PCB editor, and design the PCB. A <em><a href="https://en.wikipedia.org/wiki/Netlist">netlist</a></em> is a file that describes interconnections among components in a circuit. This tutorial describes the process of transferring a schematic to PCB Editor. It is assumed that you have a completed schematic (see example, Figure 1) before trying to migrate to PCB Editor.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0235.png"><img src="/larger/image0235.png" alt="Figure 1: Example schematic ready for transfer to PCB Editor"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Example schematic ready for transfer to PCB Editor</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="video-walkthrough">Video Walkthrough</h2>
+<h2 id="create-custom-footprints">Create Custom Footprints</h2>
+<p>All schematic symbols need a footprint. If you created any <a href="/creating-a-custom-schematic-symbol-in-cadence/">custom schematic symbols</a>, you likely need to create a custom footprint for each one. For most ICs, you can use the <a href="/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/">Package Designer</a> application to make custom footprints. For all other components, you can <a href="/creating-a-custom-pcb-footprint-manually-in-cadence/">make custom footprints manually</a>.</p>
+<h2 id="open-project-and-set-root-design">Open Project and Set Root Design</h2>
+<ol>
+<li>
+<p>In Windows, open your project in the Design Entry CIS program.</p>
+</li>
+<li>
+<p>For complex designs (see example, Figure 2), you may have multiple folders with multiple schematic sheets in each folder in the project explorer. Right-click on the folder you want to prepare for transfer to PCB Editor and choose &ldquo;Make Root&rdquo;. This will set Cadence to generate a netlist only for the schematics inside the root folder (which will have a / through the folder symbol). This feature can be useful when your team is working on multiple break-out boards simultaneously before integrating them into one full design.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0236.png"><img src="/larger/image0236.png" alt="Figure 2: Example folder hierarchy for complex schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Example folder hierarchy for complex schematic</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="assign-footprints-to-components">Assign Footprints to Components</h2>
+<ol>
+<li>
+<p>Open the schematic and select all components on the page by choosing &ldquo;Edit &gt; Select All&rdquo;. Right-click and choose &ldquo;Edit Properties&hellip;&rdquo; (see Figure 3) to batch-edit the footprint information. The batch component property editing window will appear (see Figure 4). Click the Parts tab to show the parts in the schematic. Click the &ldquo;Pivot&rdquo; button to see the part information vertically instead of horizontally.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0237.png"><img src="/larger/image0237.png" alt="Figure 3: &amp;ldquo;Edit Properties&amp;hellip;&amp;rdquo; menu option"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: &amp;ldquo;Edit Properties&amp;hellip;&amp;rdquo; menu option</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0238.png"><img src="/larger/image0238.png" alt="Figure 4: Batch component property editing window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: Batch component property editing window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Enter footprint names (built-in or custom) for each component. For more information on finding the names of built-in footprints, see <a href="/finding-existing-pcb-footprints-for-cadence-pcb-editor/">Finding Existing PCB Footprints for Cadence PCB Editor</a>. Repeat until all components have footprints.</p>
+</li>
+</ol>
+<h2 id="run-design-rules-check">Run Design Rules Check</h2>
+<ol>
+<li>
+<p>In the project explorer window, left-click on your schematic (see Figure 7) and choose &ldquo;PCB menu &gt; Design Rules Check&rdquo; (see Figure 8). *(If the Design Rules Check option is dimmed, then you have selected the wrong icon in the project explorer window). *Figure 8 shows the Design Rules Check window. Leave the default options selected and click OK to continue.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0239.png"><img src="/larger/image0239.png" alt="Figure 7: Schematic icon selected"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: Schematic icon selected</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0240.png"><img src="/larger/image0240.png" alt="Figure 8: Design Rules Check&amp;hellip; menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Design Rules Check&amp;hellip; menu</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0241.png"><img src="/larger/image0241.png" alt="Figure 9: Design Rules Check window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Design Rules Check window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>From there, you will be prompted with the DRC main screen in Figure 9. Keep everything as it is on the main screen and be sure to checkmark all of the boxes in the &ldquo;Rules Setup&rdquo; and &ldquo;Report Setup&rdquo; (see Figures 10 and 11). Doing this will ensure the DRC will check for many possible errors on the schematic. Once you have checked all of the boxes, click &ldquo;Run&rdquo;.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0242.png"><img src="/larger/image0242.png" alt="Figure 10: Design Rules Check &amp;gt; Rules Setup pane"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Design Rules Check &amp;gt; Rules Setup pane</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0243.png"><img src="/larger/image0243.png" alt="Figure 11: Design Rules Check &amp;gt; Report Setup pane"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 11: Design Rules Check &amp;gt; Report Setup pane</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>After you press &ldquo;Run&rdquo;, several alerts will appear. The first will be to notify you that once you proceed with the DRC, all actions already made cannot be undone (see Figure 12). Click &ldquo;Yes&rdquo;. The second will ask to save all the changes made since the last save (see Figure 13). Click &ldquo;OK&rdquo;.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0244.png"><img src="/larger/image0244.png" alt="Figure 12: Undo Warning alert"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 12: Undo Warning alert</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0245.png"><img src="/larger/image0245.png" alt="Figure 13: Save changes alert"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 13: Save changes alert</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the command window, you will see a list of warnings or errors that the DRC has found. If the &ldquo;DRCs&rdquo; window is blank, you are ready to move on and create your PCB design. If not and an error is listed (see example, Figure 14), go back to your schematic and fix the errors. If you see warnings, read each one and consider making the recommended changes before continuing. <strong>DO NOT SKIP THIS STEP.</strong> Fix any errors identified by the Design Rules Check and repeat steps (f) - (i) until all errors are gone (or determined not to be real problems).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0246.png"><img src="/larger/image0246.png" alt="Figure 14: DRCs error listing"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 14: DRCs error listing</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="create-a-netlist">Create a Netlist</h2>
+<ol>
+<li>
+<p>In the project explorer window, left-click on your schematic and choose &ldquo;Tools &gt; Create Netlist&hellip;&rdquo; (see Figure 15). *(If the Create Netlist option is dimmed, then you have selected the wrong icon in the project explorer window). *Figure 16 shows the Create Netlist window. Set the checkboxes as shown below (file names and paths will be specific to your design) and click OK to generate a netlist as shown in Figure 16. The setlist will appear in the folder you save it to. You do not need to open the file after creating it.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0247.png"><img src="/larger/image0247.png" alt="Figure 15: Tools &amp;gt; Create Netlist&amp;hellip; menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 15: Tools &amp;gt; Create Netlist&amp;hellip; menu</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0248.png"><img src="/larger/image0248.png" alt="Figure 16: Create Netlist dialog box"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 16: Create Netlist dialog box</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="createupdate-a-printed-circuit-board-pcb">Create/Update a Printed Circuit Board (PCB)</h2>
+<ol>
+<li>In the Project Explorer window, left-click on your schematic and choose &ldquo;PCB menu &gt; New Layout&rdquo;. <em>(If the New Layout option is dimmed, then you have selected the wrong icon in the Project Explorer window).</em> Figure 17 shows the New Layout window. Select the folder path where you would like yo create your new PCB design next to the &ldquo;Board&rdquo; path and click OK (see Figure 18). To update a PCB design you have already made, select the path where your current board is saved for &ldquo;Input Board File&rdquo; as well as for &ldquo;Board&rdquo;, and click OK (see Figure 19). Once you have clicked OK, the Allegro PCB Editor will automatically open. See the <a href="/getting-started-with-cadence-pcb-editor/">Cadence PCB Tutorials page</a> for more information on creating a PCB.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0249.png"><img src="/larger/image0249.png" alt="Figure 17: PCB &amp;gt; New Layout menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 17: PCB &amp;gt; New Layout menu</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0250.png"><img src="/larger/image0250.png" alt="Figure 18: New Layout window configured to create a new PCB design"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 18: New Layout window configured to create a new PCB design</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0251.png"><img src="/larger/image0251.png" alt="Figure 19: New Layout window configured to update an existing PCB design"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 19: New Layout window configured to update an existing PCB design</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="common-errors">Common Errors</h2>
+<h3 id="schematic-updated-after-pcb-is-routed">Schematic Updated after PCB is Routed</h3>
+<p>It&rsquo;s not uncommon for an error to be discovered in the schematic after the PCB has already been routed. Rework of routing can be fixed as follows:</p>
+<ol>
+<li>Fix the errors in the schematic</li>
+<li>In the project explorer window, left-click on your schematic (see Figure 7) and choose &ldquo;Tools &gt; Create Netlist&hellip;&quot;. *(If the Create Netlist option is dimmed, then you have selected the wrong icon in the project explorer window). *Figure 9 shows the Create Netlist window. Set the checkboxes as shown above (file names and paths will be specific to your design), but this time set &ldquo;Input Board File&rdquo; to be your current routed PCB file and &ldquo;Output Board File&rdquo; to be a different name for the updated file.</li>
+<li>Click OK to generate a netlist and push the changes forward to PCB Editor.</li>
+</ol>
+<h3 id="duplicate-reference-designators">Duplicate Reference Designators</h3>
+<p>Sometimes, making significant edits to a schematic can result in multiple components with the same reference designators (e.g., U1, U2, R1, R2). This can be fixed by renumbering all of the reference designators in a schematic.</p>
+<ol>
+<li>Open the project in Design Entry CIS and select the *.dsn file in the project explorer.</li>
+<li>Choose &ldquo;Tools &gt; Annotate&rdquo;, select &ldquo;Reset part references to&rdquo;?&quot;&rdquo;, and click OK (see Figure 10). Your schematic will now have ? marks for all reference designator numbers (e.g., U?, J?).</li>
+<li>Choose &ldquo;Tools &gt; Annotate&rdquo; again, select &ldquo;Incremental reference update&rdquo;, and click OK (see Figure 10). This will replace all ? marks with numbers to create unique reference designators.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0252.png"><img src="/larger/image0252.png" alt="Figure 10: Annotate window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Annotate window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h3 id="additional-common-errors">Additional Common Errors</h3>
+<ul>
+<li>You changed your &ldquo;nets&rdquo; name but missed a trace somewhere</li>
+<li>You changed your &ldquo;nets&rdquo; name and connected two different nets together accidentally (e.g., Ground_Plane and Ground)</li>
+<li>Cadence couldn&rsquo;t find your footprint, or no footprint was specified</li>
+<li>Missing a *.psm file for the *.dra file, or vice-versa</li>
+<li>Unconnected traces</li>
+<li>You used multiple ground symbols and connected them together incorrectly</li>
+<li>Forgetting to define your paths correctly for footprints to be findable</li>
+<li>Defining the footprint names for all parts.</li>
+</ul>
+<p><em>Based on a tutorial by Josh Carroll</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/schematics-to-pcbs/transferring-a-cadence-schematic-to-pcb-editor.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Power Supplies 101</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="what-are-the-components-of-a-basic-power-supply-subsystem">What are the components of a basic power supply subsystem?</h2>
+<ol>
+<li>Source of power - battery, AC adapter, solar</li>
+<li>Input electronic noise filtering circuit</li>
+<li>Voltage regulator to provide a constant supply voltage</li>
+<li>Output electronic noise filtering circuit</li>
+</ol>
+<h2 id="what-are-the-design-considerations-for-a-battery-operated-circuit">What are the design considerations for a battery-operated circuit?</h2>
+<p>How many Amp-Hours of capacity are needed?</p>
+<ul>
+<li>Create a power budget to determine</li>
+</ul>
+<p>What type of batteries?</p>
+<ul>
+<li>See <a href="http://batteryuniversity.com/">Battery University</a> for more information</li>
+</ul>
+<p>Are the batteries rechargeable?</p>
+<ul>
+<li>NiCd, NiMH, LIB, LiPoly? Different tradeoffs of cost, memory, lifetime, weight</li>
+<li>Need a charging circuit. See <a href="https://www.maximintegrated.com/en/products/power.html">Maxim Integrated Circuits</a></li>
+</ul>
+<p>Discharge Rate</p>
+<ul>
+<li>Batteries can only discharge up to a certain limit to remain safe.  Different chemistries have different limitations.</li>
+</ul>
+<h2 id="what-are-the-design-considerations-for-an-ac-powered-circuit">What are the design considerations for an AC-powered circuit?</h2>
+<p>The language &ldquo;AC adapter&rdquo; and &ldquo;AC power supply&rdquo; is used inconsistently. Sometimes it refers to regulated power supplies with a fixed voltage output, and sometimes it refers to unregulated power supplies with a promised voltage output that is inaccurate when measured with a DMM. More information on AC power adapters is available here: <a href="http://www.dxing.info/equipment/wall_warts_bryant.dx">http://www.dxing.info/equipment/wall_warts_bryant.dx</a></p>
+<h3 id="linear-power-supplies">Linear Power Supplies</h3>
+<p>Linear power supplies are made up of a transformer, diodes, and sometimes a filter capacitor. They provide clean power, but waste lots of energy in the form of heat. See <a href="http://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/rectifier-circuits/">http://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/rectifier-circuits/</a> for more information on how a linear power supply works.</p>
+<h3 id="switching-power-supplies">Switching Power Supplies</h3>
+<p>Switching power supplies are most commonly used in PCs and other digital applications. They have a &ldquo;noisy&rdquo; power output because of the switching frequency, and are not ideal for inductive loads. They also tend to be more expensive, but are much more energy-efficient and generate less heat.</p>
+<h2 id="how-do-i-choose-a-voltage-regulator">How do I choose a voltage regulator?</h2>
+<p>There are three major types of voltage regulators that you will encounter in this program:</p>
+<p>Linear voltage regulator - burns off extra power in the form of heat</p>
+<ul>
+<li>Advantage: High current capacity</li>
+<li>Advantage: Low cost</li>
+<li>Disadvantage: Low precision</li>
+<li>Disadvantage: High dropout voltage (the voltage difference between the input and output)</li>
+</ul>
+<p>Low dropout voltage regulator - burns off extra power in the form of heat, but continues to regulate even when the input voltage is near the output voltage</p>
+<ul>
+<li>Advantage: Excellent for battery-powered applications</li>
+<li>Advantage: Higher precision</li>
+<li>Disadvantage: Lower current capacity</li>
+<li>Disadvantage: Higher cost</li>
+</ul>
+<p>Switching voltage regulator - generates as much power as is needed by the circuit, up to the maximum allowed by the regulator. Similar to Switching Power Supplies above</p>
+<ul>
+<li>Advantage: Highly energy efficient</li>
+<li>Disadvantage: High cost</li>
+<li>Disadvantage: External components (some difficult to find) may be necessary</li>
+<li>Disadvantage: Printed circuit board layout can be difficult</li>
+</ul>
+<p>A highly detailed guide to linear and switching regulators is available here: <a href="http://www.ti.com/lit/an/snva558/snva558.pdf">http://www.ti.com/lit/an/snva558/snva558.pdf</a></p>
+<h2 id="what-capacitor-values-should-i-use-for-input-and-output-noise-filtering">What capacitor values should I use for input and output noise filtering?</h2>
+<p>First, check the data sheet for the voltage regulator and see if it specifies values for the input and output filtering capacitors. If it does not, the rule of thumb is to use 0.33 ÂµF ceramic non-polarized capacitors for input filtering and 0.1 ÂµF ceramic non-polarized capacitors for output filtering.</p>
+<h2 id="what-capacitor-values-should-i-use-for-bypass-filtering-near-each-integrated-circuit">What capacitor values should I use for bypass filtering near each integrated circuit?</h2>
+<p>Digital integrated circuits (ICs) need &ldquo;bypass capacitors&rdquo; to both filter the power going into the IC and provide a nearby reservoir of energy that the IC can draw from instantaneously. The rule of thumb is to put one 0.1 ÂµF ceramic non-polarized capacitor between each power pin on an integrated circuit and ground. This means a microcontroller might have 2 - 8 or more capacitors, one for each power pin on the IC.</p>
+<h2 id="where-can-i-find-additional-information-about-power-supplies">Where can I find additional information about power supplies?</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Power_supply">Wikipedia</a></li>
+</ul>
+<h2 id="where-can-i-find-companies-that-manufacture-power-supply-components">Where can I find companies that manufacture power supply components?</h2>
+<ul>
+<li><a href="/sources-for-electrical-and-electromechanical-components/">Sources for Electrical and Electromechanical Components</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/circuit-design/power-supplies-101.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

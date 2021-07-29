@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Schematic checklist</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>Before exporting your schematic to create a PCB, you <strong>must</strong> verify the design and fix errors in the schematic first. It is significantly more difficult to fix errors later (either during the PCB layout stage or after manufacturing) than to spend the time double-checking the schematic first.</p>
+<h3 id="design-for-function-and-performance">Design for Function and Performance</h3>
+<ol>
+<li>Check symbol pinouts against the data sheet, paying special attention to the part package (e.g., chips often come in multiple physical packages with different pin numbers)</li>
+<li>Check connector pinouts and orientation (top or bottom of board, inversion of pins)</li>
+<li>Check the data sheet for each part to ensure all support circuitry (e.g., external resistors for configuration) is present</li>
+<li>If an external oscillator or crystal is used, check that all support circuitry is present (e.g., low-ESR X7R capacitors)</li>
+<li>Check that crossing wires that should be connected have a dot at the intersection, and those that should not be connected do not have a dot</li>
+<li>For ICs, check that all power and ground pins are connected</li>
+<li>Run the schematic design rules check and resolve all errors</li>
+</ol>
+<h3 id="design-for-reliability">Design for Reliability</h3>
+<ol>
+<li>When using an analog to digital converter, it&rsquo;s a good idea to filter the signal in hardware first with a <a href="http://www.electronics-tutorials.ws/filter/filter_4.html">band pass filter</a>. This helps eliminate spurious noise that can corrupt your readings</li>
+<li>De-bounce all mechanical switches in hardware</li>
+<li>Check that all resistors have a wattage listed, and that wattage has at least a 50% margin</li>
+<li>Check that all capacitors have a working voltage listed, and that working voltage has at least a 25% margin</li>
+<li>Add a fuse to each power rail to help protect the circuit against accidental damage (e.g., shorting power and ground). Buy extra fuses.</li>
+<li>Power supply has a 25% current safety margin over the maximum calculated operating current</li>
+</ol>
+<h3 id="for-ics-make-sure">For ICs, make sure:</h3>
+<ol>
+<li>Bypass/decoupling capacitors are present for each chip. (0.1 uF ceramic for every power pin AND 1 uF, 10 uF, or 100 uF tantalum for every 10 to 20 ICs) (see <a href="/bypass-capacitor-basics/">Bypass Capacitor Basics page</a>)</li>
+<li>Pull up or pull down resistors are used, rather than hardwiring signal pins to power planes</li>
+<li>Pull up or pull down resistors are used on all unused IC inputs. One exception is microcontrollers, which should have unused I/O pins tied to test points</li>
+</ol>
+<h3 id="design-for-testing">Design for Testing</h3>
+<ol>
+<li>Critical signals are connected to headers and/or test points to facilitate easy testing and debugging</li>
+<li>Test points are attached to key signals or unused pins that may be useful in the future (e.g., extra microcontroller I/O pins)</li>
+<li>Zero-ohm resistors are used in series on critical nets (e.g., power nets) to allow easy troubleshooting of circuit subsystems</li>
+</ol>
+<h3 id="design-for-manufacturabilityserviceaccessibilityassembly">Design for Manufacturability/Service/Accessibility/Assembly</h3>
+<ol>
+<li>Group components into labeled modules matching with the labels on the block diagram</li>
+<li>There is a way to connect power to each board (e.g., a connector)</li>
+<li>Connectors are used for off-board connections. Always include at least one ground wire/signal return path in connections between boards</li>
+<li>Check that in-system programming headers exist and include any required support circuitry (e.g., pull-up resistors). This information can be found in the microcontroller data sheet.</li>
+<li>Check that all components have a real part number (meaning you could copy and paste the part number into a distributor&rsquo;s search engine and return one part). Resistors, capacitors, and inductors can be labeled with their values (e.g., 0.1uF) instead of the full part number.</li>
+<li>Add a surface-mount LED and current-limiting resistor to each power rail to provide a visual indication that the power supplies are on</li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/misc/schematic-checklist.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

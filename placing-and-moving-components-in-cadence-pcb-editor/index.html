@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Placing and moving components in Cadence PCB Editor</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>While it is easy to place components using the mouse, most designs require precise placement of some components (e.g., to align parallel headers). This tutorial walks through how to place components at a specific X-Y coordinate, determine the X-Y coordinates of a component, measure the distance between two components, move an existing component to a specific X-Y coordinate, and move an existing component relative to its current location.</p>
+<h2 id="how-do-you-place-a-component-at-a-specific-x-y-coordinate">How do you place a component at a specific X-Y coordinate?</h2>
+<ol>
+<li>
+<p>Choose Place &gt; Manually&hellip; (see Figure 1). The Placement dialog box appears (see Figure 2).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0194.png"><img src="/larger/image0194.png" alt="Figure 1: Place &amp;gt; Manually&amp;hellip; menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Place &amp;gt; Manually&amp;hellip; menu</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0195.png"><img src="/larger/image0195.png" alt="Figure 2: Placement dialog box"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Placement dialog box</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Check the box next to the part that you want to place, but <strong>do not place it yet</strong>. Instead, go to the command line at the bottom of the screen and type the desired placement coordinates in the following format: x x-coordinate y-coordinate</p>
+</li>
+</ol>
+<p><em>Example:</em></p>
+<p>Command &gt; x 0 0 will place the component at the origin (0,0)</p>
+<ol start="3">
+<li>
+<p>Press <em>Enter</em> to place the component at the desired coordinates (see Figure 3).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0196.png"><img src="/larger/image0196.png" alt="Figure 3: Component placed at origin (0,0)"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: Component placed at origin (0,0)</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="how-do-you-determine-the-current-coordinates-of-a-component">How do you determine the current coordinates of a component?</h2>
+<ol>
+<li>
+<p>Choose Display &gt; Element (see Figure 4) and click on the component you would like to examine. The Show Element dialog box will appear and show the current coordinates of the component (see Figure 5).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0197.png"><img src="/larger/image0197.png" alt="Figure 4: Display &amp;gt; Element menu option"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: Display &amp;gt; Element menu option</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0198.png"><img src="/larger/image0198.png" alt="Figure 5: Coordinates of a placed component"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Coordinates of a placed component</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="how-do-you-measure-the-distance-between-two-components">How do you measure the distance between two components?</h2>
+<ol>
+<li>
+<p>Choose Display &gt; Measure (see Figure 6). The command line will ask you to &ldquo;Make two picks for the distance calculator&rdquo; (see Figure 7).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0199.png"><img src="/larger/image0199.png" alt="Figure 6: Display &amp;gt; Measure menu option"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: Display &amp;gt; Measure menu option</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0200.png"><img src="/larger/image0200.png" alt="Figure 7: Command line message for Measure tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: Command line message for Measure tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click parts of two components (e.g., a pin of a resistor and a pin of a capacitor). The Measure dialog box will appear and show the distance between the selected points (see Figure 8).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0201.png"><img src="/larger/image0201.png" alt="Figure 8: Measured distance between resistor and capacitor pins"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Measured distance between resistor and capacitor pins</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="how-do-you-move-an-existing-component-to-a-specific-x-y-coordinate">How do you move an existing component to a specific  X-Y coordinate?</h2>
+<ol>
+<li>
+<p>Right-click on the component and select &ldquo;Move&rdquo;</p>
+</li>
+<li>
+<p>Use the command line to enter a specific coordinate in the x (x x-coordinate) or y (y y-coordinate) direction.</p>
+</li>
+</ol>
+<p><em>Examples:</em></p>
+<p>A component is at (25,75).</p>
+<p>Command &gt; x 200 will move the component to (200,75) (see Figure 9)</p>
+<p>Command &gt; y 200 will move the component to (25, 200) (see Figure 10)</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0202.png"><img src="/larger/image0202.png" alt="Figure 9: Moving a component to an absolute x coordinate"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Moving a component to an absolute x coordinate</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0203.png"><img src="/larger/image0203.png" alt="Figure 10: Moving a component to an absolute Y coordinate"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Moving a component to an absolute Y coordinate</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="how-do-you-move-a-component-relative-to-its-current-position">How do you move a component relative to its current position?</h2>
+<ol>
+<li>
+<p>Right-click on the component and select &ldquo;Move&rdquo;</p>
+</li>
+<li>
+<p>Use the command line to enter a relative movement in one of the following formats:</p>
+</li>
+</ol>
+<p>ix x-units</p>
+<p>iy y-units</p>
+<p>ix x-units y-units</p>
+<h3 id="examples">Examples</h3>
+<p>A component is at (1000,2000).</p>
+<p>Command &gt; ix 200 will move the component to (1200, 2000)</p>
+<p>Command &gt; iy 200 will move the component to (1000, 2200)</p>
+<p>Command &gt; ix 200 -500 will move the component to (1200,1500) (see Figure 11)</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0204.png"><img src="/larger/image0204.png" alt="Figure 11: Results of relative movement"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 11: Results of relative movement</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p><em>Based on a tutorial by Seana O&rsquo;Reilly</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/designing-pcbs/placing-and-moving-components-in-cadence-pcb-editor.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

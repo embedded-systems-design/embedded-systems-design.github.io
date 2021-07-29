@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Creating a custom SMD footprint manually in Cadence</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually. A <a href="http://www.onsemi.com/pub_link/Collateral/MCH3382-D.PDF">MCH3382 Power MOSFET</a> from ON Semiconductor will be used as an example.</p>
+<h3 id="how-do-you-create-a-custom-smd-pad-manually-in-cadence">How do you create a custom SMD pad manually in Cadence?</h3>
+<ol>
+<li>
+<p>First, find the soldering footprint (sometimes named slightly differently, depending on manufacturer) in the <a href="http://www.onsemi.com/pub_link/Collateral/MCH3382-D.PDF">component datasheet</a> (see Figure 1).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0130.png"><img src="/larger/image0130.png" alt="Figure 1: Recommended soldering footprint for MCH3382 Power MOSFET"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Recommended soldering footprint for MCH3382 Power MOSFET</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In Windows, open Pad Editor in the Cadence folder in the Start Menu. The Pad Editor window will appear (see Figure 2). The pad editor will allow you to create a padstack for the three individual pads in the footprint. Select &ldquo;SMD Pin&rdquo; under &ldquo;Select padstack usage:&rdquo; and select &ldquo;Rectangle&rdquo; under &ldquo;Select the default pad geometry&rdquo;.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_163.jpg"><img src="/figures/figure_163.jpg" alt="Figure 2: Pad Editor main window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Pad Editor main window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the &ldquo;Units&rdquo; section of the Pad Editor window (located in the bottom left corner), change the units to match the units in the component datasheet (see Figure 2). For the MCH3382, the footprint is in millimeters (mm).</p>
+</li>
+<li>
+<p>Click the Design Layers tab and select the BEGIN LAYER (see Figure 3). Choose a Geometry of Rectangle and enter the width and height (found in the component data sheet) of a single pad.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_164.jpg"><img src="/figures/figure_164.jpg" alt="Figure 3: Layers tab with BEGIN LAYER and Rectangle Pad selected"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: Layers tab with BEGIN LAYER and Rectangle Pad selected</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Save the padstack in the same location as your custom symbols. The following folder is the default:</p>
+</li>
+</ol>
+<pre><code>C:/Program Files/Cadence/SPB_17.2/share/pcb/pcb_lib/symbols
+</code></pre><ol start="6">
+<li>Repeat steps 1 - 5 for any additional different pads in your component. <em>You do <strong>not</strong> need to recreate the same pad if it is used multiple times in a single footprint.</em></li>
+</ol>
+<h2 id="how-do-you-create-a-custom-smd-footprint-manually-in-cadence">How do you create a custom SMD footprint manually in Cadence?</h2>
+<ol>
+<li>Open PCB Editor and create a &ldquo;New Drawing&rdquo;. Name the drawing after the package name, and set the &ldquo;Drawing Type&rdquo; to Package symbol (see Figure 4). Click OK.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/custom-smd-footprint_media/image1.png"><img src="/custom-smd-footprint_media/image1.png" alt="Figure 4: New Drawing dialog box"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: New Drawing dialog box</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="2">
+<li>Select the Color / Visibility tab under display (see Figure 5) to adjust the footprint colors to contrast against the black background (see Figure 6).</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/custom-smd-footprint_media/image2.png"><img src="/custom-smd-footprint_media/image2.png" alt="Figure 5: Color/Visibility selection"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Color/Visibility selection</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/custom-smd-footprint_media/image3.jpeg"><img src="/custom-smd-footprint_media/image3.jpeg" alt="Figure 6: Color Dialog with all subclasses set to white for better contrast"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: Color Dialog with all subclasses set to white for better contrast</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="3">
+<li>
+<p>In the Color selection, select white and double-click on the white box beside the All subclass to set all of the subclasses to white (see Figure 6). Click OK.</p>
+</li>
+<li>
+<p>Choose Setup &gt; Grids&hellip; to adjust the grid layout and spacing. In the Define Grid dialog, check the &ldquo;Grids On&rdquo; checkbox, enter 0.1 for the Spacing in both the x and y dimensions, and click OK (see Figure 7).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0132.png"><img src="/larger/image0132.png" alt="Figure 7: Define Grid dialog"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: Define Grid dialog</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Place an origin mark by going to Setup &gt; Change Drawing Origin (see Figure 8)</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/custom-smd-footprint_media/image4.png"><img src="/custom-smd-footprint_media/image4.png" alt="Figure 8: Changing the location of the drawing origin"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Changing the location of the drawing origin</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Choose Layout &gt; Pins and click on the &ldquo;Options&rdquo; tab on the right side of the screen (see Figure 9).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/custom-smd-footprint_media/image5.png"><img src="/custom-smd-footprint_media/image5.png" alt="Figure 9: Options tab for the Pin layout tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Options tab for the Pin layout tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click the &ldquo;&hellip;&rdquo; button next to &ldquo;Padstack&rdquo; and select the padstack that you made in the first part of this tutorial.</p>
+</li>
+<li>
+<p>Determine an origin for your footprint based on the measurements in the datasheet. For the MCH3382, the origin will be where the vertical and horizontal measurement lines intersect in the bottom center of the footprint (see Figure 10).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/custom-smd-footprint_media/image6.png"><img src="/custom-smd-footprint_media/image6.png" alt="Figure 10: Recommended soldering footprint for MCH3382 Power MOSFET"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Recommended soldering footprint for MCH3382 Power MOSFET</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the Command window at the bottom of the screen, type x -65 0 to place the first pad to the left of the origin. Type x 65 0 to place the second pad to the right of the origin, and x 0 210 to place the third pad above.</p>
+</li>
+<li>
+<p>Next, add a box around the footprint so that it is clear the pads are related when laying out the printed circuit board. Select the Rectangle tool in the toolbar, and click the Options tab on the right side of the screen. Set the &ldquo;Active Class and Subclass&rdquo; to Package Geometry and Assembly_Top, respectively.</p>
+</li>
+<li>
+<p>In the Command window at the bottom of the screen, type x -80 0 and press return to place the left corner of the box. Then, type x 80 210 to place the top right corner of the box. Right-click and select &ldquo;Done&rdquo;. The footprint should now look like Figure 11.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0134.png"><img src="/larger/image0134.png" alt="Figure 11: Footprint after adding pads"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 11: Footprint after adding pads</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Next, we need to add a reference designator that will be visible in the PCB layout. Choose Layout &gt; Labels &gt; RefDes. Select the center of the component and type &ldquo;U?&rdquo;. Right-click and select &ldquo;Done&rdquo;. The footprint should now look like Figure 12.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/custom-smd-footprint_media/image7.png"><img src="/custom-smd-footprint_media/image7.png" alt="Figure 12: Footprint after adding reference designator"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 12: Footprint after adding reference designator</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Save and close PCB Editor. You have successfully made a custom SMD footprint!</p>
+</li>
+</ol>
+<p><em>Based on a tutorial by Aaron Dolgin, updated by Sheena Benson (2/2020)</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/schematics-to-pcbs/footprints/creating-a-custom-smd-footprint-manually-in-cadence.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

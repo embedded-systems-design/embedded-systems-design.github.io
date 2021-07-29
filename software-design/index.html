@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Software design</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="what-is-a-finite-state-machine">What is a finite state machine?</h2>
+<p>A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &ldquo;states&rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:</p>
+<ul>
+<li><a href="https://www.mathworks.com/videos/understanding-state-machines-what-are-they-1-of-4-90488.html">Understanding State Machines, Part 1: What are they? from Mathworks</a></li>
+<li><a href="https://www.mathworks.com/videos/understanding-state-machines-why-use-them-2-of-4-90489.html">Understanding State Machines, Part 2: Why Use Them? from Mathworks</a></li>
+<li><a href="https://www.mathworks.com/videos/understanding-state-machines-mealy-and-moore-machines-3-of-4-90490.html">Understanding State Machines, Part 3: Mealy and Moore Machines from Mathworks</a></li>
+<li><a href="https://www.mathworks.com/videos/understanding-state-machines-harel-state-machines-4-of-4-90491.html">Understanding State Machines, Part 4: Harel State Machines from Mathworks</a></li>
+<li><a href="https://www.embedded.com/implementing-finite-state-machines-in-embedded-systems/">Implementing FSMs in Embedded Systems</a></li>
+</ul>
+<h2 id="what-is-unified-modeling-languageâ-uml">What is Unified Modeling Languageâ„¢ (UML®)?</h2>
+<p>UML is an industry-standard specification for representing software designs. It is equivalent to schematics for hardware designs. More information on UML can be found at <a href="http://uml.org/">uml.org</a>. Official documentation on UML is available at:</p>
+<ul>
+<li><a href="https://www.uml-diagrams.org/uml-25-diagrams.html">25 UML Diagrams</a></li>
+<li><a href="https://www.uml-diagrams.org/index-examples.html">Official UML Examples</a></li>
+<li><a href="https://creately.com/blog/diagrams/uml-diagram-types-examples/">UML Diagram Types Guide: Learn About All Types of UML Diagrams with Examples</a> from creately</li>
+<li><a href="https://tallyfy.com/uml-diagram/">All You Need to Know About UML Diagrams: Types and 5+ Examples</a> from Tallyfy</li>
+<li><a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/state-machine-diagram-vs-activity-diagram/">State Machine Diagram vs. Activity Diagram</a> from Visual Paradigm</li>
+<li><a href="https://www.quora.com/What-is-the-difference-between-an-activity-and-a-statechart-diagram">What is the difference between an activity and a state chart diagram?</a> from Quora</li>
+<li><a href="https://stackoverflow.com/questions/5559171/difference-between-statechart-and-activity-diagram">Difference between StateChart and Activity Diagram</a> from stackoverflow</li>
+</ul>
+<p>Common UML diagrams that you may use include:</p>
+<p><strong>Activity Diagram.</strong> An <a href="https://en.wikipedia.org/wiki/Activity_diagram">Activity Diagram</a> (similar to a flowchart) captures the overall behavior of a program from start to finish.</p>
+<ul>
+<li><a href="https://www.uml-diagrams.org/activity-diagrams.html">Official Documentation on Activity Diagrams</a></li>
+<li><a href="https://www.guru99.com/uml-activity-diagram.html">Activity Diagram in UML: Symbol, Components, &amp; Example</a></li>
+<li><a href="https://www.tutorialspoint.com/uml/uml_activity_diagram.htm">UML - Activity Diagrams</a> from tutorialspoint</li>
+<li><a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/#activity-diagram">What is an Activity Diagram</a> from Visual Paradigm</li>
+<li><a href="http://www.agilemodeling.com/artifacts/activityDiagram.htm">UML 2 Activity Diagrams: An Agile Introduction</a> tutorial</li>
+<li><em>Example:</em> <a href="http://www.uml-diagrams.org/activity-diagrams-examples.html">Activity diagram for online shopping</a></li>
+</ul>
+<p><strong>Statechart Diagram.</strong> A <a href="https://en.wikipedia.org/wiki/State_diagram">Statechart Diagram</a> is a UML representation for a finite state machine. A <em><a href="https://en.wikipedia.org/wiki/Finite-state_machine">finite state machine</a></em> (also called a <em>state machine</em>) is a type of software design where your program is only in a single state at a time. The program changes state when a particular event happens, and remains in the same state if no event (or an unknown event) happens. This makes your program less likely to have unpredictable behavior, and is commonly used for copy machines, stoplight controllers, etc.</p>
+<ul>
+<li><a href="https://www.uml-diagrams.org/state-machine-diagrams.html">Official Documentation on State Machine Diagrams</a></li>
+<li><a href="https://www.guru99.com/state-machine-transition-diagram.html">Statechart UML Tutorial with Example</a></li>
+<li><a href="https://www.tutorialspoint.com/uml/uml_statechart_diagram.htm">UML - Statechart Diagrams</a> from tutorialspoint</li>
+<li><a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/#state-machine-diagram">What is a State Machine Diagram?</a> from Visual Paradigm</li>
+<li><a href="http://is.ifmo.ru/automata_en/_UMLFSM.pdf">UML Tutorial: Finite State Machines</a></li>
+<li><a href="http://www.agilemodeling.com/artifacts/stateMachineDiagram.htm">UML 2 State Machine Diagrams: An Agile Introduction</a> tutorial</li>
+<li><a href="http://www.eetimes.com/document.asp?doc_id=1271837">State Machine Constructs</a> tutorial from EE Times</li>
+<li><a href="http://www.ti.com/lit/an/slaa402a/slaa402a.pdf">Finite State Machines for the Texas Instruments MSP430 microcontroller</a> application note</li>
+</ul>
+<p><strong>Sequence Diagram</strong></p>
+<ul>
+<li><a href="https://www.uml-diagrams.org/sequence-diagrams.html">Official Documentation on Sequence Diagrams</a></li>
+<li><a href="https://www.guru99.com/interaction-collaboration-sequence-diagrams-examples.html">Interaction, Collaboration, and Sequence Diagrams with Examples</a></li>
+<li><a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/#sequence-diagram">What is a Sequence Diagram?</a> from Visual Paradigm</li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-sequence-diagram-and-activity-diagram/">Difference between Sequence Diagram and Activity Diagram</a> from GeeksforGeeks</li>
+</ul>
+<h2 id="what-software-do-i-use-to-create-a-uml-diagram">What software do I use to create a UML diagram?</h2>
+<ul>
+<li><a href="http://argouml.tigris.org/">ArgoUML</a> is an excellent free open-source software engineering tool that supports the creation of a wide variety of UML diagrams. It runs on Windows, Mac OS X, and Linux.</li>
+<li><a href="http://staruml.io/">StarUML</a> is another excellent freely-available program that supports the creation of a wide variety of UML diagrams. it runs on Windows, Mac OS X, and Linux.</li>
+<li></li>
+<li>Draw.Io - Recommended. Add-on to google drive documents, free - <a href="http://draw.io/">http://draw.io</a></li>
+<li>LucidChart - cloud-based collaborative diagramming app ASU has a site license if you use your ASU google account.  Or get an Education Account.  Add as a addin via google drive.</li>
+</ul>
+<h2 id="what-is-pseudocode">What is pseudocode?</h2>
+<p>Pseudocode is a near-English representation of a program that allows you to represent the functionality of a program without worrying about the syntax. It is useful when planning how software will work. Pseudocode can be created in any text editor or word processing program. An example of pseudocode for the game Monopoly is available <a href="http://www.wiley.com/college/busin/icmis/oakman/outline/chap05/slides/pseudo.htm">here</a>.</p>
+<p><em>Many links above suggested by Cecilia La Place</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/misc/software-design.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

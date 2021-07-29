@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Finding existing PCB footprints for Cadence PCB Editor</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="where-can-i-find-a-list-of-existing-pcb-footprints-for-cadence-pcb-editor">Where can I find a list of existing PCB footprints for Cadence PCB Editor?</h2>
+<p>While Cadence does have some built-in footprint libraries, they are limited due to the hundreds of thousands of different parts in existence. Additionally, most companies make their own footprints to match the specific manufacturing processes that they use.</p>
+<p>In most cases, it is easier and faster to build your own custom footprints for all components. However, there are some built-in libraries that can be found in the following directory:</p>
+<p>C:/Cadence/SPB_17.4-silent/share/pcb/pcb_lib/symbols</p>
+<p>Within this folder, you can double-click on the .dra files to see footprints and the .pad files to see padstacks in PCB Editor.</p>
+<p>Additionally, there is a <a href="https://drive.google.com/file/d/1zVosc_4U5ubucQU0fOhIIONPz780_0aY/view">footprints document</a> that will show you most of the footprints that exist in the library.</p>
+<h2 id="what-are-the-most-commonly-used-built-in-padstacks">What are the most commonly used built-in padstacks?</h2>
+<p>There are a number of useful built-in through-hole padstacks located in:</p>
+<p>C:/Cadence/SPB_17.4-silent/share/pcb/pcb_lib/symbols</p>
+<p>that follow the naming convention:</p>
+<p>pad(number1)(circle/square)(number2)d where</p>
+<ul>
+<li>&ldquo;number1&rdquo; is the outer diameter of the copper ring outlining the pad (see Figure 1, blue ring),</li>
+<li>&ldquo;circle/square&rdquo; is the shape of the pad (cir is most common for this class),</li>
+<li>&ldquo;number2&rdquo; is the diameter of the hole in the center of the pad (see Figure 1, red circle)</li>
+</ul>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0164.png"><img src="/larger/image0164.png" alt="Figure 1: Example through-hole Padstack, where the blue ring is copper and the red is the hole"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Example through-hole Padstack, where the blue ring is copper and the red is the hole</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>For example, pad93cir56d.pad is a padstack with an outer copper ring diameter of 93 mils (not mm), and a center hole diameter of 56 mils.</p>
+<p>For surface-mount padstacks, it is easiest to make your own using the Padstack Editor application.</p>
+<h2 id="what-are-the-most-commonly-used-built-in-footprints">What are the most commonly used built-in footprints?</h2>
+<p>First, look in the manufacturer&rsquo;s datasheet for each component and identify the package type and footprint dimensions. Package type information is typically near the beginning or end of the datasheet. Footprint dimensions are typically near the end of the datasheet.</p>
+<p>Once you have identified the package type and footprint dimensions, there are a number of useful built-in through-hole and surface mount footprints located in:</p>
+<p>C:/Cadence/SPB_17.4-silent/share/pcb/pcb_lib/symbols</p>
+<h3 id="capacitors-through-hole">Capacitors (through-hole)</h3>
+<ul>
+<li>cap196 - cylindrical vertical-mount capacitor (e.g., electrolytic, tantalum) with 100-mil center-to-center spacing between pins</li>
+<li>cap300 - circular flat or rectangular vertical-mount capacitor (e.g., ceramic, film) with 300-mil center-to-center spacing between pins</li>
+<li>cap400 - axial horizontal-mount capacitor with 400-mil center-to-center spacing between pins</li>
+<li>cap600 - axial horizontal-mount capacitor with 600-mil center-to-center spacing between pins</li>
+<li>cap1000 - axial horizontal-mount capacitor with 1000-mil center-to-center spacing between pins</li>
+<li>cap1500 - axial horizontal-mount capacitor with 1500-mil center-to-center spacing between pins</li>
+</ul>
+<h3 id="capacitors-surface-mount">Capacitors (surface mount)</h3>
+<ul>
+<li>smc0805 - rectangular surface mount capacitor of size 0805 (0.08&quot; x 0.05&quot;)</li>
+<li>smc1206 - rectangular surface mount capacitor of size 1206 (0.12&quot; x 0.06&quot;)</li>
+<li>smc1210 - rectangular surface mount capacitor of size 1210 (0.12&quot; x 0.10&quot;) </li>
+<li>smc1812 - rectangular surface mount capacitor of size 1812 (0.18&quot; x 0.12&quot;)</li>
+</ul>
+<h3 id="diodes-inductors-resistors-and-other-axial-lead-components-through-hole-horizontal-mount">Diodes, inductors, resistors, and other axial-lead components (through-hole, horizontal mount)</h3>
+<ul>
+<li>res400 - resistor with a 400-mil center-to-center spacing between holes</li>
+<li>res500 - resistor with a 500-mil center-to-center spacing between holes</li>
+<li>res600 - resistor with a 600-mil center-to-center spacing between holes</li>
+<li>res800 - resistor with a 800-mil center-to-center spacing between holes</li>
+<li>res1000 - resistor with a 1000-mil center-to-center spacing between holes</li>
+</ul>
+<h3 id="headers-and-jumpers-through-hole">Headers and Jumpers (through hole)</h3>
+<ul>
+<li>jumper1 - 1-pin header</li>
+<li>jumper2 - 2-pin header with 100-mil center-to-center spacing between pins</li>
+<li>jumper3 - 3-pin single-row header with 100-mil center-to-center spacing between pins</li>
+<li>jumper4 - 4-pin single-row header with 100-mil center-to-center spacing between pins</li>
+<li>jumper5 - 5-pin single-row header with 100-mil center-to-center spacing between pins</li>
+<li>jumper8 - 8-pin (4x2) double-row header with 100-mil center-to-center spacing between pins</li>
+<li>jumper14 - 14-pin (7x2) double-row header with 100-mil center-to-center spacing between pins</li>
+<li>jumper16 - 16-pin (8x2) double-row header with 100-mil center-to-center spacing between pins</li>
+</ul>
+<h3 id="resistors-surface-mount">Resistors (surface mount)</h3>
+<ul>
+<li>smr0805 - rectangular surface mount resistor of size 0805 (0.08&quot; x 0.05&quot;)</li>
+<li>smr1206 - rectangular surface mount resistor of size 1206 (0.12&quot; x 0.06&quot;)</li>
+<li>smr1210 - rectangular surface mount resistor of size 1210 (0.12&quot; x 0.10&quot;) </li>
+<li>smr2010 - rectangular surface mount resistor of size 2010 (0.20&quot; x 0.10&quot;)</li>
+<li>smr2512 - rectangular surface mount resistor of size 2512 (0.25&quot; x 0.12&quot;)</li>
+</ul>
+<h3 id="test-points-used-to-provide-easy-access-for-a-multimeter-or-oscilloscope-probe-through-hole">Test Points (used to provide easy access for a multimeter or oscilloscope probe) (through hole)</h3>
+<ul>
+<li>tp1 - square pad with round hole in the middle</li>
+</ul>
+<h3 id="transistor-outline-to-package-typeshttpeesemicomto-typeshtmthrough-hole"><a href="http://eesemi.com/to-types.htm">Transistor Outline (TO) Package Types</a> (through hole)</h3>
+<ul>
+<li>to(number), where &ldquo;number&rdquo; is the number of the specific to case style from the component data sheet (e.g., a transistor with a to92 package type)</li>
+</ul>
+<p>If your package type and footprint dimensions do not match one of those listed above, then you must <a href="/creating-custom-footprints/">create your own custom footprint</a>.</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/schematics-to-pcbs/footprints/finding-existing-pcb-footprints-for-cadence-pcb-editor.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

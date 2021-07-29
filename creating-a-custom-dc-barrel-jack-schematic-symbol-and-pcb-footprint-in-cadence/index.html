@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)</p>
+<p>For this tutorial, we will utilize the <a href="https://www.sparkfun.com/products/10811">PRT-10811</a> breadboard-compatible DC barrel jack adapter sold by Sparkfun, and will be referring to its product drawing found <a href="http://cdn.sparkfun.com/datasheets/Prototyping/18742.pdf">here</a> .</p>
+<p>Part 1: Creating a Barrel Jack Schematic Symbol</p>
+<ol>
+<li>
+<p>Open Capture CIS. You can optionally create a new project, design, and/or library, or you can use an existing library.</p>
+</li>
+<li>
+<p>Right click your library and select &ldquo;New Part&rdquo;.</p>
+</li>
+<li>
+<p>Name the part and set the part reference prefix to J, as shown. Leave the PCB Footprint field blank (unless you did part 2 first, then use the name of the footprint).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_031.png"><img src="/figures/figure_031.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Open up the product drawing for the barrel jack adapter. Note the &ldquo;Circuit Diagram&rdquo; section on the left with the pins numbered 1, 3, 2. We will be drawing this symbol by hand in Cadence.</p>
+</li>
+<li>
+<p>Place the three pins spaced out vertically with their numbers, positions, and names according to the drawing.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_032.png"><img src="/figures/figure_032.png" alt="Graphical user interface, application, table, Excel Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface, application, table, Excel Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Enlarge the bounding box by clicking on it and then dragging the pink corner handles. Then, space the pins out farther. Since drawn shapes will have their vertices snapped to the grid of dots we can see in the background, we will need some extra space to make this symbol.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_025.png"><img src="/figures/figure_025.png" alt="Table, calendar Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Table, calendar Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+ 
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_026.png"><img src="/figures/figure_026.png" alt="Calendar Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Calendar Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the line tool (top of the shapes toolbar). Draw a series of lines representing the tip spring, as shown in the drawing. After drawing one line segment, you can begin another at the endpoint of the previous line.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_027.png"><img src="/figures/figure_027.png" alt="Graphical user interface, application, Teams Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface, application, Teams Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_033.png"><img src="/figures/figure_033.png" alt="Chart, line chart Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Chart, line chart Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Draw more lines representing the shunt terminal, as pictured. The arrow is imitated with two lines forming an angle pointing downward.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_034.png"><img src="/figures/figure_034.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Start drawing the center terminal with a single, short straight line.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_035.png"><img src="/figures/figure_035.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the rectangle tool (second from the top of the shapes toolbar). Draw a rectangle, 1 wide and 4 tall, centered at the left end of this line.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_036.png"><img src="/figures/figure_036.png" alt="Chart, line chart Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Chart, line chart Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Draw two straight horizontal lines, one above the center of the rectangle and one below.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_028.png"><img src="/figures/figure_028.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_029.png"><img src="/figures/figure_029.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the Arc tool now (second from the bottom of the shape toolbar shown). Click first the left end of the top line, then the space between the lines and one to the left, then the left end of the bottom line. This will cap off the center terminal.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_037.png"><img src="/figures/figure_037.png" alt="Chart, diagram Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Chart, diagram Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Move the pin names so they don&rsquo;t overlap the symbol. If desired or needed, readjust the positions of the lines/shapes slightly.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_038.png"><img src="/figures/figure_038.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>You now have a barrel jack schematic symbol. Nice work!</p>
+</li>
+</ol>
+<h2 id="part-2-creating-a-barrel-jack-pcb-footprint">Part 2: Creating a Barrel Jack PCB Footprint</h2>
+<p>Creating the Padstack</p>
+<ol>
+<li>
+<p>Open up Padstack Editor. Select Thru-Pin for padstack usage, Circle for pad geometry.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_039.png"><img src="/figures/figure_039.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Look at the dimensions in the drawing under &ldquo;Recommended P.C.B. Layout&rdquo;. The pins aren&rsquo;t circular, so you&rsquo;ll want the drill hole to be the size of the longest dimension plus tolerances (1.6+0.3=1.9 mm -&gt; 74.8 mils) to ensure it isn&rsquo;t too small. Consult the <a href="https://peraltastudios.engineering.asu.edu/pcb-mill-specs/">PCB Mill Specs</a> and round up to the nearest drill size for the drill diameter.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_040.png"><img src="/figures/figure_040.png" alt="Graphical user interface Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Define a drill symbol with the same radius as your drill hole.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_041.png"><img src="/figures/figure_041.png" alt="Graphical user interface, application Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface, application Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select your regular pad size. You&rsquo;ll want one that guarantees sufficient annular ring and allows adequate clearance between pins. Annular ring can be calculated using the following equation from ProtoExpress.com (read more about annular ring <a href="https://www.protoexpress.com/blog/dont-let-annular-rings-drive-you-crazy/">there</a> ).</p>
+<p>Annular ring width = (Diameter of the pad - Diameter of the finished hole) / 2</p>
+<p>According to this equation, a pad diameter of 100 is sufficient for the minimum annular ring of 10 needed to satisfy Peralta&rsquo;s DFM constraints. 128 was chosen for this example as this value results in a larger annular ring yet is still small enough to avoid pin overlap when used in its intended footprint.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_042.png"><img src="/figures/figure_042.png" alt="Graphical user interface Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select an anti pad and thermal pad size approximately 20 mils larger than the size of the regular pad.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_043.png"><img src="/figures/figure_043.png" alt="Graphical user interface Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Add default internal layers identical to the outer layers, so the program doesn&rsquo;t give you an error when saving. As a shortcut, you can actually drag your cursor across a row so the three pads' settings are selected together and then copy and paste this row into other layers.</p>
+</li>
+<li>
+<p>Define the soldermask layers with a radius about 20 mils larger than the thermal/anti pads.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_044.png"><img src="/figures/figure_044.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Save the padstack with a memorable enough name to find it in the list later. Make sure to use the Save button in the file menu, not the one on the Summary page (which only saves the summary).</p>
+</li>
+</ol>
+<h2 id="creating-the-footprint">Creating the Footprint</h2>
+<ol>
+<li>
+<p>Open PCB Editor, create a new drawing, enter the name you&rsquo;ll use for your PCB footprint, and select &ldquo;Package symbol&rdquo;.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_045.png"><img src="/figures/figure_045.png" alt="Graphical user interface Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Reset the origin so it&rsquo;s somewhere you can see it. To do this, zoom in really far, then go to Setup -&gt; Change Drawing Origin and click the center of the screen. If no errors about drawing extents appear in the command window and you can see the origin, you&rsquo;re good, if not re-adjust the zoom and try again.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_046.png"><img src="/figures/figure_046.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click the &ldquo;Place Pin&rdquo; button to start placing your pins. Select the correct padstack, then place pin 1 at the drawing origin. You can do this either by simply clicking the origin, or by typing x 0 0 into the command window to select (0, 0) as the coordinates for this operation.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_047.png"><img src="/figures/figure_047.png" alt="A picture containing text, screenshot, monitor, computer Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">A picture containing text, screenshot, monitor, computer Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>To determine the placement of pin 2, refer to the dimensions given in the drawing. Pin 1 is 13.6 mm to the right of the front of the physical package, while pin 2 is 7.8 mm to the right of the same edge. This means that the distance between them is (13.6 - 7.8) == 5.8 mm. Since pin 2 is to the left of pin 1, we put a negative sign on the number, and we need to convert to mils . Mils = mm *39.37, so 5.8 mm * 39.37 =228.3 mils (to one decimal place).</p>
+<p>So the coordinates of pin 2 are (-228.3, 0). Use the command x -228.3, 0 to place pin 2 precisely at this point.</p>
+</li>
+<li>
+<p>Use the dimensions to place pin 3. The distance of pin 3 to the edge of the barrel jack is 10.6 mm, so to find its x-position relative to pin 1, 10.6 - 13.6 = -3mm = -118.1 mils. The y-distance is stated as 4.8 mm down (negative in our coordinate system) which rounds up to 189 mils.</p>
+<p>Thus, use x -118.1 -189 to place pin 3.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_030.png"><img src="/figures/figure_030.png" alt="A picture containing text, screenshot, monitor, electronics Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">A picture containing text, screenshot, monitor, electronics Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Place the reference designator. Click the button shaped like a capital I or a text cursor next to the Place Pin button to enter the correct mode.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_048.png"><img src="/figures/figure_048.png" alt="Graphical user interface, application Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface, application Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Click where you want the text, type J* and then hit enter. The reference designator will then appear.</p>
+</li>
+<li>
+<p>Add the package outline. This is a critical step to ensure the barrel jack will be oriented correctly in your PCB layout.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_051.png"><img src="/figures/figure_051.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Click the Add Rectangle tool, two to the right of the Reference Designator button. Using the drop-down menus on the right, make sure Active Class and Subclass are Package Geometry and Assembly_Top, respectively.</p>
+<p>The dimensions for this rectangle come from the width and length of the barrel jack stated in the drawing. Note that the jack is pointing to the left, so the width of our rectangle will be the length from the drawing (14.5 mm = 570.9 mils), the height of our rectangle will be the width from the drawing (9 mm = 354.3 mils), and it will be placed on the left side.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_049.png"><img src="/figures/figure_049.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>From the drawing, the origin of this rectangle would be 13.6 mm to the left of pin 1, and 4.5 mm above. Converting these to mils, the coordinates are (-535.4, 177.2). So type x -535.4 177.2 to place the rectangle at that location.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_050.png"><img src="/figures/figure_050.png" alt="A picture containing text, screenshot, monitor, screen Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">A picture containing text, screenshot, monitor, screen Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<p>You now have a barrel jack footprint!</p>
+<p><em>Based on a post written by Joshua Weight</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/misc/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

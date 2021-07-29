@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>SPI &amp; Shift Register Tutorial</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p><strong>Serial Communication - SPI &amp; Shift Register Tutorial</strong></p>
+<h1 id="objectives"><strong>Objectives</strong></h1>
+<p>Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).</p>
+<h1 id="resources"><strong>Resources</strong></h1>
+<p><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf">PIC16F18446 Curiosity Nano Hardware User Guide</a></p>
+<p><a href="http://www.ti.com/lit/ds/scls041i/scls041i.pdf">SN74HC595 8-Bit Shift Registers Datasheet</a></p>
+<p><a href="https://docs.google.com/document/d/1oiKwOQ0xvt14O_Bh0nONxvTRSYAj-ji6eLNhmsXVwZ4/edit">Curiosity Nano &amp; MPLAB Tutorial</a></p>
+<p><a href="https://youtu.be/s3fj0yE4xLE">YouTube Tutorial 1</a></p>
+<p><a href="https://youtu.be/RQEH6XNZmkQ">YouTube Tutorial 2</a></p>
+<h1 id="create-your-first-project"><strong>Create Your First Project</strong></h1>
+<ol>
+<li>
+<p>Open the MPLAB X IDE, you can plug the USB mini cable into the Curiosity USB debugging port. Once you plug the USB to your PC, a green LED will light up. This indicates the Curiosity board has been powered up.</p>
+</li>
+<li>
+<p>To create a new project, go to &ldquo;<strong>File</strong>&rdquo; - &ldquo;<strong>New Project</strong>&rdquo; - select &ldquo;<strong>Standalone Project</strong>&rdquo; - and click &ldquo;<strong>Next &gt;</strong>&rdquo;</p>
+</li>
+<li>
+<p>Select <strong>Device</strong> as &ldquo;<strong>PIC16F18446</strong>&rdquo; and click &ldquo;<strong>Next &gt;</strong>&rdquo;</p>
+</li>
+<li>
+<p>If you have your Curiosity Nano connected to your PC, the serial number of the device will show up.</p>
+</li>
+</ol>
+<p>Select the serial number of your Curiosity board and click <strong>&ldquo;Next &gt;.&quot;</strong></p>
+<ol start="5">
+<li>
+<p>Now you will have to select a compiler for the MPLAB X. If you haven&rsquo;t installed <strong>Microchip XC8 Compiler</strong>, you can install it by clicking the <strong>&ldquo;Download Latest.&quot;</strong></p>
+</li>
+<li>
+<p>Once the XC8 compiler has been installed, select the <strong>&ldquo;XC8&rdquo;</strong> as the compiler for this project.</p>
+</li>
+<li>
+<p>The last step is to give a name to your first project as well as the location where you want to put your project.</p>
+</li>
+<li>
+<p>Once you create a new project, you can open the MCC Code Configurator by clicking <strong>&ldquo;Tools&rdquo; - &ldquo;Embedded&rdquo;.</strong></p>
+</li>
+</ol>
+<ul>
+<li>For more details about these steps, please refer to the following tutorial: <a href="https://docs.google.com/document/d/1oiKwOQ0xvt14O_Bh0nONxvTRSYAj-ji6eLNhmsXVwZ4/edit">Curiosity Nano &amp; MPLAB Tutorial</a></li>
+</ul>
+<h1 id="2-serial-communication"><strong>2. Serial Communication</strong></h1>
+<h2 id="21-control-8-leds-using-shift-registers-with-spi-function"><strong>2.1 Control 8 LEDs using shift registers with SPI function</strong></h2>
+<p><em><strong>In this section, you will wire 8 external LEDs to the shift register and connect it to the curiosity nano board.</strong></em></p>
+<p><em>Required Hardware: Curiosity Nano, Breadboard, SN74HC595 Shift Registers, 220 Ohm resistors x8, Green LED x8</em></p>
+<h3 id="211-hardware-setup"><strong>2.1.1 Hardware Setup</strong></h3>
+<ol>
+<li>
+<p>From <a href="http://www.ti.com/lit/ds/scls041i/scls041i.pdf">SN74HC595 8-Bit Shift Registers Datasheet</a>, we know that the shift register has 8 outputs from QA to QH.</p>
+</li>
+<li>
+<p>Place the Curiosity Nano Board and the shift register onto the breadboard**,** which will take 25 rows of space. (Shown in Figure 1)</p>
+</li>
+<li>
+<p>Use 220 ohms resistors to connect 8 output pins from QA to QH on the shift register to 8 separate rows.</p>
+</li>
+<li>
+<p>Connect the Anode of the LEDs to each resistor. Connect the Cathode to Ground.</p>
+</li>
+<li>
+<p>Connect the SER, RCLK, SRCLK pin to 3 GPIO pins on Curiosity Nano Board. Connect OE to ground, and connect SRCLR to power.</p>
+</li>
+</ol>
+<ul>
+<li>For the pin assignment, please refer to the following table and Figure 1.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Shift Register pins</th>
+<th style="text-align:left">Connection</th>
+<th style="text-align:left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">QA - QH</td>
+<td style="text-align:left">LED 1 - LED 8</td>
+<td style="text-align:left">Digital output</td>
+</tr>
+<tr>
+<td style="text-align:left">SER</td>
+<td style="text-align:left">Nano - SDO1</td>
+<td style="text-align:left">Serial data output</td>
+</tr>
+<tr>
+<td style="text-align:left">RCLK</td>
+<td style="text-align:left">Nano - digital out</td>
+<td style="text-align:left">Read &amp; Latch data</td>
+</tr>
+<tr>
+<td style="text-align:left">SRCLK</td>
+<td style="text-align:left">Nano - SCK</td>
+<td style="text-align:left">SPI Clock signal</td>
+</tr>
+<tr>
+<td style="text-align:left">OE / SRCLR</td>
+<td style="text-align:left">GND / POWER</td>
+<td style="text-align:left">Enable / Clear all</td>
+</tr>
+</tbody>
+</table>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_000.png"><img src="/figures/figure_000.png" alt="The Hardware Setup for Lab 2.1 should look like this"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">The Hardware Setup for Lab 2.1 should look like this</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_001.png"><img src="/figures/figure_001.png" alt="Figure 1: Hardware setup for SPI serial communication"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Hardware setup for SPI serial communication</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>2.1.2 Software Configuration</p>
+<p>As an example and an overview of the SPI function using the oscilloscope, each bit from a byte (8 bit) of the serial data is being sent with the clock signal toggling. (Shown in Figure 2) The goal of this SPI serial communication is to transmit a Byte of data and latch those bits into 8 parallel digital output using the 74HC595 shift register.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_002.png"><img src="/figures/figure_002.png" alt="Figure 2: SPI signal displayed on Keysight Oscilloscope"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: SPI signal displayed on Keysight Oscilloscope</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Double click on an MSSP choice to add an MSSP block to the MCC under Device Resource</p>
+<p>Under the Pin Manager, you should deselect the SDI input by clicking on the gray lock symbol in the 3rd pin of Port A.</p>
+<p>Under the Pin Module, uncheck the analog option for all pins, and give a custom name to a GPIO pin for RCLK.</p>
+<p>The Code Configurator setup for Lab 2.1 should look like this:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_003.png"><img src="/figures/figure_003.png" alt="Figure 3"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Setting up the SCK, RCLK, and SDO pin</p>
+<p>Click on the MSSP1 under project resource, go to the Register tab, change the SSPEN of SSPCON1 to enabled, leave everything else as default settings.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_004.png"><img src="/figures/figure_004.png" alt="Figure 4"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>2.1.3 MCC (Microchip Code Configurator) Generated Files and Main.c</p>
+<p>Click the Generate button under the project resource, and now your projects should have all the MCC generated files.</p>
+<p>Go back to Projects, you will see two subfolders called MCC Generated Files under both Header Files and Source Files. These folders contain the generated code, functions, and macros by MCC (Microchip Code Configurator).</p>
+<p>Click the spi1.c file, and Change SSPEN to 1 under the SPI1_Initialize to enable the serial communication.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_005.png"><img src="/figures/figure_005.png" alt="Figure 5"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>After configuring the software, you can go ahead and write your own functions. We can double click the &ldquo;spi1.h&rdquo; and see all the macros that MCC generated for us.</p>
+<p>Since we are sending 8-bit information to the shift register, go back to the &ldquo;main.c&rdquo; and use the macros inside the main function. You can also add a delay function in order to see the on and off transition of the LED.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">RCLK_SetLow</span><span style="color:#111">();</span> <span style="color:#75715e">// Select/Latch the shift register (Active low)
+</span><span style="color:#75715e"></span><span style="color:#111">SPI1_WriteByte</span><span style="color:#111">(</span><span style="color:#ae81ff">255</span><span style="color:#111">);</span> <span style="color:#75715e">//Send a Byte to Slave
+</span><span style="color:#75715e"></span><span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">0.05</span><span style="color:#111">);</span> <span style="color:#75715e">//delay for data transition to finish
+</span><span style="color:#75715e"></span><span style="color:#111">RCLK_SetHigh</span><span style="color:#111">();</span> <span style="color:#75715e">// Deselect/Unlatch the shift register
+</span><span style="color:#75715e"></span><span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span> <span style="color:#75715e">//delay
+</span></code></pre></div><p>Now your main function should look something like this:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_006.png"><img src="/figures/figure_006.png" alt="Main.c for Lab 2.1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Main.c for Lab 2.1</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Click the Hammer button (
+<a href="/figures/figure_007.png"><img src="/figures/figure_007.png" alt=""  /></a>
+
+) to compile the project. If you see &ldquo;Build Successful&rdquo;, then you can flash the program to the microcontroller by clicking the Run main project button (
+<a href="/figures/figure_008.png"><img src="/figures/figure_008.png" alt=""  /></a>
+
+.) 2.1.4 Practise exercise using different numeral systems.</p>
+<p>In the exercise above, we used the decimal system to represent an 8-bit data, which is more common for humans. Computers, however, only have on and off, called a binary digit (or, bit, for short). A binary number is just a string of zeros and ones: 11011011, which often written after &ldquo;0b&rdquo;. <a href="/figures/figure_000.png">1</a> For example, 0b10100101 means 10100101 binary.</p>
+<p>As computers got bigger, it was more convenient to group bits by four, which can have 16 values (0000 to 1111, or 0 to 15). Hex = 6 and Decimal = 10, so it is called hexadecimal. In computer jargon, four bits make a nibble (sometimes spelled nybble). A nibble is one hexadecimal digit, written using a symbol 0-9 or A-F. Two nibbles make a <a href="https://draft.blogger.com/#">byte</a> (8 bits). Most computer operations use the byte, or a multiple of the byte (16 bits, 24, 32, 64, etc.). Hexadecimal makes it easier to write these large binary numbers. <a href="/figures/figure_000.png">1</a></p>
+<p>To avoid confusion with decimal, binary or other numbering systems, hexadecimal numbers are sometimes written after &ldquo;0x&rdquo;. For example, 0x63 means 63 hexadecimal. <a href="/figures/figure_000.png">1</a></p>
+<p>Table 1: Numeral systems conversion <a href="/figures/figure_000.png">1</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Hexadecimal</th>
+<th style="text-align:left">0</th>
+<th style="text-align:left">1</th>
+<th style="text-align:left">2</th>
+<th style="text-align:left">3</th>
+<th style="text-align:left">4</th>
+<th style="text-align:left">5</th>
+<th style="text-align:left">6</th>
+<th style="text-align:left">7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Binary</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">100</td>
+<td style="text-align:left">101</td>
+<td style="text-align:left">110</td>
+<td style="text-align:left">111</td>
+</tr>
+<tr>
+<td style="text-align:left">Decimal</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">7</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Hexadecimal</th>
+<th style="text-align:left">8</th>
+<th style="text-align:left">9</th>
+<th style="text-align:left">A</th>
+<th style="text-align:left">B</th>
+<th style="text-align:left">C</th>
+<th style="text-align:left">D</th>
+<th style="text-align:left">E</th>
+<th style="text-align:left">F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Binary</td>
+<td style="text-align:left">1000</td>
+<td style="text-align:left">1001</td>
+<td style="text-align:left">1010</td>
+<td style="text-align:left">1011</td>
+<td style="text-align:left">1100</td>
+<td style="text-align:left">1101</td>
+<td style="text-align:left">1110</td>
+<td style="text-align:left">1111</td>
+</tr>
+<tr>
+<td style="text-align:left">Decimal</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">13</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">15</td>
+</tr>
+</tbody>
+</table>
+<p>Reference: <a href="/figures/figure_000.png">1</a> &ldquo;Hexadecimal,&rdquo; Wikipedia, The Free Encyclopedia, Available: <a href="https://draft.blogger.com/#">https://simple.wikipedia.org/w/index.php?title=Hexadecimal&amp;oldid=6838913</a>, Accessed March 7, 2020.</p>
+<p>Now, can you write your functions using the hexadecimal system and binary system to control the LEDs with various patterns with SPI serial communication functions?</p>
+<p>Go back to the Main.c file and modify the code to add up and display the hexadecimal number from 0x00 to 0xFF on the 8 LEDs.</p>
+<p>Try following code in your <strong>Main.c</strong> program:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">data</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0xFF</span><span style="color:#111">;</span> <span style="color:#111">data</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75715e">// display 8 LEDs to show value adding up  
+</span><span style="color:#75715e"></span><span style="color:#111">{</span>                                                                            
+                                                                            
+    <span style="color:#111">RCLK_SetLow</span><span style="color:#111">();</span>           <span style="color:#75715e">// Select/Latch the shift register (Active low) 
+</span><span style="color:#75715e"></span>    <span style="color:#111">SPI1_WriteByte</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">);</span>    <span style="color:#75715e">//Send a Byte to Slave                          
+</span><span style="color:#75715e"></span>    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">0.05</span><span style="color:#111">);</span>        <span style="color:#75715e">//delay for data transition to finish           
+</span><span style="color:#75715e"></span>    <span style="color:#111">RCLK_SetHigh</span><span style="color:#111">();</span>          <span style="color:#75715e">// Deselect/Unlatch the shift register          
+</span><span style="color:#75715e"></span>    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span>         <span style="color:#75715e">//delay                                         
+</span><span style="color:#75715e"></span><span style="color:#111">}</span>                                                                            
+</code></pre></div><p>Click the Hammer button (
+<a href="/figures/figure_007.png"><img src="/figures/figure_007.png" alt=""  /></a>
+
+) to compile the project. If you see &ldquo;Build Successful&rdquo;, then you can flash the program to the microcontroller by clicking the Run main project button (
+<a href="/figures/figure_008.png"><img src="/figures/figure_008.png" alt=""  /></a>
+
+.)</p>
+<p>Now your main function should look something like this:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/figures/figure_009.png"><img src="/figures/figure_009.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>What about using the binary system to control the pattern of 8 LEDs?</p>
+<p>Go back to the Main.c file and modify the code to display the 8 LEDs with some pattern by writing each bit on/off using SPI in the binary system.</p>
+<p>Try following code in your <strong>Main.c</strong> program:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">9</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75715e">// switch to different case to generate a pattern 
+</span><span style="color:#75715e"></span><span style="color:#111">{</span>                                                                           
+    <span style="color:#00a8c8">switch</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">)</span>                                                               
+    <span style="color:#111">{</span>                                                                       
+        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000000</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  ALL LED OFF            
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000001</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  1 LED ON               
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000011</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  2 LED ON               
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  3 LED ON               
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00001111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  4 LED ON               
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00011111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  5 LED ON               
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00111111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  6 LED ON               
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b01111111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  7 LED ON               
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b11111111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>        <span style="color:#75715e">//  ALL LED ON             
+</span><span style="color:#75715e"></span>    <span style="color:#111">}</span>                                                                       
+                                                               
+    <span style="color:#111">RCLK_SetLow</span><span style="color:#111">();</span> <span style="color:#75715e">// Select/Latch the shift register (Active low)          
+</span><span style="color:#75715e"></span>    <span style="color:#111">SPI1_WriteByte</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">);</span> <span style="color:#75715e">//Send a Byte to Slave                            
+</span><span style="color:#75715e"></span>    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">0.05</span><span style="color:#111">);</span> <span style="color:#75715e">//delay for data transition to finish                 
+</span><span style="color:#75715e"></span>    <span style="color:#111">RCLK_SetHigh</span><span style="color:#111">();</span> <span style="color:#75715e">// Deselect/Unlatch the shift register                  
+</span><span style="color:#75715e"></span>    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span> <span style="color:#75715e">//delay                                                
+</span><span style="color:#75715e"></span>    <span style="color:#111">}</span>                                                                           
+                                                               
+    <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">9</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75715e">// increase duty cycle to 100%                    
+</span><span style="color:#75715e"></span>    <span style="color:#111">{</span>                                                                           
+        <span style="color:#00a8c8">switch</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">)</span>                                                               
+        <span style="color:#111">{</span>                                                                       
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000000</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000001</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000011</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00000111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00001111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00011111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">6</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b00111111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">7</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b01111111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+            <span style="color:#00a8c8">case</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span> <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">b11111111</span><span style="color:#111">;</span> <span style="color:#00a8c8">break</span><span style="color:#111">;</span>                                   
+        <span style="color:#111">}</span>                                                                       
+                                                                   
+        <span style="color:#111">RCLK_SetLow</span><span style="color:#111">();</span> <span style="color:#75715e">// Select/Latch the shift register (Active low)          
+</span><span style="color:#75715e"></span>        <span style="color:#111">SPI1_WriteByte</span><span style="color:#111">(</span><span style="color:#111">data</span><span style="color:#111">);</span> <span style="color:#75715e">//Send a Byte to Slave                            
+</span><span style="color:#75715e"></span>        <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">0.05</span><span style="color:#111">);</span> <span style="color:#75715e">//delay for data transition to finish                 
+</span><span style="color:#75715e"></span>        <span style="color:#111">RCLK_SetHigh</span><span style="color:#111">();</span> <span style="color:#75715e">// Deselect/Unlatch the shift register                  
+</span><span style="color:#75715e"></span>        <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span> <span style="color:#75715e">//delay                                                
+</span><span style="color:#75715e"></span>    <span style="color:#111">}</span>                                                                           
+<span style="color:#111">}</span>                                                                               
+</code></pre></div><p>Click the Hammer button (
+<a href="/figures/figure_007.png"><img src="/figures/figure_007.png" alt=""  /></a>
+
+) to compile the project. If you see &ldquo;Build Successful&rdquo;, then you can flash the program to the microcontroller by clicking the Run main project button (
+<a href="/figures/figure_008.png"><img src="/figures/figure_008.png" alt=""  /></a>
+
+.)</p>
+<p>Tips:</p>
+<p>Do you notice any difference between using decimal, hexadecimal, and binary systems?</p>
+<p>What advantages of different numeral systems and using SPI serial communication protocol did you notice from the above 3 exercises?</p>
+<p>Can those be implemented in your current and future projects?</p>
+<p>Tutorial written by Qinchen (Sam) Zha</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/misc/spi-shift-register-tutorial.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>About Bluetooth Communication (ABC)</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="what-is-bluetooth-low-energy">What is Bluetooth Low Energy?</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=DMSeTvWL-nw">Intro to Bluetooth Low Energy</a> video from Cypress</li>
+<li><a href="http://www.cypress.com/search/all?f%5B0%5D=meta_type%3Atechnical_documents&amp;f%5B1%5D=field_related_products%3A1209&amp;f%5B2%5D=resource_meta_type%3A575">Bluetooth Low Energy</a> datasheets from Cypress</li>
+<li><a href="https://www.youtube.com/watch?v=x1y4tEHDwk0">Developing Bluetooth Smart Applications for Android</a> tutorial from NewCircle Training provides a high-level explanation of how Bluetooth Low Energy works.</li>
+</ul>
+<h2 id="where-can-i-find-examples-of-psoc-4-ble-projects">Where can I find examples of PSoC 4 BLE projects?</h2>
+<ul>
+<li><a href="http://www.cypress.com/blog/100-projects-100-days">100 Projects in 100 Days with PSoC® 4 BLE</a> from Cypress</li>
+<li><a href="http://www.cypress.com/blog/100-projects-100-days/project-020-uart-ble-bridge">Project #020: UART to BLE Bridge</a> from Cypress</li>
+<li><a href="https://www.youtube.com/watch?v=E4awOh2q7Xo">Configuring a Find Me Profile with BLE</a> video from Cypress</li>
+<li><a href="https://www.youtube.com/watch?v=Ggb_fMf9WzE">Finishing the Find Me Application with Firmware</a> video from Cypress</li>
+<li><a href="https://www.youtube.com/watch?v=JAG5Hz-Ug5s">Adding Battery Level Service and Testing with CySmart</a> video from Cypress</li>
+<li><a href="https://www.youtube.com/watch?v=51uQKbztthg">Using CapSense with Bluetooth Low Energy</a> video from Cypress</li>
+<li><a href="https://www.youtube.com/watch?v=yScg-qFbtXk">Extending Battery Life with PSoC Low Energy Modes</a> video from Cypress</li>
+<li>Forum posts on Cypress.com
+<ul>
+<li><a href="http://www.cypress.com/forum/psoc-4-ble/how-send-data-psoc-ble-module-cysmart-app?source=search&amp;keywords=BLE%20Phone%20Application&amp;cat=community">How to send data from the PSoC BLE module to the CySmart app</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="how-do-i-create-a-custom-ble-profile">How do I create a custom BLE profile?</h2>
+<ul>
+<li><a href="http://www.cypress.com/file/140826/download">Creating a BLE Custom Profile</a> app note from Cypress</li>
+</ul>
+<h2 id="how-do-i-create-an-android-app-that-is-ble-enabled">How do I create an Android app that is BLE-enabled?</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=x1y4tEHDwk0">Developing Bluetooth Smart Applications for Android</a> tutorial from NewCircle Training provides a high-level explanation of how Bluetooth Low Energy works.</li>
+<li><a href="https://evothings.com/ble-app-development-explained/">BLE App Development in JavaScript Explained - Bluetooth Low Energy in Action</a> article from EVO Things provides an example that is similar to the CySmart app</li>
+<li><a href="https://www.youtube.com/watch?v=x1y4tEHDwk0">Developing Bluetooth Smart Applications for Android Tutorial</a> video from NewCircle Training</li>
+<li><a href="https://developer.android.com/guide/topics/connectivity/bluetooth-le.html">Bluetooth Low Energy</a> API guide from Google</li>
+<li>Forum posts on Cypress.com
+<ul>
+<li><a href="http://www.cypress.com/forum/psoc-4-ble/developing-android-app-psoc-ble?source=search&amp;keywords=BLE%20Phone%20Application&amp;cat=community">Developing an Android app for PSoC BLE</a></li>
+<li><a href="http://www.cypress.com/forum/psoc-4-ble/create-android-app-and-interface-it-psoc-4-ble?source=search&amp;keywords=BLE%20Phone%20Application&amp;cat=community">Create Android app and interface it with PSoC 4 BLE</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="where-can-i-find-examples-of-custom-android-apps-that-are-ble-enabled">Where can I find examples of custom Android apps that are BLE-enabled?</h2>
+<ul>
+<li><a href="http://www.cypress.com/blog/100-projects-100-days/project-028-ble-proximity-profile">Project #028: BLE Proximity Profile</a> from Cypress</li>
+<li><a href="http://www.cypress.com/blog/100-projects-100-days/project-031-ble-pressure-sensor-bmp180">Project #031: BLE Pressure Sensor (BMP180)</a> from Cypress</li>
+<li><a href="http://www.cypress.com/blog/100-projects-100-days/project-037-ble-billboard">Project #037: BLE Billboard</a> from Cypress</li>
+<li><a href="https://github.com/googlesamples/android-BluetoothLeGatt">android-BluetoothLEGatt</a> example code from Google</li>
+<li><a href="https://drive.google.com/file/d/0ByRWb7dgVD-rSHVQXzVmZm5mazQ/view?usp=sharing">CySmart App</a> example from Cypress</li>
+</ul>
+<h2 id="how-do-i-create-an-ios-app-that-is-ble-enabled">How do I create an iOS app that is BLE-enabled?</h2>
+<p>Beginner&rsquo;s Guide to iOS Development from HONGKIAT</p>
+<ul>
+<li><a href="http://www.hongkiat.com/blog/ios-development-guide-part1/">The Interface - Part I</a></li>
+<li><a href="http://www.hongkiat.com/blog/ios-development-guide-part2-your-first-app/">Building Your First App - Part II</a></li>
+</ul>
+<h2 id="where-can-i-find-examples-of-custom-ios-apps-that-are-ble-enabled">Where can I find examples of custom iOS apps that are BLE-enabled?</h2>
+<ul>
+<li><a href="http://www.cypress.com/blog/100-projects-100-days/project-022-apple-notification-center-service-ancs-profile">Project #022: Apple Notification Center Service (ANCS) Profile</a> from Cypress</li>
+<li><a href="https://drive.google.com/file/d/0ByRWb7dgVD-rNmlxbTZPOVBUTVU/view?usp=sharing">CySmart App</a> example from Cypress</li>
+</ul>
+<h2 id="how-do-i-communicate-from-psoc-4-ble-to-psoc-4-ble">How do I communicate from PSoC® 4 BLE to PSoC® 4 BLE?</h2>
+<ul>
+<li><a href="https://github.com/harsha-kadekar/BluetoothCommunication">1-way and 2-way PSoC® BLE communication</a> examples from Harsha Kadekar
+<ul>
+<li><a href="https://drive.google.com/open?id=1E9Xkx_Jfp_-nJB-Da7tw8fupPn3f-jTv">Video of 2-way communication</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/JonIsaiah/PSoC_BLE_Custom_Server_Example">PSoC® BLE Custom Server</a> example from Jon Isaiah
+<ul>
+<li>BLE Peripheral Server, which updates an example array of 2 floats and responds to read requests from the client</li>
+<li>BLE Central Client, which reads data from the server and prints it to the serial port</li>
+</ul>
+</li>
+<li><a href="https://github.com/JonathanBush/PSoC-4-BLE-Button-Demo">BLE Button Demo</a> from Jonathan Bush</li>
+</ul>
+<p>If you find additional resources that are helpful, please <a href="mailto:shawn.s.jordan@asu.edu">send them to Dr. Jordan</a></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/tutorials/wireless/about-bluetooth-communication-abc.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

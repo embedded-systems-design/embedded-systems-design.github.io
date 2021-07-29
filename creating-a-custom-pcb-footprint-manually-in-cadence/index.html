@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>Creating a custom PCB footprint manually in Cadence</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Footprint_(electronics)">PCB footprint</a> is the physical layout on a PCB to which a component is soldered. Usually, you must create a custom PCB footprint for each custom schematic symbol that you create. Footprints can be made for many standard components (e.g., basic ICs) using the Package Symbol Wizard (see the <a href="/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/">Creating a PCB footprint using Package Designer in Cadence page</a>), but more complex components (like switching power supply ICs with thermal reliefs) must be created by hand. This tutorial details the manual creation of a custom footprint.</p>
+<p>The example custom PCB footprint created in this tutorial will be a <a href="http://www.ti.com/product/lm2676">TI LM2676 SIMPLE SWITCHER® 8V to 40V, 3A Low Component Count Step-Down Regulator</a> (see Figure 1).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0096.jpg"><img src="/larger/image0096.jpg" alt="Figure 1: LM2676 Switching Power Supply IC"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: LM2676 Switching Power Supply IC</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h2 id="search-the-datasheet-for-the-footprint-specifications">Search the Datasheet for the Footprint Specifications</h2>
+<p>In order to build a custom footprint, you first need to find the footprint (sometimes called &ldquo;land pattern&rdquo; specifications in the datasheet for the component. Figures 2 and 3 show the land pattern and physical dimensions of the IC package from page 34 of the <a href="http://www.ti.com/lit/ds/symlink/lm2676.pdf">LM2676 datasheet</a>.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0097.png"><img src="/larger/image0097.png" alt="Figure 2: Land pattern from the LM2676 datasheet. Dimensions are in mils, with brackets in mm."  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: Land pattern from the LM2676 datasheet. Dimensions are in mils, with brackets in mm.</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0098.png"><img src="/larger/image0098.png" alt="Figure 3: Physical package dimensions from the LM2676 datasheet. Dimensions are in mils, with brackets in mm."  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 3: Physical package dimensions from the LM2676 datasheet. Dimensions are in mils, with brackets in mm.</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>By interpreting Figures 2 and 3, the following key dimensions were determined:</p>
+<p>Package geometry <em>(overall)</em></p>
+<ul>
+<li>Length = 565 mils</li>
+<li>Width = 410 mils</li>
+</ul>
+<p>Mechanical/Thermal Un-Plated Pad <em>(underneath the body of the chip)</em></p>
+<ul>
+<li>Length = 410 mils</li>
+<li>Width = 425 mils</li>
+</ul>
+<p>Pad - Pins</p>
+<ul>
+<li>7 total pins</li>
+<li>Pad length = 36 mils</li>
+<li>Pad width = 85 mils</li>
+<li>Pad spacing = 50 mils <em>(center of one pad to center of the next pad)</em></li>
+</ul>
+<h2 id="create-custom-padstacks">Create Custom Padstack(s)</h2>
+<p>For each different type of pin/pad, you need to create a custom padstack. For more information, see the <a href="/creating-a-custom-padstack-in-cadence/">Creating a custom padstack in Cadence page</a>. For this example, you will need to create two custom padstacks using the dimensions above: one for the mechanical pad and one for the pin pads (which are all the same, so one padstack can be used).</p>
+<h2 id="create-a-new-footprint">Create a New Footprint</h2>
+<ol>
+<li>
+<p>In Windows, open the PCB Editor application. (You can also use the Package Designer application).</p>
+</li>
+<li>
+<p>Choose &ldquo;File &gt; New&hellip;&rdquo;. The New Drawing window shown in Figure 4 will appear.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0099.png"><img src="/larger/image0099.png" alt="Figure 4: New Drawing window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 4: New Drawing window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Name your drawing, select &ldquo;Package symbol&rdquo; and click OK. A blank package workspace will appear.</p>
+</li>
+<li>
+<p>Since the component footprint is a rectangle (common), choose the &ldquo;Shape Add Rect&rdquo; tool (see Figure 5).</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0100.png"><img src="/larger/image0100.png" alt="Figure 5: Toolbar"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 5: Toolbar</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Move the cursor over the &ldquo;Options&rdquo; tab (see Figure 6) and enter the package geometry information from the datasheet. Then, place the rectangle on the blank workspace.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0101.png"><img src="/larger/image0101.png" alt="Figure 6: Options tab"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 6: Options tab</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Choose &ldquo;Layout &gt; Pins&rdquo; to switch to pin mode. Move the cursor over the &ldquo;Options&rdquo; tab (see Figure 7). The options available in the tab are described below.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0102.png"><img src="/larger/image0102.png" alt="Figure 7: Layout &amp;gt; Pins - Options tab"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 7: Layout &amp;gt; Pins - Options tab</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>The <em>Connect</em> and <em>Mechanical</em> options allow a choice between an electrical pin (<em>Connect)</em> and a mechanical or thermal relief (described in step i below).</p>
+<p>The <em>Padstack</em> box and the &ldquo;&hellip;&rdquo; button allow entry of the path to the padstack file. These can be the same or different for each pin, depending on the land pattern in the component datasheet.</p>
+<p>The <em>Copy mode</em> option allows selection of the coordinate system for your pins. Rectangular (default) is most common.</p>
+<p>The <em>X</em> and <em>Y</em> options allow entry of the quantity, spacing (in mils), and order of pins being placed at once. Note that multiple pins placed this way will all use the same padstack (which in most cases is fine).</p>
+<p>The <em>Rotation</em> option dictates which way the padstack will be rotated. This is particularly relevant when pins are wrapped around multiple sides of an IC (e.g., for a microcontroller).</p>
+<p>The <em>Pin #</em> and <em>Inc</em> options allow entry of the starting pin number for the first pin and the number by which to increment pin numbers when multiple pins are placed simultaneously. Make sure that these pin numbers align with the pin numbers in the <a href="/creating-a-custom-schematic-symbol-in-cadence/">custom schematic symbol</a> that you created.</p>
+<p>The <em>Text block</em> and <em>Text name</em> options allow association of a name with the part.</p>
+<p>The <em>Offset X</em> and <em>Y</em> options allow correction of spacing errors. If you have created your footprint correctly up to this point, you should not need this option.</p>
+</li>
+<li>
+<p>Click on the &ldquo;&hellip;&rdquo; button next to Padstack. The &ldquo;Select a padstack:&rdquo; window will appear (see Figure 8). Make sure that both &ldquo;Database&rdquo; and &ldquo;Library&rdquo; are checked, and select the custom padstack that you created for the electrical pad. In this example, the custom padstack is called &ldquo;Smd_85W36h&rdquo;, meaning that it is a surface mount part that is 85 mil wide and 36 mil high. Click OK.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0103.png"><img src="/larger/image0103.png" alt="Figure 8: Select a padstack window for electrical pad"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 8: Select a padstack window for electrical pad</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Configure the rest of the Options window as shown in Figure 9 and click to place the first pin in the correct position inside the rectangle. The result (top view) should look like Figure 10.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0104.png"><img src="/larger/image0104.png" alt="Figure 9: Options for adding 7 custom pads"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 9: Options for adding 7 custom pads</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0105.png"><img src="/larger/image0105.png" alt="Figure 10: Pins added to footprint"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 10: Pins added to footprint</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>This is a good time to double-check the data sheet connection diagrams to make sure the pin numbering is correct. Figure 11 shows the connection diagram for the IC package from page 2 of the <a href="http://www.ti.com/lit/ds/symlink/lm2676.pdf">LM2676 datasheet</a>.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0106.png"><img src="/larger/image0106.png" alt="Figure 11: Connection diagram from LM2676 datasheet"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 11: Connection diagram from LM2676 datasheet</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Careful examination shows that our new symbol has pin 1 at the top of the footprint, whereas the datasheet indicates that pin 1 should be at the bottom of the footprint. This is a critical detail (and common mistake) that must be fixed in order for the board to work properly.</p>
+<p>There are two ways to fix this problem.</p>
+<p><strong>OPTION 1:</strong> <strong>Delete and replace.</strong> Right-click in the workspace and choose &ldquo;Done&rdquo;. Then, right-click on each pin and choose &ldquo;Delete&rdquo;. Finally, re-place the pins using the corrected options shown in Figure 12.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0107.png"><img src="/larger/image0107.png" alt="Figure 12: Corrected options for adding 7 pads"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 12: Corrected options for adding 7 pads</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p><strong>OPTION 2: Manually Edit Text.</strong> Click the &ldquo;Text Edit&rdquo; tool in the toolbar (the bottom icon in Figure 13). Edit the number on each pin to correct it.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0108.png"><img src="/larger/image0108.png" alt="Figure 13: Toolbar with Text Edit tool (bottom)"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 13: Toolbar with Text Edit tool (bottom)</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>The corrected footprint is shown in Figure 16.</p>
+</li>
+<li>
+<p>Next, add the mechanical pad. Choose &ldquo;Layout &gt; Pins&rdquo; to switch to pin mode. Move the cursor over the &ldquo;Options&rdquo; tab and click on the &ldquo;&hellip;&rdquo; button next to Padstack. Select the custom padstack that you created for the mechanical pad. In this example, the custom padstack is called &ldquo;Lm2676_Mech&rdquo; (see Figure 14). Click OK and place the pad in the correct position inside of the rectangle.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0109.png"><img src="/larger/image0109.png" alt="Figure 14: Select a padstack window for mechanical pad"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 14: Select a padstack window for mechanical pad</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Finally, you need to add a reference designator (RefDes) for the part number (in this example, LM2676) to the diagram. Click the Label Refdes tool (R1 button, second from the right in Figure 15) and add the part number above the footprint.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0110.png"><img src="/larger/image0110.png" alt="Figure 15: Label Refdes tool (second from right)"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 15: Label Refdes tool (second from right)</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Finally, choose &ldquo;File &gt; Save As&hellip;&rdquo; and save the footprint to your project folder. Do not use spaces in file names. Note that the Package Wizard creates two files: a DRA file (drawing of the package) and a PSM file (package symbol, footprint). The finished PCB footprint is shown in Figure 16.
+
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0111.png"><img src="/larger/image0111.png" alt="Figure 16: Finished PCB footprint"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 16: Finished PCB footprint</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="http://search.ebscohost.com.ezproxy1.lib.asu.edu/login.aspx?direct=true&amp;db=nlebk&amp;AN=249296&amp;site=ehost-live&amp;ebv=EB&amp;ppid=pp_v">Making and Editing Footprints - Chapter 8 in the Complete PCB Design Using OrCAD Capture and PCB Editor</a> book by Kraig Mitzner</li>
+<li><a href="https://www.youtube.com/watch?v=wfCM0Ho8IE0">How to Create Complex Footprints</a> video from parsysEDA</li>
+<li><a href="https://drive.google.com/a/asu.edu/file/d/0ByRWb7dgVD-rX3VWTWxLNjdsRWs/edit">OrCAD Tutorial - Section 8.2</a> <em>(older version of software)</em></li>
+</ul>
+<p><em>Based on a tutorial by Josh Carroll</em></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/cadence/schematics-to-pcbs/footprints/creating-a-custom-pcb-footprint-manually-in-cadence.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

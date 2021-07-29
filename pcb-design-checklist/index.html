@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Embedded Systems Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/cadence">Cadence</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/tutorials">Tutorials</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc">Misc</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>PCB design checklist</h2>
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>01 January 0001</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors. Time invested verifying your design before manufacturing will make the assembly and testing process significantly easier.</p>
+<h3 id="what-are-best-practices-for-the-design-of-pcbs">What are best practices for the design of PCBs?</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=wQcuQSO1sls">Designing PCBs for Debugging - (First Board Spins) video</a> from Casey Petersen</li>
+<li><a href="https://drive.google.com/a/asu.edu/file/d/0ByRWb7dgVD-rQ1d4MUJlZEVDQ1k/edit">Fundamentals of Layout Out PC Boards</a> from Jack Ardizzoni of Analog Devices</li>
+<li><a href="https://drive.google.com/a/asu.edu/file/d/0ByRWb7dgVD-ranVQcmJoS3B2Tjg/edit">Printed Circuit Board (PCB) Design Issues</a> from Analog Devices</li>
+<li><a href="https://www.youtube.com/watch?v=kZDnnmrQx9g">PCB Design of Switch Mode Power Supplies (SMPS or Switchers)</a> video from Casey Petersen</li>
+<li><a href="https://drive.google.com/a/asu.edu/file/d/0ByRWb7dgVD-rd0w5MmE2SWo1Rk0/edit">A Practical Guide to High-Speed Printed Circuit Board Layout</a> from Jack Ardizzoni of Analog Devices</li>
+<li><a href="https://drive.google.com/a/asu.edu/file/d/0ByRWb7dgVD-rZUNvNHl1NmRma0U/edit">High Speed System Applications: PC Board Layout and Design Tools</a> from Analog Devices</li>
+</ul>
+<h3 id="general">General</h3>
+<ul>
+<li>All components have footprints</li>
+<li>Bypass/decoupling capacitors for voltage regulators are placed as physically close as possible to the regulators</li>
+<li>Bypass/decoupling capacitors for ICs are placed as physically close as possible to each IC&rsquo;s power and ground pins (see example of good layout, Figure 1)</li>
+<li>Power and ground traces are at least 40 mil wide and were sized using a <a href="http://www.4pcb.com/trace-width-calculator.html">trace width calculator</a></li>
+<li>Board space is allocated for mechanical constraints (e.g., PCB mounting holes, heat sinks, connectors)</li>
+<li>The top and bottom copper layers are labeled in text &ldquo;top&rdquo;, &ldquo;bottom&rdquo;, and &ldquo;group name&rdquo;</li>
+</ul>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0193.jpeg"><img src="/larger/image0193.jpeg" alt="Figure 1: Example of good bypass capacitor placement"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Example of good bypass capacitor placement</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h3 id="vias">Vias</h3>
+<ul>
+<li>Minimize the number of vias in your design. Vias reduce the reliability of your system.</li>
+<li>No vias under components (particularly ICs)</li>
+</ul>
+<h3 id="additional-considerations">Additional Considerations</h3>
+<ul>
+<li>Consider how your components will be mounted when routing traces. For example, if you have a through-hole connector on the top of your board, it&rsquo;s better to route the traces for it on the bottom layer.</li>
+<li>Make the board outline in copper</li>
+<li>Make sure that the size of your board will fit inside your product enclosure</li>
+<li>Do NOT use the autorouter. Use manual routing to simplify the board design. Simple design = easier debugging.</li>
+<li>When using surface mount components, size 0805 resistors and capacitors (or larger) are easier to work with</li>
+<li>Through-hole connectors are mechanically stronger than surface-mount connectors</li>
+<li>Avoid right angles (90 degrees) in traces. Instead, &ldquo;curve&rdquo; the trace with a 45 degree angle around a corner</li>
+<li>Fill some extra space on your board with several 0.1&quot; spaced test points to allow for easier modifications</li>
+<li>If your system uses in-system programming (ISP), place the ISP connector as physically close to the microcontroller as possible</li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+               
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:emailaddress"><i
+                class="ti-email mr-3 text-primary"></i>emailaddress</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Social</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd3.svg" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/embedded-systems-design.github.io/edit/hugo/content/misc/pcb-design-checklist.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>
