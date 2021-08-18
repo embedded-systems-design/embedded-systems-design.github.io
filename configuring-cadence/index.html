@@ -151,10 +151,10 @@
 <h2 id="step-1-create-a-cadence-folder-hierarchy">Step 1. Create a Cadence Folder Hierarchy</h2>
 <p>In order for both you and Cadence to find your files easily, download the <a href="https://drive.google.com/file/d/1Rb3sLhvu83eYboJO5tiLt3nEM1PjEGoA/view?usp=sharing">custom Cadence folder hierarchy ZIP file</a> to your computer and decompress it on the desktop. The resultant folder hierarchy is as follows:</p>
 <ul>
-<li>Desktop/Cadence/Backups - All backups saved by Design Entry CIS and PCB Editor will be saved here.</li>
-<li>Desktop/Cadence/Projects - All project files that you generate should be saved here. Inside this folder, create a separate folder for each project or schematic so that the files do not get mixed up when you create a new project.</li>
-<li>Desktop/Cadence/step - All .step files that you download or make to use with the PCB Editor 3-D View function should be stored in this folder. Downloadable .step files can be found at <a href="https://www.3dcontentcentral.com/">3D Content Central</a>.</li>
-<li>Desktop/Cadence/symbols - All .pad, .bsm, .psm, and .dra files that you download or make should be stored in this folder. These files contain component footprints and mechanical pins that are used by Cadence. This folder also contains a special ASU <a href="https://en.wikipedia.org/wiki/Via_(electronics)">via</a> padstack (asuvia.pad) that improves manufacturability on the LPKF PCB mill in PRLTA 109. </li>
+<li><code>Desktop\Cadence\Backups</code> - All backups saved by Design Entry CIS and PCB Editor will be saved here.</li>
+<li><code>Desktop\Cadence\Projects</code> - All project files that you generate should be saved here. Inside this folder, create a separate folder for each project or schematic so that the files do not get mixed up when you create a new project.</li>
+<li><code>Desktop\Cadence\step</code> - All .step files that you download or make to use with the PCB Editor 3-D View function should be stored in this folder. Downloadable .step files can be found at <a href="https://www.3dcontentcentral.com/">3D Content Central</a>.</li>
+<li><code>Desktop\Cadence\symbols</code> - All .pad, .bsm, .psm, and .dra files that you download or make should be stored in this folder. These files contain component footprints and mechanical pins that are used by Cadence. This folder also contains a special ASU <a href="https://en.wikipedia.org/wiki/Via_(electronics)">via</a> padstack (asuvia.pad) that improves manufacturability on the LPKF PCB mill in PRLTA 109. </li>
 </ul>
 <h2 id="step-2-configure-capture-cis">Step 2. Configure Capture CIS</h2>
 <p>CAPTURE.INI is the primary file in which Cadence stores all of the program settings for schematic editing in Capture CIS. We have created a custom CAPTURE.INI file for the ASU Polytechnic School engineering programs. Follow the instructions below to install and modify the custom CAPTURE.INI file:</p>
@@ -181,32 +181,32 @@
 <p>Download the ASU Polytechnic School <a href="https://drive.google.com/file/d/1wPGlv_hOVaj9csTwlRAfMQQq178dtzpR/view?usp=sharing">custom Capture.INI file</a> to your computer. This custom file configures Cadence as follows:</p>
 </li>
 </ol>
-<p>Tells Capture CIS to look for PCB footprints in both C:/Program Files/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols and in C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols.</p>
+<p>Tells Capture CIS to look for PCB footprints in both <code>C:\Program Files\Cadence\SPB_17.4\share\pcb\pcb_lib\symbols</code> and in <code>C:\Users\YOURWINDOWSLOGIN\Desktop\Cadence\symbols</code>.</p>
 <p>Turns on autosave to save your Capture CIS design every 10 minutes.</p>
-<p>Turns on auto backup to back up your Capture CIS design every 10 minutes to C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/Backups.</p>
+<p>Turns on auto backup to back up your Capture CIS design every 10 minutes to <code>C:\Users\YOURWINDOWSLOGIN\Desktop\Cadence\Backups</code>.</p>
 <p>Adds two custom help links to the Capture CIS &gt; Help &gt; Web Resources menu</p>
 <ul>
 <li><a href="/cadence/">Embedded System Design Resources Blog - Cadence Posts</a></li>
 <li><a href="/cadence-manuals/">Cadence Manuals</a></li>
 </ul>
 <ol start="4">
-<li>Edit the custom CAPTURE.INI file to replace the two instances of the text YOURWINDOWSLOGIN with your Windows login (where your home directory is located) on your computer. Examples:</li>
+<li>Edit the custom <code>CAPTURE.INI</code> file to replace the two instances of the text YOURWINDOWSLOGIN with your Windows login (where your home directory is located) on your computer. Examples:</li>
 </ol>
-<p>DIR1=C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols</p>
+<p><code>DIR1=C:\Users\YOURWINDOWSLOGIN\Desktop\Cadence\symbols</code></p>
 <p>to</p>
-<p>DIR1=C:/Users/ssjorda1/Desktop/Cadence/symbols</p>
-<p>Backup Direcory Path=C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/Backups</p>
+<p><code>DIR1=C:\Users\ssjorda1\Desktop\Cadence\symbols</code></p>
+<p><code>Backup Direcory Path=C:\Users\YOURWINDOWSLOGIN\Desktop\Cadence\Backups</code></p>
 <p>to</p>
-<p>Backup Direcory Path=C:/Users/ssjorda1/Desktop/Cadence/Backups</p>
+<p><code>Backup Direcory Path=C:\Users\ssjorda1\Desktop\Cadence\Backups</code></p>
 <p>Figure 2 below shows the original custom CAPTURE.INI file, and Figure 3 below shows an edited example.</p>
 <ol start="5">
-<li>Copy your edited custom CAPTURE.INI file to replace the default CAPTURE.INI file at one of the following paths:</li>
+<li>Copy your edited custom <code>CAPTURE.INI</code> file to replace the default <code>CAPTURE.INI</code> file at one of the following paths:</li>
 </ol>
-<p>C:/ProgramData/SPB_Data/cdssetup/OrCAD_Capture/17.4.0/Capture.ini</p>
+<p><code>C:\ProgramData\SPB_Data\cdssetup\OrCAD_Capture\17.4.0\Capture.ini</code></p>
 <p>or</p>
-<p>C:/Cadence/SPB_Data-Silent/cdssetup/OrCAD_Capture/17.4.0/Capture.ini</p>
+<p><code>C:\SPB_Data-Silent\cdssetup\OrCAD_Capture\17.4.0\Capture.ini</code></p>
 <p>or if you have defined your home directory differently according to the installation instructions, use</p>
-<p>%HOME%/cdssetup/OrCAD_Capture/17.4.0/Capture.ini where %HOME% is the location you set as your home directory (typcically &ldquo;c:/users/YOURUSERNAME&rdquo;)</p>
+<p><code>%HOME%\cdssetup\OrCAD_Capture\17.4.0\Capture.ini</code> where <code>%HOME%</code> is the location you set as your home directory (typcically <code>C:\Users\YOURUSERNAME</code>)</p>
 <p>
 <table>
 <thead></thead>
@@ -294,7 +294,7 @@
 </p>
 </li>
 <li>
-<p>Click the &hellip; next to padpath and add the path to the symbols folder in the Cadence folder on your desktop (C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols) (see Figure 8). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
+<p>Click the &hellip; next to padpath and add the path to the symbols folder in the Cadence folder on your desktop (<code>C:\Users\YOURWINDOWSLOGIN\Desktop\Cadence\symbols</code>) (see Figure 8). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
 <p>
 <table>
 <thead></thead>
@@ -309,7 +309,7 @@
 </p>
 </li>
 <li>
-<p>Click the &hellip; next to psmpath and add the path to the symbols folder in the Cadence folder on your desktop (C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/symbols) (see Figure 9). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
+<p>Click the &hellip; next to psmpath and add the path to the symbols folder in the Cadence folder on your desktop (<code>C:\Users\YOURWINDOWSLOGIN\Desktop\Cadence\symbols</code>) (see Figure 9). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
 <p>
 <table>
 <thead></thead>
@@ -324,7 +324,7 @@
 </p>
 </li>
 <li>
-<p>Click the &hellip; next to steppath and add the path to the step folder in the Cadence folder on your desktop (C:/Users/YOURWINDOWSLOGIN/Desktop/Cadence/step) (see Figure 10). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
+<p>Click the &hellip; next to steppath and add the path to the step folder in the Cadence folder on your desktop (<code>C:\Users\YOURWINDOWSLOGIN\Desktop\Cadence\step</code>) (see Figure 10). Click the up button to give your library priority over the default location(s). Click OK to save changes.</p>
 <p>
 <table>
 <thead></thead>
