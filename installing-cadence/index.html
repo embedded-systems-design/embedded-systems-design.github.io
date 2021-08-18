@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.86.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <!-- plugins -->
   
@@ -150,10 +150,10 @@
           <h2 id="installation">Installation</h2>
 <h3 id="system-requirements">System Requirements</h3>
 <ul>
-<li><strong>PC:</strong> Windows 7, 8, 8.1, 10, or greater (<a href="https://www.ema-eda.com/sites/ema/files/resources/files/Cadence%20Allegro%20and%20OrCAD%20Hardware%20and%20Software%20Requirements%20-%2017.2-2016%20Release.pdf">Hardware and Software Requirements</a>)</li>
+<li><strong>PC:</strong> Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (<a href="https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf">Hardware and Software Requirements</a>). Note that Cadence does not support Windows 10 Starter nor Home Basic.</li>
 <li><strong>Mac:</strong> Windows 7, 8, 8.1, 10 or greater running on <a href="https://www.apple.com/support/bootcamp/">Boot Camp</a> or <a href="http://www.parallels.com/">Parallels</a></li>
 </ul>
-<h3 id="before-installing">Before Installing&hellip;</h3>
+<h3 id="before-installing">Before Installing</h3>
 <p>Cadence has been known to change environment variables used by other software.  One of those is the HOME variable.  If left unset, it will add this variable and define it as &ldquo;C:/Cadence/SPB_Data-Silent/&rdquo;</p>
 <p>It is therefore recommended to set that variable so that your other software remains working</p>
 <p>Open up the file explorer (win+e)</p>
@@ -163,21 +163,21 @@
 <ol>
 <li>If it doesn&rsquo;t exist, select &ldquo;new&rdquo;</li>
 <li>In variable name, type HOME (all caps)</li>
-<li>In the value field, enter the path to your user directory &ldquo;c:/users/MYUSERNAME&rdquo;.  You can browse to the right directory</li>
+<li>In the value field, enter the path to your user directory &ldquo;c:\users\MYUSERNAME&rdquo;.  You can browse to the right directory</li>
 </ol>
 <p>Save your changes.</p>
 <h3 id="instructions">Instructions</h3>
 <ol>
-<li>Go to Canvas and find the announcement from Dr. Jordan on Cadence installation.</li>
+<li>Go to Canvas and find the announcement from your professor on Cadence installation.</li>
 <li>Download Cadence17.4.zip from the link provided. The installer is over 8.2 GB so make sure you are using high-speed Internet at home or on campus.</li>
+<li>Double-click the Cadence17.4.zip file to decompress the installer. You can delete the ZIP file after it is decompressed.</li>
+<li>Open the Cadence17.4 folder and double-click InstallTPSCadence.vbs to initiate the installation. There is no status bar or completion message during the installation process, which may take up to an hour. You will know it is complete when the installer icon disappears from the task bar. You can delete the installation folder after it has finished installation.</li>
+<li>Download the HotFix from the link provided in the Canvas announcement. The HotFix is over 6.4 GB so make sure you are using high-speed Internet at home or on campus.</li>
+<li>Decompress the Hotfix ZIP file. You can delete the ZIP file after it is decompressed.</li>
+<li>Launch setup.exe to initiate the HotFix installation. The HotFix has a status bar indicating when it is complete.</li>
+<li>Confirm that Cadence has installed correctly by launching Start &gt; Cadence PCB 17.4-2019 &gt; Capture CIS 17.4. This program allows you to model electronic schematics. The version number should be <code>17.4-2019 S019</code>.</li>
+<li>Follow the <a href="/configuring-cadence/">Configuring Cadence</a> instructions to configure and optimize Cadence for the ASU Polytechnic engineering programs.</li>
 </ol>
-<p>Double-click the Cadence17.4.zip file to decompress the installer. You can delete the ZIP file after it is decompressed.</p>
-<p>Open the Cadence17.4 folder and double-click InstallTPSCadence.vbs to initiate the installation. There is no status bar or completion message during the installation process, which may take up to an hour. You will know it is complete when the installer icon disappears from the task bar. You can delete the installation folder after it has finished installation.</p>
-<p>Download the HotFix  from the link provided. The HotFix is over 4.66 GB so make sure you are using high-speed Internet at home or on campus.</p>
-<p>Decompress the Hotfix ZIP file. You can delete the ZIP file after it is decompressed.</p>
-<p>Launch setup.exe to initiate the HotFix installation. The HotFix has a status bar indicating when it is complete.</p>
-<p>Confirm that Cadence has installed correctly by launching Start &gt; Cadence PCB 17.4-2019 &gt; Capture CIS 17.4. This program allows you to model electronic schematics.</p>
-<p>Follow the <a href="/configuring-cadence/">Configuring Cadence</a> instructions to configure and optimize Cadence for the ASU Polytechnic engineering programs.</p>
 <h2 id="using-cadence-on-campus">Using Cadence On Campus</h2>
 <ul>
 <li>Cadence is available in the following computer labs at ASU: PRLTA 103, PRLTA 109, and PRLTA 117.</li>
@@ -190,7 +190,7 @@
 <p>**A: **</p>
 <ol>
 <li>Free space on your hard drive</li>
-<li>Use an external hard drive on your computer</li>
+<li>Use an external hard drive on your computer to move other files off of C:\ to make space for Cadence. Cadence will only run properly off of C:.</li>
 <li>Use Cadence on the computers in PRLTA 103/109/117</li>
 </ol>
 <p><strong>Q:</strong> During installation, I get an error about a potential Trojan horse. What should I do?</p>
