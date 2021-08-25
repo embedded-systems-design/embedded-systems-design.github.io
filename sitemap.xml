@@ -5,13 +5,13 @@
     <loc>https://embedded-systems-design.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/</loc>
-    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/contact/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://embedded-systems-design.github.io/search/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</loc>
@@ -353,8 +353,6 @@
     <loc>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/video/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/welcome/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</loc>
   </url><url>
