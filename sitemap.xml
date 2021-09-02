@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://embedded-systems-design.github.io/cadence/getting-started/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/getting-started-with-cadence/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/installing-cadence/</loc>
@@ -161,8 +163,6 @@
     <loc>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/fuses-101/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/cadence/getting-started/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</loc>
   </url><url>
