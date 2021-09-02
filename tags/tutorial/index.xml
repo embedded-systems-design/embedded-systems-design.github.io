@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Getting Started with Cadence</title>
+      <link>https://embedded-systems-design.github.io/getting-started-with-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/getting-started-with-cadence/</guid>
+      <description>Introduction A number of basic Cadence tutorial videos are available on YouTube.</description>
+    </item>
+    
+    <item>
       <title>All About Serial</title>
       <link>https://embedded-systems-design.github.io/all-about-serial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -31,15 +40,6 @@
       
       <guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid>
       <description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Cadence</title>
-      <link>https://embedded-systems-design.github.io/getting-started-with-cadence/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/getting-started-with-cadence/</guid>
-      <description>Introduction A number of basic Cadence tutorial videos are available on YouTube.</description>
     </item>
     
     <item>

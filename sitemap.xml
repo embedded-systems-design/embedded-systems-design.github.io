@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://embedded-systems-design.github.io/getting-started-with-cadence/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/installing-cadence/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
@@ -160,8 +164,6 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/getting-started/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/getting-started-with-cadence/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/hardware/</loc>
@@ -171,8 +173,6 @@
     <loc>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/ics/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/installing-cadence/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</loc>
   </url><url>
