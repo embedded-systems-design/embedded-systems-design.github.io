@@ -321,9 +321,9 @@ Stage - the action of preparing file(s) to be committed</p>
 <p>Next, create a new project by using one of the existing template projects.</p>
 <p>PSoC Creator for now.</p>
 <h2 id="setting-up-the-repo-and-including-a-gitignore">Setting up the Repo and including a .gitignore</h2>
-<p>Open the folder in which the workspace was saved (C:/Users/UserName/Documents/PSoC Creator/WorkspaceName/) in Windows Explorer.</p>
+<p>Open the folder in which the workspace was saved (<code>C:\\Users\\UserName\\Documents\\PSoC Creator\\WorkspaceName</code>) in Windows Explorer.</p>
 <p>Right click within the folder and select &ldquo;Git Bash here&rdquo; to open a git terminal.</p>
-<p>To initialize the workspace as a git repo, enter <code>git init</code>. Next, download the (.gitignore)[https://google.com] and put the .gitignore file in the same folder.</p>
+<p>To initialize the workspace as a git repo, enter <code>git init</code>. Next, download the <a href="https://github.com/HalcyonAura/PSoCTest/blob/TestBranch1/.gitignore">.gitignore</a> and put the .gitignore file in the same folder.</p>
 <p>On the GitHub UI, create a new repository, but do not initialize it with a README.md, .gitignore, license, or any other option. Just a name, such as PSoC Workspace. Click create repository.</p>
 <p>Follow the instructions that appear to push the local repository to the newly created repository on GitHub. Make sure to include the .gitignore. Instead of adding all the files manually, type <code>git add .</code>, this means to add all files in the directory. It is better practice to use purposeful selection of files (e.g. <code>git add FolderName/*</code> which adds all files in a folder, or <code>git add FileName.fileExtension</code> which adds a single file) to avoid accidentally adding files that are not caught by the .gitignore, or committing secrets (passwords, API tokens, etc.) that should never be publically available.</p>
 <h2 id="pulling-from-the-repo">Pulling from the repo</h2>
