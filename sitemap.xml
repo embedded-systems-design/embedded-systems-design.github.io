@@ -56,7 +56,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/cadence/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/forward-annotation/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/cadence-manuals/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/mounting-holes/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/</loc>
   </url><url>
@@ -170,9 +174,13 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/github/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/hardware/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/house-of-quality/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/adding-silkscreen/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</loc>
   </url><url>
@@ -188,7 +196,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/level-shifters/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/local/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/logic/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</loc>
   </url><url>
@@ -203,6 +215,8 @@
     <loc>https://embedded-systems-design.github.io/tags/mechanical/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/mechanical-cad-software/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/merging-schematics/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/microchip/</loc>
   </url><url>
@@ -219,6 +233,8 @@
     <loc>https://embedded-systems-design.github.io/tags/mosfet/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/motor/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/motors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/noise/</loc>
   </url><url>
@@ -244,6 +260,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/pcb-design-checklist/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/text/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/peralta-103-resources/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic/</loc>
@@ -268,6 +286,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/pull-down-resistors/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/purchasing/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</loc>
@@ -289,6 +309,8 @@
     <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/sensors/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/silkscreen/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/simulation/</loc>
   </url><url>
@@ -332,6 +354,10 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/texas-instruments-microcontrollers/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics/tips-and-tricks/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/trace-width-calculator/</loc>
@@ -346,6 +372,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/uart/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</loc>
@@ -353,6 +381,8 @@
     <loc>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</loc>
   </url><url>

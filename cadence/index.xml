@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/cadence/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cadence Forward Annotation Tutorial</title>
+      <link>https://embedded-systems-design.github.io/forward-annotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/forward-annotation/</guid>
+      <description>Cadence Forward Annotation Tutorial After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic.</description>
+    </item>
+    
+    <item>
+      <title>Cadence Mounting Hole/Post Tutorial</title>
+      <link>https://embedded-systems-design.github.io/mounting-holes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/mounting-holes/</guid>
+      <description>Cadence Mounting Hole/Post Tutorial Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint.</description>
+    </item>
+    
+    <item>
       <title>Cadence simulation tutorials</title>
       <link>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22,6 +40,24 @@
       
       <guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid>
       <description>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Silkscreen in Cadence and Manually Add Text to it</title>
+      <link>https://embedded-systems-design.github.io/adding-silkscreen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/adding-silkscreen/</guid>
+      <description>How to Create a Silkscreen in Cadence and Manually Add Text to it  Create a (finalized) PCB layout.</description>
+    </item>
+    
+    <item>
+      <title>Merging Multiple Schematics into a Single Schematic</title>
+      <link>https://embedded-systems-design.github.io/merging-schematics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/merging-schematics/</guid>
+      <description>Merging Multiple Schematics into a Single Schematic   Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</description>
     </item>
     
     <item>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Types of Logic Operators and How to Use Them | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Types of Logic Operators and How to Use Them</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="what-are-logical-operators">What are Logical Operators?</h2>
+<p>Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free. When you ask your friend about what sides they want, you may ask them one of the following 4 questions:</p>
+<ol>
+<li>Do you want an apple <em>and</em> bread?</li>
+<li>Do you want an apple <em>or</em> bread?</li>
+<li>Do you <em>not</em> want an apple <em>and</em> bread?</li>
+<li>Do you <em>not</em> want an apple <em>or</em> bread?</li>
+</ol>
+<p>Reading these questions outload, you would know that each question has 2 immediate and unique responses your friend could give:</p>
+<ol>
+<li>Yes I want both, or no I do not want both.</li>
+<li>I want an apple, or I want a banana.</li>
+<li>I do, or do not want both the apple and bread.</li>
+<li>I do, or do not want an apple or bread.</li>
+</ol>
+<p>In programming the logic of &ldquo;and&rdquo;, &ldquo;or&rdquo;, and &ldquo;not&rdquo; related questions is the same as in real conversation. In Python, you can type these exact words when asking your computer to run through some logical thinking. In programs like C and Java however, the equivalent is <code>&amp;&amp;</code>, <code>||</code>, and <code>!</code> respectively. The syntax is straightforward, but the complexity of using logic operators in code comes with you as the programmer not knowing what questions and answers you need to have i.e. not knowing which logic operators you need to use.</p>
+<h2 id="when-to-use-or-">When to Use OR <code>||</code></h2>
+<p>Let&rsquo;s say you designed a system with two buttons and one DC motor. You want to write a code so that if either one of the two buttons is pressed, and triggers a digital HIGH or 1, the motor will move. What we have here is the perfect example of an OR logic. If Button 1 <strong>OR</strong> Button 2 is HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#00a8c8">int</span> <span style="color:#111">b1</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">1</span>
+<span style="color:#00a8c8">int</span> <span style="color:#111">b2</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">2</span>
+<span style="color:#00a8c8">int</span> <span style="color:#111">motor</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">3</span>
+
+<span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#111">B1</span> <span style="color:#f92672">||</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">){</span>
+		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+<span style="color:#111">}</span>
+<span style="color:#111">}</span>
+</code></pre></div><p>Notice in the pseudo code the use of &ldquo;==&rdquo; versus &ldquo;=&rdquo;. Remember from your previous programming class that these two symbols means two different things, when &ldquo;==&rdquo; is specific for logic operations, and &ldquo;=&rdquo; is equating a physical value to a data type.</p>
+<h2 id="when-to-use-and-">When to Use AND <code>&amp;&amp;</code></h2>
+<p>Let&rsquo;s say this time you want to write a code so that if both one of the two buttons are pressed, then the motor will move. What we have here is the perfect example of an AND logic. If Button 1 <strong>AND</strong> Button 2 is HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#111">B1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">){</span>
+		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+<span style="color:#111">}</span>
+<span style="color:#111">}</span>
+</code></pre></div><h2 id="when-to-use-not-">When to Use NOT <code>!</code></h2>
+<p>Now let&rsquo;s say you want to write a code so that if both of the two buttons are left unpressed, then the motor will move continuously. What we have here is the perfect example of the &ldquo;!&rdquo; logic. If Button 1 <strong>AND</strong> Button 2 is <em><strong>not</strong></em> HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#f92672">!</span><span style="color:#111">(</span><span style="color:#111">B1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)){</span>
+		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+<span style="color:#111">}</span>
+<span style="color:#111">}</span>
+</code></pre></div><p>What if you wanted to write a code so that if <em><strong>only one</strong></em> of the two buttons are left unpressed, then the motor will move continuously? Then we would have if Button 1 <strong>OR</strong> Button 2 is <em><strong>not</strong></em> HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#f92672">!</span> <span style="color:#111">(</span><span style="color:#111">B1</span> <span style="color:#f92672">||</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)){</span>
+		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+<span style="color:#111">}</span>
+<span style="color:#111">}</span>
+</code></pre></div><p>Notice here how where the <code>!</code> symbol is placed. It&rsquo;s a typically adopted process in code to write a logic and then negate it as an easy what to tell the computer and other readers of your code that you are utilizing a NOT statement. Just know that if the NOT symbol was placed anywhere else, you would end up with a different output than you probably expected. With this said, be sure to write down your pseudo code and think very carefully about what you need.</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/hugo/content/misc/types-of-logic-operators-and-how-to-use-them.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

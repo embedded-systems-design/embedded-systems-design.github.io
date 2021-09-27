@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Grow Your Embedded Programming Skills After EGR 304/314</title>
+      <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</guid>
+      <description>Personal Projects and Education
+a. Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
+    </item>
+    
+    <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -40,6 +50,15 @@
       
       <guid>https://embedded-systems-design.github.io/software-design/</guid>
       <description>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time.</description>
+    </item>
+    
+    <item>
+      <title>Types of Logic Operators and How to Use Them</title>
+      <link>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</guid>
+      <description>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</description>
     </item>
     
     <item>

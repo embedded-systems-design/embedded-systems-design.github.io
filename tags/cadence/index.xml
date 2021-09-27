@@ -53,12 +53,30 @@
     </item>
     
     <item>
+      <title>Cadence Forward Annotation Tutorial</title>
+      <link>https://embedded-systems-design.github.io/forward-annotation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/forward-annotation/</guid>
+      <description>Cadence Forward Annotation Tutorial After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic.</description>
+    </item>
+    
+    <item>
       <title>Cadence Manuals</title>
       <link>https://embedded-systems-design.github.io/cadence-manuals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
       <description>Capture CIS Manuals  OrCAD Capture Quick Reference OrCAD Capture User&amp;rsquo;s Guide OrCAD Capture Reference Guide  </description>
+    </item>
+    
+    <item>
+      <title>Cadence Mounting Hole/Post Tutorial</title>
+      <link>https://embedded-systems-design.github.io/mounting-holes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/mounting-holes/</guid>
+      <description>Cadence Mounting Hole/Post Tutorial Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint.</description>
     </item>
     
     <item>
@@ -260,6 +278,15 @@
     </item>
     
     <item>
+      <title>How to Create a Silkscreen in Cadence and Manually Add Text to it</title>
+      <link>https://embedded-systems-design.github.io/adding-silkscreen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/adding-silkscreen/</guid>
+      <description>How to Create a Silkscreen in Cadence and Manually Add Text to it  Create a (finalized) PCB layout.</description>
+    </item>
+    
+    <item>
       <title>How to export a PDF from Capture and PCB Editor</title>
       <link>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -284,6 +311,15 @@
       
       <guid>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</guid>
       <description>How do I manually route a design in PCB Editor? Your design should have a board outline and components placed, and blue lines (the &amp;ldquo;rats nest&amp;rdquo;) between the components (see example, Figure 1).</description>
+    </item>
+    
+    <item>
+      <title>Merging Multiple Schematics into a Single Schematic</title>
+      <link>https://embedded-systems-design.github.io/merging-schematics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/merging-schematics/</guid>
+      <description>Merging Multiple Schematics into a Single Schematic   Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</description>
     </item>
     
     <item>

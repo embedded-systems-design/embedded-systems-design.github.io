@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="are-connections-continuous">Are Connections Continuous?</h2>
+<ul>
+<li>
+<p><em>Conduct a continuity check on your board with a multimeter.</em></p>
+<p>As soon as you receive you PCB, the first thing you should always do is double check that all traces and pins that should be connected are, and those that should not be, aren&rsquo;t. Conducting a quick continuity test on your board not only take you about 5 minutes to do but could save you hours of trouble in the long run when you already have half your board populated and no idea where to start when a problem does arise. At least by checking the board first, you can eliminate the possibility of a manufacturing or trace drawing error from your list of reason why something does not work.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image1.jpg"><img src="image1.jpg" alt="A picture containing text, device Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">A picture containing text, device Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p><em>Check all your soldering points for continuity between the board and the pin.</em></p>
+<p>For many, this may be the first time you do some serious soldering. Soldering, while an easy concept to grasp, can be hard than it looks if not done properly. If you take your multimeter to your board and touch the pin of your already soldered component and the pad (on the backside if a through hole) or the trace the component is directly connected to and find there is no continuity, you are most likely just need to solder your pin again. Try to place some flux from a pen or as a paste onto your board before soldering and notice how much easier the solder will stick to the pad.</p>
+<p>However, be sure to also look for possible shorts! Shorts look like the photo shown below and can happen all the time between pins and pads that are very close to each other. Sometimes our hands are a little shaky or we did not remove enough solder form on old connection that needed to be changed. For or information about how to better your soldering skills, check out <a href="http://esdresources.blogspot.com/2016/02/soldering-and-desoldering-tips-and.html">this article</a> on the blog.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image2.jpeg"><img src="image2.jpeg" alt="Diagram Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Diagram Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ul>
+<h2 id="are-traces-correctly-routed-and-pads-sticking">Are Traces Correctly Routed and Pads Sticking?</h2>
+<ul>
+<li>
+<p>Jump incorrect traces or fallen pads to test points or another trace.</p>
+<p>Sometimes we design our PCB&rsquo;s and notice after they are manufactured that some traces are incorrect or not continuous where we need them to be. Have no fear! You don&rsquo;t need a new board if a few traces are off, you can simply jump traces to where they need to be by soldering a wire between a pad to another test point or to the trace that you need to connect. This process can seem very messy, when in all honesty it&rsquo;s bound to happen and is normal in many hardware projects. Here are some ideas you can consider when jumping or rerouting traces:</p>
+</li>
+<li>
+<p>Expose some of the copper on a trace by using an exacto-knife to gently scratch off some of the solder mask to prep a new connection or disconnect traces completely.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image3.jpeg"><img src="image3.jpeg" alt="A picture containing circuit, electronics Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">A picture containing circuit, electronics Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Use wires or a part of a wire to jump connections.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image4.jpeg"><img src="image4.jpeg" alt="A close-up of a machine Description automatically generated with low confidence"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">A close-up of a machine Description automatically generated with low confidence</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Use wires to jump pins to their correct trace or missing pad to a test point.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image5.jpg"><img src="image5.jpg" alt="A picture containing electronics, circuit Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">A picture containing electronics, circuit Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image6.jpg"><img src="image6.jpg" alt="Close-up of a circuit board Description automatically generated with medium confidence"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Close-up of a circuit board Description automatically generated with medium confidence</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ul>
+<h2 id="is-your-pin-layout-correct">Is Your Pin Layout Correct?</h2>
+<ol>
+<li>
+<p>Compare your PCB Designer pin layout versus the datasheet&rsquo;s pinout.</p>
+<p>One of the most seen problems every year in 304/314 is that students assume all voltage regulators have the same pin layout as each other. Students will create a 5V regulator part in Cadence and then use the same layout, make a copy, and name it a 3.3V regulator. Without checking the datasheet. Don&rsquo;t be this student!</p>
+<p>Lots of students use the LM7805 and LD1117 which are 5V and 3.3V regulators respectively. However, if you look at their pinout&rsquo;s, they are different:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image7.jpg"><img src="image7.jpg" alt="LM7805 5V Pin Layout"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">LM7805 5V Pin Layout</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image8.jpg"><img src="image8.jpg" alt="LD1117 3.3V Pin Layout"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">LD1117 3.3V Pin Layout</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>If you are in this situation like this with regulators or any other part, there are a few simple ways to fix this.</p>
+<ul>
+<li>
+<p>One option is to physically move the pins of the regulator to go through the proper holes made on the PCB. An example of this is shown below with a through-hole MOSFET:</p>
+<p>
+<a href="image9.jpeg"><img src="image9.jpeg" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>The second option is to alter your PCB board by cutting and re-routing traces as mentioned earlier. It&rsquo;s recommended you try the first option and then purse this option next if it&rsquo;s absolutely not possible to move the pin of a part around.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Try using a brand new copy of your component.</p>
+<p>If you compare your PCB Design against the datasheets of your components and find all traces and pin layouts are correct, try switching out the part for a brand new one from the bag. This is the importance of order multiple copies of your parts. It is possible to burn out the chip by touching the soldering iron to the pins of a part at too high of a heat or too often. Sometimes if a part is from an untrusted manufacturer such as an Amazon order, parts may come faulty as well. On this note however, you should never order parts from a website or company that does not come with a datasheet or is not approved by the teaching staff beforehand.</p>
+</li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/hugo/content/misc/pcb-degugging-tips-and-solutions/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

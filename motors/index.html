@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Motors | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Motors</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>There are many types of motors out there each with their own pros and cons. There are two main types of motors, brushed and brushless, each with many subcategories within them. In this we will only be going over the most common types and their control. These include DC brushed, stepper, and 3-phase brushless.</p>
+<p><strong>DC motors</strong></p>
+<p>This is the simplest and most often the cheapest motor to use for a project. these have excellent torque and speed and are good enough for most projects. This motor is a good jack of all trades option. The down sides of this motor are its mediocre efficiency compared to other motors, its electronically noisy, and has a shorter life span due to its brushes.</p>
+<p>
+<a href="image1.png"><img src="image1.png" alt=""  /></a>
+
+</p>
+<p>Control</p>
+<p>There are many ways to control this type of motor depending on your use case. If you just need it turn on or off, you could simply use a single transistor/MOSFET. If you want to control the direction of the motor, you will need to make an H-bridge or use a dedicated chip such as the L293d. to control the speed of the motor you can use PWM on your transistor switch or H-bridge. Remember to use a flyback diode as these motors create nasty voltage spikes on startup and braking. Those flyback diodes ensure those spikes are absorbed back into the system as opposed to the control transistors/MOSFETS. Below is a typical application circuit from the L293d chip link: <a href="https://www.ti.com/lit/ds/symlink/l293d.pdf?ts=1618773924301&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FL293D">https://www.ti.com/lit/ds/symlink/l293d.pdf?ts=1618773924301&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FL293D</a></p>
+<p>
+<a href="image2.png"><img src="image2.png" alt=""  /></a>
+
+</p>
+<p>Extra</p>
+<p>A good addition to these motors is a rotary encoder. These use magnetic sensors that are attached to the output of the motor to allow you to know how fast the motor is spinning. This is especially useful with PID control.</p>
+<p>It is also a good idea to pick a gearbox for your motor to either increase the torque or speed of the output shaft. DC motor gearboxes are extremely cheap and reliable.</p>
+<p>Stepper</p>
+<p>These motors are extremely efficient and have good torque but are mainly used for their excellent positioning. The shaft of these motors have special magnetic &ldquo;teeth&rdquo; on their shaft that allow them to make single &ldquo;steps&rdquo; at a time. This is useful for high precision applications such as 3d printers, CNC machines, and other precision machinery.</p>
+<p>
+<a href="image3.png"><img src="image3.png" alt=""  /></a>
+
+</p>
+<p>Control</p>
+<p>These motors are most easily controlled using a dedicated chip and to accurately use that chip refer to its datasheet. The good thing is many dual h-bridge chips have support for stepper motor driving. The basic principle behind its control is that there are two separate coils in the steeper motor. You need to power one coil after the other to get it to move from step to step. If you turn on one coil, but do not advance, this locks the motor in place, in this state it will not move unless a sufficient force is applied to overcome its magnetic field. This is different for each motor and can be solved with a gearbox.</p>
+<p>
+<a href="image4.png"><img src="image4.png" alt=""  /></a>
+
+</p>
+<p>Extra</p>
+<p>While stepper motors are accurate, remember to add a limit switch to determine where the motor is if your application requires that. Another thing to keep in mind is that once a stepper is over torqued your microcontroller will get confused where the motor is and this could potentially lead to the project breaking itself.</p>
+<p>3-phase brushless.</p>
+<p>These motors are top of the line in efficiency and torque. These motors are often referred to as Brushless DC motors. The main downside of these motors is their low start torque and their high price. Their high price is mainly due to their better-quality construction and their expensive control circuits. For most of your projects, most of these types of motors will take up your entire budget. There is one breed of 3-phase brushless that is cheap and easy to use for projects, PC fans. These fans use a 3-phase motor paired with a low power control circuit.</p>
+<p>
+<a href="image5.png"><img src="image5.png" alt=""  /></a>
+
+</p>
+<p>
+<a href="image6.png"><img src="image6.png" alt=""  /></a>
+
+</p>
+<p>Control.</p>
+<p>A PC fan only should be turned on or off unless there is a dedicated PWM pin as seen in the picture above or you use a more analog approach by changing the voltage of the power source. Do NOT try to use an H-bridge or anything else to reverse the polarity as this may damage the internal circuitry of the PC fan. Note: pc fans cannot be used as a generator as their control circuits will most likely block whatever power they generate, or the output voltage will be 3-phase dc.</p>
+<p>The control circuits used for 3 phase brushless motors are well timed 3-half bridges. The motor needs to be timed correctly for each of its phases. Think of it like the timing of cylinders firing in a car. Here is a great video explaining this in detail.</p>
+<p><a href="https://www.youtube.com/watch?v=W9IHEqlGG1s">https://www.youtube.com/watch?v=W9IHEqlGG1s</a></p>
+<p>It is recommended to NOT try to design a brushless driver from the ground up as they are extremely complex to build. Either use a motor with built in circuitry like a pc fan or use a dedicated 3-phase motor driver chip.</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/hugo/content/misc/motors/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

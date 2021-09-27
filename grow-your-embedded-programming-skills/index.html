@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Grow Your Embedded Programming Skills After EGR 304/314 | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Grow Your Embedded Programming Skills After EGR 304/314</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <ol>
+<li>
+<p><strong>Personal Projects and Education</strong></p>
+<p>a.  <a href="https://create.arduino.cc/projecthub">Arduino Project Hub</a> is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs. By now, most of you may have an Arduino kit from a previous class so the learning doesn&rsquo;t have to stop after 304/314.</p>
+<p>b.  <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a> is a great website that explains the basics of C/C++, Java. Python, etc. They also go through some simple example problems and show common programming problems commonly seen in software technical interviews as well.</p>
+<p>c.  <a href="https://www.hackerrank.com/">Hackerrank</a> is a fun website that allows you to work through programming problems for points. You can create a solution to a problem in any language you want (Java, C, Python, SQL, Linex, etc.) and then submit your solution to see how it compares with others on the ranking board. Signing up is free (&quot;Sign Up and Code&quot; for Developers). It's a great tool if you're trying to build your problem-solving skills in a specific language or just trying to have some fun programming!</p>
+</li>
+<li>
+<p><strong>Seminars/Conferences</strong></p>
+<p>a.  <a href="https://www.embeddedtechconf.com/">Embedded Technologies Expos and Conferences</a>- One of the largest embedded systems and IoT events, that focuses specifically on educating and training others in the field about what new in edge computing, AI, machine learning, IoT, and etc. They hold conferences annually, so be sure to place a bookmark on their website to know when their next conference is.</p>
+<p>b.  <a href="https://www.ces.tech/">CES Annual Conference</a> &ndash; Also known as Consumer Electronics Show, the CES conference features tons of speakers from the world top technology companies, and provides workshops are session open to attendee to learn about disruptive and advancements in the tech and electronics world in general.</p>
+<p>c.  Grace Hopper -</p>
+<p>d.  <a href="https://mlh.io/">Hackathons</a> &ndash; MLH or Major League Hacking</p>
+</li>
+<li>
+<p><strong>Internships/Co-ops</strong></p>
+</li>
+</ol>
+<p>Many graduates of the course aren&rsquo;t quite sure where to look when it comes to pursuing a career in embedded systems. In fact, most engineers with a career in &ldquo;embedded systems&rdquo; are typically senior electrical or software engineers due to the complexity and abundance of knowledge required to be successful in the field. But have no fear! There are many other roles and positions that focus on different facets of embedded systems, and all are worth exploring if you are trying to gain experience. Some of these job titles include:</p>
+<p>a.  Embedded Software Engineer
+b.  Software Engineer
+c.  Firmware Engineer
+d.  Hardware Engineer/Architect
+e.  PCB Designer
+f.  Electrical Engineer
+g.  Robotics Engineer
+h.  Systems Engineer
+i.  Test Engineer
+j.  And more!</p>
+<p>These roles are also the perfect keywords to search for when looking for internships on Google, LinkedIn, Glassdoor, and even Handshake. Just be sure to also type &ldquo;Intern&rdquo; or &ldquo;Internship&rdquo; in your search bar and filters as well. If you are looking for an experience longer than the typical 3-4 months during the summer, be sure to search for &ldquo;Co-ops&rdquo;. Co-ops are typically 6 months-1 year or longer and allow you more time to build your skills while being treated like an entry level engineer. Some example companies that are known to provide embedded systems related internships, and are good companies to looking into, include:</p>
+<ul>
+<li>Apple</li>
+<li>Amazon</li>
+<li>Boeing</li>
+<li>Brain Corp</li>
+<li>CalAmp</li>
+<li>General Atomics</li>
+<li>Honeywell</li>
+<li>IBM</li>
+<li>Intel</li>
+<li>Jet Propulsion Laboratory</li>
+<li>Lockheed Martin</li>
+<li>Logitech</li>
+<li>L3Harris</li>
+<li>Mercury Aerospace</li>
+<li>Microchip</li>
+<li>Microsoft</li>
+<li>Motorola</li>
+<li>NASA</li>
+<li>Natilus</li>
+<li>Northrup Grumman</li>
+<li>PlayStation</li>
+<li>Qualcomm</li>
+<li>Raytheon Technologies</li>
+<li>Samsung</li>
+<li>Space-X</li>
+<li>Stryker</li>
+<li>Tesla</li>
+<li>TuSimple</li>
+<li>United Armed Forces (Air Force, Army, etc.)</li>
+<li>ViaSat</li>
+</ul>
+<ol start="4">
+<li><strong>Research Experiences for Undergraduates (REU)</strong></li>
+</ol>
+<p>If you think research or pursuing graduate school in is your plans, <a href="https://www.nsf.gov/crssprgm/reu/">Research Experiences for Undergrads (REU)</a> funded by the National Science Foundation (NSF) or working with a professor over the summer may be more of your interests. Research allows to you work directly in the advancement of embedded systems and give you the opportunity to explore what interests you most. REU&rsquo;s and research positions are similar in the application process as internships and co-ops, however these kinds of experience typically require transcripts and letters of recommendation for a facility to better understand if you have a specific strong suit that is needed or to get to know you better beyond a student. They deadline for these summer opportunities are typically between January-May, with positions starting between May and June. Many of these REU&rsquo;s can be found on the <a href="https://www.nsf.gov/">NSF website</a>, but some example REU&rsquo;s that relate to embedded systems include:</p>
+<ul>
+<li><a href="https://www.cs.usc.edu/reu/">University of Southern California&rsquo;s</a> Robotics and Autonomous Systems (RAS)</li>
+<li><a href="https://khan.engr.uconn.edu/reu_site/">University of Connecticut&rsquo;s</a> Trustable Embedded Systems Security Research</li>
+<li><a href="https://www.fau.edu/isense/reu/">Florida Atlantic University&rsquo;s</a> Institute for Sensing and Embedded Network Systems Engineering</li>
+<li><a href="http://www.dejazzer.com/">Marquette University&rsquo;s</a> Marquette Embedded SystemS (MESS) Lab</li>
+<li><a href="https://ece.duke.edu/undergrad/reu">Duke University&rsquo;s</a> Electrical and Computer Engineering Summer Undergraduate Research Program</li>
+<li>And many more!</li>
+</ul>
+<p>When search for an REU, key words can include &ldquo;Sensing&rdquo;, &ldquo;Embedded Systems&rdquo;, &ldquo;Robotics&rdquo;, and many others. There are REU that are available to graduate students as well, so if you are pursuing 4+1 right after 304/314 there are still opportunities for you to pursue research at another university while at ASU.</p>
+<ol start="5">
+<li><strong>Mentorship</strong></li>
+</ol>
+<p>A fourth and final way to grow your expertise in embedded systems is by building a relationship with a mentor in the field! Mentors are highly recommended to all university students because they are people who you can look up to for help or questions related to becoming a professional. A mentor can be a working engineer in the field you are interested in, or even a close family friend who retired from a field you pursed a degree in. Either way, mentors are great connections to have. You can find a mentor at any time you want through services such as <a href="https://mentorship.asu.edu/">ASU&rsquo;s Mentor Network</a> or Alumni Association, or even by just by reaching out to a professional on LinkedIn and planning to meet with them over coffee.</p>
+<p>Another way mentorship could be a critical role in your life is by becoming one yourself! One way to build your experience is by teaching others what you have learned. An obvious way you can part take in this is by becoming a UGTA for EGR 304/314. As your teaching staff have said and you have probably heard before, UGTA&rsquo;s learn the most when they are helping others, and this can&rsquo;t be any more of an understatement. However, if becoming a UGTA may not be your thing, there is also the option to organize outreach events with younger children and teaching them how to build cool embedded systems on gadgets such as Arduino. Opportunities like this exist at summer technology camps such as <a href="https://www.idtech.com/">iD Tech</a>, where you can teach K-12 children how to code as a camp counselor, or by hosting an embedded systems fun project event at <a href="https://science.asu.edu/open-door">ASU&rsquo;s Open Door</a> event. You are never &ldquo;unknowing&rdquo; in the field of embedded systems, and by taking 304/314 do have experiences you can share with others that may benefit them. By spreading the knowledge, you have, you are also building your knowledge and expanding your impact in the realm of embedded systems, so never think it&rsquo;s too early to start giving back in this field.</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/hugo/content/misc/grow-your-embedded-programming-skills.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
