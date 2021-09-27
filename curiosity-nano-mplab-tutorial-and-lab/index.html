@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> **Curiosity Nano &amp; MPLAB Tutorial** | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.88.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2><strong>Curiosity Nano &amp; MPLAB Tutorial</strong></h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h1 id="objectives"><strong>Objectives</strong></h1>
+<p>Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.</p>
+<h1 id="resources"><strong>Resources</strong></h1>
+<ul>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf"><em>PIC16F18446 Curiosity Nano Hardware User Guide</em></a></li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf"><em>PIC16F18446 Datasheet</em></a></li>
+<li><a href="https://microchipdeveloper.com/mcc:mccgpio"><em>Using GPIO in MPLAB® X with MCC</em></a></li>
+<li><a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-2/what-is-an-interrupt"><em>What is an Interrupt?</em></a></li>
+<li><a href="https://microchipdeveloper.com/mcc:interrupts"><em>Implementing Interrupts using MPLAB® Code Configurator</em></a></li>
+</ul>
+<h1 id="1-create-your-first-project"><strong>1. Create Your First Project</strong></h1>
+<ol>
+<li>
+<p>After finish installing the MPLAB X IDE, you can plug the USB mini cable into the Curiosity USB debugging port. Once you plug the USB to your PC, a green LED will light up. This indicates the Curiosity board has been powered up.</p>
+</li>
+<li>
+<p>To create a new project, go to &ldquo;<strong>File</strong>&rdquo; - &ldquo;<strong>New Project</strong>&rdquo; - select &ldquo;<strong>Standalone Project</strong>&rdquo; - and click &ldquo;**Next \    **&rdquo;</p>
+<p>
+<a href="image29.png"><img src="image29.png" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>Select <strong>Device</strong> as &ldquo;<strong>PIC16F18446</strong>&rdquo; and click &ldquo;**Next \    **&rdquo;</p>
+<p>
+<a href="image25.png"><img src="image25.png" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>If you have your Curiosity Nano connected to your PC, the serial number of the device will show up.</p>
+<p>Select the serial number of your Curiosity board and click <strong>&ldquo;Next \    .&quot;</strong></p>
+<p>
+<a href="image30.png"><img src="image30.png" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>Now you will have to select a compiler for the MPLAB X. If you haven&rsquo;t installed <strong>Microchip XC8 Compiler</strong>, you can install it by clicking the <strong>&ldquo;Download Latest.&quot;</strong></p>
+<p>
+<a href="image10.png"><img src="image10.png" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>Once the XC8 compiler has been installed, select the <strong>&ldquo;XC8&rdquo;</strong> as the compiler for this project.</p>
+<p>
+<a href="image16.png"><img src="image16.png" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>The last step is to give a name to your first project as well as the location where you want to put your project.</p>
+</li>
+</ol>
+<h1 id="2-install-mplab-code-configurator"><strong>2. Install MPLAB Code Configurator</strong></h1>
+<p><em>Once you have all MPLAB X IDE installed, you can install the MPLAB Code Configurator</em></p>
+<ol>
+<li>Select <strong>&ldquo;Plugins&rdquo;</strong> under <strong>&ldquo;Tools&rdquo;</strong></li>
+</ol>
+<p>
+<a href="image24.png"><img src="image24.png" alt=""  /></a>
+
+</p>
+<ol start="2">
+<li>
+<p>Select the <strong>second tab (&ldquo;Available Plugins&rdquo;)</strong> and check the <strong>&ldquo;MPLAB Code Configurator.&quot;</strong></p>
+<p>Click <strong>&ldquo;Install&rdquo;</strong> to install this plugin.</p>
+</li>
+</ol>
+<p>
+<a href="image20.png"><img src="image20.png" alt=""  /></a>
+
+</p>
+<ol start="3">
+<li>
+<p>Once the Code Configurator has been installed, you can open it by clicking <strong>&ldquo;Tools&rdquo; - &ldquo;Embedded&rdquo;.</strong></p>
+<p>
+<a href="image6.png"><img src="image6.png" alt=""  /></a>
+
+</p>
+</li>
+</ol>
+<h1 id="3-getting-familiar-with-code-configurator">3. Getting Familiar with Code Configurator</h1>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image3.png"><img src="image3.png" alt="The screenshot above is the layout of the main page of the Code Configurator"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">The screenshot above is the layout of the main page of the Code Configurator</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ul>
+<li>
+<p><strong>Pin Manager (Blue Area)</strong></p>
+<p>Configure the direction (Input/Output), external interrupt, and PWM of GPIO pins in this area.</p>
+</li>
+<li>
+<p><strong>Available Device Resources (Red Area)</strong></p>
+<p>Peripherals (UART, PWM, I2C, SPI, etc) that available to the microcontroller.</p>
+</li>
+<li>
+<p><strong>Used Resources (Yellow Area)</strong></p>
+<p>The peripherals have been added/used in the microcontroller.</p>
+</li>
+<li>
+<p><strong>Resources Setups/ Register Setup (Blue Area)</strong></p>
+<p>The detailed register set up for the selected peripheral.</p>
+</li>
+<li>
+<p><strong>Code Generate Button (Pink Button)</strong></p>
+</li>
+</ul>
+<h1 id="4-lab-tutorials"><strong>4. Lab Tutorials</strong></h1>
+<h2 id="41-make-an-onboard-led-blink"><strong>4.1 Make an onboard LED blink</strong></h2>
+<p><em><strong>In this lab, you will turn on and off the onboard LED (LED0) by using a GPIO pin on the Curiosity.</strong></em></p>
+<p><em>Required Hardware: Curiosity Nano</em></p>
+<h3 id="411-code-configurator-setup"><strong>4.1.1 Code Configurator Setup</strong></h3>
+<ol>
+<li>
+<p>From <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf"><em>Curiosity Nano Hardware User Guide</em></a>, we know that the onboard LED has been routed to pin RA2.</p>
+</li>
+<li>
+<p>Double Click <strong>Pin Module</strong> under <strong>Project Resources.</strong></p>
+</li>
+<li>
+<p>Lock the <strong>Port A - Pin 2</strong> to <strong>GPIO - Output.</strong></p>
+</li>
+<li>
+<p>Click the <strong>Generate button</strong> to generate code for the GPIO module.</p>
+<p>The Code Configurator setup for Lab 4.1 should look like this:</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image27.png"><img src="image27.png" alt="Setting up the RA2 as GPIO output pin"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Setting up the RA2 as GPIO output pin</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h3 id="412-mcc-microchip-code-configurator-generated-files-and-mainc"><strong>4.1.2 MCC (Microchip Code Configurator) Generated Files and Main.c</strong></h3>
+<ol>
+<li>
+<p>Go back to <strong>Projects</strong>, you will see two subfolders called <strong>MCC Generated Files</strong> under both <strong>Header Files</strong> and <strong>Source Files.</strong> These folders contain the generated code, functions, and macros by <strong>MCC (Microchip Code Configurator).</strong></p>
+</li>
+<li>
+<p>The list of MCC generated functions or macro could be found at the <strong>header files</strong>. <em>(A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.)</em></p>
+<p>
+<a href="image19.png"><img src="image19.png" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>Since we only use GPIO as our peripheral, we can double click the &ldquo;<strong>pin_manager.h</strong>&rdquo; and see all the macros that MCC generated for us.</p>
+</li>
+<li>
+<p>To enable the onboard LED, we can use the following macros (also highlighted at the screenshot below):</p>
+</li>
+</ol>
+<p>
+<a href="image9.png"><img src="image9.png" alt=""  /></a>
+
+</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Macros</strong></th>
+<th style="text-align:left"><strong>Purpose of the Macro</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>IO_RA2_SetHigh()</strong></td>
+<td style="text-align:left">Set pin <strong>RA2</strong> as logic High</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>IO_RA2_SetLow()</strong></td>
+<td style="text-align:left">Set pin <strong>RA2</strong> as logic Low</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>IO_RA2_Toggle()</strong></td>
+<td style="text-align:left">Set pin <strong>RA2</strong> opposite to the previous logic state</td>
+</tr>
+</tbody>
+</table>
+<ol start="5">
+<li>
+<p>Go back to the &ldquo;<strong>main.c</strong>&rdquo; and use the macros inside the main function.</p>
+<p>You can also add a delay function in order to see the on and off transition of the LED.</p>
+<pre tabindex="0"><code>IO_RA2_SetHigh(); //Set RA2 (LED0) to logic high, turn on
+__delay_ms(1000); //delay
+IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
+</code></pre><p>Now your main function should look something like this:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image31.png"><img src="image31.png" alt="Main.c for Lab 4.1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Main.c for Lab 4.1</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click the <strong>Hammer button</strong> (
+<a href="image1.png"><img src="image1.png" alt=""  /></a>
+
+) to compile the project. If you see &ldquo;<strong>Build Successful</strong>&rdquo;, then you can flash the program to the microcontroller by clicking the <strong>Run</strong> main project button (
+<a href="image2.png"><img src="image2.png" alt=""  /></a>
+
+.)</p>
+</li>
+</ol>
+<h2 id="42-make-more-leds-blink"><strong>4.2 Make More LEDs Blink</strong></h2>
+<p><em><strong>In this lab, we will learn how to blink the external LEDs using pin RC1 and RC3 from the Curiosity Nano.</strong></em></p>
+<p><em>Required Hardware: Curiosity Nano, Breadboard, 220 Ohm resistors x2, Green LED x2</em></p>
+<h3 id="421-hardware-setup"><strong>4.2.1 Hardware Setup</strong></h3>
+<ol>
+<li>
+<p>Place headers on all ground (<strong>GND</strong>) pins of the Curiosity Nano. Connect the GND pin to the negative rail on the breadboard using a jumper cable.</p>
+</li>
+<li>
+<p>Place header on both pin <strong>RC1</strong> and <strong>RC3.</strong></p>
+</li>
+<li>
+<p>Place the first 220 Ohm resistors to RC1 and then place the second 220 Ohm resistor to RC3. (<a href="https://www.sparkfun.com/tutorials/219"><em><strong>What is a current limiting resistor?</strong></em></a>)</p>
+</li>
+<li>
+<p>Connect the Anode of the LED to the resistor. Connect the Cathode to Ground.</p>
+<p>
+<a href="image17.png"><img src="image17.png" alt=""  /></a>
+
+</p>
+<p><em>A simplified schematic for the Hardware Setup for this Lab.</em></p>
+<p>The Hardware Setup for Lab 4.2 should look like this:</p>
+</li>
+</ol>
+<p>
+<a href="image8.jpg"><img src="image8.jpg" alt=""  /></a>
+
+</p>
+<p><em>Lab 4.2 Hardware Setup</em></p>
+<h3 id="422-code-configurator-setup"><strong>4.2.2 Code Configurator Setup</strong></h3>
+<ol>
+<li>Open <strong>Pin Manager: Grid View,</strong> lock both <strong>Port C - Pin 1</strong> and <strong>Port C - Pin 3</strong> to <strong>GPIO - Output</strong>.</li>
+</ol>
+<p>
+<a href="image28.png"><img src="image28.png" alt=""  /></a>
+
+</p>
+<ol start="2">
+<li>Click the <strong>Generate button</strong> to generate code for GPIO module.</li>
+</ol>
+<h3 id="423-gpio-setup"><strong>4.2.3 GPIO Setup</strong></h3>
+<ol>
+<li>
+<p>Go back to <strong>Project</strong>, open &ldquo;<strong>pin_manager.h</strong>&rdquo;. You can see macros for <strong>IO_RC1</strong> and <strong>IO_RC3</strong> has been generated and ready for use.</p>
+<p>
+<a href="image9.png"><img src="image9.png" alt=""  /></a>
+
+</p>
+</li>
+</ol>
+<h3 id="424-lab-activity"><strong>4.2.4 Lab Activity</strong></h3>
+<p>Can you write a program in &ldquo;<strong>Main.c</strong>&rdquo; and make the external LEDs blink in sequence?</p>
+<h2 id="43-setting-up-pwm-pulse-width-modulation"><strong>4.3 Setting Up PWM (Pulse-Width Modulation)</strong></h2>
+<p><em><strong>In this lab, we will set up PWM (Pulse-Width Modulation) on the Curiosity board and create a breathing LED effect.</strong></em></p>
+<p><em>Required Hardware: Curiosity Nano</em></p>
+<h3 id="431-code-configurator-setup"><strong>4.3.1 Code Configurator Setup</strong></h3>
+<ol>
+<li>
+<p>Under <strong>Device Resources</strong>, add <strong>PWM6</strong> module to <strong>Project Resources.</strong></p>
+<p>
+<a href="image22.png"><img src="image22.png" alt=""  /></a>
+
+</p>
+<p><em>PWM Setup Page</em></p>
+</li>
+<li>
+<p>Under the <strong>Notification [MCC]</strong>, the warning tells us to configure <strong>Timer2</strong> for the PWM6 module.</p>
+</li>
+<li>
+<p>Find **TMR2 (**Timer 2) under the <strong>Device Resources</strong> and add <strong>TMR2</strong> as peripherals.</p>
+</li>
+<li>
+<p>Change the <strong>Clock Source</strong> to <strong>FOSC/4</strong>. Keep the <strong>Prescaler</strong> and <strong>Postscaler</strong> as <strong>1:1.</strong></p>
+<p>
+<a href="image23.png"><img src="image23.png" alt=""  /></a>
+
+</p>
+<p><em>Setting the TMR2 (Timer 2) Clock Source as &ldquo;FOSC/4&rdquo;</em></p>
+</li>
+<li>
+<p>Go back to <strong>Pin Manager: Grid View.</strong> Now you will see two extra rows. One of them is the PWM6 module, and the other one is the TMR2 (Timer 2) module. Lock the <strong>Port A - Pin 2</strong> to <strong>PWM6</strong> row.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image26.png"><img src="image26.png" alt="Setting the PWM6 to Port A - Pin 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Setting the PWM6 to Port A - Pin 2</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click <strong>Generate button</strong> to generate code for both PWM and Timer module.</p>
+</li>
+</ol>
+<h3 id="432-pwm-duty-cycle-setup"><strong>4.3.2 PWM Duty Cycle Setup</strong></h3>
+<ol>
+<li>
+<p>Go back to <strong>Project</strong>, you should be able to see <strong>pwm6.h</strong>, <strong>tmr2.h</strong>, <strong>pwm6.c,</strong> and <strong>tmr2.c</strong> have been generated. Open &ldquo;<strong>pwm6.h</strong>&rdquo;, scroll down and you can find there&rsquo;s a custom function named <strong>PWM6_LoadDutyValue</strong>.</p>
+<p><strong>PWM6_LoadDutyValue</strong> allows you to change the PWM duty cycle.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image18.png"><img src="image18.png" alt="The Custom Function &amp;ldquo;PWM6_LoadDutyValue&amp;rdquo; at &amp;ldquo;pwm6.h&amp;rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">The Custom Function &amp;ldquo;PWM6_LoadDutyValue&amp;rdquo; at &amp;ldquo;pwm6.h&amp;rdquo;</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>According to the datasheet of the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf"><em>PIC16F18446</em></a>, we know that the resolution of the PWM can go up to 10-bit resolution. Therefore, the total number of PWM steps can be calculated as follows:</p>
+<p>${2^{10}\  = \ 1024}^{}\text{steps}$</p>
+<p>In this case, we can calculate and get the PWM module outputting at 50% duty cycle.</p>
+<p>${50%\ Duty\ Cycle\  = \ 1024\  \times 50% = \ 512}^{}$</p>
+<p>From the coding standpoint, we can use the following code to achieve a 50% PWM duty cycle to RA2 pin:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#ae81ff">512</span><span style="color:#111">);</span> <span style="color:#75715e">// 50% duty cycle for PWM
+</span></code></pre></div></li>
+</ol>
+<h3 id="433-make-an-led-breathe"><strong>4.3.3 Make an LED Breathe</strong></h3>
+<ol>
+<li>
+<p>The idea of making LED breathing is to dim the LED with different PWM duty cycle.</p>
+<p>Try following code in your <strong>Main.c</strong> program:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">1024</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75715e">// increase duty cycle to 100%
+</span><span style="color:#75715e"></span><span style="color:#111">{</span>
+    <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+<span style="color:#111">}</span>
+
+<span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1023</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">--</span><span style="color:#111">)</span><span style="color:#75715e">// decrease duty cycle to 0%
+</span><span style="color:#75715e"></span><span style="color:#111">{</span>
+    <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+<span style="color:#111">}</span>
+</code></pre></div></li>
+<li>
+<p>Click the <strong>Hammer button</strong> (
+<a href="image1.png"><img src="image1.png" alt=""  /></a>
+
+) to compile the project. If you see &ldquo;<strong>Build Successful</strong>&rdquo;, then you can flash the program to the microcontroller by clicking the <strong>Run</strong> main project button (
+<a href="image2.png"><img src="image2.png" alt=""  /></a>
+
+.)</p>
+</li>
+</ol>
+<h2 id="44-button-controlled-led"><strong>4.4 Button Controlled LED</strong></h2>
+<p><em><strong>In this lab, we will learn about the ISR (<a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-2/what-is-an-interrupt"><em>Interrupt Service Routine</em></a>) and use ISR to light up the onboard LED.</strong></em></p>
+<p><em>Required Hardware: Curiosity Nano x1</em></p>
+<h3 id="441-code-configurator-setup"><strong>4.4.1 Code Configurator Setup</strong></h3>
+<ol>
+<li>
+<p>Under <strong>Device Resources</strong>, find <strong>Ext_Interrupt</strong> under <strong>Device Resources.</strong></p>
+</li>
+<li>
+<p>Add <strong>EXT_INT</strong> module to <strong>Project Resources.</strong></p>
+</li>
+<li>
+<p>From <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf"><em>Curiosity Nano Hardware User Guide</em></a>, we know that the onboard <strong>mechanical switch (SW0)</strong> has been routed to <strong>pin RC2.</strong> When the mechanical switch (SW0) is pressed, it will drive the RC2 to the ground (GND).</p>
+</li>
+<li>
+<p>Under Project Resources, open <strong>Pin Module</strong> and <strong>Pin Manager: Grid View</strong></p>
+</li>
+<li>
+<p>Lock <strong>Port C - Pin 2</strong> to <strong>GPIO - Input and EXT_INT</strong>.</p>
+</li>
+<li>
+<p>Check the <strong>WPU</strong> box for <strong>Pin RC2</strong>. This will configure a <strong>Weak Pull-up (WPU)</strong> to <strong>Pin RC2</strong>. The WPU will keep the Pin RC2 as logic High.</p>
+<p>
+<a href="image4.png"><img src="image4.png" alt=""  /></a>
+
+</p>
+<p><em>A simplified schematic for WPU configuration with RC2 and SW0.</em></p>
+</li>
+<li>
+<p>You can also rename the <strong>IO_RC2</strong> to <strong>SW</strong> under the <strong>Custom Name</strong> column.</p>
+<p>
+<a href="image12.png"><img src="image12.png" alt=""  /></a>
+
+</p>
+<p><em>Giving a custom name (SW) to pin RC2</em></p>
+</li>
+<li>
+<p>Now double click the <strong>EXT_INT</strong> under the <strong>Project Resources.</strong></p>
+</li>
+<li>
+<p>Since the SW0 will drive the Pin RC2 to logic low (GND) when it&rsquo;s being pressed, we will need to Change <strong>Edge Detection</strong> to <strong>falling edge</strong>. In this case, an external interrupt will generate when the SW0 is pressed.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image15.png"><img src="image15.png" alt="Setting the Edge Detection to Falling Edge"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Setting the Edge Detection to Falling Edge</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Click the <strong>Generate button</strong> to generate code for the External Interrupt module.</p>
+</li>
+</ol>
+<h3 id="442-push-button-interrupt-setup"><strong>4.4.2 Push Button Interrupt Setup</strong></h3>
+<ol>
+<li>
+<p>Go back to <strong>Project</strong>, you should be able to see <strong>ext_int.h</strong>, <strong>interrupt_manager.h</strong>, <strong>ext_int.c,</strong> and <strong>interrupt_manager.c</strong> have been generated.</p>
+</li>
+<li>
+<p>Open &ldquo;<strong>pin_manager.h</strong>&rdquo;, scroll down and you can find the macros for <strong>SW (Pin RC2)</strong>. The macro <strong>SW_GetValues()</strong> is the one that can get the input state (either logic High or logic Low). We will use this macro to get whether the button is pressed or not.</p>
+<p>
+<a href="image14.png"><img src="image14.png" alt=""  /></a>
+
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">SW_GetValues</span><span style="color:#111">()</span> <span style="color:#75715e">// Macro for knowing the input state of SW0 (Pin RC2) 
+</span></code></pre></div></li>
+<li>
+<p>Open &ldquo;<strong>ext_int.c</strong>&rdquo;. You can find a couple of predefined functions that related to interrupts that Inside the &ldquo;ext_int.c.&rdquo;</p>
+</li>
+<li>
+<p>Include the &ldquo;mcc.h&rdquo; at the beginning of the &ldquo;ext_int.c.&rdquo; In this case, we can utilize the Breathing LED code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;mcc.h&#34; //include “mcc.h” to “ext_int.c”</span><span style="color:#75715e">
+</span></code></pre></div><p>
+<a href="image11.png"><img src="image11.png" alt=""  /></a>
+
+</p>
+<p><em>Include header file &ldquo;mcc.h&rdquo; to &ldquo;ext_int.c&rdquo;</em></p>
+</li>
+<li>
+<p>Scroll down the &ldquo;<strong>ext_int.c</strong>&rdquo;, and you can find there&rsquo;s a custom function named <strong>INT_DefaultInterruptHandler</strong>.</p>
+<p>You can write the code for your interrupt inside this function.</p>
+</li>
+<li>
+<p>Now, we want to know the push button (SW0) whether it is being pressed or not. Once the SW0 is being pressed, the MCU will detect the input of the RC2 has been driven to logic Low. This will create an interrupt and will run the code inside the <strong>INT_DefaultInterruptHandler</strong>.</p>
+</li>
+<li>
+<p><strong>Copy</strong> the following code and <strong>paste</strong> them inside the <strong>INT_DefaultInterruptHandler.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">                                      <span style="color:#75715e">// check the SW0 is being pressed or not
+</span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">SW_GetValue</span><span style="color:#111">()</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span>           <span style="color:#75715e">// if the SW0 is in logic Low (pull to GND)
+</span><span style="color:#75715e"></span>    <span style="color:#111">{</span>
+        <span style="color:#75715e">//Now Blink the LED
+</span><span style="color:#75715e"></span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">1024</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span>  <span style="color:#75715e">// increase duty cycle to 100%
+</span><span style="color:#75715e"></span>        <span style="color:#111">{</span>
+            <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+            <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+        <span style="color:#111">}</span>
+
+        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1023</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">--</span><span style="color:#111">)</span>  <span style="color:#75715e">// decrease duty cycle to 0%
+</span><span style="color:#75715e"></span>        <span style="color:#111">{</span>
+            <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+            <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+        <span style="color:#111">}</span>
+    <span style="color:#111">}</span>
+</code></pre></div><p>
+<a href="image21.png"><img src="image21.png" alt=""  /></a>
+
+</p>
+<p><em>ISR code for INT_DefaultInterruptHandler function.</em></p>
+</li>
+</ol>
+<h3 id="443-enable-interrupt-services"><strong>4.4.3 Enable Interrupt Services</strong></h3>
+<ol>
+<li>
+<p>The last step is to enable the interrupt services for the microcontroller.</p>
+<p>Go back to <strong>Main.c</strong>, uncomment following code that inside the main function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">                                        <span style="color:#75715e">//Enable the Global Interrupts
+</span><span style="color:#75715e"></span><span style="color:#111">INTERRUPT_GlobalInterruptEnable</span><span style="color:#111">();</span>      <span style="color:#75715e">//Uncommented
+</span><span style="color:#75715e"></span>
+                                        <span style="color:#75715e">// Enable the Peripheral Interrupts
+</span><span style="color:#75715e"></span><span style="color:#111">INTERRUPT_PeripheralInterruptEnable</span><span style="color:#111">();</span>  <span style="color:#75715e">//Uncommented
+</span></code></pre></div><p>
+<a href="image13.png"><img src="image13.png" alt=""  /></a>
+
+</p>
+<p><em>Enable Interrupt Service at Main.c</em></p>
+</li>
+<li>
+<p>Click the <strong>Hammer button</strong> (
+<a href="image1.png"><img src="image1.png" alt=""  /></a>
+
+) to compile the project. If you see &ldquo;<strong>Build Successful</strong>&rdquo;, then you can flash the program to the microcontroller by clicking the <strong>Run</strong> main project button (
+<a href="image2.png"><img src="image2.png" alt=""  /></a>
+
+.)</p>
+</li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/hugo/content/tutorials/microcontrollers/curiosity-nano-mplab-tutorial-and-lab/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
