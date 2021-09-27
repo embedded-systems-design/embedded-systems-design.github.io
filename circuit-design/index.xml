@@ -43,12 +43,41 @@
     </item>
     
     <item>
+      <title>Level shifters</title>
+      <link>https://embedded-systems-design.github.io/level-shifters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/level-shifters/</guid>
+      <description>What is a level shifter?
+A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</description>
+    </item>
+    
+    <item>
+      <title>Motors</title>
+      <link>https://embedded-systems-design.github.io/motors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/motors/</guid>
+      <description>There are many types of motors out there each with their own pros and cons.</description>
+    </item>
+    
+    <item>
       <title>Power Supplies 101</title>
       <link>https://embedded-systems-design.github.io/power-supplies-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/power-supplies-101/</guid>
       <description>What are the components of a basic power supply subsystem?  Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit  What are the design considerations for a battery-operated circuit?</description>
+    </item>
+    
+    <item>
+      <title>Pullup/Pulldown resistors</title>
+      <link>https://embedded-systems-design.github.io/pull-down-resistors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pull-down-resistors/</guid>
+      <description>What are pullup resistors?
+These are resistors used to pull a volage on a specific pin high.</description>
     </item>
     
     <item>
