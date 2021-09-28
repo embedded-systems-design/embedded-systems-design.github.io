@@ -134,6 +134,15 @@
     </item>
     
     <item>
+      <title>Steps and additional notes for Board Layout</title>
+      <link>https://embedded-systems-design.github.io/pcb-tutorial-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pcb-tutorial-notes/</guid>
+      <description>In the hopes that it will help anyone that is still working on the PCB, here is a list of the steps needed for this homework assignment with the corresponding blog posts and some of my comments.</description>
+    </item>
+    
+    <item>
       <title>Trace Width Calculator</title>
       <link>https://embedded-systems-design.github.io/trace-width-calculator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

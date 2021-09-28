@@ -15,14 +15,5 @@
       <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
     </item>
     
-    <item>
-      <title>DC Motors 101</title>
-      <link>https://embedded-systems-design.github.io/dc-motors-101/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/dc-motors-101/</guid>
-      <description>Watch the video mini-lecture on DC motor control from Dr. Jordan  What types of DC motors are most common?</description>
-    </item>
-    
   </channel>
 </rss>

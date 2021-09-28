@@ -50,6 +50,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/bjt/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/bluetooth/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/bypass-capacitor-basics/</loc>
@@ -92,6 +94,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/circuit-design/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/circuit-design/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/circuits/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/components/</loc>
@@ -99,6 +103,8 @@
     <loc>https://embedded-systems-design.github.io/configuring-cadence/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/connectors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/connectors-101/</loc>
   </url><url>
@@ -170,6 +176,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/fuses/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/fuses-101/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</loc>
@@ -182,11 +190,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/house-of-quality/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/adding-silkscreen/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/tags/ics/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</loc>
   </url><url>
@@ -199,6 +207,8 @@
     <loc>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/level-shifters/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/level-shifters/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/local/</loc>
   </url><url>
@@ -234,9 +244,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/mosfet/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tags/motor/</loc>
+    <loc>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/motors/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/motors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/noise/</loc>
   </url><url>
@@ -272,7 +284,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/power-supplies-101/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tags/power-supply/</loc>
+    <loc>https://embedded-systems-design.github.io/tags/power-supplies/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</loc>
   </url><url>
@@ -288,6 +300,10 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/pulldown/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/pullup/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/pull-down-resistors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/purchasing/</loc>
@@ -297,6 +313,8 @@
     <loc>https://embedded-systems-design.github.io/recreating-a-simple-round-padstack/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/resetting-reference-designators-in-cadence-design-entry-cis/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/resistors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/routing-traces/</loc>
   </url><url>
@@ -322,6 +340,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/software-design/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/solar/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/soldering/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/soldering-and-desoldering-tips-and-tricks/</loc>
@@ -339,6 +359,10 @@
     <loc>https://embedded-systems-design.github.io/tags/spi/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/stepper-motor-selection-and-control_media/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/pcb-tutorial-notes/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</loc>
   </url><url>
@@ -368,6 +392,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/transistors/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/transistors/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/tutorial/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/</loc>
@@ -389,6 +415,8 @@
     <loc>https://embedded-systems-design.github.io/tags/version-control/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/video/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</loc>
   </url><url>

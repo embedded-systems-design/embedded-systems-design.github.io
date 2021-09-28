@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fuses on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/fuses/</link>
+    <description>Recent content in fuses on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/fuses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuses 101</title>
+      <link>https://embedded-systems-design.github.io/fuses-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/fuses-101/</guid>
+      <description>What are fuses and when do I need them? A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much current.</description>
+    </item>
+    
+  </channel>
+</rss>

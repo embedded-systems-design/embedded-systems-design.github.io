@@ -52,6 +52,15 @@
     </item>
     
     <item>
+      <title>bjt</title>
+      <link>https://embedded-systems-design.github.io/tags/bjt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/bjt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bluetooth</title>
       <link>https://embedded-systems-design.github.io/tags/bluetooth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -97,6 +106,15 @@
     </item>
     
     <item>
+      <title>circuit-design</title>
+      <link>https://embedded-systems-design.github.io/tags/circuit-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/circuit-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>circuits</title>
       <link>https://embedded-systems-design.github.io/tags/circuits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,6 +129,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/components/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>connectors</title>
+      <link>https://embedded-systems-design.github.io/tags/connectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/connectors/</guid>
       <description></description>
     </item>
     
@@ -232,6 +259,15 @@
     </item>
     
     <item>
+      <title>fuses</title>
+      <link>https://embedded-systems-design.github.io/tags/fuses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/fuses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>github</title>
       <link>https://embedded-systems-design.github.io/tags/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -250,20 +286,20 @@
     </item>
     
     <item>
-      <title>ics</title>
-      <link>https://embedded-systems-design.github.io/tags/ics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/tags/ics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>interfacing</title>
       <link>https://embedded-systems-design.github.io/tags/interfacing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/interfacing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>level-shifters</title>
+      <link>https://embedded-systems-design.github.io/tags/level-shifters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/level-shifters/</guid>
       <description></description>
     </item>
     
@@ -340,11 +376,11 @@
     </item>
     
     <item>
-      <title>motor</title>
-      <link>https://embedded-systems-design.github.io/tags/motor/</link>
+      <title>motors</title>
+      <link>https://embedded-systems-design.github.io/tags/motors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/tags/motor/</guid>
+      <guid>https://embedded-systems-design.github.io/tags/motors/</guid>
       <description></description>
     </item>
     
@@ -412,11 +448,11 @@
     </item>
     
     <item>
-      <title>power supply</title>
-      <link>https://embedded-systems-design.github.io/tags/power-supply/</link>
+      <title>power-supplies</title>
+      <link>https://embedded-systems-design.github.io/tags/power-supplies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/tags/power-supply/</guid>
+      <guid>https://embedded-systems-design.github.io/tags/power-supplies/</guid>
       <description></description>
     </item>
     
@@ -457,11 +493,38 @@
     </item>
     
     <item>
+      <title>pulldown</title>
+      <link>https://embedded-systems-design.github.io/tags/pulldown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/pulldown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pullup</title>
+      <link>https://embedded-systems-design.github.io/tags/pullup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/pullup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>purchasing</title>
       <link>https://embedded-systems-design.github.io/tags/purchasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/purchasing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resistors</title>
+      <link>https://embedded-systems-design.github.io/tags/resistors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/resistors/</guid>
       <description></description>
     </item>
     
@@ -507,6 +570,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/software-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solar</title>
+      <link>https://embedded-systems-design.github.io/tags/solar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/solar/</guid>
       <description></description>
     </item>
     
@@ -597,6 +669,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/transistor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transistors</title>
+      <link>https://embedded-systems-design.github.io/tags/transistors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/transistors/</guid>
       <description></description>
     </item>
     

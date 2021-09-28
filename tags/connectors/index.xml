@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>connectors on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/connectors/</link>
+    <description>Recent content in connectors on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/connectors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connectors 101</title>
+      <link>https://embedded-systems-design.github.io/connectors-101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/connectors-101/</guid>
+      <description>What is a connector? A connector is an electrical component that links two or more components together.</description>
+    </item>
+    
+  </channel>
+</rss>

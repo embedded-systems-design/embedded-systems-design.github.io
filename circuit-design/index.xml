@@ -43,6 +43,15 @@
     </item>
     
     <item>
+      <title>How to Add Solar to Your Circuit</title>
+      <link>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</guid>
+      <description>Adding solar to a project has a few more steps then just hard wiring a solar panel.</description>
+    </item>
+    
+    <item>
       <title>Level shifters</title>
       <link>https://embedded-systems-design.github.io/level-shifters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,6 +59,15 @@
       <guid>https://embedded-systems-design.github.io/level-shifters/</guid>
       <description>What is a level shifter?
 A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</description>
+    </item>
+    
+    <item>
+      <title>MOSFET for use with a 3.3V and 5V Microcontroller</title>
+      <link>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</guid>
+      <description>Selecting the MOSFET When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.</description>
     </item>
     
     <item>
@@ -81,12 +99,30 @@ These are resistors used to pull a volage on a specific pin high.</description>
     </item>
     
     <item>
+      <title>Stepper Motor Selection and Control</title>
+      <link>https://embedded-systems-design.github.io/stepper-motor-selection-and-control_media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/stepper-motor-selection-and-control_media/</guid>
+      <description>Stepper Motor Selection There are four variables to consider when selecting a stepper motor</description>
+    </item>
+    
+    <item>
       <title>Transistors</title>
       <link>https://embedded-systems-design.github.io/transistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/transistors/</guid>
       <description>What is a transistor? A transistor is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</description>
+    </item>
+    
+    <item>
+      <title>Voltage Regulators VS DC-DC converters</title>
+      <link>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</guid>
+      <description>How do I choose a voltage regulator? There are three major types of voltage regulators that you will encounter in this program:</description>
     </item>
     
   </channel>
