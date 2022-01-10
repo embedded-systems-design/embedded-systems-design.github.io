@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pic on Embedded Systems Design</title>
+    <title>PIC on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/tags/pic/</link>
-    <description>Recent content in pic on Embedded Systems Design</description>
+    <description>Recent content in PIC on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/pic/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,6 +13,15 @@
       
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
       <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
+      <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
+      <description>Introduction Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller.</description>
     </item>
     
   </channel>

@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>ADC</title>
+      <link>https://embedded-systems-design.github.io/tags/adc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/adc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>argon</title>
       <link>https://embedded-systems-design.github.io/tags/argon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -439,11 +448,20 @@
     </item>
     
     <item>
-      <title>pic</title>
+      <title>PIC</title>
       <link>https://embedded-systems-design.github.io/tags/pic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/pic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PIC18F47Q10</title>
+      <link>https://embedded-systems-design.github.io/tags/pic18f47q10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/pic18f47q10/</guid>
       <description></description>
     </item>
     

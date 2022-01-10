@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
+      <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
+      <description>Introduction Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller.</description>
+    </item>
+    
+    <item>
       <title>UART PIC to Argon Tutorial</title>
       <link>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10 | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.91.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+
+
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+      <div class="text-center">
+      
+      
+      
+      
+      <a href="/tutorials">tutorials</a>
+       <i class="ti-arrow-right"></i>  
+      
+      
+      
+      
+      
+      <a href="/tutorials/microcontrollers">microcontrollers</a>
+       <i class="ti-arrow-right"></i>  
+      
+      
+      
+      
+      
+      <a href="./">analog-io-eusart</a>
+      
+      
+      
+      
+      
+      </div>
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h1 id="introduction">Introduction</h1>
+<p>Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller. The PIC&rsquo;s ADC subsystem is the peripheral used to read analog values and convert it into a digital number for use in your program. It can be configured in a variety of ways. In this assignment, you will create an ADC subsystem and program your microcontroller to transmit the result of reading an analog voltage measured at an input pin, using the ADC subsystem in one of its simplest configurations.</p>
+<p>Likewise, PWM signals are often used to control a variety of actuators (e.g., servo motors), and, because they provide a proportional time-based signal, can be used in certain circumstances, as an analog output from a microcontroller. In this assignment, you will also program your microcontroller to generate a PWM signal using the measured ADC value, and demonstrate modifying the output of the PWM signal in two key ways.</p>
+<p>The goal of this assignment is to introduce you to the MPLAB® X IDE, and to verify that you can create a project, add peripherals (ADC, PWM, EUSART), and use them together. By the end of this assignment you should be able to demonstrate proficiency in:</p>
+<ol>
+<li>Configuring your microcontroller to send data across a virtual COM port to your PC.</li>
+<li>Measuring an analog voltage using an analog to digital converter</li>
+<li>Outputting the measured ADC value over EUSART</li>
+<li>Converting an ADC value to Voltage and outputting the result over EUSART</li>
+<li>Changing a pulse-width modulation (PWM) signal
+a.  With a specific duty cycle from your microcontroller output pin.
+b.  By changing the frequency of the cycle itself</li>
+</ol>
+<h1 id="resources">Resources</h1>
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></li>
+<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> Microchip Main Page
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip"><em>Design Documentation</em></a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf"><em>Schematic</em></a></li>
+<li><a href="http://ww1.microchip.com/downloads/en/Appnotes/Getting-Started-with-UART-Using-EUSART-on-PIC18-90003282A.pdf"><em>Microchip tutorial &amp; example</em></a></li>
+</ul>
+</li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_XC8_C_Compiler_User_Guide_for_PIC.pdf"><em>XC8 Compiler Documentation</em></a></li>
+<li>Microchip developer <a href="https://microchipdeveloper.com/"><em>tutorials site</em></a></li>
+<li>Analog and ADC&rsquo;s
+<ul>
+<li>Analog input - Scherz &amp; Monk, Chapter 13.5.2</li>
+<li><a href="https://www.youtube.com/watch?v=4WaB_Lj8FnY&amp;list=PL3lfkED2i6JcJH-OETxsI43e8M-7eLeL-&amp;index=22"><em>ADC and LCD with MPLAB Code Configurator</em></a> video</li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a>, section X.Y.Z on ADC^2^</li>
+</ul>
+</li>
+<li>Pulse Width Modulation (PWM)
+<ul>
+<li>Pulse-width modulation - Scherz &amp; Monk, Chapter 13.5.3, 14.4,</li>
+<li><a href="http://www.afrotechmods.com/groovy/PWM_tutorial/PWM_tutorial.htm">PWM Tutorial from AfroTechMods.com</a></li>
+</ul>
+</li>
+<li>Potentiometers - Scherz &amp; Monk, Chapter 3.5.6 and 3.5.7</li>
+<li>Software
+<ul>
+<li><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"><em>PuTTY</em></a> (Windows)</li>
+</ul>
+</li>
+<li>C Information
+<ul>
+<li><a href="https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html"><em>GNU C Reference Manual</em></a></li>
+<li>tutorial on <a href="https://www.tutorialspoint.com/cprogramming/c_type_casting.htm"><em>type casting</em></a></li>
+<li>article on <a href="https://www.geeksforgeeks.org/left-shift-right-shift-operators-c-cpp/"><em>bit shifting</em></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="parts-needed">Parts Needed</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Item</strong></th>
+<th style="text-align:left"><strong>Quantity</strong></th>
+<th style="text-align:left"><strong>Value(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Breadboard</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Resistors</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">TBD by student</td>
+</tr>
+<tr>
+<td style="text-align:left">LED</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Any color</td>
+</tr>
+<tr>
+<td style="text-align:left">Jumper wires</td>
+<td style="text-align:left">Several</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="instructions">Instructions</h1>
+<p><em>You may use your Nano board or a breadboard with your microcontroller on it.</em></p>
+<ol>
+<li>Using the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> and lessons learned last semester with connecting to the PSoC®, study the following critical information and concepts:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Critical Information and Concepts</strong></th>
+<th style="text-align:left"><strong>Importance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">a.  The name of the virtual COM port that communicates over the Curiosity Nano&rsquo;s USB to your computer.</td>
+<td style="text-align:left">Needed in order to connect PuTTY to the Curiosity Nano</td>
+</tr>
+<tr>
+<td style="text-align:left">b.  Which EUSART subsystem connects to it</td>
+<td style="text-align:left">Needed to determine which EUSART port to connect the PIC to in order to communicate with the debugger and computer</td>
+</tr>
+<tr>
+<td style="text-align:left">c.  Which specific pins are used for receive and transmit on the PIC</td>
+<td style="text-align:left">Needed to assign the correct pins to the EUSART component</td>
+</tr>
+<tr>
+<td style="text-align:left">d.  How much current can a digital I/O pin safely source or sink? (Hint: See the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a>)</td>
+<td style="text-align:left">Needed to match the current needs of external loads (e.g., LEDs) with the IC and determine whether you need interface circuitry (e.g., a transistor)</td>
+</tr>
+<tr>
+<td style="text-align:left">e.  Which pin of the Curiosity Nano board outputs the regulated power used by the &ldquo;target&rdquo; (the PIC18F47Q10)</td>
+<td style="text-align:left">Needed to know where you can access power and ground on the Curiosity Nano board</td>
+</tr>
+<tr>
+<td style="text-align:left">f.  Which pins of the Curiosity Nano connect to ground?</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">g.  How many bits wide is the result of an ADC read?<br>h.  How many bits wide is the PWM timer register?</td>
+<td style="text-align:left">Needed to read, interpret, and write data to and from the ADC and PWM peripherals. Can be found in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></td>
+</tr>
+<tr>
+<td style="text-align:left">i.  How to shift bits of a number or variable (needed to manipulate data in an 8-bit variable)<br>j.  How to mask bits of a number or variable (needed to read or write specific bits in an 8-bit variable)<br>k.  How to cast a variable as a different data type (needed to convert variables from one data type to another)</td>
+<td style="text-align:left">Needed to manipulate data in variables. Can be found in a C programming reference, such as the <a href="https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html"><em>GNU C Reference Manual</em></a></td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li>
+<p>Open the Curiosity Nano box and the two antistatic bags inside. Solder the headers into the PCB so that the long side can be plugged into a breadboard and the short side goes through the PCB and can be soldered on the top.</p>
+<p>
+<a href="image2.jpg"><img src="image2.jpg" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>Follow the instructions in the Quick Start section of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> to download and install the MPLAB® X IDE (including IPE and 8 bit MCU support), XC8 compiler, and MPLAB® Code Configurator (MCC). <em>Note: The free compiler license is sufficient for this course.</em></p>
+</li>
+<li>
+<p>Open MPLAB® X IDE and plug the Curiosity Nano board into the USB port of your computer</p>
+</li>
+<li>
+<p>In MPLAB X, create a new project for the PIC18F47Q10</p>
+<p>a.  Ensure the curiosity nano is connected over usb before starting project setup so you can select it as the programming &ldquo;tool&rdquo; during setup.</p>
+</li>
+<li>
+<p>Open MCC, and select the default file location when prompted.</p>
+</li>
+<li>
+<p>Open the project in MPLAB® X and MCC, then add and configure the following peripherals:</p>
+<ol>
+<li>System Module:
+<ol>
+<li>select the HFINTOSC (high frequency internal oscillator) at 4 MHz.</li>
+<li>Keep the clock divisions at 4.</li>
+<li>disable the Watchdog timer</li>
+</ol>
+</li>
+<li>EUSARTX
+<ol>
+<li>Add and configure a new EUSART peripheral (the one that connects to USB). Make sure you check the &ldquo;connect to stdio&rdquo; box.</li>
+</ol>
+</li>
+<li>ADCC
+<ol>
+<li>Ensure right result alignment (this means the data is right-justified in the result register)</li>
+<li>Do not select continuous operation</li>
+<li>Keep all other defaults</li>
+</ol>
+</li>
+<li>PWMX
+<ol>
+<li>Note the Timer Source (you will need this for the next step)</li>
+<li>Set the initial duty cycle to 50%</li>
+<li>Keep all other defaults</li>
+</ol>
+</li>
+<li>TMRX, where X is a specific timer that must be matched to the PWM subsystem selected.
+<ol>
+<li>Use the FOSC/4 setting (you will get an error otherwise).</li>
+<li>Use the highest prescaling possible (to ensure the timer counts slowly)</li>
+<li>Set the timer period to the maximum possible (to further slow down the count so that the LED blinks slowly)</li>
+<li>Keep all other defaults</li>
+</ol>
+</li>
+</ol>
+<p><em><strong>Pay attention to and follow all instructions provided by the MCC&rsquo;s warnings and errors in the Notifications [MCC] window</strong></em></p>
+</li>
+<li>
+<p>Open up the pin manager grid</p>
+<ol>
+<li>Ensure that RX and TX are mapped to the correct pins (as you found it from the HW User Guide&rsquo;s pinout section in the previous step).</li>
+<li>Select an analog input pin (ANx)</li>
+<li>Select a pin that connects to PWMX</li>
+</ol>
+</li>
+<li>
+<p>In the Pin settings(in the resources window), ensure that</p>
+<ol>
+<li>your RX pin is set to a digital input (leave the analog option unchecked)</li>
+<li>your TX pin is set to a digital output (leave the analog option unchecked)</li>
+<li>the second TX pin (for the external LED) is set to a digital output (leave the analog option unchecked)</li>
+<li>the PWMX pin is set as a digital output (leave &ldquo;analog&rdquo; unchecked)</li>
+<li>that the ADCX pin is marked as an analog input.</li>
+</ol>
+</li>
+<li>
+<p>Generate the MCC configuration</p>
+</li>
+<li>
+<p>Open EUSARTX.h (where &ldquo;X&rdquo; is the correct EUSART peripheral) in the MCC-generated header files within the project explorer. Read through this document, Identify each function and determine what the purpose of each is. Then find the function that initializes this EUSART subsystem and note it.</p>
+</li>
+<li>
+<p>Open up ADCX.h</p>
+<ol>
+<li>
+<p>Find the function that permits you read a single ADC value (conversion). Copy the example code into main.c</p>
+<ol>
+<li>
+<p><em>Hint:</em> Pay attention to the number of bits in adc_result_t in the typedef statement. This will be important later.</p>
+</li>
+<li>
+<p><em>Note:</em> The example code has an error. The following line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">adcX_channel_t</span> <span style="color:#111">convertedValue</span><span style="color:#111">;</span>
+</code></pre></div><p>should be as follows instead:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">adc_result_t</span> <span style="color:#111">convertedValue</span><span style="color:#111">;</span>
+</code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>Find the declared constant for the ADC input pin you have configured (hint: check the Pin Module). Supply this value as the input to the ADC single-read function.</p>
+</li>
+<li>
+<p>You will need to define a new variable to use the output of this function. Refer to the commented out example code to determine the appropriate data type for the variable.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Open up PWMX.h</p>
+<ol>
+<li>Find the function that permits you to set the duty cycle. Copy the example code into main.c</li>
+<li>You will need to define a new variable to use the output of this function. Refer to the commented out example code to determine the appropriate datatype.</li>
+</ol>
+</li>
+<li>
+<p>Open up TMRX.h</p>
+<ol>
+<li>Find the function that permits you to set the period register. Copy the example code into main.c but leave it commented out for now</li>
+<li>You will need to define a new variable to use the output of this function. Refer to the commented out example code to determine the appropriate datatype. Add a new line of code for using the ADC value you read and converted previously to change the PWM duty cycle.</li>
+</ol>
+</li>
+<li>
+<p>Now tie these new functions together into your main.c:</p>
+<ol>
+<li>
+<p>Add a new line of code to read a single value from the ADC and store it in a variable of the correct type. Refer to the adc subsystem header file generated by MCC to find the correct data type.</p>
+</li>
+<li>
+<p>Next, add a new line of code to output the data stored in that variable to EUSART using printf(). Make sure to add carriage return and newline characters to clean up your transmission so that each new ADC value is output on a new line in Putty.</p>
+<p><em>Hint:</em> Remember that X bit variables will have values between 0 and 2^X^-1. If you are printing numbers outside of that range then something is incorrect with your conversion. See Microchip&rsquo;s documentation on <a href="https://microchipdeveloper.com/tls2101:printf"><em>printf</em></a>() for more information.</p>
+</li>
+<li>
+<p>Next, add a new variable with type <em>float</em> and use it to translate the integer ADC value to a decimal value that represents the voltage read on the ADC pin. Output that floating point value using the printf() function and the format specifier section of the printf()documentation linked in the previous step and as seen in the MPLABX tutorial. Your data should print on two lines, e.g.:</p>
+<pre tabindex="0"><code>ADC value: 255
+ADC voltage: 3.300
+</code></pre><p><em>NOTE:</em> This may require a brush up on data types and <a href="https://www.oreilly.com/library/view/c-in-a/0596006977/ch04.html"><em>converting</em></a> or <a href="https://www.tutorialspoint.com/cprogramming/c_type_casting.htm"><em>type casting</em></a> from int to float in C.</p>
+</li>
+<li>
+<p>Add a new line of code for using the ADC value you read and converted previously to change the PWM duty cycle. This is the raw ADC value before you converted it again to voltage.</p>
+<p><em>Context:</em> Changing the duty cycle changes the <em>percentage</em> of the time a square wave is low or high. Variable duty cycles are often used for driving RC Servos or -- in conjunction with a low pass filter -- for approximating a simple and low-fidelity digital to analog converter(DAC).</p>
+<p>Ensure you are converting the X-bit ADC value to a properly-formatted Y-bit duty cycle value. (Though the functions that operate on these two registers accept 16-bit variables, they only use the least significant / bottom X and Y bits of each 16-bit variable). The information about the size of X and Y was found by you in the first steps of this assignment.</p>
+<p><em>More Context:</em> The X-bit resolution(see <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a>) ADC result is stored in a 16-bit variable of type adc_result_t, which is wider (more bits) than the resolution of the ADC result. Furthermore, the PWM duty cycle register holds fewer bits than the resolution of the ADC. Thus, we want to transfer the <a href="https://en.wikipedia.org/wiki/Bit_numbering"><em>most significant bits</em></a> of the ADC&rsquo;s reading into the PWM&rsquo;s duty cycle register. The least significant bits of the ADC represent such a small difference in the final result that they can be truncated (cut off).</p>
+<p>Write a line of code that uses a C <a href="https://www.tutorialspoint.com/cprogramming/c_bitwise_operators.htm"><em>bit shifting</em></a> operator to shift the ADC result so that the most significant 8 bits of the ADC&rsquo;s output are used as an input to the PWM subsystem&rsquo;s duty cycle update function (look in the PWM header file). Be sure to &ldquo;cast&rdquo; this variable into the correct type declared by that function.\</p>
+<p>After shifting, the lower 8 bits of your adc_result_t variable should look like this (where x is the number of resolution bits for the ADC):</p>
+</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&hellip;</td>
+<td style="text-align:left">ADC~x-1~</td>
+<td style="text-align:left">ADC~x-2~</td>
+<td style="text-align:left">ADC~x-3~</td>
+<td style="text-align:left">ADC~x-4~</td>
+<td style="text-align:left">ADC~x-5~</td>
+<td style="text-align:left">ADC~x-6~</td>
+<td style="text-align:left">ADC~x-7~</td>
+<td style="text-align:left">ADC~x-8~</td>
+</tr>
+</tbody>
+</table>
+<ol start="16">
+<li>Download the project to the target. This can be done <em>one of two ways</em>
+<ol>
+<li>Using the download button (ensure you are connected to the Curiosity Nano board rather than the simulator, and that you have selected the Curiosity Nano as the programming &ldquo;tool&rdquo;.)</li>
+<li>Copying the .hex file from project-name/dist/production/project-name.hex to the &ldquo;Curiosity&rdquo; drive in file explorer.</li>
+</ol>
+</li>
+<li>Add a potentiometer to your system
+<ol>
+<li>Connect the wiper pin of a potentiometer to the analog input pin</li>
+<li>Connect the other two pins of the potentiometer to the Curiosity Nano&rsquo;s regulated 3.3V power and ground (see the power supply section of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> for more information, and verify with your DMM prior to connecting the potentiometer).</li>
+</ol>
+</li>
+<li>Add an <strong>external</strong> LED &amp; resistor to the PWM output pin so that the LED <em>safely</em> turns on whenever the PWM output is high. (safely means that neither the LED nor the microcontroller pin burns out. Select an appropriate current-limiting resistor based on the LED specifications and the PIC18F47Q10 maximum pin current in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>Datasheet</em></a>)</li>
+<li>Demonstrate that the voltage read by the ADC can be used to alter the duty cycle of the PWM signal.</li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/analog-io-eusart/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
