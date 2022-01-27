@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title>Embedded Systems Design</title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <h1>AC-circuits</h1>
+    <article></article>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mb-5 mb-lg-0">
+    
+        <div class="row">
+          
+          
+          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/capacitive-sensing/">Capacitive Sensing Links</a></h4>
+      
+
+      <p>Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing  Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems</p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/capacitors"
+          class="text-primary">Capacitors</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/circuit-design"
+          class="text-primary">Circuit design</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/ac-circuits"
+          class="text-primary">Ac circuits</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+        </div>
+        
+        <div class="row justify-content-center">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      
+<div class="col-lg-4">
+  <div class="widgets">
+    
+    
+
+    
+    
+    <div class="widget">
+      <h4 class="widget-title">Tags</h4>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/ac-circuits">Ac circuits</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/actuator">Actuator</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/actuators">Actuators</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/adc">Adc</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/argon">Argon</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/assembly">Assembly</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/asu">Asu</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/bjt">Bjt</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/bluetooth">Bluetooth</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/cad">Cad</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/cadence">Cadence</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/capacitors">Capacitors</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/checklist">Checklist</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/circuit-design">Circuit design</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/circuits">Circuits</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/components">Components</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/connectors">Connectors</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/custom-part">Custom part</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/cypress">Cypress</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/debugging">Debugging</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/design">Design</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/development-kit">Development kit</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/distributors">Distributors</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/documentation">Documentation</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/drawing">Drawing</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/ecad">Ecad</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/electrical">Electrical</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/example-project">Example project</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/filter">Filter</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/footprint">Footprint</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/fuses">Fuses</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/github">Github</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/hardware">Hardware</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/interfacing">Interfacing</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/level-shifters">Level shifters</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/local">Local</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/logic">Logic</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/manufacturers">Manufacturers</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/materials">Materials</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/mechanical">Mechanical</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/microchip">Microchip</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/microcontroller">Microcontroller</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/mosfet">Mosfet</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/motors">Motors</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/noise">Noise</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/ordering">Ordering</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/particle">Particle</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/parts">Parts</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/patents">Patents</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/pcb">Pcb</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/pic">Pic</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/pic18f47q10">Pic18f47q10</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/power-supplies">Power supplies</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/problem-definition">Problem definition</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/process">Process</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/programming">Programming</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/project-management">Project management</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/pulldown">Pulldown</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/pullup">Pullup</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/purchasing">Purchasing</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/python">Python</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/resistors">Resistors</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/sensors">Sensors</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/silkscreen">Silkscreen</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/simulation">Simulation</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/software">Software</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/software-design">Software design</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/solar">Solar</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/soldering">Soldering</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/sources">Sources</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/sourcing">Sourcing</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/spi">Spi</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/suppliers">Suppliers</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/surface-mount">Surface mount</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/technology">Technology</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/test-equipment">Test equipment</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/testing">Testing</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/texas-instruments">Texas instruments</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/transistor">Transistor</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/transistors">Transistors</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/tutorial">Tutorial</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/uart">Uart</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/version-control">Version control</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/video">Video</a></li>
+        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+            href="/tags/wireless">Wireless</a></li>
+      </ul>
+    </div>
+
+    
+        <div class="widget">
+      
+      <h4 class="widget-title">About</h4>
+      
+      
+      <div class="text-center" style="font-size:5rem;line-height:1;"><i class="bi bi-person-circle"></i></div>
+      
+      <p>This website is developed by Shawn Jordan and Dan Aukes</p>
+      <a href="https://embedded-systems-design.github.io/about/" class="btn btn-outline-primary">Know More</a>
+      
+    </div>
+    
+    <div class="widget">
+      <h4 class="widget-title">External</h4>
+      <ul class="list-inline social-links">
+        
+        <li class="list-inline-item"><a href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a></li>
+        
+      </ul>
+    </div>
+
+
+    
+    <div class="widget">
+      <img src="https://embedded-systems-design.github.io/images/promotion.png" alt="" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
