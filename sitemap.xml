@@ -42,7 +42,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/all-about-smart-homes/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/esp32/</loc>
+    <loc>https://embedded-systems-design.github.io/all-about-the-esp32-devkit-doit-v1/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/altering-trace-widths/</loc>
   </url><url>
@@ -215,6 +215,8 @@
     <loc>https://embedded-systems-design.github.io/interrupts/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/interrupts-on-psoc/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/iot/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</loc>
   </url><url>
