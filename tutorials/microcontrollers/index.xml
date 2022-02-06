@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>All About the ESP32</title>
+      <link>https://embedded-systems-design.github.io/esp32/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/esp32/</guid>
+      <description>Pinouts       from https://randomnerdtutorials.com/getting-started-with-esp32/   TL/DR:</description>
+    </item>
+    
+    <item>
       <title>Interrupts</title>
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
