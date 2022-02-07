@@ -219,6 +219,8 @@
       
       
       
+      
+      
       </div>
 
       <div class="row">
@@ -233,7 +235,11 @@
         </div>
         
         <div class="content mb-5">
-          <h2 id="pinouts">Pinouts</h2>
+          <h2 id="tldr">TL/DR</h2>
+<div class="alert alert-warning" role="alert">
+RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn't be used for UART in your project
+</div>
+<h2 id="pinouts--schematics">Pinouts / Schematics</h2>
 <p>
 <table>
 <thead></thead>
@@ -246,11 +252,19 @@
 </table>
 
 </p>
-<p>TL/DR:</p>
-<ul>
-<li>RX0 / TX0 are used by the onboard silabs USB/serial chip</li>
-</ul>
-<p>Pinout Resources:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="./SchematicsforESP32.png"><img src="./SchematicsforESP32.png" alt="Schematics"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Schematics</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<h3 id="external-pinout-resources">External Pinout Resources</h3>
 <ul>
 <li><a href="https://johnmu.com/picking-esp32-dev-board/">https://johnmu.com/picking-esp32-dev-board/</a></li>
 <li><a href="https://www.etechnophiles.com/esp32-dev-board-pinout-specifications-datasheet-and-schematic/">https://www.etechnophiles.com/esp32-dev-board-pinout-specifications-datasheet-and-schematic/</a></li>
@@ -258,7 +272,7 @@
 </ul>
 <h2 id="micropython">MicroPython</h2>
 <ul>
-<li>MicroPython for ESP32 <a href="https://micropython.org/download/esp32/">Download Page</a></li>
+<li>MicroPython for ESP32 <a href="https://micropython.org/download/esp32/">firmware download page</a></li>
 <li>ESP32 Micropython Documentation
 <ul>
 <li><a href="https://docs.micropython.org/en/latest/esp32/quickref.html">quickref</a></li>
@@ -266,10 +280,9 @@
 </li>
 </ul>
 <h2 id="thonny-ide">Thonny (IDE)</h2>
-<p>TL/DR:</p>
 <ul>
 <li>
-<p>Must <a href="">install anaconda python</a></p>
+<p>Must <a href="/installing-anaconda-python">install anaconda python</a></p>
 </li>
 <li>
 <p>once you have,</p>
@@ -334,7 +347,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/all-about-the-esp32-devkit-doit-v1.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/all-about-the-esp32-devkit-doit-v1/index.md"> Edit this Page</a></p>
         
         
         
