@@ -16,15 +16,6 @@
     </item>
     
     <item>
-      <title>All About the ESP32</title>
-      <link>https://embedded-systems-design.github.io/all-about-the-esp32-devkit-doit-v1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/all-about-the-esp32-devkit-doit-v1/</guid>
-      <description>TL/DR RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project  Pinouts / Schematics       from https://randomnerdtutorials.</description>
-    </item>
-    
-    <item>
       <title>Interrupts</title>
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
