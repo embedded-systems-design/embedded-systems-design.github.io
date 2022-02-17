@@ -233,7 +233,7 @@
         <h2>quick setup steps</h2>
         
         <div class="mb-3 post-meta">
-          <span>By ESD Faculty</span>
+          <span>By Dan Aukes</span>
           
           
           
@@ -242,18 +242,23 @@
         <div class="content mb-5">
           <ol>
 <li>
-<p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (win64)[https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe]</p>
+<p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win6</a></p>
 <ol>
 <li>if on a shared computer without administrative access, can be &ldquo;just for me&rdquo;.</li>
 <li><code>pip install esp32 thonny</code></li>
 </ol>
 </li>
 <li>
-<p>Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> (optional) <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
+<p>(optional) Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
+<p><em>This step is only required if the device is not recognized as a virtual COM port.</em></p>
 </li>
 <li>
-<p>(optional if you are on an administratively locked pc) open cmd
-<code>set PATH=C:\Users\daukes\Miniconda3;C:\Users\daukes\Miniconda3\Library\mingw-w64\bin;C:\Users\daukes\Miniconda3\Library\usr\bin;C:\Users\daukes\Miniconda3\Library\bin;C:\Users\daukes\Miniconda3\Scripts;%PATH%</code></p>
+<p>(optional) add anaconda to your path</p>
+<p><code>set PATH=C:\Users\&lt;MYUSERNAME&gt;\Miniconda3;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\mingw-w64\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\usr\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\bin;C:\Users\daukes\Miniconda3\Scripts;%PATH%</code></p>
+<ul>
+<li>Replace <MYUSERNAME> with your username; confirm the path exists.</li>
+<li>This step is required every time you load thonny if you installed &ldquo;just for me&rdquo; or are on an administratively locked pc.</li>
+</ul>
 </li>
 <li>
 <p>type in <code>thonny</code></p>
@@ -283,7 +288,6 @@
 Type &quot;help()&quot; for more information.
 &gt;&gt;&gt; 
 </code></pre></li>
-<li></li>
 </ol>
 
         </div>
