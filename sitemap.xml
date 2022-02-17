@@ -20,8 +20,6 @@
     <loc>https://embedded-systems-design.github.io/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/esp32/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</loc>
@@ -171,6 +169,8 @@
     <loc>https://embedded-systems-design.github.io/tags/ecad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/electrical/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/esp32/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/esp32/</loc>
   </url><url>
