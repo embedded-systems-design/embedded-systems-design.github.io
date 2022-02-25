@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> quick setup steps | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Working with Thonny | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
@@ -222,7 +222,7 @@
       
       
       
-      <a href="./">quick-install</a>
+      <a href="./">working-with-thonny</a>
       
       
       
@@ -232,265 +232,117 @@
 
       <div class="row">
       <div class="col-lg-8 mx-auto">
-        <h2>quick setup steps</h2>
+        <h2>Working with Thonny</h2>
         
         <div class="mb-3 post-meta">
-          <span>By Dan Aukes</span>
+          <span>By ESD Faculty</span>
           
           
           
         </div>
         
         <div class="content mb-5">
-          <ol>
-<li>
-<p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win6</a></p>
-<ol>
-<li>if on a shared computer without administrative access, can be &ldquo;just for me&rdquo;.</li>
-</ol>
-</li>
-<li>
-<p>Open up power shell (win+x, i) and type <code>pip install esp32 esptool thonny</code></p>
-</li>
-<li>
-<p><em>(optional)</em> Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
-<p><em>This step is only required if the device is not recognized as a virtual COM port.</em></p>
+          <h2 id="menu--icons">Menu &amp; Icons</h2>
+<h3 id="file">File</h3>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="00.png"><img src="00.png" alt="Open Device Manager and Select Update Driver"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="filemenu.png"><img src="filemenu.png" alt="File Menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Open Device Manager and Select Update Driver</div></td></tr>
+<tr><td><div style="text-align:center;">File Menu</div></td></tr>
 </tbody>
 </table>
 
 </p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="01.png"><img src="01.png" alt="Browse specific directories"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Browse specific directories</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="02.png"><img src="02.png" alt="Select the directory"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select the directory</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="04.png"><img src="04.png" alt="Let it Install"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Let it Install</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="05.png"><img src="05.png" alt="Done"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Done</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>download <a href="https://micropython.org/download/esp32/">firmware</a> (<a href="https://micropython.org/resources/firmware/esp32-20220117-v1.18.bin">v1.18 quicklink</a>)</p>
-</li>
-<li>
-<p>open cmd and type <code>thonny</code></p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="10.png"><img src="10.png" alt="Start Thonny"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Start Thonny</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>open up tools&ndash;&gt;options, select the &ldquo;interpreter&rdquo; tab and ensure that &ldquo;Micropython (ESP32)&rdquo; is selected.  Select the &ldquo;Silicon Labs CP210X USB to UART Bridge Com(XY)&rdquo; down below.</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="20.png"><img src="20.png" alt="Open Tools&amp;ndash;&amp;gt;Options"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Open Tools&amp;ndash;&amp;gt;Options</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="30.png"><img src="30.png" alt="Select Interpreter Tab, then the ESP32 Interpreter"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select Interpreter Tab, then the ESP32 Interpreter</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="40.png"><img src="40.png" alt="Select the Port"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select the Port</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="50.png"><img src="50.png" alt="Selection Made"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Selection Made</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Before selecting ok, in the bottom right hand corner select &ldquo;install or update firmware&rdquo;.  select the right port corresponding to the &ldquo;Silicon Labs CP210X USB to UART Bridge Com(XY)&rdquo;</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="60.png"><img src="60.png" alt="Install or Update Firmware"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Install or Update Firmware</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>select the firmware you downloaded, (e.g. &ldquo;esp32-20220117-v1.18.bin&rdquo;) and hit &ldquo;install&rdquo;.</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="70.png"><img src="70.png" alt="Select Firmware File"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select Firmware File</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="80.png"><img src="80.png" alt="Hit install"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Hit install</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>wait for the install to finish</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="90.png"><img src="90.png" alt="Done"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Done</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Look at the interpreter window.  You should see:</p>
-<pre tabindex="0"><code>MicroPython v1.18 on 2022-01-17; ESP32 module with ESP32
-
-Type &quot;help()&quot; for more information.
-&gt;&gt;&gt; 
-</code></pre><p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="100.png"><img src="100.png" alt="Blank"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Blank</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>type <code>print('hello, world!'')</code> into the shell and that&rsquo;s it!  You should have a working python interpreter loaded on your ESP32!</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="101.png"><img src="101.png" alt="Hello World!"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Hello World!</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-</ol>
-<hr>
-<h2 id="issues">Issues</h2>
-<p>If you install on a computer where you don&rsquo;t have administrative access, it is still possible to install  but you have to remember a couple things:</p>
-<p>After instlling anaconda, you must add it to your path every time you want to run it.</p>
-<ol>
-<li>
-<p>Start &ndash;&gt; &ldquo;cmd&rdquo;</p>
-<p><code>set PATH=C:\Users\&lt;MYUSERNAME&gt;\Miniconda3;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\mingw-w64\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\usr\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\bin;C:\Users\daukes\Miniconda3\Scripts;%PATH%</code></p>
 <ul>
-<li>Replace <MYUSERNAME> with your username; confirm the path exists.</li>
-<li>This step is required every time you load thonny if you installed &ldquo;just for me&rdquo; or are on an administratively locked pc.</li>
-</ul>
+<li>
+<p>File &ndash;&gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&rsquo;s file space.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="local-remote.png"><img src="local-remote.png" alt="Local vs. Remote sae"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Local vs. Remote sae</div></td></tr>
+</tbody>
+</table>
+
+</p>
 </li>
-</ol>
+<li>
+<p>File &ndash;&gt; Save(ctrl+s): Saves the file to the current destination</p>
+</li>
+<li>
+<p>File &ndash;&gt; Save As(ctrl+shift+s): Permits you to save the file to a new destination, as well as to switch between saving to PC or ESP32</p>
+</li>
+</ul>
+<h2 id="run">Run</h2>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="runmenu.png"><img src="runmenu.png" alt="Run Menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Run Menu</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ul>
+<li>Run &ndash;&gt; Run current script(f5): This runs whatever code is in your current window.  If the file is not saved, it will ask where to save it, but the code is executed <em>through the shell</em> rather than through the normal startup execution of the ESP32.  You can save your code to your computer and run it on the ESP32 just by hitting f5, but then this means that once restarted, the ESP32 will not be able to run the code without running it again through Thonny.</li>
+<li>Run &ndash;&gt; Stop/Restart Backend: This will attempt to restart the shell, if for example you want to put the ESP32 in &ldquo;interactive&rdquo; mode after it was restarted and began to run its internal boot.py &ndash;&gt; main.py sequence.</li>
+</ul>
+<h2 id="shell--python-interpreter">Shell / Python Interpreter</h2>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="shell.png"><img src="shell.png" alt="Shell"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Shell</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>The shell is at the bottom, and permits you to interact directly with the ESP32.  Type in a python command and it will run it and (usually) return a value.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#111">MicroPython</span> <span style="color:#111">v1</span><span style="color:#ae81ff">.18</span> <span style="color:#111">on</span> <span style="color:#ae81ff">2022</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">17</span><span style="color:#111">;</span> <span style="color:#111">ESP32</span> <span style="color:#111">module</span> <span style="color:#00a8c8">with</span> <span style="color:#111">ESP32</span>
+<span style="color:#111">Type</span> <span style="color:#d88200">&#34;help()&#34;</span> <span style="color:#00a8c8">for</span> <span style="color:#111">more</span> <span style="color:#111">information</span><span style="color:#f92672">.</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#111">a</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#111">a</span>
+<span style="color:#ae81ff">1</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> 
+</code></pre></div><h3 id="shortcuts">Shortcuts</h3>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="interrupt.png"><img src="interrupt.png" alt="Interrupted Code Execution"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Interrupted Code Execution</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ul>
+<li>Ctrl+C: This stops (interrupts) execution of your code, wherever it is.  Python throws an exception and indicates where it was stopped.</li>
+</ul>
+<h2 id="files">Files</h2>
+<ul>
+<li>boot.py: If this file is present on the ESP32, it will be the first code to run after a hard reset</li>
+<li>main.py: If this file is present, it will be the second script that gets run automatically after a hard reset.  It only runs once, so you have to implement a ``while``` loop if you want code to continue running.</li>
+</ul>
+<h2 id="esp32">ESP32</h2>
+<ul>
+<li>Reset Button: Use this button to restart the ESP32</li>
+<li>Bootloader Button: This doesn&rsquo;t seem to be necessary to program or work with micropython.  It is most likely used for programming with other tools/languages/IDE&rsquo;s</li>
+</ul>
 
         </div>
 
@@ -549,7 +401,7 @@ Type &quot;help()&quot; for more information.
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/esp32/quick-install/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/esp32/working-with-thonny/index.md"> Edit this Page</a></p>
         
         
         

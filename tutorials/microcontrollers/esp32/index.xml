@@ -25,5 +25,14 @@
  if on a shared computer without administrative access, can be &amp;ldquo;just for me&amp;rdquo;.</description>
     </item>
     
+    <item>
+      <title>Working with Thonny</title>
+      <link>https://embedded-systems-design.github.io/working-with-thonny/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/working-with-thonny/</guid>
+      <description>Menu &amp;amp; Icons File       File Menu     File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
+    </item>
+    
   </channel>
 </rss>
