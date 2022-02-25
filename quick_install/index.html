@@ -245,26 +245,20 @@
 <p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win6</a></p>
 <ol>
 <li>if on a shared computer without administrative access, can be &ldquo;just for me&rdquo;.</li>
-<li><code>pip install esp32 thonny</code></li>
 </ol>
 </li>
 <li>
-<p>(optional) Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
+<p>Open up power shell (win+x, i) and type <code>pip install esp32 thonny</code></p>
+</li>
+<li>
+<p><em>(optional)</em> Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
 <p><em>This step is only required if the device is not recognized as a virtual COM port.</em></p>
 </li>
 <li>
-<p>(optional) add anaconda to your path</p>
-<p><code>set PATH=C:\Users\&lt;MYUSERNAME&gt;\Miniconda3;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\mingw-w64\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\usr\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\bin;C:\Users\daukes\Miniconda3\Scripts;%PATH%</code></p>
-<ul>
-<li>Replace <MYUSERNAME> with your username; confirm the path exists.</li>
-<li>This step is required every time you load thonny if you installed &ldquo;just for me&rdquo; or are on an administratively locked pc.</li>
-</ul>
+<p>open type in <code>thonny</code></p>
 </li>
 <li>
-<p>type in <code>thonny</code></p>
-</li>
-<li>
-<p>download <a href="https://micropython.org/resources/firmware/esp32-20220117-v1.18.bin">firmware</a></p>
+<p>download <a href="https://micropython.org/download/esp32/">firmware</a> (<a href="https://micropython.org/resources/firmware/esp32-20220117-v1.18.bin">v1.18 quicklink</a>)</p>
 </li>
 <li>
 <p>open cmd and type <code>thonny</code></p>
@@ -273,7 +267,7 @@
 <p>open up tools&ndash;&gt;options, select the &ldquo;interpreter&rdquo; tab and in the bottom right hand corner select &ldquo;install or update firmware&rdquo;.  select the right port corresponding to the &ldquo;Silicon Labs CP210X USB to UART Bridge Com(XY)&rdquo;</p>
 </li>
 <li>
-<p>select the firmware you downloaded, eg &ldquo;esp32-20220117-v1.18.bin&rdquo; and hit &ldquo;install&rdquo;</p>
+<p>select the firmware you downloaded, (e.g. &ldquo;esp32-20220117-v1.18.bin&rdquo;) and hit &ldquo;install&rdquo;.</p>
 </li>
 <li>
 <p>wait for the install to finish</p>
@@ -288,6 +282,23 @@
 Type &quot;help()&quot; for more information.
 &gt;&gt;&gt; 
 </code></pre></li>
+<li>
+<p>type <code>print(hello, world!)</code> and that&rsquo;s it!  You should have a working python interpreter loaded on your ESP32!</p>
+</li>
+</ol>
+<hr>
+<h2 id="issues">Issues</h2>
+<p>If you install on a computer where you don&rsquo;t have administrative access, it is still possible to install  but you have to remember a couple things:</p>
+<p>After instlling anaconda, you must add it to your path every time you want to run it.</p>
+<ol>
+<li>
+<p>Start &ndash;&gt; &ldquo;cmd&rdquo;</p>
+<p><code>set PATH=C:\Users\&lt;MYUSERNAME&gt;\Miniconda3;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\mingw-w64\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\usr\bin;C:\Users\&lt;MYUSERNAME&gt;\Miniconda3\Library\bin;C:\Users\daukes\Miniconda3\Scripts;%PATH%</code></p>
+<ul>
+<li>Replace <MYUSERNAME> with your username; confirm the path exists.</li>
+<li>This step is required every time you load thonny if you installed &ldquo;just for me&rdquo; or are on an administratively locked pc.</li>
+</ul>
+</li>
 </ol>
 
         </div>
