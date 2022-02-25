@@ -334,10 +334,14 @@
 <li>Ctrl+C: This stops (interrupts) execution of your code, wherever it is.  Python throws an exception and indicates where it was stopped.</li>
 </ul>
 <h2 id="files">Files</h2>
+<p>Files in python are called &ldquo;modules&rdquo;.  To load a module you should use the <code>import</code> statement.  The ESP32, however, also handles specific files as special cases:</p>
 <ul>
 <li>boot.py: If this file is present on the ESP32, it will be the first code to run after a hard reset</li>
 <li>main.py: If this file is present, it will be the second script that gets run automatically after a hard reset.  It only runs once, so you have to implement a ``while``` loop if you want code to continue running.</li>
+<li>any other file: You must <code>import</code> that file in either boot.py or main.py if you want it to be loaded and run.  For example, if you have a file called &ldquo;my_program.py&rdquo;, and want it to be run from &ldquo;main.py&rdquo;, open up &ldquo;main.py&rdquo; and add</li>
 </ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> <span style="color:#111">my_program</span>
+</code></pre></div><p>This will load and run the my_program.py module at that specific point in the code.</p>
 <h2 id="esp32">ESP32</h2>
 <ul>
 <li>Reset Button (EN): Use this button to restart the ESP32</li>
