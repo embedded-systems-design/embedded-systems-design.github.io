@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.93.0" />
 
   <!-- plugins -->
   
@@ -353,14 +353,14 @@ Stage - the action of preparing file(s) to be committed</p>
 </ol>
 <pre tabindex="0"><code>def hello
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD (aka current change aka changes from mundo)
-  puts 'hello mundo'
+  puts &#39;hello mundo&#39;
 ======= (aka incoming change aka changes from main)
-  puts 'hola world'
+  puts &#39;hola world&#39;
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; main
 </code></pre><p>In the above example, the changes in the main branch (&lsquo;hola world&rsquo;) conflict with the changes from the branch mundo (&lsquo;hello mundo&rsquo;). The changes in mundo are considered the &ldquo;current change&rdquo; or HEAD (think pointers), while the changes in main are considered the &ldquo;incoming change&rdquo; and both are separated by a series of &lsquo;=&rsquo; symbols. HEAD will always be preceded by a series of &lsquo;&lt;&rsquo; while the conflict itself will be closed by a series of &lsquo;&gt;&rsquo; and the branch name (main). Merge conflicts will always appear in the order of current change to incoming change. Sometimes, rather than removing one of the other, the code may need to be a combination of both sources, it is not always the most intuitive, and it is often recommended to use editors that can help manage conflicts, like Visual Studio Code (VSC).</p>
 <p>For now, we want to keep the changes in mundo, so we need to remove all indicators of a merge conflict, namely, the lines including &lsquo;&lt;&rsquo; and &lsquo;&gt;&rsquo;.</p>
 <pre tabindex="0"><code>def hello
-  puts 'hello mundo'
+  puts &#39;hello mundo&#39;
 </code></pre><p>Once all merge conflicts have been resolved (the lines indicated conflict exists have been removed) follow the process of committing changes from the start (add, add a message, push) and the conflict is complete. Now checkout the main branch, <code>git merge mundo</code> into main, and done!</p>
 <h2 id="resources-1">Resources</h2>
 <p><a href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories">https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories</a></p>

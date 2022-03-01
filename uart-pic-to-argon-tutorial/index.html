@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.93.0" />
 
   <!-- plugins -->
   
@@ -306,7 +306,7 @@
 </table>
 
 </p>
-<p>You will want to make sure to call the initialize function first. As a general rule of thumb, you will want to check if RX is ready before you read data and check if TX is ready before you send data. For this tutorial, I will say that if the PIC receives the character â€˜a', it will respond with a 1. If the PIC receives a â€˜b', it will respond with a 2. For all other inputs, it will not respond. Take this as an opportunity to try to read some of the provided documentation and see if you can figure out a solution before continuing on.</p>
+<p>You will want to make sure to call the initialize function first. As a general rule of thumb, you will want to check if RX is ready before you read data and check if TX is ready before you send data. For this tutorial, I will say that if the PIC receives the character â€˜a&rsquo;, it will respond with a 1. If the PIC receives a â€˜b&rsquo;, it will respond with a 2. For all other inputs, it will not respond. Take this as an opportunity to try to read some of the provided documentation and see if you can figure out a solution before continuing on.</p>
 <p>This is the code that I created for this project:</p>
 <p>
 <table>
@@ -356,7 +356,7 @@
 <p>Power should be connected to both the PIC and the Particle devices.</p>
 <p>RX and TX can be connected between the devices making sure to cross the connection. RX goes to TX and TX goes to RX. The transmit of one device will be received by the other.</p>
 <p>The Particle device should be connected to a computer via USB.</p>
-<p>Open a PuTTY terminal to the Serial port of the Particle device. You could also use the Serial Monitor of the Arduino IDE as both will do the same thing. Here you should be able to see the characters being printed by the Argon. After each â€˜a', a 1 is received and after each â€˜b', a 2 is received. This shows the devices are communicating properly.</p>
+<p>Open a PuTTY terminal to the Serial port of the Particle device. You could also use the Serial Monitor of the Arduino IDE as both will do the same thing. Here you should be able to see the characters being printed by the Argon. After each â€˜a&rsquo;, a 1 is received and after each â€˜b&rsquo;, a 2 is received. This shows the devices are communicating properly.</p>
 <p>
 <table>
 <thead></thead>

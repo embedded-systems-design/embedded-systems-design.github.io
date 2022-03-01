@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.92.2" />
+  <meta name="generator" content="Hugo 0.93.0" />
 
   <!-- plugins -->
   
@@ -244,37 +244,37 @@
 <p>In programming the logic of &ldquo;and&rdquo;, &ldquo;or&rdquo;, and &ldquo;not&rdquo; related questions is the same as in real conversation. In Python, you can type these exact words when asking your computer to run through some logical thinking. In programs like C and Java however, the equivalent is <code>&amp;&amp;</code>, <code>||</code>, and <code>!</code> respectively. The syntax is straightforward, but the complexity of using logic operators in code comes with you as the programmer not knowing what questions and answers you need to have i.e. not knowing which logic operators you need to use.</p>
 <h2 id="when-to-use-or-">When to Use OR <code>||</code></h2>
 <p>Let&rsquo;s say you designed a system with two buttons and one DC motor. You want to write a code so that if either one of the two buttons is pressed, and triggers a digital HIGH or 1, the motor will move. What we have here is the perfect example of an OR logic. If Button 1 <strong>OR</strong> Button 2 is HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#00a8c8">int</span> <span style="color:#111">b1</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">1</span>
-<span style="color:#00a8c8">int</span> <span style="color:#111">b2</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">2</span>
-<span style="color:#00a8c8">int</span> <span style="color:#111">motor</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">3</span>
-
-<span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
-<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#111">B1</span> <span style="color:#f92672">||</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">){</span>
-		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
-<span style="color:#111">}</span>
-<span style="color:#111">}</span>
-</code></pre></div><p>Notice in the pseudo code the use of &ldquo;==&rdquo; versus &ldquo;=&rdquo;. Remember from your previous programming class that these two symbols means two different things, when &ldquo;==&rdquo; is specific for logic operations, and &ldquo;=&rdquo; is equating a physical value to a data type.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#111">b1</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#111">b2</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">int</span> <span style="color:#111">motor</span> <span style="color:#f92672">=</span> <span style="color:#111">Pin</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#111">B1</span> <span style="color:#f92672">||</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">){</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>Notice in the pseudo code the use of &ldquo;==&rdquo; versus &ldquo;=&rdquo;. Remember from your previous programming class that these two symbols means two different things, when &ldquo;==&rdquo; is specific for logic operations, and &ldquo;=&rdquo; is equating a physical value to a data type.</p>
 <h2 id="when-to-use-and-">When to Use AND <code>&amp;&amp;</code></h2>
 <p>Let&rsquo;s say this time you want to write a code so that if both one of the two buttons are pressed, then the motor will move. What we have here is the perfect example of an AND logic. If Button 1 <strong>AND</strong> Button 2 is HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
-<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#111">B1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">){</span>
-		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
-<span style="color:#111">}</span>
-<span style="color:#111">}</span>
-</code></pre></div><h2 id="when-to-use-not-">When to Use NOT <code>!</code></h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#111">B1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">){</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><h2 id="when-to-use-not-">When to Use NOT <code>!</code></h2>
 <p>Now let&rsquo;s say you want to write a code so that if both of the two buttons are left unpressed, then the motor will move continuously. What we have here is the perfect example of the &ldquo;!&rdquo; logic. If Button 1 <strong>AND</strong> Button 2 is <em><strong>not</strong></em> HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
-<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#f92672">!</span><span style="color:#111">(</span><span style="color:#111">B1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)){</span>
-		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
-<span style="color:#111">}</span>
-<span style="color:#111">}</span>
-</code></pre></div><p>What if you wanted to write a code so that if <em><strong>only one</strong></em> of the two buttons are left unpressed, then the motor will move continuously? Then we would have if Button 1 <strong>OR</strong> Button 2 is <em><strong>not</strong></em> HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
-<span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#f92672">!</span> <span style="color:#111">(</span><span style="color:#111">B1</span> <span style="color:#f92672">||</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)){</span>
-		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
-<span style="color:#111">}</span>
-<span style="color:#111">}</span>
-</code></pre></div><p>Notice here how where the <code>!</code> symbol is placed. It&rsquo;s a typically adopted process in code to write a logic and then negate it as an easy what to tell the computer and other readers of your code that you are utilizing a NOT statement. Just know that if the NOT symbol was placed anywhere else, you would end up with a different output than you probably expected. With this said, be sure to write down your pseudo code and think very carefully about what you need.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#f92672">!</span><span style="color:#111">(</span><span style="color:#111">B1</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)){</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>What if you wanted to write a code so that if <em><strong>only one</strong></em> of the two buttons are left unpressed, then the motor will move continuously? Then we would have if Button 1 <strong>OR</strong> Button 2 is <em><strong>not</strong></em> HIGH, then the motor is HIGH. In pseudo code, we would have the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">main</span> <span style="color:#111">loop</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#00a8c8">if</span> <span style="color:#111">(</span> <span style="color:#f92672">!</span> <span style="color:#111">(</span><span style="color:#111">B1</span> <span style="color:#f92672">||</span> <span style="color:#111">B2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span><span style="color:#111">)){</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#111">motor</span><span style="color:#111">.</span><span style="color:#111">HIGH</span><span style="color:#111">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">}</span>
+</span></span></code></pre></div><p>Notice here how where the <code>!</code> symbol is placed. It&rsquo;s a typically adopted process in code to write a logic and then negate it as an easy what to tell the computer and other readers of your code that you are utilizing a NOT statement. Just know that if the NOT symbol was placed anywhere else, you would end up with a different output than you probably expected. With this said, be sure to write down your pseudo code and think very carefully about what you need.</p>
 
         </div>
 
