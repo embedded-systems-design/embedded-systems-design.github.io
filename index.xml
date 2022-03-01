@@ -26,6 +26,25 @@
     </item>
     
     <item>
+      <title>Overview of the ESP32 DevKit DOIT V1</title>
+      <link>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</guid>
+      <description>TL/DR RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project  Pinouts / Schematics       from https://randomnerdtutorials.</description>
+    </item>
+    
+    <item>
+      <title>ESP32 Installation and Setup</title>
+      <link>https://embedded-systems-design.github.io/esp32-installation-and-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/esp32-installation-and-setup/</guid>
+      <description>install miniconda (win64 quick link)
+ if on a shared computer without administrative access, can be &amp;ldquo;just for me&amp;rdquo;.</description>
+    </item>
+    
+    <item>
       <title>**Curiosity Nano &amp; MPLAB Tutorial**</title>
       <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -86,15 +105,6 @@
       
       <guid>https://embedded-systems-design.github.io/all-about-smart-homes/</guid>
       <description>What is a smart home? A smart home links together home comfort, entertainment, appliances, thermostats, lighting, and other electronic devices in a home together such that they can be controlled by voice, gesture, computer, or phone.</description>
-    </item>
-    
-    <item>
-      <title>All About the ESP32</title>
-      <link>https://embedded-systems-design.github.io/all-about-the-esp32-devkit-doit-v1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/all-about-the-esp32-devkit-doit-v1/</guid>
-      <description>TL/DR RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project  Pinouts / Schematics       from https://randomnerdtutorials.</description>
     </item>
     
     <item>
@@ -758,16 +768,6 @@ These are resistors used to pull a volage on a specific pin high.</description>
       
       <guid>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</guid>
       <description>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</description>
-    </item>
-    
-    <item>
-      <title>quick setup steps</title>
-      <link>https://embedded-systems-design.github.io/quick-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/quick-install/</guid>
-      <description>install miniconda (win64 quick link)
- if on a shared computer without administrative access, can be &amp;ldquo;just for me&amp;rdquo;.</description>
     </item>
     
     <item>

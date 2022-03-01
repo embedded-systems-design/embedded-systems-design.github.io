@@ -322,15 +322,6 @@
     </item>
     
     <item>
-      <title>iot</title>
-      <link>https://embedded-systems-design.github.io/tags/iot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/tags/iot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>level-shifters</title>
       <link>https://embedded-systems-design.github.io/tags/level-shifters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -399,6 +390,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/microcontroller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>micropython</title>
+      <link>https://embedded-systems-design.github.io/tags/micropython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/micropython/</guid>
       <description></description>
     </item>
     
@@ -723,6 +723,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/texas-instruments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thonny</title>
+      <link>https://embedded-systems-design.github.io/tags/thonny/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/thonny/</guid>
       <description></description>
     </item>
     
