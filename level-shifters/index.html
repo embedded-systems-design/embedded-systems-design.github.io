@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.93.2" />
+  <meta name="generator" content="Hugo 0.93.3" />
 
   <!-- plugins -->
   
@@ -255,6 +255,12 @@
 <p>Level sifting ICs</p>
 <p>Level shifting ICs address the main problem with the above circuits. The above circuits are one way only. Bidirectionality is extremely important for 2-way connections like UART. For a level shifting IC you need to look at the data sheet to make sure it is acceptable for your usage. Make sure it can handle both voltages before you commit to it. A good example is the LSF0102-Q1. This was chosen as one of its primary bidirectional functions is 3v-5v which is extremely common. link to data sheet: <a href="https://www.ti.com/lit/ds/symlink/lsf0102-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1618807473804">https://www.ti.com/lit/ds/symlink/lsf0102-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1618807473804</a></p>
 <p>This specific IC has 2 lanes of level shifters. You may want more so check your project before purchase. It is recommended to find an IC with a typical application section as the usage of the pins of some ICs are not immediately clear. This specific IC needs its EN pulled to GND to enable the input, and since all data pins are inputs, it essentially turns off the chip. You then have your A and B lanes, do not mix them up. A1 and A2 are both inputs and outputs on the same line. This is where you put your data lines. Then to change how the IC shifts the voltage you will need to calculate the voltages that need to be on the vref pins for that specific ic. A good way to get those voltages is using the voltage divider seen in Figure 1.</p>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li>
+<p><a href="https://itp.nyu.edu/physcomp/lessons/electronics/level-shifting/">https://itp.nyu.edu/physcomp/lessons/electronics/level-shifting/</a></p>
+</li>
+</ul>
 
         </div>
 
