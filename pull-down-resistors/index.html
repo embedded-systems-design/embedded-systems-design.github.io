@@ -234,31 +234,35 @@
         </div>
         
         <div class="content mb-5">
-          <p><strong>What are pullup resistors?</strong></p>
-<p>These are resistors used to pull a volage on a specific pin high. A good resistor value for pull up resistors is 10k ohms.</p>
+          <h2 id="what-are-pullup-resistors">What are pullup resistors?</h2>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="pullup.png"><img src="pullup.png" alt="Pull-up"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Pull-up</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>These are resistors used to pull a volage on a specific pin high. A good resistor value for pull up resistors is 10kOhm.</p>
 <p><strong>Why would you want this?</strong></p>
 <p>There are many reasons to pull a pin high, the most common is to pull the reset of a microcontroller high to enable its function. The reason you would use a pull up resistor here and not just directly connect it Vin is that a pull up resistor allows the use of a switch to pull the pin to GND. Without this resistor, you would essentially create a short circuit which will most likely burn a trace on your board. An example of a pullup resistor used to pull a microcontroller rest pin high is shown below in Figure 1.</p>
+<h2 id="what-are-pulldown-resistors">What are Pulldown Resistors?</h2>
 <p>
-<a href="image1.png"><img src="image1.png" alt=""  /></a>
+<a href="pulldown.png"><img src="pulldown.png" alt=""  /></a>
 
 </p>
-<p>Figure 1</p>
-<p><strong>What are Pulldown Resistors?</strong></p>
 <p>These are resistors that pull the voltage on a pin to GND. A good resistor value for pull down resistors is 10k ohms.</p>
-<p><strong>Why would you want this?</strong></p>
+<h3 id="why-would-you-want-this">Why would you want this?</h3>
 <p>This is very good for switches as it puts the switch in a defined OFF state. microcontroller read either an on or off state, the problem is sometimes that on state can be triggered with a few millivolts. As there is interference everywhere this can be a problem. When the pin is not connected to any source high or low, it is considered floating. With a pull-down resistor, it set the pin into a definitive OFF state. The example below in Figure 2 shows a pulldown resistor being used to pull the switch to GND when the switch is not pressed.</p>
-<p>
-<a href="image2.png"><img src="image2.png" alt=""  /></a>
-
-</p>
-<p>Figure 2</p>
-<p><strong>Special Case</strong></p>
+<h2 id="special-cases-i2c">Special Cases: I2C</h2>
 <p>A Special use case of a Pullup resistor is in the data line of the I2C protocol. This protocol needs the data lines to be pulled high, for most use cases, a 10k resistor will work, but for higher clock speeds you will need to calculate the perfect resistor value by looking at the datasheet for your part.</p>
 <p>Refer to TI&rsquo;s <a href="https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/6/I2C-Bus-Pullup-Resistor-Calculation.pdf">I2C Resistor Sizing guide</a> for more details, or the following online calculators:</p>
 <ul>
-<li>
-<p><a href="https://atman-iot.com/blog/i2c-pull-up-calculator/">https://atman-iot.com/blog/i2c-pull-up-calculator/</a></p>
-</li>
+<li><a href="https://atman-iot.com/blog/i2c-pull-up-calculator/">https://atman-iot.com/blog/i2c-pull-up-calculator/</a></li>
 </ul>
 
         </div>

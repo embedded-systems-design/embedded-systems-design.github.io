@@ -234,32 +234,108 @@
         </div>
         
         <div class="content mb-5">
-          <p>What is a level shifter?</p>
+          <h2 id="introduction-what-is-a-level-shifter">Introduction: What is a level shifter?</h2>
 <p>A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</p>
-<p>Why?</p>
-<p>The most common type of level shifter is one that shifts 5v logic down to 3.3v logic. If a level shifter is not used the receiver of the logic will be irreparably damaged. If you do not know if you need this, check your data sheet! Look for a phrase such as &ldquo;3.3v tolerant&rdquo;</p>
-<p>Shift down level shifter</p>
-<p>For the example above, you would need a shift down level shifter. There are many ways to do this, but the easiest way is to create a voltage divider as seen in Figure 1. This is the easiest and cheapest way to construct a low power level shifter and will be adequate for most projects. A good way to calculate this is use V=IR. In this case first solve for current with 5v which is 5/3000 = 1.6ma then use that to solve for 3 = R2 * 1.6e-3 = approximately 2k. then just subtract r2 from rtot for r1.</p>
+<h2 id="why">Why?</h2>
+<p>Integrated circuit powered at different voltage levels often need to be used together within a single PCB.  This can be due to part availability, to ensure compatibility with older chips or systems, or due to specified communication protocols.  In any regard, the specifications of individual chips may make it impossible to use the same <em>logic</em> levels between the two ICs without stepping up or stepping down the voltage level.</p>
+<p>The most common type of level shifters are ones that shift 5v logic down to 3.3v logic. If a level shifters are not used, the receiver of the logic will be irreparably damaged. If you do not know if you need this, check your data sheet! Look for a phrase such as &ldquo;3.3v tolerant&rdquo;, or check the GPIO absolute maximum ratings to see if pins are able to receive voltages higher than the supply voltage.</p>
+<p>In the following sections we will discuss a number of options for stepping signal voltages up or down.  The following options will be discussed:</p>
+<ul>
+<li>Voltage dividers (Step down)</li>
+<li>Zener diodes (Step down)</li>
+<li>Transistors</li>
+<li>Level shift ICs</li>
+</ul>
+<h2 id="voltage-divider">Voltage divider</h2>
 <p>
-<a href="image1.png"><img src="image1.png" alt=""  /></a>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dropdown-voltage-divider.png"><img src="dropdown-voltage-divider.png" alt="Voltage divider"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Voltage divider</div></td></tr>
+</tbody>
+</table>
 
 </p>
-<p>Figure 1</p>
-<p>Shift up level shifter.</p>
-<p>This level shifter does the exact opposite of the shift down, it boosts the signal voltage. A nice easy way to do this would be to use a transistor as seen in Figure 2. Keep in mind that the transiter will be able to give decent amount off current so it will be a good idea to put a current limiting resistor if your situation calls for it. This one is a little nicer than the shift down as you need to make the DesiredSignalLevel as seen in Figure 2 the correct voltage and the circuit does the rest.</p>
+<p>The easiest way to shift voltages down is to create a voltage divider, as seen above. This is the easiest and cheapest way to construct a low power level shifter and will be adequate for most projects. A good way to calculate this is use V=IR.</p>
+<p>In the above figure we use the equation V=IR twice.  First, we find the current running through R5 and R6 by taking 5V/(1.8k + 3.3k) = .982mA.  We then use that current to determine the voltage across R6, with .000982*3300=3.23V.</p>
+<p>The most important part of selecting the right resistances is to ensure that the current being output from any pin is lower than the rated output current from the transmitting device&rsquo;s datasheet.</p>
+<h2 id="zener-diode">Zener Diode</h2>
 <p>
-<a href="image2.png"><img src="image2.png" alt=""  /></a>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dropdown-zener.png"><img src="dropdown-zener.png" alt="Zener Diode"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Zener Diode</div></td></tr>
+</tbody>
+</table>
 
 </p>
-<p>Figure 2</p>
-<p>Level sifting ICs</p>
-<p>Level shifting ICs address the main problem with the above circuits. The above circuits are one way only. Bidirectionality is extremely important for 2-way connections like UART. For a level shifting IC you need to look at the data sheet to make sure it is acceptable for your usage. Make sure it can handle both voltages before you commit to it. A good example is the LSF0102-Q1. This was chosen as one of its primary bidirectional functions is 3v-5v which is extremely common. link to data sheet: <a href="https://www.ti.com/lit/ds/symlink/lsf0102-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1618807473804">https://www.ti.com/lit/ds/symlink/lsf0102-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1618807473804</a></p>
-<p>This specific IC has 2 lanes of level shifters. You may want more so check your project before purchase. It is recommended to find an IC with a typical application section as the usage of the pins of some ICs are not immediately clear. This specific IC needs its EN pulled to GND to enable the input, and since all data pins are inputs, it essentially turns off the chip. You then have your A and B lanes, do not mix them up. A1 and A2 are both inputs and outputs on the same line. This is where you put your data lines. Then to change how the IC shifts the voltage you will need to calculate the voltages that need to be on the vref pins for that specific ic. A good way to get those voltages is using the voltage divider seen in Figure 1.</p>
+<p>A Zener diode is a special diode whose reverse breakdown voltage is specially tuned to be used for special cases.  Zener diodes can be purchased with a wide variety of breakdown voltages, including 3.3V.  The circuit above shows the zener diode placed below a resistor, R7, which is used to limit current across the diode.  You will also notice that the diode is placed in &ldquo;reverse&rdquo; from what a normal diode would be; this means that whenever a voltage higher than 3.3V (for this particular diode) is present, the diode will enter &ldquo;reverse breakdown&rdquo; and permit current to pass through it.  Care must be taken to select a resistance for R7 that does not permit too much current to pass over the diode or from the IC output pin, while permitting enough current to fully activate the diode in breakdown.</p>
+<h2 id="transistor-based-level-shifters">Transistor-based level shifters</h2>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dropdown-step-down-bjt.png"><img src="dropdown-step-down-bjt.png" alt="Step-Down BJT"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Step-Down BJT</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>BJT transistors can also be used to step up or step down voltages.  While a single NPN transistor can be used to shift logic levels, a single stage will also &ldquo;invert&rdquo; the logic signal, making logic-high low and logic-low high.  The solution to this is to use two sequential transistor stages.  This has the effect of inverting the signal twice while changing the voltage level in the process.  Depending on the supply voltage used above the transistors, the voltage output can go up or down.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dropdown-step-up-bjt.png"><img src="dropdown-step-up-bjt.png" alt="Step-Up BJT"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Step-Up BJT</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>The issue with all the above solutions, however, becomes apparent when a high number of signals need to be shifted.  The above solutions require a number of parts per signal line, which can increase the complexity of the schematic and system, as well as raise the cost.  This is apparent in the case of bi-directional UART communication, where one seral line must be shifted up and the other line down.</p>
+<h2 id="level-sifting-ics">Level sifting ICs</h2>
+<p>A number of level-shifting IC&rsquo;s are available, which help address the problems stated above.  For a level shifting IC you need to look at the data sheet to make sure it is acceptable for your usage. Make sure it can handle both voltages before you commit to it. A good example is the LSF0102-Q1. This was chosen as one of its primary bidirectional functions is 3v-5v which is extremely common.</p>
+<p><a href="https://www.ti.com/lit/ds/symlink/lsf0102-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1618807473804">Data Sheet</a></p>
+<p>This specific IC has 2 level shifting channels. You may want more, so check your project before purchase. It is recommended to find an IC with a typical application section as the usage of the pins of some ICs are not immediately clear. This specific IC needs its EN pulled to GND to enable the input, and since all data pins are inputs, it essentially turns off the chip. You then have your A and B lanes, do not mix them up. A1 and A2 are both inputs and outputs on the same line. This is where you put your data lines. Then to change how the IC shifts the voltage you will need to calculate the voltages that need to be on the vref pins for that specific ic. A good way to get those voltages is using the voltage divider seen in Figure 1.</p>
+<h2 id="comparison">Comparison</h2>
+<p>A number of these solutions have been compared in Cadence&rsquo;s PSPICE module.  As you can see, they all produce comparable results.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dropdown.png"><img src="dropdown.png" alt="Schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Schematic</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dropdown-results.png"><img src="dropdown-results.png" alt="Results"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Results</div></td></tr>
+</tbody>
+</table>
+
+</p>
 <h2 id="external-resources">External Resources</h2>
 <ul>
-<li>
-<p><a href="https://itp.nyu.edu/physcomp/lessons/electronics/level-shifting/">https://itp.nyu.edu/physcomp/lessons/electronics/level-shifting/</a></p>
-</li>
+<li><a href="https://itp.nyu.edu/physcomp/lessons/electronics/level-shifting/">https://itp.nyu.edu/physcomp/lessons/electronics/level-shifting/</a></li>
 </ul>
 
         </div>
