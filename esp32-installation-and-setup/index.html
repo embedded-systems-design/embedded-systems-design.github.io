@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.94.2" />
+  <meta name="generator" content="Hugo 0.95.0" />
 
   <!-- plugins -->
   
@@ -256,7 +256,8 @@
 </ol>
 </li>
 <li>
-<p>Open up power shell (win+x, i) and type <code>pip install esptool thonny</code></p>
+<p>Open up powershell (win+x, i) and type <code>pip install esptool thonny</code></p>
+<p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
 </li>
 <li>
 <p>Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
@@ -483,6 +484,30 @@ Type &#34;help()&#34; for more information.
 </p>
 </li>
 </ol>
+<h2 id="mac-specific-suggestions">Mac Specific Suggestions:</h2>
+<ul>
+<li>
+<p>use terminal or xterm if you have it as Macs do not have powershell</p>
+</li>
+<li>
+<p>use <code>pip3 install ...</code> instead of <code>pip install ...</code> with the most recent flavors of MacOS</p>
+</li>
+<li>
+<p>make sure <code>pip</code> or <code>pip3</code>(Mac) is updated to avoid installation errors</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 -m pip install --upgrade pip
+</span></span></code></pre></div></li>
+<li>
+<p>Mac doesn&rsquo;t do COM, but can list USB devices.  In your terminal, type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -al /dev/tty.
+</span></span></code></pre></div><p>then unplug your ESP32 and run the previous command again to see which name for the device is the ESP32</p>
+</li>
+<li>
+<p>when selecting the port, there may be two Silicon Labs CP210X USB to UART Bridge (ESP device name here) devices.  Watch the messages in the terminal to determine the correct selection (obviously, don&rsquo;t use the one that says error/cannot find/etc.)</p>
+</li>
+<li>
+<p>when running the program you may need to press ctrl + c twice within thonny</p>
+</li>
+</ul>
 <hr>
 <h2 id="issues">Issues</h2>
 <p>If you install on a computer where you don&rsquo;t have administrative access, it is still possible to install  but you have to remember a couple things:</p>
