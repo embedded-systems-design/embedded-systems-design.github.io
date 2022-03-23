@@ -48,8 +48,6 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/altering-trace-widths/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/installing-anaconda-python/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/argon/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/assembly/</loc>
@@ -259,6 +257,8 @@
     <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/micropython/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/installing-anaconda-python/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/misc/</loc>
   </url><url>

@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Anaconda (Python) Installation Tutorial</title>
-      <link>https://embedded-systems-design.github.io/installing-anaconda-python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/installing-anaconda-python/</guid>
-      <description>Introduction This tutorial is for installing the anaconda python distribution on windows.</description>
-    </item>
-    
-    <item>
       <title>Grow Your Embedded Programming Skills After EGR 304/314</title>
       <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,6 +41,15 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
       <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
+    </item>
+    
+    <item>
+      <title>Miniconda/Anaconda (Python) Installation Tutorial</title>
+      <link>https://embedded-systems-design.github.io/installing-anaconda-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/installing-anaconda-python/</guid>
+      <description>Introduction This tutorial is for installing the anaconda python distribution on windows.</description>
     </item>
     
     <item>
