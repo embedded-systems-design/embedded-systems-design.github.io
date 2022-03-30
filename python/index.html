@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Python Basics | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.96.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/wireless/">Wireless Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://embedded-systems-design.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      
+
+
+
+
+
+
+<div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+
+
+
+
+<li class="breadcrumb-item"><a href="/tutorials">tutorials</a></li>
+
+
+
+
+
+
+<li class="breadcrumb-item active"  aria-current="page">python</li>
+
+
+  </ol>
+</nav>
+</div>
+
+
+        <h2>Python Basics</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h1 id="python-basics">Python Basics</h1>
+<h2 id="data-types">Data Types</h2>
+<h3 id="really-basic">Really Basic</h3>
+<p><code>int````, </code>float<code>, </code>bool<code>, </code>complex```</p>
+<ul>
+<li>can convert from one to another using the data type class itself</li>
+<li>identify the type using <code>type()</code></li>
+</ul>
+<h3 id="less-basic">Less Basic</h3>
+<p><code>string</code>, <code>function</code></p>
+<h3 id="advanced">Advanced</h3>
+<p><code>list</code>, <code>dict</code>, <code>set</code>, <code>tuple</code></p>
+<h3 id="even-more-advanced">Even More Advanced</h3>
+<p><code>class</code></p>
+<h2 id="operators">Operators</h2>
+<ul>
+<li>assignment: <code>=</code></li>
+<li>math: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>**</code>, <code>%</code>, <code>//</code></li>
+<li>equality: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></li>
+<li>binary opertors: <code>&amp;</code>, <code>|</code> , <code>^</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code></li>
+</ul>
+<h2 id="functions">Functions</h2>
+<pre><code>* ```def```, ```return```, ```pass``` keywords
+* arguments and keyword arguments
+* passing in unknown number of arguments
+
+```python
+def my_function(arguments,..., keyword_arguments=3):
+    #run your code here
+    return_variable=1
+    return return_variable
+```
+</code></pre>
+<h2 id="conditionals">Conditionals</h2>
+<ul>
+<li>logic
+<ul>
+<li><code>if</code>, <code>elif</code>, <code>else</code></li>
+<li>NO switch (<a href="https://towardsdatascience.com/switch-case-statements-are-coming-to-python-d0caf7b2bfd3">yet&hellip;</a>)</li>
+</ul>
+</li>
+<li>logic
+<ul>
+<li><code>and</code>, <code>not</code>, <code>or</code></li>
+<li><code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="iterable-data-types">iterable data types</h2>
+<ul>
+<li><code>list</code>, <code>tuple</code>, <code>string</code></li>
+<li><code>range()</code> function</li>
+<li>can access one item at a time using square brackets</li>
+<li>can &ldquo;slice&rdquo; iterables</li>
+</ul>
+<h2 id="looping">Looping</h2>
+<ul>
+<li><code>for</code>, <code>while</code></li>
+<li><code>break</code>, <code>continue</code></li>
+<li>can iterate through &ldquo;iterables&rdquo;</li>
+<li>can use <code>else</code></li>
+</ul>
+<h2 id="strings">Strings</h2>
+<ul>
+<li>easy to format, easy to search, easy to operate on</li>
+<li><code>split()</code>, <code>join()</code>, <code>find()</code>, <code>index()</code>, <code>format()</code>&hellip;</li>
+<li><code>print()</code></li>
+</ul>
+<h2 id="classes">Classes</h2>
+<ul>
+<li>containers for functions <em>and</em> data.</li>
+<li>concept of &ldquo;inheritance&rdquo;</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00a8c8">class</span> <span style="color:#75af00">MyClass</span><span style="color:#111">(</span><span style="color:#111">object</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">def</span> <span style="color:#111">__init__</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">,</span><span style="color:#111">value</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span> <span style="color:#f92672">=</span> <span style="color:#111">value</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00a8c8">def</span> <span style="color:#75af00">my_method</span><span style="color:#111">(</span><span style="color:#111">self</span><span style="color:#111">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">return</span> <span style="color:#111">self</span><span style="color:#f92672">.</span><span style="color:#111">value</span>
+</span></span></code></pre></div><h2 id="modules--packages">Modules &amp; Packages</h2>
+<ul>
+<li>a &ldquo;module&rdquo;: is just another name for a python file</li>
+<li>a &ldquo;package&rdquo; is a set of modules made for sharing &amp; distribution</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#111">X</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> <span style="color:#111">X</span> <span style="color:#f92672">import</span> <span style="color:#111">Y</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#111">X.Z</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#111">X</span> <span style="color:#00a8c8">as</span> <span style="color:#111">A</span>
+</span></span></code></pre></div><h2 id="common-packages">Common Packages</h2>
+<h3 id="matlab-like-powers">Matlab-like powers</h3>
+<p>numpy, scipy, matplotlib</p>
+<p><a href="https://numpy.org/doc/stable/user/numpy-for-matlab-users.html">https://numpy.org/doc/stable/user/numpy-for-matlab-users.html</a></p>
+<h3 id="gui-development">GUI development</h3>
+<p>pyQt, tkinter</p>
+<h3 id="other">Other</h3>
+<p>sympy,</p>
+<h2 id="installing-packages">Installing Packages</h2>
+<ul>
+<li>pip</li>
+<li>conda</li>
+<li>&ldquo;manually&rdquo;</li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd5.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/python.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
