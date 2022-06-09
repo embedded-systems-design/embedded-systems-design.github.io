@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="This is meta description">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.96.0" />
+  <meta name="generator" content="Hugo 0.100.2" />
 
   <!-- plugins -->
   
@@ -253,8 +253,16 @@
 <p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>).  Follow this <a href="/installing-anaconda-python/">tutorial</a> for detailed instructions.</p>
 </li>
 <li>
-<p>Open up powershell (win+x, i) and type <code>pip install esptool thonny</code></p>
+<p>Open up powershell (win+x, i) and</p>
+<ol>
+<li>
+<p>type <code>conda install -c conda-forge wrapt</code></p>
+</li>
+<li>
+<p>type <code>pip install esptool thonny</code></p>
 <p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
+</li>
+</ol>
 </li>
 <li>
 <p>Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
@@ -321,7 +329,7 @@
 </p>
 </li>
 <li>
-<p>download <a href="https://micropython.org/download/esp32/">firmware</a> (<a href="https://micropython.org/resources/firmware/esp32-20220117-v1.18.bin">v1.18 quicklink</a>)</p>
+<p>download <a href="https://micropython.org/download/esp32/">firmware</a> (I don&rsquo;t recommend v1.18, use the nightly build as it contains several more recent fixes to PWM)</p>
 </li>
 <li>
 <p>open cmd and type <code>thonny</code></p>

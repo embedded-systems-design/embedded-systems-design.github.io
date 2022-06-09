@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</guid>
-      <description>TL/DR RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project  Pinouts / Schematics       from https://randomnerdtutorials.</description>
+      <description>TL/DR RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Pinouts / Schematics from https://randomnerdtutorials.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/working-with-thonny/</guid>
-      <description>Menu &amp;amp; Icons File       File Menu     File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
+      <description>Menu &amp;amp; Icons File File Menu File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
     </item>
     
   </channel>

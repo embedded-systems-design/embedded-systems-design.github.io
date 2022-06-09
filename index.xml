@@ -22,7 +22,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
-      <description>Installation System Requirements  PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</description>
+      <description>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</guid>
-      <description>TL/DR RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project  Pinouts / Schematics       from https://randomnerdtutorials.</description>
+      <description>TL/DR RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Pinouts / Schematics from https://randomnerdtutorials.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</guid>
-      <description>What is Bluetooth Low Energy?  Intro to Bluetooth Low Energy video from Cypress Bluetooth Low Energy datasheets from Cypress Developing Bluetooth Smart Applications for Android tutorial from NewCircle Training provides a high-level explanation of how Bluetooth Low Energy works.</description>
+      <description>What is Bluetooth Low Energy? Intro to Bluetooth Low Energy video from Cypress Bluetooth Low Energy datasheets from Cypress Developing Bluetooth Smart Applications for Android tutorial from NewCircle Training provides a high-level explanation of how Bluetooth Low Energy works.</description>
     </item>
     
     <item>
@@ -113,7 +113,7 @@
       
       <guid>https://embedded-systems-design.github.io/altering-trace-widths/</guid>
       <description>Altering Trace Widths
-      Figure 1   Sometimes you need to globally change trace widths in your board after designing it.</description>
+Figure 1 Sometimes you need to globally change trace widths in your board after designing it.</description>
     </item>
     
     <item>
@@ -158,7 +158,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
-      <description>Capture CIS Manuals  OrCAD Capture Quick Reference OrCAD Capture User&amp;rsquo;s Guide OrCAD Capture Reference Guide  </description>
+      <description>Capture CIS Manuals OrCAD Capture Quick Reference OrCAD Capture User&amp;rsquo;s Guide OrCAD Capture Reference Guide </description>
     </item>
     
     <item>
@@ -212,7 +212,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/capacitive-sensing/</guid>
-      <description> Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing  Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems  </description>
+      <description> Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems </description>
     </item>
     
     <item>
@@ -384,7 +384,7 @@
       
       <guid>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</guid>
       <description>Creating a new project in Cadence
-  In Windows, open the Design Entry CIS program.</description>
+In Windows, open the Design Entry CIS program.</description>
     </item>
     
     <item>
@@ -402,7 +402,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/dc-motors-101/</guid>
-      <description>Watch the video mini-lecture on DC motor control from Dr. Jordan  What types of DC motors are most common?</description>
+      <description>Watch the video mini-lecture on DC motor control from Dr. Jordan What types of DC motors are most common?</description>
     </item>
     
     <item>
@@ -493,7 +493,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/how-does-x-work/</guid>
-      <description>Laser Rangefinders  https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/ https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849 https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder  Laser Thermometers (pyrometers)  https://sciencing.</description>
+      <description>Laser Rangefinders https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/ https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849 https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder Laser Thermometers (pyrometers) https://sciencing.com/laser-thermometers-work-4962575.html Record Players https://electronics.</description>
     </item>
     
     <item>
@@ -511,7 +511,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/adding-silkscreen/</guid>
-      <description>How to Create a Silkscreen in Cadence and Manually Add Text to it  Create a (finalized) PCB layout.</description>
+      <description>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</description>
     </item>
     
     <item>
@@ -539,7 +539,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       
       <guid>https://embedded-systems-design.github.io/interrupts/</guid>
       <description>What is an interrupt? Consider the following knock-knock joke:
-      Figure 1   Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
+Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
     </item>
     
     <item>
@@ -602,7 +602,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/merging-schematics/</guid>
-      <description>Merging Multiple Schematics into a Single Schematic   Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</description>
+      <description>Merging Multiple Schematics into a Single Schematic Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</description>
     </item>
     
     <item>
@@ -630,7 +630,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       
       <guid>https://embedded-systems-design.github.io/micropython-and-esp32/</guid>
       <description>What is Python? The #1 Programming language*
- Python: 14.2% Matlab: 0.</description>
+Python: 14.2% Matlab: 0.</description>
     </item>
     
     <item>
@@ -666,7 +666,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/oscilloscopes-101/</guid>
-      <description>Part I  Part II </description>
+      <description>Part I Part II </description>
     </item>
     
     <item>
@@ -693,7 +693,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/patents-101/</guid>
-      <description>What is a patent?  &amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see General Information Concerning Patents from the USPTO).</description>
+      <description>What is a patent? &amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see General Information Concerning Patents from the USPTO).</description>
     </item>
     
     <item>
@@ -738,7 +738,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/power-supplies-101/</guid>
-      <description>What are the components of a basic power supply subsystem?  Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit  What are the design considerations for a battery-operated circuit?</description>
+      <description>What are the components of a basic power supply subsystem? Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit What are the design considerations for a battery-operated circuit?</description>
     </item>
     
     <item>
@@ -774,7 +774,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/pull-down-resistors/</guid>
-      <description>What are pullup resistors?       Pull-up   These are resistors used to pull a volage on a specific pin high.</description>
+      <description>What are pullup resistors? Pull-up These are resistors used to pull a volage on a specific pin high.</description>
     </item>
     
     <item>
@@ -873,7 +873,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/soldering-and-desoldering-tips-and-tricks/</guid>
-      <description>Video Walkthrough  How do I turn on the soldering irons in PRLTA 103?</description>
+      <description>Video Walkthrough How do I turn on the soldering irons in PRLTA 103?</description>
     </item>
     
     <item>
@@ -891,7 +891,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/sources-for-materials/</guid>
-      <description>Adhesives &amp;amp; Tape  Adhesives for Paper from ConservationWiki Electronic Grade Self-Leveling Silicone from American Sealants, Inc.</description>
+      <description>Adhesives &amp;amp; Tape Adhesives for Paper from ConservationWiki Electronic Grade Self-Leveling Silicone from American Sealants, Inc.</description>
     </item>
     
     <item>
@@ -900,7 +900,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/sources-for-mechanical-components/</guid>
-      <description>General  Berg Grainger (* ASU Preferred Supplier) McMaster-Carr Miki Pulley MSC Industrial (* ASU Preferred Supplier) Motor System Parts from Radical RC Stock Drive Products  Bearings  igus - plastic bushings, bearings, linear guides, and cable carriers.</description>
+      <description>General Berg Grainger (* ASU Preferred Supplier) McMaster-Carr Miki Pulley MSC Industrial (* ASU Preferred Supplier) Motor System Parts from Radical RC Stock Drive Products Bearings igus - plastic bushings, bearings, linear guides, and cable carriers.</description>
     </item>
     
     <item>
@@ -964,7 +964,7 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</guid>
-      <description>Are Connections Continuous?   Conduct a continuity check on your board with a multimeter.</description>
+      <description>Are Connections Continuous? Conduct a continuity check on your board with a multimeter.</description>
     </item>
     
     <item>
@@ -1018,7 +1018,7 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</guid>
-      <description>Updating a Part in your Library       Figure: Typical Schematic   Sometimes its necessary to make small changes to your parts as you learn more about them or need to define them better in order to identify more design mistakes during the design process.</description>
+      <description>Updating a Part in your Library Figure: Typical Schematic Sometimes its necessary to make small changes to your parts as you learn more about them or need to define them better in order to identify more design mistakes during the design process.</description>
     </item>
     
     <item>
@@ -1108,7 +1108,7 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/working-with-thonny/</guid>
-      <description>Menu &amp;amp; Icons File       File Menu     File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
+      <description>Menu &amp;amp; Icons File File Menu File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
     </item>
     
   </channel>

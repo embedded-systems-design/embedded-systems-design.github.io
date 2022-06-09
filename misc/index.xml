@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
-      <description>Capture CIS Manuals  OrCAD Capture Quick Reference OrCAD Capture User&amp;rsquo;s Guide OrCAD Capture Reference Guide  </description>
+      <description>Capture CIS Manuals OrCAD Capture Quick Reference OrCAD Capture User&amp;rsquo;s Guide OrCAD Capture Reference Guide </description>
     </item>
     
     <item>
@@ -130,7 +130,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/oscilloscopes-101/</guid>
-      <description>Part I  Part II </description>
+      <description>Part I Part II </description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/patents-101/</guid>
-      <description>What is a patent?  &amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see General Information Concerning Patents from the USPTO).</description>
+      <description>What is a patent? &amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see General Information Concerning Patents from the USPTO).</description>
     </item>
     
     <item>
@@ -212,7 +212,7 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</guid>
-      <description>Are Connections Continuous?   Conduct a continuity check on your board with a multimeter.</description>
+      <description>Are Connections Continuous? Conduct a continuity check on your board with a multimeter.</description>
     </item>
     
     <item>

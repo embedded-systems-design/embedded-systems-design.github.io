@@ -49,7 +49,7 @@
       
       <guid>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</guid>
       <description>Creating a new project in Cadence
-  In Windows, open the Design Entry CIS program.</description>
+In Windows, open the Design Entry CIS program.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</guid>
-      <description>Updating a Part in your Library       Figure: Typical Schematic   Sometimes its necessary to make small changes to your parts as you learn more about them or need to define them better in order to identify more design mistakes during the design process.</description>
+      <description>Updating a Part in your Library Figure: Typical Schematic Sometimes its necessary to make small changes to your parts as you learn more about them or need to define them better in order to identify more design mistakes during the design process.</description>
     </item>
     
   </channel>
