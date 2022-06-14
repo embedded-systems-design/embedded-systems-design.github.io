@@ -247,12 +247,14 @@
         </div>
         
         <div class="content mb-5">
-          <ol>
+          <h2 id="install-miniconda-and-packages">Install Miniconda and packages</h2>
+<p>You need to use Python on your PC to program the ESP32.</p>
+<ol>
 <li>
 <p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>).  Follow this <a href="/installing-anaconda-python/">tutorial</a> for detailed instructions.</p>
 </li>
 <li>
-<p>Open up powershell (win+x, i) and</p>
+<p><strong>Installing Thonny and other Packages:</strong> Open up powershell (win+x, i) and</p>
 <ol>
 <li>
 <p>type <code>conda install -c conda-forge wrapt</code></p>
@@ -263,6 +265,10 @@
 </li>
 </ol>
 </li>
+</ol>
+<h2 id="install-device-drivers">Install Device Drivers</h2>
+<p>The device drivers will help your computer recognize the ESP32 as a USB Device</p>
+<ol>
 <li>
 <p>Install <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Silabs cp210x driver</a> <a href="https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip">windows download</a></p>
 <p><em>This step is required if the device is not recognized as a virtual COM port.</em></p>
@@ -330,6 +336,9 @@
 <li>
 <p>download <a href="https://micropython.org/download/esp32/">firmware</a> (I don&rsquo;t recommend v1.18, use the nightly build as it contains several more recent fixes to PWM)</p>
 </li>
+</ol>
+<h2 id="flashing-the-esp32-firmware-for-micropython">Flashing the ESP32 Firmware for MicroPython</h2>
+<ol>
 <li>
 <p>open cmd and type <code>thonny</code></p>
 <p>
