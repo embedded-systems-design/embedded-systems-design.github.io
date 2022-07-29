@@ -4,9 +4,9 @@
       <meta charset="utf-8">
       <title>Embedded Systems Design</title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.100.2" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   <!-- plugins -->
   
@@ -104,20 +104,34 @@
         <ul class="navbar-nav">
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/02-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/04-symbol-creation/">Symbol Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05-schematic-capture/">Schematic Capture</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/">Padstack Definition</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/">Footprint Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/06-transferring-schematics-to-pcb/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/07-pcb-design/">PCB Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/">DFM</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/09-generating-artwork/">Generating Artwork</a>
+              
+            </div>
           </li>
           
           
@@ -135,13 +149,29 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
-              
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
               
             </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
           </li>
           
           
@@ -206,7 +236,142 @@
         <div class="row">
           
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/configuring-the-uart-on-psoc/">Configuring the UART on PSoC</a></h4>
+      
+
+      <p>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/cypress"
+          class="text-primary">Cypress</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/uart"
+          class="text-primary">Uart</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/microcontroller"
+          class="text-primary">Microcontroller</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/debugging"
+          class="text-primary">Debugging</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/software"
+          class="text-primary">Software</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/">Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence</a></h4>
+      
+
+      <p>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)</p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/custom-part"
+          class="text-primary">Custom part</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
+          class="text-primary">Cadence</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-padstack-old/">Creating a Custom Padstack (old)</a></h4>
+      
+
+      <p>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</p>
+      <ul class="list-inline">
+        
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/drawing-software/">Drawing Software</a></h4>
+      
+
+      <p>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/asu"
+          class="text-primary">Asu</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/software"
+          class="text-primary">Software</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/drawing"
+          class="text-primary">Drawing</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/grow-your-embedded-programming-skills/">Grow Your Embedded Programming Skills After EGR 304/314</a></h4>
+      
+
+      <p>Personal Projects and Education
+a. Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/programming"
+          class="text-primary">Programming</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
@@ -222,252 +387,6 @@
         <li class="list-inline-item mb-1 mr-2 mt-1">
         <a class="d-block p-2 bg-primary text-white" href="/tags/problem-definition"
           class="text-primary">Problem definition</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/how-to-export-a-pdf-from-capture-and-pcb-editor/">How to export a PDF from Capture and PCB Editor</a></h4>
-      
-
-      <p>Introduction This tutorial goes through how to save CIS schematics and PCB layers as a PDF.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/ecad"
-          class="text-primary">Ecad</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/tutorial"
-          class="text-primary">Tutorial</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/documentation"
-          class="text-primary">Documentation</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/drawing"
-          class="text-primary">Drawing</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/mechanical-cad-software/">Mechanical CAD Software</a></h4>
-      
-
-      <p>What is CAD software used for? Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/asu"
-          class="text-primary">Asu</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cad"
-          class="text-primary">Cad</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/mechanical"
-          class="text-primary">Mechanical</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/oscilloscopes-101/">Oscilloscopes 101</a></h4>
-      
-
-      <p>Part I Part II</p>
-      <ul class="list-inline">
-        
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/patents-101/">Patents 101</a></h4>
-      
-
-      <p>What is a patent? “A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office” (for more information, see General Information Concerning Patents from the USPTO).</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/patents"
-          class="text-primary">Patents</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/pcb-design-checklist/">PCB design checklist</a></h4>
-      
-
-      <p>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/checklist"
-          class="text-primary">Checklist</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/peralta-103-resources/">Peralta 103 Resources</a></h4>
-      
-
-      <p>What equipment is available at each of the benches? Function Generator (5 MHz)</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/testing"
-          class="text-primary">Testing</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/asu"
-          class="text-primary">Asu</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/test-equipment"
-          class="text-primary">Test equipment</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/recreating-a-simple-round-padstack/">Recreating a simple round padstack</a></h4>
-      
-
-      <p>Recreating a simple round padstack This tutorial takes you through recreating a basic round thru-hole padstack.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/ecad"
-          class="text-primary">Ecad</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/schematic-checklist/">Schematic checklist</a></h4>
-      
-
-      <p>Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic first.</p>
-      <ul class="list-inline">
-        
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/software-design/">Software design</a></h4>
-      
-
-      <p>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite “states” that a system can be in, and that it can only be in one of those states at a time.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/tutorial"
-          class="text-primary">Tutorial</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/programming"
-          class="text-primary">Programming</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/design"
-          class="text-primary">Design</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/software"
-          class="text-primary">Software</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/software-design"
-          class="text-primary">Software design</a>
         </li>
       </ul>
     </div>
@@ -527,8 +446,23 @@
       
       
 
+
+        
+        
         
 
+          
+          
+            
+          
+
+
+        
+        
+        
+
+      
+      
       
 
       
@@ -548,8 +482,23 @@
       
       
 
+
+        
+        
         
 
+          
+          
+            
+          
+
+
+        
+        
+        
+
+      
+      
       
 
       
@@ -569,8 +518,23 @@
       
       
 
+
+        
+        
         
 
+          
+          
+            
+          
+
+
+        
+        
+        
+
+      
+      
       
 
       
@@ -580,6 +544,106 @@
             3
           </a>
         </li>
+      
+
+    
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+
+          
+          
+            
+          
+
+
+        
+        
+        
+
+      
+      
+      
+
+      
+      
+        <li class="page-item">
+          <a href="/misc/page/4/" class="page-link">
+            4
+          </a>
+        </li>
+      
+
+    
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+
+          
+          
+            
+          
+
+
+        
+        
+        
+
+      
+      
+      
+
+      
+      
+        <li class="page-item">
+          <a href="/misc/page/5/" class="page-link">
+            5
+          </a>
+        </li>
+      
+
+    
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+
+          
+          
+
+
+        
+        
+        
+
+      
+      
+      
+
+      
       
 
     
@@ -596,7 +660,7 @@
     
     
     <li class="page-item">
-      <a class="page-link" href="/misc/page/3/">
+      <a class="page-link" href="/misc/page/6/">
         »»
       </a>
     </li>
@@ -877,7 +941,7 @@
       </div>
 
       <div class="col-12 mb-5 text-center">
-        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
         
         
         

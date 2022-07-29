@@ -4,9 +4,9 @@
       <meta charset="utf-8">
       <title>Embedded Systems Design</title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.100.2" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   <!-- plugins -->
   
@@ -104,20 +104,34 @@
         <ul class="navbar-nav">
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/02-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/04-symbol-creation/">Symbol Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05-schematic-capture/">Schematic Capture</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/">Padstack Definition</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/">Footprint Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/06-transferring-schematics-to-pcb/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/07-pcb-design/">PCB Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/">DFM</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/09-generating-artwork/">Generating Artwork</a>
+              
+            </div>
           </li>
           
           
@@ -135,13 +149,29 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
-              
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
               
             </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
           </li>
           
           
@@ -206,49 +236,19 @@
         <div class="row">
           
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/adding-silkscreen/">How to Create a Silkscreen in Cadence and Manually Add Text to it</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-library-in-cadence/">Creating a custom library in Cadence</a></h4>
       
 
-      <p>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</p>
+      <p>In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them.</p>
       <ul class="list-inline">
         
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/silkscreen"
-          class="text-primary">Silkscreen</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/how-to-export-a-pdf-from-capture-and-pcb-editor/">How to export a PDF from Capture and PCB Editor</a></h4>
-      
-
-      <p>Introduction This tutorial goes through how to save CIS schematics and PCB layers as a PDF.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/ecad"
-          class="text-primary">Ecad</a>
-        </li>
         <li class="list-inline-item mb-1 mr-2 mt-1">
         <a class="d-block p-2 bg-primary text-white" href="/tags/tutorial"
           class="text-primary">Tutorial</a>
@@ -258,51 +258,25 @@
           class="text-primary">Cadence</a>
         </li>
         <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/documentation"
-          class="text-primary">Documentation</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/drawing"
-          class="text-primary">Drawing</a>
+        <a class="d-block p-2 bg-primary text-white" href="/tags/custom-part"
+          class="text-primary">Custom part</a>
         </li>
       </ul>
     </div>
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/keeping-a-schematic-tidy/">Keeping a Schematic Tidy</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-padstack-in-cadence/">Creating a custom padstack in Cadence</a></h4>
       
 
-      <p>Introduction When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1).</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/manual-routing-in-cadence-pcb-editor/">Manual Routing in Cadence PCB Editor</a></h4>
-      
-
-      <p>How do I manually route a design in PCB Editor? Your design should have a board outline and components placed, and blue lines (the “rats nest”) between the components (see example, Figure 1).</p>
+      <p>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -318,39 +292,17 @@
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/merging-schematics/">Merging Multiple Schematics into a Single Schematic</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-pcb-footprint-manually-in-cadence/">Creating a custom PCB footprint manually in Cadence</a></h4>
       
 
-      <p>Merging Multiple Schematics into a Single Schematic Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/packaging-cadence-files-for-submission/">Packaging Cadence Files for Submission</a></h4>
-      
-
-      <p>Introduction This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.</p>
+      <p>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -366,17 +318,17 @@
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/placing-and-moving-components-in-cadence-pcb-editor/">Placing and moving components in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/">Creating a custom PCB footprint using Package Designer in Cadence</a></h4>
       
 
-      <p>While it is easy to place components using the mouse, most designs require precise placement of some components (e.</p>
+      <p>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -392,69 +344,39 @@
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-design-in-dfm-now/">Printing a PCB Design in DFM Now</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-schematic-symbol-in-cadence/">Creating a custom schematic symbol in Cadence</a></h4>
       
 
-      <p>Note: This tutorial shows how to print a PCB design on paper.</p>
+      <p>Introduction In most designs, some components will not be available in built-in libraries.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
         <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
           class="text-primary">Cadence</a>
         </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
       </ul>
     </div>
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-layout-in-cadence-pcb-editor/">Printing a PCB Layout in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-smd-footprint-manually-in-cadence/">Creating a custom SMD footprint manually in Cadence</a></h4>
       
 
-      <p>Note: This tutorial shows how to print a PCB design on paper.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/pushing-pcb-changes-back-to-a-schematic-in-cadence/">Pushing PCB changes back to a schematic in Cadence</a></h4>
-      
-
-      <p>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</p>
+      <p>Introduction This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -523,17 +445,20 @@
       
       
 
+
+        
+        
+        
+          
+          
+
         
 
       
+      
+      
 
       
-      
-        <li class="page-item">
-          <a href="/tags/cadence/" class="page-link">
-            1
-          </a>
-        </li>
       
 
     
@@ -544,8 +469,19 @@
       
       
 
+
+        
+        
+        
+          
+          
+            
+          
+
         
 
+      
+      
       
 
       
@@ -565,8 +501,19 @@
       
       
 
+
+        
+        
+        
+          
+          
+            
+          
+
         
 
+      
+      
       
 
       
@@ -586,8 +533,19 @@
       
       
 
+
+        
+        
+        
+          
+          
+            
+          
+
         
 
+      
+      
       
 
       
@@ -607,8 +565,19 @@
       
       
 
+
+        
+        
+        
+          
+          
+            
+          
+
         
 
+      
+      
       
 
       
@@ -618,6 +587,86 @@
             5
           </a>
         </li>
+      
+
+    
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+          
+          
+            
+          
+
+        
+
+      
+      
+      
+
+      
+      
+        <li class="page-item">
+          <a href="/tags/cadence/page/6/" class="page-link">
+            6
+          </a>
+        </li>
+      
+
+    
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+          
+          
+
+        
+
+      
+      
+      
+
+      
+      
+
+    
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+          
+          
+
+        
+
+      
+      
+      
+
+      
       
 
     
@@ -634,7 +683,7 @@
     
     
     <li class="page-item">
-      <a class="page-link" href="/tags/cadence/page/5/">
+      <a class="page-link" href="/tags/cadence/page/8/">
         »»
       </a>
     </li>
@@ -915,7 +964,7 @@
       </div>
 
       <div class="col-12 mb-5 text-center">
-        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
         
         
         

@@ -4,9 +4,9 @@
       <meta charset="utf-8">
       <title>Embedded Systems Design</title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.100.2" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   <!-- plugins -->
   
@@ -104,20 +104,34 @@
         <ul class="navbar-nav">
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
-          </li>
-          
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/02-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/04-symbol-creation/">Symbol Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05-schematic-capture/">Schematic Capture</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/">Padstack Definition</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/">Footprint Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/06-transferring-schematics-to-pcb/">Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/07-pcb-design/">PCB Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/">DFM</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/09-generating-artwork/">Generating Artwork</a>
+              
+            </div>
           </li>
           
           
@@ -135,13 +149,29 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Schematics to PCB</a>
-              
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
               
             </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
           </li>
           
           
@@ -196,6 +226,40 @@ Hello and welcome to the embedded systems design website.
 
 
 
+<section class="section-sm">
+  <div class="container">
+   <h2>Featured</h2>
+    <div class="row justify-content-center">
+      <div class="col-10 featured-post-slider">
+        
+        
+        <article class="card featured-post">
+  <div class="row no-gutters align-items-center">
+    <div class="col-md-5">
+        <img src="https://embedded-systems-design.github.io/images/box.png" class="card-img" alt="KiCad Design Workflow">
+
+    </div>
+    <div class="col-md-6 offset-md-1">
+      <div class="card-body">
+        <div class="mb-3 post-meta">
+          <span>By Dan Aukes</span>
+          
+        </div>
+        <a href="https://embedded-systems-design.github.io/kicad/"
+          class="h1 font-weight-bold d-block text-dark mb-4 card-title">KiCad Design Workflow</a>
+        <p class="card-text">Resources KiCad.org KiCad Documentation ...</p>
+      </div>
+    </div>
+  </div>
+</article>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 
@@ -205,46 +269,100 @@ Hello and welcome to the embedded systems design website.
     <div class="row">
       <div class="col-lg-8 mb-5 mb-lg-0">
     
+      <h2> Posts</h2>
+      
         <div class="row">
           
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/connectors-101/">Connectors 101</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence-walkthrough-psoc-4-ble-module/">Cadence Walkthrough: PSoC 4 BLE Module</a></h4>
       
 
-      <p>What is a connector? A connector is an electrical component that links two or more components together.</p>
+      <p>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/connectors"
-          class="text-primary">Connectors</a>
+        <a class="d-block p-2 bg-primary text-white" href="/tags/cypress"
+          class="text-primary">Cypress</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
+          class="text-primary">Cadence</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
+          class="text-primary">Pcb</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/calculating-current-limiting-resistor-value-for-leds/">Calculating Current Limiting Resistor Value for LEDs</a></h4>
+      
+
+      <p>When calculating the resistance value for your current limiting resistor there are a few variables to consider.</p>
+      <ul class="list-inline">
+        
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/capacitive-sensing/">Capacitive Sensing Links</a></h4>
+      
+
+      <p>Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems</p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/capacitors"
+          class="text-primary">Capacitors</a>
         </li>
         <li class="list-inline-item mb-1 mr-2 mt-1">
         <a class="d-block p-2 bg-primary text-white" href="/tags/circuit-design"
           class="text-primary">Circuit design</a>
         </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/ac-circuits"
+          class="text-primary">Ac circuits</a>
+        </li>
       </ul>
     </div>
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-board-outline-in-cadence-pcb-editor/">Creating a Board Outline in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/changing-a-hole-diameter-in-cadence-pcb-editor/">Changing a Hole Diameter in Cadence PCB Editor</a></h4>
       
 
-      <p>What is a board outline? A board outline is the outermost boundary of a printed circuit board design.</p>
+      <p>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -260,23 +378,49 @@ Hello and welcome to the embedded systems design website.
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/">Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/changing-the-default-via-padstack-in-cadence-pcb-editor/">Changing the Default Via Padstack in Cadence PCB Editor</a></h4>
       
 
-      <p>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)</p>
+      <p>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/custom-part"
-          class="text-primary">Custom part</a>
+        <a class="d-block p-2 bg-primary text-white" href="/tags/asu"
+          class="text-primary">Asu</a>
         </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
+          class="text-primary">Cadence</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
+          class="text-primary">Pcb</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/changing-the-library-search-path-in-cadence-design-entry-cis/">Changing the Library Search Path in Cadence Design Entry CIS</a></h4>
+      
+
+      <p>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</p>
+      <ul class="list-inline">
+        
         <li class="list-inline-item mb-1 mr-2 mt-1">
         <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
           class="text-primary">Cadence</a>
@@ -286,65 +430,17 @@ Hello and welcome to the embedded systems design website.
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-library-in-cadence/">Creating a custom library in Cadence</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/changing-the-library-search-path-in-cadence-pcb-editor/">Changing the Library Search Path in Cadence PCB Editor</a></h4>
       
 
-      <p>In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/tutorial"
-          class="text-primary">Tutorial</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/custom-part"
-          class="text-primary">Custom part</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-padstack-old/">Creating a Custom Padstack (old)</a></h4>
-      
-
-      <p>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</p>
-      <ul class="list-inline">
-        
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-padstack-in-cadence/">Creating a custom padstack in Cadence</a></h4>
-      
-
-      <p>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</p>
+      <p>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -360,91 +456,74 @@ Hello and welcome to the embedded systems design website.
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-pcb-footprint-manually-in-cadence/">Creating a custom PCB footprint manually in Cadence</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/choosing-transistors-for-highpower-digital-switching/">Choosing transistors for high-power digital switching</a></h4>
       
 
-      <p>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</p>
+      <p>Microcontrollers make wonderful “brains” for embedded systems, but are severely limited in the amount of current they can supply to an external device.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
+        <a class="d-block p-2 bg-primary text-white" href="/tags/electrical"
+          class="text-primary">Electrical</a>
         </li>
         <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
+        <a class="d-block p-2 bg-primary text-white" href="/tags/interfacing"
+          class="text-primary">Interfacing</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/actuator"
+          class="text-primary">Actuator</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/transistor"
+          class="text-primary">Transistor</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/mosfet"
+          class="text-primary">Mosfet</a>
         </li>
       </ul>
     </div>
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/">Creating a custom PCB footprint using Package Designer in Cadence</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/kicad/kicad-common-pin-types/">Common Pin Types and their Meanings</a></h4>
       
 
-      <p>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</p>
+      <p>Modified from here
+Pin Type Description Input A pin which is exclusively an input.</p>
       <ul class="list-inline">
         
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
       </ul>
     </div>
 </div>
 
           
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
   
   
   <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-schematic-symbol-in-cadence/">Creating a custom schematic symbol in Cadence</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/configuring-cadence/">Configuring Cadence</a></h4>
       
 
-      <p>Introduction In most designs, some components will not be available in built-in libraries.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-6 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-custom-smd-footprint-manually-in-cadence/">Creating a custom SMD footprint manually in Cadence</a></h4>
-      
-
-      <p>Introduction This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually.</p>
+      <p>Before using Cadence, configure it for optimal performance by following the instructions below.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -858,6 +937,30 @@ Hello and welcome to the embedded systems design website.
       
 
     
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+          
+          
+
+        
+
+      
+      
+      
+
+      
+      
+
+    
 
     
     
@@ -871,7 +974,7 @@ Hello and welcome to the embedded systems design website.
     
     
     <li class="page-item">
-      <a class="page-link" href="/page/13/">
+      <a class="page-link" href="/page/14/">
         »»
       </a>
     </li>
@@ -963,7 +1066,7 @@ Hello and welcome to the embedded systems design website.
       </div>
 
       <div class="col-12 mb-5 text-center">
-        <p>|  copyright © 2021 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
         
         
         

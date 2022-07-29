@@ -2,15 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://embedded-systems-design.github.io/fall-2022-software/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/getting-started/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/getting-started-with-cadence/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/installing-cadence/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/02-installation-and-setup/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/esp32-installation-and-setup/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/04-symbol-creation/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/05-schematic-capture/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/06-transferring-schematics-to-pcb/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/07-pcb-design/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/09-generating-artwork/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
@@ -107,6 +127,8 @@
     <loc>https://embedded-systems-design.github.io/tags/circuit-design/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/circuits/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-common-pin-types/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/components/</loc>
   </url><url>
@@ -221,6 +243,8 @@
     <loc>https://embedded-systems-design.github.io/interrupts-on-psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/level-shifters/</loc>
   </url><url>
