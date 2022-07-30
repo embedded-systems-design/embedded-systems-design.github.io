@@ -18,7 +18,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/04-symbol-creation/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/05-schematic-capture/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/</loc>
   </url><url>
@@ -191,6 +191,8 @@
     <loc>https://embedded-systems-design.github.io/tags/ecad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/electrical/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/esp32/</loc>
   </url><url>

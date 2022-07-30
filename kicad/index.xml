@@ -26,10 +26,10 @@
     
     <item>
       <title>Schematic Capture</title>
-      <link>https://embedded-systems-design.github.io/kicad/05-schematic-capture/</link>
+      <link>https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/05-schematic-capture/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/</guid>
       <description>Introduction Resources LM3178 (On Digikey | datasheet) Symbol Creation Tutorial KiCad.</description>
     </item>
     
@@ -95,6 +95,15 @@
       <guid>https://embedded-systems-design.github.io/kicad/kicad-common-pin-types/</guid>
       <description>Modified from here
 Pin Type Description Input A pin which is exclusively an input.</description>
+    </item>
+    
+    <item>
+      <title>Electrical Rules Check (ERC)</title>
+      <link>https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/</guid>
+      <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
     </item>
     
   </channel>

@@ -72,10 +72,10 @@
     
     <item>
       <title>Schematic Capture</title>
-      <link>https://embedded-systems-design.github.io/kicad/05-schematic-capture/</link>
+      <link>https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/05-schematic-capture/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/</guid>
       <description>Introduction Resources LM3178 (On Digikey | datasheet) Symbol Creation Tutorial KiCad.</description>
     </item>
     
@@ -512,6 +512,15 @@ In Windows, open the Design Entry CIS program.</description>
       
       <guid>https://embedded-systems-design.github.io/drawing-software/</guid>
       <description>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</description>
+    </item>
+    
+    <item>
+      <title>Electrical Rules Check (ERC)</title>
+      <link>https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/</guid>
+      <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
     </item>
     
     <item>
