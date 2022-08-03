@@ -277,11 +277,11 @@
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope Process -Force<span style="color:#111">;</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol -bor 3072<span style="color:#111">;</span> iex <span style="color:#f92672">((</span>New-Object System.Net.WebClient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#d88200">&#39;https://community.chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
 </span></span></code></pre></div></li>
 <li>
-<p>close the powershell window and open a new one;</p>
+<p>close the powershell window and open a new powershell window (also in administrator mode).  Paste in the following line:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install -y putty.install kicad vcredist2013
 </span></span></code></pre></div></li>
 <li>
-<p>optional but really useful tools:</p>
+<p>Paste in the following line for some optional but really useful tools:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install -y adobereader notepadplusplus 7zip grepwin kdiff3
 </span></span></code></pre></div></li>
 </ol>
@@ -295,6 +295,7 @@
 <p>if you did not follow the chocolatey install instructions above you can download it here:</p>
 <p><a href="http://updates.cypress.com/updates/prerequisite/vcredist_x86_2013.exe">http://updates.cypress.com/updates/prerequisite/vcredist_x86_2013.exe</a></p>
 <h2 id="discrete-installers">Discrete Installers</h2>
+<h3 id="psoc-creator">PSoC Creator</h3>
 <ol>
 <li>Create an account with Infineon</li>
 <li>Download and install <a href="https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-creator/">PSoC Creator</a>
@@ -303,15 +304,19 @@
 </ol>
 </li>
 <li>Once the install completes, select run updater (help&ndash;&gt;update manager) from PSoC Creator and update all packages</li>
-<li>Go to add-ons</li>
 </ol>
-<h2 id="optional-or-separate-installers">Optional or Separate Installers</h2>
-<ul>
-<li><a href="https://www.infineon.com/cms/en/design-support/tools/programming-testing/psoc-programming-solutions/">PSoC Programmer</a> is included with PSoC Creator install as a plugin, so no need to reinstall.</li>
-<li>The <a href="https://www.infineon.com/cms/en/design-support/tools/utilities/wireless-connectivity/cysmart-bluetooth-le-test-and-debug-tool/">CySmart Bluetooth Tool</a></li>
-<li>The CySmart Phone App can be installed on your phone to communicate with the bluetooth device directly. (<a href="https://play.google.com/store/apps/details?id=com.cypress.cysmart&amp;hl=en_US&amp;gl=US">Android</a>
-/ <a href="https://apps.apple.com/us/app/cysmart/id928939093">iOS</a>)</li>
-</ul>
+<h3 id="cadence-optional-for-egr304-required-for-egr314">Cadence (optional for EGR304, required for EGR314)</h3>
+<ol>
+<li>Follow the instructions <a href="/installing-cadence/">here</a> to install cadence.</li>
+<li>Follow the instructions <a href="/configuring-cadence/">here</a> to configure cadence.</li>
+</ol>
+<h3 id="psoc-programmer-optional">PSoC Programmer (optional)</h3>
+<p><a href="https://www.infineon.com/cms/en/design-support/tools/programming-testing/psoc-programming-solutions/">PSoC Programmer</a> is included with PSoC Creator install as a plugin, so no need to reinstall.</p>
+<h3 id="cysmart-bluetooth-tool">CySmart Bluetooth Tool</h3>
+<p>The <a href="https://www.infineon.com/cms/en/design-support/tools/utilities/wireless-connectivity/cysmart-bluetooth-le-test-and-debug-tool/">CySmart Bluetooth Tool</a></p>
+<h3 id="cysmart-phone-app">CySmart Phone App</h3>
+<p>The CySmart Phone App can be installed on your phone to communicate with the bluetooth device directly. (<a href="https://play.google.com/store/apps/details?id=com.cypress.cysmart&amp;hl=en_US&amp;gl=US">Android</a>
+/ <a href="https://apps.apple.com/us/app/cysmart/id928939093">iOS</a>)</p>
 
         </div>
 
