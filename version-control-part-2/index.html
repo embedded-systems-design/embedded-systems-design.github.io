@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Version Control Part 2 -- GitHub and GitFlow Tutorial | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/02-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/04-symbol-creation/">Symbol Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/">Schematic Capture</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/">ERC</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/">Padstack Definition</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/">Footprint Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/">Using the KiCad Footprint Wizard</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/06-transferring-kicad-schematics-to-pcb/">KiCad Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/07-pcb-design/">PCB Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/">DFM</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/09-generating-artwork/">Generating Artwork</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      
+
+
+
+
+
+
+<div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+
+
+
+
+<li class="breadcrumb-item"><a href="/tutorials">tutorials</a></li>
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="/tutorials/about-version-control">about-version-control</a></li>
+
+
+
+
+
+
+<li class="breadcrumb-item active"  aria-current="page">version-control-part-2</li>
+
+
+  </ol>
+</nav>
+</div>
+
+
+        <h2>Version Control Part 2 &ndash; GitHub and GitFlow Tutorial</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="setting-up-github">Setting up GitHub</h2>
+<p>Create an account on GitHub by going to <a href="github.com">github.com</a> and signing up. Once complete, click the profile circle on the top right. Most navigation items can be found through the pull down menu. Download a Git CLI, preferably (Git for Windows)[https://gitforwindows.org/], however, GitHub provides a CLI that is recently out of beta <a href="https://cli.github.com/">GitHub CLI</a>.</p>
+<h2 id="git-for-windows">Git for Windows</h2>
+<ol>
+<li>Agree to the license</li>
+<li>Don&rsquo;t change what components are to be installed, click next</li>
+<li>Choose &ldquo;override the default branch name for new repositories&rdquo; and ensure that the initial branch name is &ldquo;main&rdquo;, click next</li>
+<li>Use bundled OpenSSH, click next</li>
+<li>Keep default <code>git pull</code> behavior and click next</li>
+<li>Only use Git Credential Manager Core and click next</li>
+<li>Do not select experimental options and click install</li>
+<li>The program is called <code>Git Bash</code> and can be accessed from File Explorer in any folder by right clicking and selecting &ldquo;Git Bash here&rdquo;</li>
+</ol>
+<p>If there are any additional options not specified here do not change the options just click next.</p>
+<h3 id="create-a-personal-access-token">Create a personal access token</h3>
+<p><a href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token">Follow these steps</a></p>
+<h2 id="setting-up-the-first-repository">Setting up the first repository</h2>
+<p>Click the plus left of the profile menu and choose &ldquo;New Repository.&rdquo; When naming a repository the autochecker will reject repository names already in use by the account, special characters and spaces will be automatically turned into &ldquo;-&rdquo; and generally should be easy to remember and type. Though a description is optional, it is still recommended to add a short one sentence description or pitch about the project.</p>
+<p>Users can have unlimited public and private repositories. Public means visible to all, private means only visible to members of the repository. If there are features of interest that require a GitHub paid plan, consider checking out the <a href="https://education.github.com/pack">GitHub Education Student Package</a>, which is free to all university students to have a Pro plan without needing to pay. As ASU students, additional verification will likely be needed and student validation requests are usually resolved in less than a week.</p>
+<p>Select &ldquo;Add a README.md&rdquo; to instantiate (put a file in) the repo(sitory). Instructions to clone, build, and run projects, along with project descriptions, FAQ or other pertinent information can usually be found in the README.md. It is good practice to always have one at the top level of a repo.</p>
+<p>Do not select &ldquo;Add .gitignore&rdquo; as one is not need for this tutorial part. However, templates for specific languages exists. If another repo is created using a common language such as C or Java, consider including the .gitignore template to ensure object and binary files and folders are not pushed to the repo. Gitignore files remove &ldquo;bloat&rdquo; files from being committed as they are often binary files (unreadable by humans) or custom to the user (e.g. include paths such as C:/UserName/Documents/FolderName/ that are not usable by others).</p>
+<p>Do not select &ldquo;Choose a license&rdquo; but generally open source projects operate on different levels of licenses, which instruct what users of open source work can and can&rsquo;t do with them. MIT Licenses and GNU Public Licenses are the most common licenses, however, both dictate different restrictions to the code. Research what license works best for custom projects that are public (and private) facing.</p>
+<p>Select &ldquo;Create repository&rdquo; to be taken to the new repo with a README.md file in it.</p>
+<p>Cloning a repo can be done multiple ways, this tutorial will only describe through zip and HTTPS.</p>
+<h3 id="cloning-via-https">Cloning via HTTPS</h3>
+<p>Cloning via HTTPS will include a link back to the repo it came from and allow users to access past commit history. This is the preferred way of cloning repos unless SSH is necessary. GitHub used to require password verification, however, now it requires personal access tokens (PAT) which is more secure. To clone a repo, click the green button labelled &ldquo;Code&rdquo; to pull down the clone options. Ensure &ldquo;HTTPS&rdquo; is selected and click the clipboard icon to copy the URL. The URL can also be highlighted and copied.</p>
+<ol>
+<li>Navigate in Windows Explorer to find where to copy the repository to, in this case <code>C:/UserName/Desktop</code>.</li>
+<li>Right click in the folder in Windows Explorer and click &ldquo;Git Bash here&rdquo;</li>
+<li>In the terminal window that has appeared type <code>git clone </code> and paste the copied URL and hit enter. The command should look something like <code>git clone https://github.com/username/repoName.git</code></li>
+</ol>
+<p>When first using the command line, terminal, or Git Bash to interact with GitHub, after the clone command is executed it will ask for a username, and then a PAT. If this has already been done, then it will not ask as the values may already be stored in cache through Git clients. Git for Windows and Git CLI will store these after the first use until it expires. Additional setup varies by the program.</p>
+<p>In the Desktop folder there should now be a folder with the repo name. This is a local instance of the cloned repository.</p>
+<!--
+### Downloading via Zip
+
+Downloading via Zip a direct download of the contents of the repository, without the repository. Though it may be faster, it will not include any record of the repo it came from (no remote set up) nor history of past commits. To reconnect the remote upstream (connect back to the repo it came from) users must do the following
+
+1. Unzip the file
+2. Navigate into the unzipped folder
+3. `git init` to initialize a new git repository
+4. `git remote add origin https://github.com/username/repoName.git` replacing username with the username of the repo owner, and repoName with the name of the repo
+-->
+<h2 id="starting-with-an-empty-repo">Starting with an empty repo</h2>
+<p>When creating repo&rsquo;s without a README.md, it is assumed there is an existing repo, or a repo will be created through the command line, terminal, or Git Bash. Follow the appropriate instructions depending on the context. Figure X shows a repo called <code>tbd</code> that was not initialized with a README.md and how to start a new repo from a local instance, link an existing repo, or link from another type of version control.</p>
+<h3 id="deleting-a-repo">Deleting a repo</h3>
+<p>To delete a repo go to the repo, then settings, then scroll to the bottom of the options page. Deleting a repository requires the title and the account&rsquo;s password to be entered to confirm the decision. Deleted repositories cannot be retrieved after deletion.</p>
+<h2 id="pushing-the-first-edits">Pushing the first edits</h2>
+<p>From the local instance on Desktop, create a new text file and name it &ldquo;FirstFile.txt&rdquo; and put &ldquo;hello world&rdquo; in the file. Normal git workflow (gitflow) involves making changes, staging the changes by adding the files, writing a descriptive message about the changes, and then pushing the bundled changes and message in a commit. Make sure a Git Bash window is open in this repository folder.</p>
+<ol>
+<li>To see what files have been changed type <code>git status</code> into the Git Bash window.</li>
+<li>FirstFile.txt is not tracked yet due to it being a new file. To track the file <code>git add FirstFile.txt</code></li>
+<li>Entering <code>git status</code> will now show the file is tracked and staged (or ready) to be committed.</li>
+<li>Open FirstFile.txt and add a new line and &ldquo;another hello world&rdquo; to it. Save and close the file. For every change that occurs after a file has been added, the file needs to be re-added or a commit will not include those changes. Commits do not need to include all changes. Do not add the file yet.</li>
+<li>To complete the commit of the creation of a new file and &ldquo;hello world&rdquo; (not &ldquo;another hello world&rdquo;) enter <code>git commit -m &quot;added new file and hello world message&quot;</code>. Commit messages should be short but descriptive such that another user or a future user can understand what edits occurred.</li>
+<li>To send the commit (the changes, the message) to GitHub where the repository is stored, enter <code>git push</code>. Commits don&rsquo;t have to be sent and can be sent multiple at a time. However, it is not advised to not push commits once made, especially if there are other users on the repo.</li>
+<li><code>git status</code> again to see that there are still changes that have not been committed. Repeat the process to commit the new changes. Run <code>git status</code> after to ensure that the working branch is clean or up to date meaning there are no new changes to commit.</li>
+</ol>
+<h2 id="pulling-down-changes">Pulling down changes</h2>
+<p>GitHub has a decent UI, but it is best used for very quick fixes. Go back to the GitHub page for the repository created. The new file should now be visible. If not, refresh the page. Click &ldquo;Add file&rdquo; then &ldquo;Create new file.&rdquo;</p>
+<p>Name the new file <code>BrowserFile.txt</code> because this file is being made through GitHub&rsquo;s browser interface. Type &ldquo;hello browser!&rdquo; into the &ldquo;Edit new file&rdquo; window. Scroll to the bottom of the page to see &ldquo;Commit new file&rdquo; and give a short message in the smaller text field or leave it blank. Click &ldquo;Commit new file.&rdquo; If the field was left blank, &ldquo;Create BrowserFile.txt&rdquo; will be the commit message.</p>
+<p>Go back to Git Bash in the repository folder and type <code>git pull</code>. This will &ldquo;pull&rdquo; the new file down from the repo and the folder will now have the new file BrowserFile.txt This is how changes can be updated in local instances. This only works if recent changes are pushed to the repository on GitHub. Push and pull changes often to reduce merge conflicts, especially when working with multiple users.</p>
+<h2 id="handling-merge-conflicts">Handling Merge Conflicts</h2>
+<p>Merge conflicts happen often when there is more than one editor in a repository editing the same files in the same locations. It can also happen if editing files through the web (e.g. on GitHub&rsquo;s UI) and through a local desktop instance at the same locations. Normally, Git (and therefore GitHub etc.) automatically manage conflicts, however, sometimes it needs human input.</p>
+<p>An example case might be merging a development branch into main. Merges can be done through terminal commands or through pull requests through GitHub&rsquo;s UI. The following example assumes a user is using the command line (or terminal). Proper gitflow is that merge conflicts are handled on the feature branch (branch to be merged into main) and then merged into main after resolving the conflict. The following example has found a merge conflict trying to merge the branch mundo into the main branch. The merge is then aborted, and a new merge is started from main into the mundo branch. Once the conflict is resolved, mundo is finally merged into main.</p>
+<ol>
+<li>Attempting to merge mundo into main. This assumes that the user has checked out the main branch.</li>
+</ol>
+<ul>
+<li>(from main) <code>git merge mundo</code> (merge mundo into main)</li>
+</ul>
+<ol start="2">
+<li>A merge conflict has been found! To cancel a merge run <code>git merge --abort</code>. Merges can be aborted in the middle of merge conflict resolutions (rebasing).</li>
+<li>First, checkout the mundo branch <code>git checkout mundo</code> then run <code>git merge main</code>. The following is what a merge conflict looks like in a file based on the most recent merge command:</li>
+</ol>
+<pre tabindex="0"><code>def hello
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD (aka current change aka changes from mundo)
+  puts &#39;hello mundo&#39;
+======= (aka incoming change aka changes from main)
+  puts &#39;hola world&#39;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; main
+</code></pre><p>In the above example, the changes in the main branch (&lsquo;hola world&rsquo;) conflict with the changes from the branch mundo (&lsquo;hello mundo&rsquo;). The changes in mundo are considered the &ldquo;current change&rdquo; or HEAD (think pointers), while the changes in main are considered the &ldquo;incoming change&rdquo; and both are separated by a series of &lsquo;=&rsquo; symbols. HEAD will always be preceded by a series of &lsquo;&lt;&rsquo; while the conflict itself will be closed by a series of &lsquo;&gt;&rsquo; and the branch name (main). Merge conflicts will always appear in the order of current change to incoming change. Sometimes, rather than removing one of the other, the code may need to be a combination of both sources, it is not always the most intuitive, and it is often recommended to use editors that can help manage conflicts, like Visual Studio Code (VSC).</p>
+<p>For now, we want to keep the changes in mundo, so we need to remove all indicators of a merge conflict, namely, the lines including &lsquo;&lt;&rsquo; and &lsquo;&gt;&rsquo;.</p>
+<pre tabindex="0"><code>def hello
+  puts &#39;hello mundo&#39;
+</code></pre><p>Once all merge conflicts have been resolved (the lines indicated conflict exists have been removed) follow the process of committing changes from the start (add, add a message, push) and the conflict is complete. Now checkout the main branch, <code>git merge mundo</code> into main, and done!</p>
+<h2 id="resources">Resources</h2>
+<p><a href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories">https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories</a></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/about-version-control/version-control-part-2.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

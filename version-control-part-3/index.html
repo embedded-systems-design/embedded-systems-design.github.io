@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Version Control Part 3 -- Setting up for PSoC | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/02-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/04-symbol-creation/">Symbol Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/">Schematic Capture</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/">ERC</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/">Padstack Definition</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/">Footprint Creation</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/">Using the KiCad Footprint Wizard</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/06-transferring-kicad-schematics-to-pcb/">KiCad Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/07-pcb-design/">PCB Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/">DFM</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/09-generating-artwork/">Generating Artwork</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      
+
+
+
+
+
+
+<div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+
+
+
+
+<li class="breadcrumb-item"><a href="/tutorials">tutorials</a></li>
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="/tutorials/about-version-control">about-version-control</a></li>
+
+
+
+
+
+
+<li class="breadcrumb-item active"  aria-current="page">version-control-part-3</li>
+
+
+  </ol>
+</nav>
+</div>
+
+
+        <h2>Version Control Part 3 &ndash; Setting up for PSoC</h2>
+        
+        <div class="mb-3 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>To use GitHub with PSoc code requires a very specific set up, this is mostly due to how PSoC creates and manages files.</p>
+<p>PSoC Creator has a default folder in Documents where project code is stored. Each workspace can host a number of projects. This tutorial commits the workspace, and therefore automatically includes all projects. Some PSoC users organizer their workspaces by keeping one workspace per microcontroller type.</p>
+<p>First, create a new workspace in PSoC Creator by selecting &ldquo;New project&rdquo; under the &ldquo;File&rdquo; tab, and selecting &ldquo;workspace&rdquo; when prompted with the radio buttons that appear. Use the default location (C:/Users/UserName/Documents/PSoC Creator/) and specify a name for the workspace</p>
+<p>Next, create a new project by using one of the existing template projects.</p>
+<p>PSoC Creator for now.</p>
+<h2 id="setting-up-the-repo-and-including-a-gitignore">Setting up the Repo and including a .gitignore</h2>
+<p>Open the folder in which the workspace was saved (<code>C:\\Users\\UserName\\Documents\\PSoC Creator\\WorkspaceName</code>) in Windows Explorer.</p>
+<p>Right click within the folder and select &ldquo;Git Bash here&rdquo; to open a git terminal.</p>
+<p>To initialize the workspace as a git repo, enter <code>git init</code>. Next, download the <a href="https://github.com/HalcyonAura/PSoCTest/blob/TestBranch1/.gitignore">.gitignore</a> and put the .gitignore file in the same folder.</p>
+<p>On the GitHub UI, create a new repository, but do not initialize it with a README.md, .gitignore, license, or any other option. Just a name, such as PSoC Workspace. Click create repository.</p>
+<p>Follow the instructions that appear to push the local repository to the newly created repository on GitHub. Make sure to include the .gitignore. Instead of adding all the files manually, type <code>git add .</code>, this means to add all files in the directory. It is better practice to use purposeful selection of files (e.g. <code>git add FolderName/*</code> which adds all files in a folder, or <code>git add FileName.fileExtension</code> which adds a single file) to avoid accidentally adding files that are not caught by the .gitignore, or committing secrets (passwords, API tokens, etc.) that should never be publically available.</p>
+<h2 id="pulling-from-the-repo">Pulling from the repo</h2>
+<p>Other users can clone and pull changes, but must rebuild the project in order for it to work on their systems. The .gitignore omits all build files and pertinent workspace information that is custom to each user.</p>
+<h2 id="editing-the-gitignore">Editing the .gitignore</h2>
+<p>There is a very likely chance as the semester proceeds that the .gitignore will need to be modified for files in certain folders that are related to compilation and therefore (currently) not included. The following describes relevant symbols in .gitignores. The .gitignore file downloaded has notes on how to edit the file to include files after being ignored, or to identify specific files to be included.</p>
+<h3 id="symbols">Symbols</h3>
+<ul>
+<li>/# comments out the line</li>
+<li>/* is a wildcard. If placed in front of a folder or name, any number of alphanumerics can precede it. If placed at the end of a folder or name, any number of alphanumerics can follow after it</li>
+<li>/ folder structures end with a forward slash even if on a Windows System</li>
+<li>! means to include a file or folder after it has been excluded</li>
+</ul>
+<h3 id="further-explanation-of-the-gitignore-edits">Further Explanation of the .gitignore edits</h3>
+<p>If edits occur in the Generated_Source/ folder, to include specific files the .gitignore must be edited following the <code>*Generated_Source/</code> line with the following: <code>!*Generated_Source/FolderName/FileToInclude.*</code> This may not be the only structure. The example listed refers to a custom USB_audio, thus, the added line looks like <code>!*Generated_Source/PSoC4/USB_audio.*</code>. This line indicates that all files in Generated Souree in PSoC4 that begin with USB_audio must not be ignored.</p>
+<p>If other optional items such as datasheets are necessary to be commented then remove the preceding <code>#</code> from the line to uncomment it.</p>
+<p>Commit the changes to ensure they come into effect. Files that are present before a .gitignore is implemented (and they are marked to be ignored) will still be present in the repository and tracked. It is good practice to implement a .gitignore before development begins. To resolve this enter <code>git rm -r --cached &lt;To Be Ignored&gt;</code> where To Be Ignored refers to a file or folder structure (<code>Folder/</code> to ignore a directory entirely <code>Folder/*</code> to ignore the folder&rsquo;s contents) that needs to be removed. When you commit, the discrepancy should be resolved.</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/about-version-control/version-control-part-3.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

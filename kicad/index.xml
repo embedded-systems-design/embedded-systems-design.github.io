@@ -61,11 +61,20 @@
     </item>
     
     <item>
-      <title>Transferring Schematics to PCB</title>
-      <link>https://embedded-systems-design.github.io/kicad/06-transferring-schematics-to-pcb/</link>
+      <title>Using the KiCad Footprint Wizard</title>
+      <link>https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/06-transferring-schematics-to-pcb/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/</guid>
+      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
+    </item>
+    
+    <item>
+      <title>Transferring Schematics to PCB</title>
+      <link>https://embedded-systems-design.github.io/kicad/06-transferring-kicad-schematics-to-pcb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/06-transferring-kicad-schematics-to-pcb/</guid>
       <description>Coming Soon&amp;hellip;</description>
     </item>
     
@@ -79,15 +88,6 @@
     </item>
     
     <item>
-      <title>DFM -- Design for Manufacturability</title>
-      <link>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>Generating Artwork</title>
       <link>https://embedded-systems-design.github.io/kicad/09-generating-artwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -97,12 +97,12 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/</link>
+      <title>DFM -- Design for Manufacturability</title>
+      <link>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/</guid>
-      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
+      <guid>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</guid>
+      <description>Coming Soon&amp;hellip;</description>
     </item>
     
     <item>

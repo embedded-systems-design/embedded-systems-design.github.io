@@ -26,13 +26,15 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/06-transferring-schematics-to-pcb/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/06-transferring-kicad-schematics-to-pcb/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/07-pcb-design/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/09-generating-artwork/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
@@ -46,13 +48,9 @@
     <loc>https://embedded-systems-design.github.io/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/about-version-control/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/ac-circuits/</loc>
   </url><url>
@@ -101,6 +99,8 @@
     <loc>https://embedded-systems-design.github.io/cadence/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence-schematic-tutorials/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</loc>
   </url><url>
@@ -171,8 +171,6 @@
     <loc>https://embedded-systems-design.github.io/tags/custom-part/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/cypress/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/cypress/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/dc-motors-101/</loc>
   </url><url>
@@ -330,6 +328,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/pic/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic18f47q10/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</loc>
@@ -349,6 +349,8 @@
     <loc>https://embedded-systems-design.github.io/tags/programming/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/project-management/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</loc>
   </url><url>
@@ -381,8 +383,6 @@
     <loc>https://embedded-systems-design.github.io/schematic-checklist/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/sensors/</loc>
   </url><url>
@@ -478,6 +478,14 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/version-control/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/version-control-part-1/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/version-control-part-2/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/version-control-part-3/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/about-version-control/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/video/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</loc>
@@ -491,8 +499,6 @@
     <loc>https://embedded-systems-design.github.io/what-is-psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/wireless/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/wireless/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/working-with-libraries/</loc>
   </url><url>
