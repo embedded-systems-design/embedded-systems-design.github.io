@@ -388,6 +388,15 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
+      <title>Connecting to the PSoC</title>
+      <link>https://embedded-systems-design.github.io/connecting-to-the-psoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/connecting-to-the-psoc/</guid>
+      <description>Q: Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)</description>
+    </item>
+    
+    <item>
       <title>Connectors 101</title>
       <link>https://embedded-systems-design.github.io/connectors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -515,12 +524,30 @@ In Windows, open the Design Entry CIS program.</description>
     </item>
     
     <item>
+      <title>Debugging Code in PSoC Creator</title>
+      <link>https://embedded-systems-design.github.io/debugging-psoc-creator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/debugging-psoc-creator/</guid>
+      <description>Introduction Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working.</description>
+    </item>
+    
+    <item>
       <title>Drawing Software</title>
       <link>https://embedded-systems-design.github.io/drawing-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/drawing-software/</guid>
       <description>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</description>
+    </item>
+    
+    <item>
+      <title>Enabling Floating Point Support in PSoC Creator</title>
+      <link>https://embedded-systems-design.github.io/enable-floating-point-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/enable-floating-point-support/</guid>
+      <description>To enable floating point support in the PSoC compiler, follow these steps:</description>
     </item>
     
     <item>
@@ -869,12 +896,31 @@ Python: 14.2% Matlab: 0.</description>
     </item>
     
     <item>
+      <title>Printing Non-String Variables to the PSoC UART</title>
+      <link>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</guid>
+      <description>Q: How do I print an integer (or other non-string variable) to the PSoC UART?</description>
+    </item>
+    
+    <item>
       <title>PSoC 4 Hardware Development Kits</title>
       <link>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</guid>
       <description>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</description>
+    </item>
+    
+    <item>
+      <title>PSoC Creator Project Structure</title>
+      <link>https://embedded-systems-design.github.io/psoc-creator-project-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/psoc-creator-project-structure/</guid>
+      <description>I can&#39;t find my workspace/project in PSoC Creator
+C files, top design files, etc.</description>
     </item>
     
     <item>

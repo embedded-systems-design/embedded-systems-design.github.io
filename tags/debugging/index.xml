@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Connecting to the PSoC</title>
+      <link>https://embedded-systems-design.github.io/connecting-to-the-psoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/connecting-to-the-psoc/</guid>
+      <description>Q: Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)</description>
+    </item>
+    
+    <item>
       <title>The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions</title>
       <link>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

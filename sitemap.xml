@@ -134,11 +134,15 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/kicad-common-pin-types/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/communication/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/components/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/configuring-cadence/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/connecting-to-the-psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/connectors/</loc>
   </url><url>
@@ -176,6 +180,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/debugging/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/debugging-psoc-creator/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/design/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/</loc>
@@ -193,6 +199,8 @@
     <loc>https://embedded-systems-design.github.io/tags/ecad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/electrical/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/enable-floating-point-support/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/esp32/</loc>
   </url><url>
@@ -342,6 +350,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/problem-definition/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/process/</loc>
@@ -350,9 +360,15 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/project-management/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/psoc/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/psoc-creator-project-structure/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/psoc-creator/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pulldown/</loc>
   </url><url>

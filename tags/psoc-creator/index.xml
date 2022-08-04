@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>psoc-creator on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/psoc-creator/</link>
+    <description>Recent content in psoc-creator on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/psoc-creator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enabling Floating Point Support in PSoC Creator</title>
+      <link>https://embedded-systems-design.github.io/enable-floating-point-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/enable-floating-point-support/</guid>
+      <description>To enable floating point support in the PSoC compiler, follow these steps:</description>
+    </item>
+    
+    <item>
+      <title>PSoC Creator Project Structure</title>
+      <link>https://embedded-systems-design.github.io/psoc-creator-project-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/psoc-creator-project-structure/</guid>
+      <description>I can&#39;t find my workspace/project in PSoC Creator
+C files, top design files, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

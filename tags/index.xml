@@ -142,6 +142,15 @@
     </item>
     
     <item>
+      <title>communication</title>
+      <link>https://embedded-systems-design.github.io/tags/communication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>components</title>
       <link>https://embedded-systems-design.github.io/tags/components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -534,6 +543,24 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/tags/project-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psoc</title>
+      <link>https://embedded-systems-design.github.io/tags/psoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/psoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psoc-creator</title>
+      <link>https://embedded-systems-design.github.io/tags/psoc-creator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tags/psoc-creator/</guid>
       <description></description>
     </item>
     
