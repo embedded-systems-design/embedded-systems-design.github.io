@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/psoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bluetooth Connection Issues</title>
+      <link>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</guid>
+      <description>Q: I have tried to connect the Cypress CySmart software to the USB dongle but it does not work.</description>
+    </item>
+    
+    <item>
       <title>Connecting to the PSoC</title>
       <link>https://embedded-systems-design.github.io/connecting-to-the-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
