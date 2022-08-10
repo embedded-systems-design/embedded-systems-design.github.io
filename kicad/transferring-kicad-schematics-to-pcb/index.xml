@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transferring Schematics to PCB on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/</link>
+    <description>Recent content in Transferring Schematics to PCB on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Electrical Rules Check (ERC)</title>
+      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.1-electrical-rules-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.1-electrical-rules-check/</guid>
+      <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
+    </item>
+    
+    <item>
+      <title>Using the KiCad Footprint Wizard</title>
+      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.6-footprint-wizard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.6-footprint-wizard/</guid>
+      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
+    </item>
+    
+    <item>
+      <title>Assigning Footprints</title>
+      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</guid>
+      <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
+    </item>
+    
+  </channel>
+</rss>

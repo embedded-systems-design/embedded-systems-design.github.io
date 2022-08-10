@@ -10,31 +10,29 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/installing-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/02-installation-and-setup/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/esp32-installation-and-setup/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/04-symbol-creation/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/04-symbol-creation/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/05.0-schematic-capture/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-schematic-capture/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/05.1-electrical-rules-check/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.1-electrical-rules-check/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/05.5-padstack-definition/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.6-footprint-wizard/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/05.6-footprint-creation/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/05.6-footprint-wizard/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/07-pcb-design/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/06-transferring-kicad-schematics-to-pcb/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/09-generating-artwork/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/07-pcb-design/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/08-design-for-manufacturability/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/09-generating-artwork/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/08-design-for-manufacturability/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
@@ -73,6 +71,8 @@
     <loc>https://embedded-systems-design.github.io/tags/argon/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/assembly/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/asu/</loc>
   </url><url>
@@ -134,7 +134,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/circuits/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad/kicad-common-pin-types/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/communication/</loc>
   </url><url>
@@ -399,6 +399,8 @@
     <loc>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/schematic-checklist/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics/</loc>
   </url><url>
