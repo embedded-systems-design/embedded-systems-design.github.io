@@ -35,6 +35,24 @@
     </item>
     
     <item>
+      <title>Using the KiCad Footprint Wizard</title>
+      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-wizard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-wizard/</guid>
+      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
+    </item>
+    
+    <item>
+      <title>Assigning Footprints</title>
+      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</guid>
+      <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
+    </item>
+    
+    <item>
       <title>KiCad Installation and Initial Setup</title>
       <link>https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -53,21 +71,30 @@
     </item>
     
     <item>
+      <title>Symbol Creation</title>
+      <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-symbol-creation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-symbol-creation/</guid>
+      <description>Introduction Resources LM3178 (On Digikey | datasheet) KiCad.org KiCad Documentation Common Pin Types and their Meanings Steps Open up KiCad (start &amp;ndash;&amp;gt; KiCad) and select the Symbol Editor</description>
+    </item>
+    
+    <item>
+      <title>Electrical Rules Check (ERC)</title>
+      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/</guid>
+      <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
+    </item>
+    
+    <item>
       <title>ESP32 Installation and Setup</title>
       <link>https://embedded-systems-design.github.io/esp32-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/esp32-installation-and-setup/</guid>
       <description>Install Miniconda and packages You need to use Python on your PC to program the ESP32.</description>
-    </item>
-    
-    <item>
-      <title>Symbol Creation</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/04-symbol-creation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/04-symbol-creation/</guid>
-      <description>Introduction Resources LM3178 (On Digikey | datasheet) KiCad.org KiCad Documentation Common Pin Types and their Meanings Steps Open up KiCad (start &amp;ndash;&amp;gt; KiCad) and select the Symbol Editor</description>
     </item>
     
     <item>
@@ -80,38 +107,30 @@
     </item>
     
     <item>
-      <title>Electrical Rules Check (ERC)</title>
-      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.1-electrical-rules-check/</link>
+      <title>Common Pin Types and their Meanings</title>
+      <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.1-electrical-rules-check/</guid>
-      <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
-    </item>
-    
-    <item>
-      <title>Using the KiCad Footprint Wizard</title>
-      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.6-footprint-wizard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/05.6-footprint-wizard/</guid>
-      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
-    </item>
-    
-    <item>
-      <title>Generating Artwork</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/09-generating-artwork/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/09-generating-artwork/</guid>
-      <description>Coming Soon&amp;hellip;</description>
+      <guid>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</guid>
+      <description>Modified from here
+Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
       <title>DFM -- Design for Manufacturability</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/08-design-for-manufacturability/</link>
+      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/kicad-design-for-manufacturability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/08-design-for-manufacturability/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/kicad-design-for-manufacturability/</guid>
+      <description>Coming Soon&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Generating Artwork</title>
+      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/generating-kicad-artwork/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/generating-kicad-artwork/</guid>
       <description>Coming Soon&amp;hellip;</description>
     </item>
     
@@ -195,15 +214,6 @@
       <guid>https://embedded-systems-design.github.io/altering-trace-widths/</guid>
       <description>Altering Trace Widths
 Figure 1 Sometimes you need to globally change trace widths in your board after designing it.</description>
-    </item>
-    
-    <item>
-      <title>Assigning Footprints</title>
-      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</guid>
-      <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
     </item>
     
     <item>
@@ -357,16 +367,6 @@ Figure 1 Sometimes you need to globally change trace widths in your board after 
       
       <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
       <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
-    </item>
-    
-    <item>
-      <title>Common Pin Types and their Meanings</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</guid>
-      <description>Modified from here
-Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
