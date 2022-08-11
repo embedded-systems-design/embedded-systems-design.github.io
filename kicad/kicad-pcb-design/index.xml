@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PCB Design on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/</link>
+    <description>Recent content in PCB Design on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generating Artwork</title>
+      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/09-generating-artwork/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/09-generating-artwork/</guid>
+      <description>Coming Soon&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>DFM -- Design for Manufacturability</title>
+      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/08-design-for-manufacturability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/08-design-for-manufacturability/</guid>
+      <description>Coming Soon&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

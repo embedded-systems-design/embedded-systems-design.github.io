@@ -98,15 +98,6 @@
     </item>
     
     <item>
-      <title>PCB Design</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/07-pcb-design/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/07-pcb-design/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>Generating Artwork</title>
       <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/09-generating-artwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -131,6 +122,15 @@
       
       <guid>https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/</guid>
       <description>Generating Schematic PDFs Add Title Block Information Open your project and then your schematic.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://embedded-systems-design.github.io/printed-circuit-board-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/printed-circuit-board-process/</guid>
+      <description>Printed Circuit Board Submission Process **NOTICE: Starting 2/14/2018 the Peralta Engineering Studios can only produce boards that are tied to a class.</description>
     </item>
     
     <item>
