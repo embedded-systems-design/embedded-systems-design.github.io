@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> PSoC Hello World Lab | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/psoc-hello-world/">PSoC Hello World Lab</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>PSoC Hello World Lab</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or  CY8CKIT-042-BLE kit for the first time</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>Open PSoC Creator</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_05_40.png"><img src="virtualbox_windows-10.3_12_08_2022_11_05_40.png" alt="Open PSoC Creator"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Open PSoC Creator</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select &ldquo;Create a new Project&rdquo; in the Start Page</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_09_05.png"><img src="virtualbox_windows-10.3_12_08_2022_11_09_05.png" alt="Create New Project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Create New Project</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select Project Type</p>
+<ol>
+<li>Select &ldquo;Target Device&rdquo;, select PSOC 4, and then scroll down to &ldquo;launch device selector&hellip;&rdquo;</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_10_30.png"><img src="virtualbox_windows-10.3_12_08_2022_11_10_30.png" alt="Select Device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select Device</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the device selection window, scroll down and look for the device you are using.  You will have to look at the chip on your board.  For the Pioneer Kit, this is the black chip in the center of the board.  For the BLE version, this is the diagonal black chip on the daughter board.  The chip is noted in the white silkscreen layer directly below it.  For the most recent versions purchased in the class, these correspond to:</p>
+<ul>
+<li>PSoC 4 Pioneer Kit: CY8C4245AXI-483</li>
+<li>PSoC 4 BLE Kit: CY8C4248LQI-BL583</li>
+<li>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="img_20220812_122154922.jpg"><img src="img_20220812_122154922.jpg" alt="Pioneer Chip Location"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Pioneer Chip Location</div></td></tr>
+</tbody>
+</table>
+
+</li>
+</ul>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="img_20220812_122145836.jpg"><img src="img_20220812_122145836.jpg" alt="Pioneer BLE Chip Location"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Pioneer BLE Chip Location</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_12_12.png"><img src="virtualbox_windows-10.3_12_08_2022_11_12_12.png" alt="Device Selector"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Device Selector</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_13_13.png"><img src="virtualbox_windows-10.3_12_08_2022_11_13_13.png" alt="Device Selector"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Device Selector</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Once you have selected the right part, click &ldquo;next&rdquo;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_13_20.png"><img src="virtualbox_windows-10.3_12_08_2022_11_13_20.png" alt="Select Next"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select Next</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select &ldquo;Empty Schematic&rdquo;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_17_03.png"><img src="virtualbox_windows-10.3_12_08_2022_11_17_03.png" alt="Empty Schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Empty Schematic</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the next window, define a new Workspace (something like &ldquo;EGR304-ICC2&rdquo;).  Name your project (something like &ldquo;flash-led&rdquo;).  Wait for the workspace to open and populate with your &ldquo;top design&rdquo;.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_17_57.png"><img src="virtualbox_windows-10.3_12_08_2022_11_17_57.png" alt="Name your workspace and project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Name your workspace and project</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the &ldquo;Component Catalog&rdquo; window on the right of the screen, open up &ldquo;Ports and Pins&rdquo; and select &ldquo;Digital Output Pin&rdquo;.  Drag the item into the &ldquo;schematic view&rdquo; in the middle of your screen</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_18_58.png"><img src="virtualbox_windows-10.3_12_08_2022_11_18_58.png" alt="Select &amp;ldquo;Digital Output&amp;rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select &amp;ldquo;Digital Output&amp;rdquo;</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_19_08.png"><img src="virtualbox_windows-10.3_12_08_2022_11_19_08.png" alt="Drag to schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Drag to schematic</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Double-click the pin component to configure it. A dialog will pop open. Rename the pin to “Pin_Red”. Deselect “HW Connection” checkbox.  (This allows this setting to be controlled by software rather than be &ldquo;hard coded&rdquo;).  Accept changes by clicking &ldquo;ok&rdquo;.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_21_47.png"><img src="virtualbox_windows-10.3_12_08_2022_11_21_47.png" alt="Configure digital output"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Configure digital output</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Scroll to the “Workspace Explorer” on the left side of PSoC Creator.  This window shows resources available to the project.   Click on the &ldquo;pins&rdquo; icon to further configure the input/output (i/o) pins</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_23_05.png"><img src="virtualbox_windows-10.3_12_08_2022_11_23_05.png" alt="Configure Pins"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Configure Pins</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Map the &ldquo;Pin_Red&rdquo; digital output you just configured to a physical pin of the device.  In the right hand side of the window, a tab named &ldquo;pins&rdquo; can be seen. Click the port column of the &ldquo;Pin_Red&rdquo; row to set the physical pin you plan to use.</p>
+<ul>
+<li>In the Pioneer Kit, this pin is P1[6].</li>
+<li>In the Pioneer BLE Kit, this is P2[6].</li>
+</ul>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="img_20220812_112509836.jpg"><img src="img_20220812_112509836.jpg" alt="Pioneer Pin"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Pioneer Pin</div></td></tr>
+</tbody>
+</table>
+
+
+
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="img_20220812_130045737.jpg"><img src="img_20220812_130045737.jpg" alt="BLE Pin"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">BLE Pin</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_26_28.png"><img src="virtualbox_windows-10.3_12_08_2022_11_26_28.png" alt="Map Pins"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Map Pins</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>From the workspace explorer window, click on &ldquo;main.c&rdquo; to open it</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_26_49.png"><img src="virtualbox_windows-10.3_12_08_2022_11_26_49.png" alt="Click on main.c"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Click on main.c</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Once it opens, add the code shown below inside the <code>for(;;)</code> brackets to toggle the LED pin once every half second. The below code reads the pin’s current value and writes its inverse back to the pin, followed by a 500ms delay.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">Pin_Red_Write</span><span style="color:#111">(</span><span style="color:#f92672">~</span><span style="color:#111">Pin_Red_Read</span><span style="color:#111">());</span> <span style="color:#75715e">//toggle pin state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">CyDelay</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span> <span style="color:#75715e">//system delay of 500ms
+</span></span></span></code></pre></div></li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_27_25.png"><img src="virtualbox_windows-10.3_12_08_2022_11_27_25.png" alt="Add Code"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Add Code</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol>
+<li>
+<p>Press the “Program” button on the PSoC Creator toolbar to build the project and program your kit.  In the Debug type window, you may need to select &ldquo;port acquire&rdquo; and then select the PSoC and select ok</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_58_27.png"><img src="virtualbox_windows-10.3_12_08_2022_11_58_27.png" alt="It should look like this"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">It should look like this</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_58_32.png"><img src="virtualbox_windows-10.3_12_08_2022_11_58_32.png" alt="Port Acquire"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Port Acquire</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_58_53.png"><img src="virtualbox_windows-10.3_12_08_2022_11_58_53.png" alt="Port Acquire 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Port Acquire 2</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>If this is the first time programming your kit, you may get a message asking you during debug target selection to upgrade firmware.  If this happens:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_55_07.png"><img src="virtualbox_windows-10.3_12_08_2022_11_55_07.png" alt="Upgrade Firmware Message"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Upgrade Firmware Message</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>a. Close the &ldquo;debug selection&rdquo; popup and, from the start menu, open &ldquo;PSoC Programmer&rdquo; (Start &ndash;&gt; &ldquo;PSoC Programmer&rdquo;).  You should get a similar message.</p>
+<pre><code>![PSoC Programmer](virtualbox_windows-10.3_12_08_2022_11_55_18.png)
+
+![Programmer Firmware Message](virtualbox_windows-10.3_12_08_2022_11_54_40.png)
+</code></pre>
+<p>a. click ok and switch to the firmware tab.  Select &ldquo;update firmware&rdquo; and follow the instructions</p>
+<pre><code>![Upgrade Firmware](virtualbox_windows-10.3_12_08_2022_11_57_43.png)
+</code></pre>
+<p>a. once complete, close PSoC Programmer</p>
+<pre><code>![Finished Flashing](virtualbox_windows-10.3_12_08_2022_11_58_11.png)
+</code></pre>
+<p>a. Press the “Program” button on the PSoC Creator toolbar to build the project and program your kit.  In the Debug type window, you may need to select &ldquo;port acquire&rdquo; and then select the PSoC and select ok</p>
+<pre><code>![It should look like this](virtualbox_windows-10.3_12_08_2022_11_58_27.png)
+
+![Port Acquire](virtualbox_windows-10.3_12_08_2022_11_58_32.png)
+
+![Port Acquire 2](virtualbox_windows-10.3_12_08_2022_11_58_53.png)
+</code></pre>
+</li>
+<li>
+<p>The progam will then compile.  The results of the build and program operation will appear in the “Output” area at the bottom of the PSoC Creator IDE.  Once programmed, the red LED on the kit should start blinking at a 1 Hz rate, at 50% duty cycle.</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="virtualbox_windows-10.3_12_08_2022_11_59_08.png"><img src="virtualbox_windows-10.3_12_08_2022_11_59_08.png" alt="Compile"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Compile</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<!--
+![Device Selector](virtualbox_windows-10.3_12_08_2022_11_50_51.png)
+
+![Figure](virtualbox_windows-10.3_12_08_2022_11_50_59.png)
+
+![Figure](virtualbox_windows-10.3_12_08_2022_11_53_44.png)
+
+![Figure](virtualbox_windows-10.3_12_08_2022_11_53_49.png)
+-->
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/psoc-hello-world/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
