@@ -25,15 +25,6 @@
     </item>
     
     <item>
-      <title>PSoC Hello World Lab</title>
-      <link>https://embedded-systems-design.github.io/psoc-hello-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/psoc-hello-world/</guid>
-      <description>Introduction The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or CY8CKIT-042-BLE kit for the first time</description>
-    </item>
-    
-    <item>
       <title>Python Basics</title>
       <link>https://embedded-systems-design.github.io/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
