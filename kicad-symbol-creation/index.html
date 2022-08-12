@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Electrical Rules Check (ERC) | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Symbol Creation | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -113,7 +113,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -121,7 +121,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -231,10 +231,10 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Kicad Schematics to PCB</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">KiCad Schematic Design Pages</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/">Electrical Rules Check (ERC)</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad-symbol-creation/">Symbol Creation</a></li>
 
 </ol>
 </nav>
@@ -245,7 +245,7 @@
 
 
 
-        <h2>Electrical Rules Check (ERC)</h2>
+        <h2>Symbol Creation</h2>
         
         <div class="mb-1 post-meta">
           <span>By Dan Aukes</span>
@@ -259,239 +259,193 @@
         
         <div class="content mb-5">
           <h2 id="introduction">Introduction</h2>
-<p>In the last tutorial you created a schematic.  But is it any good?  The electrical rules check, or ERC, is a useful way to debug your circuit.  This example tutorial takes you through the process of finding and eliminating circuit design errors.</p>
 <h2 id="resources">Resources</h2>
+<ul>
+<li>LM3178 (<a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LM317BT/5308099">On Digikey</a> | <a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf">datasheet</a>)</li>
+<li><a href="https://www.kicad.org/">KiCad.org</a></li>
+<li><a href="https://docs.kicad.org/">KiCad Documentation</a></li>
+<li><a href="/kicad-common-pin-types">Common Pin Types and their Meanings</a></li>
+</ul>
 <h2 id="steps">Steps</h2>
 <ol>
 <li>
-<p>Open up the adjustable voltage regulator circuit from the previous tutorial.</p>
+<p>Open up KiCad (start &ndash;&gt; KiCad) and select the Symbol Editor</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_32_30.png"><img src="virtualbox_windows-10.2_29_07_2022_21_32_30.png" alt="Prior Schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_18_23.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_18_23.png" alt="Open Symbol Editor"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Prior Schematic</div></td></tr>
+<tr><td><div style="text-align:center;">Open Symbol Editor</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Go to inspect &ndash;&gt; &ldquo;electrical rules checker&rdquo; in the menu.</p>
+<p>If this is the first time running the symbol editor, you will be asked to configure the global symbol library table.  Select the default option.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_32_35.png"><img src="virtualbox_windows-10.2_29_07_2022_21_32_35.png" alt="Open ERC"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_18_28.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_18_28.png" alt="Configure Global Symbol Library Table"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Open ERC</div></td></tr>
+<tr><td><div style="text-align:center;">Configure Global Symbol Library Table</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Select run and inspect the results.  There should be two errors.</p>
+<p>Select File&ndash;&gt;New Library</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_32_43.png"><img src="virtualbox_windows-10.2_29_07_2022_21_32_43.png" alt="Two Errors"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_19_03.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_19_03.png" alt="Step 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Two Errors</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p><em>These errors indicate that the 12V and ground power connections are not connected to a source.  Which is true! We forgot to add an external power connector to the board design, as in power from the wall or from an off-board battery!</em></p>
-</li>
-<li>
-<p>These errors can be resolved by adding a power connector.  Select add part</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_33_15.png"><img src="virtualbox_windows-10.2_29_07_2022_21_33_15.png" alt="Add Part"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Add Part</div></td></tr>
+<tr><td><div style="text-align:center;">Step 2</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Search for &ldquo;screw terminal&rdquo; and select the 1x2 version (one row, two positions).</p>
+<p>Give the library a name unique to yourself</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_33_24.png"><img src="virtualbox_windows-10.2_29_07_2022_21_33_24.png" alt="Select a screw terminal"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="Untitled.png"><img src="Untitled.png" alt="Name your library"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Select a screw terminal</div></td></tr>
+<tr><td><div style="text-align:center;">Name your library</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Place the screw terminal and wire it up</p>
+<p>In the main editor, create a new symbol</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_33_59.png"><img src="virtualbox_windows-10.2_29_07_2022_21_33_59.png" alt="Place part"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_19_29.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_19_29.png" alt="Create new symbol"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Place part</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_34_08.png"><img src="virtualbox_windows-10.2_29_07_2022_21_34_08.png" alt="Wire it"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Wire it</div></td></tr>
+<tr><td><div style="text-align:center;">Create new symbol</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Because the 12v and ground symbols are &ldquo;power ports&rdquo;, you can use as many of them as you want in your schematic, because they all signify the same thing, rather than a copy.  So for the purposes of ERC, place a separate ground symbol (the same symbol as you used before) near the second pin of the screw terminal and wire it up.</p>
+<p>Fill in Symbol information</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_34_46.png"><img src="virtualbox_windows-10.2_29_07_2022_21_34_46.png" alt="Add GND"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_24_29.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_24_29.png" alt="Fill in Symbol Info"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Add GND</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_34_50.png"><img src="virtualbox_windows-10.2_29_07_2022_21_34_50.png" alt="Wire GND"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Wire GND</div></td></tr>
+<tr><td><div style="text-align:center;">Fill in Symbol Info</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Run Annotations (assign reference designators)</p>
+<p>Create a rectangle</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_35_08.png"><img src="virtualbox_windows-10.2_29_07_2022_21_35_08.png" alt="Run Annotations"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_24_47.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_24_47.png" alt="Create a Rectangle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Run Annotations</div></td></tr>
+<tr><td><div style="text-align:center;">Create a Rectangle</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Run ERC again</p>
+<p>Place the rectangle in the working area.  It doesn&rsquo;t have to be precise yet.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_35_20.png"><img src="virtualbox_windows-10.2_29_07_2022_21_35_20.png" alt="Open ERC"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_26_38.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_26_38.png" alt="Place Rectangle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Open ERC</div></td></tr>
+<tr><td><div style="text-align:center;">Place Rectangle</div></td></tr>
 </tbody>
 </table>
 
 </p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_35_11.png"><img src="virtualbox_windows-10.2_29_07_2022_21_35_11.png" alt="Run ERC"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Run ERC</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_35_31.png"><img src="virtualbox_windows-10.2_29_07_2022_21_35_31.png" alt="See Errors"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">See Errors</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p><em>Why are there still errors?  The screw terminal pins are &ldquo;passive&rdquo; pins; they don&rsquo;t indicate a power connection.  To solve this you must explicitly state that pins 1 and 2 of the screw terminal are power outputs.</em></p>
 </li>
 <li>
-<p>Double click on the screw terminal</p>
+<p>Create a Pin to go along the bottom of the part (similar to its package)</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_35_45.png"><img src="virtualbox_windows-10.2_29_07_2022_21_35_45.png" alt="Open Symbol Properties"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_08_26_48.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_26_48.png" alt="Create a Pin"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Open Symbol Properties</div></td></tr>
+<tr><td><div style="text-align:center;">Create a Pin</div></td></tr>
 </tbody>
 </table>
 
 </p>
+</li>
+<li>
+<p>Fill in Pin information, including pin name, number, type, and orientation.  Refer to the datasheet.</p>
 <ol>
 <li>
-<p>Click Edit Symbol</p>
-<p><em>Editing a symbol of a built-in library directly from within a schematic will only impact <strong>that schematic</strong>; it will not be propagated back to the library.</em></p>
-</li>
-<li>
-<p>Change pin 1 and 2 to &ldquo;power output&rdquo; types</p>
+<p>For example, pin one should be an &ldquo;input&rdquo; pin</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_36_03.png"><img src="virtualbox_windows-10.2_29_07_2022_21_36_03.png" alt="Select Power Output"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_13_37_51.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_37_51.png" alt="Pin 1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Select Power Output</div></td></tr>
+<tr><td><div style="text-align:center;">Pin 1</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Save and close the symbol editor window.</p>
+<p>Pin 2 is a voltage out pin type</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_36_23.png"><img src="virtualbox_windows-10.2_29_07_2022_21_36_23.png" alt="Save Symbol"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_13_37_59.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_37_59.png" alt="Pin 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Save Symbol</div></td></tr>
+<tr><td><div style="text-align:center;">Pin 2</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Pin 3 is a voltage input type</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_13_38_03.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_38_03.png" alt="Pin 3"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Pin 3</div></td></tr>
 </tbody>
 </table>
 
@@ -500,35 +454,34 @@
 </ol>
 </li>
 <li>
-<p>Re-run ERC one last time</p>
+<p>Finally, adjust pins and boxes to get the final look and feel of the device.  Select the parts you wish to move, right click and select &ldquo;move&rdquo; (or type &ldquo;m&rdquo;)</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_36_55.png"><img src="virtualbox_windows-10.2_29_07_2022_21_36_55.png" alt="One Warning"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_14_21_15.png"><img src="VirtualBox_Windows_10_2_29_07_2022_14_21_15.png" alt="Adjust Pins and Box "  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">One Warning</div></td></tr>
+<tr><td><div style="text-align:center;">Adjust Pins and Box </div></td></tr>
 </tbody>
 </table>
 
 </p>
-<p><em>The one remaining warning indicates that you have locally edited a symbol within the schematic.  This was intentional in our case, and can be ignored.</em></p>
+</li>
+<li>
+<p>Save and Close.</p>
 </li>
 </ol>
-<hr>
-<h2 id="delete-markers">Delete Markers</h2>
-<p>You can delete the markers (little arrows in your schematic) generated by ERC by opening up the ERC tool and selecting the &ldquo;delete markers&rdquo; button</p>
 <p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_21_35_23-2.png"><img src="virtualbox_windows-10.2_29_07_2022_21_35_23-2.png" alt="Delete Markers"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Delete Markers</div></td></tr>
-</tbody>
-</table>
+<a href=""><img src="" alt=""  /></a>
+
+</p>
+<p>
+<a href=""><img src="" alt=""  /></a>
+
+</p>
+<p>
+<a href=""><img src="" alt=""  /></a>
 
 </p>
 
@@ -589,7 +542,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-schematic-design/kicad-symbol-creation/index.md"> Edit this Page</a></p>
         
         
         

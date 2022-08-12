@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> KiCad Installation and Initial Setup | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Common Pin Types and their Meanings | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -113,7 +113,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -121,7 +121,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -223,13 +223,18 @@
 
 
 
+
+
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
 
 
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">KiCad Installation and Initial Setup</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">KiCad Schematic Design Pages</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad-common-pin-types/">Common Pin Types and their Meanings</a></li>
 
 </ol>
 </nav>
@@ -240,10 +245,10 @@
 
 
 
-        <h2>KiCad Installation and Initial Setup</h2>
+        <h2>Common Pin Types and their Meanings</h2>
         
         <div class="mb-1 post-meta">
-          <span>By Dan Aukes</span>
+          <span>By ESD Faculty</span>
           
           
           
@@ -253,27 +258,65 @@
         </ul>
         
         <div class="content mb-5">
-          <h2 id="resources">Resources</h2>
-<ul>
-<li><a href="https://www.kicad.org/">KiCad.org</a></li>
-<li><a href="https://docs.kicad.org/">KiCad Documentation</a></li>
-</ul>
-<h2 id="installation">Installation</h2>
-<p>Full instructions can be found on the <a href="/fall-2022-software/">Fall 2022 Sofware</a> page.</p>
-<h2 id="setup">Setup</h2>
-<p>Select the default setup option when you first load KiCad</p>
-<p>
+          <p>Modified from <a href="https://docs.kicad.org/6.0/en/eeschema/eeschema.html#pin-electrical-types">here</a></p>
 <table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_18_06.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_18_06.png" alt="Select Default Settings"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
+<thead>
+<tr>
+<th style="text-align:left">Pin Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
 <tbody>
-<tr><td><div style="text-align:center;">Select Default Settings</div></td></tr>
+<tr>
+<td style="text-align:left">Input</td>
+<td style="text-align:left">A pin which is exclusively an input.</td>
+</tr>
+<tr>
+<td style="text-align:left">Output</td>
+<td style="text-align:left">A pin which is exclusively an output.</td>
+</tr>
+<tr>
+<td style="text-align:left">Bidirectional</td>
+<td style="text-align:left">A pin that can be either an input or an output, such as a microcontroller data bus pin.</td>
+</tr>
+<tr>
+<td style="text-align:left">Tri-state</td>
+<td style="text-align:left">A three state output pin (high, low, or high impedance)</td>
+</tr>
+<tr>
+<td style="text-align:left">Passive</td>
+<td style="text-align:left">A passive symbol pin: resistors, connectors, etc.</td>
+</tr>
+<tr>
+<td style="text-align:left">Free</td>
+<td style="text-align:left">A pin that can be freely connected to any other pin without electrical concerns.</td>
+</tr>
+<tr>
+<td style="text-align:left">Unspecified</td>
+<td style="text-align:left">A pin for which the ERC check does not matter.</td>
+</tr>
+<tr>
+<td style="text-align:left">Power input</td>
+<td style="text-align:left">A symbol’s power pin. As a special case, power input pins that are marked invisible are automatically connected to the net with the same name. See the Power Ports section for more information.</td>
+</tr>
+<tr>
+<td style="text-align:left">Power output</td>
+<td style="text-align:left">A pin that provides power to other pins, such as a regulator output.</td>
+</tr>
+<tr>
+<td style="text-align:left">Open collector</td>
+<td style="text-align:left">An open collector logic output.</td>
+</tr>
+<tr>
+<td style="text-align:left">Open emitter</td>
+<td style="text-align:left">An open emitter logic output.</td>
+</tr>
+<tr>
+<td style="text-align:left">Unconnected</td>
+<td style="text-align:left">A pin that should not be connected to anything.</td>
+</tr>
 </tbody>
 </table>
-
-</p>
 
         </div>
 
@@ -332,7 +375,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-installation-and-setup/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-schematic-design/kicad-common-pin-types.md"> Edit this Page</a></p>
         
         
         

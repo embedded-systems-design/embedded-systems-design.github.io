@@ -36,28 +36,28 @@
     
     <item>
       <title>Using the KiCad Footprint Wizard</title>
-      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-wizard/</link>
+      <link>https://embedded-systems-design.github.io/kicad-footprint-wizard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-wizard/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad-footprint-wizard/</guid>
       <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
     </item>
     
     <item>
       <title>Assigning Footprints</title>
-      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</link>
+      <link>https://embedded-systems-design.github.io/assigning-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/</guid>
+      <guid>https://embedded-systems-design.github.io/assigning-footprints/</guid>
       <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
     </item>
     
     <item>
       <title>KiCad Installation and Initial Setup</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/</link>
+      <link>https://embedded-systems-design.github.io/kicad-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad-installation-and-setup/</guid>
       <description>Resources KiCad.org KiCad Documentation Installation Full instructions can be found on the Fall 2022 Sofware page.</description>
     </item>
     
@@ -72,19 +72,19 @@
     
     <item>
       <title>Symbol Creation</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-symbol-creation/</link>
+      <link>https://embedded-systems-design.github.io/kicad-symbol-creation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-symbol-creation/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad-symbol-creation/</guid>
       <description>Introduction Resources LM3178 (On Digikey | datasheet) KiCad.org KiCad Documentation Common Pin Types and their Meanings Steps Open up KiCad (start &amp;ndash;&amp;gt; KiCad) and select the Symbol Editor</description>
     </item>
     
     <item>
       <title>Electrical Rules Check (ERC)</title>
-      <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/</link>
+      <link>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</guid>
       <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
     </item>
     
@@ -99,47 +99,47 @@
     
     <item>
       <title>Schematic Capture</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-schematic-capture/</link>
+      <link>https://embedded-systems-design.github.io/kicad-schematic-capture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-schematic-capture/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad-schematic-capture/</guid>
       <description>Introduction Resources LM3178 (On Digikey | datasheet) Symbol Creation Tutorial KiCad.</description>
     </item>
     
     <item>
       <title>Common Pin Types and their Meanings</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</link>
+      <link>https://embedded-systems-design.github.io/kicad-common-pin-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad-common-pin-types/</guid>
       <description>Modified from here
 Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
       <title>DFM -- Design for Manufacturability</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/kicad-design-for-manufacturability/</link>
+      <link>https://embedded-systems-design.github.io/kicad-design-for-manufacturability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/kicad-design-for-manufacturability/</guid>
+      <guid>https://embedded-systems-design.github.io/kicad-design-for-manufacturability/</guid>
       <description>Coming Soon&amp;hellip;</description>
     </item>
     
     <item>
       <title>Generating Artwork</title>
-      <link>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/generating-kicad-artwork/</link>
+      <link>https://embedded-systems-design.github.io/generating-kicad-artwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/generating-kicad-artwork/</guid>
+      <guid>https://embedded-systems-design.github.io/generating-kicad-artwork/</guid>
       <description>Coming Soon&amp;hellip;</description>
     </item>
     
     <item>
       <title>Packaging KiCad Files for Submission</title>
-      <link>https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/</link>
+      <link>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/</guid>
+      <guid>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</guid>
       <description>Generating Schematic PDFs Add Title Block Information Open your project and then your schematic.</description>
     </item>
     

@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Symbol Creation | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Assigning Footprints | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -113,7 +113,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -121,7 +121,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -231,10 +231,10 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">KiCad Schematic Design Pages</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Kicad Schematics to PCB</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-symbol-creation/">Symbol Creation</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/assigning-footprints/">Assigning Footprints</a></li>
 
 </ol>
 </nav>
@@ -245,7 +245,7 @@
 
 
 
-        <h2>Symbol Creation</h2>
+        <h2>Assigning Footprints</h2>
         
         <div class="mb-1 post-meta">
           <span>By Dan Aukes</span>
@@ -259,229 +259,50 @@
         
         <div class="content mb-5">
           <h2 id="introduction">Introduction</h2>
-<h2 id="resources">Resources</h2>
-<ul>
-<li>LM3178 (<a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LM317BT/5308099">On Digikey</a> | <a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf">datasheet</a>)</li>
-<li><a href="https://www.kicad.org/">KiCad.org</a></li>
-<li><a href="https://docs.kicad.org/">KiCad Documentation</a></li>
-<li><a href="/kicad-common-pin-types">Common Pin Types and their Meanings</a></li>
-</ul>
-<h2 id="steps">Steps</h2>
+<p>Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</p>
 <ol>
-<li>
-<p>Open up KiCad (start &ndash;&gt; KiCad) and select the Symbol Editor</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_18_23.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_18_23.png" alt="Open Symbol Editor"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Open Symbol Editor</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>If this is the first time running the symbol editor, you will be asked to configure the global symbol library table.  Select the default option.</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_18_28.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_18_28.png" alt="Configure Global Symbol Library Table"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Configure Global Symbol Library Table</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Select File&ndash;&gt;New Library</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_19_03.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_19_03.png" alt="Step 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Step 2</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Give the library a name unique to yourself</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="Untitled.png"><img src="Untitled.png" alt="Name your library"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Name your library</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>In the main editor, create a new symbol</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_19_29.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_19_29.png" alt="Create new symbol"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Create new symbol</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Fill in Symbol information</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_24_29.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_24_29.png" alt="Fill in Symbol Info"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Fill in Symbol Info</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Create a rectangle</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_24_47.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_24_47.png" alt="Create a Rectangle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Create a Rectangle</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Place the rectangle in the working area.  It doesn&rsquo;t have to be precise yet.</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_26_38.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_26_38.png" alt="Place Rectangle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Place Rectangle</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Create a Pin to go along the bottom of the part (similar to its package)</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_08_26_48.png"><img src="VirtualBox_Windows_10_2_29_07_2022_08_26_48.png" alt="Create a Pin"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Create a Pin</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Fill in Pin information, including pin name, number, type, and orientation.  Refer to the datasheet.</p>
-<ol>
-<li>
-<p>For example, pin one should be an &ldquo;input&rdquo; pin</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_13_37_51.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_37_51.png" alt="Pin 1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Pin 1</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Pin 2 is a voltage out pin type</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_13_37_59.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_37_59.png" alt="Pin 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Pin 2</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Pin 3 is a voltage input type</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_13_38_03.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_38_03.png" alt="Pin 3"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Pin 3</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-</ol>
-</li>
-<li>
-<p>Finally, adjust pins and boxes to get the final look and feel of the device.  Select the parts you wish to move, right click and select &ldquo;move&rdquo; (or type &ldquo;m&rdquo;)</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="VirtualBox_Windows_10_2_29_07_2022_14_21_15.png"><img src="VirtualBox_Windows_10_2_29_07_2022_14_21_15.png" alt="Adjust Pins and Box "  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Adjust Pins and Box </div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Save and Close.</p>
-</li>
+<li>Open your schematic</li>
+<li>Right-click on a symbol and select &ldquo;Edit Footprint&rdquo; (or, with your mouse over a symbol, type &ldquo;f&rdquo;)</li>
+<li>A dialog will open.  If unassigned, the &ldquo;footprint&rdquo; field will be empty</li>
+<li>Click on the library icon next to the &ldquo;footprint&rdquo; field to open up KiCad&rsquo;s footprint libraries</li>
+<li>The list of libraries is visible in the left navigation pane, and the list of footprints is available in the list to its immediate right.  In the right view window, a preview of the selected footprint loads upon selection.</li>
+<li>Find the correct footprint and select the &ldquo;insert footprint on board&rdquo; icon.</li>
+<li>Repeat the above steps for every part in your schematic.</li>
 </ol>
 <p>
-<a href=""><img src="" alt=""  /></a>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="screenshot-from-2022-08-10-16-31-28.png"><img src="screenshot-from-2022-08-10-16-31-28.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
 
-</p>
-<p>
-<a href=""><img src="" alt=""  /></a>
 
-</p>
-<p>
-<a href=""><img src="" alt=""  /></a>
+
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="screenshot-from-2022-08-10-16-32-43.png"><img src="screenshot-from-2022-08-10-16-32-43.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+
+
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="screenshot-from-2022-08-10-16-35-02.png"><img src="screenshot-from-2022-08-10-16-35-02.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
 
 </p>
 
@@ -542,7 +363,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-schematic-design/kicad-symbol-creation/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/index.md"> Edit this Page</a></p>
         
         
         

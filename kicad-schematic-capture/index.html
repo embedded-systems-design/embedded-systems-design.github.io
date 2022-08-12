@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Using the KiCad Footprint Wizard | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Schematic Capture | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -113,7 +113,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -121,7 +121,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -231,10 +231,10 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Kicad Schematics to PCB</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">KiCad Schematic Design Pages</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-wizard/">Using the KiCad Footprint Wizard</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad-schematic-capture/">Schematic Capture</a></li>
 
 </ol>
 </nav>
@@ -245,7 +245,7 @@
 
 
 
-        <h2>Using the KiCad Footprint Wizard</h2>
+        <h2>Schematic Capture</h2>
         
         <div class="mb-1 post-meta">
           <span>By Dan Aukes</span>
@@ -258,167 +258,322 @@
         </ul>
         
         <div class="content mb-5">
-          <ol>
+          <h2 id="introduction">Introduction</h2>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>LM3178 (<a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LM317BT/5308099">On Digikey</a> | <a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf">datasheet</a>)</li>
+<li>Symbol Creation Tutorial</li>
+<li><a href="https://www.kicad.org/">KiCad.org</a></li>
+<li><a href="https://docs.kicad.org/">KiCad Documentation</a></li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
 <li>
-<p>Take a look at the datasheet for the TO-220 package the regulator comes in.  variable &ldquo;b&rdquo; indicates pin width, with a minimum width of .61mm and a maximum width of .88mm.  The maximum thickness of the pin is .70mm Let&rsquo;s make sure our hole is big enough.</p>
+<p>Open KiCad</p>
+</li>
+<li>
+<p>Create a new project (File&ndash;&gt;New Project)</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="hypotenuse.png"><img src="hypotenuse.png" alt="dimensions"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_13_39.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_13_39.png" alt="Create a New Project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">dimensions</div></td></tr>
+<tr><td><div style="text-align:center;">Create a New Project</div></td></tr>
 </tbody>
 </table>
 
 </p>
-<p><em>if the maximum width $w$ is .88mm and the maximum thickness $t$ is .70mm, then the maximum possible hypotenuse $h$ is $h=\sqrt{w^2+t^2}$, or 1.12mm.  Setting the drill size to that maximum possible value will ensure <strong>all</strong> parts fit, though there may be some slop in standard parts.</em></p>
 </li>
 <li>
-<p>Enter the rest of the values that matter.  In the case of this package, we care about the pin pitch (2.4mm) and the pad width and height.</p>
-<p><em>Pads that are too large will get too close to their neighbor and risk a short, especially during soldering.  Pads that are too small may not be manufacturable with some processes, and are more likely to be stripped off during soldering.  Try to split the difference between these two extremes.  The DFM check (upcoming tutorial) will also help you understand your limits.</em></p>
+<p>Give the project a unique name with date or version number</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_14_01.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_14_01.png" alt="Assign a Name to the Project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Assign a Name to the Project</div></td></tr>
+</tbody>
+</table>
+
+</p>
 </li>
 <li>
-<p>Create a new footprint library for your <em>project</em>.</p>
-<p><em>It&rsquo;s probably a good idea at this early stage in your PCB design career to associate your footprint library with your project.  You may make different decisions later.</em></p>
+<p>Select the schematic and double click it to open</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_14_11.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_14_11.png" alt="Open the Schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Open the Schematic</div></td></tr>
+</tbody>
+</table>
+
+</p>
 </li>
 <li>
-<p>Save the footprint in the new footprint library</p>
+<p>Add a Part</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_14_34.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_14_34.png" alt="Add a Part"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Add a Part</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>If this is the first time running the symbol editor, you will be asked to configure the global symbol library table.  Select the default option.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_14_41.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_14_41.png" alt="Configure the Library Table"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Configure the Library Table</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the library and part you created in the &ldquo;Symbol Creation&rdquo; tutorial.</p>
+</li>
+<li>
+<p>You can move the symbol around the screen.  Left click to place it</p>
+</li>
+<li>
+<p>Open the datasheet for reference.  What is the acceptable range of input voltage?</p>
+</li>
+<li>
+<p>Add a power port for 12V.  Select &ldquo;Add power port&rdquo; from the right side tools</p>
+<ol>
+<li>
+<p>Search or browse for &ldquo;12V&rdquo;. Select it, select okay.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_20_28.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_20_28.png" alt="Select 12V"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select 12V</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Drag the symbol around</p>
 </li>
 </ol>
+</li>
+<li>
+<p>Repeat the last step, this time adding &ldquo;GND&rdquo;</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_18_27.png"><img src="virtualbox_windows-10.2_29_07_2022_22_18_27.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_21_00.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_21_00.png" alt="Select Ground"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_19_08.png"><img src="virtualbox_windows-10.2_29_07_2022_22_19_08.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_07.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_07.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_15.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_15.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_45.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_45.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_59.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_59.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_26_01.png"><img src="virtualbox_windows-10.2_29_07_2022_22_26_01.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_29_19.png"><img src="virtualbox_windows-10.2_29_07_2022_22_29_19.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_47_00.png"><img src="virtualbox_windows-10.2_29_07_2022_22_47_00.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_47_36.png"><img src="virtualbox_windows-10.2_29_07_2022_22_47_36.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_48_06.png"><img src="virtualbox_windows-10.2_29_07_2022_22_48_06.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Select Ground</div></td></tr>
 </tbody>
 </table>
 
 </p>
+</li>
+<li>
+<p>Look at the &ldquo;basic&rdquo; example in the datasheet (Figure 6).  You will need to add resistor(s).</p>
+</li>
+<li>
+<p>Add a part and search for &ldquo;resistor us&rdquo;.  Select the &ldquo;R_US&rdquo; part that comes up</p>
+<p>_KiCad&rsquo;s default resistor follows a different standard than the US standard resistor.  Whenever possible select the &ldquo;<em>US&rdquo; version of parts.</em></p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_09_48_58.png"><img src="VirtualBox_Windows_10_2_29_07_2022_09_48_58.png" alt="Search for &amp;ldquo;Resistor US&amp;rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Search for &amp;ldquo;Resistor US&amp;rdquo;</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the R_US text in the part that you place.  Replace the text with the value of the resistor in Ohms.  You can use &ldquo;10k&rdquo; or &ldquo;10kOhm&rdquo; to denote kilo-Ohms, just be consistent. <strong><em>(Note, this value is just a dummy value, you will need to select your own resistance)</em></strong></p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_14_10_14.png"><img src="VirtualBox_Windows_10_2_29_07_2022_14_10_14.png" alt="Select R_US"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select R_US</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_14_10_23.png"><img src="VirtualBox_Windows_10_2_29_07_2022_14_10_23.png" alt="Assign a Value"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Assign a Value</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_14_10_26.png"><img src="VirtualBox_Windows_10_2_29_07_2022_14_10_26.png" alt="The value is displayed"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">The value is displayed</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Repeat the last two steps, this time adding &ldquo;Resistor_Variable_US&rdquo;.  Select the &ldquo;R_Variable_US&rdquo; part that comes up and replace the text with the value of the resistor in Ohms.  You can use &ldquo;10k&rdquo; or &ldquo;10kOhm&rdquo; to denote kilo-Ohms, just be consistent. <strong><em>(Note, this value is just a dummy value, you will need to select your own resistance)</em></strong></p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_13_34_04.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_34_04.png" alt="Select &amp;ldquo;Resistor_Variable_US&amp;rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select &amp;ldquo;Resistor_Variable_US&amp;rdquo;</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_13_42_46.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_42_46.png" alt="Update the Value"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Update the Value</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_14_14_47.png"><img src="VirtualBox_Windows_10_2_29_07_2022_14_14_47.png" alt="The updated value is displayed"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">The updated value is displayed</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Arrange your parts on the page using the move command.</p>
+<ol>
+<li>Placing your cursor over a part, you can simply type &ldquo;M&rdquo; on your keyboard, or right click and select &ldquo;Move&rdquo;</li>
+<li>Move your cursor to where you&rsquo;d like to place the part and left click to accept.</li>
+<li>Repeat as needed.</li>
+</ol>
+</li>
+<li>
+<p>Wire your parts together</p>
+<ol>
+<li>
+<p>placing your cursor over one of the circular &ldquo;ports&rdquo; by each symbol, type &ldquo;W&rdquo;</p>
+<p><em>or</em> you can also select the wire tool from the right side of the page</p>
+<p><em>or</em> you can left click any unwired port to activate the wire tool.</p>
+</li>
+</ol>
+ <img src="VirtualBox_Windows_10_2_29_07_2022_13_38_51.png" width="25%">
+ <img src="VirtualBox_Windows_10_2_29_07_2022_13_39_21.png" width="25%">
+ <img src="VirtualBox_Windows_10_2_29_07_2022_13_39_30.png" width="25%">
+ <img src="VirtualBox_Windows_10_2_29_07_2022_13_39_50.png" width="25%">
+ <img src="VirtualBox_Windows_10_2_29_07_2022_13_39_59.png" width="25%">
+ <img src="VirtualBox_Windows_10_2_29_07_2022_13_40_18.png" width="25%">
+</li>
+<li>
+<p>Number your parts</p>
+<p><em>Reference designators are the text fields by each symbol that uniquely identify the individual part on the schematic (Initially they may say R?, U?, etc).  Each part must have a unique reference designator.  If you are aiming to maintain consistency with an existing schematic, attempting to use the same reference designators as a reference circuit diagram, etc, it may make sense for you to manually number your parts.</em></p>
+<ol>
+<li>
+<p>To manually number your parts, simply click the desired reference designator and assign it a unique ID, typically a capital letter followed by a number</p>
+<ul>
+<li>resistors typically look like &ldquo;R1&rdquo;, &ldquo;R2&rdquo;, etc.</li>
+<li>capacitors typically look like &ldquo;C1&rdquo;, &ldquo;C2&rdquo;, etc.</li>
+<li>other devicds often look like &ldquo;U1&rdquo;, &ldquo;U2&rdquo;, etc.</li>
+<li>&hellip;for more information search for reference designator conventions in the KiCad documentation or on Google.</li>
+</ul>
+</li>
+<li>
+<p>To automatically number your parts, go to Tools &ndash;&gt; annotate schematic in the menu</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="VirtualBox_Windows_10_2_29_07_2022_13_47_59.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_47_59.png" alt="Annotation Tool"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Annotation Tool</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol>
+<li>
+<p>when the window opens, it will give you a number of options.</p>
+<ul>
+<li>You can choose whether to number top-to-bottom first or left-to-right first.</li>
+<li>You can also choose whether to keep existing annotations (reference designators) and only assign unassigned parts, or to renumber everything.</li>
+<li>You can also choose to annotate a selection, a current sheet, or the entire project</li>
+<li>&hellip;there are other options that you can read more about in KiCad&rsquo;s documentation.</li>
+</ul>
+<p>
+<a href="VirtualBox_Windows_10_2_29_07_2022_13_48_03.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_48_03.png" alt=""  /></a>
+
+</p>
+</li>
+<li>
+<p>Accept the options you have selected, and you should see that the chosen parts now have a unique reference designator assigned to them.</p>
+<p>
+<a href="VirtualBox_Windows_10_2_29_07_2022_13_55_41.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_55_41.png" alt=""  /></a>
+
+</p>
+<p>
+<a href="VirtualBox_Windows_10_2_29_07_2022_13_55_50.png"><img src="VirtualBox_Windows_10_2_29_07_2022_13_55_50.png" alt=""  /></a>
+
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Save your schematic.</p>
+</li>
+</ol>
 
         </div>
 
@@ -477,7 +632,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-wizard/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-schematic-design/kicad-schematic-capture/index.md"> Edit this Page</a></p>
         
         
         
