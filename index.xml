@@ -547,7 +547,7 @@ In Windows, open the Design Entry CIS program.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/enable-floating-point-support/</guid>
-      <description>To enable floating point support in the PSoC compiler, follow these steps:</description>
+      <description>Introduction Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</description>
     </item>
     
     <item>

@@ -271,17 +271,24 @@
         </ul>
         
         <div class="content mb-5">
-          <p>To enable floating point support in the PSoC compiler, follow these steps:</p>
+          <h2 id="introduction">Introduction</h2>
+<p>Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</p>
+<h2 id="steps">Steps</h2>
+<p>To enable floating point support in the PSoC compiler, follow these steps:</p>
 <ol>
 <li>
 <p>In the Workspace Explorer, right-click on your open project and choose Build Settings&hellip;</p>
 </li>
 <li>
-<p>Click on ARM GCC -&gt; Linker -&gt; Command Line -&gt; Custom Flags</p>
+<p>Click on ARM GCC -&gt; Linker -&gt; General -&gt; Additional libraries</p>
+<ol>
+<li>type a single <code>m</code> in the textbox.  This will provide access to the math.h library.</li>
+</ol>
 </li>
 <li>
-<p>Enter -u _printf_float (make sure you have 1 dash and 2 underscores)</p>
-</li>
+<p>Click on ARM GCC -&gt; Linker -&gt; Command Line -&gt; Custom Flags</p>
+<ol>
+<li>Enter <code>-u _printf_float</code> (make sure you have 1 dash and 2 underscores).  This will permit the print function to display floating point numbers.</li>
 </ol>
 <p>
 <table>
@@ -295,9 +302,9 @@
 </table>
 
 </p>
-<ol start="4">
-<li>Next, increase the heap size to 0x0800. From the project.cydwr page, go to the System tab and change the Heap Size (bytes) to 0x0800.</li>
-</ol>
+</li>
+<li>
+<p>Next, increase the heap size to 0x0800. From the project.cydwr page, go to the System tab and change the Heap Size (bytes) to 0x0800.  This will increase the memory available by the compiler to process the formatting of strings and floating point math.</p>
 <p>
 <table>
 <thead></thead>
@@ -310,6 +317,8 @@
 </table>
 
 </p>
+</li>
+</ol>
 
         </div>
 
