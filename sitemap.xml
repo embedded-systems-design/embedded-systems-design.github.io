@@ -36,6 +36,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad-design-rules-check/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/generating-kicad-artwork/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</loc>
@@ -52,7 +54,7 @@
     <loc>https://embedded-systems-design.github.io/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/printed-circuit-board-process/</loc>
+    <loc>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
   </url><url>
@@ -190,6 +192,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/design/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/development-kit/</loc>
@@ -213,6 +217,8 @@
     <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/esp32/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/example-project/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad-export-solder-mask/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</loc>
   </url><url>

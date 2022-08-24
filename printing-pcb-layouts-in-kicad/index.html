@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> ASU PCB Fabrication Process | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title>  | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -223,13 +223,18 @@
 
 
 
+
+
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/asu-pcb-fabrication-process/">ASU PCB Fabrication Process</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/"></a></li>
 
 </ol>
 </nav>
@@ -240,7 +245,7 @@
 
 
 
-        <h2>ASU PCB Fabrication Process</h2>
+        <h2></h2>
         
         <div class="mb-1 post-meta">
           <span>By ESD Faculty</span>
@@ -250,87 +255,10 @@
         </div>
         <ul class="list-inline">
           
-          <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/asu"
-            class="text-primary">Asu</a>
-          </li>
-          <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-            class="text-primary">Cadence</a>
-          </li>
-          <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-            class="text-primary">Pcb</a>
-          </li>
         </ul>
         
         <div class="content mb-5">
-          <h2 id="how-are-pcbs-fabricated-at-asu">How are PCBs fabricated at ASU?</h2>
-<p>The following video shows our PCB manufacturing process.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DJPIYXGpPVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p><em>Video by Peralta Engineering Studios</em></p>
-<h2 id="how-do-you-prepare-and-submit-cadence-pcb-design-for-fabrication">How do you prepare and submit Cadence PCB design for fabrication?</h2>
-<ol>
-<li>
-<p><a href="/adding-text-to-a-layout-in-cadence-pcb-editor/">Label the PCB design</a> with your name, course, and team number <em>(required for manufacturing)</em></p>
-</li>
-<li>
-<p>Run a Design Rules Check and fix any errors identified</p>
-<ul>
-<li><a href="/running-design-rules-check-in-cadence-pcb-editor/">Cadence PCB Editor Instructions</a></li>
-<li><a href="/kicad-design-rules-check.md">KiCad Instructions</a></li>
-</ul>
-</li>
-<li>
-<p>Export Gerber files</p>
-<ul>
-<li><a href="/exporting-gerber-files-from-cadence-pcb-editor/">Cadence PCB Editor Instructions</a></li>
-<li><a href="/generating-kicad-artwork">KiCad Instructions</a></li>
-</ul>
-</li>
-<li>
-<p>Export solder mask layers <em>(optional, final design only)</em></p>
-<ul>
-<li><a href="/exporting-solder-mask-layers-from-cadence-pcb-editor/">Cadence Instructions</a> </li>
-<li><a href="/kicad-export-solder-mask/">KiCad Instructions</a></li>
-</ul>
-</li>
-<li>
-<p>Run a Design for Manufacturing check and fix any errors identified:</p>
-<ul>
-<li><a href="https://egr314.ddns.net">DFM Checking Tool </a></li>
-</ul>
-</li>
-</ol>
-<!--(https://peraltastudios.engineering.asu.edu/wp-content/uploads/2021/08/dfmchecker.html) -->
-<!--* [KiCad Instructions](/kicad-design-for-manufacturability/)-->
-<p>Print a 1:1 (100%)-sized copy of your PCB design(<a href="/printing-a-pcb-layout-in-cadence-pcb-editor/">Cadence</a> | <a href="/printing-pcb-layouts-in-kicad/">KiCad</a>) and physically place all components on the printout to confirm that the footprints are correct. This is particularly important for ICs, connectors, and daughterboards.</p>
-<p>Show your successful DFM check results to a TA or professor so that they can document approval of your PCB design for fabrication. <strong>You must receive approval from a TA or the professor before your PCB will be fabricated.</strong></p>
-<p>Zip all of your PCB files together in one ZIP folder with filename YourName###.zip, where ### is your team number.</p>
-<ol>
-<li>Top.art</li>
-<li>Bottom.art</li>
-<li>Outline.art</li>
-<li>Drill.drl</li>
-<li>SolderMaskTop.art</li>
-<li>SolderMaskBottom.art</li>
-</ol>
-<p>Submit your files at <a href="http://fultonapps.asu.edu/polylab">fultonapps.asu.edu/polylab</a>. Include the following information in the request details:</p>
-<ol>
-<li>Professor and class</li>
-<li>Quantity of boards <em>(only 1 allowed per design; exceptions allowed with professor approval)</em></li>
-<li>Solder mask needed? <em>(only allowed for final board designs)</em></li>
-<li>Rub out area needed? If yes, specify location. (<em>Pro tip:</em> Rub out copper underneath antennas)</li>
-<li>Copper thickness (0.5, 1, or 2 oz/ft^2)</li>
-</ol>
-<p>You must also attach the following files to your request:</p>
-<ol>
-<li>ZIP of your Gerber files created above</li>
-<li>PDF of the results of the <a href="https://peraltastudios.engineering.asu.edu/wp-content/uploads/2021/08/dfmchecker.html">Design for Manufacturing check</a></li>
-</ol>
-<p>You will receive an emails from the Poly Lab Request Notification System indicating the acceptance of the job and when your PCB is ready to be picked up. If you are interested in learning about and being a part of the fabrication process with the LPKF mill, please see one of the staff members in PRLTA 109. If you have any questions, please contact <a href="mailto:Peralta.Labs@asu.edu">Peralta.Labs@asu.edu</a></p>
-<p>After receiving your PCB, make sure to do a continuity test on all traces and vias before adding parts and soldering.</p>
-
+          
         </div>
 
         
@@ -388,7 +316,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/circuit-design/asu-pcb-fabrication-process.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-pcb-design/printing-pcb-layouts-in-kicad.md"> Edit this Page</a></p>
         
         
         

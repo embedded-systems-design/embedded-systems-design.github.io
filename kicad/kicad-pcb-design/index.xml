@@ -16,11 +16,38 @@
     </item>
     
     <item>
+      <title>PCB DRC (KiCad)</title>
+      <link>https://embedded-systems-design.github.io/kicad-design-rules-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-design-rules-check/</guid>
+      <description>Coming Soon&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Generating Artwork</title>
       <link>https://embedded-systems-design.github.io/generating-kicad-artwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/generating-kicad-artwork/</guid>
+      <description>Coming Soon&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Export Solder Mask</title>
+      <link>https://embedded-systems-design.github.io/kicad-export-solder-mask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-export-solder-mask/</guid>
       <description>Coming Soon&amp;hellip;</description>
     </item>
     

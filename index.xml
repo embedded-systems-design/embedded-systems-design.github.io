@@ -126,6 +126,15 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
+      <title>PCB DRC (KiCad)</title>
+      <link>https://embedded-systems-design.github.io/kicad-design-rules-check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-design-rules-check/</guid>
+      <description>Coming Soon&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Generating Artwork</title>
       <link>https://embedded-systems-design.github.io/generating-kicad-artwork/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -145,11 +154,11 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     
     <item>
       <title></title>
-      <link>https://embedded-systems-design.github.io/printed-circuit-board-process/</link>
+      <link>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/printed-circuit-board-process/</guid>
-      <description>Printed Circuit Board Submission Process **NOTICE: Starting 2/14/2018 the Peralta Engineering Studios can only produce boards that are tied to a class.</description>
+      <guid>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -533,6 +542,15 @@ In Windows, open the Design Entry CIS program.</description>
     </item>
     
     <item>
+      <title>Design For Manufacturing (Cadence)</title>
+      <link>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</guid>
+      <description>Coming Soon&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Drawing Software</title>
       <link>https://embedded-systems-design.github.io/drawing-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -548,6 +566,15 @@ In Windows, open the Design Entry CIS program.</description>
       
       <guid>https://embedded-systems-design.github.io/enable-floating-point-support/</guid>
       <description>Introduction Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</description>
+    </item>
+    
+    <item>
+      <title>Export Solder Mask</title>
+      <link>https://embedded-systems-design.github.io/kicad-export-solder-mask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-export-solder-mask/</guid>
+      <description>Coming Soon&amp;hellip;</description>
     </item>
     
     <item>
