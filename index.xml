@@ -35,24 +35,6 @@
     </item>
     
     <item>
-      <title>Using the KiCad Footprint Wizard</title>
-      <link>https://embedded-systems-design.github.io/kicad-footprint-wizard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad-footprint-wizard/</guid>
-      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
-    </item>
-    
-    <item>
-      <title>Assigning Footprints</title>
-      <link>https://embedded-systems-design.github.io/assigning-footprints/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/assigning-footprints/</guid>
-      <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
-    </item>
-    
-    <item>
       <title>KiCad Installation and Initial Setup</title>
       <link>https://embedded-systems-design.github.io/kicad-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -77,6 +59,24 @@
       
       <guid>https://embedded-systems-design.github.io/kicad-symbol-creation/</guid>
       <description>Introduction Resources LM3178 (On Digikey | datasheet) KiCad.org KiCad Documentation Common Pin Types and their Meanings Steps Open up KiCad (start &amp;ndash;&amp;gt; KiCad) and select the Symbol Editor</description>
+    </item>
+    
+    <item>
+      <title>Using the KiCad Footprint Wizard</title>
+      <link>https://embedded-systems-design.github.io/kicad-footprint-wizard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-footprint-wizard/</guid>
+      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
+    </item>
+    
+    <item>
+      <title>Assigning Footprints</title>
+      <link>https://embedded-systems-design.github.io/assign-kicad-footprints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/assign-kicad-footprints/</guid>
+      <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
     </item>
     
     <item>
@@ -107,6 +107,15 @@
     </item>
     
     <item>
+      <title>Generating a Netlist</title>
+      <link>https://embedded-systems-design.github.io/kicad-generating-netlists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-generating-netlists/</guid>
+      <description>Introduction A Netlist is essentially a file containing information regarding connections between the components on a schematic.</description>
+    </item>
+    
+    <item>
       <title>Common Pin Types and their Meanings</title>
       <link>https://embedded-systems-design.github.io/kicad-common-pin-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -117,30 +126,12 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
-      <title>DFM -- Design for Manufacturability</title>
-      <link>https://embedded-systems-design.github.io/kicad-design-for-manufacturability/</link>
+      <title>Importing Netlist into KiCad PCB</title>
+      <link>https://embedded-systems-design.github.io/importing-kicad-netlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad-design-for-manufacturability/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>PCB DRC (KiCad)</title>
-      <link>https://embedded-systems-design.github.io/kicad-design-rules-check/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad-design-rules-check/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Generating Artwork</title>
-      <link>https://embedded-systems-design.github.io/generating-kicad-artwork/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/generating-kicad-artwork/</guid>
-      <description>Coming Soon&amp;hellip;</description>
+      <guid>https://embedded-systems-design.github.io/importing-kicad-netlists/</guid>
+      <description>Introduction We are now ready to transfer over from Schematic Editor to PCB Editor.</description>
     </item>
     
     <item>
@@ -150,15 +141,6 @@ Pin Type Description Input A pin which is exclusively an input.</description>
       
       <guid>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</guid>
       <description>Generating Schematic PDFs Add Title Block Information Open your project and then your schematic.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -569,15 +551,6 @@ In Windows, open the Design Entry CIS program.</description>
     </item>
     
     <item>
-      <title>Export Solder Mask</title>
-      <link>https://embedded-systems-design.github.io/kicad-export-solder-mask/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad-export-solder-mask/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>Exporting Gerber files from Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -866,6 +839,15 @@ Python: 14.2% Matlab: 0.</description>
       
       <guid>https://embedded-systems-design.github.io/pcb-design-checklist/</guid>
       <description>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors.</description>
+    </item>
+    
+    <item>
+      <title>PCB Design Tutorial</title>
+      <link>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</guid>
+      <description>Introduction This tutorial will go over how to get started with your PCB design, as well as go over the things you will use while designing your PCB.</description>
     </item>
     
     <item>

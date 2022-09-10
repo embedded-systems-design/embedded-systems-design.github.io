@@ -2,11 +2,11 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> PCB DRC (KiCad) | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Generating a Netlist | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.101.0" />
+  <meta name="generator" content="Hugo 0.102.3" />
 
   <!-- plugins -->
   
@@ -231,10 +231,10 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">KiCad Schematic Design Pages</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad-design-rules-check/">PCB DRC (KiCad)</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad-generating-netlists/">Generating a Netlist</a></li>
 
 </ol>
 </nav>
@@ -245,10 +245,10 @@
 
 
 
-        <h2>PCB DRC (KiCad)</h2>
+        <h2>Generating a Netlist</h2>
         
         <div class="mb-1 post-meta">
-          <span>By Dan Aukes</span>
+          <span>By Milan Patel</span>
           
           
           
@@ -258,7 +258,70 @@
         </ul>
         
         <div class="content mb-5">
-          <p>Coming Soon&hellip;</p>
+          <h2 id="introduction">Introduction</h2>
+<p>A Netlist is essentially a file containing information regarding connections between the components on a schematic. Information regarding the components such as their reference designators and pin numbers are also included in this file. This file provides a map of all the parts on a schematic and their wired connections, which is than used to lay out a PCB.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>Open the adjustable voltage circuit which passed the ERC used in the previous tutorial. 
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image1.png"><img src="media/image1.png" alt="Previous Schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Previous Schematic</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>In the Schematic Editor go To File-&gt; Export and select Netlist.</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image2.png"><img src="media/image2.png" alt="Open Netlist"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Open Netlist</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="3">
+<li>You will be met with the screen below giving you options to make the Netlist for a variety of PCB designing tools. For the purpose of this class keep the KiCad tab selected, click on Export Netlist.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image3.png"><img src="media/image3.png" alt="Export Netlist"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Export Netlist</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="4">
+<li>A screen will appear which allows you to save the Netlist file. Save the file to the project directory of the current project. You are now ready to start working in PCB Editor.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image4.png"><img src="media/image4.png" alt="Save Netlist File"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Save Netlist File</div></td></tr>
+</tbody>
+</table>
+
+</p>
 
         </div>
 
@@ -317,7 +380,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-pcb-design/kicad-design-rules-check.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-schematic-design/kicad-generating-netlists/index.md"> Edit this Page</a></p>
         
         
         

@@ -2,11 +2,11 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Generating Artwork | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Importing Netlist into KiCad PCB | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.101.0" />
+  <meta name="generator" content="Hugo 0.102.3" />
 
   <!-- plugins -->
   
@@ -231,10 +231,10 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Kicad Schematics to PCB</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/generating-kicad-artwork/">Generating Artwork</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/importing-kicad-netlists/">Importing Netlist into KiCad PCB</a></li>
 
 </ol>
 </nav>
@@ -245,10 +245,10 @@
 
 
 
-        <h2>Generating Artwork</h2>
+        <h2>Importing Netlist into KiCad PCB</h2>
         
         <div class="mb-1 post-meta">
-          <span>By Dan Aukes</span>
+          <span>By Milan Patel</span>
           
           
           
@@ -258,7 +258,91 @@
         </ul>
         
         <div class="content mb-5">
-          <p>Coming Soon&hellip;</p>
+          <h2 id="introduction">Introduction</h2>
+<p>We are now ready to transfer over from Schematic Editor to PCB Editor. In order to get to this step, we had to make sure a couple things were taken care of:</p>
+<ol>
+<li><strong>Make sure the schematic was annotated.</strong> This includes assigning reference designators to the parts.</li>
+<li><strong>Make footprints for the specific components</strong>(<a href="/kicad-footprint-wizard/">wizard</a>/<a href="">manual</a>) we have built our schematic around. These footprints then got assigned to their corresponding symbols on the schematic.</li>
+<li><strong><a href="/assign-kicad-footprints/">Assign Footprints</a></strong></li>
+<li><strong>Make sure you <a href="/kicad-electrical-rules-check/">pass ERC</a></strong> to verify our schematic does not violate any rules</li>
+<li><strong><a href="/kicad-generating-netlists/">Generate a Netlist</a></strong>. Now the transition from Schematic Editor to PCB Editor can occur.</li>
+</ol>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>We can now open PCB Editor from the Kicad start page.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image1.png"><img src="media/image1.png" alt="Graphical user interface, text, application Description automatically generated"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Graphical user interface, text, application Description automatically generated</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>PCB Editor</p>
+<ol start="2">
+<li>Before we open our Netlist and start working, we want to configure some things such as grid and units. It is recommended we work in the imperial system as most board manufactures use the imperial system. On the top left click the button that has &ldquo;in&rdquo; on it highlighted in yellow, this will convert us over to the imperial system.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image2.png"><img src="media/image2.png" alt="Inches Button"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Inches Button</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>We can also adjust the grid to our liking using the grid drop down. This will allow us to move our parts around in much smaller increments. As you go down the list the grid sizes get smaller.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image3.png"><img src="media/image3.png" alt="Grid Adjustment"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Grid Adjustment</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="3">
+<li>We are now ready to place the parts and start designing our PCB. We need to import the Netlist which we generated previously. We can do this by going to File-&gt; Import and clicking on Netlist.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image4.png"><img src="media/image4.png" alt="Importing a Netlist"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Importing a Netlist</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="4">
+<li>We are now able to select the directory of the Netlist file we need and load this file in to get tested for errors using the button with the folder icon on it. We can check for errors using the &ldquo;Load and Test Netlist&rdquo; button. If there are no errors click the &ldquo;Update PCB&rdquo; button at the bottom right of the menu.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image5.png"><img src="media/image5.png" alt="Loading Netlist Into PCB Editor"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Loading Netlist Into PCB Editor</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>You should now see all your parts appear on the PCB Editor; you can place them by clicking on the location you want them. You are now ready to set up the design rules.</p>
 
         </div>
 
@@ -317,7 +401,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-pcb-design/generating-kicad-artwork.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/transferring-kicad-schematics-to-pcb/importing-kicad-netlists/index.md"> Edit this Page</a></p>
         
         
         

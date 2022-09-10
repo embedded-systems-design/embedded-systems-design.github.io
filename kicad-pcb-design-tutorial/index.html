@@ -2,11 +2,11 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Assigning Footprints | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> PCB Design Tutorial | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.101.0" />
+  <meta name="generator" content="Hugo 0.102.3" />
 
   <!-- plugins -->
   
@@ -231,10 +231,10 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Kicad Schematics to PCB</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/assigning-footprints/">Assigning Footprints</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/">PCB Design Tutorial</a></li>
 
 </ol>
 </nav>
@@ -245,62 +245,193 @@
 
 
 
-        <h2>Assigning Footprints</h2>
+        <h2>PCB Design Tutorial</h2>
         
         <div class="mb-1 post-meta">
-          <span>By Dan Aukes</span>
+          <span>By Milan Patel</span>
           
           
           
         </div>
         <ul class="list-inline">
           
+          <li class="list-inline-item mb-3 mr-2 mt-1">
+          <a class="d-block p-2 bg-primary text-white" href="/tags/kicad"
+            class="text-primary">Kicad</a>
+          </li>
         </ul>
         
         <div class="content mb-5">
           <h2 id="introduction">Introduction</h2>
-<p>Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</p>
+<p>This tutorial will go over how to get started with your PCB design, as well as go over the things you will use while designing your PCB.</p>
+<h2 id="steps">Steps</h2>
 <ol>
-<li>Open your schematic</li>
-<li>Right-click on a symbol and select &ldquo;Edit Footprint&rdquo; (or, with your mouse over a symbol, type &ldquo;f&rdquo;)</li>
-<li>A dialog will open.  If unassigned, the &ldquo;footprint&rdquo; field will be empty</li>
-<li>Click on the library icon next to the &ldquo;footprint&rdquo; field to open up KiCad&rsquo;s footprint libraries</li>
-<li>The list of libraries is visible in the left navigation pane, and the list of footprints is available in the list to its immediate right.  In the right view window, a preview of the selected footprint loads upon selection.</li>
-<li>Find the correct footprint and select the &ldquo;insert footprint on board&rdquo; icon.</li>
-<li>Repeat the above steps for every part in your schematic.</li>
+<li>Open the PCB Editor file corresponding to your project. From previous tutorials the board should have all the parts placed on top of each other somewhere on the page, as well as the correct design rules inputted. We will first place the outline of our board, it is not required to do this at the beginning, however if you have board dimension constraints this helps you design around them. To place this outline first click on &ldquo;Draw a Rectangle&rdquo;, you can now use your mouse to draw a rectangle on the page, we will adjust its size and other parameters after.</li>
 </ol>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="screenshot-from-2022-08-10-16-31-28.png"><img src="screenshot-from-2022-08-10-16-31-28.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="media/image1.png"><img src="media/image1.png" alt="Drawing A Rectangle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Drawing A Rectangle</div></td></tr>
 </tbody>
 </table>
 
-
-
+</p>
+<ol start="2">
+<li>We can open the properties window for the shape by highlighting the shape-&gt; right clicking then selecting &ldquo;Properties&hellip;&rdquo; from the drop-down menu.</li>
+</ol>
+<p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="screenshot-from-2022-08-10-16-32-43.png"><img src="screenshot-from-2022-08-10-16-32-43.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="media/image2.png"><img src="media/image2.png" alt="Shape Properties"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Shape Properties</div></td></tr>
 </tbody>
 </table>
 
-
-
+</p>
+<ol start="3">
+<li>The Rectangle Properties window should appear. Configure the corresponding X and Y coordinates of the Start/End Points that will result in your desired outline dimension. Verify the line width matches that specified in the design rules. Make sure the layer selected is Edge.Cuts, this specifies that the rectangle we drew is defined as the board outline. Click OK, you now have your PCB&rsquo;s outline.</li>
+</ol>
+<p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="screenshot-from-2022-08-10-16-35-02.png"><img src="screenshot-from-2022-08-10-16-35-02.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="media/image3.png"><img src="media/image3.png" alt="PCB Outline Properties"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">PCB Outline Properties</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="4">
+<li>Now we must place a GND plane on our board, this will take care of all the GND connections for us so we will not have to route any GND traces. First select Place-&gt; Add Filled Zone. Then click your mouse on the corner of the PCB outline we drew previously.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image4.png"><img src="media/image4.png" alt="Adding a GND Plane"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Adding a GND Plane</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="5">
+<li>A Screen will appear, make sure you select both the F.Cu and B.Cu layer. Make sure your GND Net is selected as the entire plane will be connected to the Net selected. Also verify that the other properties match the PCB design rules. Click OK.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image5.png"><img src="media/image5.png" alt="Copper Zone Window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Copper Zone Window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="6">
+<li>You can now use your mouse to draw this GND plane around your outline, when you are done drawing a outline of your GND plane will appear. Right click one of the corners-&gt; click zones-&gt; Fill all zones. Now your GND plane should be shaded in a certain color based on which layer you are looking at. make sure the plane is on both the top and bottom sides of your board. You now have GND planes, check a few GND pins on footprints and make sure they are connected to the GND plane.</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image6.png"><img src="media/image6.png" alt="Fill All Zones"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Fill All Zones</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="7">
+<li>
+<p>Now we can deal with moving parts around. To do so you can click and hold on a part or hold M on your keypad over the part to drag it around, while it is selected if you press R on your keyboard the part will rotate. You will notice that certain pads are connected to others with small lines, these lines are called a &ldquo;airwires&rdquo;, the collection off all the airwires is the &ldquo;ratsnest&rdquo;. Do your best to move/orientate that parts in such a way to untangle the ratsnest.</p>
+</li>
+<li>
+<p>Now we can connect these airwires with traces. Make sure the copper layer you are working on is selected, usually F.Cu. Hover over the Pad you want to draw a trace on and select X on your keyboard. You will now be able to move your mouse around and the trace will follow while staying anchored to the pad. If you click on the screen you can set more anchor points to fix the trace. Use the airwire to guide your trace to the corresponding pad, click on the desired pad to route the trace there.</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image7.png"><img src="media/image7.png" alt="Drawing A Trace"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Drawing A Trace</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol start="9">
+<li>
+<p>We need to change the size of the trace we ran previously. It is important the trace is properly sized as if they are not we might pop a trace. Usually traces which supply power are larger as there is more current passing though them. We can use a trace width calculator to make sure we select the correct size. As a general rule of thumb, 40 mils for power traces, 20 mils for signal traces.</p>
+</li>
+<li>
+<p>Once you have determined the size you want your trace, select the trace right click and you will see a menu where various parameters of the trace appear. Click on the &ldquo;Properties&hellip;&rdquo; button and the menu shown below should appear. Change the track width to your calculated value. Click OK and your trace is ready to go.</p>
+</li>
+</ol>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image8.png"><img src="media/image8.png" alt="Track/Trace Properties"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Track/Trace Properties</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>There are ways to set up pre specified trace widths in the Design Rules Editor Section.</p>
+<h2 id="vias">Vias</h2>
+<p>Vias are essentially a way to route a trace to different layers of your PCB with copper plated around a drilled hole. It is essentially a through-hole but is usually much smaller. Vias are extremely useful for routing traces, especially as your board gets populated with other traces requiring you to switch between layers to avoid these other traces while routing.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image9.png"><img src="media/image9.png" alt="Example of a Via"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Example of a Via</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>We can add vias to our PCB by first routing a trace using steps discussed above. When you reach the point of your trace where you want a via, left click and select &ldquo;Place Through Via&rdquo;.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image10.png"><img src="media/image10.png" alt="Placing a Via"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Placing a Via</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>A via should appear on your PCB, you will now be routing a trace on the opposite side of your PCB, you can confirm this as the trace should have turned a different color. You can edit the via to match the design rules by right clicking the via and selecting &ldquo;Properties&hellip;&rdquo;. Use this window to configure the via, you have now successfully used a via.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="media/image11.png"><img src="media/image11.png" alt="Via Properties"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Via Properties</div></td></tr>
 </tbody>
 </table>
 
@@ -363,7 +494,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/transferring-kicad-schematics-to-pcb/assigning-footprints/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-pcb-design/kicad-pcb-design-tutorial/index.md"> Edit this Page</a></p>
         
         
         

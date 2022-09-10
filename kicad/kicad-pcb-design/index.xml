@@ -7,48 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>DFM -- Design for Manufacturability</title>
-      <link>https://embedded-systems-design.github.io/kicad-design-for-manufacturability/</link>
+      <title>PCB Design Tutorial</title>
+      <link>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/kicad-design-for-manufacturability/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>PCB DRC (KiCad)</title>
-      <link>https://embedded-systems-design.github.io/kicad-design-rules-check/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad-design-rules-check/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Generating Artwork</title>
-      <link>https://embedded-systems-design.github.io/generating-kicad-artwork/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/generating-kicad-artwork/</guid>
-      <description>Coming Soon&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/printing-pcb-layouts-in-kicad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Export Solder Mask</title>
-      <link>https://embedded-systems-design.github.io/kicad-export-solder-mask/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad-export-solder-mask/</guid>
-      <description>Coming Soon&amp;hellip;</description>
+      <guid>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</guid>
+      <description>Introduction This tutorial will go over how to get started with your PCB design, as well as go over the things you will use while designing your PCB.</description>
     </item>
     
   </channel>

@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>Generating a Netlist</title>
+      <link>https://embedded-systems-design.github.io/kicad-generating-netlists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-generating-netlists/</guid>
+      <description>Introduction A Netlist is essentially a file containing information regarding connections between the components on a schematic.</description>
+    </item>
+    
+    <item>
       <title>Common Pin Types and their Meanings</title>
       <link>https://embedded-systems-design.github.io/kicad-common-pin-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
