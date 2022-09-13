@@ -278,6 +278,15 @@ Figure 1 Sometimes you need to globally change trace widths in your board after 
     </item>
     
     <item>
+      <title>How to create a footprint for PSoC® 4100S Plus</title>
+      <link>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</guid>
+      <description>This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.</description>
+    </item>
+    
+    <item>
       <title>How to Create a Silkscreen in Cadence and Manually Add Text to it</title>
       <link>https://embedded-systems-design.github.io/adding-silkscreen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
