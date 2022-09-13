@@ -253,8 +253,7 @@
         </ul>
         
         <div class="content mb-5">
-          <h2 id="schematic-elements-to-look-for">Schematic Elements to look for</h2>
-<ul>
+          <ul>
 <li>
 <p>Correct voltages are included and used wherever appropriate.</p>
 </li>
@@ -289,10 +288,40 @@
 <p>Passive elements (capacitors, inductors, resistors) all have a value assigned to them.</p>
 </li>
 <li>
-<p>Included library symbols all have a correct manufacturer’s part number added to the “value” field.  If a part * number is not available, descriptive text is used (e.g., for an LED, indicate color)</p>
+<p>Included library symbols all have a correct manufacturer’s part number (e.g., LM7805) or component value (e.g., 0.1 uF, 100k) added to the “value” field.  If a part * number is not available, descriptive text is used (e.g., for an LED, indicate color)</p>
 </li>
 <li>
-<p>All reference ids have been generated.</p>
+<p>All BJTs have base resistors and are wired correctly</p>
+</li>
+<li>
+<p>All components have a reference designator (e.g., R1, C2, U5)</p>
+</li>
+<li>
+<p>All fuses have current ratings</p>
+</li>
+<li>
+<p>All ICs have bypass capacitors <strong>in parallel, not series</strong> with each power pin.</p>
+</li>
+<li>
+<p>All voltage regulators have a ground pin connected to ground, along with both input and output bypass capacitors as specified in the voltage regulator datasheet.</p>
+</li>
+<li>
+<p>Proper power and ground symbols are used rather than net labels/names</p>
+</li>
+<li>
+<p>Components are not shorted out (e.g., a wire between both pins of a capacitor)</p>
+</li>
+<li>
+<p>Fuses are not in series with motors</p>
+</li>
+<li>
+<p>The circuit has a power input connector (even if the power supply is not your responsibility)</p>
+</li>
+<li>
+<p>Inductive actuators (e.g., motors, solenoids) have a back EMF flyback diode for each coil</p>
+</li>
+<li>
+<p>You have read the datasheet for your microcontroller and understand the specifics of its power requirements</p>
 </li>
 </ul>
 <p><em><strong>This is only a partial list.  It is your responsibility to bring your schematic to the teaching team for additional review.  Not all teaching team members will give the same advice; we recommend obtaining multiple points of view.</strong></em></p>
