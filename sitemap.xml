@@ -16,8 +16,6 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad-symbol-creation/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-footprint-wizard/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/assign-kicad-footprints/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</loc>
@@ -505,6 +503,10 @@
     <loc>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad-footprint-editor/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad-footprint-wizard/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</loc>
   </url><url>

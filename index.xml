@@ -62,15 +62,6 @@
     </item>
     
     <item>
-      <title>Using the KiCad Footprint Wizard</title>
-      <link>https://embedded-systems-design.github.io/kicad-footprint-wizard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad-footprint-wizard/</guid>
-      <description>Take a look at the datasheet for the TO-220 package the regulator comes in.</description>
-    </item>
-    
-    <item>
       <title>Assigning Footprints</title>
       <link>https://embedded-systems-design.github.io/assign-kicad-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1229,6 +1220,24 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       
       <guid>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</guid>
       <description>GitHub is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same &amp;ldquo;repository&amp;rdquo; (or 304/314 project folder in layman&amp;rsquo;s terms).</description>
+    </item>
+    
+    <item>
+      <title>Using the KiCad Footprint Editor</title>
+      <link>https://embedded-systems-design.github.io/kicad-footprint-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-footprint-editor/</guid>
+      <description>How to manually create a footprint using the KiCad footprint editor</description>
+    </item>
+    
+    <item>
+      <title>Using the KiCad Footprint Wizard</title>
+      <link>https://embedded-systems-design.github.io/kicad-footprint-wizard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-footprint-wizard/</guid>
+      <description>How to create a footprint using the footprint wizart for standard footprints and shapes</description>
     </item>
     
     <item>

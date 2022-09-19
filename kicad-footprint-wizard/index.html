@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.102.3" />
+  <meta name="generator" content="Hugo 0.103.1" />
 
   <!-- plugins -->
   
@@ -248,7 +248,7 @@
         <h2>Using the KiCad Footprint Wizard</h2>
         
         <div class="mb-1 post-meta">
-          <span>By Dan Aukes</span>
+          <span>By Dan Aukes &amp; Tyler Hulson</span>
           
           
           
@@ -258,14 +258,112 @@
         </ul>
         
         <div class="content mb-5">
-          <ol>
+          <p>For demonstration we will be using the KiCad Footprint wizard to generate a footprint for LM317BT.</p>
+<ol>
 <li>
-<p>Take a look at the datasheet for the TO-220 package the regulator comes in.  variable &ldquo;b&rdquo; indicates pin width, with a minimum width of .61mm and a maximum width of .88mm.  The maximum thickness of the pin is .70mm Let&rsquo;s make sure our hole is big enough.</p>
+<p>Open KiCad and Footprint Editor.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="hypotenuse.png"><img src="hypotenuse.png" alt="dimensions"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image1.png"><img src="image1.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Open the Footprint Wizard.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image2.png"><img src="image2.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the S-DIP Single/Dual Package Footprint.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image3.png"><img src="image3.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Adjust the <em>pad count</em> and <em>row count</em> parameter to match the number of pins on the LM317BT symbol.</p>
+<p><em><strong>Pad count</strong>, refers to the number of pins in each column. <strong>Row count</strong>, refers to the number of rows of pins.</em></p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image4.png"><img src="image4.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Now take a look at the datasheet for the TO-220 package the LM317BT regulator comes in. Find the Mechanical Case Outline that includes the package dimensions.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image5.png"><img src="image5.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Variable &ldquo;G&rdquo; indicates pin pitch, with a minimum of 2.42mm and a maximum of 2.66mm. We will take the average to ensure the pin pitch is correct. The maximum pin pitch will be 2.54mm.</p>
+</li>
+<li>
+<p>Adjust the pin pitch parameter in the footprint wizard to match step 6.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image6.png"><img src="image6.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Variable &ldquo;D&rdquo; indicates pin width, with a minimum of 0.64mm and a maximum of 0.88mm. We will take the average to ensure the pin width is correct. The maximum pin thickness will be 0.76mm.</p>
+</li>
+<li>
+<p>If the maximum width $w$ is 0.88mm and the maximum thickness t is 0.76mm, then the maximum possible hypotenuse $h$ is $h=\sqrt{(w^2 + t^2)}$, or 1.16mm. Setting the drill size to that maximum possible value will ensure <em><strong>all</strong></em> parts fit, though there may be some slop in standard parts. This ensures the tolerances on a given part fit the footprint.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image7.png"><img src="image7.png" alt="dimensions"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">dimensions</div></td></tr>
@@ -273,145 +371,14 @@
 </table>
 
 </p>
-<p><em>if the maximum width $w$ is .88mm and the maximum thickness $t$ is .70mm, then the maximum possible hypotenuse $h$ is $h=\sqrt{w^2+t^2}$, or 1.12mm.  Setting the drill size to that maximum possible value will ensure <strong>all</strong> parts fit, though there may be some slop in standard parts.</em></p>
 </li>
 <li>
-<p>Enter the rest of the values that matter.  In the case of this package, we care about the pin pitch (2.4mm) and the pad width and height.</p>
-<p><em>Pads that are too large will get too close to their neighbor and risk a short, especially during soldering.  Pads that are too small may not be manufacturable with some processes, and are more likely to be stripped off during soldering.  Try to split the difference between these two extremes.  The DFM check (upcoming tutorial) will also help you understand your limits.</em></p>
-</li>
-<li>
-<p>Create a new footprint library for your <em>project</em>.</p>
-<p><em>It&rsquo;s probably a good idea at this early stage in your PCB design career to associate your footprint library with your project.  You may make different decisions later.</em></p>
-</li>
-<li>
-<p>Save the footprint in the new footprint library</p>
-</li>
-</ol>
+<p>Adjust the drill size to the calculated value of 1.16mm.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_18_27.png"><img src="virtualbox_windows-10.2_29_07_2022_22_18_27.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_19_08.png"><img src="virtualbox_windows-10.2_29_07_2022_22_19_08.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_07.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_07.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_15.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_15.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_45.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_45.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_23_59.png"><img src="virtualbox_windows-10.2_29_07_2022_22_23_59.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_26_01.png"><img src="virtualbox_windows-10.2_29_07_2022_22_26_01.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_29_19.png"><img src="virtualbox_windows-10.2_29_07_2022_22_29_19.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_47_00.png"><img src="virtualbox_windows-10.2_29_07_2022_22_47_00.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_47_36.png"><img src="virtualbox_windows-10.2_29_07_2022_22_47_36.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="virtualbox_windows-10.2_29_07_2022_22_48_06.png"><img src="virtualbox_windows-10.2_29_07_2022_22_48_06.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image8.png"><img src="image8.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Figure</div></td></tr>
@@ -419,6 +386,163 @@
 </table>
 
 </p>
+</li>
+<li>
+<p>Adjust the pad width and length to desired values without creating overlapping pads.</p>
+<p><em>Overlapping and small pads are bad practice and can lead to a short or the pads being stripped off of the PCB.* The DFM check (upcoming tutorial) will also help you understand your limits.</em></p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image9.png"><img src="image9.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Export the footprint to the editor.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image10.png"><img src="image10.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Create a new footprint library for your project.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image11.png"><img src="image11.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image12.png"><img src="image12.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image13.png"><img src="image13.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<p><em><strong>**</strong> It&rsquo;s probably a good idea at this early stage in your PCB design career to associate your footprint library with your project. You may make different decisions later.</em></p>
+<ol start="14">
+<li>
+<p>Select the library folder you generated.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image14.png"><img src="image14.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Save the footprint in the new footprint library.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image15.png"><img src="image15.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>You can now go double click on your symbol and add the footprint!</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image16.png"><img src="image16.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image17.png"><img src="image17.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image18.png"><img src="image18.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>To show it working I imported my schematic into the PCB editor.*</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image19.png"><img src="image19.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
 
         </div>
 
