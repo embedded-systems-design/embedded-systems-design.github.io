@@ -253,13 +253,13 @@
         </ul>
         
         <div class="content mb-5">
-          <ul>
-<li>
-<p>Correct voltages are included and used wherever appropriate.</p>
-</li>
-<li>
-<p>The Common / Earth ground symbol is used wherever appropriate.  See <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/">An Introduction to Ground: Earth Ground, Common Ground, Analog Ground, and Digital Ground</a></p>
-</li>
+          <h2 id="power">Power</h2>
+<ul>
+<li>Correct voltages are included and used wherever appropriate.</li>
+<li>The Common / Earth ground symbol is used wherever appropriate.  See <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/">An Introduction to Ground: Earth Ground, Common Ground, Analog Ground, and Digital Ground</a></li>
+</ul>
+<h2 id="symbols">Symbols</h2>
+<ul>
 <li>
 <p>All pins have a connection, or disconnected pins use a “no-connect” symbol.</p>
 </li>
@@ -267,62 +267,46 @@
 <p>Pins are correctly numbered and labeled according to the datasheet</p>
 </li>
 <li>
-<p>Wires are correctly applied.</p>
+<p>The pins for all custom symbols use the correct pin type, not just “passive”.</p>
+<p><em>KiCad</em>: <a href="/kicad-common-pin-types/">see Common Pin Types and their Meanings</a></p>
+</li>
+</ul>
+<h2 id="schematic">Schematic</h2>
+<ul>
+<li>Wires are correctly applied.
 <ul>
 <li>There are no dangling wires.</li>
 <li>The schematic is neat and does not use wires excessively</li>
 </ul>
 </li>
-<li>
-<p>Labels and ports are used appropriately.</p>
+<li>Labels and ports are used appropriately.
 <ul>
 <li>Net labels should be used within a schematic when wires start to look like “spaghetti”.</li>
 <li>Global labels (or ports) should be used between schematics or when indicating interfaces to “sub” schematics</li>
+<li>Proper power and ground symbols are used rather than net labels/names</li>
 </ul>
 </li>
-<li>
-<p>The pins for all custom symbols use the correct pin type, not just “passive”.</p>
-<p><em>KiCad</em>: <a href="/kicad-common-pin-types/">see Common Pin Types and their Meanings</a></p>
-</li>
-<li>
-<p>Passive elements (capacitors, inductors, resistors) all have a value assigned to them.</p>
-</li>
-<li>
-<p>Included library symbols all have a correct manufacturer’s part number (e.g., LM7805) or component value (e.g., 0.1 uF, 100k) added to the “value” field.  If a part * number is not available, descriptive text is used (e.g., for an LED, indicate color)</p>
-</li>
-<li>
-<p>All BJTs have base resistors and are wired correctly</p>
-</li>
-<li>
-<p>All components have a reference designator (e.g., R1, C2, U5)</p>
-</li>
-<li>
-<p>All fuses have current ratings</p>
-</li>
-<li>
-<p>All ICs have bypass capacitors <strong>in parallel, not series</strong> with each power pin.</p>
-</li>
-<li>
-<p>All voltage regulators have a ground pin connected to ground, along with both input and output bypass capacitors as specified in the voltage regulator datasheet.</p>
-</li>
-<li>
-<p>Proper power and ground symbols are used rather than net labels/names</p>
-</li>
-<li>
-<p>Components are not shorted out (e.g., a wire between both pins of a capacitor)</p>
-</li>
-<li>
-<p>Fuses are not in series with motors</p>
-</li>
-<li>
-<p>The circuit has a power input connector (even if the power supply is not your responsibility)</p>
-</li>
-<li>
-<p>Inductive actuators (e.g., motors, solenoids) have a back EMF flyback diode for each coil</p>
-</li>
-<li>
-<p>You have read the datasheet for your microcontroller and understand the specifics of its power requirements</p>
-</li>
+</ul>
+<h2 id="labeling">Labeling</h2>
+<ul>
+<li>ICs all have a correct manufacturer’s part number (e.g., LM7805) or component value (e.g., 0.1 uF, 100k) added to the “value” field.  If a part * number is not available, descriptive text is used (e.g., for an LED, indicate color)</li>
+<li>Passive elements (capacitors, inductors, resistors) all have a value assigned to them.</li>
+<li>All components have a reference designator (e.g., R1, C2, U5)</li>
+<li>All fuses have current ratings</li>
+</ul>
+<h2 id="required-components">Required Components</h2>
+<ul>
+<li>All ICs have bypass capacitors <strong>in parallel, not series</strong> with each power pin.</li>
+<li>The circuit has a power input connector (even if the power supply is not your responsibility)</li>
+<li>Inductive actuators (e.g., motors, solenoids) have a back EMF flyback diode for each coil</li>
+</ul>
+<h2 id="misc">Misc</h2>
+<ul>
+<li>All BJTs have resistors on the base and are wired correctly</li>
+<li>All voltage regulators have a ground pin connected to ground, along with both input and output bypass capacitors as specified in the voltage regulator datasheet.</li>
+<li>Components are not shorted out (e.g., a wire between both pins of a capacitor)</li>
+<li>Fuses are not in series with motors</li>
+<li>You have read the datasheet for your microcontroller and understand the specifics of its power requirements</li>
 </ul>
 <p><em><strong>This is only a partial list.  It is your responsibility to bring your schematic to the teaching team for additional review.  Not all teaching team members will give the same advice; we recommend obtaining multiple points of view.</strong></em></p>
 
