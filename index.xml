@@ -136,24 +136,6 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     
     <item>
       <title></title>
-      <link>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</guid>
-      <description>Exporting Gerber files from KiCad PCB Editor By Xianyao (Eric) Liu Introduction What is a Gerber file?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://embedded-systems-design.github.io/kicad-pcb-faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/kicad-pcb-faq/</guid>
-      <description>Why the width of the power traces needs to be larger than the signal traces?</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://embedded-systems-design.github.io/printed-circuit-board-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -578,6 +560,15 @@ In Windows, open the Design Entry CIS program.</description>
     </item>
     
     <item>
+      <title>Exporting Gerber files from KiCad PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</guid>
+      <description>Introduction What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
+    </item>
+    
+    <item>
       <title>Exporting Solder Mask Layers from Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -721,6 +712,15 @@ Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
       
       <guid>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</guid>
       <description>Introduction When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1).</description>
+    </item>
+    
+    <item>
+      <title>KiCad PCB FAQ</title>
+      <link>https://embedded-systems-design.github.io/kicad-pcb-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/kicad-pcb-faq/</guid>
+      <description>Why the width of the power traces needs to be larger than the signal traces?</description>
     </item>
     
     <item>

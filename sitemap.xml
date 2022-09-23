@@ -50,10 +50,6 @@
     <loc>https://embedded-systems-design.github.io/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-pcb-faq/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/printed-circuit-board-process/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
@@ -220,6 +216,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/filter/</loc>
@@ -269,6 +267,8 @@
     <loc>https://embedded-systems-design.github.io/tags/kicad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/kicad-pcb-faq/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/level-shifters/</loc>
   </url><url>
