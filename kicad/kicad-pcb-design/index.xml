@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>PCB Design Rules Setup in KiCAD</title>
+      <link>https://embedded-systems-design.github.io/pcb-design-rules-setup-in-kicad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pcb-design-rules-setup-in-kicad/</guid>
+      <description>Introduction Before reading this, review Peralta Lab PCB Mill Specs. We will pull information from there to set up PCB design rules in KiCAD.</description>
+    </item>
+    
+    <item>
       <title>PCB Design Tutorial</title>
       <link>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
