@@ -171,6 +171,15 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
+      <title>Adding Text to your PCB in KiCad</title>
+      <link>https://embedded-systems-design.github.io/adding-text-to-pcb-in-kicad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/adding-text-to-pcb-in-kicad/</guid>
+      <description>Background Why add text to my PCB? It is important to label your PCB.</description>
+    </item>
+    
+    <item>
       <title>All About Escape Rooms</title>
       <link>https://embedded-systems-design.github.io/all-about-escape-rooms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1029,6 +1038,15 @@ C files, top design files, etc.</description>
       
       <guid>https://embedded-systems-design.github.io/routing-traces/</guid>
       <description>See this video</description>
+    </item>
+    
+    <item>
+      <title>Rubout Area for your PCB in KiCad</title>
+      <link>https://embedded-systems-design.github.io/adding-a-rubout-area-in-kicad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/adding-a-rubout-area-in-kicad/</guid>
+      <description>Background What is a Rubout area? Some electrical components will contain an antenna for wireless communication.</description>
     </item>
     
     <item>

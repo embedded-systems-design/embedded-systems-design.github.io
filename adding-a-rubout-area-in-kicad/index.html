@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Rubout Area for your PCB in KiCad | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.104.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/">KiCad Design Workflow</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/adding-a-rubout-area-in-kicad/">Rubout Area for your PCB in KiCad</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>Rubout Area for your PCB in KiCad</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By Christian Torres</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="background">Background</h2>
+<h3 id="what-is-a-rubout-area">What is a Rubout area?</h3>
+<p>Some electrical components will contain an antenna for wireless communication. These antennas can be affected by electromagnetic interference that are near the antenna. A &ldquo;Rubout area&rdquo; (also known as a &ldquo;Keepout area&rdquo;) prevents traces and components from being placed in a specific location. These can protect the antenna from any interference.</p>
+<p>A rubout area can be used for other electrical components but in this case, we will use to it prevent interference of the BLE module. In this case, the antenna (see step 1 image) will have a rubout area to avoid any interference with signals.</p>
+<h3 id="further-information">Further Information</h3>
+<p>On the data sheet for the <a href="https://www.infineon.com/dgdl/Infineon-Bluetooth_Low_Energy_Pioneer_Kit_User's_Guide-UserManual-v01_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ef1d8040358&amp;utm_source=cypress&amp;utm_medium=referral&amp;utm_campaign=202110_globe_en_all_integration-files">CY8CKIT-042-BLE-A Bluetooth® Low Energy (BLE) Pioneer Kit Guide</a>, section 5.2.4 gives more detail in regards to the antenna on the module. Infineon also has provided an <a href="https://www.infineon.com/dgdl/Infineon-AN91445_Antenna_Design_and_RF_Layout_Guidelines-ApplicationNotes-v09_00-EN.pdf?fileId=8ac78c8c7cdc391c017d073e054f6227&amp;utm_source=cypress&amp;utm_medium=referral&amp;utm_campaign=202110_globe_en_all_integration-application_note">Antenna Design Guide</a> for further details on Antenna &amp; RF Design. Section 12 gives the design guidelines for antennas (see below).</p>
+<p>
+<a href="image1.png"><img src="image1.png" alt=""  /></a>
+
+</p>
+<h2 id="steps">Steps</h2>
+<p>For this tutorial we will be adding a rubout area for the CY8CKIT-143A PSoC® 4 BLE 256KB Module to prevent interference to the BLE antenna.</p>
+<p>This tutorial is performed with the ground planes already placed. If you have not placed your ground planes yet, please follow this <a href="https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/">tutorial.</a> You can add a rubout area before the ground planes, however it will be easier to place and see if you already have the ground planes made.</p>
+<ol>
+<li>Locate the antenna of your component.</li>
+</ol>
+<p>
+<a href="image2.png"><img src="image2.png" alt=""  /></a>
+
+</p>
+<ol start="2">
+<li>Locate the antenna on your PCB footprint design. Remember to follow the orientation that you made for the component.</li>
+</ol>
+<p>It is important to know where to place the antenna is to be able place the rubout area in the correct location.</p>
+<p>
+<a href="image3.png"><img src="image3.png" alt=""  /></a>
+
+</p>
+<ol start="3">
+<li>Once your component are placed and traces are routed, place your component as close to a corner or edge as possible. This may vary based on your project design. By utilizing an edge or corner, you will limit the antenna from being near other components and maximize space. Should you place the antenna in the middle of your PCB, you will have a larger rubout area that will take up more space on your board and limit your placement of components.</li>
+</ol>
+<p><em>Please note: The PCB design in the image below is an example made for the purpose of this demonstration. Do not copy it. Your PCB design should either be your individual subsystem or team design.</em></p>
+<p>
+<a href="image4.png"><img src="image4.png" alt=""  /></a>
+
+</p>
+<ol start="4">
+<li>Find and select &ldquo;Add Rule Area&rdquo; This can be done through the Place tab at the top of the KiCad program, or the sidebar shortcut.</li>
+</ol>
+<p>
+<a href="image5.png"><img src="image5.png" alt=""  /></a>
+
+</p>
+<ol start="5">
+<li>
+<p>Select the point where you would like the rubout area to be. In this case we will select at the corner of the area. Then you will open the Rule Area Properties.</p>
+<p>Check all the boxes under basic rules. Uncheck all boxes below Area Name. You do not need to name the area, but you can if you would like. Be sure to select both layers.</p>
+</li>
+</ol>
+<p>
+<a href="image6.png"><img src="image6.png" alt=""  /></a>
+
+</p>
+<ol start="6">
+<li>Enclose the area to which the rubout area will be. In this case we will enclose the area where the antenna will lie.</li>
+</ol>
+<p>
+<a href="image7.png"><img src="image7.png" alt=""  /></a>
+
+</p>
+<ol start="7">
+<li>Select the area that you outlined to be a rubout area.</li>
+</ol>
+<p>
+<a href="image8.png"><img src="image8.png" alt=""  /></a>
+
+</p>
+<ol start="8">
+<li>Now you will fill in the rub out area. This can be done by going to &ldquo;edit&rdquo; at the top of the KiCad program. Then you will select &ldquo;Fill All Zones&rdquo; You may also use the keyboard shortcut by pressing the letter &ldquo;B&rdquo; on your keyboard.</li>
+</ol>
+<p>
+<a href="image9.png"><img src="image9.png" alt=""  /></a>
+
+</p>
+<ol start="9">
+<li>You should now see an empty area which you outlined. Check to make sure this will apply to both the top and bottom planes of your schematic.</li>
+</ol>
+<p>
+<a href="image10.png"><img src="image10.png" alt=""  /></a>
+
+</p>
+<ol start="10">
+<li>
+<p>Congratulations you have now created a rubout area for your PCB. You should also now notice you are not able to run any trace or place any components inside that area. You are now free continue with the rest of your PCB design.</p>
+<p>You should now be able to see the rubout area in your PCB design. You can also verify it in the 3D model viewer (see image below). To view this select &ldquo;View&rdquo; on the top row then select &ldquo;3D Viewer&rdquo;.</p>
+<p>You are also able to apply the rubout area before you place your ground planes. In this case, you will place ground plane last instead of first. See this <a href="https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/">tutorial</a> for setting up your ground planes if you need help.</p>
+</li>
+</ol>
+<p>
+<a href="image11.png"><img src="image11.png" alt=""  /></a>
+
+</p>
+<h2 id="things-to-check-in-case-of-mistakes">Things to check in case of mistakes:</h2>
+<ol>
+<li>
+<p>Make sure your rubout area applies to both the top and ground plane.</p>
+</li>
+<li>
+<p>Make sure you checked all the boxes in the basic rules section.</p>
+</li>
+<li>
+<p>Make sure the orientation of your antenna is near or close to an edge or corner as possible.</p>
+</li>
+<li>
+<p>Make sure that your rubout area does not affect any necessary traces or pads. The antenna is close to the module headers, be sure that you did not accidently affect a pin.</p>
+</li>
+<li>
+<p>Make sure that your rubout area does cover the antenna location.</p>
+</li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/kicad/kicad-pcb-design/adding-a-rubout-area-in-kicad/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
