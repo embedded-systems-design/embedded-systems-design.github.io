@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Bluetooth Tutorial 2 | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Bluetooth Tutorial 2 - Find Me | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -239,7 +239,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/microcontrollers/psoc/">PSoC</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/bluetooth-tutorial-2/">Bluetooth Tutorial 2</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/bluetooth-tutorial-2/">Bluetooth Tutorial 2 - Find Me</a></li>
 
 </ol>
 </nav>
@@ -250,7 +250,7 @@
 
 
 
-        <h2>Bluetooth Tutorial 2</h2>
+        <h2>Bluetooth Tutorial 2 - Find Me</h2>
         
         <div class="mb-1 post-meta">
           <span>By Dan Aukes</span>
@@ -272,7 +272,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial023.png"><img src="tutorial023.png" alt="Open a Code Example"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial001.png"><img src="tutorial001.png" alt="Open a Code Example"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Open a Code Example</div></td></tr>
@@ -282,15 +282,15 @@
 </p>
 </li>
 <li>
-<p>Search for &ldquo;BLE&rdquo;. Select &ldquo;BLE_Temperature_measurement&rdquo;</p>
+<p>Search for &ldquo;BLE&rdquo; in the list that opens</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial024.png"><img src="tutorial024.png" alt="Search for &amp;ldquo;BLE&amp;rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial003.png"><img src="tutorial003.png" alt="Search for BLE"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Search for &amp;ldquo;BLE&amp;rdquo;</div></td></tr>
+<tr><td><div style="text-align:center;">Search for BLE</div></td></tr>
 </tbody>
 </table>
 
@@ -298,9 +298,21 @@
 </li>
 <li>
 <p>Click the World Icon 
-<a href="../bluetooth-tutorial-1/tutorial002.png"><img src="../bluetooth-tutorial-1/tutorial002.png" alt=""  /></a>
+<a href="tutorial002.png"><img src="tutorial002.png" alt=""  /></a>
 
  to download the code example</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial004.png"><img src="tutorial004.png" alt="Select &amp;ldquo;BLE_FindMe&amp;rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select &amp;ldquo;BLE_FindMe&amp;rdquo;</div></td></tr>
+</tbody>
+</table>
+
+</p>
 </li>
 <li>
 <p>Create a new project using the defaults</p>
@@ -308,7 +320,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial025.png"><img src="tutorial025.png" alt="Create a new project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial005.png"><img src="tutorial005.png" alt="Create a new project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Create a new project</div></td></tr>
@@ -323,7 +335,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial026.png"><img src="tutorial026.png" alt="A pdf tutorial"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial006.png"><img src="tutorial006.png" alt="A pdf tutorial"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">A pdf tutorial</div></td></tr>
@@ -334,21 +346,26 @@
 </li>
 <li>
 <p>In the project workspace, right click on the project</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial007.png"><img src="tutorial007.png" alt="Open the Device Selector"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Open the Device Selector</div></td></tr>
+</tbody>
+</table>
+
+</p>
 </li>
-</ol>
-<!--
-(tutorial027.png)
--->
-<pre><code>![Open the Device Selector](tutorial028.png)
-</code></pre>
-<ol>
 <li>
 <p>Select the BLE module plugged into your Pioneer Board</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial029.png"><img src="tutorial029.png" alt="Select your BLE module"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial008.png"><img src="tutorial008.png" alt="Select your BLE module"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Select your BLE module</div></td></tr>
@@ -357,16 +374,38 @@
 
 </p>
 </li>
+</ol>
+<!--
+![Image](tutorial009.png)
+-->
+<ol>
 <li>
 <p>The project will update, mapped to your selected microcontroller</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial010.png"><img src="tutorial010.png" alt="Updated Project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Updated Project</div></td></tr>
+</tbody>
+</table>
+
+</p>
 </li>
+</ol>
+<!--
+![Image](tutorial011.png)
+-->
+<ol>
 <li>
 <p>Download your project to the PSoC</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial030.png"><img src="tutorial030.png" alt="Download your project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial011-1.png"><img src="tutorial011-1.png" alt="Download your project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Download your project</div></td></tr>
@@ -376,9 +415,6 @@
 </p>
 </li>
 </ol>
-<!--
-![Image](tutorial031.png)
--->
 <h2 id="cysmart-pc-app">CySmart PC App</h2>
 <ol>
 <li>
@@ -387,7 +423,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial032.png"><img src="tutorial032.png" alt="Open CySmart"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial012.png"><img src="tutorial012.png" alt="Open CySmart"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Open CySmart</div></td></tr>
@@ -402,7 +438,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="../bluetooth-tutorial-1/IMG_20221022_233229924.jpg"><img src="../bluetooth-tutorial-1/IMG_20221022_233229924.jpg" alt="BLE Dongle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="IMG_20221022_233229924.jpg"><img src="IMG_20221022_233229924.jpg" alt="BLE Dongle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">BLE Dongle</div></td></tr>
@@ -410,27 +446,67 @@
 </table>
 
 </p>
-</li>
-</ol>
-<!--
-![Image](tutorial033.png)
--->
-<pre><code>![Select the CySmart BLE Dongle](tutorial034.png)
-
-![Press the Reset Button](../bluetooth-tutorial-1/IMG_20221022_233434206.jpg)
-
-![The LED will rapidly flash blue](../bluetooth-tutorial-1/IMG_20221022_233559729.jpg)
-
-![The LED will remain on green](../bluetooth-tutorial-1/IMG_20221022_233238268.jpg)
-</code></pre>
-<ol>
-<li>
-<p>Select Start Scan.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial035.png"><img src="tutorial035.png" alt="Select Start Scan"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial013.png"><img src="tutorial013.png" alt="Select the CySmart BLE Dongle"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select the CySmart BLE Dongle</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="IMG_20221022_233434206.jpg"><img src="IMG_20221022_233434206.jpg" alt="Press the Reset Button"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Press the Reset Button</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="IMG_20221022_233559729.jpg"><img src="IMG_20221022_233559729.jpg" alt="The LED will rapidly flash blue"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">The LED will rapidly flash blue</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="IMG_20221022_233238268.jpg"><img src="IMG_20221022_233238268.jpg" alt="The LED will remain on green"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">The LED will remain on green</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<!--
+![](IMG_20221022_233422572.jpg)
+-->
+<ol>
+<li>
+<p>Select &ldquo;Start Scan&rdquo;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial014.png"><img src="tutorial014.png" alt="Select Start Scan"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Select Start Scan</div></td></tr>
@@ -440,12 +516,24 @@
 </p>
 </li>
 <li>
-<p>Select the closest &ldquo;Thermometer&rdquo; Item and then click &ldquo;Connect&rdquo;</p>
+<p>Select the closest &ldquo;Find Me Target&rdquo; Item and then click &ldquo;Connect&rdquo;</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial036.png"><img src="tutorial036.png" alt="Connect"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial015.png"><img src="tutorial015.png" alt="Select the Find Me Target"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select the Find Me Target</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial016.png"><img src="tutorial016.png" alt="Connect"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Connect</div></td></tr>
@@ -460,7 +548,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial037.png"><img src="tutorial037.png" alt="Discover all Attributes"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial017.png"><img src="tutorial017.png" alt="Discover all Attributes"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Discover all Attributes</div></td></tr>
@@ -470,63 +558,75 @@
 </p>
 </li>
 <li>
-<p>Select &ldquo;Pair&rdquo; to pair with the device.  A dialog box will pop up notifying you if it is successful.</p>
+<p>Select &ldquo;Alert Level&rdquo;</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial038.png"><img src="tutorial038.png" alt="Pair with the Device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial018.png"><img src="tutorial018.png" alt="Select Alert Level"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Pair with the Device</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-</ol>
-<!--
- 
-![Image](tutorial039.png)
-
-![Image](tutorial040.png)
-
-![Image](tutorial041.png)
-
-
-![Image](tutorial042.png)
-
-![Image](tutorial043.png)
-
--->
-<pre><code>![Pairing Successful](tutorial044.png)
-</code></pre>
-<ol>
-<li>
-<p>Select &ldquo;Enable all Notifications&rdquo; to receive updates from the BLE device.  You may need to resize the attributes window to see the icon.</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="tutorial045.png"><img src="tutorial045.png" alt="Enable all Notifications"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Enable all Notifications</div></td></tr>
+<tr><td><div style="text-align:center;">Select Alert Level</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Observe the values being received in the status window at the bottom.  The address of some of these messages should correspond with the &ldquo;Temperature Measurement&rdquo; address listed in the Attributes list above.</p>
+<p>Enter 1 into the text box on the right side of the window.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="tutorial046.png"><img src="tutorial046.png" alt="Receiving Messages"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="tutorial019.png"><img src="tutorial019.png" alt="Enter 1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Receiving Messages</div></td></tr>
+<tr><td><div style="text-align:center;">Enter 1</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select &ldquo;Write Value Without Response&rdquo;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial020.png"><img src="tutorial020.png" alt="Select Write Value Without Response"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select Write Value Without Response</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Write values of 0, 1, and 2.  Observe the difference</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial021.png"><img src="tutorial021.png" alt="Change Values and rewrite"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Change Values and rewrite</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Disconnect from the BLE device</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="tutorial022.png"><img src="tutorial022.png" alt="Disconnect"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Disconnect</div></td></tr>
 </tbody>
 </table>
 
@@ -541,7 +641,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="../bluetooth-tutorial-1/android01.png"><img src="../bluetooth-tutorial-1/android01.png" alt="Select the LightBlue App"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="android01.png"><img src="android01.png" alt="Select the LightBlue App"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Select the LightBlue App</div></td></tr>
@@ -553,7 +653,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="../bluetooth-tutorial-1/IMG_20221022_233434206.jpg"><img src="../bluetooth-tutorial-1/IMG_20221022_233434206.jpg" alt="Press the Reset Button"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="IMG_20221022_233434206.jpg"><img src="IMG_20221022_233434206.jpg" alt="Press the Reset Button"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Press the Reset Button</div></td></tr>
@@ -565,7 +665,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="../bluetooth-tutorial-1/IMG_20221022_233559729.jpg"><img src="../bluetooth-tutorial-1/IMG_20221022_233559729.jpg" alt="The LED will rapidly flash blue"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="IMG_20221022_233559729.jpg"><img src="IMG_20221022_233559729.jpg" alt="The LED will rapidly flash blue"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">The LED will rapidly flash blue</div></td></tr>
@@ -577,7 +677,7 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="../bluetooth-tutorial-1/IMG_20221022_233238268.jpg"><img src="../bluetooth-tutorial-1/IMG_20221022_233238268.jpg" alt="The LED will remain on green"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="IMG_20221022_233238268.jpg"><img src="IMG_20221022_233238268.jpg" alt="The LED will remain on green"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">The LED will remain on green</div></td></tr>
@@ -585,72 +685,14 @@
 </table>
 
 </p>
-</li>
-<li>
-<p>Select the &ldquo;Thermometer&rdquo; device with the strongest signal.  That is most likely the closest device.  The device screen will open.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="android001.png"><img src="android001.png" alt="Select the Thermometer"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="android02.png"><img src="android02.png" alt="Select the Filter"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Select the Thermometer</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>A notification dialog should pop up asking if you would like to pair with the device.  Select &ldquo;pair and connect&rdquo;</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="android002.png"><img src="android002.png" alt="Select Pair and Connect"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select Pair and Connect</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Confirm to Pair the Device</p>
-</li>
-</ol>
-<!--
-![Confirm](android003.png)
--->
-<pre><code>![Confirm](android004.png)
-</code></pre>
-<ol>
-<li>
-<p>Select the &ldquo;Temperature Measurement&rdquo; Item</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="android005.png"><img src="android005.png" alt="Select Temperature Measurement"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select Temperature Measurement</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Click Subscribe</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="android006.png"><img src="android006.png" alt="Subscribe"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Subscribe</div></td></tr>
+<tr><td><div style="text-align:center;">Select the Filter</div></td></tr>
 </tbody>
 </table>
 
@@ -658,25 +700,108 @@
 </li>
 </ol>
 <!--
-![Image](android007.png)
+![Image](android03.png)
 -->
-<ol>
-<li>
-<p>A stream of values will incrementally stream to your device.  Click unsubscribe to stop.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="android008.png"><img src="android008.png" alt="Image"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="android04.png"><img src="android04.png" alt="Filter"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Image</div></td></tr>
+<tr><td><div style="text-align:center;">Filter</div></td></tr>
 </tbody>
 </table>
 
 </p>
-</li>
-</ol>
+<p>Select &ldquo;Filter By RSSI&rdquo; to identify nearby bluetooth devices</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="android05.png"><img src="android05.png" alt="Select Filter By RSSI"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select Filter By RSSI</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Select &ldquo;connect&rdquo; next to the &ldquo;Find me Target&rdquo; device with the strongest signal.  The device screen will open</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="android06.png"><img src="android06.png" alt="Find Me Target"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Find Me Target</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="android07.png"><img src="android07.png" alt="Device Screen"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Device Screen</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>Scroll down to &ldquo;Alert Level&rdquo;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="android08.png"><img src="android08.png" alt="Scroll down"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Scroll down</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>On the &ldquo;Alert Level&rdquo; screen, write values of 0, 1, and 2.  Observe the difference</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="android09.png"><img src="android09.png" alt="Write Value 0"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Write Value 0</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="android10.png"><img src="android10.png" alt="Write Value 1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Write Value 1</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="android11.png"><img src="android11.png" alt="Write Value 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Write Value 2</div></td></tr>
+</tbody>
+</table>
+
+</p>
 
         </div>
 
