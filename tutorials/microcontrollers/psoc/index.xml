@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</guid>
-      <description>Introduction PSoC Setup Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.</description>
+      <description>Introduction PSoC Setup Connect Header J2, pin P3[0] Header J3, pin VREF with a jumper wire.</description>
     </item>
     
     <item>
