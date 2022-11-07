@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.104.3" />
+  <meta name="generator" content="Hugo 0.105.0">
 
   <!-- plugins -->
   
@@ -281,18 +281,43 @@
 <li><strong>Mac:</strong> Windows 7, 8, 8.1, 10 or greater running on <a href="https://www.apple.com/support/bootcamp/">Boot Camp</a> or <a href="http://www.parallels.com/">Parallels</a></li>
 </ul>
 <h3 id="before-installing">Before Installing</h3>
+<ol>
+<li>
+<p>Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&rsquo;s license server</p>
+<ol>
+<li>Go to <a href="https://sslvpn.asu.edu">https://sslvpn.asu.edu</a> and sign in.</li>
+<li>Download and install the anyconnect program</li>
+<li>Sign in to sslvpn.asu.edu</li>
+<li>In the 2nd password field, type &ldquo;push&rdquo;.  this will send a push notification to your default 2fa app.  Accept it to continue logging in.</li>
+</ol>
+</li>
+<li>
 <p>Cadence has been known to change environment variables used by other software.  One of those is the HOME variable.  If left unset, it will add this variable and define it as <code>C:\Cadence\SPB_Data-Silent\</code></p>
 <p>It is therefore recommended to set that variable so that your other software remains working</p>
+<ol>
+<li>
 <p>Open up the file explorer (win+e)</p>
+</li>
+<li>
 <p>Navigate to &ldquo;This PC&rdquo;, right click and select properties.</p>
+</li>
+<li>
 <p>In the &ldquo;Related Settings&rdquo; section, select &ldquo;advanced system settings&ndash;&gt;environment variables&rdquo;</p>
+</li>
+<li>
 <p>In the <strong>top</strong> window (User Variables for &lt;yourusername&gt;), look for the HOME environment variable.  If it exists, you leave it as is</p>
 <ol>
 <li>If it doesn&rsquo;t exist, select &ldquo;new&rdquo;</li>
 <li>In variable name, type HOME (all caps)</li>
 <li>In the value field, enter the path to your user directory <code>C:\Users\MYUSERNAME</code>.  You can browse to the right directory</li>
 </ol>
+</li>
+<li>
 <p>Save your changes.</p>
+</li>
+</ol>
+</li>
+</ol>
 <h3 id="instructions">Instructions</h3>
 <!--
 1. Go to Canvas and find the announcement from your professor on Cadence installation.
