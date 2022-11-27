@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.106.0">
+  <meta name="generator" content="Hugo 0.107.0">
 
   <!-- plugins -->
   
@@ -610,7 +610,7 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 <p>In this case, we can calculate and get the PWM module outputting at 50% duty cycle.</p>
 <p>${50%\ Duty\ Cycle\  = \ 1024\  \times 50% = \ 512}^{}$</p>
 <p>From the coding standpoint, we can use the following code to achieve a 50% PWM duty cycle to RA2 pin:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#ae81ff">512</span><span style="color:#111">);</span> <span style="color:#75715e">// 50% duty cycle for PWM
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75af00">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#ae81ff">512</span><span style="color:#111">);</span> <span style="color:#75715e">// 50% duty cycle for PWM
 </span></span></span></code></pre></div></li>
 </ol>
 <h3 id="433-make-an-led-breathe"><strong>4.3.3 Make an LED Breathe</strong></h3>
@@ -620,14 +620,14 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 <p>Try following code in your <strong>Main.c</strong> program:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">1024</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#75715e">// increase duty cycle to 100%
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1023</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">--</span><span style="color:#111">)</span><span style="color:#75715e">// decrease duty cycle to 0%
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75af00">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#111">}</span>
 </span></span></code></pre></div></li>
 <li>
@@ -709,7 +709,7 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 <a href="image14.png"><img src="image14.png" alt=""  /></a>
 
 </p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">SW_GetValues</span><span style="color:#111">()</span> <span style="color:#75715e">// Macro for knowing the input state of SW0 (Pin RC2) 
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75af00">SW_GetValues</span><span style="color:#111">()</span> <span style="color:#75715e">// Macro for knowing the input state of SW0 (Pin RC2) 
 </span></span></span></code></pre></div></li>
 <li>
 <p>Open &ldquo;<strong>ext_int.c</strong>&rdquo;. You can find a couple of predefined functions that related to interrupts that Inside the &ldquo;ext_int.c.&rdquo;</p>
@@ -733,19 +733,19 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 <li>
 <p><strong>Copy</strong> the following code and <strong>paste</strong> them inside the <strong>INT_DefaultInterruptHandler.</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>                                      <span style="color:#75715e">// check the SW0 is being pressed or not
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">SW_GetValue</span><span style="color:#111">()</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span>           <span style="color:#75715e">// if the SW0 is in logic Low (pull to GND)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#75af00">SW_GetValue</span><span style="color:#111">()</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span>           <span style="color:#75715e">// if the SW0 is in logic Low (pull to GND)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#111">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Now Blink the LED
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">1024</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">++</span><span style="color:#111">)</span>  <span style="color:#75715e">// increase duty cycle to 100%
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#00a8c8">for</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1023</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span> <span style="color:#111">i</span><span style="color:#f92672">--</span><span style="color:#111">)</span>  <span style="color:#75715e">// decrease duty cycle to 0%
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#111">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#111">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">PWM6_LoadDutyValue</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75af00">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
 </span></span></code></pre></div><p>
@@ -761,10 +761,10 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 <p>The last step is to enable the interrupt services for the microcontroller.</p>
 <p>Go back to <strong>Main.c</strong>, uncomment following code that inside the main function:</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>                                        <span style="color:#75715e">//Enable the Global Interrupts
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">INTERRUPT_GlobalInterruptEnable</span><span style="color:#111">();</span>      <span style="color:#75715e">//Uncommented
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75af00">INTERRUPT_GlobalInterruptEnable</span><span style="color:#111">();</span>      <span style="color:#75715e">//Uncommented
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>                                        <span style="color:#75715e">// Enable the Peripheral Interrupts
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">INTERRUPT_PeripheralInterruptEnable</span><span style="color:#111">();</span>  <span style="color:#75715e">//Uncommented
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75af00">INTERRUPT_PeripheralInterruptEnable</span><span style="color:#111">();</span>  <span style="color:#75715e">//Uncommented
 </span></span></span></code></pre></div><p>
 <a href="image13.png"><img src="image13.png" alt=""  /></a>
 

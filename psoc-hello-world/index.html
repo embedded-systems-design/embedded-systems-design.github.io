@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.106.0">
+  <meta name="generator" content="Hugo 0.107.0">
 
   <!-- plugins -->
   
@@ -520,8 +520,8 @@
 </li>
 <li>
 <p>Once it opens, add the code shown below inside the <code>for(;;)</code> brackets to toggle the LED pin once every half second. The below code reads the pin’s current value and writes its inverse back to the pin, followed by a 500ms delay.</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#111">Pin_Red_Write</span><span style="color:#111">(</span><span style="color:#f92672">~</span><span style="color:#111">Pin_Red_Read</span><span style="color:#111">());</span> <span style="color:#75715e">//toggle pin state
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">CyDelay</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span> <span style="color:#75715e">//system delay of 500ms
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75af00">Pin_Red_Write</span><span style="color:#111">(</span><span style="color:#f92672">~</span><span style="color:#75af00">Pin_Red_Read</span><span style="color:#111">());</span> <span style="color:#75715e">//toggle pin state
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75af00">CyDelay</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span> <span style="color:#75715e">//system delay of 500ms
 </span></span></span></code></pre></div></li>
 </ol>
 <p>
