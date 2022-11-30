@@ -253,46 +253,70 @@
         </ul>
         
         <div class="content mb-5">
-          <p>Before exporting your schematic to create a PCB, you <strong>must</strong> verify the design and fix errors in the schematic first. It is significantly more difficult to fix errors later (either during the PCB layout stage or after manufacturing) than to spend the time double-checking the schematic first.</p>
-<h3 id="design-for-function-and-performance">Design for Function and Performance</h3>
+          <p>Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic first. It is significantly more difficult to fix errors later (either during the PCB layout stage or after manufacturing) than to spend time double-checking the schematic first.</p>
+<h3 id="schematic-design">Schematic Design</h3>
 <ol>
-<li>Check symbol pinouts against the data sheet, paying special attention to the part package (e.g., chips often come in multiple physical packages with different pin numbers)</li>
-<li>Check connector pinouts and orientation (top or bottom of board, inversion of pins)</li>
-<li>Check the data sheet for each part to ensure all support circuitry (e.g., external resistors for configuration) is present</li>
-<li>If an external oscillator or crystal is used, check that all support circuitry is present (e.g., low-ESR X7R capacitors)</li>
-<li>Check that crossing wires that should be connected have a dot at the intersection, and those that should not be connected do not have a dot</li>
-<li>For ICs, check that all power and ground pins are connected</li>
-<li>Run the schematic design rules check and resolve all errors</li>
-</ol>
-<h3 id="design-for-reliability">Design for Reliability</h3>
-<ol>
-<li>When using an analog to digital converter, it&rsquo;s a good idea to filter the signal in hardware first with a <a href="http://www.electronics-tutorials.ws/filter/filter_4.html">band pass filter</a>. This helps eliminate spurious noise that can corrupt your readings</li>
-<li>De-bounce all mechanical switches in hardware</li>
-<li>Check that all resistors have a wattage listed, and that wattage has at least a 50% margin</li>
-<li>Check that all capacitors have a working voltage listed, and that working voltage has at least a 25% margin</li>
-<li>Add a fuse to each power rail to help protect the circuit against accidental damage (e.g., shorting power and ground). Buy extra fuses.</li>
-<li>Power supply has a 25% current safety margin over the maximum calculated operating current</li>
-</ol>
-<h3 id="for-ics-make-sure">For ICs, make sure:</h3>
-<ol>
-<li>Bypass/decoupling capacitors are present for each chip. (0.1 uF ceramic for every power pin AND 1 uF, 10 uF, or 100 uF tantalum for every 10 to 20 ICs) (see <a href="/bypass-capacitor-basics/">Bypass Capacitor Basics page</a>)</li>
-<li>Pull up or pull down resistors are used, rather than hardwiring signal pins to power planes</li>
-<li>Pull up or pull down resistors are used on all unused IC inputs. One exception is microcontrollers, which should have unused I/O pins tied to test points</li>
-</ol>
-<h3 id="design-for-testing">Design for Testing</h3>
-<ol>
-<li>Critical signals are connected to headers and/or test points to facilitate easy testing and debugging</li>
-<li>Test points are attached to key signals or unused pins that may be useful in the future (e.g., extra microcontroller I/O pins)</li>
-<li>Zero-ohm resistors are used in series on critical nets (e.g., power nets) to allow easy troubleshooting of circuit subsystems</li>
-</ol>
-<h3 id="design-for-manufacturabilityserviceaccessibilityassembly">Design for Manufacturability/Service/Accessibility/Assembly</h3>
-<ol>
-<li>Group components into labeled modules matching with the labels on the block diagram</li>
-<li>There is a way to connect power to each board (e.g., a connector)</li>
-<li>Connectors are used for off-board connections. Always include at least one ground wire/signal return path in connections between boards</li>
-<li>Check that in-system programming headers exist and include any required support circuitry (e.g., pull-up resistors). This information can be found in the microcontroller data sheet.</li>
-<li>Check that all components have a real part number (meaning you could copy and paste the part number into a distributor&rsquo;s search engine and return one part). Resistors, capacitors, and inductors can be labeled with their values (e.g., 0.1uF) instead of the full part number.</li>
-<li>Add a surface-mount LED and current-limiting resistor to each power rail to provide a visual indication that the power supplies are on</li>
+<li>Power
+a.  Correct voltages are included and used wherever appropriate.
+b.  The Common / Earth ground symbol is used wherever appropriate. See <a href="https://www.allaboutcircuits.com/technical-articles/an-introduction-to-ground/">An Introduction to Ground: Earth Ground, Common Ground, Analog Ground, and Digital Ground</a></li>
+<li>Symbols
+a.  All pins have a connection or disconnected pins use a &ldquo;no-connect&rdquo; symbol.
+b.  Pins are correctly numbered and labeled according to the datasheet
+c.  The pins for all custom symbols use the correct pin type, not just &ldquo;passive&rdquo;.<br>
+&gt; <em>KiCad</em>: <a href="https://embedded-systems-design.github.io/kicad-common-pin-types/">see Common Pin Types and their Meanings</a></li>
+<li>Schematic
+a.  Wires are correctly applied.
+i.  There are no dangling wires.
+ii. The schematic is neat and does not use wires excessively
+b.  Labels and ports are used appropriately.
+i.  Netlabels should be used within a schematic when wires start to look like &ldquo;spaghetti&rdquo;.
+ii. Global labels (or ports) should be used between schematics or when indicating interfaces to &ldquo;sub&rdquo; schematics
+iii. Proper power and ground symbols are used rather than net labels/names</li>
+<li>Labeling
+a.  ICs all have a correct manufacturer&rsquo;s part number (e.g., LM7805) or component value (e.g., 0.1 uF, 100k) added to the &ldquo;value&rdquo; field. If a part * number is not available, descriptive text is used (e.g., for an LED, indicate color)
+b.  Passive elements (capacitors, inductors, resistors) all have a value assigned to them.
+c.  All components have a reference designator (e.g., R1, C2, U5)
+d.  All fuses have current ratings.</li>
+<li>Required Components
+a.  All ICs have bypass capacitors in parallel, not series with each power pin.
+b.  The circuit has a power input connector (even if the power supply is not your responsibility)
+c.  Inductive actuators (e.g., motors, solenoids) have a back EMF flyback diode for each coil</li>
+<li>Function and Performance
+a.  Check symbol pinouts against the data sheet, paying special attention to the part package (e.g., chips often come in multiple physical packages with different pin numbers)
+b.  Check connector pinouts and orientation (top or bottom of board, inversion of pins)
+c.  Check the datasheet for each part to ensure all support circuitry (e.g., external resistors for configuration) is present
+d.  If an external oscillator or crystal is used, check that all support circuitry is present (e.g., low-ESR X7R capacitors)
+e.  Check that crossing wires that should be connected have a dot at the intersection, and those that should not be connected do not have a dot
+f.  For ICs, check that all power and ground pins are connected
+g.  Run the schematic design rules check and resolve all errors</li>
+<li>Reliability
+a.  When using an analog-to-digital converter, it&rsquo;s a good idea to filter the signal in hardware first with a <a href="http://www.electronics-tutorials.ws/filter/filter_4.html"><em>bandpass filter</em></a>. This helps eliminate spurious noise that can corrupt your readings
+b.  De-bounce all mechanical switches in the hardware
+c.  Check that all resistors have a wattage listed and that wattage has at least a 50% margin
+d.  Check that all capacitors have a working voltage listed and that the working voltage has at least a 25% margin
+e.  Add a fuse to each power rail to help protect the circuit against accidental damage (e.g., shorting power and ground). Buy extra fuses.
+f.  Power supply has a 25% current safety margin over the maximum calculated operating current</li>
+<li>Design for Testing
+a.  Critical signals are connected to headers and/or test points to facilitate easy testing and debugging
+b.  Test points are attached to key signals or unused pins that may be useful in the future (e.g., extra microcontroller I/O pins)
+c.  Zero-ohm resistors are used in series on critical nets (e.g., power nets) to allow easy troubleshooting of circuit subsystems</li>
+<li>Common Design
+a.  Group components into labeled modules matching the labels on the block diagram
+b.  There is a way to connect power to each board (e.g., a connector)
+c.  Connectors are used for off-board connections. Always include at least one ground wire/signal return path in connections between boards
+d.  Check that the in-system programming header exists and includes any required support circuitry (e.g., pull-up resistors). This information can be found in the microcontroller datasheet.
+e.  Check that all components have a real part number (meaning you could copy and paste the part number into a distributor&rsquo;s search engine and return one part). Resistors, capacitors, and inductors can be labeled with their values (e.g., 0.1uF) instead of the full part number.
+f.  Add a surface-mount LED and current-limiting resistor to each power rail to provide a visual indication that the power supplies are on</li>
+<li>Miscellaneous
+a.  All BJTs have resistors on the base and are wired correctly
+b.  All voltage regulators have a ground pin connected to the ground, along with both input and output bypass capacitors as specified in the voltage regulator datasheet.
+c.  Components are not shorted out (e.g., a wire between both pins of a capacitor)
+d.  Fuses are not in series with motors
+e.  You have read the datasheet for your microcontroller and understand the specifics of its power requirements
+f.  For ICs
+i.  Bypass/decoupling capacitors are present for each chip. (0.1 uF ceramic for every power pin AND 1 uF, 10 uF, or 100 uF tantalum for every 10 to 20 ICs) (see <a href="https://embedded-systems-design.github.io/bypass-capacitor-basics/">Bypass Capacitor Basics page</a>)
+ii. Pull-up or pull-down resistors are used, rather than hardwiring signal pins to power planes
+iii. Pull-up or pull-down resistors are used on all unused IC inputs. One exception is microcontrollers, which should have unused I/O pins tied to test points</li>
 </ol>
 
         </div>
