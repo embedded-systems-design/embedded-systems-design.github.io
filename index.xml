@@ -397,7 +397,16 @@ Figure 1 Sometimes you need to globally change trace widths in your board after 
     </item>
     
     <item>
-      <title>Configuring Cadence</title>
+      <title>Configuring Cadence (Apporto)</title>
+      <link>https://embedded-systems-design.github.io/configuring-cadence-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/configuring-cadence-cloud/</guid>
+      <description>Before using Cadence, configure it for optimal performance by following the instructions below.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Cadence (Standalone Installation)</title>
       <link>https://embedded-systems-design.github.io/configuring-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -766,6 +775,15 @@ Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
       
       <guid>https://embedded-systems-design.github.io/level-shifters/</guid>
       <description>Introduction: What is a level shifter? A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</description>
+    </item>
+    
+    <item>
+      <title>Make a Project Repository and Website</title>
+      <link>https://embedded-systems-design.github.io/make-a-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/make-a-website/</guid>
+      <description>Introduction The purpose of this post is to help you create a website to share your work.</description>
     </item>
     
     <item>
