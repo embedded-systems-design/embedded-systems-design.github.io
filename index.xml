@@ -723,6 +723,15 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
     </item>
     
     <item>
+      <title>I2C Communication (PIC) with an 8-bit I/O Expander</title>
+      <link>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</guid>
+      <description>Objectives In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC.</description>
+    </item>
+    
+    <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -956,6 +965,15 @@ Python: 14.2% Matlab: 0.</description>
       
       <guid>https://embedded-systems-design.github.io/peralta-103-resources/</guid>
       <description>What equipment is available at each of the benches? Function Generator (5 MHz)</description>
+    </item>
+    
+    <item>
+      <title>PIC Curiosity Nano and the TC74 I2C Temp Sensor</title>
+      <link>https://embedded-systems-design.github.io/tc74-temp-sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/tc74-temp-sensor/</guid>
+      <description>Objectives The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.</description>
     </item>
     
     <item>
@@ -1195,6 +1213,26 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
     </item>
     
     <item>
+      <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
+      <link>https://embedded-systems-design.github.io/spi-shift-register-timers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/spi-shift-register-timers/</guid>
+      <description>Objectives To develop and demonstrate individual proficiency in:
+Using SPI communication to control LEDs connected to a shift register</description>
+    </item>
+    
+    <item>
+      <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
+      <link>https://embedded-systems-design.github.io/spi-shift-register/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/spi-shift-register/</guid>
+      <description>Objectives To develop and demonstrate individual proficiency in:
+Using SPI communication to control LEDs connected to a shift register</description>
+    </item>
+    
+    <item>
       <title>Stepper Motor Selection and Control</title>
       <link>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1246,6 +1284,15 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       
       <guid>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</guid>
       <description>Are Connections Continuous? Conduct a continuity check on your board with a multimeter.</description>
+    </item>
+    
+    <item>
+      <title>Timers and Interrupts with the PIC</title>
+      <link>https://embedded-systems-design.github.io/timers-and-interrupts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/timers-and-interrupts/</guid>
+      <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.</description>
     </item>
     
     <item>
@@ -1435,6 +1482,15 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       
       <guid>https://embedded-systems-design.github.io/working-with-thonny/</guid>
       <description>Menu &amp;amp; Icons File File Menu File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
+    </item>
+    
+    <item>
+      <title>Zipping Project Folders</title>
+      <link>https://embedded-systems-design.github.io/zipping-folders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/zipping-folders/</guid>
+      <description>Windows has a ZIP utility built in that you can use to create compressed archives.</description>
     </item>
     
   </channel>

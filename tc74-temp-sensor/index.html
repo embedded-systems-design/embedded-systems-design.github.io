@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> PIC Curiosity Nano and the TC74 I2C Temp Sensor | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.109.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/microcontrollers/pic/">PIC</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/tc74-temp-sensor/">PIC Curiosity Nano and the TC74 I2C Temp Sensor</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>PIC Curiosity Nano and the TC74 I2C Temp Sensor</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="objectives">Objectives</h2>
+<p>The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></li>
+<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> Microchip Main Page
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip"><em>Design Documentation</em></a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf"><em>Schematic</em></a></li>
+</ul>
+</li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_XC8_C_Compiler_User_Guide_for_PIC.pdf"><em>XC8 Compiler Documentation</em></a></li>
+<li>Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></li>
+<li>TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"><em>Application Report</em></a></li>
+<li>C programming tutorial on <a href="https://www.tutorialspoint.com/cprogramming/c_pointers.htm"><em>pointers</em></a></li>
+</ul>
+<h2 id="critical-information-and-concepts">Critical Information and Concepts</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Critical Information and Concepts</strong></th>
+<th><strong>Importance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clock Frequency: ensure compatibility with the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></td>
+<td>If the clock frequency is not within the specifications, it may not work</td>
+</tr>
+<tr>
+<td>Find the TC74 Series temperature sensor in your kit. Note (and write) down the full part number for reference.</td>
+<td>The part number determines the address you need to program into I$^{\text{2}}$C code.</td>
+</tr>
+<tr>
+<td>Find the address for your specific TC74 chip in &ldquo;Section 5: Packaging markup&rdquo; of the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a>. The address is different for each package #, and is represented as a binary number. Note (and write) down the address (in binary) for reference later in the project.</td>
+<td>You can communicate with many different devices on the same I$^{\text{2}}$C bus, but each device needs to be numbered differently</td>
+</tr>
+<tr>
+<td><strong>Note:</strong> Don&rsquo;t just use the default address without checking against your part #</td>
+<td></td>
+</tr>
+<tr>
+<td>In the DC Characteristics section of the TC74 series datasheet, note the minimum and maximum value for the I2C Clock Frequency.</td>
+<td>Make sure you do not exceed this range in your MCC setup.</td>
+</tr>
+<tr>
+<td>Select the proper pins for SDA and SCL according to the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></td>
+<td>You may only use certain pins for I$^{\text{2}}$C communication, so plan ahead.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="steps">Steps</h2>
+<h3 id="breadboard-preparation">Breadboard Preparation</h3>
+<p>This assignment builds off HW5, with minor hardware modifications. We will not be using the push-buttons or LED, so feel free to remove them.</p>
+<p>Add the following peripherals:</p>
+<ol start="2">
+<li>
+<p>Open up the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></p>
+<p>a.  Start by reviewing the full document.</p>
+<p>b.  Bring up the full part number for the TC74 you wrote down earlier.</p>
+<p>c.  Find the address for <em><strong>that specific</strong></em> device in &ldquo;Section 5: Packaging markup&rdquo;. This will be given as a binary number. Note (and write) down the address (in binary) for reference later in the project.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Don&rsquo;t just use the default address without checking against your part #</p>
+</blockquote>
+<ol start="3">
+<li>
+<p>Connect the TC74 Module to the Curiosity Nano</p>
+<p>a.  Look at the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> to find compatible pins for I2C SDA and SCL pins that do not conflict with other peripherals you will need</p>
+<p>b.  Connect the TC74 power and ground pins to power and ground, respectively.</p>
+<p>c.  Connect the Curiosity Nano and TC74 SDA pins.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> this line should be pulled high by a resistor. Please see this TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"><em>Application Report</em></a> to understand the decision-making process. Practically speaking, a 10kOhm resistor should work.</p>
+</blockquote>
+<p>d.  Connect the Curiosity Nano and TC74 SCL pins.</p>
+<blockquote>
+<p><strong>Note:</strong> this line should be pulled high by a resistor. Please see this TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"><em>Application Report</em></a> to understand the decision-making process. Practically speaking, a 10kOhm resistor should work.</p>
+</blockquote>
+<h3 id="code-cleanup">Code Cleanup</h3>
+<ol start="4">
+<li>
+<p>Open the MPLabX project from <em><strong>HW5: Timers and Interrupts</strong></em></p>
+</li>
+<li>
+<p>Make a copy of it and rename it for HW6</p>
+</li>
+<li>
+<p>Remove the push-button code and PWM subsystem code.</p>
+</li>
+<li>
+<p>Keep the timer-based interrupt and printing to LCD</p>
+</li>
+</ol>
+<h3 id="mcc-setup">MCC Setup</h3>
+<ol>
+<li>Set up your system according to the following settings:</li>
+</ol>
+<ul>
+<li>
+<p>System</p>
+<ul>
+<li>Maintain settings from HW5</li>
+</ul>
+</li>
+<li>
+<p>TMRX</p>
+<ul>
+<li>
+<p>maintain settings from HW5 to keep your 1ms timer</p>
+</li>
+<li>
+<p>feel free to remove your PWM-linked timer</p>
+</li>
+</ul>
+</li>
+<li>
+<p>PWMX</p>
+<ul>
+<li>feel free to remove your PWM subsystem</li>
+</ul>
+</li>
+<li>
+<p>MSSPX</p>
+<ul>
+<li>
+<p>Taking a look at the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a>, pick the MSSP system that enables you to also use the other MSSP peripheral for SPI communication next week.</p>
+</li>
+<li>
+<p>Select &ldquo;Interrupt Driven&rdquo;.</p>
+</li>
+<li>
+<p>Clock Frequency: ensure compatibility with the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></p>
+</li>
+<li>
+<p>Slew Rate Control</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Pin Module</p>
+<ul>
+<li>SCL/SDA: Ensure that &ldquo;output&rdquo; is deselected.</li>
+</ul>
+</li>
+<li>
+<p>Pin Manager: Grid View</p>
+<ul>
+<li>Select the proper pins for SDA and SCL according to the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Generate MCC</li>
+</ol>
+<h3 id="new-code">New Code</h3>
+<ol>
+<li>
+<p>Open &ldquo;main.c&rdquo;.</p>
+</li>
+<li>
+<p>Next to the other include lines, include the i2c example header file, &ldquo;mcc_generated_files/examples/i2cX_master_example.h&rdquo;</p>
+</li>
+<li>
+<p>define a macro (using #define) to declare the address for the 74 temperature sensor you found earlier</p>
+<ol>
+<li>
+<p><em><strong>Note:</strong></em> you can directly write binary or hexadecimal numbers directly by beginning a number with &ldquo;0b&rdquo; or &ldquo;0x&rdquo;</p>
+</li>
+<li>
+<p><em><strong>Example:</strong></em> 0b10100101 is equivalent to 0xA5 or 165 within MPLabX.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Open up the &ldquo;mcc_generated_files/examples/i2cX_master_example.h&rdquo; and review it. Identify within this header file the 7 example functions given for reading or writing data over i2c.</p>
+<ol>
+<li>
+<p>Next, eliminate some of those functions by going over the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a>. Will you be reading, writing or both? Will you be reading/writing 1 byte or two bytes?</p>
+<ol>
+<li><em><strong>Note:</strong></em> upon reviewing the TC74 datasheet, if you set up MCC as suggested above, you should not have to worry about defining custom timing sequences or accessing MSSP-specific register bits. This is handled internally by the I$^{\text{2}}$C library.</li>
+</ol>
+</li>
+<li>
+<p>Select one or more of the functions not eliminated and implement it. Note that some of these functions require the use of pointers. You will need to create new variables in order to get this function to work. <em><strong>More than one of these functions will work.</strong></em></p>
+<ol>
+<li>
+<p><em><strong>Note:</strong></em> You will need to review the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a> for information about which registers to read/write, and the number of bytes of each value.</p>
+</li>
+<li>
+<p><em><strong>Note:</strong></em> With regard to constructing the right I$^{\text{2}}$C address, The MPLabX I$^{\text{2}}$C library handles all register bit-shifting and read/write bit conventions.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Review the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a>. It specifies the format by which to convert the received temperature data into a positive/negative value. Implement a function that performs this conversion.</p>
+</li>
+<li>
+<p>Update your print to the LCD to include the current temperature, including the code necessary to correctly compute temperatures in the negative Celsius range. Print the temperature on the second line of the LCD</p>
+</li>
+</ol>
+<blockquote>
+<p><em>Example</em>:</p>
+<p>&ldquo;t= 45.34s&rdquo;</p>
+<p>&ldquo;temp= 32C&rdquo;</p>
+</blockquote>
+<ol start="7">
+<li>Compile and download your code to the Curiosity Nano. Blow on the sensor. Can you make the temperature go up?</li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/pic/tc74-temp-sensor.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

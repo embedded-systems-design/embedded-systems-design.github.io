@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> I2C Communication (PIC) with an 8-bit I/O Expander | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.109.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/microcontrollers/pic/">PIC</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/">I2C Communication (PIC) with an 8-bit I/O Expander</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>I2C Communication (PIC) with an 8-bit I/O Expander</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="objectives">Objectives</h2>
+<p>In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC. This will be critical for your semester project as every team has at least two serial peripherals (e.g., wifi module, serial sensor). To prepare you for the next homework assignment and your semester project, you will create an array of LEDs that will increment by one each time a button is pressed. You will use an 8-bit I/O expander IC that is used in situations when you run out of I/O pins on a microcontroller and cannot swap the microcontroller for one with more I/O pins.</p>
+<p>With your partner, you must demonstrate proficiency in:</p>
+<ol>
+<li>
+<p>Configuring MCC for an external I$^{\text{2}}$C device.</p>
+</li>
+<li>
+<p>Controlling an external I/O expander using I$^{\text{2}}$C.</p>
+</li>
+</ol>
+<p><strong>You may work in pairs (2 people) for this in-class checkoff assignment.</strong></p>
+<p>
+<a href="image13.png"><img src="image13.png" alt=""  /></a>
+
+</p>
+<p><em>Figure 1: Block Diagram for ICC7</em></p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Item</strong></th>
+<th style="text-align:left"><strong>Quantity</strong></th>
+<th style="text-align:left"><strong>Value(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Breadboard</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Jumper wires</td>
+<td style="text-align:left">Many</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Resistors</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">(7) 220Ω, (3) 10kΩ</td>
+</tr>
+<tr>
+<td style="text-align:left">LEDs</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Push Button</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><a href="http://www.learningaboutelectronics.com/Articles/What-is-a-single-pole-single-throw-switch-SPST"><em>SPST</em></a></td>
+</tr>
+<tr>
+<td style="text-align:left">Micro USB cable</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Curiosity Nano</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><a href="https://www.microchip.com/en-us/development-tool/dm182029"><em>PIC18F47Q10 Curiosity Nano</em></a> (<a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>datasheet</em></a>)</td>
+</tr>
+<tr>
+<td style="text-align:left">MCP23008 <em>(provided in class)</em></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><a href="https://www.microchip.com/en-us/product/MCP23008"><em>MCP23008</em></a> (<a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a>)</td>
+</tr>
+<tr>
+<td style="text-align:left">Benchtop oscilloscope</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></p>
+</li>
+<li>
+<p><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> Microchip Main Page</p>
+<ul>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> - Figure 4-1. Curiosity Nano Pinout</p>
+</li>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf"><em>Schematic</em></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>MCP23008 Datasheet</em></a></p>
+<ul>
+<li>
+<p>Page 2 package Type (PDIP/SOIC)</p>
+</li>
+<li>
+<p>Table 1-1: Pinout Descriptions</p>
+</li>
+<li>
+<p>Table 1-2: Register Addresses</p>
+</li>
+<li>
+<p>Figure 1-4: I2C Addressing Registers</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="http://ww1.microchip.com/downloads/en/devicedoc/i2c.pdf"><em>Useful Description of I$^{\text{2}}$C in master mode</em></a></p>
+</li>
+<li>
+<p><a href="https://www.keysight.com/us/en/support/DSOX4024A/oscilloscope-200-mhz-4-analog-channels.html"><em>Agilent InfiniiVision Mixed Signal Oscilloscope (Model 4024A)</em></a> (<a href="https://www.keysight.com/us/en/assets/9018-03807/user-manuals/9018-03807.pdf"><em>manual</em></a>)</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=VYHs0yie4P0"><em>Agilent InfiniiVision Oscilloscope I2C Analysis video</em></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="prior-to-demonstration-of-proficiency">Prior to Demonstration of Proficiency</h2>
+<ol>
+<li>
+<p>Read and search the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Curiosity Nano datasheet</em></a> and find the following:</p>
+<p>a.  The recommended pins for I$^{\text{2}}$C communication.</p>
+<p>b.  The 5V output pin on the Curiosity Nano.</p>
+</li>
+<li>
+<p>Wire your breadboard to match the schematic below:</p>
+</li>
+</ol>
+<blockquote>
+<p>
+<a href="image16.png"><img src="image16.png" alt=""  /></a>
+
+</p>
+</blockquote>
+<p><em>Figure 2: MCP23008 Serial I/O expander circuit schematic</em></p>
+<ol start="3">
+<li>
+<p>Next, you will configure a new project in MPLAB® X and add an I$^{\text{2}}$C serial component in MCC. Open MPLAB® X and create a new project</p>
+<p>a.  Click Next &gt;</p>
+</li>
+</ol>
+<blockquote>
+<p>
+<a href="image15.png"><img src="image15.png" alt=""  /></a>
+
+</p>
+</blockquote>
+<p>b.  Select the PIC18F47Q10 as the Device, the Curiosity Nano as the Tool, and click Next &gt;.
+&gt; (If this doesn&rsquo;t show up, make sure that the Nano is plugged in.)
+&gt; 
+<a href="image12.png"><img src="image12.png" alt=""  /></a>
+
+</p>
+<p>c.  Select the XC8 Compiler and click Next &gt;
+&gt; 
+<a href="image9.png"><img src="image9.png" alt=""  /></a>
+
+</p>
+<p>d.  Name the project and click Finish.
+&gt; 
+<a href="image17.png"><img src="image17.png" alt=""  /></a>
+
+</p>
+<p>e.  Open MCC</p>
+<p>f.  Under Device Resources add &ldquo;MSSP1&rdquo;
+&gt; 
+<a href="image10.png"><img src="image10.png" alt=""  /></a>
+
+</p>
+<p>g.  Select I2C in the Serial Protocol dropdown
+&gt; 
+<a href="image11.png"><img src="image11.png" alt=""  /></a>
+
+</p>
+<p> </p>
+<ol start="4">
+<li>
+<p>Open i2c1_master_example.h</p>
+<p>a.  Find and note the two functions to read and write single bytes.</p>
+</li>
+<li>
+<p>Open the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> for the MCP23008</p>
+<p>a.  Note that the slave address for this circuit will be 0x20 because pins A2, A1, and A0 are grounded (see Section 1.4 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> for more info)</p>
+<p>b.  Find Table 1-2 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> and note the register addresses for IODIR and GPIO.</p>
+</li>
+<li>
+<p>In main.c:</p>
+<p>a.  #include the i2c1_master_example.h</p>
+<p>b.  In main(), use the I$^{\text{2}}$C write command you noted earlier to set bit IO7 in the IODIR register as a digital input (see page 9 of the MCP23008 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a>).</p>
+<p>c.  Create a variable named counter and initialize it to 1.</p>
+</li>
+<li>
+<p>In the while() loop:</p>
+<p>a.  Use the I$^{\text{2}}$C read command you noted earlier to read the GPIO register in the I/O expander, and store the value read in a register.</p>
+<p>b.  Next, <a href="https://docs.google.com/presentation/d/18tDBiLvlh9sOK535MbsUVwkNIhQnSu_2eYlMXrS8JzI/edit?usp=sharing"><em>bitmask</em></a> this variable value to return the most significant bit (GP7) which is attached to the button. Store this value in a new variable.</p>
+</li>
+</ol>
+<blockquote>
+<p>buttonValue = value &amp; 0b10000000;</p>
+</blockquote>
+<p>c.  Since the button is wired to output a logic 0 every time it is pressed, write an if() statement to check when the button is pressed. (Hint: When the button is pressed, the digital value will be equal to 0.)</p>
+<pre><code>i.  Within the if() statement, increment the counter variable.
+
+ii. Within the if() statement, use the I$^{\text{2}}$C write command you noted earlier to write the lowest 7 bits of the counter variable to the GPIO register in the I/O expander.
+</code></pre>
+<p>Next, you will probe the serial lines with an oscilloscope and decode the serial signal. Note that while all of our oscilloscopes can be used to see serial signals, only the newer MSO-X oscilloscopes (with the dark front bezel) have serial decoding functionality.</p>
+<ol start="8">
+<li>
+<p>Connect two probes from the Agilent MSO-X oscilloscope to the SDA and SCL wires, respectively.</p>
+</li>
+<li>
+<p>Run the program on your PIC so that it continually polls the button to see if it has been pressed. This will generate a constant stream of I$^{\text{2}}$C traffic on SDA and SCL. Then, follow the example in <a href="https://www.youtube.com/watch?v=VYHs0yie4P0"><em>this video</em></a> to show the raw I$^{\text{2}}$C data on the oscilloscope screen, and also to use the Serial mode to decode the data into a hex byte.</p>
+</li>
+<li>
+<p>Finally, confirm that when you press the button that the binary pattern on the LEDs increments by 1. If it does not, use the serial data decoded in the previous step to debug your code.</p>
+</li>
+</ol>
+<!--
+**Demonstration of Proficiency in Pairs**
+
+In class, demonstrate the following **live** to a member of the Teaching Team by the end of class:
+
+1.  Fully constructed circuit that matches Figure 2 above.
+
+2.  Fully decoded serial data shown on an Agilent MSO-X oscilloscope.
+
+3.  LEDs counting up in binary each time the button is pressed.
+
+**A live demonstration by the end of class is required. No late demonstrations will be accepted.**
+
+## Canvas Submission
+
+**No Canvas submission is required.**
+
+## Grading
+
+| **Demonstration**   | **Points** |
+| ------------------- | ---------- |
+| 1.  Demonstration 1 | 5          |
+| 2.  Demonstration 2 | 10         |
+| 3.  Demonstration 3 | 10         |
+| **Total**           | **25**     |
+-->
+<h2 id="devices">Devices</h2>
+<table>
+<thead>
+<tr>
+<th>
+<a href="image14.jpg"><img src="image14.jpg" alt=""  /></a>
+
+</th>
+<th>
+<a href="image18.jpg"><img src="image18.jpg" alt=""  /></a>
+
+</th>
+<th>
+<a href="image2.jpg"><img src="image2.jpg" alt=""  /></a>
+
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Digital Multimeter</td>
+<td>Oscilloscope</td>
+<td>Power Supply</td>
+</tr>
+<tr>
+<td>(Not Used Today)</td>
+<td>(Used Today)</td>
+<td>(Not Used Today)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>
+<a href="image1.jpg"><img src="image1.jpg" alt=""  /></a>
+
+</th>
+<th>
+<a href="image6.jpg"><img src="image6.jpg" alt=""  /></a>
+
+</th>
+<th>
+<a href="image4.jpg"><img src="image4.jpg" alt=""  /></a>
+
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Function Generator</td>
+<td>Waveform Generator</td>
+<td>Soldering Iron</td>
+</tr>
+<tr>
+<td>(Not Used Today)</td>
+<td>(Not Used Today)</td>
+<td>(Not Used Today)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="probes">Probes</h2>
+<table>
+<thead>
+<tr>
+<th>
+<a href="image5.jpg"><img src="image5.jpg" alt=""  /></a>
+
+</th>
+<th>
+<a href="image3.jpg"><img src="image3.jpg" alt=""  /></a>
+
+</th>
+<th>
+<a href="image8.jpg"><img src="image8.jpg" alt=""  /></a>
+
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oscilloscope</td>
+<td>Digital Multimeter</td>
+<td>Soldering Iron</td>
+</tr>
+<tr>
+<td>(Used Today)</td>
+<td>(Not Used Today)</td>
+<td>(Not Used Today)</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/pic/I2C-with-8-bit-io-expander/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

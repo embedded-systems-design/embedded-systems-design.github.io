@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> SPI Communication with the SN74HC595 Shift Register using Timers | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.109.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/circuit-design/">Circuit Design</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/microcontrollers/">Microcontroller Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/microcontrollers/pic/">PIC</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/spi-shift-register-timers/">SPI Communication with the SN74HC595 Shift Register using Timers</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>SPI Communication with the SN74HC595 Shift Register using Timers</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="objectives">Objectives</h2>
+<p>To develop and demonstrate individual proficiency in:</p>
+<ol>
+<li>
+<p>Using SPI communication to control LEDs connected to a shift register</p>
+</li>
+<li>
+<p>Displaying binary numbers on LEDs connected to a shift register, updated periodically by a timer-driven interrupt.</p>
+</li>
+</ol>
+<p><strong>This is an individual homework assignment. While you may talk with others about how to complete the assignment, you must individually design, write, and implement all code and circuitry by yourself.</strong></p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></p>
+</li>
+<li>
+<p><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> Microchip Main Page</p>
+<ul>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></p>
+</li>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip"><em>Design Documentation</em></a></p>
+</li>
+<li>
+<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf"><em>Schematic</em></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.ti.com/store/ti/en/p/product/?p=SN74HC595N"><em>SN74HC595N 8-bit serial-in, parallel-out shift register</em></a></p>
+<ul>
+<li><a href="https://www.ti.com/lit/gpn/sn74hc595"><em>SN74HC595N datasheet</em></a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://embedded-systems-design.github.io/all-about-serial/"><em>All About Serial</em></a> page on the Embedded Systems Design Resources blog</p>
+</li>
+<li>
+<p>Scherz, P., &amp; Monk, S. (2016). <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1470699914&amp;sr=1-1&amp;keywords=practical+electronics+for+inventors+4th+edition"><em>Practical electronics for inventors, fourth edition.</em></a> New York: McGraw Hill. ISBN: 978-1259587542</p>
+<ul>
+<li>
+<p>Serial Peripheral Interface (pages 890 - 891)</p>
+</li>
+<li>
+<p>Shift Registers (Chapter 12.8)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Canvas Discussion Board</p>
+</li>
+</ul>
+<h2 id="parts-needed">Parts Needed</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Quantity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Breadboard</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> -or-</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://www.microchip.com/wwwproducts/en/PIC18F47Q10"><em>PIC18F47Q10</em></a> DIP IC</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.ti.com/store/ti/en/p/product/?p=SN74HC595N"><em>8-bit serial-in, parallel-out shift register</em></a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>LEDs</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Current-limiting resistors for LEDs</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Jumper wires</td>
+<td>Many</td>
+</tr>
+</tbody>
+</table>
+<h2 id="background">Background</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Critical Information and Concepts</strong></th>
+<th><strong>Importance and Source</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a.  What a shift register is, why you would want to use one, and how it works</td>
+<td>Needed to conceptually understand this assignment and figure out which connections to make. Can be found in Scherz &amp; Monk Section 12.8, and also in <a href="https://www.youtube.com/watch?v=ameNT2MKDyE"><em>The Shift Register: Explained video</em></a>.</td>
+</tr>
+<tr>
+<td>b.  How to wire a SN74HC595N serial in, parallel out shift register</td>
+<td>Needed to create serially-addressable LEDs. See the <a href="https://www.ti.com/lit/gpn/sn74hc595"><em>SN74HC595N datasheet</em></a> for wiring information</td>
+</tr>
+<tr>
+<td>c.  How the SN74HC595N works</td>
+<td>See Section 9.1 and Table 1 of the <a href="https://www.ti.com/lit/gpn/sn74hc595"><em>SN74HC595N datasheet</em></a> for information on how the shift register clock and storage register clock work.</td>
+</tr>
+<tr>
+<td>d.  How the SPI peripheral works in the PIC18F47Q10</td>
+<td>Needed to understand how to wire and write SPI code for the PIC. Can be found in Section 27.2 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></td>
+</tr>
+<tr>
+<td>e.  Which pins on the PIC18F47Q10 can be used for SPI</td>
+<td>Needed to understand how to wire a SPI device to the PIC. The default locations for SPI communication can be found in Table 4 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="steps">Steps</h2>
+<blockquote>
+<p>In this assignment, you may use either the <a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> or a PIC18F47Q10 DIP IC connected to your breadboard.</p>
+</blockquote>
+<ol>
+<li>
+<p>Place the Curiosity Nano board as far to one edge of the breadboard as possible such that the micro USB port is accessible from the edge of the board. Connect 3.3V and GND from the Nano to the power rails of the breadboard.</p>
+</li>
+<li>
+<p>Place the SN74HC595N shift register near the Curiosity on the breadboard and wire it to 3.3V power and ground.</p>
+</li>
+<li>
+<p>Place 8 LEDs on the breadboard near the shift register.</p>
+</li>
+<li>
+<p>Connect the 8 output pins of the shift register to appropriately-sized current-limiting resistors connected to each of the 8 LEDs.</p>
+</li>
+<li>
+<p>Connect the serial clear pin of the shift register to 3.3V. This prevents the shift register from resetting due to electrical noise.</p>
+</li>
+<li>
+<p>Connect the output enable pin of the shift register to ground. This enables the register outputs so they can be seen on the LEDs.</p>
+</li>
+<li>
+<p>Connect the SPI 1 output pin on the Curiosity to the serial input pin on the shift register. (<em>Hint: See Table 4 in the PIC18F47Q10 datasheet</em>).</p>
+</li>
+<li>
+<p>Connect the SPI 1 serial clock pin on the Curiosity to the shift register clock pin on the shift register. (<em>Hint: See Table 4 in the PIC18F47Q10 datasheet and Table 1 of the</em> ).</p>
+</li>
+<li>
+<p>Connect the storage register clock pin on the shift register to a GPIO digital output pin on the same port as the other SPI 1 pins above.</p>
+</li>
+</ol>
+<h3 id="2-displaying-a-moving-pattern-on-leds">2. Displaying a Moving Pattern on LEDs</h3>
+<ol>
+<li>
+<p>Launch MPLAB® X and create a new project for your PIC IC. <em>Note: Please remember that this is an individual assignment. The only way to learn to code independently is to work through coding problems and figure them out.</em></p>
+<ol>
+<li>
+<p>Configure your system clock to use the HFINTOSC at 4 MHz with a clock divider of 4.</p>
+</li>
+<li>
+<p>In the Pin Manager, make sure that the Package matches the package of the PIC you are using.</p>
+</li>
+<li>
+<p>Add a SPI interface on serial port module 1. In the Registers tab, change SSPEN (serial port enable) to enabled. Leave all other settings default.</p>
+</li>
+<li>
+<p>In the Pin Manager, configure the SCK, SDO, and RCLK pins to match how you wired your breadboard. Make sure none of the pins are set to analog, that all pins are correctly set as inputs or outputs accordingly.</p>
+</li>
+<li>
+<p>Generate your MCC code. Then go to spi.h and identity the function that opens the SPI port along with the struct that contains the default operating mode. This is required to enable the SPI port.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Write code to do the following:</p>
+<ol>
+<li>
+<p>Prior to the while() loop add the function to open the SPI port in its default configuration.</p>
+</li>
+<li>
+<p>Set the storage register clock pin to low (meaning that the storage registers will not yet store the values in the shift register).</p>
+</li>
+<li>
+<p>Write an 8-bit byte to illuminate some of the LEDs.</p>
+<blockquote>
+<p>(See spi1.h for the API function to do this)</p>
+</blockquote>
+</li>
+<li>
+<p>Wait 1 ms for the send operation to complete.</p>
+</li>
+<li>
+<p>Set the storage register clock pin to high (this low to high transition will cause the storage registers to store the current values in the shift register and output them to the LEDs).</p>
+</li>
+<li>
+<p>Wait 500 ms before the next operation.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Compile, test, and (if necessary) debug the above code and hardware until you are able to light up LEDs connected to the shift register.</p>
+<blockquote>
+<p><em>If this step doesn&rsquo;t work, debug by first checking all connections against the data sheet, looking for error messages in the IDE, and analyzing your code. If you&rsquo;re still stuck, see the teaching team for help.</em></p>
+</blockquote>
+</li>
+<li>
+<p>Modify the above code to display a pattern where a single LED &ldquo;chases&rdquo; from one end of the row to the other, and then reverses direction. See <a href="https://drive.google.com/file/d/1x9VMWsIdEg8BDLa8-JfTnXjXb3hC-fiW/view?usp=sharing"><em>video example</em></a>.</p>
+</li>
+</ol>
+<h3 id="3-displaying-a-changing-variable-value-on-leds">3. Displaying a Changing Variable Value on LEDs</h3>
+<ol>
+<li>Study the following critical information and concepts:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>Critical Information and Concepts</strong></th>
+<th><strong>Importance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a.  Read through this <a href="https://microchipdeveloper.com/mcc:interrupts"><em>tutorial</em></a> on interrupts in MCC to understand how linking a callback works</td>
+<td>You will need to create a custom callback to process a timer-generated interrupt.</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Launch MPLAB® X and load your project from Part 2.0 of this assignment. In MPLAB® X, right-click on the project name and select &ldquo;Copy&rdquo; from the contextual menu. Then, right-click on the new project and select &ldquo;Set as main project&rdquo; from the contextual menu.</li>
+</ol>
+<p>Next, you will modify the new project to add a hardware timer with 1-second period and interrupts enabled.</p>
+<ol start="2">
+<li>
+<p>Open MCC and update the following settings:</p>
+<ol>
+<li>
+<p>TMRX:</p>
+<ol>
+<li>
+<p>clock: lfintosc</p>
+</li>
+<li>
+<p>Set timer prescaler and postscaler so that the timer period range is adjusted so that 1000ms is within the range of values that can be specified for the timer period.</p>
+</li>
+<li>
+<p>Set the timer period to 1000ms</p>
+</li>
+<li>
+<p>Enable interrupts</p>
+</li>
+</ol>
+</li>
+<li>
+<p>System Interrupts Page</p>
+<ol>
+<li>Ensure the TMRX and IOC receive interrupts are enabled. Make sure the timer subsystem is at the top.</li>
+</ol>
+</li>
+<li>
+<p>Generate the MCC configuration and compile the project.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Open TmrX.h</p>
+<ol>
+<li>
+<p>Find and note the name for the function that links the timer subsystem callback to a user-defined function.</p>
+</li>
+<li>
+<p>Find and note the name for the function that starts the timer.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Modify your existing code in main.c to add the following features:</p>
+<ol>
+<li>
+<p>Add an 8-bit unsigned integer global variable for a counter and initialize it to 0.</p>
+</li>
+<li>
+<p>Create a new function timer_callback() above main. It should return type void and take no input variables. Add code in the function that increments the counter by 1 every time it is called.</p>
+</li>
+<li>
+<p>Uncomment the two lines that enable global and peripheral interrupts.</p>
+</li>
+<li>
+<p>In main(), add code to:</p>
+<ol>
+<li>
+<p>Set the timer interrupt handler to the callback function you wrote using the callback linking function.</p>
+</li>
+<li>
+<p>Enable interrupts</p>
+</li>
+<li>
+<p>Start the timer</p>
+</li>
+<li>
+<p>In the while() loop, write the current value of the counter to the shift register via SPI and then wait 1000 ms.</p>
+<blockquote>
+<p><em>If you set up your code correctly, your new callback function should be called once every second and update the shift register once every second.</em></p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Compile and download your code to the microcontroller. The code should count up in binary and display the results on your 8 LEDs.</p>
+</li>
+</ol>
+<!--
+
+## Individual Demonstration of Proficiency
+
+1.  Connect your Curiosity Nano to a computer via USB. Open MPLAB® X. Talk through your breadboard design and connections.
+
+2.  Open your project for Part 2.0, compile, download, and demonstrate it displaying a pattern where a single LED "chases" from one end of the row to the other, and then reverses direction. See [*video example*](https://drive.google.com/file/d/1x9VMWsIdEg8BDLa8-JfTnXjXb3hC-fiW/view?usp=sharing).
+
+3.  Open your project for Part 3.0, show your timer code to the teaching team member, compile, download, and demonstrate it counting up in binary and displaying the results on your 8 LEDs.
+
+## Canvas Submission
+
+Submit your packaged MPLAB® X projects (right-click on the project and select "Package" from the contextual menu) for each section in ZIP format to this assignment on [*Canvas*](https://canvas.asu.edu) by the deadline in Canvas. *Do not submit links to Google documents.* It is your responsibility to ensure that your submission to Canvas was successful. Late Canvas submissions will be graded per the policy in the syllabus. No credit will be awarded for assignments not submitted to Canvas, even if a demonstration was completed.
+
+## Grading
+
+| **Demonstration**                                           | **Points** |
+| ----------------------------------------------------------- | ---------- |
+| 2.  Chasing LED sequence bouncing from one end to the other | 50         |
+| 3.  LEDs counting up in binary controlled by a timer        | 150        |
+| **Total**                                                   | 200        |
+-->
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/microcontrollers/pic/spi-shift-register-timers.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script>
+
+
+
+
+</body>
+</html>

@@ -264,6 +264,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/interfacing/</loc>
@@ -368,6 +370,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/pic/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tc74-temp-sensor/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic18f47q10/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</loc>
@@ -470,6 +474,10 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/spi-shift-register-timers/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/spi-shift-register/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/pcb-tutorial-notes/</loc>
@@ -497,6 +505,8 @@
     <loc>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/thonny/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/timers-and-interrupts/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics/tips-and-tricks/</loc>
   </url><url>
@@ -559,5 +569,7 @@
     <loc>https://embedded-systems-design.github.io/working-with-libraries/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/working-with-thonny/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/zipping-folders/</loc>
   </url>
 </urlset>
