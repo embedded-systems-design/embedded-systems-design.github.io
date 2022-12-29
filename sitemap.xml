@@ -54,8 +54,6 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/ac-circuits/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/actuator/</loc>
@@ -280,6 +278,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad-pcb-faq/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/pic-lcd-button/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/level-shifters/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/level-shifters/</loc>
@@ -474,7 +474,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/spi-shift-register-timers/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/spi-shift-register/</loc>
+    <loc>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</loc>
   </url><url>

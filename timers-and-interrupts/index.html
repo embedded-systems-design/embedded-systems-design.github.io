@@ -253,7 +253,7 @@
         <h2>Timers and Interrupts with the PIC</h2>
         
         <div class="mb-1 post-meta">
-          <span>By ESD Faculty</span>
+          <span>By Dan Aukes</span>
           
           
           
@@ -265,6 +265,11 @@
         <div class="content mb-5">
           <h2 id="objectives">Objectives</h2>
 <p>The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.</p>
+<p>This assignment builds off the <a href="/pic-lcd-button">LCD and Button Tutorial</a>, with minor hardware modifications. Thus it is suggested that you keep all the components on the board as they were from that tutorial.</p>
+<p>The two exceptions are the two pushbutton pins. You will need to shift to using GPIO registers that support interrupt-on-change (IOC). See critical information section above for details.</p>
+<blockquote>
+<p>If you haven&rsquo;t completed the <a href="/pic-lcd-button/">LCD and pushbuttons tutorial</a>, we strongly suggest you review that first.</p>
+</blockquote>
 <h2 id="resources">Resources</h2>
 <ul>
 <li>
@@ -348,31 +353,24 @@
 </tr>
 </tbody>
 </table>
-<h3 id="breadboard-preparations">Breadboard Preparations</h3>
-<p>This assignment builds off HW4, with minor hardware modifications. Thus it is suggested that you keep all the components on the board as they are.</p>
-<p>The two exceptions are the two pushbutton pins. You will need to shift to using GPIO registers that support interrupt-on-change (IOC). See critical information section above for details.</p>
-<h3 id="code-cleanup">Code Cleanup</h3>
-<ol>
-<li>
-<p>Open the MPLabX project from <em><strong>HW4: LCD</strong></em></p>
-</li>
-<li>
-<p>Comment out the lines of code for incrementing and decrementing the PWM duty cycle in main(). This will be done in a different way from HW4.</p>
-</li>
-</ol>
 <h3 id="mcc-setup">MCC Setup</h3>
 <ol>
+<li>
+<p>Open the MPLabX project from the <a href="/pic-lcd-button">LCD and Button Tutorial</a>, and comment out the lines of code for incrementing and decrementing the PWM duty cycle in main(). This will be done in a different way.</p>
+<p><em>or</em></p>
+<p>Launch MPLAB® X and create a new project for your PIC IC.</p>
+</li>
 <li>
 <p>Open MCC and update the following settings:</p>
 <ol>
 <li>
-<p>System (SYSTEM UPDATED FOR PWM COMPATIBILITY)</p>
+<p>System</p>
 <ol>
 <li>
-<p>Clock: keep hfintosc @ 4Mhz</p>
+<p>System Clock: Configure your system clock to use the HFINTOSC at 4MHz</p>
 </li>
 <li>
-<p>Clock divider:keep at 4</p>
+<p>Clock divider: select a clock divider of 4.</p>
 </li>
 <li>
 <p>Disable watchdog timer (unused)</p>
@@ -402,6 +400,9 @@
 <li>
 <p>Pin Manager: Grid View</p>
 <ol>
+<li>
+<p>Ensure that the Package matches the package of the PIC you are using</p>
+</li>
 <li>
 <p>You will need to redefine your two pushbutton inputs to use two interrupt-capable pins as inputs. See the &ldquo;<a href="#fkmtqyl8x6c3"><em>critical information</em></a>&rdquo; section above</p>
 </li>
@@ -440,18 +441,36 @@
 <ol start="2">
 <li>
 <p>Open TmrX.h</p>
-<p>a.  Find and note the name for the function that links the timer subsystem callback to a user-defined function</p>
-<p>b.  Find and note the name for the function that starts the timer.</p>
+<ol>
+<li>
+<p>Find and note the name for the function that links the timer subsystem callback to a user-defined function</p>
+</li>
+<li>
+<p>Find and note the name for the function that starts the timer.</p>
+</li>
+</ol>
 </li>
 <li>
 <p>Open &ldquo;main.c&rdquo;</p>
-<p>a.  Create a new function timer_callback() above main. it should return type void and take no input variables. Note the name of your new function</p>
-<p>b.  Uncomment the two lines that enable global and peripheral interrupts</p>
-<p>c.  In the main() function,</p>
-<pre><code>i.  link the new timer_callback() function TimerX subsystem using the Callback linking function.
-
-ii. immediately before the infinite while loop, start the timer.
-</code></pre>
+<ol>
+<li>
+<p>Create a new function timer_callback() above main. it should return type void and take no input variables. Note the name of your new function</p>
+</li>
+<li>
+<p>Uncomment the two lines that enable global and peripheral interrupts</p>
+</li>
+<li>
+<p>In the main() function,</p>
+<ol>
+<li>
+<p>link the new timer_callback() function TimerX subsystem using the Callback linking function.</p>
+</li>
+<li>
+<p>immediately before the infinite while loop, start the timer.</p>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 </ol>
 <blockquote>
@@ -504,10 +523,13 @@ ii. immediately before the infinite while loop, start the timer.
 </ol>
 </li>
 </ol>
-<blockquote>
 <p><em>Example</em>:</p>
-<p>&ldquo;t= 45.34s&rdquo;</p>
+<pre tabindex="0"><code>&#34;t=  45.34s      &#34;
+</code></pre><blockquote>
 <p><em>Note:</em> the blank spaces within quotes correspond to valid lcd positions</p>
+</blockquote>
+<p></p>
+<blockquote>
 <p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
 </blockquote>
 <h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
@@ -570,10 +592,10 @@ ii. immediately before the infinite while loop, start the timer.
 </ol>
 </li>
 </ol>
-<blockquote>
 <p><em>Example</em>:</p>
-<p>&ldquo;t= 45.34s&rdquo;</p>
-<p>&ldquo;dc= 75%&rdquo;</p>
+<pre tabindex="0"><code>&#34;t=  45.34s      &#34;
+&#34;dc= 75%         &#34;
+</code></pre><blockquote>
 <p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
 </blockquote>
 <ol start="11">

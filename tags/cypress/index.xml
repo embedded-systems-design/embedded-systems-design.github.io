@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/cypress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About Bluetooth Communication (ABC)</title>
-      <link>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</guid>
-      <description>What is Bluetooth Low Energy? Intro to Bluetooth Low Energy video from Cypress Bluetooth Low Energy datasheets from Cypress Developing Bluetooth Smart Applications for Android tutorial from NewCircle Training provides a high-level explanation of how Bluetooth Low Energy works.</description>
-    </item>
-    
-    <item>
       <title>Cadence Walkthrough: PSoC 4 BLE Module</title>
       <link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

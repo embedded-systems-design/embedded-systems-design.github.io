@@ -253,7 +253,7 @@
         <h2>SPI Communication with the SN74HC595 Shift Register using Timers</h2>
         
         <div class="mb-1 post-meta">
-          <span>By ESD Faculty</span>
+          <span>By Dan Aukes</span>
           
           
           
@@ -273,7 +273,6 @@
 <p>Displaying binary numbers on LEDs connected to a shift register, updated periodically by a timer-driven interrupt.</p>
 </li>
 </ol>
-<p><strong>This is an individual homework assignment. While you may talk with others about how to complete the assignment, you must individually design, write, and implement all code and circuitry by yourself.</strong></p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li>
@@ -420,7 +419,7 @@
 <p>Connect the storage register clock pin on the shift register to a GPIO digital output pin on the same port as the other SPI 1 pins above.</p>
 </li>
 </ol>
-<h3 id="2-displaying-a-moving-pattern-on-leds">2. Displaying a Moving Pattern on LEDs</h3>
+<h3 id="part-1-displaying-a-moving-pattern-on-leds">Part 1: Displaying a Moving Pattern on LEDs</h3>
 <ol>
 <li>
 <p>Launch MPLAB® X and create a new project for your PIC IC. <em>Note: Please remember that this is an individual assignment. The only way to learn to code independently is to work through coding problems and figure them out.</em></p>
@@ -475,134 +474,13 @@
 </blockquote>
 </li>
 <li>
-<p>Modify the above code to display a pattern where a single LED &ldquo;chases&rdquo; from one end of the row to the other, and then reverses direction. See <a href="https://drive.google.com/file/d/1x9VMWsIdEg8BDLa8-JfTnXjXb3hC-fiW/view?usp=sharing"><em>video example</em></a>.</p>
+<p>Modify the above code to display a pattern where a single LED &ldquo;chases&rdquo; from one end of the row to the other, and then reverses direction. See <a href="https://www.dropbox.com/s/r8rabjfkce8mgle/IMG_5835.MOV?dl=0"><em>video example</em></a>.</p>
 </li>
 </ol>
-<h3 id="3-displaying-a-changing-variable-value-on-leds">3. Displaying a Changing Variable Value on LEDs</h3>
-<ol>
-<li>Study the following critical information and concepts:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th><strong>Critical Information and Concepts</strong></th>
-<th><strong>Importance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a.  Read through this <a href="https://microchipdeveloper.com/mcc:interrupts"><em>tutorial</em></a> on interrupts in MCC to understand how linking a callback works</td>
-<td>You will need to create a custom callback to process a timer-generated interrupt.</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Launch MPLAB® X and load your project from Part 2.0 of this assignment. In MPLAB® X, right-click on the project name and select &ldquo;Copy&rdquo; from the contextual menu. Then, right-click on the new project and select &ldquo;Set as main project&rdquo; from the contextual menu.</li>
-</ol>
-<p>Next, you will modify the new project to add a hardware timer with 1-second period and interrupts enabled.</p>
-<ol start="2">
-<li>
-<p>Open MCC and update the following settings:</p>
-<ol>
-<li>
-<p>TMRX:</p>
-<ol>
-<li>
-<p>clock: lfintosc</p>
-</li>
-<li>
-<p>Set timer prescaler and postscaler so that the timer period range is adjusted so that 1000ms is within the range of values that can be specified for the timer period.</p>
-</li>
-<li>
-<p>Set the timer period to 1000ms</p>
-</li>
-<li>
-<p>Enable interrupts</p>
-</li>
-</ol>
-</li>
-<li>
-<p>System Interrupts Page</p>
-<ol>
-<li>Ensure the TMRX and IOC receive interrupts are enabled. Make sure the timer subsystem is at the top.</li>
-</ol>
-</li>
-<li>
-<p>Generate the MCC configuration and compile the project.</p>
-</li>
-</ol>
-</li>
-<li>
-<p>Open TmrX.h</p>
-<ol>
-<li>
-<p>Find and note the name for the function that links the timer subsystem callback to a user-defined function.</p>
-</li>
-<li>
-<p>Find and note the name for the function that starts the timer.</p>
-</li>
-</ol>
-</li>
-<li>
-<p>Modify your existing code in main.c to add the following features:</p>
-<ol>
-<li>
-<p>Add an 8-bit unsigned integer global variable for a counter and initialize it to 0.</p>
-</li>
-<li>
-<p>Create a new function timer_callback() above main. It should return type void and take no input variables. Add code in the function that increments the counter by 1 every time it is called.</p>
-</li>
-<li>
-<p>Uncomment the two lines that enable global and peripheral interrupts.</p>
-</li>
-<li>
-<p>In main(), add code to:</p>
-<ol>
-<li>
-<p>Set the timer interrupt handler to the callback function you wrote using the callback linking function.</p>
-</li>
-<li>
-<p>Enable interrupts</p>
-</li>
-<li>
-<p>Start the timer</p>
-</li>
-<li>
-<p>In the while() loop, write the current value of the counter to the shift register via SPI and then wait 1000 ms.</p>
-<blockquote>
-<p><em>If you set up your code correctly, your new callback function should be called once every second and update the shift register once every second.</em></p>
-</blockquote>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>
-<p>Compile and download your code to the microcontroller. The code should count up in binary and display the results on your 8 LEDs.</p>
-</li>
-</ol>
-<!--
+<hr>
+<h3 id="part-2">Part 2</h3>
+<p>proceed to <a href="/spi-shift-register-timers-ii">Part 2</a> of this tutorial&hellip;</p>
 
-## Individual Demonstration of Proficiency
-
-1.  Connect your Curiosity Nano to a computer via USB. Open MPLAB® X. Talk through your breadboard design and connections.
-
-2.  Open your project for Part 2.0, compile, download, and demonstrate it displaying a pattern where a single LED "chases" from one end of the row to the other, and then reverses direction. See [*video example*](https://drive.google.com/file/d/1x9VMWsIdEg8BDLa8-JfTnXjXb3hC-fiW/view?usp=sharing).
-
-3.  Open your project for Part 3.0, show your timer code to the teaching team member, compile, download, and demonstrate it counting up in binary and displaying the results on your 8 LEDs.
-
-## Canvas Submission
-
-Submit your packaged MPLAB® X projects (right-click on the project and select "Package" from the contextual menu) for each section in ZIP format to this assignment on [*Canvas*](https://canvas.asu.edu) by the deadline in Canvas. *Do not submit links to Google documents.* It is your responsibility to ensure that your submission to Canvas was successful. Late Canvas submissions will be graded per the policy in the syllabus. No credit will be awarded for assignments not submitted to Canvas, even if a demonstration was completed.
-
-## Grading
-
-| **Demonstration**                                           | **Points** |
-| ----------------------------------------------------------- | ---------- |
-| 2.  Chasing LED sequence bouncing from one end to the other | 50         |
-| 3.  LEDs counting up in binary controlled by a timer        | 150        |
-| **Total**                                                   | 200        |
--->
         </div>
 
         

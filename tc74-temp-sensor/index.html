@@ -253,7 +253,7 @@
         <h2>PIC Curiosity Nano and the TC74 I2C Temp Sensor</h2>
         
         <div class="mb-1 post-meta">
-          <span>By ESD Faculty</span>
+          <span>By Dan Aukes</span>
           
           
           
@@ -317,14 +317,21 @@
 </table>
 <h2 id="steps">Steps</h2>
 <h3 id="breadboard-preparation">Breadboard Preparation</h3>
-<p>This assignment builds off HW5, with minor hardware modifications. We will not be using the push-buttons or LED, so feel free to remove them.</p>
 <p>Add the following peripherals:</p>
 <ol start="2">
 <li>
 <p>Open up the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></p>
-<p>a.  Start by reviewing the full document.</p>
-<p>b.  Bring up the full part number for the TC74 you wrote down earlier.</p>
-<p>c.  Find the address for <em><strong>that specific</strong></em> device in &ldquo;Section 5: Packaging markup&rdquo;. This will be given as a binary number. Note (and write) down the address (in binary) for reference later in the project.</p>
+<ol>
+<li>
+<p>Start by reviewing the full document.</p>
+</li>
+<li>
+<p>Bring up the full part number for the TC74 you wrote down earlier.</p>
+</li>
+<li>
+<p>Find the address for <em><strong>that specific</strong></em> device in &ldquo;Section 5: Packaging markup&rdquo;. This will be given as a binary number. Note (and write) down the address (in binary) for reference later in the project.</p>
+</li>
+</ol>
 </li>
 </ol>
 <blockquote>
@@ -333,9 +340,17 @@
 <ol start="3">
 <li>
 <p>Connect the TC74 Module to the Curiosity Nano</p>
-<p>a.  Look at the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> to find compatible pins for I2C SDA and SCL pins that do not conflict with other peripherals you will need</p>
-<p>b.  Connect the TC74 power and ground pins to power and ground, respectively.</p>
-<p>c.  Connect the Curiosity Nano and TC74 SDA pins.</p>
+<ol>
+<li>
+<p>Look at the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> to find compatible pins for I2C SDA and SCL pins that do not conflict with other peripherals you will need</p>
+</li>
+<li>
+<p>Connect the TC74 power and ground pins to power and ground, respectively.</p>
+</li>
+<li>
+<p>Connect the Curiosity Nano and TC74 SDA pins.</p>
+</li>
+</ol>
 </li>
 </ol>
 <blockquote>
@@ -345,47 +360,36 @@
 <blockquote>
 <p><strong>Note:</strong> this line should be pulled high by a resistor. Please see this TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"><em>Application Report</em></a> to understand the decision-making process. Practically speaking, a 10kOhm resistor should work.</p>
 </blockquote>
-<h3 id="code-cleanup">Code Cleanup</h3>
-<ol start="4">
-<li>
-<p>Open the MPLabX project from <em><strong>HW5: Timers and Interrupts</strong></em></p>
-</li>
-<li>
-<p>Make a copy of it and rename it for HW6</p>
-</li>
-<li>
-<p>Remove the push-button code and PWM subsystem code.</p>
-</li>
-<li>
-<p>Keep the timer-based interrupt and printing to LCD</p>
-</li>
-</ol>
 <h3 id="mcc-setup">MCC Setup</h3>
 <ol>
-<li>Set up your system according to the following settings:</li>
-</ol>
+<li>
+<p>Launch MPLAB® X and create a new project for your PIC IC. <em>Note: Please remember that this is an individual assignment. The only way to learn to code independently is to work through coding problems and figure them out.</em></p>
+</li>
+<li>
+<p>Open MCC and update the following settings:</p>
 <ul>
 <li>
 <p>System</p>
 <ul>
-<li>Maintain settings from HW5</li>
+<li>Clock: Configure your system clock to use the HFINTOSC at 4MHz with a clock divider of 4.</li>
+<li>Clock divider:keep at 4</li>
+<li>Disable watchdog timer (unused)</li>
+<li>Disable low-freq programming</li>
 </ul>
 </li>
 <li>
-<p>TMRX</p>
+<p>Pin Manager: Grid View</p>
 <ul>
-<li>
-<p>maintain settings from HW5 to keep your 1ms timer</p>
-</li>
-<li>
-<p>feel free to remove your PWM-linked timer</p>
-</li>
+<li>In the Pin Manager, make sure that the Package matches the package of the PIC you are using.</li>
 </ul>
 </li>
 <li>
-<p>PWMX</p>
+<p>Pin Module - N/A</p>
+</li>
+<li>
+<p>System Interrupts Page</p>
 <ul>
-<li>feel free to remove your PWM subsystem</li>
+<li>Ensure the TMRX and IOC receive interrupts are enabled. Make sure the timer subsystem is at the top.</li>
 </ul>
 </li>
 <li>
@@ -417,9 +421,22 @@
 <li>Select the proper pins for SDA and SCL according to the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></li>
 </ul>
 </li>
+<li>
+<p>Add a UART component for debugging purposes <em>(optional)</em></p>
+</li>
 </ul>
-<ol start="2">
-<li>Generate MCC</li>
+</li>
+</ol>
+<!--
+    - TMRX:
+
+      - clock: lfintosc
+      - Set timer prescaler and postscaler so that the timer period range is adjusted so that 1ms is within the range of values that can be specified for the timer period.
+      - Set the timer period to 1ms
+      - Enable interrupts
+-->
+<ol>
+<li>Generate the MCC configuration and compile the project.</li>
 </ol>
 <h3 id="new-code">New Code</h3>
 <ol>
@@ -469,12 +486,10 @@
 <p>Update your print to the LCD to include the current temperature, including the code necessary to correctly compute temperatures in the negative Celsius range. Print the temperature on the second line of the LCD</p>
 </li>
 </ol>
-<blockquote>
 <p><em>Example</em>:</p>
-<p>&ldquo;t= 45.34s&rdquo;</p>
-<p>&ldquo;temp= 32C&rdquo;</p>
-</blockquote>
-<ol start="7">
+<pre tabindex="0"><code>&#34;t=  45.34s      &#34;
+&#34;temp= 32C       &#34;
+</code></pre><ol start="7">
 <li>Compile and download your code to the Curiosity Nano. Blow on the sensor. Can you make the temperature go up?</li>
 </ol>
 

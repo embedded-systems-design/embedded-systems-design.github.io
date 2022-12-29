@@ -441,34 +441,62 @@
 <ol start="4">
 <li>
 <p>Open i2c1_master_example.h</p>
-<p>a.  Find and note the two functions to read and write single bytes.</p>
+<ol>
+<li>Find and note the two functions to read and write single bytes.</li>
+</ol>
 </li>
 <li>
 <p>Open the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> for the MCP23008</p>
-<p>a.  Note that the slave address for this circuit will be 0x20 because pins A2, A1, and A0 are grounded (see Section 1.4 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> for more info)</p>
-<p>b.  Find Table 1-2 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> and note the register addresses for IODIR and GPIO.</p>
+<ol>
+<li>
+<p>Note that the slave address for this circuit will be 0x20 because pins A2, A1, and A0 are grounded (see Section 1.4 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> for more info)</p>
+</li>
+<li>
+<p>Find Table 1-2 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a> and note the register addresses for IODIR and GPIO.</p>
+</li>
+</ol>
 </li>
 <li>
 <p>In main.c:</p>
-<p>a.  #include the i2c1_master_example.h</p>
-<p>b.  In main(), use the I$^{\text{2}}$C write command you noted earlier to set bit IO7 in the IODIR register as a digital input (see page 9 of the MCP23008 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a>).</p>
-<p>c.  Create a variable named counter and initialize it to 1.</p>
+<ol>
+<li>
+<p>#include the i2c1_master_example.h</p>
+</li>
+<li>
+<p>In main(), use the I$^{\text{2}}$C write command you noted earlier to set bit IO7 in the IODIR register as a digital input (see page 9 of the MCP23008 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf"><em>datasheet</em></a>).</p>
+</li>
+<li>
+<p>Create a variable named counter and initialize it to 1.</p>
+</li>
+</ol>
 </li>
 <li>
 <p>In the while() loop:</p>
-<p>a.  Use the I$^{\text{2}}$C read command you noted earlier to read the GPIO register in the I/O expander, and store the value read in a register.</p>
-<p>b.  Next, <a href="https://www.dropbox.com/s/eca11jct83f2qhl/Bitwise%20Operations%20in%20C.pptx?dl=0"><em>bitmask</em></a> this variable value to return the most significant bit (GP7) which is attached to the button. Store this value in a new variable.</p>
+<ol>
+<li>
+<p>Use the I$^{\text{2}}$C read command you noted earlier to read the GPIO register in the I/O expander, and store the value read in a register.</p>
+</li>
+<li>
+<p>Next, <a href="https://www.dropbox.com/s/eca11jct83f2qhl/Bitwise%20Operations%20in%20C.pptx?dl=0"><em>bitmask</em></a> this variable value to return the most significant bit (GP7) which is attached to the button. Store this value in a new variable.</p>
+<pre tabindex="0"><code>buttonValue = value &amp; 0b10000000;
+</code></pre></li>
+<li>
+<p>Since the button is wired to output a logic 0 every time it is pressed, write an if() statement to check when the button is pressed. (Hint: When the button is pressed, the digital value will be equal to 0.)</p>
+<ol>
+<li>
+<p>Within the if() statement, increment the counter variable.</p>
+</li>
+<li>
+<p>Within the if() statement, use the I$^{\text{2}}$C write command you noted earlier to write the lowest 7 bits of the counter variable to the GPIO register in the I/O expander.</p>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 </ol>
 <blockquote>
-<p>buttonValue = value &amp; 0b10000000;</p>
-</blockquote>
-<p>c.  Since the button is wired to output a logic 0 every time it is pressed, write an if() statement to check when the button is pressed. (Hint: When the button is pressed, the digital value will be equal to 0.)</p>
-<pre><code>i.  Within the if() statement, increment the counter variable.
-
-ii. Within the if() statement, use the I$^{\text{2}}$C write command you noted earlier to write the lowest 7 bits of the counter variable to the GPIO register in the I/O expander.
-</code></pre>
 <p>Next, you will probe the serial lines with an oscilloscope and decode the serial signal. Note that while all of our oscilloscopes can be used to see serial signals, only the newer MSO-X oscilloscopes (with the dark front bezel) have serial decoding functionality.</p>
+</blockquote>
 <ol start="8">
 <li>
 <p>Connect two probes from the Agilent MSO-X oscilloscope to the SDA and SCL wires, respectively.</p>
@@ -480,32 +508,6 @@ ii. Within the if() statement, use the I$^{\text{2}}$C write command you noted e
 <p>Finally, confirm that when you press the button that the binary pattern on the LEDs increments by 1. If it does not, use the serial data decoded in the previous step to debug your code.</p>
 </li>
 </ol>
-<!--
-**Demonstration of Proficiency in Pairs**
-
-In class, demonstrate the following **live** to a member of the Teaching Team by the end of class:
-
-1.  Fully constructed circuit that matches Figure 2 above.
-
-2.  Fully decoded serial data shown on an Agilent MSO-X oscilloscope.
-
-3.  LEDs counting up in binary each time the button is pressed.
-
-**A live demonstration by the end of class is required. No late demonstrations will be accepted.**
-
-## Canvas Submission
-
-**No Canvas submission is required.**
-
-## Grading
-
-| **Demonstration**   | **Points** |
-| ------------------- | ---------- |
-| 1.  Demonstration 1 | 5          |
-| 2.  Demonstration 2 | 10         |
-| 3.  Demonstration 3 | 10         |
-| **Total**           | **25**     |
--->
 <h2 id="devices">Devices</h2>
 <table>
 <thead>

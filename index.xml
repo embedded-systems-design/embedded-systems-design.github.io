@@ -153,15 +153,6 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
-      <title>About Bluetooth Communication (ABC)</title>
-      <link>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/about-bluetooth-communication-abc/</guid>
-      <description>What is Bluetooth Low Energy? Intro to Bluetooth Low Energy video from Cypress Bluetooth Low Energy datasheets from Cypress Developing Bluetooth Smart Applications for Android tutorial from NewCircle Training provides a high-level explanation of how Bluetooth Low Energy works.</description>
-    </item>
-    
-    <item>
       <title>Adding Text to a Layout in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -285,7 +276,9 @@ Figure 1 Sometimes you need to globally change trace widths in your board after 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
-      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials</description>
+      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials
+OrCAD 17.2 Manuals:
+OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
     </item>
     
     <item>
@@ -769,6 +762,16 @@ Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
     </item>
     
     <item>
+      <title>LCDs and Buttons</title>
+      <link>https://embedded-systems-design.github.io/pic-lcd-button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pic-lcd-button/</guid>
+      <description>Individual Assignment
+Objectives To develop and demonstrate individual proficiency in:</description>
+    </item>
+    
+    <item>
       <title>Level shifters</title>
       <link>https://embedded-systems-design.github.io/level-shifters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1214,13 +1217,12 @@ Using SPI communication to control LEDs connected to a shift register</descripti
     </item>
     
     <item>
-      <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
-      <link>https://embedded-systems-design.github.io/spi-shift-register/</link>
+      <title>SPI Communication with the SN74HC595 Shift Register using Timers (Part 2)</title>
+      <link>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/spi-shift-register/</guid>
-      <description>Objectives To develop and demonstrate individual proficiency in:
-Using SPI communication to control LEDs connected to a shift register</description>
+      <guid>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</guid>
+      <description>Introduction This tutorial builds off of Part 1. Go Back and start there if you haven&amp;rsquo;t yet completed it.</description>
     </item>
     
     <item>
