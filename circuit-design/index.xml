@@ -79,6 +79,15 @@
     </item>
     
     <item>
+      <title>IR Emitter/Detector Pairs and Op-Amps</title>
+      <link>https://embedded-systems-design.github.io/ind-op-amps-sensors-and-adcs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/ind-op-amps-sensors-and-adcs/</guid>
+      <description>Objectives Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor.</description>
+    </item>
+    
+    <item>
       <title>Level shifters</title>
       <link>https://embedded-systems-design.github.io/level-shifters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
