@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Timers and Interrupts with the PIC | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Timers and Interrupts on an LCD screen with the PIC | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -238,7 +238,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/timers-and-interrupts/">Timers and Interrupts with the PIC</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/timers-and-interrupts-lcd/">Timers and Interrupts on an LCD screen with the PIC</a></li>
 
 </ol>
 </nav>
@@ -249,7 +249,7 @@
 
 
 
-        <h2>Timers and Interrupts with the PIC</h2>
+        <h2>Timers and Interrupts on an LCD screen with the PIC</h2>
         
         <div class="mb-1 post-meta">
           <span>By Dan Aukes</span>
@@ -263,7 +263,12 @@
         
         <div class="content mb-5">
           <h2 id="objectives">Objectives</h2>
-<p>The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results over EUSART and with a LED.</p>
+<p>The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.</p>
+<p>This assignment builds off the <a href="/pic-lcd-button">LCD and Button Tutorial</a>, with minor hardware modifications. Thus it is suggested that you keep all the components on the board as they were from that tutorial.</p>
+<p>The two exceptions are the two pushbutton pins. You will need to shift to using GPIO registers that support interrupt-on-change (IOC). See critical information section above for details.</p>
+<blockquote>
+<p>If you haven&rsquo;t completed the <a href="/pic-lcd-button/">LCD and pushbuttons tutorial</a>, we strongly suggest you review that first.</p>
+</blockquote>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></li>
@@ -289,27 +294,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="components">Components</h2>
-<table>
-<thead>
-<tr>
-<th>Part</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PIC18F47Q10 Curiosity Nano (or DIP IC)</td>
-</tr>
-<tr>
-<td>Two breadboard-compatible SPST buttons</td>
-</tr>
-<tr>
-<td>LED and an appropriate current-limiting resistor (or the onboard LED)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="instructions">Instructions</h2>
-<p>Study the following critical information and concepts</p>
+<h2 id="prior-to-the-demonstration-of-proficiency">Prior to the Demonstration of Proficiency</h2>
 <table>
 <thead>
 <tr>
@@ -347,6 +332,8 @@
 <h3 id="mcc-setup">MCC Setup</h3>
 <ol>
 <li>
+<p>Open the MPLabX project from the <a href="/pic-lcd-button">LCD and Button Tutorial</a>, and comment out the lines of code for incrementing and decrementing the PWM duty cycle in main(). This will be done in a different way.</p>
+<p><em>or</em></p>
 <p>Launch MPLAB® X and create a new project for your PIC IC.</p>
 </li>
 <li>
@@ -354,50 +341,43 @@
 <ol>
 <li>
 <p>System</p>
-<ul>
+<ol>
 <li>System Clock: Configure your system clock to use the HFINTOSC at 4MHz</li>
 <li>Clock divider: select a clock divider of 4.</li>
 <li>Disable watchdog timer (unused)</li>
 <li>Disable low-freq programming</li>
-</ul>
-</li>
-<li>
-<p>EUSART</p>
-<ul>
-<li>Add and configure a new EUSART peripheral, taking care to select the EUSART module that connects to the PIC Curiosity Nano&rsquo;s serial-to-USB connection.</li>
-<li>Make sure you check the &ldquo;connect to stdio&rdquo; box.</li>
-</ul>
+</ol>
 </li>
 <li>
 <p>TMRX:</p>
-<ul>
+<ol>
 <li>clock: lfintosc</li>
 <li>Set timer prescaler and postscaler so that the timer period range is adjusted so that 1ms is within the range of values that can be specified for the timer period.</li>
 <li>Set the timer period to 1ms</li>
 <li>Enable interrupts</li>
-</ul>
+</ol>
 </li>
 <li>
 <p>Pin Manager: Grid View</p>
-<ul>
+<ol>
 <li>Ensure that the Package matches the package of the PIC you are using</li>
 <li>You will need to redefine your two pushbutton inputs to use two interrupt-capable pins as inputs. See the &ldquo;<a href="#fkmtqyl8x6c3"><em>critical information</em></a>&rdquo; section above</li>
 <li>Configure the pin with the internal LED as a digital output.</li>
-</ul>
+</ol>
 </li>
 <li>
 <p>Pin Module</p>
-<ul>
+<ol>
 <li>For the two pushbutton pins, ensure they are defined as non-analog digital inputs. After identifying what WPU and OD mean(see above), set the checkboxes correctly.</li>
 <li>For IOC, select the transition type based on how you wired your pushbuttons</li>
 <li>For the LED output, ensure analog is not checked.</li>
-</ul>
+</ol>
 </li>
 <li>
 <p>System Interrupts Page</p>
-<ul>
+<ol>
 <li>Ensure the TMRX and IOC receive interrupts are enabled. Make sure the timer subsystem is at the top.</li>
-</ul>
+</ol>
 </li>
 <li>
 <p>Generate the MCC configuration and compile the project.</p>
@@ -406,7 +386,7 @@
 </li>
 </ol>
 <h3 id="creating-a-timer-based-callback-function">Creating a timer-based callback function</h3>
-<ol>
+<ol start="2">
 <li>
 <p>Open TmrX.h</p>
 <ol>
@@ -454,11 +434,16 @@
 <p>In the while loop in main(), add code that</p>
 <ol>
 <li>computes the current time as a float in seconds (with milliseconds behind the decimal point)</li>
-<li>fills and prints a string with the current time in seconds, starting with &ldquo;t=&rdquo; and ending with &ldquo;s&rdquo; using <code>printf()</code></li>
+<li>fills a 16-character string with the current time in seconds, starting with &ldquo;t=&rdquo; and ending with &ldquo;s&rdquo;</li>
+<li>prints that string to the top line of the LCD.</li>
 </ol>
 <p><em>Example</em>:</p>
-<pre><code> t=  45.34s
+<pre><code> &quot;t=  45.34s      &quot;
 </code></pre>
+<blockquote>
+<p><em>Note:</em> the blank spaces within quotes correspond to valid lcd positions</p>
+</blockquote>
+ <p></p>
 </li>
 </ol>
 <blockquote>
@@ -466,20 +451,40 @@
 </blockquote>
 <h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
 <p><em>This section assumes you have set up IOC-based interrupts in MCC and generated a new configuration file as specified in the MCC setup section above</em></p>
-<ol>
+<ol start="6">
 <li>
-<p>Open <code>pin_manager.h</code>. Find and note the name for the function that links callback functions to each of the two pins selected for your pushbutton switches. There should be two functions available, one for each pin you configured in MCC.</p>
+<p>Open pin_manager.h</p>
+<ol>
+<li>Find and note the name for the function that links callback functions to each of the two pins selected for your pushbutton switches. There should be two functions available, one for each pin you configured in MCC.</li>
+</ol>
 </li>
 <li>
 <p>Create a function pin_down() above main. it should return type void and take no input variables.</p>
-<p>In the main() function, link the new pin_down() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></p>
+<ol>
+<li>
+<p>In the main() function,</p>
+<ol>
+<li>link the new pin_down() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></li>
+</ol>
+</li>
+</ol>
 </li>
 <li>
 <p>Create a function pin_up() above main. it should return type void and take no input variables.</p>
-<p>In the main() function, link the new pin_up() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></p>
+<ol>
+<li>
+<p>In the main() function,</p>
+<ol>
+<li>link the new pin_up() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></li>
+</ol>
+</li>
+</ol>
 </li>
 <li>
-<p>Custom Callback code. In pin_down() and pin_up() implement custom code that captures the current time that each button push occurs and save it into a new global variable.</p>
+<p>Custom Callback code</p>
+<ol>
+<li>In pin_down() and pin_up() implement custom code that captures the current time that each button push occurs and save it into a new global variable.</li>
+</ol>
 </li>
 <li>
 <p>In the while loop in main(), add code that:</p>
@@ -494,20 +499,22 @@
 <p>if the above two are true, increments or decrements the duty cycle (once and only once) if the current time reaches some internal delay (in a non-blocking way). Resets this check if the buttons ever change state before reaching their limit</p>
 </li>
 <li>
-<p>Fills and prints a string with the current duty cycle, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo; using <code>printf()</code>.</p>
-<p><em>Example</em>:</p>
-<pre><code> t=  45.34s
- dc= 75%
-</code></pre>
-</li>
-</ol>
-<blockquote>
-<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
-</blockquote>
+<p>Fills a 16-character string with the current duty cycle, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo;</p>
 </li>
 <li>
-<p>Download and compile your code and demonstrate</p>
+<p>prints that string to the <em>bottom</em> line of the LCD.</p>
 </li>
+</ol>
+</li>
+</ol>
+<p><em>Example</em>:</p>
+<pre tabindex="0"><code>&#34;t=  45.34s      &#34;
+&#34;dc= 75%         &#34;
+</code></pre><blockquote>
+<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
+</blockquote>
+<ol start="11">
+<li>Download and compile your code and demonstrate</li>
 </ol>
 <!--
 ## Demonstration of Proficiency
@@ -611,7 +618,7 @@ Submit your packaged MPLAB® X projects (right-click on the project and select "
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/pic/timers-and-interrupts.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/pic/timers-and-interrupts-lcd.md"> Edit this Page</a></p>
         
         
         

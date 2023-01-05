@@ -1298,12 +1298,21 @@ Using SPI communication to control LEDs connected to a shift register</descripti
     </item>
     
     <item>
+      <title>Timers and Interrupts on an LCD screen with the PIC</title>
+      <link>https://embedded-systems-design.github.io/timers-and-interrupts-lcd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/timers-and-interrupts-lcd/</guid>
+      <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.</description>
+    </item>
+    
+    <item>
       <title>Timers and Interrupts with the PIC</title>
       <link>https://embedded-systems-design.github.io/timers-and-interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/timers-and-interrupts/</guid>
-      <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.</description>
+      <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results over EUSART and with a LED.</description>
     </item>
     
     <item>
