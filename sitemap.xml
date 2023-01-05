@@ -216,7 +216,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/esp32/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/esp32/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/example-project/</loc>
   </url><url>
@@ -318,8 +318,6 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/microcontroller/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/micropython/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/micropython-and-esp32/</loc>
@@ -370,7 +368,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/pic/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tc74-temp-sensor/</loc>
   </url><url>
@@ -398,7 +396,7 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/psoc/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/microcontrollers/psoc/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</loc>
   </url><url>

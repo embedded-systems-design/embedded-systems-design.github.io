@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PSoC on Embedded Systems Design</title>
-    <link>https://embedded-systems-design.github.io/tutorials/microcontrollers/psoc/</link>
+    <link>https://embedded-systems-design.github.io/tutorials/psoc/</link>
     <description>Recent content in PSoC on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tutorials/microcontrollers/psoc/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tutorials/psoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bluetooth Connection Issues</title>
       <link>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</link>
