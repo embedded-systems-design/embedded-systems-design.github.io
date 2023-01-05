@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Hello World with UART (PIC)</title>
+      <link>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</guid>
+      <description>Objectives The goal of this tutorial is to introduce you to the MPLabX IDE, and to verify that you can create a project, add a peripheral (EUSART), configure it to work across a virtual COM port, and communicate back and forth to your PC.</description>
+    </item>
+    
+    <item>
       <title>I2C Communication (PIC) with an 8-bit I/O Expander</title>
       <link>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
