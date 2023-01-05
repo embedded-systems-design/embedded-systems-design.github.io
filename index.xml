@@ -1442,6 +1442,16 @@ Using SPI communication to control LEDs connected to a shift register</descripti
     </item>
     
     <item>
+      <title>VS Code Setup and Usage</title>
+      <link>https://embedded-systems-design.github.io/vscode-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/vscode-setup/</guid>
+      <description>Installation Download from here
+Useful command-line arguments Usage: code [options][paths...] Example:</description>
+    </item>
+    
+    <item>
       <title>What is a Gantt Chart?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
