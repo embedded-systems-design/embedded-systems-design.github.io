@@ -388,56 +388,112 @@
 </li>
 <li>
 <p>Wire your breadboard to match the schematic below:</p>
-</li>
-</ol>
-<blockquote>
 <p>
-<a href="image16.png"><img src="image16.png" alt=""  /></a>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image16.png"><img src="image16.png" alt="Figure 2: MCP23008 Serial I/O expander circuit schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: MCP23008 Serial I/O expander circuit schematic</div></td></tr>
+</tbody>
+</table>
 
 </p>
-</blockquote>
-<p><em>Figure 2: MCP23008 Serial I/O expander circuit schematic</em></p>
-<ol start="3">
+</li>
 <li>
 <p>Next, you will configure a new project in MPLAB® X and add an I$^{\text{2}}$C serial component in MCC. Open MPLAB® X and create a new project</p>
-<p>a.  Click Next &gt;</p>
-</li>
-</ol>
-<blockquote>
+<ol>
+<li>
+<p>Click Next &gt;</p>
 <p>
-<a href="image15.png"><img src="image15.png" alt=""  /></a>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image15.png"><img src="image15.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
 
 </p>
+</li>
+<li>
+<p>Select the PIC18F47Q10 as the Device, the Curiosity Nano as the Tool, and click Next &gt;.</p>
+<p>(If this doesn&rsquo;t show up, make sure that the Nano is plugged in.)</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image12.png"><img src="image12.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Select the XC8 Compiler and click Next &gt;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image9.png"><img src="image9.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Name the project and click Finish.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image17.png"><img src="image17.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Open MCC</p>
+<blockquote>
+<p>Please use <strong>MCC Classic</strong>.  We can support it better, it has more advanced configuration options, but is also still relatively easy to use.</p>
 </blockquote>
-<p>b.  Select the PIC18F47Q10 as the Device, the Curiosity Nano as the Tool, and click Next &gt;.
-&gt; (If this doesn&rsquo;t show up, make sure that the Nano is plugged in.)
-&gt; 
-<a href="image12.png"><img src="image12.png" alt=""  /></a>
-
-</p>
-<p>c.  Select the XC8 Compiler and click Next &gt;
-&gt; 
-<a href="image9.png"><img src="image9.png" alt=""  /></a>
-
-</p>
-<p>d.  Name the project and click Finish.
-&gt; 
-<a href="image17.png"><img src="image17.png" alt=""  /></a>
-
-</p>
-<p>e.  Open MCC</p>
-<p>f.  Under Device Resources add &ldquo;MSSP1&rdquo;
-&gt; 
+</li>
+<li>
+<p>Under Device Resources add &ldquo;MSSP1&rdquo; 
 <a href="image10.png"><img src="image10.png" alt=""  /></a>
 
 </p>
-<p>g.  Select I2C in the Serial Protocol dropdown
-&gt; 
-<a href="image11.png"><img src="image11.png" alt=""  /></a>
+</li>
+<li>
+<p>Select I2C in the Serial Protocol dropdown</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image11.png"><img src="image11.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
 
 </p>
-<p> </p>
-<ol start="4">
+</li>
+</ol>
+</li>
 <li>
 <p>Open i2c1_master_example.h</p>
 <ol>
