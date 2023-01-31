@@ -450,34 +450,32 @@
 </li>
 <li>
 <p>define a macro (using #define) to declare the address for the 74 temperature sensor you found earlier</p>
-<ol>
-<li>
+<blockquote>
 <p><em><strong>Note:</strong></em> you can directly write binary or hexadecimal numbers directly by beginning a number with &ldquo;0b&rdquo; or &ldquo;0x&rdquo;</p>
-</li>
-<li>
-<p><em><strong>Example:</strong></em> 0b10100101 is equivalent to 0xA5 or 165 within MPLabX.</p>
-</li>
-</ol>
+</blockquote>
+ <p></p>
+<blockquote>
+<p><em><strong>Example:</strong></em> <code>0b10100101</code> is equivalent to <code>0xA5</code> or <code>165</code> within MPLabX.</p>
+</blockquote>
 </li>
 <li>
 <p>Open up the &ldquo;mcc_generated_files/examples/i2cX_master_example.h&rdquo; and review it. Identify within this header file the 7 example functions given for reading or writing data over i2c.</p>
 <ol>
 <li>
 <p>Next, eliminate some of those functions by going over the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a>. Will you be reading, writing or both? Will you be reading/writing 1 byte or two bytes?</p>
-<ol>
-<li><em><strong>Note:</strong></em> upon reviewing the TC74 datasheet, if you set up MCC as suggested above, you should not have to worry about defining custom timing sequences or accessing MSSP-specific register bits. This is handled internally by the I$^{\text{2}}$C library.</li>
-</ol>
+<blockquote>
+<p><em><strong>Note:</strong></em> upon reviewing the TC74 datasheet, if you set up MCC as suggested above, you should not have to worry about defining custom timing sequences or accessing MSSP-specific register bits. This is handled internally by the I$^{\text{2}}$C library.</p>
+</blockquote>
 </li>
 <li>
 <p>Select one or more of the functions not eliminated and implement it. Note that some of these functions require the use of pointers. You will need to create new variables in order to get this function to work. <em><strong>More than one of these functions will work.</strong></em></p>
-<ol>
-<li>
+<blockquote>
 <p><em><strong>Note:</strong></em> You will need to review the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a> for information about which registers to read/write, and the number of bytes of each value.</p>
-</li>
-<li>
+</blockquote>
+ <p></p>
+<blockquote>
 <p><em><strong>Note:</strong></em> With regard to constructing the right I$^{\text{2}}$C address, The MPLabX I$^{\text{2}}$C library handles all register bit-shifting and read/write bit conventions.</p>
-</li>
-</ol>
+</blockquote>
 </li>
 </ol>
 </li>
