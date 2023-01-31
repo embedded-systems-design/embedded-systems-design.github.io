@@ -262,7 +262,15 @@
         </ul>
         
         <div class="content mb-5">
-          <h2 id="instructions">Instructions</h2>
+          <h2 id="introduction">Introduction</h2>
+<p>This is a basic tutorial for the steps required to get SPI working on the PIC18F47Q10 Curiosity Nano</p>
+<h1 id="resources"><strong>Resources</strong></h1>
+<ul>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf"><em>PIC16F18446 Curiosity Nano Hardware User Guide</em></a></li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf"><em>PIC16F18446 Datasheet</em></a></li>
+<li>IFX9201SGAUMA1 Motor Driver (<a href="https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542">digikey link</a>) | (<a href="https://www.infineon.com/dgdl/Infineon-IFX9201SG-DS-v01_01-EN.pdf?fileId=5546d4624cb7f111014d2e8916795dea&amp;ack=t">datasheet</a>)</li>
+</ul>
+<h2 id="instructions">Instructions</h2>
 <ol>
 <li>
 <p>Prepare your IC</p>
@@ -277,34 +285,34 @@
 <p>Test: ensure connectivity to all pins after soldering with no connectivity between neighboring pins</p>
 </li>
 <li>
-<p>Mount your DIP adapter board on a breadboard
-4. Connect ALL pins according to the motor controller datasheet</p>
-<pre><code> - For the purposes of this assignment, use two different-colored LEDs mounted in opposite directions between ```OUT1``` and ```OUT2``` (with an appropriate current-limiting resistor) to emulate a bidirectional motor.
-
- &gt; **Note:** All pins must be connected to SOMETHING in order for the IC to work.  The datasheet explains connection requirements in various sections.
-</code></pre>
+<p>Mount your DIP adapter board on a breadboard</p>
+<ol>
+<li>
+<p>Connect ALL pins according to the motor controller datasheet.  For the purposes of this assignment, use two different-colored LEDs mounted in opposite directions between <code>OUT1</code> and <code>OUT2</code> (with an appropriate current-limiting resistor) to emulate a bidirectional motor.</p>
+<blockquote>
+<p><strong>Note:</strong> All pins must be connected to SOMETHING in order for the IC to work.  The datasheet explains connection requirements in various sections.</p>
+</blockquote>
+</li>
+</ol>
 </li>
 </ol>
 </li>
 <li>
 <p>Set up MCC</p>
 <ol>
-<li>
-<p>System Module: this has been tested as working with:</p>
+<li>System Module: this has been tested as working with:
 <ul>
 <li>Clock Source: HFINTOSC @64 MHz</li>
 <li>Clock Divider: 1</li>
 </ul>
 </li>
-<li>
-<p>Add EUSARTX for communicating to your PC</p>
+<li>Add EUSARTX for communicating to your PC
 <ul>
 <li>Select your desired baud rate</li>
 <li>ensure &ldquo;Redirect STDIO to USART&rdquo; is checked</li>
 </ul>
 </li>
-<li>
-<p>Add MSSPX.  Ensure MSSPX does not conflict with existing I2C devices</p>
+<li>Add MSSPX.  Ensure MSSPX does not conflict with existing I2C devices
 <ul>
 <li>Serial Protocol: SPI</li>
 <li>Mode: Master</li>
@@ -313,25 +321,26 @@
 <li>Clock Source Selection: FOSC/64</li>
 </ul>
 </li>
-<li>
-<p>Pin Manager
-3. Set up the MSSPX Pins according to the primary pins given by the PIC18F47Q10 Curiosity Nano Hardware Manual</p>
-<pre><code> &gt; Note: Chip Select is not a part of the MSSP system and should be set as a GPIO Output Pin
-</code></pre>
+<li>Pin Manager
 <ol>
-<li>Set the EUSARTX Pins according to the dedicated pins given in the PIC18F47Q10 Curiosity Nano Hardware Manual</li>
-</ol>
+<li>
+<p>Set up the MSSPX Pins according to the primary pins given by the PIC18F47Q10 Curiosity Nano Hardware Manual</p>
+<blockquote>
+<p>Note: Chip Select is not a part of the MSSP system and should be set as a GPIO Output Pin</p>
+</blockquote>
 </li>
 <li>
-<p>Pin Module</p>
+<p>Set the EUSARTX Pins according to the dedicated pins given in the PIC18F47Q10 Curiosity Nano Hardware Manual</p>
+</li>
+</ol>
+</li>
+<li>Pin Module
 <ol>
 <li>Deselect &ldquo;Analog&rdquo; on all the output pins.</li>
 <li>Give your chip select pin a custom name</li>
 </ol>
 </li>
-<li>
-<p>Generate your MCC Configuration</p>
-</li>
+<li>Generate your MCC Configuration</li>
 </ol>
 </li>
 <li>
@@ -350,18 +359,24 @@
 </ol>
 </li>
 <li>Open main.c and do the following things:
-2. Create an array of X bytes for data exchange over SPI
-2. Ensure your <code>SYSTEM_Initialize()</code> function initializes SPIX.
-3. Before the <code>while</code> loop, open SPIX using one of the functions identified above
-4. Within the <code>while</code> loop,
-1. Set the <code>N</code> bytes to be written to the motor controller according to the data sheet
-2. Activate the chip-select pin for the motor driver
-2. delay <code>X</code> ms (see the data sheet)
-3. exchange the data
-4. delay <code>Y</code> ms (see the data sheet)
-5. read the <code>N</code> bytes that were received in the exchange and save to a temporary variable.
-6. print the formatted temporary variable to EUSARTX for confirmation / debugging.
-7. repeat the process, updating your command data if necessary</li>
+<ol>
+<li>Create an array of X bytes for data exchange over SPI</li>
+<li>Ensure your <code>SYSTEM_Initialize()</code> function initializes SPIX.</li>
+<li>Before the <code>while</code> loop, open SPIX using one of the functions identified above</li>
+<li>Within the <code>while</code> loop,
+<ol>
+<li>Set the <code>N</code> bytes to be written to the motor controller according to the data sheet</li>
+<li>Activate the chip-select pin for the motor driver</li>
+<li>delay <code>X</code> ms (see the data sheet)</li>
+<li>exchange the data</li>
+<li>delay <code>Y</code> ms (see the data sheet)</li>
+<li>read the <code>N</code> bytes that were received in the exchange and save to a temporary variable.</li>
+<li>print the formatted temporary variable to EUSARTX for confirmation / debugging.</li>
+<li>repeat the process, updating your command data if necessary</li>
+</ol>
+</li>
+</ol>
+</li>
 </ol>
 </li>
 </ol>

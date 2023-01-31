@@ -95,8 +95,7 @@ Using SPI communication to control LEDs connected to a shift register</descripti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/pic-spi-motor-controller/</guid>
-      <description>Instructions Prepare your IC
-Surface-Mount Solder: If you have not yet surface-mount soldered your IC, you will need a DIP adapter board and 12 male header pins</description>
+      <description>Introduction This is a basic tutorial for the steps required to get SPI working on the PIC18F47Q10 Curiosity Nano</description>
     </item>
     
     <item>
