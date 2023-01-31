@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tutorials/pic/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>https://embedded-systems-design.github.io/spi-motor-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/spi-motor-controller/</guid>
+      <description>Instructions Prepare your IC
+Surface-Mount Solder: If you have not yet surface-mount soldered your IC, you will need a DIP adapter board and 12 male header pins</description>
+    </item>
+    
+    <item>
       <title>**Curiosity Nano &amp; MPLAB Tutorial**</title>
       <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
