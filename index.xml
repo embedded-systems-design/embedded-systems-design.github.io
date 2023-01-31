@@ -144,16 +144,6 @@ Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://embedded-systems-design.github.io/spi-motor-controller/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://embedded-systems-design.github.io/spi-motor-controller/</guid>
-      <description>Instructions Prepare your IC
-Surface-Mount Solder: If you have not yet surface-mount soldered your IC, you will need a DIP adapter board and 12 male header pins</description>
-    </item>
-    
-    <item>
       <title>**Curiosity Nano &amp; MPLAB Tutorial**</title>
       <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1251,6 +1241,16 @@ Using SPI communication to control LEDs connected to a shift register</descripti
       
       <guid>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</guid>
       <description>Introduction This tutorial builds off of Part 1. Go Back and start there if you haven&amp;rsquo;t yet completed it.</description>
+    </item>
+    
+    <item>
+      <title>SPI Motor Controller (PIC)</title>
+      <link>https://embedded-systems-design.github.io/pic-spi-motor-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://embedded-systems-design.github.io/pic-spi-motor-controller/</guid>
+      <description>Instructions Prepare your IC
+Surface-Mount Solder: If you have not yet surface-mount soldered your IC, you will need a DIP adapter board and 12 male header pins</description>
     </item>
     
     <item>
