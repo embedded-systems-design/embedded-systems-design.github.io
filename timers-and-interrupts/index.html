@@ -468,33 +468,39 @@
 <p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
 </blockquote>
 <h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
+<p>In this section you will be implementing software-based debounce logic to ensure that button pushes are not over-counted.  We will create &ldquo;interrupt on change&rdquo; (IOC) handling that will run code whenever it detects a button-push, and use the</p>
 <p><em>This section assumes you have set up IOC-based interrupts in MCC and generated a new configuration file as specified in the MCC setup section above</em></p>
 <ol>
 <li>
-<p>Open <code>pin_manager.h</code>. Find and note the name for the function that links callback functions to each of the two pins selected for your pushbutton switches. There should be two functions available, one for each pin you configured in MCC.</p>
+<p>**Identify the way to map callback functions to interrupts. **Open <code>pin_manager.h</code>. Find and note the name for the function that links callback functions to each of the two pins selected for your pushbutton switches. There should be two functions available, one for each pin you configured in MCC.</p>
 </li>
 <li>
-<p>Create a function pin_down() above main. it should return type void and take no input variables.</p>
+<p><strong>Create your first IOC callback.</strong> Create a function pin_down() above main. it should return type void and take no input variables.</p>
 <p>In the main() function, link the new pin_down() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></p>
 </li>
 <li>
-<p>Create a function pin_up() above main. it should return type void and take no input variables.</p>
+<p><strong>Create your second callback.</strong> Create a function pin_up() above main. it should return type void and take no input variables.</p>
 <p>In the main() function, link the new pin_up() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></p>
 </li>
 <li>
-<p>Custom Callback code. In pin_down() and pin_up() implement custom code that captures the current time that each button push occurs and save it into a new global variable.</p>
+<p><strong>Write custom callback code.</strong> In pin_down() and pin_up() implement custom code that captures the current time that each button push occurs and save it into a new global variable.</p>
 </li>
 <li>
-<p>In the while loop in main(), add code that:</p>
+<p><strong>Implement the debounce logic.</strong>  In the <code>while</code> loop in <code>main()</code>, add code that:</p>
 <ol>
 <li>
-<p>checks the current time against the time the up or down buttons were pushed.</p>
+<p>Checks the current time against the time the up or down buttons were pushed.</p>
 </li>
 <li>
-<p>checks whether those buttons are currently pushed</p>
+<p>Checks whether those buttons are still being pushed.</p>
 </li>
 <li>
-<p>if the above two are true, increments or decrements the duty cycle (once and only once) if the current time reaches some internal delay (in a non-blocking way). Resets this check if the buttons ever change state before reaching their limit</p>
+<p>If the above two are both true, and if the current time reaches some internal delay (in a non-blocking way)</p>
+<ol>
+<li>Increments or decrements the duty cycle (once and only once per button push, using a flag or internal check variable)</li>
+<li>Resets this flag if the buttons ever change state before reaching their limit.</li>
+<li>Ensures the duty cycle neither increments over 100% nor under 0%.</li>
+</ol>
 </li>
 <li>
 <p>Fills and prints a string with the current duty cycle, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo; using <code>printf()</code>.</p>
@@ -512,51 +518,7 @@
 <p>Download and compile your code and demonstrate</p>
 </li>
 </ol>
-<!--
-## Demonstration of Proficiency
 
-*You must complete the demonstration individually, either in office hours or in class if time permits.*
-
-1.  Connect your Curiosity Nano to a computer via USB. Open your MPLAB® X project. Generate MCC. Compile the program, and program your board.
-
-2.  Demonstrate the LED state changing once each second.
-
-3.  Demonstrate the current time prints to the top line of the LCD in the correct format, at the correct rate.
-
-> *Note: You may alternatively use EUSART with Putty to verify this functionality*
-
-4.  Demonstrate the current PWM Duty cycle prints to the bottom line of the LCD in the correct format
-
-> *Note: You may alternatively use EUSART with Putty to verify this functionality*
-
-5.  Demonstrate that pushing the button increments or decrements the duty cycle of the LED (and LCD) by 25%
-
-> *Note: You may alternatively use EUSART with Putty to verify this functionality*
-
-***NOTE: When you are done with this assignment, keep your system wired up for next week's assignment, which will (mostly) use the same breadboard layout***
-
-## Canvas Submission
-
-Submit your packaged MPLAB® X projects (right-click on the project and select "Package" from the contextual menu) for each section in ZIP format to this assignment on [*Canvas*](https://canvas.asu.edu) by the deadline in Canvas. *Do not submit links to Google documents.* It is your responsibility to ensure that your submission to Canvas was successful. Late Canvas submissions will be graded per the policy in the syllabus. No credit will be awarded for assignments not submitted to Canvas, even if a demonstration was completed.
-
-## Grading
-
-+-------------------------------------------------------------------+------------+
-| **Demonstration**                                                 | **Points** |
-+===================================================================+============+
-| 1.  Connect, compile, and program                                 | 20         |
-+-------------------------------------------------------------------+------------+
-| 2.  Demonstrate 1-sec onboard flashing LED                        | 40         |
-+-------------------------------------------------------------------+------------+
-| 3.  Demonstrate current time printing to LCD/EUSART               | 60         |
-+-------------------------------------------------------------------+------------+
-| 4.  Demonstrate Duty cycle printing to LCD/EUSART                 | 20         |
-+-------------------------------------------------------------------+------------+
-| 5.  Demonstrate interrupt-based increment/decrement to LCD/EUSART | 60         |
-+-------------------------------------------------------------------+------------+
-| **Total**                                                         | **200**    |
-+-------------------------------------------------------------------+------------+
--->
         </div>
 
         
