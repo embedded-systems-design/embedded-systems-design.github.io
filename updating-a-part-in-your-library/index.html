@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Updating a Part in your Library | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Updating Library Parts in Cadence | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -238,7 +238,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/updating-a-part-in-your-library/">Updating a Part in your Library</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/updating-a-part-in-your-library/">Updating Library Parts in Cadence</a></li>
 
 </ol>
 </nav>
@@ -249,103 +249,143 @@
 
 
 
-        <h2>Updating a Part in your Library</h2>
+        <h2>Updating Library Parts in Cadence</h2>
         
         <div class="mb-1 post-meta">
-          <span>By ESD Faculty</span>
+          <span>By Christian Torres, ESD Faculty</span>
           
           
           
         </div>
         <ul class="list-inline">
           
-          <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/ecad"
-            class="text-primary">Ecad</a>
-          </li>
-          <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-            class="text-primary">Cadence</a>
-          </li>
         </ul>
         
         <div class="content mb-5">
-          <h2 id="updating-a-part-in-your-library">Updating a Part in your Library</h2>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0253.png"><img src="/larger/image0253.png" alt="Figure: Typical Schematic"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure: Typical Schematic</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>Sometimes its necessary to make small changes to your parts as you learn more about them or need to define them better in order to identify more design mistakes during the design process. But it&rsquo;s difficult to know how to propagate these changes to a given schematic. Let&rsquo;s say you have made a part but forgot to add a part outline, but you already connected it up in your schematic.</p>
-<h2 id="steps">Steps</h2>
+          <h2 id="background">Background</h2>
+<h3 id="why-do-i-need-to-update-my-parts">Why do I need to update my parts?</h3>
+<p>As you start to learn schematic and PCB design, you will have to learn to make your own symbols and footprints for your components. Because of this, there is a chance that you accidentally mislabel or misread a data sheet and add a wrong pin/connection. Designs are also constantly being updated and revised.</p>
+<p>Therefore, it is important to maintain the most update to date component available. Sometimes it&rsquo;s necessary to make small changes to your parts as you learn more about them or need to define them better to identify more design mistakes during the design process.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>For this tutorial it is expected that you have made a custom library with custom symbols. The link to those tutorials can be found below:</p>
+<ul>
+<li><a href="/creating-a-custom-library-in-cadence/">Creating a custom library in Cadence</a></li>
+<li><a href="/creating-a-custom-schematic-symbol-in-cadence/">Creating a custom schematic symbol in Cadence</a></li>
+</ul>
+<blockquote>
+<p><strong>Please note:</strong> The PCB design in the tutorial is an example used for the purpose of this demonstration. <strong>Do not copy it.</strong> Your PCB design should either be your individual subsystem or team design.</p>
+</blockquote>
+<h2 id="updating-a-part-in-your-library">Updating a part in your library</h2>
+<h3 id="find-your-partsymbol-in-the-project-explorer">Find your part/symbol in the project explorer</h3>
 <ol>
 <li>
-<p>Go into the project explorer and navigate to the library in which your custom part is, and open it up.</p>
+<p>In this example we will be updating the pin names of the PIC18F47Q10 that is onboard the Curiosity Nano. We can find our part on the left-hand side of the screen in the project explorer. We will right click and select the part we want to edit.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="/larger/image0254.png"><img src="/larger/image0254.png" alt="Figure 1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image1.png"><img src="image1.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure 1</div></td></tr>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Make the necessary changes to your part and save using &ldquo;ctrl+s&rdquo; or by right clicking on the active tab and selecting &ldquo;save&rdquo;.</p>
+<p>Make the necessary changes to your part and save using &ldquo;ctrl+s&rdquo; or by right clicking on the active tab and selecting &ldquo;save&rdquo;. In this example we will be changing the names of Pins 15 &amp; 14 to &ldquo;ISCP CLK&rdquo; and &ldquo;ICSP DATA&rdquo; in order to preform in circuit serial programming with the MPLAB SNAP Programmer.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="/larger/image0255.png"><img src="/larger/image0255.png" alt="Figure 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image2.png"><img src="image2.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure 2</div></td></tr>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Now you need to propagate your changes to your schematic. In the project explorer, go up to the affected schematic, expand until you find the design cache, identify the changed part, right click, and select &ldquo;update cache&rdquo;. Select yes to all the dialog boxes and go back to your schematic.</p>
+<p>Once the changes have been saved. You can now try to add the new version to the schematic, you will run into an error. This error means that we need to update the cache so that we can add our modified part to the shematic.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="/larger/image0256.png"><img src="/larger/image0256.png" alt="Figure 3"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image3.png"><img src="image3.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure 3</div></td></tr>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
 <li>
-<p>Your schematic is now updated. Make sure you fix any connection problems if you updated pin names or numbers.</p>
+<p>In the project explorer, find the design cache and expand it. Then find the modified, right click, and select &ldquo;<strong>update cache</strong>&rdquo;. Select yes to all the dialog boxes and go back to your schematic. You can also update the entire Design Cache if you make multiple part changes.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="/larger/image0257.png"><img src="/larger/image0257.png" alt="Figure 4"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image4.png"><img src="image4.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure 4</div></td></tr>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image5.png"><img src="image5.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
 </tbody>
 </table>
 
 </p>
 </li>
+<li>
+<p>Find the part in your custom library on the right-hand side.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image6.png"><img src="image6.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>We can now add our modified part to the schematic. Our changes should be reflected in what is placed on the schematic. If all this is done correctly, your schematic is now updated. Make sure you fix any connection problems if you updated pin names or numbers.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image7.png"><img src="image7.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+<h3 id="things-to-check-in-case-of-mistakes">Things to check in case of mistakes</h3>
+<ol>
+<li>Make sure to save the modifications to your part when editing it.</li>
+<li>Make sure all errors are resolved when modifying your part.</li>
+<li>Make sure you edited the correct part.</li>
 </ol>
 
         </div>
@@ -405,7 +445,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/cadence/schematics/updating-a-part-in-your-library.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/cadence/schematics/updating-a-part-in-your-library/index.md"> Edit this Page</a></p>
         
         
         

@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Altering Trace Widths | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Altering Trace Widths in Cadence | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -238,7 +238,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/altering-trace-widths/">Altering Trace Widths</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/altering-trace-widths/">Altering Trace Widths in Cadence</a></li>
 
 </ol>
 </nav>
@@ -249,141 +249,147 @@
 
 
 
-        <h2>Altering Trace Widths</h2>
+        <h2>Altering Trace Widths in Cadence</h2>
         
         <div class="mb-1 post-meta">
-          <span>By ESD Faculty</span>
+          <span>By Christian Torres, ESD Faculty</span>
           
           
           
         </div>
         <ul class="list-inline">
           
-          <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/ecad"
-            class="text-primary">Ecad</a>
-          </li>
-          <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-            class="text-primary">Cadence</a>
-          </li>
         </ul>
         
         <div class="content mb-5">
-          <p>Altering Trace Widths</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0005.png"><img src="/larger/image0005.png" alt="Figure 1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 1</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>Sometimes you need to globally change trace widths in your board after designing it. Instead of deleting them all and starting from scratch, you can select all the traces at once using the following steps:</p>
+          <h2 id="background">Background</h2>
+<h3 id="why-do-i-need-to-change-my-trace-widths">Why do I need to change my trace widths?</h3>
+<p>As you start to learn schematic and PCB design, you will have to learn how to alter your trace widths on boards. There are several different reasons that we have difference trace widths on boards. The specifications of traces for digital signals and power traces will be different. Therefore, we must change the widths of the traces on our boards. For more information about the importance of trace widths, <a href="https://www.sfcircuits.com/pcb-school/pcb-trace-widths">you can read more here</a>.</p>
+<p>You will also need to learn how to utilize a <a href="https://www.4pcb.com/trace-width-calculator.html">trace width calculator</a> for finding the appropriate trace width for your board.</p>
+<blockquote>
+<p><strong>Please note:</strong> The PCB design in the tutorial is an example used for the purpose of this demonstration. <strong>Do not copy it.</strong> Your PCB design should either be your individual subsystem or team design.</p>
+</blockquote>
+<h2 id="altering-global-trace-widths">Altering global trace widths</h2>
+<h3 id="find-your-partsymbol-in-the-project-explorer">Find your part/symbol in the project explorer</h3>
 <ol>
-<li>Make sure you are in general edit mode by clicking on the icon highlighted in the top row of icons:</li>
+<li>
+<p>In this example we will be globally changing the trace width in our board, instead of individually changing each trace one by one. First, make sure that you are in the &ldquo;general edit&rdquo; mode.</p>
+<p>This can be done by right clicking on a blank space, expanding the &ldquo;Application Mode&rdquo; drop down and selecting &ldquo;General Edit&rdquo;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image1.png"><img src="image1.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Once the general edit mode has been selected, right click and expand the &ldquo;Super Filter&rdquo; drop down. Then select the &ldquo;Connect Line&rdquo; function.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image2.png"><img src="image2.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Once &ldquo;Connect Line&rdquo; has been selected we can now make a box around the traces we want to change. In this example we will select the whole board and change the trace width from 40 mills to 15 mills. Remember that 1 mill is 0.001 inches.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image3.png"><img src="image3.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>As you can see 40 mills is causing errors for some of these components and we will reduce the width.</p>
+</li>
+<li>
+<p>When all the traces are selected, we will now right click on any trace, and select &ldquo;Change Width&rdquo;. From here we can enter in the trace width that we want.</p>
+<p>For tutorial purposes, we selected all the traces to change globally. However, you can also change specific traces by holding &ldquo;Ctrl&rdquo; on your keyboard and selecting the traces you wish to change. They will highlight the same as the image below.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image4.png"><img src="image4.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image5.png"><img src="image5.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Now hit enter or okay to input the trace width you want. Once this is done you should now be able to see the trace widths of your design have been altered.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image6.png"><img src="image6.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Finally, turn the super filter back off. You have now successfully changed the trace widths of your board globally.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image7.png"><img src="image7.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
 </ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0005.png"><img src="/larger/image0005.png" alt="Figure 2"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 2</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<ol start="2">
-<li>Right click in the design workspace, selecting &ldquo;super filter &ndash;&gt; Connect Line&rdquo;</li>
+<h2 id="things-to-check-in-case-of-mistakes">Things to check in case of mistakes</h2>
+<ol>
+<li>
+<p>Make sure to be in general edit mode before selecting connect line function.</p>
+</li>
+<li>
+<p>Know what your current trace width is, and what you would like to change it to by using the trace width calculator.</p>
+</li>
+<li>
+<p>Be sure to select all the traces you wish to change, and right click on the highlight trace. The &ldquo;Change Width&rdquo; function will not pop up if you did not right click on a highlighted trace.</p>
+</li>
 </ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0006.png"><img src="/larger/image0006.png" alt="Figure 3"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 3</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<ol start="3">
-<li>Drag a box around your entire design, selecting all connect lines</li>
-</ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0007.png"><img src="/larger/image0007.png" alt="Figure 4"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 4</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p> 4. Right click in the workspace and select &ldquo;change width&rdquo; in the resulting menu.</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0008.png"><img src="/larger/image0008.png" alt="Figure 5"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 5</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0009.png"><img src="/larger/image0009.png" alt="Figure 6"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 6</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<ol start="5">
-<li>Hit enter and see the result:</li>
-</ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0010.png"><img src="/larger/image0010.png" alt="Figure 7"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 7</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<ol start="6">
-<li>Turn your super filter back off:</li>
-</ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/larger/image0011.png"><img src="/larger/image0011.png" alt="Figure 8"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 8</div></td></tr>
-</tbody>
-</table>
-
-</p>
 
         </div>
 
@@ -442,7 +448,7 @@
         
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/cadence/designing-pcbs/altering-trace-widths.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/cadence/designing-pcbs/altering-trace-widths/index.md"> Edit this Page</a></p>
         
         
         

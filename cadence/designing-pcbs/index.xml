@@ -16,13 +16,12 @@
     </item>
     
     <item>
-      <title>Altering Trace Widths</title>
+      <title>Altering Trace Widths in Cadence</title>
       <link>https://embedded-systems-design.github.io/altering-trace-widths/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://embedded-systems-design.github.io/altering-trace-widths/</guid>
-      <description>Altering Trace Widths
-Figure 1 Sometimes you need to globally change trace widths in your board after designing it.</description>
+      <description>Background Why do I need to change my trace widths? As you start to learn schematic and PCB design, you will have to learn how to alter your trace widths on boards.</description>
     </item>
     
     <item>
