@@ -497,7 +497,7 @@
 <li>
 <p>If the above two are both true, and if the current time reaches some internal delay (in a non-blocking way)</p>
 <ol>
-<li>Increments or decrements the duty cycle (once and only once per button push, using a flag or internal check variable)</li>
+<li>Increments or decrements a &ldquo;duty cycle&rdquo; variable (once and only once per button push, using a flag or internal check variable)</li>
 <li>Resets this flag if the buttons ever change state before reaching their limit.</li>
 <li>Ensures the duty cycle neither increments over 100% nor under 0%.</li>
 </ol>
