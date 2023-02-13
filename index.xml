@@ -553,10 +553,10 @@ In Windows, open the Design Entry CIS program.</description>
     
     <item>
       <title>Defining Constraints in Cadence PCB Editor</title>
-      <link>https://embedded-systems-design.github.io/setting-up-drc-constraints/</link>
+      <link>https://embedded-systems-design.github.io/setting-up-cadence-drc-constraints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://embedded-systems-design.github.io/setting-up-drc-constraints/</guid>
+      <guid>https://embedded-systems-design.github.io/setting-up-cadence-drc-constraints/</guid>
       <description>Introduction The PCB mills in Peralta have certain capabilities, so PCBs must be designed with their limitations in mind.</description>
     </item>
     
