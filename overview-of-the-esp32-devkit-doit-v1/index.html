@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.110.0">
+  <meta name="generator" content="Hugo 0.111.1">
 
   <!-- plugins -->
   
@@ -274,12 +274,23 @@
         </ul>
         
         <div class="content mb-5">
-          <h2 id="tldr">TL/DR</h2>
+          <h2 id="overview">Overview</h2>
+<p>See this excellent <a href="https://circuits4you.com/2018/12/31/esp32-devkit-esp32-wroom-gpio-pinout/">overview</a> of the ESP32</p>
 <div class="alert alert-warning" role="alert">
 RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn't be used for UART in your project
 </div>
-<h2 id="overview">Overview</h2>
-<p>See this excellent <a href="https://circuits4you.com/2018/12/31/esp32-devkit-esp32-wroom-gpio-pinout/">overview</a> of the ESP32</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dev-board.png"><img src="dev-board.png" alt="Devkit vs ESP32 module"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Devkit vs ESP32 module</div></td></tr>
+</tbody>
+</table>
+
+</p>
 <h2 id="pinouts--schematics">Pinouts / Schematics</h2>
 <p>
 <table>
