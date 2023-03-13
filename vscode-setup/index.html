@@ -264,7 +264,17 @@
         <div class="content mb-5">
           <h2 id="installation">Installation</h2>
 <p>Download from <a href="https://code.visualstudio.com/Download">here</a></p>
+<p>Installation Options</p>
+<ul>
+<li>Accept the default installation path</li>
+<li>keep &ldquo;Register Code as an editor for supported file types&rdquo; checked</li>
+<li>keep &ldquo;Add to PATH&rdquo; checked</li>
+<li>other options: set to your preference</li>
+</ul>
 <h2 id="useful-command-line-arguments">Useful command-line arguments</h2>
+<blockquote>
+<p>Note: this only works if you added vscode to your system <code>PATH</code></p>
+</blockquote>
 <pre tabindex="0"><code>Usage: code [options][paths...]
 </code></pre><p>Example:</p>
 <pre tabindex="0"><code>code -n ~/websites/danb0b.github.io/
@@ -346,31 +356,46 @@
 </table>
 <h2 id="extensions">Extensions</h2>
 <p>from <a href="https://code.visualstudio.com/docs/editor/command-line">here</a></p>
-<pre tabindex="0"><code>code --install-extension bierner.markdown-yaml-preamble
-code --install-extension davidanson.vscode-markdownlint
-code --install-extension ms-python.isort
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension Pycom.pymakr-preview
-code --install-extension redhat.vscode-yaml
-code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension yzane.markdown-pdf
-code --install-extension yzhang.markdown-all-in-one
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --list-extensions
+<p>open powershell and paste the following in:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension bierner.markdown-yaml-preamble
+</span></span><span style="display:flex;"><span>code --install-extension davidanson.vscode-markdownlint
+</span></span><span style="display:flex;"><span>code --install-extension ms-python.isort
+</span></span><span style="display:flex;"><span>code --install-extension ms-python.python
+</span></span><span style="display:flex;"><span>code --install-extension ms-python.vscode-pylance
+</span></span><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
+</span></span><span style="display:flex;"><span>code --install-extension redhat.vscode-yaml
+</span></span><span style="display:flex;"><span>code --install-extension shd101wyy.markdown-preview-enhanced
+</span></span><span style="display:flex;"><span>code --install-extension yzane.markdown-pdf
+</span></span><span style="display:flex;"><span>code --install-extension yzhang.markdown-all-in-one
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --list-extensions
 </span></span></code></pre></div><h2 id="markdown-all-in-one">Markdown all-in-one</h2>
 <p>go to settings
 @id:editor.defaultFormatter @lang:markdown formatter
 ctrl_+ shift + I then formats your document</p>
 <h3 id="pymaker">pymaker</h3>
 <ol>
-<li>install pymakr preview</li>
+<li>
+<p>install pymakr preview</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
+</span></span></code></pre></div></li>
 </ol>
-<pre tabindex="0"><code>code --install-extension Pycom.pymakr-preview
-</code></pre><ol>
-<li>navigate to pymakr tab
-2. list devices
-3. connect device
-4. open device in workspace</li>
+<p>Getting Started (from <a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">here</a>)</p>
+<ol>
+<li>In File explorer(<code>ctrl+shift+e</code>)
+<ol>
+<li>add or create a project folder for holding your micropython code (suggestion: name it &ldquo;micropython&rdquo;).  Consider creating one in your &ldquo;code&rdquo; git repository.</li>
+</ol>
+</li>
+<li>navigate to &ldquo;Pymakr: Projects&rdquo; tab in the workspace explorer window on the left
+2. select &ldquo;create project&rdquo;.  Select the same code folder as above and specify a project name (like &ldquo;hello-world&rdquo;).  Select the option to create a subdirectory with the micropython folder.
+3. within the &ldquo;hello-world&rdquo; project that is created within the &ldquo;Pymakr: Projects&rdquo; tab, add a new device</li>
+<li>teset
+<ol>
+<li>list devices</li>
+<li>connect device</li>
+<li>open device in workspace</li>
+</ol>
+</li>
 <li>create project:  <code>ctrl+shift+p</code> then</li>
 </ol>
 <h4 id="external-resources">External Resources</h4>

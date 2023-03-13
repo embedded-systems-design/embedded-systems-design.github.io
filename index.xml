@@ -1475,7 +1475,8 @@ Using SPI communication to control LEDs connected to a shift register</descripti
       
       <guid>https://embedded-systems-design.github.io/vscode-setup/</guid>
       <description>Installation Download from here
-Useful command-line arguments Usage: code [options][paths...] Example:</description>
+Installation Options
+Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Useful command-line arguments Note: this only works if you added vscode to your system PATH</description>
     </item>
     
     <item>
