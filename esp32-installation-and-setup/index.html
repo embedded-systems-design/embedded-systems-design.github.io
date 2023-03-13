@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.111.1">
+  <meta name="generator" content="Hugo 0.111.3">
 
   <!-- plugins -->
   
@@ -288,16 +288,22 @@
 <p><strong>Installing Thonny and other Packages:</strong> Open up powershell (win+x, i) and</p>
 <ol>
 <li>
-<p>type <code>conda install -c conda-forge wrapt</code></p>
-</li>
+<p>type the following to install a prerequisite package</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -c conda-forge wrapt
+</span></span></code></pre></div></li>
 <li>
-<p>type <code>pip install esptool thonny</code></p>
-<p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
+<p>Install the ESP32 commandline flashing tool</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install esptool
+</span></span></code></pre></div></li>
+<li>
+<p>To install Thonny type the following <em>(This is optional)</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install thonny
+</span></span></code></pre></div><p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="install-device-drivers">Install Device Drivers</h2>
+<h2 id="install-device-drivers-windows-only">Install Device Drivers <em>(Windows Only)</em></h2>
 <p>The device drivers will help your computer recognize the ESP32 as a USB Device</p>
 <ol>
 <li>
@@ -367,9 +373,19 @@
 </ol>
 <h2 id="flashing-the-esp32-firmware-for-micropython">Flashing the ESP32 Firmware for MicroPython</h2>
 <ol>
-<li>
-<p>download <a href="https://micropython.org/download/esp32/">firmware</a> (I don&rsquo;t recommend v1.18, use the nightly build as it contains several more recent fixes to PWM)</p>
-</li>
+<li>download <a href="https://micropython.org/download/esp32/">firmware</a> (I don&rsquo;t recommend v1.18 due to PWM issues)</li>
+</ol>
+<h3 id="option-1-command-line-approach-with-esptool">Option 1: Command-line approach with <code>esptool</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m esptool --chip esp32 --port &lt;serial_port&gt; erase_flash
+</span></span></code></pre></div><p>Now flash it using the template below.  Check device manager in windows to identify the appropriate COM port</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m esptool --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</span></span></code></pre></div><p>For Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m esptool --chip esp32 --port COM3 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
+</span></span></code></pre></div><h3 id="option-2-thonny-approach">Option 2: Thonny approach</h3>
+<blockquote>
+<p>Requires thonny to be installed, see <a href="#install-miniconda-and-packages">above</a></p>
+</blockquote>
+<ol>
 <li>
 <p>open cmd and type <code>thonny</code></p>
 <p>
@@ -495,11 +511,11 @@
 </li>
 <li>
 <p>Look at the interpreter window.  You should see:</p>
-<pre tabindex="0"><code>MicroPython v1.18 on 2022-01-17; ESP32 module with ESP32
-
-Type &#34;help()&#34; for more information.
-&gt;&gt;&gt; 
-</code></pre><p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">MicroPython</span> <span style="color:#111">v1</span><span style="color:#ae81ff">.18</span> <span style="color:#111">on</span> <span style="color:#ae81ff">2022</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">17</span><span style="color:#111">;</span> <span style="color:#111">ESP32</span> <span style="color:#111">module</span> <span style="color:#00a8c8">with</span> <span style="color:#111">ESP32</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Type</span> <span style="color:#d88200">&#34;help()&#34;</span> <span style="color:#00a8c8">for</span> <span style="color:#111">more</span> <span style="color:#111">information</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 
+</span></span></code></pre></div><p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
@@ -528,7 +544,7 @@ Type &#34;help()&#34; for more information.
 </p>
 </li>
 </ol>
-<h2 id="mac-specific-suggestions">Mac Specific Suggestions:</h2>
+<h2 id="mac-specific-suggestions">Mac Specific Suggestions</h2>
 <ul>
 <li>
 <p>use terminal or xterm if you have it as Macs do not have powershell</p>
