@@ -289,7 +289,7 @@
 <ol>
 <li>
 <p>type the following to install a prerequisite package</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -c conda-forge wrapt
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -y -c conda-forge wrapt
 </span></span></code></pre></div></li>
 <li>
 <p>Install the ESP32 commandline flashing tool</p>
@@ -376,11 +376,19 @@
 <li>download <a href="https://micropython.org/download/esp32/">firmware</a> (I don&rsquo;t recommend v1.18 due to PWM issues)</li>
 </ol>
 <h3 id="option-1-command-line-approach-with-esptool">Option 1: Command-line approach with <code>esptool</code></h3>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m esptool --chip esp32 --port &lt;serial_port&gt; erase_flash
+<p>windows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port COM7 erase_flash
+</span></span></code></pre></div><p>linux:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash
 </span></span></code></pre></div><p>Now flash it using the template below.  Check device manager in windows to identify the appropriate COM port</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m esptool --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+<p>Windows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
 </span></span></code></pre></div><p>For Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m esptool --chip esp32 --port COM3 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port COM7 write_flash -z 0x1000 Downloads/esp32-20220618-v1.19.1.bin
+</span></span></code></pre></div><p>Linux:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</span></span></code></pre></div><p>For Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
 </span></span></code></pre></div><h3 id="option-2-thonny-approach">Option 2: Thonny approach</h3>
 <blockquote>
 <p>Requires thonny to be installed, see <a href="#install-miniconda-and-packages">above</a></p>
@@ -570,6 +578,7 @@
 </ul>
 <h2 id="external-resources">External Resources</h2>
 <ul>
+<li><a href="https://micropython.org/download/esp32/">https://micropython.org/download/esp32/</a></li>
 <li><a href="https://randomnerdtutorials.com/flashing-micropython-firmware-esptool-py-esp32-esp8266/">https://randomnerdtutorials.com/flashing-micropython-firmware-esptool-py-esp32-esp8266/</a></li>
 </ul>
 <hr>
