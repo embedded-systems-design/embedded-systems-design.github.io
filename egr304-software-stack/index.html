@@ -2,11 +2,11 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> EGR304 Software Install (Spring 2022) | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> EGR304 Software Install (Fall 2023) | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.116.1">
+  <meta name="generator" content="Hugo 0.117.0">
 
   <!-- plugins -->
   
@@ -233,7 +233,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/misc/">Misc</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/egr304-software-stack/">EGR304 Software Install (Spring 2022)</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/egr304-software-stack/">EGR304 Software Install (Fall 2023)</a></li>
 
 </ol>
 </nav>
@@ -244,10 +244,10 @@
 
 
 
-        <h2>EGR304 Software Install (Spring 2022)</h2>
+        <h2>EGR304 Software Install (Fall 2023)</h2>
         
         <div class="mb-1 post-meta">
-          <span>By Dan Aukes</span>
+          <span>By ESD Faculty</span>
           
           
           
@@ -258,40 +258,11 @@
         
         <div class="content mb-5">
           <h2 id="introduction">Introduction</h2>
-<p>The following is the approach you can use to quickly get software installed.</p>
-<h2 id="chocolatey">Chocolatey</h2>
-<p>Chocolatey is a windows-based package manager that automates downloading and installing a ton of software for windows.  We&rsquo;ll use it where we can.</p>
+<p>You will need to install all of the software listed below on any personal computers you plan to use this semester. Most of the software below is for Windows. If you have a Mac, you can use <a href="https://www.parallels.com"><em>Parallels</em></a> to run Windows apps.</p>
+<h2 id="1-discrete-installers">1. Discrete Installers</h2>
+<h3 id="psoc-creator-windows-only">PSoC® Creator™ <em>(Windows only)</em></h3>
 <ol>
-<li>
-<p>open up powershell (start&ndash;&gt;&ldquo;Windows Powershell&rdquo;) in administrative mode (click on the arrow to the right of &ldquo;Windows Powershell&rdquo; text in the start menu and &ldquo;run as administrator&rdquo;)</p>
-</li>
-<li>
-<p>paste in the following line to install chocolatey</p>
- <!--Set-ExecutionPolicy AllSigned-->
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope Process -Force<span style="color:#111">;</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol -bor 3072<span style="color:#111">;</span> iex <span style="color:#f92672">((</span>New-Object System.Net.WebClient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#d88200">&#39;https://community.chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
-</span></span></code></pre></div></li>
-<li>
-<p>close the powershell window and open a new powershell window (also in administrator mode).  Paste in the following line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install -y putty.install kicad vcredist2013
-</span></span></code></pre></div></li>
-<li>
-<p>Paste in the following line for some optional but really useful tools:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install -y adobereader notepadplusplus 7zip grepwin kdiff3
-</span></span></code></pre></div></li>
-</ol>
-<h2 id="vb-35">VB 3.5</h2>
-<ol>
-<li>go to start&ndash;&gt;control panel&ndash;&gt;programs</li>
-<li>on the left side bar, select &ldquo;turn windows features on or off&rdquo;</li>
-<li>select &ldquo;.net framework 3.5&rdquo;</li>
-</ol>
-<h2 id="visual-c-redistributable">Visual C++ Redistributable</h2>
-<p>if you did not follow the chocolatey install instructions above you can download it here:</p>
-<p><a href="http://updates.cypress.com/updates/prerequisite/vcredist_x86_2013.exe">http://updates.cypress.com/updates/prerequisite/vcredist_x86_2013.exe</a></p>
-<h2 id="discrete-installers">Discrete Installers</h2>
-<h3 id="psoc-creator">PSoC Creator</h3>
-<ol>
-<li>Create an account with Infineon</li>
+<li>Create an account with <a href="https//www.infineon.com">Infineon</a></li>
 <li>Download and install <a href="https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-creator/">PSoC Creator</a>
 <ol>
 <li>Choose Typical Installation</li>
@@ -299,19 +270,64 @@
 </li>
 <li>Once the install completes, select run updater (help&ndash;&gt;update manager) from PSoC Creator and update all packages</li>
 </ol>
-<h3 id="cadence-optional-for-egr304-required-for-egr314">Cadence (optional for EGR304, required for EGR314)</h3>
+<!--
+### Cadence (optional for EGR304, required for EGR314)
+
+1. Follow the instructions [here](/installing-cadence/) to install cadence.
+1. Follow the instructions to configure cadence  ([standalone](/configuring-cadence/) / [cloud](/configuring-cadence-cloud/) instructions)..
+
+
+### PSoC Programmer *(optional)*
+
+[PSoC Programmer](https://www.infineon.com/cms/en/design-support/tools/programming-testing/psoc-programming-solutions/) is included with PSoC Creator install as a plugin, so no need to reinstall.
+-->
+<h3 id="cysmart-bluetooth-tool-windows-only">CySmart Bluetooth Tool <em>(Windows only)</em></h3>
+<ul>
+<li><a href="https://www.dropbox.com/s/ktxzxiipkfyypls/airoccysmart_1.3_Windows_x86-x64.exe?dl=0"><em>AIROC CySmart 1.3</em></a></li>
+</ul>
+<h3 id="lightblue-phone-app">LightBlue® Phone App</h3>
+<ul>
+<li>
+<p><a href="https://apps.apple.com/us/app/lightblue/id557428110"><em>Apple App Store</em></a> version</p>
+</li>
+<li>
+<p><a href="https://play.google.com/store/apps/details?id=com.punchthrough.lightblueexplorer&amp;hl=en_US&amp;gl=US"><em>Google Play Store</em></a> version</p>
+</li>
+</ul>
+<h2 id="2a-additional-installers-via-chocolatey-optional-but-handy">2a. Additional Installers via Chocolatey <em>(optional, but handy)</em></h2>
+<p>Chocolatey is a Windows-based package manager that automates downloading and installing software for Windows.</p>
 <ol>
-<li>Follow the instructions <a href="/installing-cadence/">here</a> to install cadence.</li>
-<li>Follow the instructions to configure cadence  (<a href="/configuring-cadence/">standalone</a> / <a href="/configuring-cadence-cloud/">cloud</a> instructions)..</li>
+<li>
+<p>Open up PowerShell (Start &ndash;&gt; &ldquo;Windows Powershell&rdquo;) in administrator mode (click on the arrow to the right of &ldquo;Windows Powershell&rdquo; text in the start menu and &ldquo;run as administrator&rdquo;)</p>
+</li>
+<li>
+<p>Paste in the following line to install chocolatey</p>
+ <!--Set-ExecutionPolicy AllSigned-->
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope Process -Force<span style="color:#111">;</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>System.Net.ServicePointManager<span style="color:#f92672">]</span>::SecurityProtocol -bor 3072<span style="color:#111">;</span> iex <span style="color:#f92672">((</span>New-Object System.Net.WebClient<span style="color:#f92672">)</span>.DownloadString<span style="color:#f92672">(</span><span style="color:#d88200">&#39;https://community.chocolatey.org/install.ps1&#39;</span><span style="color:#f92672">))</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Close the powershell window and open a new powershell window (also in administrator mode).  Paste in the following line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install -y putty.install kicad vcredist2013
+</span></span></code></pre></div></li>
+<li>
+<p>Paste in the following line for some optional but very useful tools:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install -y adobereader notepadplusplus 7zip grepwin kdiff3
+</span></span></code></pre></div></li>
 </ol>
-<h3 id="psoc-programmer-optional">PSoC Programmer (optional)</h3>
-<p><a href="https://www.infineon.com/cms/en/design-support/tools/programming-testing/psoc-programming-solutions/">PSoC Programmer</a> is included with PSoC Creator install as a plugin, so no need to reinstall.</p>
-<h3 id="cysmart-bluetooth-tool">CySmart Bluetooth Tool</h3>
-<p><del>The <a href="https://www.infineon.com/cms/en/design-support/tools/utilities/wireless-connectivity/cysmart-bluetooth-le-test-and-debug-tool/">CySmart Bluetooth Tool</a></del></p>
-<h3 id="cysmart-phone-app">CySmart Phone App</h3>
-<p><del>The CySmart Phone App can be installed on your phone to communicate with the bluetooth device directly. (<a href="https://play.google.com/store/apps/details?id=com.cypress.cysmart&amp;hl=en_US&amp;gl=US">Android</a>
-/ <a href="https://apps.apple.com/us/app/cysmart/id928939093">iOS</a>)</del></p>
-<p>The Lightblue BLE Apps will have to do until CySmart is re-published (<a href="https://play.google.com/store/apps/details?id=com.punchthrough.lightblueexplorer&amp;hl=en_US&amp;gl=US">android</a> / <a href="https://apps.apple.com/us/app/lightblue/id557428110">iphone</a>)</p>
+<h2 id="2b-additional-installers---manual-installation">2b. Additional Installers - Manual Installation</h2>
+<p>If you did not follow the chocolatey install instructions above, then manually install the following apps:</p>
+<h3 id="putty-terminal-programs-windows-only">PuTTY Terminal Programs <em>(Windows only)</em></h3>
+<p><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a></p>
+<h3 id="kicad-windows--mac--linux">KiCad <em>(Windows / Mac / Linux)</em></h3>
+<p><a href="https://www.kicad.org/download/">https://www.kicad.org/download/</a></p>
+<h3 id="visual-c-redistributable-windows-only">Visual C++ Redistributable <em>(Windows only)</em></h3>
+<p><a href="http://updates.cypress.com/updates/prerequisite/vcredist_x86_2013.exe">http://updates.cypress.com/updates/prerequisite/vcredist_x86_2013.exe</a></p>
+<h2 id="3-configure-vb-35">3. Configure VB 3.5</h2>
+<ol>
+<li>Go to Start &ndash;&gt; Control Panel &ndash;&gt; Programs</li>
+<li>On the left side bar, select &ldquo;Turn windows features on or off&rdquo;</li>
+<li>Select &ldquo;.NET framework 3.5&rdquo;</li>
+</ol>
 
         </div>
 
