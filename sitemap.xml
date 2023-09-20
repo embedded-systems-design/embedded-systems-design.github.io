@@ -38,6 +38,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/installing-anaconda-python/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about/</loc>
@@ -323,8 +325,6 @@
     <loc>https://embedded-systems-design.github.io/tags/micropython/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/micropython-and-esp32/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/installing-anaconda-python/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/misc/</loc>
   </url><url>
