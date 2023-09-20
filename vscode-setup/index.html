@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> VS Code Setup and Usage | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> VSCode Setup and Usage | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -238,7 +238,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/esp32/">ESP32</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/vscode-setup/">VS Code Setup and Usage</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/vscode-setup/">VSCode Setup and Usage</a></li>
 
 </ol>
 </nav>
@@ -249,7 +249,7 @@
 
 
 
-        <h2>VS Code Setup and Usage</h2>
+        <h2>VSCode Setup and Usage</h2>
         
         <div class="mb-1 post-meta">
           <span>By ESD Faculty</span>
@@ -259,6 +259,10 @@
         </div>
         <ul class="list-inline">
           
+          <li class="list-inline-item mb-3 mr-2 mt-1">
+          <a class="d-block p-2 bg-primary text-white" href="/tags/vscode"
+            class="text-primary">Vscode</a>
+          </li>
         </ul>
         
         <div class="content mb-5">
@@ -271,27 +275,34 @@
 <li>keep &ldquo;Add to PATH&rdquo; checked</li>
 <li>other options: set to your preference</li>
 </ul>
+<h3 id="ubuntu-specific">Ubuntu-specific</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#111">cd</span> ~/Downloads
+</span></span><span style="display:flex;"><span>sudo dpkg -i code_1.7* <span style="color:#75715e">#.... tab complete</span>
+</span></span><span style="display:flex;"><span>sudo apt install -yf
+</span></span></code></pre></div><h2 id="video">Video</h2>
+<iframe width="720" height="480" src="https://www.youtube.com/embed/Polis0zBkFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Thanks to Wyatte for this helpful video</p>
 <h2 id="useful-command-line-arguments">Useful command-line arguments</h2>
 <blockquote>
 <p>Note: this only works if you added vscode to your system <code>PATH</code></p>
 </blockquote>
 <pre tabindex="0"><code>Usage: code [options][paths...]
 </code></pre><p>Example:</p>
-<pre tabindex="0"><code>code -n ~/websites/danb0b.github.io/
-</code></pre><p>will open a new folder with that path loaded in the explorer window</p>
-<pre tabindex="0"><code>  -a --add &lt;folder&gt;      Add folder(s) to the last active window.
-  -n --new-window        Force to open a new window.
-  -r --reuse-window      Force to open a file or folder in an already opened window.
-  --extensions-dir &lt;dir&gt; Set the root path for extensions.
-  --list-extensions      List the installed extensions.
-  --show-versions        Show versions of installed extensions, when using --list-extensions.
-  --install-extension &lt;ext-id | path&gt; Installs or updates an extension. 
-  --uninstall-extension &lt;ext-id&gt;      Uninstalls an extension.
-  --enable-proposed-api &lt;ext-id&gt;      Enables proposed API features for
-  --disable-extensions            Disable all installed extensions.
-  --disable-extension &lt;ext-id&gt;    Disable an extension.
-  --sync &lt;on | off&gt;               Turn sync on or off.
-</code></pre><h2 id="shortcuts">Shortcuts</h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code -n ~/websites/danb0b.github.io/
+</span></span></code></pre></div><p>will open a new folder with that path loaded in the explorer window</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  -a --add &lt;folder&gt;      Add folder<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> to the last active window.
+</span></span><span style="display:flex;"><span>  -n --new-window        Force to open a new window.
+</span></span><span style="display:flex;"><span>  -r --reuse-window      Force to open a file or folder in an already opened window.
+</span></span><span style="display:flex;"><span>  --extensions-dir &lt;dir&gt; Set the root path <span style="color:#00a8c8">for</span> extensions.
+</span></span><span style="display:flex;"><span>  --list-extensions      List the installed extensions.
+</span></span><span style="display:flex;"><span>  --show-versions        Show versions of installed extensions, when using --list-extensions.
+</span></span><span style="display:flex;"><span>  --install-extension &lt;ext-id <span style="color:#111">|</span> path&gt; Installs or updates an extension. 
+</span></span><span style="display:flex;"><span>  --uninstall-extension &lt;ext-id&gt;      Uninstalls an extension.
+</span></span><span style="display:flex;"><span>  --enable-proposed-api &lt;ext-id&gt;      Enables proposed API features <span style="color:#00a8c8">for</span>
+</span></span><span style="display:flex;"><span>  --disable-extensions            Disable all installed extensions.
+</span></span><span style="display:flex;"><span>  --disable-extension &lt;ext-id&gt;    Disable an extension.
+</span></span><span style="display:flex;"><span>  --sync &lt;on <span style="color:#111">|</span> off&gt;               Turn sync on or off.
+</span></span></code></pre></div><h2 id="shortcuts">Shortcuts</h2>
 <table>
 <thead>
 <tr>
@@ -352,21 +363,34 @@
 <td style="text-align:center">ctrl+b</td>
 <td style="text-align:center">bold selection</td>
 </tr>
+<tr>
+<td style="text-align:center">alt+z</td>
+<td style="text-align:center">switch text wrap mode</td>
+</tr>
 </tbody>
 </table>
 <h2 id="extensions">Extensions</h2>
 <p>from <a href="https://code.visualstudio.com/docs/editor/command-line">here</a></p>
-<p>open powershell and paste the following in:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension bierner.markdown-yaml-preamble
-</span></span><span style="display:flex;"><span>code --install-extension davidanson.vscode-markdownlint
-</span></span><span style="display:flex;"><span>code --install-extension ms-python.isort
-</span></span><span style="display:flex;"><span>code --install-extension ms-python.python
-</span></span><span style="display:flex;"><span>code --install-extension ms-python.vscode-pylance
-</span></span><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
-</span></span><span style="display:flex;"><span>code --install-extension redhat.vscode-yaml
-</span></span><span style="display:flex;"><span>code --install-extension shd101wyy.markdown-preview-enhanced
+<p>open a terminal window and paste the following in:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension redhat.vscode-yaml
 </span></span><span style="display:flex;"><span>code --install-extension yzane.markdown-pdf
 </span></span><span style="display:flex;"><span>code --install-extension yzhang.markdown-all-in-one
+</span></span><span style="display:flex;"><span>code --install-extension PKief.markdown-checkbox
+</span></span><span style="display:flex;"><span>code --install-extension bierner.markdown-yaml-preamble
+</span></span><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
+</span></span><span style="display:flex;"><span>code --install-extension ms-python.python
+</span></span><span style="display:flex;"><span>code --install-extension shd101wyy.markdown-preview-enhanced
+</span></span><span style="display:flex;"><span>code --install-extension davidanson.vscode-markdownlint <span style="color:#75715e">#highlight file problems</span>
+</span></span><span style="display:flex;"><span>code --install-extension James-Yu.latex-workshop
+</span></span><span style="display:flex;"><span>code --install-extension ms-python.vscode-pylance
+</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter
+</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter-keymap
+</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter-renderers
+</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.vscode-jupyter-slideshow
+</span></span><span style="display:flex;"><span>code --install-extension tamasfe.even-better-toml
+</span></span><span style="display:flex;"><span>code --install-extension tecosaur.latex-utilities
+</span></span><span style="display:flex;"><span>code --install-extension torn4dom4n.latex-support
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --list-extensions
 </span></span></code></pre></div><h2 id="markdown-all-in-one">Markdown all-in-one</h2>
 <p>go to settings
@@ -379,7 +403,7 @@ ctrl_+ shift + I then formats your document</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
 </span></span></code></pre></div></li>
 </ol>
-<p>Getting Started (from <a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">here</a>)</p>
+<h4 id="getting-started-with-pymakr-from-herehttpsgithubcompycompymakr-vscblobheadget_startedmd">Getting Started with Pymakr (from <a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">here</a>)</h4>
 <ol>
 <li>In File explorer(<code>ctrl+shift+e</code>)
 <ol>
@@ -394,10 +418,10 @@ ctrl_+ shift + I then formats your document</p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="new-project.png"><img src="new-project.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="project-name.png"><img src="project-name.png" alt="Define the name"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Define the name</div></td></tr>
 </tbody>
 </table>
 
@@ -406,23 +430,22 @@ ctrl_+ shift + I then formats your document</p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="project-name.png"><img src="project-name.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="project-structure.png"><img src="project-structure.png" alt="create the project in a subfolder"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">create the project in a subfolder</div></td></tr>
 </tbody>
 </table>
 
 </p>
-<p>![Figure](empty project.png)</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="project-structure.png"><img src="project-structure.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="empty-project.png"><img src="empty-project.png" alt="specify empty project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">specify empty project</div></td></tr>
 </tbody>
 </table>
 
@@ -437,10 +460,10 @@ ctrl_+ shift + I then formats your document</p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="select-port.png"><img src="select-port.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="select-port.png"><img src="select-port.png" alt="Select your device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Select your device</div></td></tr>
 </tbody>
 </table>
 
@@ -452,10 +475,10 @@ ctrl_+ shift + I then formats your document</p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="connect-device.png"><img src="connect-device.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="connect-device.png"><img src="connect-device.png" alt="Connect to Device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Connect to Device</div></td></tr>
 </tbody>
 </table>
 
@@ -467,10 +490,10 @@ ctrl_+ shift + I then formats your document</p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="terminal-button.png"><img src="terminal-button.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="terminal-button.png"><img src="terminal-button.png" alt="Open up a Terminal Window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Open up a Terminal Window</div></td></tr>
 </tbody>
 </table>
 
@@ -482,10 +505,10 @@ ctrl_+ shift + I then formats your document</p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="terminal-output.png"><img src="terminal-output.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="terminal-output.png"><img src="terminal-output.png" alt="Example of terminal window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
+<tr><td><div style="text-align:center;">Example of terminal window</div></td></tr>
 </tbody>
 </table>
 
@@ -518,8 +541,8 @@ ctrl_+ shift + I then formats your document</p>
 </ol>
 </li>
 </ol>
-<h2 id="working-with-the-python-interpreter">Working with the Python interpreter</h2>
-<p>Micropython can either run code from the interpreter (the &ldquo;terminal&rdquo; as vs code puts it), or by loading a file from its onboard storage.  When the ESP32 is reset (using the EN button), it looks for two files, in a specific order:</p>
+<h4 id="working-with-micropython">Working with Micropython</h4>
+<p>Micropython can either run code from the interpreter (the &ldquo;terminal&rdquo; as VSCode puts it), or by loading a file from its onboard storage.  When the ESP32 is reset (using the EN button), it looks for two files, in a specific order:</p>
 <ol>
 <li>boot.py</li>
 <li>main.py</li>
@@ -528,7 +551,7 @@ ctrl_+ shift + I then formats your document</p>
 <blockquote>
 <p>You must always stop execution on the ESP32 before trying to upload files to it.</p>
 </blockquote>
-<h2 id="saving-files-tofrom-the-esp32">Saving files to/from the ESP32</h2>
+<h4 id="saving-files-tofrom-the-esp32">Saving files to/from the ESP32</h4>
 <p>Within the &ldquo;Pymakr: Projects&rdquo; workspace there are several other buttons that you can use to sync files to the esp32</p>
 <ul>
 <li>Upload project to device: Uploads all your project files to the device</li>
@@ -536,18 +559,34 @@ ctrl_+ shift + I then formats your document</p>
 <li>Open in Explorer: This opens up the ESP32 as a virtual file system in the file explorer and allows you to investigate and work with the file system directly.</li>
 </ul>
 <p>From the file explorer window, you can also right click and select &ldquo;pymakr&ndash;&gt;upload to device&rdquo; to upload individual files</p>
+<h2 id="python">Python</h2>
+<p>When working with multiple python environments, you should make sure to use the correct one for the task you are doing.  To do this, you will need to select from a list of python interpreters.  Type ctrl+shift+p then type / select &ldquo;python select interpreter&rdquo; from the list.</p>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/python/python-tutorial">https://code.visualstudio.com/docs/python/python-tutorial</a></li>
+<li><a href="https://www.pythontutorial.net/getting-started/setup-visual-studio-code-for-python/">https://www.pythontutorial.net/getting-started/setup-visual-studio-code-for-python/</a></li>
+<li><a href="https://theproductiveengineer.net/how-to-set-up-vs-code-for-python/">https://theproductiveengineer.net/how-to-set-up-vs-code-for-python/</a></li>
+</ul>
+<h3 id="debugging-python-code">Debugging Python Code</h3>
+<p>see this <a href="https://codelovingyogi.medium.com/vscode-debugging-python-scripts-with-args-d8ac1cf9a191">reference</a> to add a debug configuration</p>
 <h4 id="external-resources">External Resources</h4>
+<ul>
+<li>VSCode
+<ul>
+<li>Main <a href="https://code.visualstudio.com/">Website</a></li>
+<li>Find help <a href="https://code.visualstudio.com/docs/setup/linux">here</a></li>
+<li>Download from <a href="https://code.visualstudio.com/Download">here</a></li>
+</ul>
+</li>
+<li>Pymakr &amp; ESP32
 <ul>
 <li><a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr">https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr</a></li>
-</ul>
-<p>Other:</p>
-<ul>
 <li><a href="https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/">https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/</a></li>
-<li><a href="https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide">https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide</a></li>
 <li><a href="https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide">https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide</a></li>
 <li><a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html">https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html</a></li>
 <li><a href="https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython">https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
