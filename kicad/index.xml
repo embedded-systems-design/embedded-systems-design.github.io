@@ -5,24 +5,21 @@
     <link>https://embedded-systems-design.github.io/kicad/</link>
     <description>Recent content in KiCad Design Workflow on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/kicad/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/kicad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KiCad Installation and Initial Setup</title>
       <link>https://embedded-systems-design.github.io/kicad-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-installation-and-setup/</guid>
       <description>Resources KiCad.org KiCad Documentation Installation Full instructions can be found on the Fall 2022 Sofware page.</description>
     </item>
-    
     <item>
       <title>Packaging KiCad Files for Submission</title>
       <link>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</guid>
       <description>Generating Schematic PDFs Add Title Block Information Open your project and then your schematic.</description>
     </item>
-    
   </channel>
 </rss>

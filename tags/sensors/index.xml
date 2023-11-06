@@ -5,24 +5,21 @@
     <link>https://embedded-systems-design.github.io/tags/sensors/</link>
     <description>Recent content in sensors on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/sensors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/sensors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How does X work?</title>
       <link>https://embedded-systems-design.github.io/how-does-x-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/how-does-x-work/</guid>
       <description>Laser Rangefinders https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/ https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849 https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder Laser Thermometers (pyrometers) https://sciencing.com/laser-thermometers-work-4962575.html Record Players https://electronics.</description>
     </item>
-    
     <item>
       <title>Sources for Electrical and Electromechanical Components</title>
       <link>https://embedded-systems-design.github.io/sources-for-electrical-and-electromechanical-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/sources-for-electrical-and-electromechanical-components/</guid>
       <description>Professional Distributors These distributors are often used by professionals in industry, and provide the most complete selection of different parts.</description>
     </item>
-    
   </channel>
 </rss>

@@ -5,43 +5,36 @@
     <link>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/</link>
     <description>Recent content in KiCad Schematic Design Pages on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Symbol Creation</title>
       <link>https://embedded-systems-design.github.io/kicad-symbol-creation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-symbol-creation/</guid>
       <description>Introduction Resources LM3178 (On Digikey | datasheet) KiCad.org KiCad Documentation Common Pin Types and their Meanings Steps Open up KiCad (start &amp;ndash;&amp;gt; KiCad) and select the Symbol Editor</description>
     </item>
-    
     <item>
       <title>Schematic Capture</title>
       <link>https://embedded-systems-design.github.io/kicad-schematic-capture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-schematic-capture/</guid>
       <description>Introduction Resources LM3178 (On Digikey | datasheet) Symbol Creation Tutorial KiCad.</description>
     </item>
-    
     <item>
       <title>Generating a Netlist</title>
       <link>https://embedded-systems-design.github.io/kicad-generating-netlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-generating-netlists/</guid>
       <description>Introduction A Netlist is essentially a file containing information regarding connections between the components on a schematic.</description>
     </item>
-    
     <item>
       <title>Common Pin Types and their Meanings</title>
       <link>https://embedded-systems-design.github.io/kicad-common-pin-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-common-pin-types/</guid>
       <description>Modified from here
 Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
-    
   </channel>
 </rss>

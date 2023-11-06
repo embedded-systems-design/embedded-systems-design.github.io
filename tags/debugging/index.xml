@@ -5,33 +5,28 @@
     <link>https://embedded-systems-design.github.io/tags/debugging/</link>
     <description>Recent content in debugging on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring the UART on PSoC</title>
       <link>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</guid>
       <description>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</description>
     </item>
-    
     <item>
       <title>Connecting to the PSoC</title>
       <link>https://embedded-systems-design.github.io/connecting-to-the-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/connecting-to-the-psoc/</guid>
       <description>Q: Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)</description>
     </item>
-    
     <item>
       <title>The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions</title>
       <link>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</guid>
       <description>Are Connections Continuous? Conduct a continuity check on your board with a multimeter.</description>
     </item>
-    
   </channel>
 </rss>

@@ -5,24 +5,21 @@
     <link>https://embedded-systems-design.github.io/tags/footprint/</link>
     <description>Recent content in footprint on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/footprint/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/footprint/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exporting Gerber files from Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid>
       <description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
     </item>
-    
     <item>
       <title>How to create a footprint for PSoC® 4100S Plus</title>
       <link>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</guid>
       <description>This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.</description>
     </item>
-    
   </channel>
 </rss>

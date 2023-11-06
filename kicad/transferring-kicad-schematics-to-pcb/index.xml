@@ -5,51 +5,42 @@
     <link>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/</link>
     <description>Recent content in Transferring Kicad Schematics to PCB on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Assigning Footprints</title>
       <link>https://embedded-systems-design.github.io/assign-kicad-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/assign-kicad-footprints/</guid>
       <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
     </item>
-    
     <item>
       <title>Electrical Rules Check (ERC)</title>
       <link>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</guid>
       <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
     </item>
-    
     <item>
       <title>Importing Netlist into KiCad PCB</title>
       <link>https://embedded-systems-design.github.io/importing-kicad-netlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/importing-kicad-netlists/</guid>
       <description>Introduction We are now ready to transfer over from Schematic Editor to PCB Editor.</description>
     </item>
-    
     <item>
       <title>Using the KiCad Footprint Editor</title>
       <link>https://embedded-systems-design.github.io/kicad-footprint-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-footprint-editor/</guid>
       <description>How to manually create a footprint using the KiCad footprint editor</description>
     </item>
-    
     <item>
       <title>Using the KiCad Footprint Wizard</title>
       <link>https://embedded-systems-design.github.io/kicad-footprint-wizard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/kicad-footprint-wizard/</guid>
       <description>How to create a footprint using the footprint wizart for standard footprints and shapes</description>
     </item>
-    
   </channel>
 </rss>

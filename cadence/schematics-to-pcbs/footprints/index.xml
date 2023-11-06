@@ -5,60 +5,49 @@
     <link>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/</link>
     <description>Recent content in Footprints on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a custom padstack in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</guid>
       <description>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</description>
     </item>
-    
     <item>
       <title>Creating a custom PCB footprint manually in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</guid>
       <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
     </item>
-    
     <item>
       <title>Creating a custom PCB footprint using Package Designer in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</guid>
       <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
     </item>
-    
     <item>
       <title>Creating a custom SMD footprint manually in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</guid>
       <description>Introduction This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually.</description>
     </item>
-    
     <item>
       <title>Creating Custom Footprints</title>
       <link>https://embedded-systems-design.github.io/creating-custom-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/creating-custom-footprints/</guid>
       <description>You can try to find existing footprints for components, but most components will require custom footprints.</description>
     </item>
-    
     <item>
       <title>Finding existing PCB footprints for Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</guid>
       <description>Where can I find a list of existing PCB footprints for Cadence PCB Editor?</description>
     </item>
-    
   </channel>
 </rss>

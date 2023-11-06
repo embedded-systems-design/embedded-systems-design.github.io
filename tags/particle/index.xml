@@ -5,15 +5,14 @@
     <link>https://embedded-systems-design.github.io/tags/particle/</link>
     <description>Recent content in particle on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/particle/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/particle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Particle Argon Wifi Board</title>
       <link>https://embedded-systems-design.github.io/particle-argon-wifi-board/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/particle-argon-wifi-board/</guid>
       <description>What is the Particle Argon? What does it do? The Particle Argon is a &amp;ldquo;wi-fi for everything&amp;rdquo; development kit that includes a microcontroller, wi-fi hardware, and easy-to-use web-based IDE (Integrated Development Environment).</description>
     </item>
-    
   </channel>
 </rss>

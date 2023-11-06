@@ -5,141 +5,112 @@
     <link>https://embedded-systems-design.github.io/tags/circuit-design/</link>
     <description>Recent content in circuit-design on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/circuit-design/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/circuit-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bypass capacitor basics</title>
       <link>https://embedded-systems-design.github.io/bypass-capacitor-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/bypass-capacitor-basics/</guid>
       <description>A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC.</description>
     </item>
-    
     <item>
       <title>Capacitive Sensing Links</title>
       <link>https://embedded-systems-design.github.io/capacitive-sensing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/capacitive-sensing/</guid>
       <description> Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems </description>
     </item>
-    
     <item>
       <title>Circuit Design</title>
       <link>https://embedded-systems-design.github.io/circuit-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/circuit-design/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Connectors 101</title>
       <link>https://embedded-systems-design.github.io/connectors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/connectors-101/</guid>
       <description>What is a connector? A connector is an electrical component that links two or more components together.</description>
     </item>
-    
     <item>
       <title>DC Motors 101</title>
       <link>https://embedded-systems-design.github.io/dc-motors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/dc-motors-101/</guid>
       <description>Watch the video mini-lecture on DC motor control from Dr. Jordan What types of DC motors are most common?</description>
     </item>
-    
     <item>
       <title>Fuses 101</title>
       <link>https://embedded-systems-design.github.io/fuses-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/fuses-101/</guid>
       <description>What are fuses and when do I need them? A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much current.</description>
     </item>
-    
     <item>
       <title>How to Add Solar to Your Circuit</title>
       <link>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</guid>
       <description>Adding solar to a project has a few more steps then just hard wiring a solar panel.</description>
     </item>
-    
     <item>
       <title>Level shifters</title>
       <link>https://embedded-systems-design.github.io/level-shifters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/level-shifters/</guid>
       <description>Introduction: What is a level shifter? A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</description>
     </item>
-    
     <item>
       <title>MOSFET for use with a 3.3V and 5V Microcontroller</title>
       <link>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</guid>
       <description>Selecting the MOSFET When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.</description>
     </item>
-    
     <item>
       <title>Motors</title>
       <link>https://embedded-systems-design.github.io/motors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/motors/</guid>
       <description>There are many types of motors out there each with their own pros and cons.</description>
     </item>
-    
     <item>
       <title>Power Supplies 101</title>
       <link>https://embedded-systems-design.github.io/power-supplies-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/power-supplies-101/</guid>
       <description>What are the components of a basic power supply subsystem? Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit What are the design considerations for a battery-operated circuit?</description>
     </item>
-    
     <item>
       <title>Pullup/Pulldown resistors</title>
       <link>https://embedded-systems-design.github.io/pull-down-resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/pull-down-resistors/</guid>
       <description>What are pullup resistors? Pull-up These are resistors used to pull a volage on a specific pin high.</description>
     </item>
-    
     <item>
       <title>Stepper Motor Selection and Control</title>
       <link>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</guid>
       <description>Stepper Motor Selection There are four variables to consider when selecting a stepper motor</description>
     </item>
-    
     <item>
       <title>Transistors</title>
       <link>https://embedded-systems-design.github.io/transistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/transistors/</guid>
       <description>What is a transistor? A transistor is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</description>
     </item>
-    
     <item>
       <title>Voltage Regulators VS DC-DC converters</title>
       <link>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</guid>
       <description>How do I choose a voltage regulator? There are three major types of voltage regulators that you will encounter in this program:</description>
     </item>
-    
   </channel>
 </rss>

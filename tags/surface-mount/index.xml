@@ -5,15 +5,14 @@
     <link>https://embedded-systems-design.github.io/tags/surface-mount/</link>
     <description>Recent content in surface-mount on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/surface-mount/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/surface-mount/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Surface Mount Soldering Tutorial</title>
       <link>https://embedded-systems-design.github.io/surface-mount-soldering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/surface-mount-soldering/</guid>
       <description>Special thanks to Travis Kelley</description>
     </item>
-    
   </channel>
 </rss>

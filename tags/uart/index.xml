@@ -5,51 +5,42 @@
     <link>https://embedded-systems-design.github.io/tags/uart/</link>
     <description>Recent content in uart on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/uart/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/uart/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All About Serial</title>
       <link>https://embedded-systems-design.github.io/all-about-serial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/all-about-serial/</guid>
       <description>What are serial protocols? I2C, SPI, and UART are three of the most common protocols for serial data transmission.</description>
     </item>
-    
     <item>
       <title>Configuring the UART on PSoC</title>
       <link>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</guid>
       <description>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</description>
     </item>
-    
     <item>
       <title>Particle Argon Wifi Board</title>
       <link>https://embedded-systems-design.github.io/particle-argon-wifi-board/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/particle-argon-wifi-board/</guid>
       <description>What is the Particle Argon? What does it do? The Particle Argon is a &amp;ldquo;wi-fi for everything&amp;rdquo; development kit that includes a microcontroller, wi-fi hardware, and easy-to-use web-based IDE (Integrated Development Environment).</description>
     </item>
-    
     <item>
       <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
       <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
       <description>Introduction Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller.</description>
     </item>
-    
     <item>
       <title>UART PIC to Argon Tutorial</title>
       <link>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</guid>
       <description>UART PIC to Argon Tutorial Objectives Getting familiar with UART on both PIC and Particle platforms.</description>
     </item>
-    
   </channel>
 </rss>

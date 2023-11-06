@@ -5,15 +5,14 @@
     <link>https://embedded-systems-design.github.io/tags/silkscreen/</link>
     <description>Recent content in silkscreen on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/silkscreen/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/silkscreen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Create a Silkscreen in Cadence and Manually Add Text to it</title>
       <link>https://embedded-systems-design.github.io/adding-silkscreen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/adding-silkscreen/</guid>
       <description>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</description>
     </item>
-    
   </channel>
 </rss>

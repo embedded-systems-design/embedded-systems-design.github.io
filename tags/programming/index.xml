@@ -5,88 +5,71 @@
     <link>https://embedded-systems-design.github.io/tags/programming/</link>
     <description>Recent content in programming on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Miniconda/Anaconda (Python) Installation Tutorial</title>
       <link>https://embedded-systems-design.github.io/installing-anaconda-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/installing-anaconda-python/</guid>
       <description>how to install the Anaconda distribution of Python</description>
     </item>
-    
     <item>
       <title>Grow Your Embedded Programming Skills After EGR 304/314</title>
       <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</guid>
       <description>Personal Projects and Education
 a. Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
     </item>
-    
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
       <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
     </item>
-    
     <item>
       <title>Microchip AVR Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</guid>
       <description>What microcontrollers does Atmel specialize in? Atmel was one of the top IC manufacturers that makes a number of 8-bit, 32-bit, and ARM microcontrollers, including the AVR microcontroller used in the Arduino.</description>
     </item>
-    
     <item>
       <title>Microchip PIC Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
       <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
     </item>
-    
     <item>
       <title>Python Basics</title>
       <link>https://embedded-systems-design.github.io/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/python/</guid>
       <description>Python Basics Data Types Really Basic int````, float, bool, complex```</description>
     </item>
-    
     <item>
       <title>Software design</title>
       <link>https://embedded-systems-design.github.io/software-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/software-design/</guid>
       <description>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time.</description>
     </item>
-    
     <item>
       <title>Types of Logic Operators and How to Use Them</title>
       <link>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</guid>
       <description>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</description>
     </item>
-    
     <item>
       <title>Using Bitwise Operators in C</title>
       <link>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</guid>
       <description>What are bitwise operators? Bitwise operators allow access to individual bits in a variable or register.</description>
     </item>
-    
   </channel>
 </rss>

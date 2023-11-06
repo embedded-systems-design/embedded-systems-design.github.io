@@ -5,124 +5,99 @@
     <link>https://embedded-systems-design.github.io/tutorials/psoc/</link>
     <description>Recent content in PSoC on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tutorials/psoc/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tutorials/psoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bluetooth Connection Issues</title>
       <link>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</guid>
       <description>Q: I have tried to connect the Cypress CySmart software to the USB dongle but it does not work.</description>
     </item>
-    
     <item>
       <title>Bluetooth Tutorial 1 - Thermometer</title>
       <link>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</guid>
       <description>Introduction PSoC Setup Connect Header J2, pin P3[0] Header J3, pin VREF with a jumper wire.</description>
     </item>
-    
     <item>
       <title>Bluetooth Tutorial 2 - Find Me</title>
       <link>https://embedded-systems-design.github.io/bluetooth-tutorial-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/bluetooth-tutorial-2/</guid>
       <description>Introduction PSoC Setup Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.</description>
     </item>
-    
     <item>
       <title>Connecting to the PSoC</title>
       <link>https://embedded-systems-design.github.io/connecting-to-the-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/connecting-to-the-psoc/</guid>
       <description>Q: Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)</description>
     </item>
-    
     <item>
       <title>Debugging Code in PSoC Creator</title>
       <link>https://embedded-systems-design.github.io/debugging-psoc-creator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/debugging-psoc-creator/</guid>
       <description>Introduction Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working.</description>
     </item>
-    
     <item>
       <title>Enabling Floating Point Support in PSoC Creator</title>
       <link>https://embedded-systems-design.github.io/enable-floating-point-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/enable-floating-point-support/</guid>
       <description>Introduction Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</description>
     </item>
-    
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
       <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
     </item>
-    
     <item>
       <title>Interrupts on PSoC</title>
       <link>https://embedded-systems-design.github.io/interrupts-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/interrupts-on-psoc/</guid>
       <description>An interrupt is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention.</description>
     </item>
-    
     <item>
       <title>Printing Non-String Variables to the PSoC UART</title>
       <link>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</guid>
       <description>Q: How do I print an integer (or other non-string variable) to the PSoC UART?</description>
     </item>
-    
     <item>
       <title>PSoC 4 Hardware Development Kits</title>
       <link>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</guid>
       <description>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</description>
     </item>
-    
     <item>
       <title>PSoC Creator Project Structure</title>
       <link>https://embedded-systems-design.github.io/psoc-creator-project-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/psoc-creator-project-structure/</guid>
       <description>I can&#39;t find my workspace/project in PSoC Creator
 C files, top design files, etc.</description>
     </item>
-    
     <item>
       <title>PSoC Hello World Lab</title>
       <link>https://embedded-systems-design.github.io/psoc-hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/psoc-hello-world/</guid>
       <description>Introduction The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or CY8CKIT-042-BLE kit for the first time</description>
     </item>
-    
     <item>
       <title>What is PSoC?</title>
       <link>https://embedded-systems-design.github.io/what-is-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/what-is-psoc/</guid>
       <description>The Cypress Programmable System on a Chip (PSoC®) is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing.</description>
     </item>
-    
   </channel>
 </rss>

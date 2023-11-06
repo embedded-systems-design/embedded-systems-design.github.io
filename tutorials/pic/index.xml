@@ -5,116 +5,93 @@
     <link>https://embedded-systems-design.github.io/tutorials/pic/</link>
     <description>Recent content in PIC on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tutorials/pic/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tutorials/pic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>**Curiosity Nano &amp; MPLAB Tutorial**</title>
       <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</guid>
       <description>Objectives Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board.</description>
     </item>
-    
     <item>
       <title>Hello World with UART (PIC)</title>
       <link>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</guid>
       <description>Objectives The goal of this tutorial is to introduce you to the MPLabX IDE, and to verify that you can create a project, add a peripheral (EUSART), configure it to work across a virtual COM port, and communicate back and forth to your PC.</description>
     </item>
-    
     <item>
       <title>I2C Communication (PIC) with an 8-bit I/O Expander</title>
       <link>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</guid>
       <description>Objectives In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC.</description>
     </item>
-    
     <item>
       <title>LCDs and Buttons</title>
       <link>https://embedded-systems-design.github.io/pic-lcd-button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/pic-lcd-button/</guid>
       <description>Individual Assignment
 Objectives To develop and demonstrate individual proficiency in:</description>
     </item>
-    
     <item>
       <title>Microchip PIC Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
       <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
     </item>
-    
     <item>
       <title>PIC Curiosity Nano and the TC74 I2C Temp Sensor</title>
       <link>https://embedded-systems-design.github.io/tc74-temp-sensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/tc74-temp-sensor/</guid>
       <description>Objectives The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.</description>
     </item>
-    
     <item>
       <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
       <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
       <description>Introduction Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller.</description>
     </item>
-    
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
       <link>https://embedded-systems-design.github.io/spi-shift-register-timers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/spi-shift-register-timers/</guid>
       <description>Objectives To develop and demonstrate individual proficiency in:
 Using SPI communication to control LEDs connected to a shift register</description>
     </item>
-    
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers (Part 2)</title>
       <link>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</guid>
       <description>Introduction This tutorial builds off of Part 1. Go Back and start there if you haven&amp;rsquo;t yet completed it.</description>
     </item>
-    
     <item>
       <title>SPI Motor Controller (PIC)</title>
       <link>https://embedded-systems-design.github.io/pic-spi-motor-controller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/pic-spi-motor-controller/</guid>
       <description>Introduction This is a basic tutorial for the steps required to get SPI working on the PIC18F47Q10 Curiosity Nano</description>
     </item>
-    
     <item>
       <title>Timers and Interrupts on an LCD screen with the PIC</title>
       <link>https://embedded-systems-design.github.io/timers-and-interrupts-lcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/timers-and-interrupts-lcd/</guid>
       <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.</description>
     </item>
-    
     <item>
       <title>Timers and Interrupts with the PIC</title>
       <link>https://embedded-systems-design.github.io/timers-and-interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/timers-and-interrupts/</guid>
       <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results over EUSART and with a LED.</description>
     </item>
-    
   </channel>
 </rss>

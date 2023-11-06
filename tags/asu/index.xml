@@ -5,87 +5,70 @@
     <link>https://embedded-systems-design.github.io/tags/asu/</link>
     <description>Recent content in asu on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/asu/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/asu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Cadence</title>
       <link>https://embedded-systems-design.github.io/installing-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
       <description>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</description>
     </item>
-    
     <item>
       <title>ASU PCB Fabrication Process</title>
       <link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid>
       <description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description>
     </item>
-    
     <item>
       <title>Changing the Default Via Padstack in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</guid>
       <description>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</description>
     </item>
-    
     <item>
       <title>Drawing Software</title>
       <link>https://embedded-systems-design.github.io/drawing-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/drawing-software/</guid>
       <description>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</description>
     </item>
-    
     <item>
       <title>From where can I source parts?</title>
       <link>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</guid>
       <description>Once you know the types of components that you need for your project, the next step is to find sources/vendors from which you can purchase the components (also known as sourcing parts).</description>
     </item>
-    
     <item>
       <title>Mechanical CAD Software</title>
       <link>https://embedded-systems-design.github.io/mechanical-cad-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/mechanical-cad-software/</guid>
       <description>What is CAD software used for? Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically.</description>
     </item>
-    
     <item>
       <title>Peralta 103 Resources</title>
       <link>https://embedded-systems-design.github.io/peralta-103-resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/peralta-103-resources/</guid>
       <description>What equipment is available at each of the benches? Function Generator (5 MHz)</description>
     </item>
-    
     <item>
       <title>Running a Design for Manufacturing Check in DFM Now</title>
       <link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid>
       <description>This process has been replaced with a superior web-based Peralta Studios DFM Checker.</description>
     </item>
-    
     <item>
       <title>What is a Gantt Chart?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</guid>
       <description>A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks.</description>
     </item>
-    
   </channel>
 </rss>

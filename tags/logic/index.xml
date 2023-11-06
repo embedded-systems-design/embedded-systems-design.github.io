@@ -5,15 +5,14 @@
     <link>https://embedded-systems-design.github.io/tags/logic/</link>
     <description>Recent content in logic on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://embedded-systems-design.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Types of Logic Operators and How to Use Them</title>
       <link>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</guid>
       <description>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</description>
     </item>
-    
   </channel>
 </rss>
