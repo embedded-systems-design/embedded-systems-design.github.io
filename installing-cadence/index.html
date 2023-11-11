@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.120.3">
+  <meta name="generator" content="Hugo 0.120.4">
 
   <!-- plugins -->
   
@@ -282,7 +282,7 @@
 <h3 id="system-requirements">System Requirements</h3>
 <ul>
 <li><strong>PC:</strong> Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (<a href="https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf">Hardware and Software Requirements</a>). Note that Cadence does not support Windows 10 Starter nor Home Basic.</li>
-<li><strong>Mac:</strong> Windows 7, 8, 8.1, 10 or greater running on <a href="https://www.apple.com/support/bootcamp/">Boot Camp</a> or <a href="http://www.parallels.com/">Parallels</a></li>
+<li><strong>Mac:</strong> Windows 7, 8, 8.1, 10, 11 or greater running on <a href="https://www.apple.com/support/bootcamp/">Boot Camp</a> or <a href="http://www.parallels.com/">Parallels</a></li>
 </ul>
 <h3 id="before-installing">Before Installing</h3>
 <ol>
@@ -292,7 +292,7 @@
 <li>Go to <a href="https://sslvpn.asu.edu">https://sslvpn.asu.edu</a> and sign in.</li>
 <li>Download and install the anyconnect program</li>
 <li>Once you&rsquo;ve installed the ASU VPN client, launch it and specify the server: <a href="https://sslvpn.asu.edu">https://sslvpn.asu.edu</a> and click &ldquo;connect&rdquo;</li>
-<li>In the 2nd password field, type &ldquo;push&rdquo;.  this will send a push notification to your default 2fa app.  Accept it to continue logging in.</li>
+<li>In the 2nd password field, type &ldquo;push&rdquo;.  this will send a push notification to your default 2fa (two-factor authentication) app. Accept it to continue logging in.</li>
 </ol>
 </li>
 </ol>
@@ -328,18 +328,61 @@
 </li>
 </ol>
 <h3 id="instructions">Instructions</h3>
-<!--
-1. Go to Canvas and find the announcement from your professor on Cadence installation.
-2. Download Cadence17.4.zip from the link provided. The installer is over 8.2 GB so make sure you are using high-speed Internet at home or on campus.
--->
 <ol>
-<li>Go to <a href="https://myapps.asu.edu">myapps.asu.edu</a> to download Cadence 17.4</li>
-<li>Double-click the Cadence2020.zip file to decompress the installer. You can delete the ZIP file after it is decompressed.</li>
-<li>Open the Cadence2020 folder and double-click InstallTPSCadence.vbs to initiate the installation. There is no status bar or completion message during the installation process, which may take up to an hour. You will know it is complete when the installer icon disappears from the task bar. You can delete the installation folder after it has finished installation.</li>
-<li>Download the HotFix from the link provided in Canvas. The HotFix is many GB so make sure you are using high-speed Internet at home or on campus.</li>
-<li>Decompress the Hotfix ZIP file. You can delete the ZIP file after it is decompressed.</li>
-<li>Launch setup.exe to initiate the HotFix installation. The HotFix has a status bar indicating when it is complete.</li>
-<li>Confirm that Cadence and the HotFix have installed correctly by launching Start &gt; Cadence PCB 17.4-2019 &gt; Capture CIS 17.4. This program allows you to model electronic schematics. The version number should be <code>17.4-2019 S033</code>.</li>
+<li>Go to Canvas and find the announcement from your professor on Cadence installation. It is also in the Pages tab.</li>
+<li>Download <code>Cadence2022.zip</code> from the link provided. The installer is ~13.1 GB so make sure you are using high-speed Internet at home or on campus.</li>
+<li>Right-click the <code>Cadence2022.zip</code> file and select &ldquo;Extract All&hellip;&rdquo; to decompress the installer. You can delete the ZIP file after it is decompressed.</li>
+<li>Open the <code>Cadence2022</code> folder and double-click <code>setup.exe</code> to initiate the installation.</li>
+<li>The &ldquo;Cadence OrCAD and Allegro 22.1&rdquo; window appears. Click the &ldquo;Install&rdquo; button next to &ldquo;OrCAD and Allegro Products Installation&rdquo;. 
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="install1.png"><img src="install1.png" alt="Install Screen"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Install Screen</div></td></tr>
+</tbody>
+</table>
+
+</li>
+<li>Leave the settings on the &ldquo;Installation Settings&rdquo; screen as-is and click &ldquo;Custom Installation&rdquo;. 
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="install2.png"><img src="install2.png" alt="Installation Settings Screen"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Installation Settings Screen</div></td></tr>
+</tbody>
+</table>
+
+</li>
+<li>In the &ldquo;Custom Settings&rdquo; screen, select the products shown below: 
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="install3.png"><img src="install3.png" alt="Custom Settings Screen"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Custom Settings Screen</div></td></tr>
+</tbody>
+</table>
+
+</li>
+<li>In the &ldquo;Input License Details screen&rdquo;, set the Port Number fo <code>5280</code> and the Host Name to <code>enlicense3.fulton.asu.edu</code>. 
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="install4.png"><img src="install4.png" alt="Input License Details Screen"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Input License Details Screen</div></td></tr>
+</tbody>
+</table>
+
+. Then, click Install. <em>It may take several hours for the installation to complete.</em></li>
+<li>After the installation is finished, go back to the <code>Cadence2022</code> folder and open the <code>Hotfix_SPB22.10.006</code> folder. Double-click <code>setup.exe</code> to install the hotfix. <em>It may take up to an hour for the hotfix installation to complete.</em></li>
+<li>Make sure you are connected to the VPN (see &ldquo;Before Installing&rdquo; above). Then, confirm that Cadence and the HotFix have installed correctly by launching Start &gt; Cadence PCB 2022 &gt; Capture CIS 2022. This program allows you to model electronic schematics. The version number should be <code>22.1-2022-S006</code>.</li>
 <li>Follow the <a href="/configuring-cadence/">Configuring Cadence</a> instructions to configure and optimize Cadence for the ASU Polytechnic engineering programs.</li>
 </ol>
 <h2 id="using-cadence-on-campus">Using Cadence On Campus</h2>
