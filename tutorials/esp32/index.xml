@@ -12,8 +12,7 @@
       <link>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</guid>
-      <description>Overview See this excellent overview of the ESP32
-RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Devkit vs ESP32 module Pinouts / Schematics from https://randomnerdtutorials.</description>
+      <description>Overview See this excellent overview of the ESP32&#xA;RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Devkit vs ESP32 module Pinouts / Schematics from https://randomnerdtutorials.</description>
     </item>
     <item>
       <title>ESP32 Installation and Setup</title>
@@ -27,17 +26,14 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be us
       <link>https://embedded-systems-design.github.io/micropython-and-esp32/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/micropython-and-esp32/</guid>
-      <description>What is Python? The #1 Programming language*
-Python: 14.2% Matlab: 0.</description>
+      <description>What is Python? The #1 Programming language*&#xA;Python: 14.2% Matlab: 0.</description>
     </item>
     <item>
       <title>VSCode Setup and Usage</title>
       <link>https://embedded-systems-design.github.io/vscode-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/vscode-setup/</guid>
-      <description>Installation Download from here
-Installation Options
-Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Ubuntu-specific cd ~/Downloads sudo dpkg -i code_1.</description>
+      <description>Installation Download from here&#xA;Installation Options&#xA;Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Ubuntu-specific cd ~/Downloads sudo dpkg -i code_1.</description>
     </item>
     <item>
       <title>Working with Thonny</title>

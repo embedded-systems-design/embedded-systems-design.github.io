@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.120.4">
+  <meta name="generator" content="Hugo 0.121.2">
 
   <!-- plugins -->
   
@@ -372,31 +372,41 @@
 <h2 id="extensions">Extensions</h2>
 <p>from <a href="https://code.visualstudio.com/docs/editor/command-line">here</a></p>
 <p>open a terminal window and paste the following in:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension redhat.vscode-yaml
-</span></span><span style="display:flex;"><span>code --install-extension yzane.markdown-pdf
-</span></span><span style="display:flex;"><span>code --install-extension yzhang.markdown-all-in-one
-</span></span><span style="display:flex;"><span>code --install-extension PKief.markdown-checkbox
-</span></span><span style="display:flex;"><span>code --install-extension bierner.markdown-yaml-preamble
-</span></span><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
-</span></span><span style="display:flex;"><span>code --install-extension ms-python.python
-</span></span><span style="display:flex;"><span>code --install-extension shd101wyy.markdown-preview-enhanced
-</span></span><span style="display:flex;"><span>code --install-extension davidanson.vscode-markdownlint <span style="color:#75715e">#highlight file problems</span>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension bierner.markdown-yaml-preamble
+</span></span><span style="display:flex;"><span>code --install-extension DavidAnson.vscode-markdownlint
 </span></span><span style="display:flex;"><span>code --install-extension James-Yu.latex-workshop
+</span></span><span style="display:flex;"><span>code --install-extension ms-python.python
 </span></span><span style="display:flex;"><span>code --install-extension ms-python.vscode-pylance
 </span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter
 </span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter-keymap
 </span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter-renderers
 </span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.vscode-jupyter-cell-tags
 </span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.vscode-jupyter-slideshow
+</span></span><span style="display:flex;"><span>code --install-extension PKief.markdown-checkbox
+</span></span><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
+</span></span><span style="display:flex;"><span>code --install-extension redhat.vscode-yaml
+</span></span><span style="display:flex;"><span>code --install-extension shd101wyy.markdown-preview-enhanced
+</span></span><span style="display:flex;"><span>code --install-extension streetsidesoftware.code-spell-checker
 </span></span><span style="display:flex;"><span>code --install-extension tamasfe.even-better-toml
 </span></span><span style="display:flex;"><span>code --install-extension tecosaur.latex-utilities
 </span></span><span style="display:flex;"><span>code --install-extension torn4dom4n.latex-support
+</span></span><span style="display:flex;"><span>code --install-extension yzane.markdown-pdf
+</span></span><span style="display:flex;"><span>code --install-extension yzhang.markdown-all-in-one
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --list-extensions
 </span></span></code></pre></div><h2 id="markdown-all-in-one">Markdown all-in-one</h2>
 <p>go to settings
 @id:editor.defaultFormatter @lang:markdown formatter
 ctrl_+ shift + I then formats your document</p>
-<h3 id="pymaker">pymaker</h3>
+<h2 id="python">Python</h2>
+<p>When working with multiple python environments, you should make sure to use the correct one for the task you are doing.  To do this, you will need to select from a list of python interpreters.  Type ctrl+shift+p then type / select &ldquo;python select interpreter&rdquo; from the list.</p>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/python/python-tutorial">https://code.visualstudio.com/docs/python/python-tutorial</a></li>
+<li><a href="https://www.pythontutorial.net/getting-started/setup-visual-studio-code-for-python/">https://www.pythontutorial.net/getting-started/setup-visual-studio-code-for-python/</a></li>
+<li><a href="https://theproductiveengineer.net/how-to-set-up-vs-code-for-python/">https://theproductiveengineer.net/how-to-set-up-vs-code-for-python/</a></li>
+</ul>
+<h3 id="debugging-python-code">Debugging Python Code</h3>
+<p>see this <a href="https://codelovingyogi.medium.com/vscode-debugging-python-scripts-with-args-d8ac1cf9a191">reference</a> to add a debug configuration</p>
+<h2 id="pymaker">pymaker</h2>
 <ol>
 <li>
 <p>install pymakr preview</p>
@@ -541,7 +551,7 @@ ctrl_+ shift + I then formats your document</p>
 </ol>
 </li>
 </ol>
-<h4 id="working-with-micropython">Working with Micropython</h4>
+<h3 id="working-with-micropython">Working with Micropython</h3>
 <p>Micropython can either run code from the interpreter (the &ldquo;terminal&rdquo; as VSCode puts it), or by loading a file from its onboard storage.  When the ESP32 is reset (using the EN button), it looks for two files, in a specific order:</p>
 <ol>
 <li>boot.py</li>
@@ -551,7 +561,7 @@ ctrl_+ shift + I then formats your document</p>
 <blockquote>
 <p>You must always stop execution on the ESP32 before trying to upload files to it.</p>
 </blockquote>
-<h4 id="saving-files-tofrom-the-esp32">Saving files to/from the ESP32</h4>
+<h3 id="saving-files-tofrom-the-esp32">Saving files to/from the ESP32</h3>
 <p>Within the &ldquo;Pymakr: Projects&rdquo; workspace there are several other buttons that you can use to sync files to the esp32</p>
 <ul>
 <li>Upload project to device: Uploads all your project files to the device</li>
@@ -559,16 +569,7 @@ ctrl_+ shift + I then formats your document</p>
 <li>Open in Explorer: This opens up the ESP32 as a virtual file system in the file explorer and allows you to investigate and work with the file system directly.</li>
 </ul>
 <p>From the file explorer window, you can also right click and select &ldquo;pymakr&ndash;&gt;upload to device&rdquo; to upload individual files</p>
-<h2 id="python">Python</h2>
-<p>When working with multiple python environments, you should make sure to use the correct one for the task you are doing.  To do this, you will need to select from a list of python interpreters.  Type ctrl+shift+p then type / select &ldquo;python select interpreter&rdquo; from the list.</p>
-<ul>
-<li><a href="https://code.visualstudio.com/docs/python/python-tutorial">https://code.visualstudio.com/docs/python/python-tutorial</a></li>
-<li><a href="https://www.pythontutorial.net/getting-started/setup-visual-studio-code-for-python/">https://www.pythontutorial.net/getting-started/setup-visual-studio-code-for-python/</a></li>
-<li><a href="https://theproductiveengineer.net/how-to-set-up-vs-code-for-python/">https://theproductiveengineer.net/how-to-set-up-vs-code-for-python/</a></li>
-</ul>
-<h3 id="debugging-python-code">Debugging Python Code</h3>
-<p>see this <a href="https://codelovingyogi.medium.com/vscode-debugging-python-scripts-with-args-d8ac1cf9a191">reference</a> to add a debug configuration</p>
-<h4 id="external-resources">External Resources</h4>
+<h3 id="external-resources">External Resources</h3>
 <ul>
 <li>VSCode
 <ul>

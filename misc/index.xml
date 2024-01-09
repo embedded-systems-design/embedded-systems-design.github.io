@@ -40,9 +40,7 @@
       <link>https://embedded-systems-design.github.io/cadence-manuals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
-      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials
-OrCAD 17.2 Manuals:
-OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
+      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials&#xA;OrCAD 17.2 Manuals:&#xA;OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
     </item>
     <item>
       <title>Calculating Current Limiting Resistor Value for LEDs</title>
@@ -91,8 +89,7 @@ OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
       <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</guid>
-      <description>Personal Projects and Education
-a. Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
+      <description>Personal Projects and Education&#xA;a. Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
     </item>
     <item>
       <title>House of Quality</title>
@@ -183,8 +180,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <link>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</guid>
-      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial
-Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
+      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial&#xA;Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
     </item>
     <item>
       <title>Strategies for using 0 Ohm Resistors</title>

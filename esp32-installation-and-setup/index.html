@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.120.4">
+  <meta name="generator" content="Hugo 0.121.2">
 
   <!-- plugins -->
   
@@ -279,14 +279,18 @@
         
         <div class="content mb-5">
           <h2 id="install-miniconda-and-packages">Install Miniconda and packages</h2>
-<p>You need to use Python on your PC to program the ESP32.</p>
+<blockquote>
+<p>You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda installed.  For more instructions, see <a href="/installing-anaconda-python/">here</a> for detailed instructions.</p>
+</blockquote>
+<ol>
+<li><strong>Installing Thonny and other Packages:</strong> Open up your anaconda environment (start&ndash;&gt;anaconda prompt)
 <ol>
 <li>
-<p>install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>).  Follow this <a href="/installing-anaconda-python/">tutorial</a> for detailed instructions.</p>
+<p>(optional) Activate your desired environment <code>conda activate &lt;environment_name&gt;</code>.</p>
+<blockquote>
+<p>You can ignore if you want to install in the base environment</p>
+</blockquote>
 </li>
-<li>
-<p><strong>Installing Thonny and other Packages:</strong> Open up powershell (win+x, i) and</p>
-<ol>
 <li>
 <p>type the following to install a prerequisite package</p>
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -y -c conda-forge wrapt
@@ -303,7 +307,7 @@
 </ol>
 </li>
 </ol>
-<h2 id="install-device-drivers-windows-only">Install Device Drivers <em>(Windows Only)</em></h2>
+<h2 id="install-device-drivers-required-for-windows">Install Device Drivers <em>(Required for Windows)</em></h2>
 <p>The device drivers will help your computer recognize the ESP32 as a USB Device</p>
 <ol>
 <li>
@@ -373,23 +377,14 @@
 </ol>
 <h2 id="flashing-the-esp32-firmware-for-micropython">Flashing the ESP32 Firmware for MicroPython</h2>
 <ol>
-<li>download <a href="https://micropython.org/download/esp32/">firmware</a> (I don&rsquo;t recommend v1.18 due to PWM issues)</li>
+<li>
+<p>download <a href="https://micropython.org/download/esp32/">firmware</a></p>
+<blockquote>
+<p><strong>Note:</strong> For this class you must use 1.19 or less.  I don&rsquo;t recommend v1.18 due to PWM issues.</p>
+</blockquote>
+</li>
 </ol>
-<h3 id="option-1-command-line-approach-with-esptool">Option 1: Command-line approach with <code>esptool</code></h3>
-<p>windows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port COM7 erase_flash
-</span></span></code></pre></div><p>linux:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash
-</span></span></code></pre></div><p>Now flash it using the template below.  Check device manager in windows to identify the appropriate COM port</p>
-<p>Windows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
-</span></span></code></pre></div><p>For Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port COM7 write_flash -z 0x1000 Downloads/esp32-20220618-v1.19.1.bin
-</span></span></code></pre></div><p>Linux:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
-</span></span></code></pre></div><p>For Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
-</span></span></code></pre></div><h3 id="option-2-thonny-approach">Option 2: Thonny approach</h3>
+<h3 id="option-1-thonny-approach">Option 1: Thonny approach</h3>
 <blockquote>
 <p>Requires thonny to be installed, see <a href="#install-miniconda-and-packages">above</a></p>
 </blockquote>
@@ -476,7 +471,7 @@
 </p>
 </li>
 <li>
-<p>select the firmware you downloaded, (e.g. &ldquo;esp32-20220117-v1.18.bin&rdquo;) and hit &ldquo;install&rdquo;.</p>
+<p>select the firmware you downloaded and hit &ldquo;install&rdquo;.</p>
 <p>
 <table>
 <thead></thead>
@@ -518,8 +513,8 @@
 </p>
 </li>
 <li>
-<p>Look at the interpreter window.  You should see:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">MicroPython</span> <span style="color:#111">v1</span><span style="color:#ae81ff">.18</span> <span style="color:#111">on</span> <span style="color:#ae81ff">2022</span><span style="color:#f92672">-</span><span style="color:#ae81ff">01</span><span style="color:#f92672">-</span><span style="color:#ae81ff">17</span><span style="color:#111">;</span> <span style="color:#111">ESP32</span> <span style="color:#111">module</span> <span style="color:#00a8c8">with</span> <span style="color:#111">ESP32</span>
+<p>Look at the interpreter window.  You should see something similar to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">MicroPython</span> <span style="color:#111">v1</span><span style="color:#f92672">.</span><span style="color:#111">XX</span> <span style="color:#111">on</span> <span style="color:#ae81ff">20</span><span style="color:#111">XX</span><span style="color:#f92672">-</span><span style="color:#111">YY</span><span style="color:#f92672">-</span><span style="color:#111">ZZ</span><span style="color:#111">;</span> <span style="color:#111">ESP32</span> <span style="color:#111">module</span> <span style="color:#00a8c8">with</span> <span style="color:#111">ESP32</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#111">Type</span> <span style="color:#d88200">&#34;help()&#34;</span> <span style="color:#00a8c8">for</span> <span style="color:#111">more</span> <span style="color:#111">information</span><span style="color:#f92672">.</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> 
@@ -552,7 +547,21 @@
 </p>
 </li>
 </ol>
-<h2 id="mac-specific-suggestions">Mac Specific Suggestions</h2>
+<h3 id="option-2-command-line-approach-with-esptool">Option 2: Command-line approach with <code>esptool</code></h3>
+<p>windows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port COM7 erase_flash
+</span></span></code></pre></div><p>linux:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash
+</span></span></code></pre></div><p>Now flash it using the template below.  Check device manager in windows to identify the appropriate COM port</p>
+<p>Windows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</span></span></code></pre></div><p>For Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool --chip esp32 --port COM7 write_flash -z 0x1000 Downloads/esp32-20220618-v1.19.1.bin
+</span></span></code></pre></div><p>Linux:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port &lt;serial_port&gt; write_flash -z 0x1000 &lt;esp32-X.bin&gt;
+</span></span></code></pre></div><p>For Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
+</span></span></code></pre></div><h2 id="mac-specific-suggestions">Mac Specific Suggestions</h2>
 <ul>
 <li>
 <p>use terminal or xterm if you have it as Macs do not have powershell</p>

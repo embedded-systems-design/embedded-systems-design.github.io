@@ -33,8 +33,7 @@
       <link>https://embedded-systems-design.github.io/pic-lcd-button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pic-lcd-button/</guid>
-      <description>Individual Assignment
-Objectives To develop and demonstrate individual proficiency in:</description>
+      <description>Individual Assignment&#xA;Objectives To develop and demonstrate individual proficiency in:</description>
     </item>
     <item>
       <title>Microchip PIC Microcontrollers</title>
@@ -62,8 +61,7 @@ Objectives To develop and demonstrate individual proficiency in:</description>
       <link>https://embedded-systems-design.github.io/spi-shift-register-timers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-timers/</guid>
-      <description>Objectives To develop and demonstrate individual proficiency in:
-Using SPI communication to control LEDs connected to a shift register</description>
+      <description>Objectives To develop and demonstrate individual proficiency in:&#xA;Using SPI communication to control LEDs connected to a shift register</description>
     </item>
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers (Part 2)</title>

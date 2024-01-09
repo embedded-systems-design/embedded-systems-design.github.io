@@ -12,9 +12,7 @@
       <link>https://embedded-systems-design.github.io/vscode-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/vscode-setup/</guid>
-      <description>Installation Download from here
-Installation Options
-Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Ubuntu-specific cd ~/Downloads sudo dpkg -i code_1.</description>
+      <description>Installation Download from here&#xA;Installation Options&#xA;Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Ubuntu-specific cd ~/Downloads sudo dpkg -i code_1.</description>
     </item>
   </channel>
 </rss>

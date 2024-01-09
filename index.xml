@@ -48,8 +48,7 @@
       <link>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</guid>
-      <description>Overview See this excellent overview of the ESP32
-RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Devkit vs ESP32 module Pinouts / Schematics from https://randomnerdtutorials.</description>
+      <description>Overview See this excellent overview of the ESP32&#xA;RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Devkit vs ESP32 module Pinouts / Schematics from https://randomnerdtutorials.</description>
     </item>
     <item>
       <title>Symbol Creation</title>
@@ -98,8 +97,7 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be us
       <link>https://embedded-systems-design.github.io/kicad-common-pin-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-common-pin-types/</guid>
-      <description>Modified from here
-Pin Type Description Input A pin which is exclusively an input.</description>
+      <description>Modified from here&#xA;Pin Type Description Input A pin which is exclusively an input.</description>
     </item>
     <item>
       <title>Importing Netlist into KiCad PCB</title>
@@ -225,9 +223,7 @@ Pin Type Description Input A pin which is exclusively an input.</description>
       <link>https://embedded-systems-design.github.io/cadence-manuals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
-      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials
-OrCAD 17.2 Manuals:
-OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
+      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials&#xA;OrCAD 17.2 Manuals:&#xA;OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
     </item>
     <item>
       <title>Cadence Mounting Hole/Post Tutorial</title>
@@ -416,8 +412,7 @@ OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
       <link>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</guid>
-      <description>Creating a new project in Cadence
-In Windows, open the Design Entry CIS program.</description>
+      <description>Creating a new project in Cadence&#xA;In Windows, open the Design Entry CIS program.</description>
     </item>
     <item>
       <title>Creating Custom Footprints</title>
@@ -522,8 +517,7 @@ In Windows, open the Design Entry CIS program.</description>
       <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</guid>
-      <description>Personal Projects and Education
-a. Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
+      <description>Personal Projects and Education&#xA;a. Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
     </item>
     <item>
       <title>Hello World with UART (PIC)</title>
@@ -593,8 +587,7 @@ a. Arduino Project Hub is where you can learn about what all other beginner or a
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts/</guid>
-      <description>What is an interrupt? Consider the following knock-knock joke:
-Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
+      <description>What is an interrupt? Consider the following knock-knock joke:&#xA;Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
     </item>
     <item>
       <title>Interrupts on PSoC</title>
@@ -629,8 +622,7 @@ Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
       <link>https://embedded-systems-design.github.io/pic-lcd-button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pic-lcd-button/</guid>
-      <description>Individual Assignment
-Objectives To develop and demonstrate individual proficiency in:</description>
+      <description>Individual Assignment&#xA;Objectives To develop and demonstrate individual proficiency in:</description>
     </item>
     <item>
       <title>Level shifters</title>
@@ -693,8 +685,7 @@ Objectives To develop and demonstrate individual proficiency in:</description>
       <link>https://embedded-systems-design.github.io/micropython-and-esp32/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/micropython-and-esp32/</guid>
-      <description>What is Python? The #1 Programming language*
-Python: 14.2% Matlab: 0.</description>
+      <description>What is Python? The #1 Programming language*&#xA;Python: 14.2% Matlab: 0.</description>
     </item>
     <item>
       <title>MOSFET for use with a 3.3V and 5V Microcontroller</title>
@@ -827,8 +818,7 @@ Python: 14.2% Matlab: 0.</description>
       <link>https://embedded-systems-design.github.io/psoc-creator-project-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-creator-project-structure/</guid>
-      <description>I can&#39;t find my workspace/project in PSoC Creator
-C files, top design files, etc.</description>
+      <description>I can&#39;t find my workspace/project in PSoC Creator&#xA;C files, top design files, etc.</description>
     </item>
     <item>
       <title>PSoC Hello World Lab</title>
@@ -961,16 +951,14 @@ C files, top design files, etc.</description>
       <link>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</guid>
-      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial
-Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
+      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial&#xA;Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
     </item>
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
       <link>https://embedded-systems-design.github.io/spi-shift-register-timers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-timers/</guid>
-      <description>Objectives To develop and demonstrate individual proficiency in:
-Using SPI communication to control LEDs connected to a shift register</description>
+      <description>Objectives To develop and demonstrate individual proficiency in:&#xA;Using SPI communication to control LEDs connected to a shift register</description>
     </item>
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers (Part 2)</title>
@@ -1152,9 +1140,7 @@ Using SPI communication to control LEDs connected to a shift register</descripti
       <link>https://embedded-systems-design.github.io/vscode-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/vscode-setup/</guid>
-      <description>Installation Download from here
-Installation Options
-Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Ubuntu-specific cd ~/Downloads sudo dpkg -i code_1.</description>
+      <description>Installation Download from here&#xA;Installation Options&#xA;Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Ubuntu-specific cd ~/Downloads sudo dpkg -i code_1.</description>
     </item>
     <item>
       <title>What is a Gantt Chart?</title>

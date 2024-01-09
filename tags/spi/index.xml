@@ -12,8 +12,7 @@
       <link>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</guid>
-      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial
-Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
+      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial&#xA;Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
     </item>
   </channel>
 </rss>
