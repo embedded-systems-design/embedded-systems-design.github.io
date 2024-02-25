@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cadence on Embedded Systems Design</title>
+    <title>Cadence on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/tags/cadence/</link>
-    <description>Recent content in cadence on Embedded Systems Design</description>
+    <description>Recent content in Cadence on Embedded Systems Design</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/tags/cadence/index.xml" rel="self" type="application/rss+xml" />
