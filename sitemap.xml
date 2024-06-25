@@ -14,11 +14,15 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad-installation-and-setup/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/altium/altium-documentation-links/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad-symbol-creation/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/assign-kicad-footprints/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</loc>
   </url><url>
@@ -32,13 +36,19 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad-common-pin-types/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/importing-kicad-netlists/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/installing-anaconda-python/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</loc>
   </url><url>
@@ -75,6 +85,8 @@
     <loc>https://embedded-systems-design.github.io/all-about-smart-homes/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/altering-trace-widths/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/altium/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/argon/</loc>
   </url><url>
@@ -137,8 +149,6 @@
     <loc>https://embedded-systems-design.github.io/tags/checklist/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/circuit-design/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/circuit-design/</loc>
   </url><url>
@@ -219,8 +229,6 @@
     <loc>https://embedded-systems-design.github.io/enable-floating-point-support/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/esp32/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/esp32/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/example-project/</loc>
   </url><url>
@@ -370,8 +378,6 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/pic/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/tc74-temp-sensor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic18f47q10/</loc>
@@ -397,8 +403,6 @@
     <loc>https://embedded-systems-design.github.io/tags/project-management/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/psoc/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/tutorials/psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</loc>
   </url><url>

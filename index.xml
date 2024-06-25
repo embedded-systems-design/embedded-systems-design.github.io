@@ -4,7 +4,7 @@
     <title>Welcome on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/</link>
     <description>Recent content in Welcome on Embedded Systems Design</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://embedded-systems-design.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -42,6 +42,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-installation-and-setup/</guid>
       <description>Resources KiCad.org KiCad Documentation Installation Full instructions can be found on the Software page.</description>
+    </item>
+    <item>
+      <title>Links to the Altium Documentation</title>
+      <link>https://embedded-systems-design.github.io/altium/altium-documentation-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/altium/altium-documentation-links/</guid>
+      <description>Quick Links to Important Parts of the Altium Documentation</description>
     </item>
     <item>
       <title>Overview of the ESP32 DevKit DOIT V1</title>

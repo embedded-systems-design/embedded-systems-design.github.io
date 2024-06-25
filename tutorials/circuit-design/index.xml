@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Circuit Design on Embedded Systems Design</title>
-    <link>https://embedded-systems-design.github.io/circuit-design/</link>
+    <link>https://embedded-systems-design.github.io/tutorials/circuit-design/</link>
     <description>Recent content in Circuit Design on Embedded Systems Design</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://embedded-systems-design.github.io/circuit-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://embedded-systems-design.github.io/tutorials/circuit-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASU PCB Fabrication Process</title>
       <link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link>
