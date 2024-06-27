@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.127.0">
+  <meta name="generator" content="Hugo 0.128.0">
 
   <!-- plugins -->
   
@@ -311,17 +311,17 @@ Stage - the action of preparing file(s) to be committed</p>
 </ul>
 <h2 id="a-normal-git-workflow-gitflow">A Normal Git Workflow (GitFlow)</h2>
 <ol>
-<li>Clone or fork a repo <code>git clone &lt;repo name&gt;</code></li>
-<li>Create a development branch <code>git branch &lt;new branch name&gt;</code></li>
-<li>Switch to the development branch <code>git checkout &lt;new branch name&gt;</code></li>
+<li>Clone or fork a repo ```git clone <repo name>`</li>
+<li>Create a development branch ```git branch <new branch name>`</li>
+<li>Switch to the development branch ```git checkout <new branch name>`</li>
 <li>Edit file(s)</li>
-<li>Add file(s) to stage them for a commit <code>git add &lt;fileName&gt;</code></li>
-<li>Write a message to explain the commit (aka commit message) <code>git commit -m &quot;put a short descriptive message about the changes here&quot;</code></li>
-<li>Push the commit (message + prepared file(s)) to the development branch <code>git push</code></li>
-<li>Switch to main branch <code>git checkout main</code></li>
-<li>Pull recent changes to ensure the local branch instance is up to date <code>git pull</code></li>
-<li>Make a Pull Request to merge the development branch into the main branch <code>Go to GitHub to make a New Pull Request</code></li>
-<li>Confirm the pull request <code>Click merge pull request</code></li>
+<li>Add file(s) to stage them for a commit ```git add <fileName>`</li>
+<li>Write a message to explain the commit (aka commit message) ```git commit -m &ldquo;put a short descriptive message about the changes here&rdquo;`</li>
+<li>Push the commit (message + prepared file(s)) to the development branch ```git push`</li>
+<li>Switch to main branch ```git checkout main`</li>
+<li>Pull recent changes to ensure the local branch instance is up to date ```git pull`</li>
+<li>Make a Pull Request to merge the development branch into the main branch ```Go to GitHub to make a New Pull Request`</li>
+<li>Confirm the pull request ```Click merge pull request`</li>
 <li>If multiple users on a single repository, pull from the main branch into the development branch often <code>git merge main</code> to reduce merge conflicts</li>
 <li>Repeat from step 3.</li>
 </ol>

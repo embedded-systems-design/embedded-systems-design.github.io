@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.127.0">
+  <meta name="generator" content="Hugo 0.128.0">
 
   <!-- plugins -->
   
@@ -306,7 +306,7 @@
 </ul>
 <h3 id="further-explanation-of-the-gitignore-edits">Further Explanation of the .gitignore edits</h3>
 <p>If edits occur in the Generated_Source/ folder, to include specific files the .gitignore must be edited following the <code>*Generated_Source/</code> line with the following: <code>!*Generated_Source/FolderName/FileToInclude.*</code> This may not be the only structure. The example listed refers to a custom USB_audio, thus, the added line looks like <code>!*Generated_Source/PSoC4/USB_audio.*</code>. This line indicates that all files in Generated Souree in PSoC4 that begin with USB_audio must not be ignored.</p>
-<p>If other optional items such as datasheets are necessary to be commented then remove the preceding <code>#</code> from the line to uncomment it.</p>
+<p>If other optional items such as datasheets are necessary to be commented then remove the preceding ```#` from the line to uncomment it.</p>
 <p>Commit the changes to ensure they come into effect. Files that are present before a .gitignore is implemented (and they are marked to be ignored) will still be present in the repository and tracked. It is good practice to implement a .gitignore before development begins. To resolve this enter <code>git rm -r --cached &lt;To Be Ignored&gt;</code> where To Be Ignored refers to a file or folder structure (<code>Folder/</code> to ignore a directory entirely <code>Folder/*</code> to ignore the folder&rsquo;s contents) that needs to be removed. When you commit, the discrepancy should be resolved.</p>
 
         </div>

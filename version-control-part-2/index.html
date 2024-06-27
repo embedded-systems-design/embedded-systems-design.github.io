@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.127.0">
+  <meta name="generator" content="Hugo 0.128.0">
 
   <!-- plugins -->
   
@@ -311,7 +311,7 @@
 <ol>
 <li>Navigate in Windows Explorer to find where to copy the repository to, in this case <code>C:/UserName/Desktop</code>.</li>
 <li>Right click in the folder in Windows Explorer and click &ldquo;Git Bash here&rdquo;</li>
-<li>In the terminal window that has appeared type <code>git clone </code> and paste the copied URL and hit enter. The command should look something like <code>git clone https://github.com/username/repoName.git</code></li>
+<li>In the terminal window that has appeared type <code>git clone </code> and paste the copied URL and hit enter. The command should look something like ```git clone <a href="https://github.com/username/repoName.git%60">https://github.com/username/repoName.git`</a></li>
 </ol>
 <p>When first using the command line, terminal, or Git Bash to interact with GitHub, after the clone command is executed it will ask for a username, and then a PAT. If this has already been done, then it will not ask as the values may already be stored in cache through Git clients. Git for Windows and Git CLI will store these after the first use until it expires. Additional setup varies by the program.</p>
 <p>In the Desktop folder there should now be a folder with the repo name. This is a local instance of the cloned repository.</p>
@@ -322,8 +322,8 @@ Downloading via Zip a direct download of the contents of the repository, without
 
 1. Unzip the file
 2. Navigate into the unzipped folder
-3. `git init` to initialize a new git repository
-4. `git remote add origin https://github.com/username/repoName.git` replacing username with the username of the repo owner, and repoName with the name of the repo
+3. ```git init``` to initialize a new git repository
+4. ```git remote add origin https://github.com/username/repoName.git``` replacing username with the username of the repo owner, and repoName with the name of the repo
 -->
 <h2 id="starting-with-an-empty-repo">Starting with an empty repo</h2>
 <p>When creating repo&rsquo;s without a README.md, it is assumed there is an existing repo, or a repo will be created through the command line, terminal, or Git Bash. Follow the appropriate instructions depending on the context. Figure X shows a repo called <code>tbd</code> that was not initialized with a README.md and how to start a new repo from a local instance, link an existing repo, or link from another type of version control.</p>
@@ -333,7 +333,7 @@ Downloading via Zip a direct download of the contents of the repository, without
 <p>From the local instance on Desktop, create a new text file and name it &ldquo;FirstFile.txt&rdquo; and put &ldquo;hello world&rdquo; in the file. Normal git workflow (gitflow) involves making changes, staging the changes by adding the files, writing a descriptive message about the changes, and then pushing the bundled changes and message in a commit. Make sure a Git Bash window is open in this repository folder.</p>
 <ol>
 <li>To see what files have been changed type <code>git status</code> into the Git Bash window.</li>
-<li>FirstFile.txt is not tracked yet due to it being a new file. To track the file <code>git add FirstFile.txt</code></li>
+<li>FirstFile.txt is not tracked yet due to it being a new file. To track the file ```git add FirstFile.txt`</li>
 <li>Entering <code>git status</code> will now show the file is tracked and staged (or ready) to be committed.</li>
 <li>Open FirstFile.txt and add a new line and &ldquo;another hello world&rdquo; to it. Save and close the file. For every change that occurs after a file has been added, the file needs to be re-added or a commit will not include those changes. Commits do not need to include all changes. Do not add the file yet.</li>
 <li>To complete the commit of the creation of a new file and &ldquo;hello world&rdquo; (not &ldquo;another hello world&rdquo;) enter <code>git commit -m &quot;added new file and hello world message&quot;</code>. Commit messages should be short but descriptive such that another user or a future user can understand what edits occurred.</li>
