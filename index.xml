@@ -1108,6 +1108,13 @@
       <description>How to create a footprint using the footprint wizart for standard footprints and shapes</description>
     </item>
     <item>
+      <title>Using the Pymakr Extension in VSCode</title>
+      <link>https://embedded-systems-design.github.io/using-pymakr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/using-pymakr/</guid>
+      <description>pymaker install pymakr preview&#xA;code --install-extension Pycom.pymakr-preview Getting Started with Pymakr (from here) In File explorer(ctrl+shift+e) add or create a project folder for holding your micropython code (suggestion: name it &amp;ldquo;micropython&amp;rdquo;).</description>
+    </item>
+    <item>
       <title>Using VCC and GND Symbols</title>
       <link>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

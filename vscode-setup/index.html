@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.128.0">
+  <meta name="generator" content="Hugo 0.129.0">
 
   <!-- plugins -->
   
@@ -384,26 +384,27 @@
 <h2 id="extensions">Extensions</h2>
 <p>from <a href="https://code.visualstudio.com/docs/editor/command-line">here</a></p>
 <p>open a terminal window and paste the following in:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension bierner.markdown-yaml-preamble
-</span></span><span style="display:flex;"><span>code --install-extension DavidAnson.vscode-markdownlint
-</span></span><span style="display:flex;"><span>code --install-extension James-Yu.latex-workshop
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">### python support</span>
+</span></span><span style="display:flex;"><span>code --install-extension ms-python.debugpy
 </span></span><span style="display:flex;"><span>code --install-extension ms-python.python
 </span></span><span style="display:flex;"><span>code --install-extension ms-python.vscode-pylance
-</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter
-</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter-keymap
-</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.jupyter-renderers
-</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.vscode-jupyter-cell-tags
-</span></span><span style="display:flex;"><span>code --install-extension ms-toolsai.vscode-jupyter-slideshow
-</span></span><span style="display:flex;"><span>code --install-extension PKief.markdown-checkbox
-</span></span><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
-</span></span><span style="display:flex;"><span>code --install-extension redhat.vscode-yaml
+</span></span></code></pre></div><h3 id="markdown-support">markdown support</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension davidanson.vscode-markdownlint
+</span></span><span style="display:flex;"><span>code --install-extension pkief.markdown-checkbox
 </span></span><span style="display:flex;"><span>code --install-extension shd101wyy.markdown-preview-enhanced
-</span></span><span style="display:flex;"><span>code --install-extension streetsidesoftware.code-spell-checker
-</span></span><span style="display:flex;"><span>code --install-extension tamasfe.even-better-toml
-</span></span><span style="display:flex;"><span>code --install-extension tecosaur.latex-utilities
-</span></span><span style="display:flex;"><span>code --install-extension torn4dom4n.latex-support
-</span></span><span style="display:flex;"><span>code --install-extension yzane.markdown-pdf
+</span></span><span style="display:flex;"><span>code --install-extension bierner.markdown-yaml-preamble
 </span></span><span style="display:flex;"><span>code --install-extension yzhang.markdown-all-in-one
+</span></span></code></pre></div><h3 id="git-support">git support</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension codezombiech.gitignore
+</span></span><span style="display:flex;"><span>code --install-extension donjayamanne.githistory
+</span></span><span style="display:flex;"><span>code --install-extension mhutchie.git-graph
+</span></span><span style="display:flex;"><span>code --install-extension waderyan.gitblame
+</span></span><span style="display:flex;"><span>code --install-extension ziyasal.vscode-open-in-github
+</span></span></code></pre></div><h3 id="esp32-support">esp32 support</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension pycom.pymakr-preview
+</span></span></code></pre></div><h3 id="misc">misc</h3>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension streetsidesoftware.code-spell-checker
+</span></span><span style="display:flex;"><span>code --install-extension redhat.vscode-yaml
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --list-extensions
 </span></span></code></pre></div><h2 id="markdown-all-in-one">Markdown all-in-one</h2>
 <p>go to settings
@@ -418,188 +419,155 @@ ctrl_+ shift + I then formats your document</p>
 </ul>
 <h3 id="debugging-python-code">Debugging Python Code</h3>
 <p>see this <a href="https://codelovingyogi.medium.com/vscode-debugging-python-scripts-with-args-d8ac1cf9a191">reference</a> to add a debug configuration</p>
-<h2 id="pymaker">pymaker</h2>
-<ol>
-<li>
-<p>install pymakr preview</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
-</span></span></code></pre></div></li>
-</ol>
-<h4 id="getting-started-with-pymakr-from-herehttpsgithubcompycompymakr-vscblobheadget_startedmd">Getting Started with Pymakr (from <a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">here</a>)</h4>
-<ol>
-<li>In File explorer(<code>ctrl+shift+e</code>)
-<ol>
-<li>add or create a project folder for holding your micropython code (suggestion: name it &ldquo;micropython&rdquo;).  Consider creating one in your &ldquo;code&rdquo; git repository.</li>
-</ol>
-</li>
-<li>navigate to &ldquo;Pymakr: Projects&rdquo; tab in the workspace explorer window on the left
-<ol>
-<li>
-<p>select &ldquo;create project&rdquo;.  Select the same code folder as above and specify a project name (like &ldquo;hello-world&rdquo;).  Select the option to create a subdirectory with the micropython folder.</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="project-name.png"><img src="project-name.png" alt="Define the name"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Define the name</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="project-structure.png"><img src="project-structure.png" alt="create the project in a subfolder"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">create the project in a subfolder</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="empty-project.png"><img src="empty-project.png" alt="specify empty project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">specify empty project</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Connect your device via usb to your computer</p>
-</li>
-<li>
-<p>Within the &ldquo;hello-world&rdquo; project that is created within the &ldquo;Pymakr: Projects&rdquo; tab, add a new device. Follow the prompts to select the appropriate com port</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="select-port.png"><img src="select-port.png" alt="Select your device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select your device</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Connect to the device by selecting the lightning bolt icon</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="connect-device.png"><img src="connect-device.png" alt="Connect to Device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Connect to Device</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>Open up a terminal window by selecting the box with an arrow in it</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="terminal-button.png"><img src="terminal-button.png" alt="Open up a Terminal Window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Open up a Terminal Window</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>A terminal window should open and look like this:</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="terminal-output.png"><img src="terminal-output.png" alt="Example of terminal window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Example of terminal window</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">MicroPython</span> <span style="color:#111">v1</span><span style="color:#ae81ff">.19.1</span> <span style="color:#111">on</span> <span style="color:#ae81ff">2022</span><span style="color:#f92672">-</span><span style="color:#ae81ff">06</span><span style="color:#f92672">-</span><span style="color:#ae81ff">18</span><span style="color:#111">;</span> <span style="color:#111">ESP32</span> <span style="color:#111">module</span> <span style="color:#00a8c8">with</span> <span style="color:#111">ESP32</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Type</span> <span style="color:#d88200">&#34;help()&#34;</span> <span style="color:#00a8c8">for</span> <span style="color:#111">more</span> <span style="color:#111">information</span><span style="color:#f92672">.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>
-</span></span></code></pre></div></li>
-<li>
-<p>At the command prompt, type in</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#39;hello world&#39;</span><span style="color:#111">)</span>
-</span></span></code></pre></div><p>which should return</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">hello</span> <span style="color:#111">world</span>
-</span></span></code></pre></div></li>
-<li>
-<p>If you wish to disconnect, you can use:</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="disconnect-button.png"><img src="disconnect-button.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="working-with-micropython">Working with Micropython</h3>
-<p>Micropython can either run code from the interpreter (the &ldquo;terminal&rdquo; as VSCode puts it), or by loading a file from its onboard storage.  When the ESP32 is reset (using the EN button), it looks for two files, in a specific order:</p>
-<ol>
-<li>boot.py</li>
-<li>main.py</li>
-</ol>
-<p>if there are any loops in these files that prevent execution from ending, you must type <code>ctrl+c</code> to terminate execution from the interpreter window.  This will stop any python files from running and bring control back to the interpreter</p>
-<blockquote>
-<p>You must always stop execution on the ESP32 before trying to upload files to it.</p>
-</blockquote>
-<h3 id="saving-files-tofrom-the-esp32">Saving files to/from the ESP32</h3>
-<p>Within the &ldquo;Pymakr: Projects&rdquo; workspace there are several other buttons that you can use to sync files to the esp32</p>
-<ul>
-<li>Upload project to device: Uploads all your project files to the device</li>
-<li>Download project from device: Pulls files off the device</li>
-<li>Open in Explorer: This opens up the ESP32 as a virtual file system in the file explorer and allows you to investigate and work with the file system directly.</li>
-</ul>
-<p>From the file explorer window, you can also right click and select &ldquo;pymakr&ndash;&gt;upload to device&rdquo; to upload individual files</p>
-<h3 id="external-resources">External Resources</h3>
-<ul>
-<li>VSCode
+<h2 id="preferences">Preferences</h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;workbench.colorTheme&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Default Dark+&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;git.confirmSync&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pymakr.devices.configs&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;serial:///dev/ttyUSB1&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;autoConnect&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;onLostConnection&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;username&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;micro&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;password&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;python&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;hidden&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;rootPath&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">null</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;adapterOptions&#34;</span><span style="color:#111">:</span> <span style="color:#111">{}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;security.workspace.trust.untrustedFiles&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;open&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;[markdown]&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.defaultFormatter&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;yzhang.markdown-all-in-one&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;explorer.confirmDragAndDrop&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pymakr.misc.notifications&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;Uploading a project will delete all existing files on the device before uploading the project folder. After uploading a project, you can start it by restarting the device. For faster uploads without file deletion, please put the device in dev mode.&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Don&#39;t show again&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ttyUSB0 / unknown seems to be busy. Do you wish restart it in safe mode&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Restart in safe mode&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;Could not safeboot device. Please hard reset the device and verify that a shield is installed.&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Don&#39;t show again&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;A terminal for ttyUSB0 / unknown already exists.&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;No and don&#39;t ask again&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;A terminal for ttyUSB0 / OLED-and-Graphing already exists.&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;No and don&#39;t ask again&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ttyUSB0 / OLED-and-Graphing seems to be busy. Do you wish restart it in safe mode&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;No and don&#39;t ask again&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;A terminal for ttyUSB0 / code_esp32_servo_gaits already exists.&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Open existing terminal&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ttyUSB0 / danscode seems to be busy. Do you wish restart it in safe mode&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Don&#39;t show again&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;A terminal for ttyUSB0 / danscode already exists.&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;No and don&#39;t ask again&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;editor.fontSize&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">12</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;markdownlint.config&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;default&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;MD007&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span> <span style="color:#f92672">&#34;indent&#34;</span><span style="color:#111">:</span> <span style="color:#ae81ff">4</span> <span style="color:#111">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;markdown.extension.orderedList.autoRenumber&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;markdown.extension.list.indentationSize&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;inherit&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;terminal.integrated.enableMultiLinePasteWarning&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;diffEditor.ignoreTrimWhitespace&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;workbench.startupEditor&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;none&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;extensions.ignoreRecommendations&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;[python]&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;editor.formatOnType&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;git.enableSmartCommit&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;markdown.experimental.editor.pasteLinks.enabled&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;markdown.extension.italic.indicator&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;_&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;markdown.extension.orderedList.marker&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;one&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;files.hotExit&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;off&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;latex-workshop.message.information.show&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">true</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;editor.wordWrap&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;on&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;jupyter.askForKernelRestart&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;explorer.confirmDelete&#34;</span><span style="color:#111">:</span> <span style="color:#00a8c8">false</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;notebook.cellToolbarLocation&#34;</span><span style="color:#111">:</span> <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;default&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;right&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;jupyter-notebook&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;left&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;editor.defaultFormatter&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;yzhang.markdown-all-in-one&#34;</span>
+</span></span></code></pre></div><h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Place your key bindings in this file to override the defaultsauto[]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#111">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+down&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editor.action.moveLinesDownAction&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus &amp;&amp; !editorReadonly&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;alt+down&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-editor.action.moveLinesDownAction&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus &amp;&amp; !editorReadonly&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+up&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editor.action.moveLinesUpAction&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus &amp;&amp; !editorReadonly&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;alt+up&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-editor.action.moveLinesUpAction&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus &amp;&amp; !editorReadonly&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+2&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;markdown.extension.editing.toggleList&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+d&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editor.action.deleteLines&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;textInputFocus &amp;&amp; !editorReadonly&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+shift+k&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-editor.action.deleteLines&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;textInputFocus &amp;&amp; !editorReadonly&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+alt+i&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;markdownlint.fixAll&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+shift+/&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;workbench.files.action.collapseExplorerFolders&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+shift+j&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;markdown-checkbox.markCheckbox&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+shift+enter&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-markdown-checkbox.markCheckbox&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+shift+\\&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-editor.action.jumpToBracket&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+j&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;markdown-checkbox.createCheckbox&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+shift+c&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-markdown-checkbox.createCheckbox&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+j&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-workbench.action.togglePanel&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;ctrl+shift+j&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-workbench.action.search.toggleQueryDetails&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;inSearchEditor || searchViewletFocus&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;key&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;shift+enter&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;command&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;-python.execSelectionInTerminal&#34;</span><span style="color:#111">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;when&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;editorTextFocus &amp;&amp; !findInputFocussed &amp;&amp; !jupyter.ownsSelection &amp;&amp; !notebookEditorFocused &amp;&amp; !replaceInputFocussed &amp;&amp; editorLangId == &#39;python&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">}</span>
+</span></span></code></pre></div><h3 id="external-resources">External Resources</h3>
 <ul>
 <li>Main <a href="https://code.visualstudio.com/">Website</a></li>
 <li>Find help <a href="https://code.visualstudio.com/docs/setup/linux">here</a></li>
 <li>Download from <a href="https://code.visualstudio.com/Download">here</a></li>
-</ul>
-</li>
-<li>Pymakr &amp; ESP32
-<ul>
-<li><a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr">https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr</a></li>
-<li><a href="https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/">https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/</a></li>
-<li><a href="https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide">https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html">https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html</a></li>
-<li><a href="https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython">https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython</a></li>
-</ul>
-</li>
 </ul>
 
         </div>

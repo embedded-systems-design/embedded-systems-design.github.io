@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Using the Pymakr Extension in VSCode</title>
+      <link>https://embedded-systems-design.github.io/using-pymakr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/using-pymakr/</guid>
+      <description>pymaker install pymakr preview&#xA;code --install-extension Pycom.pymakr-preview Getting Started with Pymakr (from here) In File explorer(ctrl+shift+e) add or create a project folder for holding your micropython code (suggestion: name it &amp;ldquo;micropython&amp;rdquo;).</description>
+    </item>
+    <item>
       <title>VSCode Setup and Usage</title>
       <link>https://embedded-systems-design.github.io/vscode-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> What is a printed circuit board? | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Using the Pymakr Extension in VSCode | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -239,13 +239,18 @@
 
 
 
+
+
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
 
 
-<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/misc/">Misc</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/">What is a printed circuit board?</a></li>
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/esp32/">ESP32</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/using-pymakr/">Using the Pymakr Extension in VSCode</a></li>
 
 </ol>
 </nav>
@@ -256,7 +261,7 @@
 
 
 
-        <h2>What is a printed circuit board?</h2>
+        <h2>Using the Pymakr Extension in VSCode</h2>
         
         <div class="mb-1 post-meta">
           <span>By ESD Faculty</span>
@@ -267,40 +272,184 @@
         <ul class="list-inline">
           
           <li class="list-inline-item mb-3 mr-2 mt-1">
-          <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-            class="text-primary">Pcb</a>
+          <a class="d-block p-2 bg-primary text-white" href="/tags/vscode"
+            class="text-primary">Vscode</a>
           </li>
         </ul>
         
         <div class="content mb-5">
-          <p>A <a href="http://www.madehow.com/Volume-2/Printed-Circuit-Board.html">printed circuit board (PCB)</a> is a board made of both conducive and non-conductive materials onto which components can be soldered to create a circuit. The circuit connections are made via copper traces on the board. An example PCB is shown in Figure 1.</p>
+          <h2 id="pymaker">pymaker</h2>
+<ol>
+<li>
+<p>install pymakr preview</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="getting-started-with-pymakr-from-herehttpsgithubcompycompymakr-vscblobheadget_startedmd">Getting Started with Pymakr (from <a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">here</a>)</h4>
+<ol>
+<li>In File explorer(<code>ctrl+shift+e</code>)
+<ol>
+<li>add or create a project folder for holding your micropython code (suggestion: name it &ldquo;micropython&rdquo;).  Consider creating one in your &ldquo;code&rdquo; git repository.</li>
+</ol>
+</li>
+<li>navigate to &ldquo;Pymakr: Projects&rdquo; tab in the workspace explorer window on the left
+<ol>
+<li>
+<p>select &ldquo;create project&rdquo;.  Select the same code folder as above and specify a project name (like &ldquo;hello-world&rdquo;).  Select the option to create a subdirectory with the micropython folder.</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="/larger/image0261.jpeg"><img src="/larger/image0261.jpeg" alt="Figure 1: Printed circuit board"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="project-name.png"><img src="project-name.png" alt="Define the name"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure 1: Printed circuit board</div></td></tr>
+<tr><td><div style="text-align:center;">Define the name</div></td></tr>
 </tbody>
 </table>
 
 </p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="project-structure.png"><img src="project-structure.png" alt="create the project in a subfolder"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">create the project in a subfolder</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="empty-project.png"><img src="empty-project.png" alt="specify empty project"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">specify empty project</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Connect your device via usb to your computer</p>
+</li>
+<li>
+<p>Within the &ldquo;hello-world&rdquo; project that is created within the &ldquo;Pymakr: Projects&rdquo; tab, add a new device. Follow the prompts to select the appropriate com port</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="select-port.png"><img src="select-port.png" alt="Select your device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select your device</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Connect to the device by selecting the lightning bolt icon</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="connect-device.png"><img src="connect-device.png" alt="Connect to Device"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Connect to Device</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Open up a terminal window by selecting the box with an arrow in it</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="terminal-button.png"><img src="terminal-button.png" alt="Open up a Terminal Window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Open up a Terminal Window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>A terminal window should open and look like this:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="terminal-output.png"><img src="terminal-output.png" alt="Example of terminal window"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Example of terminal window</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">MicroPython</span> <span style="color:#111">v1</span><span style="color:#ae81ff">.19.1</span> <span style="color:#111">on</span> <span style="color:#ae81ff">2022</span><span style="color:#f92672">-</span><span style="color:#ae81ff">06</span><span style="color:#f92672">-</span><span style="color:#ae81ff">18</span><span style="color:#111">;</span> <span style="color:#111">ESP32</span> <span style="color:#111">module</span> <span style="color:#00a8c8">with</span> <span style="color:#111">ESP32</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">Type</span> <span style="color:#d88200">&#34;help()&#34;</span> <span style="color:#00a8c8">for</span> <span style="color:#111">more</span> <span style="color:#111">information</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>At the command prompt, type in</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">print</span><span style="color:#111">(</span><span style="color:#d88200">&#39;hello world&#39;</span><span style="color:#111">)</span>
+</span></span></code></pre></div><p>which should return</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#111">hello</span> <span style="color:#111">world</span>
+</span></span></code></pre></div></li>
+<li>
+<p>If you wish to disconnect, you can use:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="disconnect-button.png"><img src="disconnect-button.png" alt="Figure"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="working-with-micropython">Working with Micropython</h3>
+<p>Micropython can either run code from the interpreter (the &ldquo;terminal&rdquo; as VSCode puts it), or by loading a file from its onboard storage.  When the ESP32 is reset (using the EN button), it looks for two files, in a specific order:</p>
+<ol>
+<li>boot.py</li>
+<li>main.py</li>
+</ol>
+<p>if there are any loops in these files that prevent execution from ending, you must type <code>ctrl+c</code> to terminate execution from the interpreter window.  This will stop any python files from running and bring control back to the interpreter</p>
+<blockquote>
+<p>You must always stop execution on the ESP32 before trying to upload files to it.</p>
+</blockquote>
+<h3 id="saving-files-tofrom-the-esp32">Saving files to/from the ESP32</h3>
+<p>Within the &ldquo;Pymakr: Projects&rdquo; workspace there are several other buttons that you can use to sync files to the esp32</p>
 <ul>
-<li>Dr. Jordan has created a <a href="https://drive.google.com/a/asu.edu/file/d/0ByRWb7dgVD-rSlNERndsTG5QYlE/edit">Printed Circuit Board Overview</a> describing the anatomy and fabrication of PCBs.</li>
-<li><a href="http://www.pcb.electrosoft-engineering.com/04-articles-custom-system-design-and-pcb/01-printed-circuit-board-concepts/printed-circuit-board-pcb-concepts.html">Concepts and Terminology used in Printed Circuit Boards page</a> from Electrosoft Engineering</li>
+<li>Upload project to device: Uploads all your project files to the device</li>
+<li>Download project from device: Pulls files off the device</li>
+<li>Open in Explorer: This opens up the ESP32 as a virtual file system in the file explorer and allows you to investigate and work with the file system directly.</li>
 </ul>
-<h2 id="anatomy-of-a-pcb">Anatomy of a PCB</h2>
-<p>A PCB is made up of <em>layers</em>. Each layer represents a part of the manufacturing process (e.g., top and bottom copper layers, soldermask layer, silkscreen layer).</p>
-<p>On the copper routing layers, components are soldered to copper <em>footprints</em>. A <em><a href="https://en.wikipedia.org/wiki/Footprint_(electronics)">footprint</a></em> is the physical layout on a PCB to which a component is soldered.</p>
-<p>Each footprint has individual <em>pads</em> to which parts of the component (e.g., pins) are soldered.</p>
-<h2 id="how-are-pcbs-manufactured">How are PCBs manufactured?</h2>
-<p>In an industrial setting, PCBs are most commonly sent out to manufacturing houses that etch and return PCBs quickly but at very high cost. The following sites describe the PCB manufacturing process:</p>
+<p>From the file explorer window, you can also right click and select &ldquo;pymakr&ndash;&gt;upload to device&rdquo; to upload individual files</p>
+<h3 id="external-resources">External Resources</h3>
 <ul>
-<li><a href="http://www.4pcb.com/media/presentation-how-to-build-pcb.pdf">Building a Printed Circuit Board</a> from Advanced Circuits</li>
+<li><a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr">https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr</a></li>
+<li><a href="https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/">https://randomnerdtutorials.com/micropython-esp32-esp8266-vs-code-pymakr/</a></li>
+<li><a href="https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide">https://lemariva.com/blog/2018/12/micropython-visual-studio-code-as-ide</a></li>
+<li><a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html">https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/vscode-setup.html</a></li>
+<li><a href="https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython">https://stackoverflow.com/questions/67647095/how-to-setup-windows-10-vscode-pymakr-for-python-programming-micropython</a></li>
 </ul>
-<h2 id="how-do-we-manufacture-pcbs-at-asu">How do we manufacture PCBs at ASU?</h2>
-<p>See the <a href="/asu-pcb-fabrication-process/">ASU PCB Fabrication Process</a> blog entry.</p>
 
         </div>
 
@@ -363,7 +512,7 @@
 
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/misc/what-is-a-printed-circuit-board.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/esp32/using-pymakr/index.md"> Edit this Page</a></p>
         
         
         
