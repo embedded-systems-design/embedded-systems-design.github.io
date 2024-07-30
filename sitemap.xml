@@ -98,6 +98,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/resistors/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/bjt/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/bluetooth/</loc>
@@ -134,7 +136,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/capacitive-sensing/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/capacitor/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/capacitors/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/capacitors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/categories/</loc>
   </url><url>
@@ -431,6 +437,8 @@
     <loc>https://embedded-systems-design.github.io/report-formatting-instructions/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/resetting-reference-designators-in-cadence-design-entry-cis/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/resistor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/resistors/</loc>
   </url><url>

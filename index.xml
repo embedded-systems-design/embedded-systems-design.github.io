@@ -191,6 +191,13 @@
       <description>Please see this link</description>
     </item>
     <item>
+      <title>Basic Resistor Info</title>
+      <link>https://embedded-systems-design.github.io/resistors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/resistors/</guid>
+      <description>External Resources https://resistorcolorcodecalc.com/ </description>
+    </item>
+    <item>
       <title>Bluetooth Connection Issues</title>
       <link>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -273,6 +280,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/capacitive-sensing/</guid>
       <description> Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems </description>
+    </item>
+    <item>
+      <title>Capacitors</title>
+      <link>https://embedded-systems-design.github.io/capacitors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/capacitors/</guid>
+      <description>External Resources https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart </description>
     </item>
     <item>
       <title>Changing a Hole Diameter in Cadence PCB Editor</title>

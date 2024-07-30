@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resistor on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/resistor/</link>
+    <description>Recent content in Resistor on Embedded Systems Design</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/resistor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Resistor Info</title>
+      <link>https://embedded-systems-design.github.io/resistors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/resistors/</guid>
+      <description>External Resources https://resistorcolorcodecalc.com/ </description>
+    </item>
+  </channel>
+</rss>

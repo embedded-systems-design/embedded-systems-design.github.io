@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capacitor on Embedded Systems Design</title>
+    <link>https://embedded-systems-design.github.io/tags/capacitor/</link>
+    <description>Recent content in Capacitor on Embedded Systems Design</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://embedded-systems-design.github.io/tags/capacitor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capacitors</title>
+      <link>https://embedded-systems-design.github.io/capacitors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/capacitors/</guid>
+      <description>External Resources https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart </description>
+    </item>
+  </channel>
+</rss>
