@@ -9,18 +9,18 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://embedded-systems-design.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>EGR304 Software Install (Fall 2023)</title>
+      <title>EGR304 Software Install</title>
       <link>https://embedded-systems-design.github.io/egr304-software-stack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/egr304-software-stack/</guid>
-      <description>The following is the approach you can use to quickly get software installed.</description>
+      <description>Software that will be used in the first semester</description>
     </item>
     <item>
       <title>EGR314 Software Install</title>
       <link>https://embedded-systems-design.github.io/egr314-software-stack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/egr314-software-stack/</guid>
-      <description>Download the software used in EGR304</description>
+      <description>Software that will be used in the second semester</description>
     </item>
     <item>
       <title>Getting Started with Cadence</title>
