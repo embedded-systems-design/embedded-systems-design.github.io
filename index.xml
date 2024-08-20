@@ -856,6 +856,27 @@
       <description>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</description>
     </item>
     <item>
+      <title>PWM Tutorial 1 -- Using PWM to make an LED &#34;Breathe&#34;</title>
+      <link>https://embedded-systems-design.github.io/pwm-tutorial-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-tutorial-1/</guid>
+      <description>Objective In this exercise, you will wire and program an LED to &amp;ldquo;breathe&amp;rdquo; on and off (example).</description>
+    </item>
+    <item>
+      <title>PWM Tutorial 2 -- Using PWM and an H-Bridge to Control Motor Speed</title>
+      <link>https://embedded-systems-design.github.io/pwm-tutorial-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-tutorial-2/</guid>
+      <description>This tutorial continues from where PWM Tutorial 1 left off</description>
+    </item>
+    <item>
+      <title>PWM Tutorial 3 --  Using Low-Pass Filters with PWM Signals</title>
+      <link>https://embedded-systems-design.github.io/pwm-tutorial-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-tutorial-3/</guid>
+      <description>This tutorial continues from where PWM Tutorial 2 left off</description>
+    </item>
+    <item>
       <title>Python Basics</title>
       <link>https://embedded-systems-design.github.io/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

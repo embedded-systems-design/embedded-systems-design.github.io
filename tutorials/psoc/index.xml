@@ -92,6 +92,27 @@
       <description>Introduction The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or CY8CKIT-042-BLE kit for the first time</description>
     </item>
     <item>
+      <title>PWM Tutorial 1 -- Using PWM to make an LED &#34;Breathe&#34;</title>
+      <link>https://embedded-systems-design.github.io/pwm-tutorial-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-tutorial-1/</guid>
+      <description>Objective In this exercise, you will wire and program an LED to &amp;ldquo;breathe&amp;rdquo; on and off (example).</description>
+    </item>
+    <item>
+      <title>PWM Tutorial 2 -- Using PWM and an H-Bridge to Control Motor Speed</title>
+      <link>https://embedded-systems-design.github.io/pwm-tutorial-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-tutorial-2/</guid>
+      <description>This tutorial continues from where PWM Tutorial 1 left off</description>
+    </item>
+    <item>
+      <title>PWM Tutorial 3 --  Using Low-Pass Filters with PWM Signals</title>
+      <link>https://embedded-systems-design.github.io/pwm-tutorial-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-tutorial-3/</guid>
+      <description>This tutorial continues from where PWM Tutorial 2 left off</description>
+    </item>
+    <item>
       <title>What is PSoC?</title>
       <link>https://embedded-systems-design.github.io/what-is-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

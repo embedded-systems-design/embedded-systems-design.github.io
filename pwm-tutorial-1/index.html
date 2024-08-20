@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> PWM Tutorial 1 -- Using PWM to make an LED &#34;Breathe&#34; | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.133.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/">Altium</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/circuit-design/">Circuit Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/esp32/">ESP32</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/psoc/">PSoC</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/psoc/">PSoC</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/pwm-tutorial-1/">PWM Tutorial 1 -- Using PWM to make an LED &#34;Breathe&#34;</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>PWM Tutorial 1 &ndash; Using PWM to make an LED &ldquo;Breathe&rdquo;</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="objective">Objective</h2>
+<p>In this exercise, you will wire and program an LED to &ldquo;breathe&rdquo; on and off (<a href="https://www.youtube.com/watch?v=HC6_3h8Qfw8">example</a>).</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://www.infineon.com/cms/en/product/evaluation-boards/cy8ckit-042/">CY8CKIT-042 evaluation board main page</a>, which includes the Prototyping Kit Guide, Schematic, and Example Code Installer</li>
+<li><a href="https://www.infineon.com/cms/en/product/evaluation-boards/cy8ckit-042-ble-a/">CY8CKIT-042-BLE evaluation board main page</a>, which includes the Prototyping Kit Guide, Schematic, and Example Code Installer</li>
+<li>Scherz, P., &amp; Monk, S. (2016). <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1470699914&amp;sr=1-1&amp;keywords=practical+electronics+for+inventors+4th+edition">Practical electronics for inventors, fourth edition.</a> New York: McGraw Hill. ISBN: 978-1259587542</li>
+<li>Pulse Width Modulation (PWM)
+<ul>
+<li>Pulse-width modulation - Scherz &amp; Monk, Sections 13.5.3 and 14.4</li>
+<li><a href="http://www.afrotechmods.com/groovy/PWM_tutorial/PWM_tutorial.htm">PWM Tutorial from AfroTechMods.com</a></li>
+</ul>
+</li>
+<li>Oscilloscopes
+<ul>
+<li>Scherz &amp; Monk, Chapter 7.4</li>
+<li><a href="http://esdresources.blogspot.com/2016/01/peralta-103-resources.html">Agilent MSO-X 4024A Oscilloscope User&rsquo;s Guide, pages 35-42 (Auto Scale) and pages 256-264 (Time Measurements)</a> <em>-or-</em></li>
+<li><a href="http://esdresources.blogspot.com/2016/01/peralta-103-resources.html">Agilent MSO 7054A Oscilloscope User&rsquo;s Guide, page 177 (AutoScale) and pages 192-205 (Time Measurements)</a></li>
+</ul>
+</li>
+<li>Transistors
+<ul>
+<li>Scherz &amp; Monk, Section 4.3.1 - Introduction</li>
+<li>Scherz &amp; Monk, Section 4.3.4 - MOSFETs</li>
+<li><a href="https://www.electronics-tutorials.ws/transistor/tran_7.html">MOSFET as a Switch</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="parts-needed">Parts Needed</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Quantity</strong></th>
+<th><strong>Detail</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5V Power Supply</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>CY8CKIT-042 (Pioneer or BLE) PSoC® 4 Evaluation Board</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>USB micro B cable</td>
+<td>1</td>
+<td>Included in PSoC® kit</td>
+</tr>
+<tr>
+<td>AOTF2618L MOSFET driver circuit</td>
+<td>1</td>
+<td>(<a href="https://www.digikey.com/product-detail/en/alpha-omega-semiconductor-inc/AOTF2618L/785-1442-5-ND/3603382">Digikey</a>) (<a href="http://aosmd.com/res/data_sheets/AOTF2618L.pdf">datasheet</a>)</td>
+</tr>
+<tr>
+<td>FAN8100N H-Bridge driver circuit</td>
+<td>1</td>
+<td>(<a href="https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200">Digikey</a>) (<a href="https://rocelec.widen.net/view/pdf/1pizbjqffm/FAIRS23777-1.pdf?t.download=true&amp;u=5oefqw">datasheet</a>)</td>
+</tr>
+<tr>
+<td>Benchtop Power Supply</td>
+<td>1</td>
+<td>Available at lab workbenches</td>
+</tr>
+<tr>
+<td>Benchtop Multimeter</td>
+<td>1</td>
+<td>Available at lab workbenches</td>
+</tr>
+<tr>
+<td>Gear Motor (model 1)  <strong>OR</strong></td>
+<td>1</td>
+<td>Available at lab workbenches (<a href="https://www.jameco.com/z/MD3B-14280-R-Nichibo-Taiwan-12V-DC-Reversible-Gear-Head-Motor-5214-RPM-180-1-30-RPM_2197476.html">Jameco</a>) (<a href="https://www.jameco.com/Jameco/Products/ProdDS/2197476.pdf">datasheet</a>)</td>
+</tr>
+<tr>
+<td>Gear Motor (model 2)</td>
+<td>1</td>
+<td>Available at lab workbenches (<a href="https://www.allelectronics.com/item/dcm-416/span-style-color-ff0000-strong-reduced/strong/span-br-85-rpm-12-vdc-gear-motor/1.html">AllElectronics</a>) (<a href="https://www.allelectronics.com/mas_assets/media/allelectronics2018/spec/DCM-416.pdf">datasheet</a>) supplied in class, 1 per station <strong>(do not take with you)</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="critical-information-and-concepts">Critical Information and Concepts</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Concept</strong></th>
+<th><strong>Importance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a.  Which ports on the PSoC® you can connect <em>external</em> LEDs and buttons to.</td>
+<td>Needed in order to control an external LED and read the button in software. Can be connected to most unused GPIO pins listed in the Appendix of the appropriate <a href="#30j0zll">Prototyping Kit Guide</a>. (also discussed in Section 4.3.5 of the Pioneer Kit and Section 5.1.4 of the BLE Kit). <strong>Make sure you are not connecting to the PSoC® 5LP GPIO Header. The PSoC® 5LP is only used as a programmer.</strong></td>
+</tr>
+<tr>
+<td>b.  What the logic high (1) voltage coming out of the PSoC® I/O (GPIO) pins is.</td>
+<td>Needed in order to calculate a proper current-limiting resistor value for an LED. Study section A.2 (including all subsections) in the appropriate <a href="#30j0zll">Prototyping Kit Guide</a> to determine where power and ground pins are located on the PSoC® board. With the PSoC® board plugged into the computer via USB, measure the supply voltage of the PSoC® board using a multimeter. This will be equal to the logic high voltage on a GPIO pin.</td>
+</tr>
+<tr>
+<td>c.  How to calculate the value of a series current-limiting resistor for an LED circuit.</td>
+<td>Needed to prevent an LED connected to a GPIO pin from drawing too much current and burning out. Example and equation (based on Ohm&rsquo;s Law) can be found in Section 3.5 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1470699914&amp;sr=1-1&amp;keywords=practical+electronics+for+inventors+4th+edition">Scherz &amp; Monk</a>.</td>
+</tr>
+<tr>
+<td>d.  What a pullup resistor is and why it is necessary to properly interface a switch to a microcontroller.</td>
+<td>Needed to understand how to properly wire the switch so that it is always providing a voltage to the PSoC®. Can be found in Section 12.6.9 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>.</td>
+</tr>
+<tr>
+<td>e.  What a PWM signal is.</td>
+<td>Needed to understand the output of the PWM component. Can be found in Section 13.5.3 and 14.4 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>.</td>
+</tr>
+<tr>
+<td>f.  How to increment and decrement a counter using a <code>for()</code> loop in C.</td>
+<td>Needed to change the duty cycle (Compare value) of the PWM. See <a href="https://www.cprogramming.com/tutorial/c/lesson3.html">Loops in C</a> for more information.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="steps">Steps</h2>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image4.png"><img src="image4.png" alt="Figure 1: Example of connecting an external LED to a microcontroller using a transistor to switch"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1: Example of connecting an external LED to a microcontroller using a transistor to switch</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol>
+<li>
+<p>Create a MOSFET motor circuit above to accommodate a LED and current limiting resistor, as seen above. Note the power source.</p>
+<p>Note that the LED uses the 5V regulated voltage from the ICC1 voltage regulator <strong>or</strong> the benchtop power supply, rather than unregulated power.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image2.png"><img src="image2.png" alt="Figure 2: LED symbol, wording, and leads, from https://commons.wikimedia.org/wiki/File:%2B-_of_Led.svg"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 2: LED symbol, wording, and leads, from https://commons.wikimedia.org/wiki/File:%2B-_of_Led.svg</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol>
+<li>Assuming that the forward voltage of the LED $ V_{f}$ = 1.7V and that the internal resistance of the AOTF2618 is near zero when on, use Ohm&rsquo;s Law to calculate the value of the current-limiting resistor in series with it that will maintain <em><strong>20mA or less</strong></em> when connected and turned on, as seen above.</li>
+<li>Connect a jumper wire from the selected PSoC® Pioneer board port/pin to the breadboard, for activating the above transistor. Add a LED and current-limiting resistor to the breadboard. Connect the PSoC® ground pin to the breadboard ground pin. Note that LEDs are polarized, and that current flows in the direction of the arrow.</li>
+</ol>
+</li>
+<li>
+<p>Connect the CY8CKIT-042 (or CY8CKIT-042-BLE) to your computer via USB.</p>
+</li>
+<li>
+<p>In PSoC® Creator™, create a new project for the CY8CKIT-042 (or CY8CKIT-042-BLE) in a new workspace for HW3.</p>
+</li>
+<li>
+<p>In the Top Design, create a <code>PWM(v3.30)</code> component (<em><strong>not the TCPWM mode version</strong></em>). Select <code>One Output</code>. Set the period to &ldquo;Max&rdquo; (remember this value) and the compare value to ```0``. Leave all other settings at their defaults.</p>
+</li>
+<li>
+<p>Create a Clock component and wire it to the clock input on the PWM. Leave the clock at its default frequency.</p>
+</li>
+<li>
+<p>Create one (1) Digital Output pin.</p>
+<ol>
+<li>In the configuration pane, make sure the &ldquo;HW connection&rdquo; checkbox is <strong>checked</strong> and set the &ldquo;Drive mode&rdquo; to <code>Strong drive</code>.</li>
+<li>Wire the pin to the &ldquo;pwm&rdquo; output on the PWM component.</li>
+<li>In the Design Wide Resources &gt; Pins window, connect the output pin to the port to which you connected the external LED and series current-limiting resistor.</li>
+</ol>
+</li>
+<li>
+<p>Build the project once in order to expose the newly specified hardware to the coding API</p>
+</li>
+<li>
+<p>Open <code>main.c</code> and add two lines of code in the line before the <code>for(;;)</code> loop: one to <em><strong>initialize</strong></em> and one to <em><strong>start</strong></em> the PWM subsystem.</p>
+<blockquote>
+<p><em>Hint:</em> In the Top Design, right-click on the PWM component, choose &ldquo;Open Datasheet&hellip;&rdquo;, scroll to the Application Programming Interface (API) section, and find the line of code to start the PWM component. Remember to use the name of your specific instance of the PWM component in the Top Design (e.g., <code>PWM_1_FunctionName()</code>).</p>
+</blockquote>
+</li>
+<li>
+<p>Declare a new variable, <code>ii</code>, as an integer and initialize it to zero.</p>
+</li>
+<li>
+<p>Inside the main <code>for(;;)</code> loop add the following code:</p>
+<ol>
+<li>
+<p>Add an inner <code>for()</code> loop that increments <code>ii</code> from <code>0</code> to the PWM&rsquo;s &ldquo;max&rdquo; value (logged above). Execute a <code>CyDelay(5)</code> in each iteration of the loop.</p>
+<ol>
+<li>Inside this second inner <code>for()</code> loop, change the duty cycle (via changing the Compare value), passing in the value of <code>ii</code>.</li>
+</ol>
+<blockquote>
+<p><em>Hint:</em> In the API section of the PWM component datasheet, find documentation about the function of the &ldquo;Compare&rdquo; value.</p>
+</blockquote>
+</li>
+<li>
+<p>After the first inner <code>for()</code> loop, copy a duplicate of the first <code>for()</code> loop.</p>
+<ol>
+<li>Again, change the duty cycle (via changing the Compare value), passing in the value of (<code>255-ii</code>).</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Compile, download, and run your solution working with the modified AOTF2618L MOSFET driver circuit from ICC3. The LED should &ldquo;breathe&rdquo; using the PWM component.</p>
+</li>
+</ol>
+<blockquote>
+<p>Continue on to <a href="/pwm-tutorial-2">PWM Tutorial 2 &ndash; Using PWM and an H-Bridge to Control Motor Speed</a></p>
+</blockquote>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        
+
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/psoc/pwm-tutorial-1/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script><script>
+
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        
+                        player.on('ready', (event) => {
+                            
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            
+
+    
+
+    
+
+</script>
+
+
+</body>
+</html>
