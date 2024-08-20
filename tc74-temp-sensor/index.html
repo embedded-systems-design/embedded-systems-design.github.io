@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.132.1">
+  <meta name="generator" content="Hugo 0.133.0">
 
   <!-- plugins -->
   
@@ -267,18 +267,18 @@
 <p>The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.</p>
 <h2 id="resources">Resources</h2>
 <ul>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></li>
-<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> Microchip Main Page
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></li>
+<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> Microchip Main Page
 <ul>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></li>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip"><em>Design Documentation</em></a></li>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf"><em>Schematic</em></a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip">Design Documentation</a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf">Schematic</a></li>
 </ul>
 </li>
-<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_XC8_C_Compiler_User_Guide_for_PIC.pdf"><em>XC8 Compiler Documentation</em></a></li>
-<li>Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></li>
-<li>TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"><em>Application Report</em></a></li>
-<li>C programming tutorial on <a href="https://www.tutorialspoint.com/cprogramming/c_pointers.htm"><em>pointers</em></a></li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_XC8_C_Compiler_User_Guide_for_PIC.pdf">XC8 Compiler Documentation</a></li>
+<li>Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a></li>
+<li>TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">Application Report</a></li>
+<li>C programming tutorial on <a href="https://www.tutorialspoint.com/cprogramming/c_pointers.htm">pointers</a></li>
 </ul>
 <h2 id="critical-information-and-concepts">Critical Information and Concepts</h2>
 <table>
@@ -290,7 +290,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Clock Frequency: ensure compatibility with the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></td>
+<td>Clock Frequency: ensure compatibility with the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a></td>
 <td>If the clock frequency is not within the specifications, it may not work</td>
 </tr>
 <tr>
@@ -298,7 +298,7 @@
 <td>The part number determines the address you need to program into I$^{\text{2}}$C code.</td>
 </tr>
 <tr>
-<td>Find the address for your specific TC74 chip in &ldquo;Section 5: Packaging markup&rdquo; of the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a>. The address is different for each package #, and is represented as a binary number. Note (and write) down the address (in binary) for reference later in the project.</td>
+<td>Find the address for your specific TC74 chip in &ldquo;Section 5: Packaging markup&rdquo; of the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a>. The address is different for each package #, and is represented as a binary number. Note (and write) down the address (in binary) for reference later in the project.</td>
 <td>You can communicate with many different devices on the same I$^{\text{2}}$C bus, but each device needs to be numbered differently</td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@
 <td>Make sure you do not exceed this range in your MCC setup.</td>
 </tr>
 <tr>
-<td>Select the proper pins for SDA and SCL according to the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></td>
+<td>Select the proper pins for SDA and SCL according to the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a></td>
 <td>You may only use certain pins for I$^{\text{2}}$C communication, so plan ahead.</td>
 </tr>
 </tbody>
@@ -320,7 +320,7 @@
 <p>Add the following peripherals:</p>
 <ol start="2">
 <li>
-<p>Open up the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></p>
+<p>Open up the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a></p>
 <ol>
 <li>
 <p>Start by reviewing the full document.</p>
@@ -342,7 +342,7 @@
 <p>Connect the TC74 Module to the Curiosity Nano</p>
 <ol>
 <li>
-<p>Look at the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a> to find compatible pins for I2C SDA and SCL pins that do not conflict with other peripherals you will need</p>
+<p>Look at the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a> to find compatible pins for I2C SDA and SCL pins that do not conflict with other peripherals you will need</p>
 </li>
 <li>
 <p>Connect the TC74 power and ground pins to power and ground, respectively.</p>
@@ -354,11 +354,11 @@
 </li>
 </ol>
 <blockquote>
-<p><strong>Note:</strong> this line should be pulled high by a resistor. Please see this TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"><em>Application Report</em></a> to understand the decision-making process. Practically speaking, a 10kOhm resistor should work.</p>
+<p><strong>Note:</strong> this line should be pulled high by a resistor. Please see this TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">Application Report</a> to understand the decision-making process. Practically speaking, a 10kOhm resistor should work.</p>
 </blockquote>
 <p>d.  Connect the Curiosity Nano and TC74 SCL pins.</p>
 <blockquote>
-<p><strong>Note:</strong> this line should be pulled high by a resistor. Please see this TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F"><em>Application Report</em></a> to understand the decision-making process. Practically speaking, a 10kOhm resistor should work.</p>
+<p><strong>Note:</strong> this line should be pulled high by a resistor. Please see this TI I$^{\text{2}}$C Pullup Calculation <a href="https://www.ti.com/lit/an/slva689/slva689.pdf?ts=1610914453139&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">Application Report</a> to understand the decision-making process. Practically speaking, a 10kOhm resistor should work.</p>
 </blockquote>
 <h3 id="mcc-setup">MCC Setup</h3>
 <ol>
@@ -399,13 +399,13 @@
 <p>MSSPX</p>
 <ul>
 <li>
-<p>Taking a look at the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a>, pick the MSSP system that enables you to also use the other MSSP peripheral for SPI communication next week.</p>
+<p>Taking a look at the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a>, pick the MSSP system that enables you to also use the other MSSP peripheral for SPI communication next week.</p>
 </li>
 <li>
 <p>Select &ldquo;Interrupt Driven&rdquo;.</p>
 </li>
 <li>
-<p>Clock Frequency: ensure compatibility with the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a></p>
+<p>Clock Frequency: ensure compatibility with the Microchip TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a></p>
 </li>
 <li>
 <p>Slew Rate Control</p>
@@ -421,7 +421,7 @@
 <li>
 <p>Pin Manager: Grid View</p>
 <ul>
-<li>Select the proper pins for SDA and SCL according to the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></li>
+<li>Select the proper pins for SDA and SCL according to the PIC18F47Q10 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a></li>
 </ul>
 </li>
 <li>
@@ -463,7 +463,7 @@
 <p>Open up the &ldquo;mcc_generated_files/examples/i2cX_master_example.h&rdquo; and review it. Identify within this header file the 7 example functions given for reading or writing data over i2c.</p>
 <ol>
 <li>
-<p>Next, eliminate some of those functions by going over the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a>. Will you be reading, writing or both? Will you be reading/writing 1 byte or two bytes?</p>
+<p>Next, eliminate some of those functions by going over the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a>. Will you be reading, writing or both? Will you be reading/writing 1 byte or two bytes?</p>
 <blockquote>
 <p><em><strong>Note:</strong></em> upon reviewing the TC74 datasheet, if you set up MCC as suggested above, you should not have to worry about defining custom timing sequences or accessing MSSP-specific register bits. This is handled internally by the I$^{\text{2}}$C library.</p>
 </blockquote>
@@ -471,7 +471,7 @@
 <li>
 <p>Select one or more of the functions not eliminated and implement it. Note that some of these functions require the use of pointers. You will need to create new variables in order to get this function to work. <em><strong>More than one of these functions will work.</strong></em></p>
 <blockquote>
-<p><em><strong>Note:</strong></em> You will need to review the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a> for information about which registers to read/write, and the number of bytes of each value.</p>
+<p><em><strong>Note:</strong></em> You will need to review the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a> for information about which registers to read/write, and the number of bytes of each value.</p>
 </blockquote>
  <p></p>
 <blockquote>
@@ -481,7 +481,7 @@
 </ol>
 </li>
 <li>
-<p>Review the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf"><em>datasheet</em></a>. It specifies the format by which to convert the received temperature data into a positive/negative value. Implement a function that performs this conversion.</p>
+<p>Review the TC74 series <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/21462D.pdf">datasheet</a>. It specifies the format by which to convert the received temperature data into a positive/negative value. Implement a function that performs this conversion.</p>
 </li>
 <li>
 <p>Update your print to the LCD to include the current temperature, including the code necessary to correctly compute temperatures in the negative Celsius range. Print the temperature on the second line of the LCD</p>

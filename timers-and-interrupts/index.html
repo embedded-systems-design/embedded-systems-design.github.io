@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.132.1">
+  <meta name="generator" content="Hugo 0.133.0">
 
   <!-- plugins -->
   
@@ -267,26 +267,26 @@
 <p>The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results over EUSART and with a LED.</p>
 <h2 id="resources">Resources</h2>
 <ul>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a></li>
-<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029"><em>PIC18F47Q10 Curiosity Nano</em></a> Microchip Main Page
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></li>
+<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> Microchip Main Page
 <ul>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf"><em>Hardware User Guide</em></a></li>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip"><em>Design Documentation</em></a></li>
-<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf"><em>Schematic</em></a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip">Design Documentation</a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf">Schematic</a></li>
 </ul>
 </li>
-<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_XC8_C_Compiler_User_Guide_for_PIC.pdf"><em>XC8 Compiler Documentation</em></a></li>
-<li>Microchip developer <a href="https://microchipdeveloper.com/"><em>tutorials site</em></a>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_XC8_C_Compiler_User_Guide_for_PIC.pdf">XC8 Compiler Documentation</a></li>
+<li>Microchip developer <a href="https://microchipdeveloper.com/">tutorials site</a>
 <ul>
-<li><a href="https://microchipdeveloper.com/mcc:interrupts"><em>Implementing Interrupts using MPLAB® Code Configurator</em></a></li>
-<li><a href="https://microchipdeveloper.com/mcc:mccgpio"><em>Setting Up GPIO</em></a></li>
+<li><a href="https://microchipdeveloper.com/mcc:interrupts">Implementing Interrupts using MPLAB® Code Configurator</a></li>
+<li><a href="https://microchipdeveloper.com/mcc:mccgpio">Setting Up GPIO</a></li>
 </ul>
 </li>
-<li>Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463"><em>User&rsquo;s Guide</em></a> (detailed explanation of many parts of MCC, including Pin Module acronyms)</li>
+<li>Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a> (detailed explanation of many parts of MCC, including Pin Module acronyms)</li>
 <li>C Topics
 <ul>
-<li><a href="https://www.tutorialspoint.com/cprogramming/c_functions.htm"><em>C Functions</em></a></li>
-<li><a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm"><em>sprintf() function</em></a></li>
+<li><a href="https://www.tutorialspoint.com/cprogramming/c_functions.htm">C Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">sprintf() function</a></li>
 </ul>
 </li>
 </ul>
@@ -324,19 +324,19 @@
 <td style="text-align:left">We will be defining and using a custom callback function that runs whenever the timer interrupt is fired.</td>
 </tr>
 <tr>
-<td style="text-align:left">In the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf"><em>PIC18F47Q10 Datasheet</em></a>, identify which GPIO pins can be used to trigger interrupts. Look for &ldquo;IOC&rdquo; or Interrupt-on-Change to learn more</td>
+<td style="text-align:left">In the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>, identify which GPIO pins can be used to trigger interrupts. Look for &ldquo;IOC&rdquo; or Interrupt-on-Change to learn more</td>
 <td style="text-align:left">Can you use any GPIO pin to trigger an input-based interrupt?</td>
 </tr>
 <tr>
-<td style="text-align:left">In the Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463"><em>User&rsquo;s Guide</em></a>, determine what WPU and OD stand for. WPU is explained better on <a href="https://microchipdeveloper.com/mcc:mccgpio"><em>this page that discusses setting up GPIO</em></a>. Look up the explanation for OD by searching for &ldquo;ODC Registers&rdquo; on <a href="https://microchipdeveloper.com/16bit:io-ports"><em>this page</em></a> to understand its use for a different PIC family.</td>
+<td style="text-align:left">In the Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a>, determine what WPU and OD stand for. WPU is explained better on <a href="https://microchipdeveloper.com/mcc:mccgpio">this page that discusses setting up GPIO</a>. Look up the explanation for OD by searching for &ldquo;ODC Registers&rdquo; on <a href="https://microchipdeveloper.com/16bit:io-ports">this page</a> to understand its use for a different PIC family.</td>
 <td style="text-align:left">Determine the correct GPIO settings for I/O pins, as well as the best way to use these options in conjunction with a pushbutton switch.</td>
 </tr>
 <tr>
-<td style="text-align:left">In this <a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm"><em>tutorial on sprintf()</em></a>, determine what library(or libraries) you need to include</td>
+<td style="text-align:left">In this <a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">tutorial on sprintf()</a>, determine what library(or libraries) you need to include</td>
 <td style="text-align:left">You will need to format a string.</td>
 </tr>
 <tr>
-<td style="text-align:left">Read through this <a href="https://microchipdeveloper.com/mcc:interrupts"><em>tutorial</em></a> on interrupts in MCC to understand how linking a callback works</td>
+<td style="text-align:left">Read through this <a href="https://microchipdeveloper.com/mcc:interrupts">tutorial</a> on interrupts in MCC to understand how linking a callback works</td>
 <td style="text-align:left">You will need to create custom callbacks to process incoming interrupts</td>
 </tr>
 <tr>
@@ -385,7 +385,7 @@
 <p>Pin Manager: Grid View</p>
 <ul>
 <li>Ensure that the Package matches the package of the PIC you are using</li>
-<li>You will need to redefine your two pushbutton inputs to use two interrupt-capable pins as inputs. See the &ldquo;<a href="#fkmtqyl8x6c3"><em>critical information</em></a>&rdquo; section above</li>
+<li>You will need to redefine your two pushbutton inputs to use two interrupt-capable pins as inputs. See the &ldquo;<a href="#fkmtqyl8x6c3">critical information</a>&rdquo; section above</li>
 <li>Configure the pin with the internal LED as a digital output.</li>
 </ul>
 </li>

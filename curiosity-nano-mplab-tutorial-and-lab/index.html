@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.132.1">
+  <meta name="generator" content="Hugo 0.133.0">
 
   <!-- plugins -->
   
@@ -267,11 +267,11 @@
 <p>Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.</p>
 <h1 id="resources"><strong>Resources</strong></h1>
 <ul>
-<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf"><em>PIC16F18446 Curiosity Nano Hardware User Guide</em></a></li>
-<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf"><em>PIC16F18446 Datasheet</em></a></li>
-<li><a href="https://microchipdeveloper.com/mcc:mccgpio"><em>Using GPIO in MPLAB® X with MCC</em></a></li>
-<li><a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-2/what-is-an-interrupt"><em>What is an Interrupt?</em></a></li>
-<li><a href="https://microchipdeveloper.com/mcc:interrupts"><em>Implementing Interrupts using MPLAB® Code Configurator</em></a></li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf">PIC16F18446 Curiosity Nano Hardware User Guide</a></li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf">PIC16F18446 Datasheet</a></li>
+<li><a href="https://microchipdeveloper.com/mcc:mccgpio">Using GPIO in MPLAB® X with MCC</a></li>
+<li><a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-2/what-is-an-interrupt">What is an Interrupt?</a></li>
+<li><a href="https://microchipdeveloper.com/mcc:interrupts">Implementing Interrupts using MPLAB® Code Configurator</a></li>
 </ul>
 <h1 id="1-create-your-first-project"><strong>1. Create Your First Project</strong></h1>
 <ol>
@@ -387,7 +387,7 @@
 <h3 id="411-code-configurator-setup"><strong>4.1.1 Code Configurator Setup</strong></h3>
 <ol>
 <li>
-<p>From <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf"><em>Curiosity Nano Hardware User Guide</em></a>, we know that the onboard LED has been routed to pin RA2.</p>
+<p>From <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf">Curiosity Nano Hardware User Guide</a>, we know that the onboard LED has been routed to pin RA2.</p>
 </li>
 <li>
 <p>Double Click <strong>Pin Module</strong> under <strong>Project Resources.</strong></p>
@@ -500,7 +500,7 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 <p>Place header on both pin <strong>RC1</strong> and <strong>RC3.</strong></p>
 </li>
 <li>
-<p>Place the first 220 Ohm resistors to RC1 and then place the second 220 Ohm resistor to RC3. (<a href="https://www.sparkfun.com/tutorials/219"><em><strong>What is a current limiting resistor?</strong></em></a>)</p>
+<p>Place the first 220 Ohm resistors to RC1 and then place the second 220 Ohm resistor to RC3. (<a href="https://www.sparkfun.com/tutorials/219">What is a current limiting resistor?*</a>)</p>
 </li>
 <li>
 <p>Connect the Anode of the LED to the resistor. Connect the Cathode to Ground.</p>
@@ -605,7 +605,7 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 </p>
 </li>
 <li>
-<p>According to the datasheet of the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf"><em>PIC16F18446</em></a>, we know that the resolution of the PWM can go up to 10-bit resolution. Therefore, the total number of PWM steps can be calculated as follows:</p>
+<p>According to the datasheet of the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf">PIC16F18446</a>, we know that the resolution of the PWM can go up to 10-bit resolution. Therefore, the total number of PWM steps can be calculated as follows:</p>
 <p>${2^{10}\  = \ 1024}^{}\text{steps}$</p>
 <p>In this case, we can calculate and get the PWM module outputting at 50% duty cycle.</p>
 <p>${50%\ Duty\ Cycle\  = \ 1024\  \times 50% = \ 512}^{}$</p>
@@ -641,7 +641,7 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 </li>
 </ol>
 <h2 id="44-button-controlled-led"><strong>4.4 Button Controlled LED</strong></h2>
-<p><em><strong>In this lab, we will learn about the ISR (<a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-2/what-is-an-interrupt"><em>Interrupt Service Routine</em></a>) and use ISR to light up the onboard LED.</strong></em></p>
+<p><em><strong>In this lab, we will learn about the ISR (<a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-2/what-is-an-interrupt">Interrupt Service Routine</a>) and use ISR to light up the onboard LED.</strong></em></p>
 <p><em>Required Hardware: Curiosity Nano x1</em></p>
 <h3 id="441-code-configurator-setup"><strong>4.4.1 Code Configurator Setup</strong></h3>
 <blockquote>
@@ -655,7 +655,7 @@ IO_RA2_SetLow();  //Set RA2 (LED0) to logic low, turn off
 <p>Add <strong>EXT_INT</strong> module to <strong>Project Resources.</strong></p>
 </li>
 <li>
-<p>From <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf"><em>Curiosity Nano Hardware User Guide</em></a>, we know that the onboard <strong>mechanical switch (SW0)</strong> has been routed to <strong>pin RC2.</strong> When the mechanical switch (SW0) is pressed, it will drive the RC2 to the ground (GND).</p>
+<p>From <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002808B.pdf">Curiosity Nano Hardware User Guide</a>, we know that the onboard <strong>mechanical switch (SW0)</strong> has been routed to <strong>pin RC2.</strong> When the mechanical switch (SW0) is pressed, it will drive the RC2 to the ground (GND).</p>
 </li>
 <li>
 <p>Under Project Resources, open <strong>Pin Module</strong> and <strong>Pin Manager: Grid View</strong></p>
