@@ -12,7 +12,7 @@
       <link>https://embedded-systems-design.github.io/fuses-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/fuses-101/</guid>
-      <description>What are fuses and when do I need them? A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much current.</description>
+      <description>&lt;h2 id=&#34;what-are-fuses-and-when-do-i-need-them&#34;&gt;What are fuses and when do I need them?&lt;/h2&gt;&#xA;&lt;p&gt;A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much &lt;em&gt;current&lt;/em&gt;. **Fuses do not protect against voltages that are too high. **&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

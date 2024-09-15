@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -269,7 +269,8 @@
       <h4 class="fw-bold mb-0"><a href="/cadence-walkthrough-psoc-4-ble-module/">Cadence Walkthrough: PSoC 4 BLE Module</a></h4>
       
 
-      <p>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -299,7 +300,8 @@
       <h4 class="fw-bold mb-0"><a href="/changing-a-hole-diameter-in-cadence-pcb-editor/">Changing a Hole Diameter in Cadence PCB Editor</a></h4>
       
 
-      <p>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</p>
+      <p><h2 id="why-would-you-need-to-change-the-hole-diameter">Why would you need to change the hole diameter?</h2>
+<p>The default diameter of holes in Cadence is 0.3 mm. This is too small for most components to fit through, as well as too small for proper through-plating of vias. According to the Peralta PCB Mill specifications, hole diameters should be at least 0.5 mm (19.7 mil). Therefore, the following settings are recommended:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -325,7 +327,8 @@
       <h4 class="fw-bold mb-0"><a href="/changing-the-default-via-padstack-in-cadence-pcb-editor/">Changing the Default Via Padstack in Cadence PCB Editor</a></h4>
       
 
-      <p>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB. Vias are typically used when two wires need to cross on the same side of a PCB design, but cannot without continuing the trace on a different layer. It is best to minimize the use of vias for boards being manufactured in Peralta to maximize reliability, but sometimes they are necessary in order to complete a design. If you do need a via, the default via padstack in Cadence is too small for the LPKF ProtoMat S63 PCB Mill that we use to manufacture PCBs in PRLTA 109. There are two ways to address this issue:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -355,7 +358,8 @@
       <h4 class="fw-bold mb-0"><a href="/changing-the-library-search-path-in-cadence-design-entry-cis/">Changing the Library Search Path in Cadence Design Entry CIS</a></h4>
       
 
-      <p>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</p>
+      <p><h2 id="why-would-i-need-to-change-the-library-search-path">Why would I need to change the library search path?</h2>
+<p>When creating a custom PCB footprint for a component, it is stored somewhere on your computer. In order for Design Entry CIS to find where a custom footprint is stored and associate it with a schematic component, the <em>library search path</em> must be changed so that Design Entry CIS knows where to look.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -377,7 +381,8 @@
       <h4 class="fw-bold mb-0"><a href="/changing-the-library-search-path-in-cadence-pcb-editor/">Changing the Library Search Path in Cadence PCB Editor</a></h4>
       
 
-      <p>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</p>
+      <p><h2 id="why-would-i-need-to-change-the-library-search-path">Why would I need to change the library search path?</h2>
+<p>When creating a custom PCB footprint for a component, it is stored somewhere on your computer. In order for PCB Editor to find where a custom footprint is stored, the <em>library search path</em> must be changed so that PCB Editor knows where to look.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

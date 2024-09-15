@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -297,38 +297,38 @@
 </ul>
 <h2 id="prior-to-the-demonstration-of-proficiency">Prior to the Demonstration of Proficiency</h2>
 <table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>Critical Information and Concepts</strong></th>
-<th style="text-align:left"><strong>Importance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">In TMRX.h, find the name of the function that permits the user to define a custom callback function</td>
-<td style="text-align:left">We will be defining and using a custom callback function that runs whenever the timer interrupt is fired.</td>
-</tr>
-<tr>
-<td style="text-align:left">In the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>, identify which GPIO pins can be used to trigger interrupts. Look for &ldquo;IOC&rdquo; or Interrupt-on-Change to learn more</td>
-<td style="text-align:left">Can you use any GPIO pin to trigger an input-based interrupt?</td>
-</tr>
-<tr>
-<td style="text-align:left">In the Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a>, determine what WPU and OD stand for. WPU is explained better on <a href="https://microchipdeveloper.com/mcc:mccgpio">this page that discusses setting up GPIO</a>. Look up the explanation for OD by searching for &ldquo;ODC Registers&rdquo; on <a href="https://microchipdeveloper.com/16bit:io-ports">this page</a> to understand its use for a different PIC family.</td>
-<td style="text-align:left">Determine the correct GPIO settings for I/O pins, as well as the best way to use these options in conjunction with a pushbutton switch.</td>
-</tr>
-<tr>
-<td style="text-align:left">In this <a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">tutorial on sprintf()</a>, determine what library(or libraries) you need to include</td>
-<td style="text-align:left">You will need to format a string.</td>
-</tr>
-<tr>
-<td style="text-align:left">Read through this <a href="https://microchipdeveloper.com/mcc:interrupts">tutorial</a> on interrupts in MCC to understand how linking a callback works</td>
-<td style="text-align:left">You will need to create custom callbacks to process incoming interrupts</td>
-</tr>
-<tr>
-<td style="text-align:left">Search for &ldquo;how to print the % character with sprintf()&rdquo;</td>
-<td style="text-align:left">% is a special character and thus needs something special</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information and Concepts</strong></th>
+          <th style="text-align: left"><strong>Importance</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">In TMRX.h, find the name of the function that permits the user to define a custom callback function</td>
+          <td style="text-align: left">We will be defining and using a custom callback function that runs whenever the timer interrupt is fired.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">In the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>, identify which GPIO pins can be used to trigger interrupts. Look for &ldquo;IOC&rdquo; or Interrupt-on-Change to learn more</td>
+          <td style="text-align: left">Can you use any GPIO pin to trigger an input-based interrupt?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">In the Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a>, determine what WPU and OD stand for. WPU is explained better on <a href="https://microchipdeveloper.com/mcc:mccgpio">this page that discusses setting up GPIO</a>. Look up the explanation for OD by searching for &ldquo;ODC Registers&rdquo; on <a href="https://microchipdeveloper.com/16bit:io-ports">this page</a> to understand its use for a different PIC family.</td>
+          <td style="text-align: left">Determine the correct GPIO settings for I/O pins, as well as the best way to use these options in conjunction with a pushbutton switch.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">In this <a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">tutorial on sprintf()</a>, determine what library(or libraries) you need to include</td>
+          <td style="text-align: left">You will need to format a string.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Read through this <a href="https://microchipdeveloper.com/mcc:interrupts">tutorial</a> on interrupts in MCC to understand how linking a callback works</td>
+          <td style="text-align: left">You will need to create custom callbacks to process incoming interrupts</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Search for &ldquo;how to print the % character with sprintf()&rdquo;</td>
+          <td style="text-align: left">% is a special character and thus needs something special</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="mcc-setup">MCC Setup</h3>
 <ol>

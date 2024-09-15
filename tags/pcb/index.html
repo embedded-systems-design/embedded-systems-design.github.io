@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -243,7 +243,16 @@
       <h4 class="fw-bold mb-0"><a href="/installing-cadence/">Installing Cadence</a></h4>
       
 
-      <p>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</p>
+      <p><h2 id="installation">Installation</h2>
+<h3 id="system-requirements">System Requirements</h3>
+<ul>
+<li><strong>PC:</strong> Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (<a href="https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf">Hardware and Software Requirements</a>). Note that Cadence does not support Windows 10 Starter nor Home Basic.</li>
+<li><strong>Mac:</strong> Windows 7, 8, 8.1, 10, 11 or greater running on <a href="https://www.apple.com/support/bootcamp/">Boot Camp</a> or <a href="http://www.parallels.com/">Parallels</a></li>
+</ul>
+<h3 id="before-installing">Before Installing</h3>
+<ol>
+<li>
+<p>Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&rsquo;s license server</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -277,7 +286,8 @@
       <h4 class="fw-bold mb-0"><a href="/adding-text-to-a-layout-in-cadence-pcb-editor/">Adding Text to a Layout in Cadence PCB Editor</a></h4>
       
 
-      <p>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>Text is important on PCB layouts to identify the designers, project, version, components, etc. Typically, text can be placed on a silkscreen layer that sits on top of the copper. However, our manufacturing process in PRLTA 109 only supports text that is milled on the TOP COPPER or BOTTOM COPPER layers.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -303,7 +313,8 @@
       <h4 class="fw-bold mb-0"><a href="/asu-pcb-fabrication-process/">ASU PCB Fabrication Process</a></h4>
       
 
-      <p>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</p>
+      <p><h2 id="how-are-pcbs-fabricated-at-asu">How are PCBs fabricated at ASU?</h2>
+<p>The following video shows our PCB manufacturing process.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -333,7 +344,8 @@
       <h4 class="fw-bold mb-0"><a href="/cadence-walkthrough-psoc-4-ble-module/">Cadence Walkthrough: PSoC 4 BLE Module</a></h4>
       
 
-      <p>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -363,7 +375,8 @@
       <h4 class="fw-bold mb-0"><a href="/changing-a-hole-diameter-in-cadence-pcb-editor/">Changing a Hole Diameter in Cadence PCB Editor</a></h4>
       
 
-      <p>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</p>
+      <p><h2 id="why-would-you-need-to-change-the-hole-diameter">Why would you need to change the hole diameter?</h2>
+<p>The default diameter of holes in Cadence is 0.3 mm. This is too small for most components to fit through, as well as too small for proper through-plating of vias. According to the Peralta PCB Mill specifications, hole diameters should be at least 0.5 mm (19.7 mil). Therefore, the following settings are recommended:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -389,7 +402,8 @@
       <h4 class="fw-bold mb-0"><a href="/changing-the-default-via-padstack-in-cadence-pcb-editor/">Changing the Default Via Padstack in Cadence PCB Editor</a></h4>
       
 
-      <p>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB. Vias are typically used when two wires need to cross on the same side of a PCB design, but cannot without continuing the trace on a different layer. It is best to minimize the use of vias for boards being manufactured in Peralta to maximize reliability, but sometimes they are necessary in order to complete a design. If you do need a via, the default via padstack in Cadence is too small for the LPKF ProtoMat S63 PCB Mill that we use to manufacture PCBs in PRLTA 109. There are two ways to address this issue:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -419,7 +433,8 @@
       <h4 class="fw-bold mb-0"><a href="/changing-the-library-search-path-in-cadence-pcb-editor/">Changing the Library Search Path in Cadence PCB Editor</a></h4>
       
 
-      <p>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</p>
+      <p><h2 id="why-would-i-need-to-change-the-library-search-path">Why would I need to change the library search path?</h2>
+<p>When creating a custom PCB footprint for a component, it is stored somewhere on your computer. In order for PCB Editor to find where a custom footprint is stored, the <em>library search path</em> must be changed so that PCB Editor knows where to look.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

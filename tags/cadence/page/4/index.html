@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -243,7 +243,8 @@
       <h4 class="fw-bold mb-0"><a href="/creating-a-ground-plane-in-cadence-pcb-editor/">Creating a Ground Plane in Cadence PCB Editor</a></h4>
       
 
-      <p>What is a ground plane? A ground plane is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</p>
+      <p><h2 id="what-is-a-ground-plane">What is a ground plane?</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Ground_plane">ground plane</a> is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -269,7 +270,7 @@
       <h4 class="fw-bold mb-0"><a href="/creating-custom-footprints/">Creating Custom Footprints</a></h4>
       
 
-      <p>You can try to find existing footprints for components, but most components will require custom footprints.</p>
+      <p>You can try to <a href="/finding-existing-pcb-footprints-for-cadence-pcb-editor/">find existing footprints</a> for components, but most components will require custom footprints.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -295,7 +296,8 @@
       <h4 class="fw-bold mb-0"><a href="/exporting-gerber-files-from-cadence-pcb-editor/">Exporting Gerber files from Cadence PCB Editor</a></h4>
       
 
-      <p>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</p>
+      <p><h2 id="what-is-a-gerber-file">What is a Gerber file?</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Gerber_format">Gerber file</a> (also known as <em>artwork</em>) is a 2-D graphical representation of a single layer of a PCB. A typical design will have individual Gerber files for each layer (e.g., top copper, bottom copper, top silkscreen, bottom silkscreen, top soldermask, bottom soldermask) of a PCB.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -329,7 +331,8 @@
       <h4 class="fw-bold mb-0"><a href="/exporting-solder-mask-layers-from-cadence-pcb-editor/">Exporting Solder Mask Layers from Cadence PCB Editor</a></h4>
       
 
-      <p>What is a solder mask? Solder mask is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections.</p>
+      <p><h2 id="what-is-a-solder-mask">What is a solder mask?</h2>
+<p><a href="https://en.wikipedia.org/wiki/Solder_mask">Solder mask</a> is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections. It is often green, red, or blue, and is put over all parts of a PCB except where components are to be soldered.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -355,7 +358,8 @@
       <h4 class="fw-bold mb-0"><a href="/finding-existing-pcb-footprints-for-cadence-pcb-editor/">Finding existing PCB footprints for Cadence PCB Editor</a></h4>
       
 
-      <p>Where can I find a list of existing PCB footprints for Cadence PCB Editor?</p>
+      <p><h2 id="where-can-i-find-a-list-of-existing-pcb-footprints-for-cadence-pcb-editor">Where can I find a list of existing PCB footprints for Cadence PCB Editor?</h2>
+<p>While Cadence does have some built-in footprint libraries, they are limited due to the hundreds of thousands of different parts in existence. Additionally, most companies make their own footprints to match the specific manufacturing processes that they use.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -381,7 +385,8 @@
       <h4 class="fw-bold mb-0"><a href="/getting-started-with-cadence-pcb-editor/">Getting Started with Cadence PCB Editor</a></h4>
       
 
-      <p>What is a printed circuit board (PCB)? See the What is a Printed Circuit Board?</p>
+      <p><h2 id="what-is-a-printed-circuit-board-pcb">What is a printed circuit board (PCB)?</h2>
+<p>See the <a href="/what-is-a-printed-circuit-board/">What is a Printed Circuit Board?</a> page for more information about PCBs and the general design flow for creating a PCB.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -437,7 +442,13 @@
       <h4 class="fw-bold mb-0"><a href="/adding-silkscreen/">How to Create a Silkscreen in Cadence and Manually Add Text to it</a></h4>
       
 
-      <p>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</p>
+      <p><h1 id="how-to-create-a-silkscreen-in-cadence-and-manually-add-text-to-it">How to Create a Silkscreen in Cadence and Manually Add Text to it</h1>
+<ol>
+<li>Create a (finalized) PCB layout. Note that the amount of additional work required for a good silkscreen layer will depend on how your PCB footprints were designed. This example will use the board shown below:</li>
+</ol>
+<p>
+<a href="image1.PNG"><img src="image1.PNG" alt=""  /></a>
+</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

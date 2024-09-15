@@ -12,21 +12,21 @@
       <link>https://embedded-systems-design.github.io/dc-motors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/dc-motors-101/</guid>
-      <description>Watch the video mini-lecture on DC motor control from Dr. Jordan What types of DC motors are most common?</description>
+      <description>&lt;h4 id=&#34;watch-the-video-mini-lecture-on-dc-motor-control-from-drjordanhttpsyoutubenmhxy2hxcks&#34;&gt;&lt;a href=&#34;https://youtu.be/nMhxy2hxcKs&#34;&gt;Watch the video mini-lecture on DC motor control from Dr. Jordan&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/nMhxy2hxcKs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h2 id=&#34;what-types-of-dc-motors-are-most-common&#34;&gt;What types of DC motors are most common?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Brushed DC motors. Current flowing in one direction makes the motor turn one direction, and current flowing in the opposite direction makes the motor turn the opposite direction.&lt;/li&gt;&#xA;&lt;li&gt;Stepper motors - provide absolute position control but require a special controller IC&lt;/li&gt;&#xA;&lt;li&gt;Servo motors - PWM signal controls the position of the motor&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-do-i-connect-a-brushed-dc-motor-to-a-microcontroller&#34;&gt;How do I connect a brushed DC motor to a microcontroller?&lt;/h2&gt;&#xA;&lt;p&gt;DC motors are inductive loads and therefore cannot be directly connected to a microcontroller without damaging the microcontroller. There are two protection mechanisms that go into a successful motor interface:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Motors</title>
       <link>https://embedded-systems-design.github.io/motors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/motors/</guid>
-      <description>There are many types of motors out there each with their own pros and cons.</description>
+      <description>&lt;p&gt;There are many types of motors out there each with their own pros and cons. There are two main types of motors, brushed and brushless, each with many subcategories within them. In this we will only be going over the most common types and their control. These include DC brushed, stepper, and 3-phase brushless.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stepper Motor Selection and Control</title>
       <link>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</guid>
-      <description>Stepper Motor Selection There are four variables to consider when selecting a stepper motor</description>
+      <description>&lt;h2 id=&#34;stepper-motor-selection&#34;&gt;Stepper Motor Selection&lt;/h2&gt;&#xA;&lt;p&gt;There are four variables to consider when selecting a stepper motor&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

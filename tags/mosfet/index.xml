@@ -12,21 +12,21 @@
       <link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
-      <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
+      <description>&lt;p&gt;Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device. In order to determine the amount of current a microcontroller can supply (or sink) with an output pin, open the data sheet and look for the section describing &amp;ldquo;Absolute Maximum Ratings&amp;rdquo;. There, there should be a specification described as the maximum current for a single GPIO pin (see example, Figure 1).&lt;/p&gt;</description>
     </item>
     <item>
       <title>MOSFET for use with a 3.3V and 5V Microcontroller</title>
       <link>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</guid>
-      <description>Selecting the MOSFET When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.</description>
+      <description>&lt;h2 id=&#34;selecting-the-mosfet&#34;&gt;Selecting the MOSFET&lt;/h2&gt;&#xA;&lt;p&gt;When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transistors</title>
       <link>https://embedded-systems-design.github.io/transistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/transistors/</guid>
-      <description>What is a transistor? A transistor is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</description>
+      <description>&lt;h2 id=&#34;what-is-a-transistor&#34;&gt;What is a transistor?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Transistor&#34;&gt;transistor&lt;/a&gt; is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -12,63 +12,63 @@
       <link>https://embedded-systems-design.github.io/installing-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
-      <description>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</description>
+      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;PC:&lt;/strong&gt; Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (&lt;a href=&#34;https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf&#34;&gt;Hardware and Software Requirements&lt;/a&gt;). Note that Cadence does not support Windows 10 Starter nor Home Basic.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Windows 7, 8, 8.1, 10, 11 or greater running on &lt;a href=&#34;https://www.apple.com/support/bootcamp/&#34;&gt;Boot Camp&lt;/a&gt; or &lt;a href=&#34;http://www.parallels.com/&#34;&gt;Parallels&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;before-installing&#34;&gt;Before Installing&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&amp;rsquo;s license server&lt;/p&gt;</description>
     </item>
     <item>
       <title>ASU PCB Fabrication Process</title>
       <link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid>
-      <description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description>
+      <description>&lt;h2 id=&#34;how-are-pcbs-fabricated-at-asu&#34;&gt;How are PCBs fabricated at ASU?&lt;/h2&gt;&#xA;&lt;p&gt;The following video shows our PCB manufacturing process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing the Default Via Padstack in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</guid>
-      <description>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB. Vias are typically used when two wires need to cross on the same side of a PCB design, but cannot without continuing the trace on a different layer. It is best to minimize the use of vias for boards being manufactured in Peralta to maximize reliability, but sometimes they are necessary in order to complete a design. If you do need a via, the default via padstack in Cadence is too small for the LPKF ProtoMat S63 PCB Mill that we use to manufacture PCBs in PRLTA 109. There are two ways to address this issue:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drawing Software</title>
       <link>https://embedded-systems-design.github.io/drawing-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/drawing-software/</guid>
-      <description>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</description>
+      <description>&lt;h2 id=&#34;what-is-drawing-software-used-for&#34;&gt;What is drawing software used for?&lt;/h2&gt;&#xA;&lt;p&gt;Drawing software is used to create diagrams for inclusion in presentations and reports.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From where can I source parts?</title>
       <link>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</guid>
-      <description>Once you know the types of components that you need for your project, the next step is to find sources/vendors from which you can purchase the components (also known as sourcing parts).</description>
+      <description>&lt;p&gt;Once you know the types of components that you need for your project, the next step is to find sources/vendors from which you can purchase the components (also known as &lt;em&gt;sourcing parts&lt;/em&gt;). Follow the process below to source parts:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mechanical CAD Software</title>
       <link>https://embedded-systems-design.github.io/mechanical-cad-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mechanical-cad-software/</guid>
-      <description>What is CAD software used for? Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically.</description>
+      <description>&lt;h2 id=&#34;what-is-cad-software-used-for&#34;&gt;What is CAD software used for?&lt;/h2&gt;&#xA;&lt;p&gt;Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically. It is commonly used for electrical or mechanical designs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Peralta 103 Resources</title>
       <link>https://embedded-systems-design.github.io/peralta-103-resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/peralta-103-resources/</guid>
-      <description>What equipment is available at each of the benches? Function Generator (5 MHz)</description>
+      <description>&lt;h2 id=&#34;what-equipment-is-available-at-each-of-the-benches&#34;&gt;What equipment is available at each of the benches?&lt;/h2&gt;&#xA;&lt;p&gt;Function Generator (5 MHz)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running a Design for Manufacturing Check in DFM Now</title>
       <link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid>
-      <description>This process has been replaced with a superior web-based Peralta Studios DFM Checker.</description>
+      <description>&lt;h2 id=&#34;this-process-has-been-replaced-with-a-superior-web-based-peralta-studios-dfm-checkerhttpsperaltastudiosengineeringasueduwp-contentuploads202108dfmcheckerhtml&#34;&gt;This process has been replaced with a superior web-based &lt;a href=&#34;https://peraltastudios.engineering.asu.edu/wp-content/uploads/2021/08/dfmchecker.html&#34;&gt;Peralta Studios DFM Checker&lt;/a&gt;.&lt;/h2&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment. This tutorial walks through how to use the program &lt;a href=&#34;https://www.numericalinnovations.com/pages/dfm-now-free-gerber-viewer&#34;&gt;DFM Now&lt;/a&gt; to verify that a design is able to be manufactured by the &lt;a href=&#34;https://www.lpkfusa.com/datasheets/prototyping/s63.pdf&#34;&gt;LPKF ProtoMat S63&lt;/a&gt; in PRLTA 109.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is a Gantt Chart?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</guid>
-      <description>A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks.</description>
+      <description>&lt;p&gt;A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks. It is important to gain experience predicting how long tasks take in order to calibrate your time management.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -12,7 +12,7 @@
       <link>https://embedded-systems-design.github.io/adding-silkscreen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/adding-silkscreen/</guid>
-      <description>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</description>
+      <description>&lt;h1 id=&#34;how-to-create-a-silkscreen-in-cadence-and-manually-add-text-to-it&#34;&gt;How to Create a Silkscreen in Cadence and Manually Add Text to it&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a (finalized) PCB layout. Note that the amount of additional work required for a good silkscreen layer will depend on how your PCB footprints were designed. This example will use the board shown below:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;image1.PNG&#34;&gt;&lt;img src=&#34;image1.PNG&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -278,7 +278,15 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/power-supplies-101/">Power Supplies 101</a></h4>
       
 
-      <p>What are the components of a basic power supply subsystem? Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit What are the design considerations for a battery-operated circuit?</p>
+      <p><h2 id="what-are-the-components-of-a-basic-power-supply-subsystem">What are the components of a basic power supply subsystem?</h2>
+<ol>
+<li>Source of power - battery, AC adapter, solar</li>
+<li>Input electronic noise filtering circuit</li>
+<li>Voltage regulator to provide a constant supply voltage</li>
+<li>Output electronic noise filtering circuit</li>
+</ol>
+<h2 id="what-are-the-design-considerations-for-a-battery-operated-circuit">What are the design considerations for a battery-operated circuit?</h2>
+<p>How many Amp-Hours of capacity are needed?</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -308,7 +316,7 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-design-in-dfm-now/">Printing a PCB Design in DFM Now</a></h4>
       
 
-      <p>Note: This tutorial shows how to print a PCB design on paper.</p>
+      <p><em>Note</em>: This tutorial shows how to print a PCB design on paper. Please see the <a href="/asu-pcb-fabrication-process/">ASU PCB Fabrication Process</a> for instructions on how to manufacture / &ldquo;print&rdquo; a PCB design in copper.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -334,7 +342,7 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-layout-in-cadence-pcb-editor/">Printing a PCB Layout in Cadence PCB Editor</a></h4>
       
 
-      <p>Note: This tutorial shows how to print a PCB design on paper.</p>
+      <p><em>Note</em>: This tutorial shows how to print a PCB design on paper. Please see the <a href="/asu-pcb-fabrication-process/">ASU PCB Fabrication Process</a> for instructions on how to manufacture / &ldquo;print&rdquo; a PCB design in copper.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -360,7 +368,7 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/print-non-string-variables-to-psoc-uart/">Printing Non-String Variables to the PSoC UART</a></h4>
       
 
-      <p>Q: How do I print an integer (or other non-string variable) to the PSoC UART?</p>
+      <p><strong>Q:</strong> How do I print an integer (or other non-string variable) to the PSoC UART?</p>
       <ul class="list-inline">
         
       </ul>
@@ -378,7 +386,7 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/psoc-hardware-development-kits/">PSoC 4 Hardware Development Kits</a></h4>
       
 
-      <p>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</p>
+      <p>There are several <a href="http://www.cypress.com/">Cypress</a> <a href="http://www.cypress.com/products/programmable-system-chip-psoc">Programmable System on a Chip (PSoC®)</a> hardware development kits available for use in designs. The list below describes strengths of each kit and provides links to documentation.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -424,8 +432,15 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/psoc-creator-project-structure/">PSoC Creator Project Structure</a></h4>
       
 
-      <p>I can&rsquo;t find my workspace/project in PSoC Creator
-C files, top design files, etc.</p>
+      <p><p><strong>I can't find my workspace/project in PSoC Creator</strong></p>
+<ul>
+<li>C files, top design files, etc. are saved in project files</li>
+<li>Project files are saved in workspaces</li>
+<li>Workspaces are saved in the folder &quot;PSoC Creator&quot;</li>
+<li>The PSoC Creator folder can be found in the Documents folder of the user account</li>
+<li>Click *.cywrk to open a workspace</li>
+<li>Click *.cyprj to open a project</li>
+</ul></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -451,7 +466,8 @@ C files, top design files, etc.</p>
       <h4 class="fw-bold mb-0"><a href="/psoc-hello-world/">PSoC Hello World Lab</a></h4>
       
 
-      <p>Introduction The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or CY8CKIT-042-BLE kit for the first time</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or  CY8CKIT-042-BLE kit for the first time</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -469,7 +485,18 @@ C files, top design files, etc.</p>
       <h4 class="fw-bold mb-0"><a href="/pull-down-resistors/">Pullup/Pulldown resistors</a></h4>
       
 
-      <p>What are pullup resistors? Pull-up These are resistors used to pull a volage on a specific pin high.</p>
+      <p><h2 id="what-are-pullup-resistors">What are pullup resistors?</h2>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="pullup.png"><img src="pullup.png" alt="Pull-up"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Pull-up</div></td></tr>
+</tbody>
+</table>
+</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -503,7 +530,8 @@ C files, top design files, etc.</p>
       <h4 class="fw-bold mb-0"><a href="/pushing-pcb-changes-back-to-a-schematic-in-cadence/">Pushing PCB changes back to a schematic in Cadence</a></h4>
       
 
-      <p>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</p>
+      <p><h2 id="why-would-i-need-to-back-annotate-a-design">Why would I need to <em>back annotate</em> a design?</h2>
+<p>If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must <em>back annotate</em> (meaning, push changes) from the PCB design back into your original schematic. By doing this update, future changes to the schematic can be forward annotated (meaning, pushed forward) to your PCB design without having to start over from scratch.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -529,7 +557,8 @@ C files, top design files, etc.</p>
       <h4 class="fw-bold mb-0"><a href="/pwm-tutorial-1/">PWM Tutorial 1 &ndash; Using PWM to make an LED &ldquo;Breathe&rdquo;</a></h4>
       
 
-      <p>Objective In this exercise, you will wire and program an LED to “breathe” on and off (example).</p>
+      <p><h2 id="objective">Objective</h2>
+<p>In this exercise, you will wire and program an LED to &ldquo;breathe&rdquo; on and off (<a href="https://www.youtube.com/watch?v=HC6_3h8Qfw8">example</a>).</p></p>
       <ul class="list-inline">
         
       </ul>

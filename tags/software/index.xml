@@ -12,56 +12,56 @@
       <link>https://embedded-systems-design.github.io/installing-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
-      <description>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</description>
+      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;PC:&lt;/strong&gt; Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (&lt;a href=&#34;https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf&#34;&gt;Hardware and Software Requirements&lt;/a&gt;). Note that Cadence does not support Windows 10 Starter nor Home Basic.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Windows 7, 8, 8.1, 10, 11 or greater running on &lt;a href=&#34;https://www.apple.com/support/bootcamp/&#34;&gt;Boot Camp&lt;/a&gt; or &lt;a href=&#34;http://www.parallels.com/&#34;&gt;Parallels&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;before-installing&#34;&gt;Before Installing&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&amp;rsquo;s license server&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring the UART on PSoC</title>
       <link>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</guid>
-      <description>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</description>
+      <description>&lt;h2 id=&#34;what-is-a-uart-universal-asynchronous-receivertransmitter&#34;&gt;What is a UART (Universal Asynchronous Receiver/Transmitter)?&lt;/h2&gt;&#xA;&lt;p&gt;UART is one serial protocol used for communicating data between two digital devices (e.g., between the Pioneer Kit and the computer).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drawing Software</title>
       <link>https://embedded-systems-design.github.io/drawing-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/drawing-software/</guid>
-      <description>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</description>
+      <description>&lt;h2 id=&#34;what-is-drawing-software-used-for&#34;&gt;What is drawing software used for?&lt;/h2&gt;&#xA;&lt;p&gt;Drawing software is used to create diagrams for inclusion in presentations and reports.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
-      <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
+      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts</title>
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts/</guid>
-      <description>What is an interrupt? Consider the following knock-knock joke:&#xA;Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
+      <description>&lt;h2 id=&#34;what-is-an-interrupt&#34;&gt;What is an interrupt?&lt;/h2&gt;&#xA;&lt;p&gt;Consider the following knock-knock joke:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;https://embedded-systems-design.github.io/larger/image0171.jpg&#34;&gt;&lt;img src=&#34;https://embedded-systems-design.github.io/larger/image0171.jpg&#34; alt=&#34;Figure 1&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;Figure 1&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software design</title>
       <link>https://embedded-systems-design.github.io/software-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/software-design/</guid>
-      <description>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time.</description>
+      <description>&lt;h2 id=&#34;what-is-a-finite-state-machine&#34;&gt;What is a finite state machine?&lt;/h2&gt;&#xA;&lt;p&gt;A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is a Gantt Chart?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</guid>
-      <description>A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks.</description>
+      <description>&lt;p&gt;A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks. It is important to gain experience predicting how long tasks take in order to calibrate your time management.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is Cadence?</title>
       <link>https://embedded-systems-design.github.io/what-is-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-cadence/</guid>
-      <description>Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards.</description>
+      <description>&lt;p&gt;Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards. The following video by Casey Petersen describes the basics of Cadence:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

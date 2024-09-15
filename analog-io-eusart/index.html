@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -337,40 +337,40 @@
 </ul>
 <h1 id="parts-needed">Parts Needed</h1>
 <table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>Item</strong></th>
-<th style="text-align:left"><strong>Quantity</strong></th>
-<th style="text-align:left"><strong>Value(s)</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a></td>
-<td style="text-align:left">1</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Breadboard</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Resistors</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">TBD by student</td>
-</tr>
-<tr>
-<td style="text-align:left">LED</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">Any color</td>
-</tr>
-<tr>
-<td style="text-align:left">Jumper wires</td>
-<td style="text-align:left">Several</td>
-<td style="text-align:left"></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Item</strong></th>
+          <th style="text-align: left"><strong>Quantity</strong></th>
+          <th style="text-align: left"><strong>Value(s)</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a></td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Breadboard</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resistors</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">TBD by student</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">LED</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">Any color</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jumper wires</td>
+          <td style="text-align: left">Several</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
 </table>
 <h1 id="instructions">Instructions</h1>
 <p><em>You may use your Nano board or a breadboard with your microcontroller on it.</em></p>
@@ -378,46 +378,46 @@
 <li>Using the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a> and lessons learned last semester with connecting to the PSoC®, study the following critical information and concepts:</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>Critical Information and Concepts</strong></th>
-<th style="text-align:left"><strong>Importance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">a.  The name of the virtual COM port that communicates over the Curiosity Nano&rsquo;s USB to your computer.</td>
-<td style="text-align:left">Needed in order to connect PuTTY to the Curiosity Nano</td>
-</tr>
-<tr>
-<td style="text-align:left">b.  Which EUSART subsystem connects to it</td>
-<td style="text-align:left">Needed to determine which EUSART port to connect the PIC to in order to communicate with the debugger and computer</td>
-</tr>
-<tr>
-<td style="text-align:left">c.  Which specific pins are used for receive and transmit on the PIC</td>
-<td style="text-align:left">Needed to assign the correct pins to the EUSART component</td>
-</tr>
-<tr>
-<td style="text-align:left">d.  How much current can a digital I/O pin safely source or sink? (Hint: See the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>)</td>
-<td style="text-align:left">Needed to match the current needs of external loads (e.g., LEDs) with the IC and determine whether you need interface circuitry (e.g., a transistor)</td>
-</tr>
-<tr>
-<td style="text-align:left">e.  Which pin of the Curiosity Nano board outputs the regulated power used by the &ldquo;target&rdquo; (the PIC18F47Q10)</td>
-<td style="text-align:left">Needed to know where you can access power and ground on the Curiosity Nano board</td>
-</tr>
-<tr>
-<td style="text-align:left">f.  Which pins of the Curiosity Nano connect to ground?</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">g.  How many bits wide is the result of an ADC read?<br>h.  How many bits wide is the PWM timer register?</td>
-<td style="text-align:left">Needed to read, interpret, and write data to and from the ADC and PWM peripherals. Can be found in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
-</tr>
-<tr>
-<td style="text-align:left">i.  How to shift bits of a number or variable (needed to manipulate data in an 8-bit variable)<br>j.  How to mask bits of a number or variable (needed to read or write specific bits in an 8-bit variable)<br>k.  How to cast a variable as a different data type (needed to convert variables from one data type to another)</td>
-<td style="text-align:left">Needed to manipulate data in variables. Can be found in a C programming reference, such as the <a href="https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html">GNU C Reference Manual</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information and Concepts</strong></th>
+          <th style="text-align: left"><strong>Importance</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">a.  The name of the virtual COM port that communicates over the Curiosity Nano&rsquo;s USB to your computer.</td>
+          <td style="text-align: left">Needed in order to connect PuTTY to the Curiosity Nano</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">b.  Which EUSART subsystem connects to it</td>
+          <td style="text-align: left">Needed to determine which EUSART port to connect the PIC to in order to communicate with the debugger and computer</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">c.  Which specific pins are used for receive and transmit on the PIC</td>
+          <td style="text-align: left">Needed to assign the correct pins to the EUSART component</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">d.  How much current can a digital I/O pin safely source or sink? (Hint: See the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>)</td>
+          <td style="text-align: left">Needed to match the current needs of external loads (e.g., LEDs) with the IC and determine whether you need interface circuitry (e.g., a transistor)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">e.  Which pin of the Curiosity Nano board outputs the regulated power used by the &ldquo;target&rdquo; (the PIC18F47Q10)</td>
+          <td style="text-align: left">Needed to know where you can access power and ground on the Curiosity Nano board</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">f.  Which pins of the Curiosity Nano connect to ground?</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">g.  How many bits wide is the result of an ADC read?<br>h.  How many bits wide is the PWM timer register?</td>
+          <td style="text-align: left">Needed to read, interpret, and write data to and from the ADC and PWM peripherals. Can be found in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">i.  How to shift bits of a number or variable (needed to manipulate data in an 8-bit variable)<br>j.  How to mask bits of a number or variable (needed to read or write specific bits in an 8-bit variable)<br>k.  How to cast a variable as a different data type (needed to convert variables from one data type to another)</td>
+          <td style="text-align: left">Needed to manipulate data in variables. Can be found in a C programming reference, such as the <a href="https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html">GNU C Reference Manual</a></td>
+      </tr>
+  </tbody>
 </table>
 <ol start="2">
 <li>
@@ -573,32 +573,32 @@ ADC voltage: 3.300
 </li>
 </ol>
 <table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">&hellip;</td>
-<td style="text-align:left">ADC<del>x-1</del></td>
-<td style="text-align:left">ADC<del>x-2</del></td>
-<td style="text-align:left">ADC<del>x-3</del></td>
-<td style="text-align:left">ADC<del>x-4</del></td>
-<td style="text-align:left">ADC<del>x-5</del></td>
-<td style="text-align:left">ADC<del>x-6</del></td>
-<td style="text-align:left">ADC<del>x-7</del></td>
-<td style="text-align:left">ADC<del>x-8</del></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">&hellip;</td>
+          <td style="text-align: left">ADC<del>x-1</del></td>
+          <td style="text-align: left">ADC<del>x-2</del></td>
+          <td style="text-align: left">ADC<del>x-3</del></td>
+          <td style="text-align: left">ADC<del>x-4</del></td>
+          <td style="text-align: left">ADC<del>x-5</del></td>
+          <td style="text-align: left">ADC<del>x-6</del></td>
+          <td style="text-align: left">ADC<del>x-7</del></td>
+          <td style="text-align: left">ADC<del>x-8</del></td>
+      </tr>
+  </tbody>
 </table>
 <ol start="16">
 <li>Download the project to the target. This can be done <em>one of two ways</em>

@@ -12,70 +12,70 @@
       <link>https://embedded-systems-design.github.io/all-about-serial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/all-about-serial/</guid>
-      <description>What are serial protocols? I2C, SPI, and UART are three of the most common protocols for serial data transmission.</description>
+      <description>&lt;h2 id=&#34;what-are-serial-protocols&#34;&gt;What are serial protocols?&lt;/h2&gt;&#xA;&lt;p&gt;I2C, SPI, and UART are three of the most common protocols for serial data transmission. An overview of these protocols can be found here:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring the UART on PSoC</title>
       <link>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</guid>
-      <description>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</description>
+      <description>&lt;h2 id=&#34;what-is-a-uart-universal-asynchronous-receivertransmitter&#34;&gt;What is a UART (Universal Asynchronous Receiver/Transmitter)?&lt;/h2&gt;&#xA;&lt;p&gt;UART is one serial protocol used for communicating data between two digital devices (e.g., between the Pioneer Kit and the computer).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
-      <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
+      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts</title>
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts/</guid>
-      <description>What is an interrupt? Consider the following knock-knock joke:&#xA;Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
+      <description>&lt;h2 id=&#34;what-is-an-interrupt&#34;&gt;What is an interrupt?&lt;/h2&gt;&#xA;&lt;p&gt;Consider the following knock-knock joke:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;https://embedded-systems-design.github.io/larger/image0171.jpg&#34;&gt;&lt;img src=&#34;https://embedded-systems-design.github.io/larger/image0171.jpg&#34; alt=&#34;Figure 1&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;Figure 1&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts on PSoC</title>
       <link>https://embedded-systems-design.github.io/interrupts-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts-on-psoc/</guid>
-      <description>An interrupt is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention.</description>
+      <description>&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Interrupt&#34;&gt;interrupt&lt;/a&gt; is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention. Interrupts are useful to avoid constant monitoring of electronic peripherals (e.g., sensors).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microchip AVR Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</guid>
-      <description>What microcontrollers does Atmel specialize in? Atmel was one of the top IC manufacturers that makes a number of 8-bit, 32-bit, and ARM microcontrollers, including the AVR microcontroller used in the Arduino.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-atmel-specialize-in&#34;&gt;What microcontrollers does Atmel specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;Atmel was one of the top IC manufacturers that makes a number of 8-bit, 32-bit, and ARM microcontrollers, including the AVR microcontroller used in the Arduino. Microchip purchased Atmel in 2017 and is maintaining the AVR line of microcontrollers. The following is a list of helpful resources for getting started with Microchip AVR microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microchip PIC Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
-      <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-microchip-specialize-in&#34;&gt;What microcontrollers does Microchip specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.microchip.com/pagehandler/en-us/products/picmicrocontrollers&#34;&gt;Microchip&lt;/a&gt; specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PSoC 4 Hardware Development Kits</title>
       <link>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</guid>
-      <description>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</description>
+      <description>&lt;p&gt;There are several &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; hardware development kits available for use in designs. The list below describes strengths of each kit and provides links to documentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Texas Instruments Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/texas-instruments-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/texas-instruments-microcontrollers/</guid>
-      <description>What microcontrollers does Texas Instruments specialize in? Texas Instruments (TI) specializes in low-power, performance, and wireless microcontrollers.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-texas-instruments-specialize-in&#34;&gt;What microcontrollers does Texas Instruments specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/overview.page&#34;&gt;Texas Instruments (TI)&lt;/a&gt; specializes in low-power, performance, and wireless microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is PSoC?</title>
       <link>https://embedded-systems-design.github.io/what-is-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-psoc/</guid>
-      <description>The Cypress Programmable System on a Chip (PSoC®) is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing.</description>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing. The following is a list of helpful resources for getting started with the PSoC®:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

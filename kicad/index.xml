@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/kicad-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-installation-and-setup/</guid>
-      <description>Resources KiCad.org KiCad Documentation Installation Full instructions can be found on the Software page.</description>
+      <description>&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.kicad.org/&#34;&gt;KiCad.org&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.kicad.org/&#34;&gt;KiCad Documentation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Full instructions can be found on the &lt;a href=&#34;https://embedded-systems-design.github.io/egr304-software-stack/&#34;&gt;Software&lt;/a&gt; page.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packaging KiCad Files for Submission</title>
       <link>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</guid>
-      <description>Generating Schematic PDFs Add Title Block Information Open your project and then your schematic.</description>
+      <description>&lt;h2 id=&#34;generating-schematic-pdfs&#34;&gt;Generating Schematic PDFs&lt;/h2&gt;&#xA;&lt;h3 id=&#34;add-title-block-information&#34;&gt;Add Title Block Information&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open your project and then your schematic.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

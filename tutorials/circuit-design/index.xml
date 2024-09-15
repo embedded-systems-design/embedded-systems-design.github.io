@@ -12,140 +12,140 @@
       <link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid>
-      <description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description>
+      <description>&lt;h2 id=&#34;how-are-pcbs-fabricated-at-asu&#34;&gt;How are PCBs fabricated at ASU?&lt;/h2&gt;&#xA;&lt;p&gt;The following video shows our PCB manufacturing process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic Resistor Info</title>
       <link>https://embedded-systems-design.github.io/resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/resistors/</guid>
-      <description>External Resources https://resistorcolorcodecalc.com/ </description>
+      <description>&lt;h2 id=&#34;external-resources&#34;&gt;External Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://resistorcolorcodecalc.com/&#34;&gt;https://resistorcolorcodecalc.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Bypass capacitor basics</title>
       <link>https://embedded-systems-design.github.io/bypass-capacitor-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/bypass-capacitor-basics/</guid>
-      <description>A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC.</description>
+      <description>&lt;p&gt;A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC. Electrical noise can cause circuit malfunctions. Unless otherwise specified in the data sheet of an IC, a 0.1 µF non-polarized ceramic capacitor usually makes a good bypass capacitor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Capacitive Sensing Links</title>
       <link>https://embedded-systems-design.github.io/capacitive-sensing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/capacitive-sensing/</guid>
-      <description> Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems </description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.instructables.com/Capacitive-Sensing-for-Dummies/&#34;&gt;Capacitive Sensing for Dummies&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gasstationwithoutpumps.wordpress.com/2012/07/12/capacitive-sensing-with-op-amps/&#34;&gt;Capacitive Sensing with Op-Amps&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.analog.com/en/analog-dialogue/articles/capacitance-sensors-for-human-interfaces-to-electronics.html&#34;&gt;Capacitive Sensing for Human Interfaces to Electronics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://microcontrollerslab.com/frequency-to-voltage-converter-circuits/&#34;&gt;Frequency to Voltage Circuits&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.allaboutcircuits.com/technical-articles/circuits-and-techniques-for-implementing-capacitive-touch-sensing/&#34;&gt;Circuits and Techniques for Implementing Capacitive Touch Sensing &lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.analog.com/en/analog-dialogue/articles/capacitance-to-digital-converter-technology-healthcare.html&#34;&gt;Analog Devices Capacitance Sensors&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.analog.com/en/analog-dialogue/articles/cdc-facilitates-level-sensing-in-diagnostic-systems.html&#34;&gt;Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Capacitors</title>
       <link>https://embedded-systems-design.github.io/capacitors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/capacitors/</guid>
-      <description>External Resources https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart </description>
+      <description>&lt;h2 id=&#34;external-resources&#34;&gt;External Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart&#34;&gt;https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Connectors 101</title>
       <link>https://embedded-systems-design.github.io/connectors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/connectors-101/</guid>
-      <description>What is a connector? A connector is an electrical component that links two or more components together.</description>
+      <description>&lt;h2 id=&#34;what-is-a-connector&#34;&gt;What is a connector?&lt;/h2&gt;&#xA;&lt;p&gt;A connector is an electrical component that links two or more components together. The major types of connectors are:&lt;/p&gt;</description>
     </item>
     <item>
       <title>DC Motors 101</title>
       <link>https://embedded-systems-design.github.io/dc-motors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/dc-motors-101/</guid>
-      <description>Watch the video mini-lecture on DC motor control from Dr. Jordan What types of DC motors are most common?</description>
+      <description>&lt;h4 id=&#34;watch-the-video-mini-lecture-on-dc-motor-control-from-drjordanhttpsyoutubenmhxy2hxcks&#34;&gt;&lt;a href=&#34;https://youtu.be/nMhxy2hxcKs&#34;&gt;Watch the video mini-lecture on DC motor control from Dr. Jordan&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/nMhxy2hxcKs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h2 id=&#34;what-types-of-dc-motors-are-most-common&#34;&gt;What types of DC motors are most common?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Brushed DC motors. Current flowing in one direction makes the motor turn one direction, and current flowing in the opposite direction makes the motor turn the opposite direction.&lt;/li&gt;&#xA;&lt;li&gt;Stepper motors - provide absolute position control but require a special controller IC&lt;/li&gt;&#xA;&lt;li&gt;Servo motors - PWM signal controls the position of the motor&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-do-i-connect-a-brushed-dc-motor-to-a-microcontroller&#34;&gt;How do I connect a brushed DC motor to a microcontroller?&lt;/h2&gt;&#xA;&lt;p&gt;DC motors are inductive loads and therefore cannot be directly connected to a microcontroller without damaging the microcontroller. There are two protection mechanisms that go into a successful motor interface:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fuses 101</title>
       <link>https://embedded-systems-design.github.io/fuses-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/fuses-101/</guid>
-      <description>What are fuses and when do I need them? A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much current.</description>
+      <description>&lt;h2 id=&#34;what-are-fuses-and-when-do-i-need-them&#34;&gt;What are fuses and when do I need them?&lt;/h2&gt;&#xA;&lt;p&gt;A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much &lt;em&gt;current&lt;/em&gt;. **Fuses do not protect against voltages that are too high. **&lt;/p&gt;</description>
     </item>
     <item>
       <title>How does X work?</title>
       <link>https://embedded-systems-design.github.io/how-does-x-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/how-does-x-work/</guid>
-      <description>Laser Rangefinders https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/ https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849 https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder Laser Thermometers (pyrometers) https://sciencing.com/laser-thermometers-work-4962575.html Record Players https://electronics.</description>
+      <description>&lt;h2 id=&#34;laser-rangefinders&#34;&gt;Laser Rangefinders&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/&#34;&gt;https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849&#34;&gt;https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder&#34;&gt;https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;laser-thermometers-pyrometers&#34;&gt;Laser Thermometers (pyrometers)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sciencing.com/laser-thermometers-work-4962575.html&#34;&gt;https://sciencing.com/laser-thermometers-work-4962575.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;record-players&#34;&gt;Record Players&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://electronics.howstuffworks.com/record-player.htm&#34;&gt;https://electronics.howstuffworks.com/record-player.htm&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;digital-calipers&#34;&gt;Digital Calipers&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wonkeedonkeetools.co.uk/calipers/how-does-a-digital-caliper-work&#34;&gt;https://www.wonkeedonkeetools.co.uk/calipers/how-does-a-digital-caliper-work&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ultrasonic-distance-sensors&#34;&gt;Ultrasonic Distance Sensors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.arrow.com/en/research-and-events/articles/ultrasonic-sensors-how-they-work-and-how-to-use-them-with-arduino&#34;&gt;https://www.arrow.com/en/research-and-events/articles/ultrasonic-sensors-how-they-work-and-how-to-use-them-with-arduino&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.htm&#34;&gt;https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.htm&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=2ojWO1QNprw&#34;&gt;https://www.youtube.com/watch?v=2ojWO1QNprw&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1jGvzNrtF24&#34;&gt;https://www.youtube.com/watch?v=1jGvzNrtF24&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>How to Add Solar to Your Circuit</title>
       <link>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</guid>
-      <description>Adding solar to a project has a few more steps then just hard wiring a solar panel.</description>
+      <description>&lt;p&gt;Adding solar to a project has a few more steps then just hard wiring a solar panel. Solar panels fluctuate with power delivery to a system. To combat this, solar panels often charge a power cell or battery. This battery provides constant power to your project .&lt;/p&gt;</description>
     </item>
     <item>
       <title>IR Emitter/Detector Pairs and Op-Amps</title>
       <link>https://embedded-systems-design.github.io/ind-op-amps-sensors-and-adcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/ind-op-amps-sensors-and-adcs/</guid>
-      <description>Objectives Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor.</description>
+      <description>&lt;h1 id=&#34;objectives&#34;&gt;Objectives&lt;/h1&gt;&#xA;&lt;p&gt;Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor. They are tuned to emit and detect the same wavelength of light. They can be useful for sending light-based digital messages, detecting objects, or measuring distances. Because they are in the infrared portion of the light spectrum, they are invisible and less likely to be corrupted by visible light sources. See Scherz &amp;amp; Monk Section 5.7.1 for a complete explanation of how phototransistors work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Level shifters</title>
       <link>https://embedded-systems-design.github.io/level-shifters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/level-shifters/</guid>
-      <description>Introduction: What is a level shifter? A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</description>
+      <description>&lt;h2 id=&#34;introduction-what-is-a-level-shifter&#34;&gt;Introduction: What is a level shifter?&lt;/h2&gt;&#xA;&lt;p&gt;A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MOSFET for use with a 3.3V and 5V Microcontroller</title>
       <link>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</guid>
-      <description>Selecting the MOSFET When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.</description>
+      <description>&lt;h2 id=&#34;selecting-the-mosfet&#34;&gt;Selecting the MOSFET&lt;/h2&gt;&#xA;&lt;p&gt;When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Motors</title>
       <link>https://embedded-systems-design.github.io/motors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/motors/</guid>
-      <description>There are many types of motors out there each with their own pros and cons.</description>
+      <description>&lt;p&gt;There are many types of motors out there each with their own pros and cons. There are two main types of motors, brushed and brushless, each with many subcategories within them. In this we will only be going over the most common types and their control. These include DC brushed, stepper, and 3-phase brushless.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Power Supplies 101</title>
       <link>https://embedded-systems-design.github.io/power-supplies-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/power-supplies-101/</guid>
-      <description>What are the components of a basic power supply subsystem? Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit What are the design considerations for a battery-operated circuit?</description>
+      <description>&lt;h2 id=&#34;what-are-the-components-of-a-basic-power-supply-subsystem&#34;&gt;What are the components of a basic power supply subsystem?&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Source of power - battery, AC adapter, solar&lt;/li&gt;&#xA;&lt;li&gt;Input electronic noise filtering circuit&lt;/li&gt;&#xA;&lt;li&gt;Voltage regulator to provide a constant supply voltage&lt;/li&gt;&#xA;&lt;li&gt;Output electronic noise filtering circuit&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-are-the-design-considerations-for-a-battery-operated-circuit&#34;&gt;What are the design considerations for a battery-operated circuit?&lt;/h2&gt;&#xA;&lt;p&gt;How many Amp-Hours of capacity are needed?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pullup/Pulldown resistors</title>
       <link>https://embedded-systems-design.github.io/pull-down-resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pull-down-resistors/</guid>
-      <description>What are pullup resistors? Pull-up These are resistors used to pull a volage on a specific pin high.</description>
+      <description>&lt;h2 id=&#34;what-are-pullup-resistors&#34;&gt;What are pullup resistors?&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;pullup.png&#34;&gt;&lt;img src=&#34;pullup.png&#34; alt=&#34;Pull-up&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;Pull-up&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Schematic checklist</title>
       <link>https://embedded-systems-design.github.io/schematic-checklist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/schematic-checklist/</guid>
-      <description>Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic 1.</description>
+      <description>&lt;p&gt;Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic 1. It is significantly more difficult to fix errors later (either during the PCB layout stage or after manufacturing) than to spend time double-checking the schematic first.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stepper Motor Selection and Control</title>
       <link>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</guid>
-      <description>Stepper Motor Selection There are four variables to consider when selecting a stepper motor</description>
+      <description>&lt;h2 id=&#34;stepper-motor-selection&#34;&gt;Stepper Motor Selection&lt;/h2&gt;&#xA;&lt;p&gt;There are four variables to consider when selecting a stepper motor&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transistors</title>
       <link>https://embedded-systems-design.github.io/transistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/transistors/</guid>
-      <description>What is a transistor? A transistor is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</description>
+      <description>&lt;h2 id=&#34;what-is-a-transistor&#34;&gt;What is a transistor?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Transistor&#34;&gt;transistor&lt;/a&gt; is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Voltage Regulators VS DC-DC converters</title>
       <link>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</guid>
-      <description>How do I choose a voltage regulator? There are three major types of voltage regulators that you will encounter in this program:</description>
+      <description>&lt;h2 id=&#34;how-do-i-choose-a-voltage-regulator&#34;&gt;How do I choose a voltage regulator?&lt;/h2&gt;&#xA;&lt;p&gt;There are three major types of voltage regulators that you will encounter in this program:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

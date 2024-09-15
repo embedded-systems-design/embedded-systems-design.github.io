@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -328,31 +328,31 @@
 <p>The components necessary for this assignment will take up most of the space on your breadboard. To minimize time spent rewiring, it is recommended that you lay out the large components prior to wiring to ensure sufficient space.</p>
 <h2 id="components">Components</h2>
 <table>
-<thead>
-<tr>
-<th>Part</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PIC18F47Q10 Curiosity Nano (or DIP IC)</td>
-</tr>
-<tr>
-<td><a href="https://www.amazon.com/uxcell-1602A-5V-Display-Screen-Module/dp/B01M0CTXCN/">16x2 LCD screen</a> (You will need to solder on a 16-pin male to male header in order to connect it to the breadboard.)</td>
-</tr>
-<tr>
-<td>75Ω resistor.</td>
-</tr>
-<tr>
-<td>One breadboard-compatible 10kOhm potentiometer</td>
-</tr>
-<tr>
-<td>Two breadboard-compatible SPST buttons</td>
-</tr>
-<tr>
-<td>LED and an appropriate current-limiting resistor (or the onboard LED)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Part</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">PIC18F47Q10 Curiosity Nano (or DIP IC)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://www.amazon.com/uxcell-1602A-5V-Display-Screen-Module/dp/B01M0CTXCN/">16x2 LCD screen</a> (You will need to solder on a 16-pin male to male header in order to connect it to the breadboard.)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">75Ω resistor.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">One breadboard-compatible 10kOhm potentiometer</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Two breadboard-compatible SPST buttons</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">LED and an appropriate current-limiting resistor (or the onboard LED)</td>
+      </tr>
+  </tbody>
 </table>
 <p>Arrange all of the above components on your breadboard so that you will be able to connect wires to each of them.</p>
 <p><em>Hint: Place the Curiosity Nano board as far to one edge of the breadboard as possible such that the micro USB port is accessible from the edge of the board, and place the LCD screen adjacent to the opposite of the board. This will leave you with space for the potentiometer, buttons, and LED.</em></p>
@@ -361,26 +361,26 @@
 <li>Study the following critical information and concepts:</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th><strong>Critical Information and Concepts</strong></th>
-<th><strong>Importance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a.  How each of the 4 pins of the button in your kit are wired.</td>
-<td>Needed to correctly wire the button into your circuit. Use your DMM set to continuity mode and test all combinations of the pins being connected with the button pressed and not pressed.</td>
-</tr>
-<tr>
-<td>b.  What a pullup resistor is, why it is necessary, and how you can enable an onboard pullup in the PIC.</td>
-<td>Needed to understand how to properly wire the switch so that it is always providing a value to the PIC. First, read section 12.6.9 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>.</td>
-</tr>
-<tr>
-<td>c.  In the Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a>, determine what WPU and OD stand for. WPU is explained better on <a href="https://microchipdeveloper.com/mcc:mccgpio">this page that discusses setting up GPIO</a>. Look up the explanation for OD by searching for &ldquo;ODC Registers&rdquo; on <a href="https://microchipdeveloper.com/16bit:io-ports">this page</a> to understand its use for a different PIC family.</td>
-<td>Determine the correct GPIO settings for I/O pins, as well as the best way to use these options in conjunction with a pushbutton switch.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information and Concepts</strong></th>
+          <th style="text-align: left"><strong>Importance</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">a.  How each of the 4 pins of the button in your kit are wired.</td>
+          <td style="text-align: left">Needed to correctly wire the button into your circuit. Use your DMM set to continuity mode and test all combinations of the pins being connected with the button pressed and not pressed.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">b.  What a pullup resistor is, why it is necessary, and how you can enable an onboard pullup in the PIC.</td>
+          <td style="text-align: left">Needed to understand how to properly wire the switch so that it is always providing a value to the PIC. First, read section 12.6.9 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">c.  In the Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a>, determine what WPU and OD stand for. WPU is explained better on <a href="https://microchipdeveloper.com/mcc:mccgpio">this page that discusses setting up GPIO</a>. Look up the explanation for OD by searching for &ldquo;ODC Registers&rdquo; on <a href="https://microchipdeveloper.com/16bit:io-ports">this page</a> to understand its use for a different PIC family.</td>
+          <td style="text-align: left">Determine the correct GPIO settings for I/O pins, as well as the best way to use these options in conjunction with a pushbutton switch.</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="2">
 <li>
@@ -473,124 +473,124 @@
 <li>Study the following critical information and concepts:</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th><strong>Critical Information and Concepts</strong></th>
-<th><strong>Importance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a.  How dot-matrix LCDs work and are controlled.</td>
-<td>Needed to understand the hardware and software necessary to get the LCD communicating with your microcontroller. First, read section 12.10.2 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a> starting from the subsection on <em>&ldquo;Intelligent&rdquo; Dot-Matrix LCD Modules</em>. This section describes a module that is very similar to the one you will be using.</td>
-</tr>
-<tr>
-<td>b.  What the purpose of each pin on your LCD module is, and which pins should be connected to a microcontroller if the LCD is in 4-bit mode.</td>
-<td>Needed to understand the specific connections of the LCD module in your EGR 304 kit, which is a 16x2 character LCD (model number 1602A). Study the entire <a href="https://www.openhacks.com/uploadsproductos/eone-1602a1.pdf">1602A datasheet</a> to understand the hardware and software interfaces. Note that the controller chip on this LCD uses the same protocol as the common Hitachi HD44780-based LCDs. Also note that this datasheet (as well as those for most other similar LCDs) are not very good, with inconsistent and unclear information.</td>
-</tr>
-<tr>
-<td>c.  How the LCD code library works, and what API (application programming interface) functions it provides.</td>
-<td>Needed in order to program your LCD to display text. The functions are specific to this library, so you will need to study the .h and .c files as well as the <a href="https://github.com/ideras/pic-lcd-library/blob/master/README.md">README* *file</a> for pic-lcd-library-master.</td>
-</tr>
-<tr>
-<td>d.  In this <a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">tutorial on sprintf()</a>, determine what library(or libraries) you need to include</td>
-<td>You will need to format a string.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information and Concepts</strong></th>
+          <th style="text-align: left"><strong>Importance</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">a.  How dot-matrix LCDs work and are controlled.</td>
+          <td style="text-align: left">Needed to understand the hardware and software necessary to get the LCD communicating with your microcontroller. First, read section 12.10.2 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a> starting from the subsection on <em>&ldquo;Intelligent&rdquo; Dot-Matrix LCD Modules</em>. This section describes a module that is very similar to the one you will be using.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">b.  What the purpose of each pin on your LCD module is, and which pins should be connected to a microcontroller if the LCD is in 4-bit mode.</td>
+          <td style="text-align: left">Needed to understand the specific connections of the LCD module in your EGR 304 kit, which is a 16x2 character LCD (model number 1602A). Study the entire <a href="https://www.openhacks.com/uploadsproductos/eone-1602a1.pdf">1602A datasheet</a> to understand the hardware and software interfaces. Note that the controller chip on this LCD uses the same protocol as the common Hitachi HD44780-based LCDs. Also note that this datasheet (as well as those for most other similar LCDs) are not very good, with inconsistent and unclear information.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">c.  How the LCD code library works, and what API (application programming interface) functions it provides.</td>
+          <td style="text-align: left">Needed in order to program your LCD to display text. The functions are specific to this library, so you will need to study the .h and .c files as well as the <a href="https://github.com/ideras/pic-lcd-library/blob/master/README.md">README* *file</a> for pic-lcd-library-master.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">d.  In this <a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">tutorial on sprintf()</a>, determine what library(or libraries) you need to include</td>
+          <td style="text-align: left">You will need to format a string.</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="2">
 <li>Wire the LCD as follows:</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th style="text-align:left"><strong>LCD Pin</strong></th>
-<th style="text-align:left"><strong>PIC18F47Q10 Pin</strong></th>
-<th style="text-align:left"><strong>Comments</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">VSS</td>
-<td style="text-align:left">TBD</td>
-<td style="text-align:left">Follow the connection diagram on page 4 in the <a href="https://www.openhacks.com/uploadsproductos/eone-1602a1.pdf">1602A datasheet</a>. Use your 3.3V supply for power to your LCD.</td>
-</tr>
-<tr>
-<td style="text-align:left">VDD</td>
-<td style="text-align:left">TBD</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">V0</td>
-<td style="text-align:left">TBD</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">RS</td>
-<td style="text-align:left">Any unused pin in Port D except RD0-3</td>
-<td style="text-align:left">It is more organized if the control pins are on the same port as the data pins.</td>
-</tr>
-<tr>
-<td style="text-align:left">RW</td>
-<td style="text-align:left">Ground</td>
-<td style="text-align:left">You will configure the LCD driver library to control the LCD in 4-bit mode, and this pin is not used in 4-bit mode.</td>
-</tr>
-<tr>
-<td style="text-align:left">E</td>
-<td style="text-align:left">Any unused pin in Port D except RD0-3</td>
-<td style="text-align:left">It is more organized if the control pins are on the same port as the data pins.</td>
-</tr>
-<tr>
-<td style="text-align:left">D0</td>
-<td style="text-align:left">Ground</td>
-<td style="text-align:left">You will configure the LCD driver library to control the LCD in 4-bit mode, so these pins should not be connected (see section 12.10.2 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>).</td>
-</tr>
-<tr>
-<td style="text-align:left">D1</td>
-<td style="text-align:left">Ground</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">D2</td>
-<td style="text-align:left">Ground</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">D3</td>
-<td style="text-align:left">Ground</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">D4</td>
-<td style="text-align:left">RD0</td>
-<td style="text-align:left">The LCD driver library you will be using requires that the four pins start at the lowest nibble (4 bits) of a PIC port.</td>
-</tr>
-<tr>
-<td style="text-align:left">D5</td>
-<td style="text-align:left">RD1</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">D6</td>
-<td style="text-align:left">RD2</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">D7</td>
-<td style="text-align:left">RD3</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">A</td>
-<td style="text-align:left">3.3V through 75Ω resistor</td>
-<td style="text-align:left">This is the power pin for the backlight. Connect it to 3.3V through a 75Ω current-limiting resistor. Note that we are using a +3.3V power supply instead of +5V per the Absolute Maximum table in the datasheet.</td>
-</tr>
-<tr>
-<td style="text-align:left">K</td>
-<td style="text-align:left">Ground</td>
-<td style="text-align:left">This is the ground pin for the backlight.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>LCD Pin</strong></th>
+          <th style="text-align: left"><strong>PIC18F47Q10 Pin</strong></th>
+          <th style="text-align: left"><strong>Comments</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">VSS</td>
+          <td style="text-align: left">TBD</td>
+          <td style="text-align: left">Follow the connection diagram on page 4 in the <a href="https://www.openhacks.com/uploadsproductos/eone-1602a1.pdf">1602A datasheet</a>. Use your 3.3V supply for power to your LCD.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">VDD</td>
+          <td style="text-align: left">TBD</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">V0</td>
+          <td style="text-align: left">TBD</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">RS</td>
+          <td style="text-align: left">Any unused pin in Port D except RD0-3</td>
+          <td style="text-align: left">It is more organized if the control pins are on the same port as the data pins.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">RW</td>
+          <td style="text-align: left">Ground</td>
+          <td style="text-align: left">You will configure the LCD driver library to control the LCD in 4-bit mode, and this pin is not used in 4-bit mode.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">E</td>
+          <td style="text-align: left">Any unused pin in Port D except RD0-3</td>
+          <td style="text-align: left">It is more organized if the control pins are on the same port as the data pins.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D0</td>
+          <td style="text-align: left">Ground</td>
+          <td style="text-align: left">You will configure the LCD driver library to control the LCD in 4-bit mode, so these pins should not be connected (see section 12.10.2 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>).</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D1</td>
+          <td style="text-align: left">Ground</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D2</td>
+          <td style="text-align: left">Ground</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D3</td>
+          <td style="text-align: left">Ground</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D4</td>
+          <td style="text-align: left">RD0</td>
+          <td style="text-align: left">The LCD driver library you will be using requires that the four pins start at the lowest nibble (4 bits) of a PIC port.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D5</td>
+          <td style="text-align: left">RD1</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D6</td>
+          <td style="text-align: left">RD2</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">D7</td>
+          <td style="text-align: left">RD3</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">A</td>
+          <td style="text-align: left">3.3V through 75Ω resistor</td>
+          <td style="text-align: left">This is the power pin for the backlight. Connect it to 3.3V through a 75Ω current-limiting resistor. Note that we are using a +3.3V power supply instead of +5V per the Absolute Maximum table in the datasheet.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">K</td>
+          <td style="text-align: left">Ground</td>
+          <td style="text-align: left">This is the ground pin for the backlight.</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="3">
 <li>
@@ -654,18 +654,18 @@
 <li>Study the following critical information and concepts:</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th><strong>Critical Information and Concepts</strong></th>
-<th><strong>Importance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a.  How to convert a 16-bit unsigned integer into a character string</td>
-<td>Needed in order to print the duty cycle variable to the LCD screen as an integer. Study the functions in the <a href="https://www.tutorialspoint.com/c_standard_library/stdio_h.htm">stdio.h library</a> to find one that is appropriate for this purpose.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information and Concepts</strong></th>
+          <th style="text-align: left"><strong>Importance</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">a.  How to convert a 16-bit unsigned integer into a character string</td>
+          <td style="text-align: left">Needed in order to print the duty cycle variable to the LCD screen as an integer. Study the functions in the <a href="https://www.tutorialspoint.com/c_standard_library/stdio_h.htm">stdio.h library</a> to find one that is appropriate for this purpose.</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="2">
 <li>

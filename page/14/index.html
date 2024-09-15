@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -278,7 +278,7 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/schematic-checklist/">Schematic checklist</a></h4>
       
 
-      <p>Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic 1.</p>
+      <p>Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic 1. It is significantly more difficult to fix errors later (either during the PCB layout stage or after manufacturing) than to spend time double-checking the schematic first.</p>
       <ul class="list-inline">
         
       </ul>
@@ -296,7 +296,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/analog-io-eusart/">Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</a></h4>
       
 
-      <p>Introduction Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller.</p>
+      <p><h1 id="introduction">Introduction</h1>
+<p>Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller. The PIC&rsquo;s ADC subsystem is the peripheral used to read analog values and convert it into a digital number for use in your program. It can be configured in a variety of ways. In this assignment, you will create an ADC subsystem and program your microcontroller to transmit the result of reading an analog voltage measured at an input pin, using the ADC subsystem in one of its simplest configurations.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -330,7 +331,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/software-design/">Software design</a></h4>
       
 
-      <p>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite “states” that a system can be in, and that it can only be in one of those states at a time.</p>
+      <p><h2 id="what-is-a-finite-state-machine">What is a finite state machine?</h2>
+<p>A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &ldquo;states&rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -368,7 +370,33 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/soldering-and-desoldering-tips-and-tricks/">Soldering and Desoldering Tips and Tricks</a></h4>
       
 
-      <p>Video Walkthrough How do I turn on the soldering irons in PRLTA 103?</p>
+      <p><h2 id="video-walkthrough">Video Walkthrough</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4kwuq9Yoj5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="how-do-i-turn-on-the-soldering-irons-in-prlta-103">How do I turn on the soldering irons in PRLTA 103?</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2WVQa1My0s4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="how-do-i-solder-through-hole-components-by-hand">How do I solder through-hole components by hand?</h2>
+<ul>
+<li><a href="https://youtu.be/fYz5nIHH0iY">Soldering through-hole components</a> video from EEVblog</li>
+<li><a href="https://learn.sparkfun.com/tutorials/how-to-solder---through-hole-soldering">How to solder - through hole soldering</a> tutorial from sparkfun</li>
+</ul>
+<h2 id="how-do-i-solder-surface-mount-components-by-hand">How do I solder surface mount components by hand?</h2>
+<h4 id="capacitors-diodes-inductors-resistors">Capacitors, diodes, inductors, resistors</h4>
+<ul>
+<li><a href="https://youtu.be/PU7wLcuqc-I">How to solder SMT 0805 components</a> video from ItsInOurKernel</li>
+<li><a href="https://www.youtube.com/watch?v=3NN7UGWYmBY">Surface Mount Soldering 101</a> video from CuriousInventor</li>
+</ul>
+<h4 id="dpak-style-components-mosfets-voltage-regulators">DPAK-style components (MOSFETs, voltage regulators)</h4>
+<ul>
+<li><a href="https://youtu.be/b9FC9fAlfQE?t=30m49s">Soldering DPACK components</a> video from EEVblog</li>
+</ul>
+<h4 id="integrated-circuits-ics">Integrated circuits (ICs)</h4>
+<ul>
+<li><a href="https://youtu.be/b9FC9fAlfQE">Soldering large ICs</a> video from EEVblog</li>
+<li><a href="https://www.youtube.com/watch?v=3NN7UGWYmBY">Surface Mount Soldering 101</a> video from CuriousInventor</li>
+<li><a href="https://www.youtube.com/watch?v=lhOKSqipwqg">Soldering QFN and QFP package</a> video from Nick Leijenhorst</li>
+</ul>
+<h2 id="how-do-i-solder-surface-mount-components-using-a-reflow-oven">How do I solder surface mount components using a reflow oven?</h2>
+<p>This method involves applying solder paste to the pads on the PCB, manually placing your surface mount components into the solder paste, and baking the board in a special oven to solder the entire PCB at once. This method is not really easier than hand soldering for one-off PCBs; you are trading one set of challenges for a different set. If you are interested in using solder paste and the reflow oven to solder your components, please contact <a href="mailto:osama.jameel@asu.edu">Osama Jameel</a> in PRLTA 109.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -402,7 +430,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/sources-for-electrical-and-electromechanical-components/">Sources for Electrical and Electromechanical Components</a></h4>
       
 
-      <p>Professional Distributors These distributors are often used by professionals in industry, and provide the most complete selection of different parts.</p>
+      <p><h3 id="professional-distributors">Professional Distributors</h3>
+<p>These distributors are often used by professionals in industry, and provide the most complete selection of different parts.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -468,7 +497,65 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/sources-for-materials/">Sources for Materials</a></h4>
       
 
-      <p>Adhesives &amp; Tape Adhesives for Paper from ConservationWiki Electronic Grade Self-Leveling Silicone from American Sealants, Inc.</p>
+      <p><h3 id="adhesives--tape">Adhesives &amp; Tape</h3>
+<ul>
+<li><a href="http://www.conservation-wiki.com/wiki/Adhesives_for_Paper">Adhesives for Paper from ConservationWiki</a></li>
+<li><a href="http://www.americansealantsinc.com/asi-306-electronic-grade-silicone-sealant-adhesive/">Electronic Grade Self-Leveling Silicone from American Sealants, Inc.</a></li>
+<li><a href="http://www.profma.com/polyimide-copper.htm">Flex Copper Clad PI Sheets from HB Professional Material</a></li>
+<li><a href="https://truetape.com/">TrueTape, LLC</a></li>
+</ul>
+<h3 id="casting-materials">Casting Materials</h3>
+<ul>
+<li><a href="https://www.reynoldsam.com/">Reynolds Advanced Materials</a> - 1727 E. Weber Dr., Tempe, AZ. (480) 967-7727</li>
+<li><a href="http://www.quantumsilicones.com/">Quantum Silicones</a></li>
+<li><a href="https://www.smooth-on.com/">Smooth-On</a></li>
+</ul>
+<h3 id="composites">Composites</h3>
+<ul>
+<li><a href="http://www.acpsales.com/home.html">ACP Composites</a></li>
+</ul>
+<h3 id="fabric">Fabric</h3>
+<ul>
+<li><a href="https://www.seattlefabrics.com/"></a> <a href="https://www.seattlefabrics.com/">Seattle Fabrics</a></li>
+<li><a href="http://mesasalesandsupply.com/fabric/">Mesa Sales &amp; Supply</a> - 2233 E. Main St., Mesa, AZ. (480) 833-7025</li>
+<li><a href="https://www.yelp.com/biz/tempe-sales-company-tempe">Tempe Sales Company</a> - 412 W. Broadway Rd., Tempe, AZ. (480) 967-4811</li>
+<li><a href="https://www.sasfabrics.com/">SAS Fabrics</a> - 1700 E. Apache Blvd., Tempe, AZ. (480) 966-7557</li>
+<li><a href="https://www.sasfabrics.com/">SAS Fabrics</a> - 1111 E. Indian School Rd., Phoenix, AZ. (602) 279-2171</li>
+<li><a href="https://sasfabricssuperstore.com/">SAS Fabrics Superstore</a> - 9840 N. 19th Ave., Phoenix, AZ. (602) 943-7777</li>
+</ul>
+<h3 id="general-parts-supplies-and-materials">General Parts, Supplies, and Materials</h3>
+<ul>
+<li><a href="http://www.acehardware.com/">ACE Hardware</a> - 2758 S. Crimson Rd., Mesa, AZ 85209. (480) 419-0199</li>
+<li><a href="https://www.grainger.com/">Grainger</a> - 775 E. Baseline Rd., Gilbert, AZ 85233. (480) 308-7980</li>
+<li><a href="https://www.hobbylobby.com/">Hobby Lobby</a> - 4095 S. Gilbert Rd., Ste. 106, Gilbert, AZ 85297. (480) 855-5109</li>
+<li><a href="https://www.homedepot.com/">The Home Depot</a> - 7401 S. Power Rd., Queen Creek, AZ 85142. (480) 988-6810</li>
+<li><a href="https://www.lowes.com/">Lowe&rsquo;s</a> - 4730 S. Higley Rd., Gilbert, AZ 85297. (480) 840-6280</li>
+<li><a href="http://www.michaels.com/">Michael&rsquo;s</a> - 5020 S. Power Rd., Gilbert, AZ 85212. (480) 840-3211</li>
+</ul>
+<h3 id="leather">Leather</h3>
+<ul>
+<li><a href="http://www.tandyleather.com/">Tandy Leather</a> - 2245 W. University Dr. #6, Tempe, AZ. (480) 966-4151</li>
+</ul>
+<h3 id="metal">Metal</h3>
+<ul>
+<li><a href="http://www.az-metals.net/">AZ Metals</a> - 526 E. Juanita Ave. #1, Mesa, AZ. (480) 353-2950</li>
+<li><a href="https://www.industrialmetalsupply.com/">Industrial Metal Supply</a> - 5150 S. 48th St., Phoenix, AZ. (602) 454-1500 (*Ask for the ASU student discount)</li>
+</ul>
+<h3 id="plastic">Plastic</h3>
+<ul>
+<li><a href="http://www.portplastics.com/">Port Plastics</a> - 3191 N. Washington St., Ste. #7, Chandler, AZ. (480) 813-0849</li>
+<li><a href="https://www.professionalplastics.com/Phoenix_AZ">Professional Plastics</a> - 4449 S. 38th Pl., Phoenix, AZ. (800) 445-3303</li>
+<li><a href="https://www.curbellplastics.com/Discover-Curbell/Locations-Nationwide/Phoenix">Curbell Plastics</a> 405 North 75th Avenue, Bldg 1 Ste 100 Phoenix, AZ 85043 888-517-7176</li>
+</ul>
+<h3 id="telescoping-tubing">Telescoping Tubing</h3>
+<ul>
+<li><a href="http://alcobrametals.com/page/tubeandpipe">Telescoping Tube and Pipe from Alcobra Metals</a></li>
+</ul>
+<h3 id="wood">Wood</h3>
+<ul>
+<li><a href="http://www.timberww.com/">Timber Woodworking</a> - 935 E. Southern Ave., Mesa, AZ. (480) 926-2131</li>
+<li><a href="https://www.woodworkerssource.com/">Woodworker&rsquo;s Source</a> - 645 W. Elliot Rd., Tempe, AZ. (480) 355-5090</li>
+</ul></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -522,7 +609,38 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/sources-for-mechanical-components/">Sources for Mechanical Components</a></h4>
       
 
-      <p>General Berg Grainger (* ASU Preferred Supplier) McMaster-Carr Miki Pulley MSC Industrial (* ASU Preferred Supplier) Motor System Parts from Radical RC Stock Drive Products Bearings igus - plastic bushings, bearings, linear guides, and cable carriers.</p>
+      <p><h3 id="general">General</h3>
+<ul>
+<li><a href="https://www.wmberg.com/products">Berg</a></li>
+<li><a href="https://www.grainger.com/">Grainger</a> (* ASU Preferred Supplier)</li>
+<li><a href="http://www.mcmaster.com/">McMaster-Carr</a></li>
+<li><a href="http://www.mikipulley.co.jp/EN/">Miki Pulley</a></li>
+<li><a href="https://www.blogger.com/">MSC Industrial</a> (* ASU Preferred Supplier)</li>
+<li><a href="https://www.radicalrc.com/category/GWS-Motor-Sys-Parts-130">Motor System Parts from Radical RC</a></li>
+<li><a href="http://sdp-si.com/">Stock Drive Products</a></li>
+</ul>
+<h3 id="bearings">Bearings</h3>
+<ul>
+<li><a href="http://www.igus.com/">igus</a> - plastic bushings, bearings, linear guides, and cable carriers. <a href="http://www.igus.com/wpck/4856?C=US&amp;L=en">Samples</a>.</li>
+<li><a href="http://www.kaydonbearings.com/drawings/mtseries.php#">Kaydon Slewing Bearings</a></li>
+<li><a href="http://www.nskprecision.com/">NSK Motion and Control</a></li>
+<li><a href="https://www.vxb.com/Default.asp">VXB Ball Bearings</a></li>
+</ul>
+<h3 id="couplings">Couplings</h3>
+<ul>
+<li><a href="https://www.zero-max.com/abb-servoclass-double-flex">ZeroMax Flexible Shaft Couplings</a></li>
+</ul>
+<h3 id="gears">Gears</h3>
+<ul>
+<li><a href="http://www.didel.com/microkit/pricelist/">Didel</a></li>
+<li><a href="https://www.radicalrc.com/category/Pinions-the-small-gears-133">Pinion Gears from Radical RC</a></li>
+<li><a href="http://rushgears.com/">RushGears.com</a></li>
+</ul>
+<h3 id="springs">Springs</h3>
+<ul>
+<li><a href="https://www.smalley.com/">Smalley</a></li>
+<li><a href="https://www.thespringstore.com/small-coil-springs-for-sale.html">Small Coil Spring from TheSprinStore.com</a></li>
+</ul></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -576,8 +694,9 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/spi-shift-register-tutorial/">SPI &amp; Shift Register Tutorial</a></h4>
       
 
-      <p>Serial Communication - SPI &amp; Shift Register Tutorial
-Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</p>
+      <p><p><strong>Serial Communication - SPI &amp; Shift Register Tutorial</strong></p>
+<h1 id="objectives"><strong>Objectives</strong></h1>
+<p>Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -599,8 +718,11 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
       <h4 class="fw-bold mb-0"><a href="/spi-shift-register-timers/">SPI Communication with the SN74HC595 Shift Register using Timers</a></h4>
       
 
-      <p>Objectives To develop and demonstrate individual proficiency in:
-Using SPI communication to control LEDs connected to a shift register</p>
+      <p><h2 id="objectives">Objectives</h2>
+<p>To develop and demonstrate individual proficiency in:</p>
+<ol>
+<li>
+<p>Using SPI communication to control LEDs connected to a shift register</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -618,7 +740,8 @@ Using SPI communication to control LEDs connected to a shift register</p>
       <h4 class="fw-bold mb-0"><a href="/spi-shift-register-timers-ii/">SPI Communication with the SN74HC595 Shift Register using Timers (Part 2)</a></h4>
       
 
-      <p>Introduction This tutorial builds off of Part 1. Go Back and start there if you haven’t yet completed it.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>This tutorial builds off of <a href="/spi-shift-register-timers">Part 1</a>.  <a href="/spi-shift-register-timers">Go Back</a> and start there if you haven&rsquo;t yet completed it.</p></p>
       <ul class="list-inline">
         
       </ul>

@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</guid>
-      <description>Q: I have tried to connect the Cypress CySmart software to the USB dongle but it does not work.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; I have tried to connect the Cypress CySmart software to the USB dongle but it does not work. Help!&lt;/p&gt;</description>
     </item>
     <item>
       <title>PSoC 4 Hardware Development Kits</title>
       <link>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</guid>
-      <description>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</description>
+      <description>&lt;p&gt;There are several &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; hardware development kits available for use in designs. The list below describes strengths of each kit and provides links to documentation.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

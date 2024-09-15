@@ -12,7 +12,7 @@
       <link>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</guid>
-      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial&#xA;Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Serial Communication - SPI &amp;amp; Shift Register Tutorial&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

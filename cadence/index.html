@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -360,7 +360,16 @@
       <h4 class="fw-bold mb-0"><a href="/installing-cadence/">Installing Cadence</a></h4>
       
 
-      <p>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</p>
+      <p><h2 id="installation">Installation</h2>
+<h3 id="system-requirements">System Requirements</h3>
+<ul>
+<li><strong>PC:</strong> Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (<a href="https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf">Hardware and Software Requirements</a>). Note that Cadence does not support Windows 10 Starter nor Home Basic.</li>
+<li><strong>Mac:</strong> Windows 7, 8, 8.1, 10, 11 or greater running on <a href="https://www.apple.com/support/bootcamp/">Boot Camp</a> or <a href="http://www.parallels.com/">Parallels</a></li>
+</ul>
+<h3 id="before-installing">Before Installing</h3>
+<ol>
+<li>
+<p>Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&rsquo;s license server</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -394,7 +403,8 @@
       <h4 class="fw-bold mb-0"><a href="/forward-annotation/">Cadence Forward Annotation Tutorial</a></h4>
       
 
-      <p>Cadence Forward Annotation Tutorial After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic.</p>
+      <p><h1 id="cadence-forward-annotation-tutorial">Cadence Forward Annotation Tutorial</h1>
+<p>After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic. Fortunately, you do not need to start the PCB design over as a result! Forward annotation allows you to essentially export changes made in your schematic into an existing layout, and here is how to do this in Cadence.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -416,7 +426,8 @@
       <h4 class="fw-bold mb-0"><a href="/mounting-holes/">Cadence Mounting Hole/Post Tutorial</a></h4>
       
 
-      <p>Cadence Mounting Hole/Post Tutorial Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint.</p>
+      <p><h1 id="cadence-mounting-holepost-tutorial">Cadence Mounting Hole/Post Tutorial</h1>
+<p>Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint. Otherwise, without mounting holes for these pins to go into, the component will not fit onto the board. This tutorial will demonstrate how to add the mounting holes to the footprint for a <a href="https://www.ckswitches.com/media/2873/thb.pdf">THB001P</a> joystick.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -464,7 +475,8 @@
       <h4 class="fw-bold mb-0"><a href="/cadence-walkthrough-psoc-4-ble-module/">Cadence Walkthrough: PSoC 4 BLE Module</a></h4>
       
 
-      <p>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -494,7 +506,13 @@
       <h4 class="fw-bold mb-0"><a href="/adding-silkscreen/">How to Create a Silkscreen in Cadence and Manually Add Text to it</a></h4>
       
 
-      <p>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</p>
+      <p><h1 id="how-to-create-a-silkscreen-in-cadence-and-manually-add-text-to-it">How to Create a Silkscreen in Cadence and Manually Add Text to it</h1>
+<ol>
+<li>Create a (finalized) PCB layout. Note that the amount of additional work required for a good silkscreen layer will depend on how your PCB footprints were designed. This example will use the board shown below:</li>
+</ol>
+<p>
+<a href="image1.PNG"><img src="image1.PNG" alt=""  /></a>
+</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -520,7 +538,10 @@
       <h4 class="fw-bold mb-0"><a href="/merging-schematics/">Merging Multiple Schematics into a Single Schematic</a></h4>
       
 
-      <p>Merging Multiple Schematics into a Single Schematic Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</p>
+      <p><h1 id="merging-multiple-schematics-into-a-single-schematic">Merging Multiple Schematics into a Single Schematic</h1>
+<ol>
+<li>
+<p>Take note of all the files involved in the schematics you are merging, and ensure you have all of them. These include .dsn (design), .opj (project) and .olb (library) files, in addition to .psm (Package symbol, a.k.a. PCB footprint) files.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -542,7 +563,8 @@
       <h4 class="fw-bold mb-0"><a href="/packaging-cadence-files-for-submission/">Packaging Cadence Files for Submission</a></h4>
       
 
-      <p>Introduction This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

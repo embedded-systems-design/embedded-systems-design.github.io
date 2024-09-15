@@ -26,231 +26,231 @@
       <link>https://embedded-systems-design.github.io/all-about-escape-rooms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/all-about-escape-rooms/</guid>
-      <description>What is an escape room? An escape room is a real-life adventure game where you pay to be locked in a room filled with puzzles and given a limited time (usually 60 minutes) to solve the puzzles with your team in order to escape the room.</description>
+      <description>&lt;h2 id=&#34;what-is-an-escape-room&#34;&gt;What is an escape room?&lt;/h2&gt;&#xA;&lt;p&gt;An escape room is a real-life adventure game where you pay to be locked in a room filled with puzzles and given a limited time (usually 60 minutes) to solve the puzzles with your team in order to escape the room. There are also virtual video game escape rooms.&lt;/p&gt;</description>
     </item>
     <item>
       <title>All About Smart Homes</title>
       <link>https://embedded-systems-design.github.io/all-about-smart-homes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/all-about-smart-homes/</guid>
-      <description>What is a smart home? A smart home links together home comfort, entertainment, appliances, thermostats, lighting, and other electronic devices in a home together such that they can be controlled by voice, gesture, computer, or phone.</description>
+      <description>&lt;h2 id=&#34;what-is-a-smart-home&#34;&gt;What is a smart home?&lt;/h2&gt;&#xA;&lt;p&gt;A smart home links together home comfort, entertainment, appliances, thermostats, lighting, and other electronic devices in a home together such that they can be controlled by voice, gesture, computer, or phone. Apple, Amazon, and other companies are trying to bring myriad smart home products from different manufacturers together through the &lt;a href=&#34;http://www.amazon.com/echo&#34;&gt;Echo&lt;/a&gt; and &lt;a href=&#34;http://www.apple.com/ios/homekit/&#34;&gt;HomeKit&lt;/a&gt;, respectively.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence Manuals</title>
       <link>https://embedded-systems-design.github.io/cadence-manuals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
-      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials&#xA;OrCAD 17.2 Manuals:&#xA;OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
+      <description>&lt;h2 id=&#34;capture-cis-manuals&#34;&gt;Capture CIS Manuals&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://resources.pcb.cadence.com/orcad-tutorials&#34;&gt;https://resources.pcb.cadence.com/orcad-tutorials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;OrCAD 17.2 Manuals:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/m0u70be3zjvi2j7/capqrc.pdf?dl=0&#34;&gt;OrCAD 17.2 Capture Quick Reference&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/we2yl7u6r4v98lm/cap_ug.pdf?dl=0&#34;&gt;OrCAD 17.2 Capture User&amp;rsquo;s Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/t6r1l9jz4a4y1df/cap_ref.pdf?dl=0&#34;&gt;OrCAD 17.2 Capture Reference Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Calculating Current Limiting Resistor Value for LEDs</title>
       <link>https://embedded-systems-design.github.io/calculating-current-limiting-resistor-value-for-leds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/calculating-current-limiting-resistor-value-for-leds/</guid>
-      <description>When calculating the resistance value for your current limiting resistor there are a few variables to consider.</description>
+      <description>&lt;p&gt;When calculating the resistance value for your current limiting resistor there are a few variables to consider. First, what is the supply voltage that will be applied to the LED? Second, what is the forward voltage of the LED you chose? Third, what is the amount of current you want to flow through your LED? By answering these questions, you will be able to calculate the value for the resistor. To begin the process, you must know what supply voltage you will be giving the LED. Whether its 12V, 5V, or 3.3V this value is important to the calculation of the resistance. The next piece of information that is needed is the forward voltage for the particular LED that is being used. To find this information you must reference the datasheet for the part. The forward voltage can be found in the Electrical Characteristics section of the datasheet. Shown below is an image of the forward voltage for an Osram LED:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Choosing transistors for high-power digital switching</title>
       <link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
-      <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
+      <description>&lt;p&gt;Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device. In order to determine the amount of current a microcontroller can supply (or sink) with an output pin, open the data sheet and look for the section describing &amp;ldquo;Absolute Maximum Ratings&amp;rdquo;. There, there should be a specification described as the maximum current for a single GPIO pin (see example, Figure 1).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring the UART on PSoC</title>
       <link>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</guid>
-      <description>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</description>
+      <description>&lt;h2 id=&#34;what-is-a-uart-universal-asynchronous-receivertransmitter&#34;&gt;What is a UART (Universal Asynchronous Receiver/Transmitter)?&lt;/h2&gt;&#xA;&lt;p&gt;UART is one serial protocol used for communicating data between two digital devices (e.g., between the Pioneer Kit and the computer).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</guid>
-      <description>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)</description>
+      <description>&lt;p&gt;Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a Custom Padstack (old)</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-padstack-old/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-padstack-old/</guid>
-      <description>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;A &lt;a href=&#34;https://www.speedingedge.com/PDF-Files/anatomy%20of%20a%20plated%20hole.pdf&#34;&gt;padstack&lt;/a&gt; is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1). You may need to create a custom padstack when creating custom parts to ensure that the pad and hole are big enough to be reliable. This tutorial describes the manual creation of custom padstacks using the Pad Designer application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drawing Software</title>
       <link>https://embedded-systems-design.github.io/drawing-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/drawing-software/</guid>
-      <description>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</description>
+      <description>&lt;h2 id=&#34;what-is-drawing-software-used-for&#34;&gt;What is drawing software used for?&lt;/h2&gt;&#xA;&lt;p&gt;Drawing software is used to create diagrams for inclusion in presentations and reports.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grow Your Embedded Programming Skills After EGR 304/314</title>
       <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</guid>
-      <description>Personal Projects and Education&#xA;Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Personal Projects and Education&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://create.arduino.cc/projecthub&#34;&gt;Arduino Project Hub&lt;/a&gt; is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs. By now, most of you may have an Arduino kit from a previous class so the learning doesn&amp;rsquo;t have to stop after 304/314.&lt;/p&gt;</description>
     </item>
     <item>
       <title>House of Quality</title>
       <link>https://embedded-systems-design.github.io/house-of-quality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/house-of-quality/</guid>
-      <description>What is a House of Quality, and what is it used for?</description>
+      <description>&lt;h2 id=&#34;what-is-a-house-of-quality-and-what-is-it-used-for&#34;&gt;What is a House of Quality, and what is it used for?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/House_of_Quality&#34;&gt;House of Quality diagram&lt;/a&gt; is used to translate customer requirements, market research, patent benchmarking, and technical benchmarking into product capabilities that can be targeted in a new product design. It is an integral component of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Quality_function_deployment&#34;&gt;Quality Function Deployment (QFD)&lt;/a&gt; method for translating qualitative user needs into quantitative requirements.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to create a footprint for PSoC® 4100S Plus</title>
       <link>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</guid>
-      <description>This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.</description>
+      <description>&lt;p&gt;This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to export a PDF from Capture and PCB Editor</title>
       <link>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</guid>
-      <description>Introduction This tutorial goes through how to save CIS schematics and PCB layers as a PDF.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial goes through how to save CIS schematics and PCB layers as a PDF.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Make a Project Repository and Website</title>
       <link>https://embedded-systems-design.github.io/make-a-website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/make-a-website/</guid>
-      <description>Introduction The purpose of this post is to help you create a website to share your work.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this post is to help you create a website to share your work.  Sharing your work with the class and the broader community is important, as you should generate a persistent portfolio of class work to demonstrate your abilities when you apply for a job or academic career.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mechanical CAD Software</title>
       <link>https://embedded-systems-design.github.io/mechanical-cad-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mechanical-cad-software/</guid>
-      <description>What is CAD software used for? Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically.</description>
+      <description>&lt;h2 id=&#34;what-is-cad-software-used-for&#34;&gt;What is CAD software used for?&lt;/h2&gt;&#xA;&lt;p&gt;Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically. It is commonly used for electrical or mechanical designs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oscilloscopes 101</title>
       <link>https://embedded-systems-design.github.io/oscilloscopes-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/oscilloscopes-101/</guid>
-      <description>Part I Part II </description>
+      <description>&lt;h2 id=&#34;part-i&#34;&gt;Part I&lt;/h2&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/K-hj1wrPU2w&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h2 id=&#34;part-ii&#34;&gt;Part II&lt;/h2&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Km9HLRMjnYY&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Patents 101</title>
       <link>https://embedded-systems-design.github.io/patents-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/patents-101/</guid>
-      <description>What is a patent? &amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see General Information Concerning Patents from the USPTO).</description>
+      <description>&lt;h2 id=&#34;what-is-a-patent&#34;&gt;What is a patent?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see &lt;a href=&#34;http://www.uspto.gov/patents-getting-started/general-information-concerning-patents&#34;&gt;General Information Concerning Patents&lt;/a&gt; from the USPTO).&lt;/li&gt;&#xA;&lt;li&gt;Patents are the most common way of protecting intellectual property that is physically tangible (e.g., projects you might do in our engineering program).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-a-trademark&#34;&gt;What is a trademark?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;A trademark is a word, name, symbol, or device that is used in trade with goods to indicate the source of the goods and to distinguish them from the goods of others&amp;rdquo; (for more information, see &lt;a href=&#34;http://www.uspto.gov/patents-getting-started/general-information-concerning-patents#heading-2&#34;&gt;What is a Trademark or Servicemark?&lt;/a&gt; from the USPTO).&lt;/li&gt;&#xA;&lt;li&gt;Trademarks are typically used to protect a unique name for a product, but not the product itself. For example, Dr. Jordan&amp;rsquo;s engineering education research lab is called STEAM Labsâ„¢.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-a-copyright&#34;&gt;What is a copyright?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Copyright is a form of protection provided to the authors of &amp;lsquo;original works of authorship&amp;rsquo; including literary, dramatic, musical, artistic, and certain other intellectual works, both published and unpublished&amp;rdquo; (for more information, see &lt;a href=&#34;http://www.uspto.gov/patents-getting-started/general-information-concerning-patents#heading-2&#34;&gt;What is a Copyright?&lt;/a&gt; from the USPTO).&lt;/li&gt;&#xA;&lt;li&gt;As a student, you automatically own the copyright for any text that you write (e.g., your project reports). However, copyrights are typically not used to protect engineering designs.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-do-i-need-to-search-for-patents&#34;&gt;Why do I need to search for patents?&lt;/h2&gt;&#xA;&lt;p&gt;If you knowingly or unknowingly use intellectual property that is patented by someone else in your own commercial designs, you may become the target of lawsuits from the patent owner. Therefore, when designing new products it is best to search for the patents you may be infringing upon (either through the product as a whole or particular features, such as a touch display) so that you can either design around the patents or reach out to the patent owner to license the patent.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCB design checklist</title>
       <link>https://embedded-systems-design.github.io/pcb-design-checklist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-design-checklist/</guid>
-      <description>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors.</description>
+      <description>&lt;p&gt;Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors. Time invested verifying your design before manufacturing will make the assembly and testing process significantly easier.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Peralta 103 Resources</title>
       <link>https://embedded-systems-design.github.io/peralta-103-resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/peralta-103-resources/</guid>
-      <description>What equipment is available at each of the benches? Function Generator (5 MHz)</description>
+      <description>&lt;h2 id=&#34;what-equipment-is-available-at-each-of-the-benches&#34;&gt;What equipment is available at each of the benches?&lt;/h2&gt;&#xA;&lt;p&gt;Function Generator (5 MHz)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recreating a simple round padstack</title>
       <link>https://embedded-systems-design.github.io/recreating-a-simple-round-padstack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/recreating-a-simple-round-padstack/</guid>
-      <description>Recreating a simple round padstack This tutorial takes you through recreating a basic round thru-hole padstack.</description>
+      <description>&lt;h2 id=&#34;recreating-a-simple-round-padstack&#34;&gt;Recreating a simple round padstack&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial takes you through recreating a basic round thru-hole padstack.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Report Formatting Instructions</title>
       <link>https://embedded-systems-design.github.io/report-formatting-instructions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/report-formatting-instructions/</guid>
-      <description>Introduction Formatting is important. It makes documents more legible and helps direct the reader to more easily find the information they want, through consistency of styling and predictable flow.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Formatting is important.  It makes documents more legible and helps direct the reader to more easily find the information they want, through consistency of styling and predictable flow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software design</title>
       <link>https://embedded-systems-design.github.io/software-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/software-design/</guid>
-      <description>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time.</description>
+      <description>&lt;h2 id=&#34;what-is-a-finite-state-machine&#34;&gt;What is a finite state machine?&lt;/h2&gt;&#xA;&lt;p&gt;A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:&lt;/p&gt;</description>
     </item>
     <item>
       <title>SPI &amp; Shift Register Tutorial</title>
       <link>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</guid>
-      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial&#xA;Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Serial Communication - SPI &amp;amp; Shift Register Tutorial&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Strategies for using 0 Ohm Resistors</title>
       <link>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</guid>
-      <description>Why use 0 ohm Resistors in a design? 0 ohm resistors act as a through hole jumper wire on manufactured PCBs.</description>
+      <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-0-ohm-resistors-in-a-design&#34;&gt;Why use 0 ohm Resistors in a design?&lt;/h2&gt;&#xA;&lt;p&gt;0 ohm resistors act as a through hole jumper wire on manufactured PCBs. Also known as &amp;ldquo;jumper chips&amp;rsquo;&amp;rsquo; or&amp;quot;jumper leads&amp;rdquo;, 0 ohm resistors can be substituted for vias to cross over line traces. This is useful for PCBs that have many vias already and PCBs that want to avoid vias altogether. In the PCB industry, using 0 ohm resistors over jumper wires in the design process allows one less specialized tool when assembling the PCB. It is cheaper and more practical to install a jump lead using readily available resistor placing machines over having a separate machine for just placing jumper wires. &lt;/p&gt;</description>
     </item>
     <item>
       <title>The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions</title>
       <link>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</guid>
-      <description>Are Connections Continuous? Conduct a continuity check on your board with a multimeter.</description>
+      <description>&lt;h2 id=&#34;are-connections-continuous&#34;&gt;Are Connections Continuous?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;em&gt;Conduct a continuity check on your board with a multimeter.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Types of Logic Operators and How to Use Them</title>
       <link>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</guid>
-      <description>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</description>
+      <description>&lt;h2 id=&#34;what-are-logical-operators&#34;&gt;What are Logical Operators?&lt;/h2&gt;&#xA;&lt;p&gt;Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free. When you ask your friend about what sides they want, you may ask them one of the following 4 questions:&lt;/p&gt;</description>
     </item>
     <item>
       <title>UART PIC to Argon Tutorial</title>
       <link>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</guid>
-      <description>UART PIC to Argon Tutorial Objectives Getting familiar with UART on both PIC and Particle platforms.</description>
+      <description>&lt;h1 id=&#34;uart-pic-to-argon-tutorial&#34;&gt;UART PIC to Argon Tutorial&lt;/h1&gt;&#xA;&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;Getting familiar with UART on both PIC and Particle platforms. In this tutorial, you will set up the PIC as a black box that will respond to various inputs from the Argon. Utilizing the USB serial bus on the Argon, we can verify the project at the end.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Bitwise Operators in C</title>
       <link>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</guid>
-      <description>What are bitwise operators? Bitwise operators allow access to individual bits in a variable or register.</description>
+      <description>&lt;h2 id=&#34;what-are-bitwise-operators&#34;&gt;What are bitwise operators?&lt;/h2&gt;&#xA;&lt;p&gt;Bitwise operators allow access to individual bits in a variable or register. A typical register or variable is at least 1 byte (8 bits) in size.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using GitHub to Manage Project Files</title>
       <link>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</guid>
-      <description>GitHub is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same &amp;ldquo;repository&amp;rdquo; (or 304/314 project folder in layman&amp;rsquo;s terms).</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same &amp;ldquo;repository&amp;rdquo; (or 304/314 project folder in layman&amp;rsquo;s terms).&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is a Gantt Chart?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</guid>
-      <description>A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks.</description>
+      <description>&lt;p&gt;A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks. It is important to gain experience predicting how long tasks take in order to calibrate your time management.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is a printed circuit board?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</guid>
-      <description>A printed circuit board (PCB) is a board made of both conducive and non-conductive materials onto which components can be soldered to create a circuit.</description>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.madehow.com/Volume-2/Printed-Circuit-Board.html&#34;&gt;printed circuit board (PCB)&lt;/a&gt; is a board made of both conducive and non-conductive materials onto which components can be soldered to create a circuit. The circuit connections are made via copper traces on the board. An example PCB is shown in Figure 1.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Working with Libraries</title>
       <link>https://embedded-systems-design.github.io/working-with-libraries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/working-with-libraries/</guid>
-      <description>Working with Libraries - THIS IS A DUPLICATE TUTORIAL This tutorial details how to add and save a custom library.</description>
+      <description>&lt;h2 id=&#34;working-with-libraries---this-is-a-duplicate-tutorial&#34;&gt;Working with Libraries - THIS IS A DUPLICATE TUTORIAL&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial details how to add and save a custom library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zipping Project Folders</title>
       <link>https://embedded-systems-design.github.io/zipping-folders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/zipping-folders/</guid>
-      <description>Windows has a ZIP utility built in that you can use to create compressed archives.</description>
+      <description>&lt;p&gt;Windows has a ZIP utility built in that you can use to create compressed archives. Assuming you have a workspace with two projects inside (one for timed blinking, the other for the button push), right click on the entire workspace folder, find the &amp;quot;send to&amp;quot; item in the context menu and select compressed folder. That will save everything the grading team will need to check your homework&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

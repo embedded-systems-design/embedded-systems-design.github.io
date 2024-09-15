@@ -12,42 +12,42 @@
       <link>https://embedded-systems-design.github.io/cadence-schematic-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-schematic-tutorials/</guid>
-      <description>There are a number of tutorials available for creating schematics in Cadence.</description>
+      <description>&lt;p&gt;There are a number of tutorials available for creating schematics in Cadence. The best tutorials are in videos, as the manuals and online help are poor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing the Library Search Path in Cadence Design Entry CIS</title>
       <link>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-design-entry-cis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-design-entry-cis/</guid>
-      <description>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</description>
+      <description>&lt;h2 id=&#34;why-would-i-need-to-change-the-library-search-path&#34;&gt;Why would I need to change the library search path?&lt;/h2&gt;&#xA;&lt;p&gt;When creating a custom PCB footprint for a component, it is stored somewhere on your computer. In order for Design Entry CIS to find where a custom footprint is stored and associate it with a schematic component, the &lt;em&gt;library search path&lt;/em&gt; must be changed so that Design Entry CIS knows where to look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom library in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-library-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-library-in-cadence/</guid>
-      <description>In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them.</description>
+      <description>&lt;p&gt;In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them. It is good practice to create a custom library for each project that you work on to save your schematic symbols. To create a custom library, do the following:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom schematic symbol in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-schematic-symbol-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-schematic-symbol-in-cadence/</guid>
-      <description>Introduction In most designs, some components will not be available in built-in libraries.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In most designs, some components will not be available in built-in libraries. The purpose of this tutorial is to show how to make a custom schematic symbol that can be used in the design of schematics in Cadence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a new project in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</guid>
-      <description>Creating a new project in Cadence&#xA;In Windows, open the Design Entry CIS program.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Creating a new project in Cadence&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;In Windows, open the Design Entry CIS program. This program allows you to edit schematics, and will be used to export a netlist describing your schematic into the PCB Editor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Updating Library Parts in Cadence</title>
       <link>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</guid>
-      <description>Background Why do I need to update my parts? As you start to learn schematic and PCB design, you will have to learn to make your own symbols and footprints for your components.</description>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-do-i-need-to-update-my-parts&#34;&gt;Why do I need to update my parts?&lt;/h3&gt;&#xA;&lt;p&gt;As you start to learn schematic and PCB design, you will have to learn to make your own symbols and footprints for your components. Because of this, there is a chance that you accidentally mislabel or misread a data sheet and add a wrong pin/connection. Designs are also constantly being updated and revised.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

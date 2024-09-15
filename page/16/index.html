@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -278,7 +278,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/transferring-a-cadence-schematic-to-pcb-editor/">Transferring a Cadence schematic to PCB Editor</a></h4>
       
 
-      <p>Introduction In order to create a PCB, you must first prepare the schematic and check for errors, export a netlist of the schematic, import the netlist into PCB editor, and design the PCB.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>In order to create a PCB, you must first prepare the schematic and check for errors, export a <em>netlist</em> of the schematic, import the netlist into PCB editor, and design the PCB. A <em><a href="https://en.wikipedia.org/wiki/Netlist">netlist</a></em> is a file that describes interconnections among components in a circuit. This tutorial describes the process of transferring a schematic to PCB Editor. It is assumed that you have a completed schematic (see example, Figure 1) before trying to migrate to PCB Editor.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -304,7 +305,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/transistors/">Transistors</a></h4>
       
 
-      <p>What is a transistor? A transistor is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</p>
+      <p><h2 id="what-is-a-transistor">What is a transistor?</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Transistor">transistor</a> is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -338,7 +340,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/types-of-logic-operators-and-how-to-use-them/">Types of Logic Operators and How to Use Them</a></h4>
       
 
-      <p>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</p>
+      <p><h2 id="what-are-logical-operators">What are Logical Operators?</h2>
+<p>Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free. When you ask your friend about what sides they want, you may ask them one of the following 4 questions:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -364,7 +367,9 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/uart-pic-to-argon-tutorial/">UART PIC to Argon Tutorial</a></h4>
       
 
-      <p>UART PIC to Argon Tutorial Objectives Getting familiar with UART on both PIC and Particle platforms.</p>
+      <p><h1 id="uart-pic-to-argon-tutorial">UART PIC to Argon Tutorial</h1>
+<h2 id="objectives">Objectives</h2>
+<p>Getting familiar with UART on both PIC and Particle platforms. In this tutorial, you will set up the PIC as a black box that will respond to various inputs from the Argon. Utilizing the USB serial bus on the Argon, we can verify the project at the end.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -386,7 +391,9 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/updating-a-part-in-your-library/">Updating Library Parts in Cadence</a></h4>
       
 
-      <p>Background Why do I need to update my parts? As you start to learn schematic and PCB design, you will have to learn to make your own symbols and footprints for your components.</p>
+      <p><h2 id="background">Background</h2>
+<h3 id="why-do-i-need-to-update-my-parts">Why do I need to update my parts?</h3>
+<p>As you start to learn schematic and PCB design, you will have to learn to make your own symbols and footprints for your components. Because of this, there is a chance that you accidentally mislabel or misread a data sheet and add a wrong pin/connection. Designs are also constantly being updated and revised.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -404,7 +411,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/using-bitwise-operators-in-c/">Using Bitwise Operators in C</a></h4>
       
 
-      <p>What are bitwise operators? Bitwise operators allow access to individual bits in a variable or register.</p>
+      <p><h2 id="what-are-bitwise-operators">What are bitwise operators?</h2>
+<p>Bitwise operators allow access to individual bits in a variable or register. A typical register or variable is at least 1 byte (8 bits) in size.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -426,7 +434,7 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/using-github-to-manage-project-files/">Using GitHub to Manage Project Files</a></h4>
       
 
-      <p>GitHub is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same “repository” (or 304/314 project folder in layman’s terms).</p>
+      <p><a href="https://github.com/">GitHub</a> is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same &ldquo;repository&rdquo; (or 304/314 project folder in layman&rsquo;s terms).</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -484,8 +492,24 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/using-pymakr/">Using the Pymakr Extension in VSCode</a></h4>
       
 
-      <p>pymaker install pymakr preview
-code &ndash;install-extension Pycom.pymakr-preview Getting Started with Pymakr (from here) In File explorer(ctrl+shift+e) add or create a project folder for holding your micropython code (suggestion: name it “micropython”).</p>
+      <p><h2 id="pymaker">pymaker</h2>
+<ol>
+<li>
+<p>install pymakr preview</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>code --install-extension Pycom.pymakr-preview
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="getting-started-with-pymakr-from-herehttpsgithubcompycompymakr-vscblobheadget_startedmd">Getting Started with Pymakr (from <a href="https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md">here</a>)</h4>
+<ol>
+<li>In File explorer(<code>ctrl+shift+e</code>)
+<ol>
+<li>add or create a project folder for holding your micropython code (suggestion: name it &ldquo;micropython&rdquo;).  Consider creating one in your &ldquo;code&rdquo; git repository.</li>
+</ol>
+</li>
+<li>navigate to &ldquo;Pymakr: Projects&rdquo; tab in the workspace explorer window on the left
+<ol>
+<li>
+<p>select &ldquo;create project&rdquo;.  Select the same code folder as above and specify a project name (like &ldquo;hello-world&rdquo;).  Select the option to create a subdirectory with the micropython folder.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

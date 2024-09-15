@@ -12,42 +12,42 @@
       <link>https://embedded-systems-design.github.io/bypass-capacitor-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/bypass-capacitor-basics/</guid>
-      <description>A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC.</description>
+      <description>&lt;p&gt;A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC. Electrical noise can cause circuit malfunctions. Unless otherwise specified in the data sheet of an IC, a 0.1 µF non-polarized ceramic capacitor usually makes a good bypass capacitor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From where can I source parts?</title>
       <link>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</guid>
-      <description>Once you know the types of components that you need for your project, the next step is to find sources/vendors from which you can purchase the components (also known as sourcing parts).</description>
+      <description>&lt;p&gt;Once you know the types of components that you need for your project, the next step is to find sources/vendors from which you can purchase the components (also known as &lt;em&gt;sourcing parts&lt;/em&gt;). Follow the process below to source parts:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fuses 101</title>
       <link>https://embedded-systems-design.github.io/fuses-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/fuses-101/</guid>
-      <description>What are fuses and when do I need them? A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much current.</description>
+      <description>&lt;h2 id=&#34;what-are-fuses-and-when-do-i-need-them&#34;&gt;What are fuses and when do I need them?&lt;/h2&gt;&#xA;&lt;p&gt;A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much &lt;em&gt;current&lt;/em&gt;. **Fuses do not protect against voltages that are too high. **&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sources for Electrical and Electromechanical Components</title>
       <link>https://embedded-systems-design.github.io/sources-for-electrical-and-electromechanical-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/sources-for-electrical-and-electromechanical-components/</guid>
-      <description>Professional Distributors These distributors are often used by professionals in industry, and provide the most complete selection of different parts.</description>
+      <description>&lt;h3 id=&#34;professional-distributors&#34;&gt;Professional Distributors&lt;/h3&gt;&#xA;&lt;p&gt;These distributors are often used by professionals in industry, and provide the most complete selection of different parts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sources for Mechanical Components</title>
       <link>https://embedded-systems-design.github.io/sources-for-mechanical-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/sources-for-mechanical-components/</guid>
-      <description>General Berg Grainger (* ASU Preferred Supplier) McMaster-Carr Miki Pulley MSC Industrial (* ASU Preferred Supplier) Motor System Parts from Radical RC Stock Drive Products Bearings igus - plastic bushings, bearings, linear guides, and cable carriers.</description>
+      <description>&lt;h3 id=&#34;general&#34;&gt;General&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wmberg.com/products&#34;&gt;Berg&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.grainger.com/&#34;&gt;Grainger&lt;/a&gt; (* ASU Preferred Supplier)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.mcmaster.com/&#34;&gt;McMaster-Carr&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.mikipulley.co.jp/EN/&#34;&gt;Miki Pulley&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.blogger.com/&#34;&gt;MSC Industrial&lt;/a&gt; (* ASU Preferred Supplier)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.radicalrc.com/category/GWS-Motor-Sys-Parts-130&#34;&gt;Motor System Parts from Radical RC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://sdp-si.com/&#34;&gt;Stock Drive Products&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;bearings&#34;&gt;Bearings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.igus.com/&#34;&gt;igus&lt;/a&gt; - plastic bushings, bearings, linear guides, and cable carriers. &lt;a href=&#34;http://www.igus.com/wpck/4856?C=US&amp;amp;L=en&#34;&gt;Samples&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.kaydonbearings.com/drawings/mtseries.php#&#34;&gt;Kaydon Slewing Bearings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.nskprecision.com/&#34;&gt;NSK Motion and Control&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.vxb.com/Default.asp&#34;&gt;VXB Ball Bearings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;couplings&#34;&gt;Couplings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zero-max.com/abb-servoclass-double-flex&#34;&gt;ZeroMax Flexible Shaft Couplings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;gears&#34;&gt;Gears&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.didel.com/microkit/pricelist/&#34;&gt;Didel&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.radicalrc.com/category/Pinions-the-small-gears-133&#34;&gt;Pinion Gears from Radical RC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://rushgears.com/&#34;&gt;RushGears.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;springs&#34;&gt;Springs&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.smalley.com/&#34;&gt;Smalley&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.thespringstore.com/small-coil-springs-for-sale.html&#34;&gt;Small Coil Spring from TheSprinStore.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Strategies for using 0 Ohm Resistors</title>
       <link>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</guid>
-      <description>Why use 0 ohm Resistors in a design? 0 ohm resistors act as a through hole jumper wire on manufactured PCBs.</description>
+      <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-0-ohm-resistors-in-a-design&#34;&gt;Why use 0 ohm Resistors in a design?&lt;/h2&gt;&#xA;&lt;p&gt;0 ohm resistors act as a through hole jumper wire on manufactured PCBs. Also known as &amp;ldquo;jumper chips&amp;rsquo;&amp;rsquo; or&amp;quot;jumper leads&amp;rdquo;, 0 ohm resistors can be substituted for vias to cross over line traces. This is useful for PCBs that have many vias already and PCBs that want to avoid vias altogether. In the PCB industry, using 0 ohm resistors over jumper wires in the design process allows one less specialized tool when assembling the PCB. It is cheaper and more practical to install a jump lead using readily available resistor placing machines over having a separate machine for just placing jumper wires. &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -278,7 +278,8 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/i2c-with-8-bit-io-expander/">I2C Communication (PIC) with an 8-bit I/O Expander</a></h4>
       
 
-      <p>Objectives In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC.</p>
+      <p><h2 id="objectives">Objectives</h2>
+<p>In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC. This will be critical for your semester project as every team has at least two serial peripherals (e.g., wifi module, serial sensor). To prepare you for the next homework assignment and your semester project, you will create an array of LEDs that will increment by one each time a button is pressed. You will use an 8-bit I/O expander IC that is used in situations when you run out of I/O pins on a microcontroller and cannot swap the microcontroller for one with more I/O pins.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -296,7 +297,7 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/integrated-development-environments-for-psoc/">Integrated Development Environments for PSoC</a></h4>
       
 
-      <p>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</p>
+      <p>In order to program a <a href="http://www.cypress.com/">Cypress</a> <a href="http://www.cypress.com/products/programmable-system-chip-psoc">Programmable System on a Chip (PSoC®)</a>, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -330,8 +331,19 @@ Hello and welcome to the embedded systems design website.
       <h4 class="fw-bold mb-0"><a href="/interrupts/">Interrupts</a></h4>
       
 
-      <p>What is an interrupt? Consider the following knock-knock joke:
-Figure 1 Joker: “Knock, knock”</p>
+      <p><h2 id="what-is-an-interrupt">What is an interrupt?</h2>
+<p>Consider the following knock-knock joke:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="/larger/image0171.jpg"><img src="/larger/image0171.jpg" alt="Figure 1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Figure 1</div></td></tr>
+</tbody>
+</table>
+</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -357,7 +369,7 @@ Figure 1 Joker: “Knock, knock”</p>
       <h4 class="fw-bold mb-0"><a href="/interrupts-on-psoc/">Interrupts on PSoC</a></h4>
       
 
-      <p>An interrupt is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention.</p>
+      <p>An <a href="https://en.wikipedia.org/wiki/Interrupt">interrupt</a> is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention. Interrupts are useful to avoid constant monitoring of electronic peripherals (e.g., sensors).</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -387,7 +399,8 @@ Figure 1 Joker: “Knock, knock”</p>
       <h4 class="fw-bold mb-0"><a href="/ind-op-amps-sensors-and-adcs/">IR Emitter/Detector Pairs and Op-Amps</a></h4>
       
 
-      <p>Objectives Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor.</p>
+      <p><h1 id="objectives">Objectives</h1>
+<p>Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor. They are tuned to emit and detect the same wavelength of light. They can be useful for sending light-based digital messages, detecting objects, or measuring distances. Because they are in the infrared portion of the light spectrum, they are invisible and less likely to be corrupted by visible light sources. See Scherz &amp; Monk Section 5.7.1 for a complete explanation of how phototransistors work.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -405,7 +418,8 @@ Figure 1 Joker: “Knock, knock”</p>
       <h4 class="fw-bold mb-0"><a href="/keeping-a-schematic-tidy/">Keeping a Schematic Tidy</a></h4>
       
 
-      <p>Introduction When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1).</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1). This tutorial shows several techniques for keeping your schematic tidy.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -427,7 +441,18 @@ Figure 1 Joker: “Knock, knock”</p>
       <h4 class="fw-bold mb-0"><a href="/kicad-pcb-faq/">KiCad PCB FAQ</a></h4>
       
 
-      <p>Why the width of the power traces needs to be larger than the signal traces?</p>
+      <p><ol>
+<li>Why the width of the power traces needs to be larger than the signal traces?</li>
+</ol>
+<ul>
+<li>Because the power traces will need to carry much more current than the signal traces. If not, they may be heat up and potentially melt, which leads to create an open circuit or cause a fire. Usually, we will use 40 mils for the width of power traces and 20 mils for the width of signal traces.</li>
+</ul>
+<ol start="2">
+<li>Why the traces should be wired on a 45-degree angle, not directly on a 90-degree angle path?</li>
+</ol>
+<ul>
+<li>
+<p>Because 90-degree wiring can cause problems at high-frequency situations because these points can act as miniature antennas and radiate signals.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -445,8 +470,9 @@ Figure 1 Joker: “Knock, knock”</p>
       <h4 class="fw-bold mb-0"><a href="/pic-lcd-button/">LCDs and Buttons</a></h4>
       
 
-      <p>Individual Assignment
-Objectives To develop and demonstrate individual proficiency in:</p>
+      <p><p><em><strong>Individual Assignment</strong></em></p>
+<h2 id="objectives">Objectives</h2>
+<p>To develop and demonstrate individual proficiency in:</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -464,7 +490,8 @@ Objectives To develop and demonstrate individual proficiency in:</p>
       <h4 class="fw-bold mb-0"><a href="/level-shifters/">Level shifters</a></h4>
       
 
-      <p>Introduction: What is a level shifter? A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</p>
+      <p><h2 id="introduction-what-is-a-level-shifter">Introduction: What is a level shifter?</h2>
+<p>A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -490,7 +517,8 @@ Objectives To develop and demonstrate individual proficiency in:</p>
       <h4 class="fw-bold mb-0"><a href="/make-a-website/">Make a Project Repository and Website</a></h4>
       
 
-      <p>Introduction The purpose of this post is to help you create a website to share your work.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>The purpose of this post is to help you create a website to share your work.  Sharing your work with the class and the broader community is important, as you should generate a persistent portfolio of class work to demonstrate your abilities when you apply for a job or academic career.</p></p>
       <ul class="list-inline">
         
       </ul>

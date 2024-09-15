@@ -12,42 +12,42 @@
       <link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid>
-      <description>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring the UART on PSoC</title>
       <link>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</guid>
-      <description>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</description>
+      <description>&lt;h2 id=&#34;what-is-a-uart-universal-asynchronous-receivertransmitter&#34;&gt;What is a UART (Universal Asynchronous Receiver/Transmitter)?&lt;/h2&gt;&#xA;&lt;p&gt;UART is one serial protocol used for communicating data between two digital devices (e.g., between the Pioneer Kit and the computer).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
-      <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
+      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts on PSoC</title>
       <link>https://embedded-systems-design.github.io/interrupts-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts-on-psoc/</guid>
-      <description>An interrupt is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention.</description>
+      <description>&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Interrupt&#34;&gt;interrupt&lt;/a&gt; is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention. Interrupts are useful to avoid constant monitoring of electronic peripherals (e.g., sensors).&lt;/p&gt;</description>
     </item>
     <item>
       <title>PSoC 4 Hardware Development Kits</title>
       <link>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</guid>
-      <description>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</description>
+      <description>&lt;p&gt;There are several &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; hardware development kits available for use in designs. The list below describes strengths of each kit and provides links to documentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is PSoC?</title>
       <link>https://embedded-systems-design.github.io/what-is-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-psoc/</guid>
-      <description>The Cypress Programmable System on a Chip (PSoC®) is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing.</description>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing. The following is a list of helpful resources for getting started with the PSoC®:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

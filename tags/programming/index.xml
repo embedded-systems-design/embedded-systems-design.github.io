@@ -19,56 +19,56 @@
       <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</guid>
-      <description>Personal Projects and Education&#xA;Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Personal Projects and Education&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://create.arduino.cc/projecthub&#34;&gt;Arduino Project Hub&lt;/a&gt; is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs. By now, most of you may have an Arduino kit from a previous class so the learning doesn&amp;rsquo;t have to stop after 304/314.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
-      <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
+      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microchip AVR Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</guid>
-      <description>What microcontrollers does Atmel specialize in? Atmel was one of the top IC manufacturers that makes a number of 8-bit, 32-bit, and ARM microcontrollers, including the AVR microcontroller used in the Arduino.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-atmel-specialize-in&#34;&gt;What microcontrollers does Atmel specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;Atmel was one of the top IC manufacturers that makes a number of 8-bit, 32-bit, and ARM microcontrollers, including the AVR microcontroller used in the Arduino. Microchip purchased Atmel in 2017 and is maintaining the AVR line of microcontrollers. The following is a list of helpful resources for getting started with Microchip AVR microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microchip PIC Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
-      <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-microchip-specialize-in&#34;&gt;What microcontrollers does Microchip specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.microchip.com/pagehandler/en-us/products/picmicrocontrollers&#34;&gt;Microchip&lt;/a&gt; specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python Basics</title>
       <link>https://embedded-systems-design.github.io/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/python/</guid>
-      <description>Python Basics Data Types Really Basic int, float, bool, complex</description>
+      <description>&lt;h1 id=&#34;python-basics&#34;&gt;Python Basics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;data-types&#34;&gt;Data Types&lt;/h2&gt;&#xA;&lt;h3 id=&#34;really-basic&#34;&gt;Really Basic&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;int&lt;/code&gt;, &lt;code&gt;float&lt;/code&gt;, &lt;code&gt;bool&lt;/code&gt;, &lt;code&gt;complex&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software design</title>
       <link>https://embedded-systems-design.github.io/software-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/software-design/</guid>
-      <description>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time.</description>
+      <description>&lt;h2 id=&#34;what-is-a-finite-state-machine&#34;&gt;What is a finite state machine?&lt;/h2&gt;&#xA;&lt;p&gt;A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Types of Logic Operators and How to Use Them</title>
       <link>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</guid>
-      <description>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</description>
+      <description>&lt;h2 id=&#34;what-are-logical-operators&#34;&gt;What are Logical Operators?&lt;/h2&gt;&#xA;&lt;p&gt;Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free. When you ask your friend about what sides they want, you may ask them one of the following 4 questions:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Bitwise Operators in C</title>
       <link>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</guid>
-      <description>What are bitwise operators? Bitwise operators allow access to individual bits in a variable or register.</description>
+      <description>&lt;h2 id=&#34;what-are-bitwise-operators&#34;&gt;What are bitwise operators?&lt;/h2&gt;&#xA;&lt;p&gt;Bitwise operators allow access to individual bits in a variable or register. A typical register or variable is at least 1 byte (8 bits) in size.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

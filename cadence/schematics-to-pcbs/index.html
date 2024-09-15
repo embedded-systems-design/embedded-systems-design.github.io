@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -276,7 +276,8 @@
       <h4 class="fw-bold mb-0"><a href="/pushing-pcb-changes-back-to-a-schematic-in-cadence/">Pushing PCB changes back to a schematic in Cadence</a></h4>
       
 
-      <p>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</p>
+      <p><h2 id="why-would-i-need-to-back-annotate-a-design">Why would I need to <em>back annotate</em> a design?</h2>
+<p>If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must <em>back annotate</em> (meaning, push changes) from the PCB design back into your original schematic. By doing this update, future changes to the schematic can be forward annotated (meaning, pushed forward) to your PCB design without having to start over from scratch.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -302,7 +303,8 @@
       <h4 class="fw-bold mb-0"><a href="/transferring-a-cadence-schematic-to-pcb-editor/">Transferring a Cadence schematic to PCB Editor</a></h4>
       
 
-      <p>Introduction In order to create a PCB, you must first prepare the schematic and check for errors, export a netlist of the schematic, import the netlist into PCB editor, and design the PCB.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>In order to create a PCB, you must first prepare the schematic and check for errors, export a <em>netlist</em> of the schematic, import the netlist into PCB editor, and design the PCB. A <em><a href="https://en.wikipedia.org/wiki/Netlist">netlist</a></em> is a file that describes interconnections among components in a circuit. This tutorial describes the process of transferring a schematic to PCB Editor. It is assumed that you have a completed schematic (see example, Figure 1) before trying to migrate to PCB Editor.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

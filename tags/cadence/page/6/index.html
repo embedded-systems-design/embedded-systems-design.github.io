@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -243,7 +243,8 @@
       <h4 class="fw-bold mb-0"><a href="/pushing-pcb-changes-back-to-a-schematic-in-cadence/">Pushing PCB changes back to a schematic in Cadence</a></h4>
       
 
-      <p>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</p>
+      <p><h2 id="why-would-i-need-to-back-annotate-a-design">Why would I need to <em>back annotate</em> a design?</h2>
+<p>If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must <em>back annotate</em> (meaning, push changes) from the PCB design back into your original schematic. By doing this update, future changes to the schematic can be forward annotated (meaning, pushed forward) to your PCB design without having to start over from scratch.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -269,7 +270,8 @@
       <h4 class="fw-bold mb-0"><a href="/recreating-a-simple-round-padstack/">Recreating a simple round padstack</a></h4>
       
 
-      <p>Recreating a simple round padstack This tutorial takes you through recreating a basic round thru-hole padstack.</p>
+      <p><h2 id="recreating-a-simple-round-padstack">Recreating a simple round padstack</h2>
+<p>This tutorial takes you through recreating a basic round thru-hole padstack.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -295,7 +297,8 @@
       <h4 class="fw-bold mb-0"><a href="/resetting-reference-designators-in-cadence-design-entry-cis/">Resetting Reference Designators in Cadence Design Entry CIS</a></h4>
       
 
-      <p>Introduction When drawing a circuit, you will often move and delete components as part of the process, meaning that the reference designators (e.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>When drawing a circuit, you will often move and delete components as part of the process, meaning that the reference designators (e.g., R1, C1, U1) may be out of order or scattered throughout your design. This tutorial walks through how to reset the reference designators so they are sequential.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -317,7 +320,9 @@
       <h4 class="fw-bold mb-0"><a href="/running-a-design-for-manufacturing-check-in-dfm-now/">Running a Design for Manufacturing Check in DFM Now</a></h4>
       
 
-      <p>This process has been replaced with a superior web-based Peralta Studios DFM Checker.</p>
+      <p><h2 id="this-process-has-been-replaced-with-a-superior-web-based-peralta-studios-dfm-checkerhttpsperaltastudiosengineeringasueduwp-contentuploads202108dfmcheckerhtml">This process has been replaced with a superior web-based <a href="https://peraltastudios.engineering.asu.edu/wp-content/uploads/2021/08/dfmchecker.html">Peralta Studios DFM Checker</a>.</h2>
+<h2 id="introduction">Introduction</h2>
+<p>Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment. This tutorial walks through how to use the program <a href="https://www.numericalinnovations.com/pages/dfm-now-free-gerber-viewer">DFM Now</a> to verify that a design is able to be manufactured by the <a href="https://www.lpkfusa.com/datasheets/prototyping/s63.pdf">LPKF ProtoMat S63</a> in PRLTA 109.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -347,7 +352,8 @@
       <h4 class="fw-bold mb-0"><a href="/running-design-rules-check-in-cadence-pcb-editor/">Running Design Rules Check in Cadence PCB Editor</a></h4>
       
 
-      <p>What is a Design Rules Check? Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s).</p>
+      <p><h2 id="what-is-a-design-rules-check">What is a Design Rules Check?</h2>
+<p>Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s). A design that passes a DRC is not necessarily error-free, but rather has passed the limited set of tests that DRC conducts. You can (and should) run a DRC in both Design Entry CIS and PCB Editor, and they will look for different types of errors.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -373,7 +379,8 @@
       <h4 class="fw-bold mb-0"><a href="/transferring-a-cadence-schematic-to-pcb-editor/">Transferring a Cadence schematic to PCB Editor</a></h4>
       
 
-      <p>Introduction In order to create a PCB, you must first prepare the schematic and check for errors, export a netlist of the schematic, import the netlist into PCB editor, and design the PCB.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>In order to create a PCB, you must first prepare the schematic and check for errors, export a <em>netlist</em> of the schematic, import the netlist into PCB editor, and design the PCB. A <em><a href="https://en.wikipedia.org/wiki/Netlist">netlist</a></em> is a file that describes interconnections among components in a circuit. This tutorial describes the process of transferring a schematic to PCB Editor. It is assumed that you have a completed schematic (see example, Figure 1) before trying to migrate to PCB Editor.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -399,7 +406,7 @@
       <h4 class="fw-bold mb-0"><a href="/using-vcc-and-gnd-symbols/">Using VCC and GND Symbols</a></h4>
       
 
-      <p>You can use VCC (power) and GND (ground) symbols to connect power and ground instead of manually routing wires across your schematic.</p>
+      <p>You can use VCC (power) and GND (ground) symbols to connect power and ground instead of manually routing wires across your schematic. This is a common technique used by professional engineers to improve the readability of schematics.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -421,7 +428,7 @@
       <h4 class="fw-bold mb-0"><a href="/what-is-cadence/">What is Cadence?</a></h4>
       
 
-      <p>Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards.</p>
+      <p>Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards. The following video by Casey Petersen describes the basics of Cadence:</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -318,73 +318,73 @@
 </ul>
 <h2 id="parts-needed">Parts Needed</h2>
 <table>
-<thead>
-<tr>
-<th><strong>Item</strong></th>
-<th><strong>Quantity</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Breadboard</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> -or-</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://www.microchip.com/wwwproducts/en/PIC18F47Q10">PIC18F47Q10</a> DIP IC</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://www.ti.com/store/ti/en/p/product/?p=SN74HC595N">8-bit serial-in, parallel-out shift register</a></td>
-<td>1</td>
-</tr>
-<tr>
-<td>LEDs</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Current-limiting resistors for LEDs</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Jumper wires</td>
-<td>Many</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Item</strong></th>
+          <th style="text-align: left"><strong>Quantity</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Breadboard</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> -or-</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://www.microchip.com/wwwproducts/en/PIC18F47Q10">PIC18F47Q10</a> DIP IC</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://www.ti.com/store/ti/en/p/product/?p=SN74HC595N">8-bit serial-in, parallel-out shift register</a></td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">LEDs</td>
+          <td style="text-align: left">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Current-limiting resistors for LEDs</td>
+          <td style="text-align: left">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jumper wires</td>
+          <td style="text-align: left">Many</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="background">Background</h2>
 <table>
-<thead>
-<tr>
-<th><strong>Critical Information and Concepts</strong></th>
-<th><strong>Importance and Source</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a.  What a shift register is, why you would want to use one, and how it works</td>
-<td>Needed to conceptually understand this assignment and figure out which connections to make. Can be found in Scherz &amp; Monk Section 12.8, and also in <a href="https://www.youtube.com/watch?v=ameNT2MKDyE">The Shift Register: Explained video</a>.</td>
-</tr>
-<tr>
-<td>b.  How to wire a SN74HC595N serial in, parallel out shift register</td>
-<td>Needed to create serially-addressable LEDs. See the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for wiring information</td>
-</tr>
-<tr>
-<td>c.  How the SN74HC595N works</td>
-<td>See Section 9.1 and Table 1 of the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for information on how the shift register clock and storage register clock work.</td>
-</tr>
-<tr>
-<td>d.  How the SPI peripheral works in the PIC18F47Q10</td>
-<td>Needed to understand how to wire and write SPI code for the PIC. Can be found in Section 27.2 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
-</tr>
-<tr>
-<td>e.  Which pins on the PIC18F47Q10 can be used for SPI</td>
-<td>Needed to understand how to wire a SPI device to the PIC. The default locations for SPI communication can be found in Table 4 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information and Concepts</strong></th>
+          <th style="text-align: left"><strong>Importance and Source</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">a.  What a shift register is, why you would want to use one, and how it works</td>
+          <td style="text-align: left">Needed to conceptually understand this assignment and figure out which connections to make. Can be found in Scherz &amp; Monk Section 12.8, and also in <a href="https://www.youtube.com/watch?v=ameNT2MKDyE">The Shift Register: Explained video</a>.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">b.  How to wire a SN74HC595N serial in, parallel out shift register</td>
+          <td style="text-align: left">Needed to create serially-addressable LEDs. See the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for wiring information</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">c.  How the SN74HC595N works</td>
+          <td style="text-align: left">See Section 9.1 and Table 1 of the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for information on how the shift register clock and storage register clock work.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">d.  How the SPI peripheral works in the PIC18F47Q10</td>
+          <td style="text-align: left">Needed to understand how to wire and write SPI code for the PIC. Can be found in Section 27.2 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">e.  Which pins on the PIC18F47Q10 can be used for SPI</td>
+          <td style="text-align: left">Needed to understand how to wire a SPI device to the PIC. The default locations for SPI communication can be found in Table 4 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="steps">Steps</h2>
 <blockquote>

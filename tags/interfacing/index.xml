@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/all-about-serial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/all-about-serial/</guid>
-      <description>What are serial protocols? I2C, SPI, and UART are three of the most common protocols for serial data transmission.</description>
+      <description>&lt;h2 id=&#34;what-are-serial-protocols&#34;&gt;What are serial protocols?&lt;/h2&gt;&#xA;&lt;p&gt;I2C, SPI, and UART are three of the most common protocols for serial data transmission. An overview of these protocols can be found here:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Choosing transistors for high-power digital switching</title>
       <link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
-      <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
+      <description>&lt;p&gt;Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device. In order to determine the amount of current a microcontroller can supply (or sink) with an output pin, open the data sheet and look for the section describing &amp;ldquo;Absolute Maximum Ratings&amp;rdquo;. There, there should be a specification described as the maximum current for a single GPIO pin (see example, Figure 1).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

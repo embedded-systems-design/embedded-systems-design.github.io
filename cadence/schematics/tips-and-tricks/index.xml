@@ -12,21 +12,21 @@
       <link>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</guid>
-      <description>Introduction When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1).</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1). This tutorial shows several techniques for keeping your schematic tidy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resetting Reference Designators in Cadence Design Entry CIS</title>
       <link>https://embedded-systems-design.github.io/resetting-reference-designators-in-cadence-design-entry-cis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/resetting-reference-designators-in-cadence-design-entry-cis/</guid>
-      <description>Introduction When drawing a circuit, you will often move and delete components as part of the process, meaning that the reference designators (e.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When drawing a circuit, you will often move and delete components as part of the process, meaning that the reference designators (e.g., R1, C1, U1) may be out of order or scattered throughout your design. This tutorial walks through how to reset the reference designators so they are sequential.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using VCC and GND Symbols</title>
       <link>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</guid>
-      <description>You can use VCC (power) and GND (ground) symbols to connect power and ground instead of manually routing wires across your schematic.</description>
+      <description>&lt;p&gt;You can use VCC (power) and GND (ground) symbols to connect power and ground instead of manually routing wires across your schematic. This is a common technique used by professional engineers to improve the readability of schematics.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

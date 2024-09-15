@@ -27,84 +27,84 @@
       <link>https://embedded-systems-design.github.io/getting-started-with-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/getting-started-with-cadence/</guid>
-      <description>Introduction A number of basic Cadence tutorial videos are available on YouTube.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A number of &lt;a href=&#34;https://www.youtube.com/watch?v=QyfyskwCqGA&amp;amp;list=PLL5qFpazhNPkiMll-tzyYYOK3y9xvoLk6&#34;&gt;basic Cadence tutorial videos&lt;/a&gt; are available on YouTube.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing Cadence</title>
       <link>https://embedded-systems-design.github.io/installing-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
-      <description>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</description>
+      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;PC:&lt;/strong&gt; Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (&lt;a href=&#34;https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf&#34;&gt;Hardware and Software Requirements&lt;/a&gt;). Note that Cadence does not support Windows 10 Starter nor Home Basic.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Windows 7, 8, 8.1, 10, 11 or greater running on &lt;a href=&#34;https://www.apple.com/support/bootcamp/&#34;&gt;Boot Camp&lt;/a&gt; or &lt;a href=&#34;http://www.parallels.com/&#34;&gt;Parallels&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;before-installing&#34;&gt;Before Installing&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&amp;rsquo;s license server&lt;/p&gt;</description>
     </item>
     <item>
       <title>KiCad Installation and Initial Setup</title>
       <link>https://embedded-systems-design.github.io/kicad-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-installation-and-setup/</guid>
-      <description>Resources KiCad.org KiCad Documentation Installation Full instructions can be found on the Software page.</description>
+      <description>&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.kicad.org/&#34;&gt;KiCad.org&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.kicad.org/&#34;&gt;KiCad Documentation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Full instructions can be found on the &lt;a href=&#34;https://embedded-systems-design.github.io/egr304-software-stack/&#34;&gt;Software&lt;/a&gt; page.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Overview of the ESP32 DevKit DOIT V1</title>
       <link>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</guid>
-      <description>Overview See this excellent overview of the ESP32&#xA;RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Devkit vs ESP32 module Pinouts / Schematics from https://randomnerdtutorials.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;See this excellent &lt;a href=&#34;https://circuits4you.com/2018/12/31/esp32-devkit-esp32-wroom-gpio-pinout/&#34;&gt;overview&lt;/a&gt; of the ESP32&lt;/p&gt;&#xA;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;&#xA;RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;dev-board.png&#34;&gt;&lt;img src=&#34;dev-board.png&#34; alt=&#34;Devkit vs ESP32 module&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;Devkit vs ESP32 module&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Symbol Creation</title>
       <link>https://embedded-systems-design.github.io/kicad-symbol-creation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-symbol-creation/</guid>
-      <description>Introduction Resources LM3178 (On Digikey | datasheet) KiCad.org KiCad Documentation Common Pin Types and their Meanings Steps Open up KiCad (start &amp;ndash;&amp;gt; KiCad) and select the Symbol Editor</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;LM3178 (&lt;a href=&#34;https://www.digikey.com/en/products/detail/stmicroelectronics/LM317BT/5308099&#34;&gt;On Digikey&lt;/a&gt; | &lt;a href=&#34;https://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf&#34;&gt;datasheet&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.kicad.org/&#34;&gt;KiCad.org&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.kicad.org/&#34;&gt;KiCad Documentation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://embedded-systems-design.github.io/kicad-common-pin-types&#34;&gt;Common Pin Types and their Meanings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open up KiCad (start &amp;ndash;&amp;gt; KiCad) and select the Symbol Editor&lt;/p&gt;</description>
     </item>
     <item>
       <title>Assigning Footprints</title>
       <link>https://embedded-systems-design.github.io/assign-kicad-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/assign-kicad-footprints/</guid>
-      <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic&lt;/p&gt;</description>
     </item>
     <item>
       <title>Electrical Rules Check (ERC)</title>
       <link>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</guid>
-      <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the last tutorial you created a schematic.  But is it any good?  The electrical rules check, or ERC, is a useful way to debug your circuit.  This example tutorial takes you through the process of finding and eliminating circuit design errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ESP32 Installation and Setup</title>
       <link>https://embedded-systems-design.github.io/esp32-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/esp32-installation-and-setup/</guid>
-      <description>Install Miniconda and packages You need to use Python on your PC to program the ESP32.</description>
+      <description>&lt;h2 id=&#34;install-miniconda-and-packages&#34;&gt;Install Miniconda and packages&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda installed.  For more instructions, see &lt;a href=&#34;https://embedded-systems-design.github.io/installing-anaconda-python/&#34;&gt;here&lt;/a&gt; for detailed instructions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Schematic Capture</title>
       <link>https://embedded-systems-design.github.io/kicad-schematic-capture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-schematic-capture/</guid>
-      <description>Introduction Resources LM3178 (On Digikey | datasheet) Symbol Creation Tutorial KiCad.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;LM3178 (&lt;a href=&#34;https://www.digikey.com/en/products/detail/stmicroelectronics/LM317BT/5308099&#34;&gt;On Digikey&lt;/a&gt; | &lt;a href=&#34;https://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf&#34;&gt;datasheet&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;Symbol Creation Tutorial&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.kicad.org/&#34;&gt;KiCad.org&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.kicad.org/&#34;&gt;KiCad Documentation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open KiCad&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generating a Netlist</title>
       <link>https://embedded-systems-design.github.io/kicad-generating-netlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-generating-netlists/</guid>
-      <description>Introduction A Netlist is essentially a file containing information regarding connections between the components on a schematic.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A Netlist is essentially a file containing information regarding connections between the components on a schematic. Information regarding the components such as their reference designators and pin numbers are also included in this file. This file provides a map of all the parts on a schematic and their wired connections, which is than used to lay out a PCB.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Common Pin Types and their Meanings</title>
       <link>https://embedded-systems-design.github.io/kicad-common-pin-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-common-pin-types/</guid>
-      <description>Modified from here&#xA;Pin Type Description Input A pin which is exclusively an input.</description>
+      <description>&lt;p&gt;Modified from &lt;a href=&#34;https://docs.kicad.org/6.0/en/eeschema/eeschema.html#pin-electrical-types&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Pin Type&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Input&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A pin which is exclusively an input.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Output&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A pin which is exclusively an output.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Bidirectional&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A pin that can be either an input or an output, such as a microcontroller data bus pin.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Tri-state&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A three state output pin (high, low, or high impedance)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Passive&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A passive symbol pin: resistors, connectors, etc.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Free&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A pin that can be freely connected to any other pin without electrical concerns.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Unspecified&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A pin for which the ERC check does not matter.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Power input&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A symbol’s power pin. As a special case, power input pins that are marked invisible are automatically connected to the net with the same name. See the Power Ports section for more information.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Power output&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A pin that provides power to other pins, such as a regulator output.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Open collector&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;An open collector logic output.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Open emitter&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;An open emitter logic output.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Unconnected&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;A pin that should not be connected to anything.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
     </item>
     <item>
       <title>Importing Netlist into KiCad PCB</title>
       <link>https://embedded-systems-design.github.io/importing-kicad-netlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/importing-kicad-netlists/</guid>
-      <description>Introduction We are now ready to transfer over from Schematic Editor to PCB Editor.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;We are now ready to transfer over from Schematic Editor to PCB Editor. In order to get to this step, we had to make sure a couple things were taken care of:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Miniconda/Anaconda (Python) Installation Tutorial</title>
@@ -118,1008 +118,1008 @@
       <link>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</guid>
-      <description>Generating Schematic PDFs Add Title Block Information Open your project and then your schematic.</description>
+      <description>&lt;h2 id=&#34;generating-schematic-pdfs&#34;&gt;Generating Schematic PDFs&lt;/h2&gt;&#xA;&lt;h3 id=&#34;add-title-block-information&#34;&gt;Add Title Block Information&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open your project and then your schematic.&lt;/p&gt;</description>
     </item>
     <item>
       <title>**Curiosity Nano &amp; MPLAB Tutorial**</title>
       <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</guid>
-      <description>Objectives Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board.</description>
+      <description>&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adding Text to a Layout in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</guid>
-      <description>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Text is important on PCB layouts to identify the designers, project, version, components, etc. Typically, text can be placed on a silkscreen layer that sits on top of the copper. However, our manufacturing process in PRLTA 109 only supports text that is milled on the TOP COPPER or BOTTOM COPPER layers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adding Text to your PCB in KiCad</title>
       <link>https://embedded-systems-design.github.io/adding-text-to-pcb-in-kicad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/adding-text-to-pcb-in-kicad/</guid>
-      <description>Background Why add text to my PCB? It is important to label your PCB.</description>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-add-text-to-my-pcb&#34;&gt;Why add text to my PCB?&lt;/h3&gt;&#xA;&lt;p&gt;It is important to label your PCB. Not only is it required for your project, but it is used to help identify your board. You can label what your board is form who your board belongs to, and what project you are working on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>All About Escape Rooms</title>
       <link>https://embedded-systems-design.github.io/all-about-escape-rooms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/all-about-escape-rooms/</guid>
-      <description>What is an escape room? An escape room is a real-life adventure game where you pay to be locked in a room filled with puzzles and given a limited time (usually 60 minutes) to solve the puzzles with your team in order to escape the room.</description>
+      <description>&lt;h2 id=&#34;what-is-an-escape-room&#34;&gt;What is an escape room?&lt;/h2&gt;&#xA;&lt;p&gt;An escape room is a real-life adventure game where you pay to be locked in a room filled with puzzles and given a limited time (usually 60 minutes) to solve the puzzles with your team in order to escape the room. There are also virtual video game escape rooms.&lt;/p&gt;</description>
     </item>
     <item>
       <title>All About Serial</title>
       <link>https://embedded-systems-design.github.io/all-about-serial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/all-about-serial/</guid>
-      <description>What are serial protocols? I2C, SPI, and UART are three of the most common protocols for serial data transmission.</description>
+      <description>&lt;h2 id=&#34;what-are-serial-protocols&#34;&gt;What are serial protocols?&lt;/h2&gt;&#xA;&lt;p&gt;I2C, SPI, and UART are three of the most common protocols for serial data transmission. An overview of these protocols can be found here:&lt;/p&gt;</description>
     </item>
     <item>
       <title>All About Smart Homes</title>
       <link>https://embedded-systems-design.github.io/all-about-smart-homes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/all-about-smart-homes/</guid>
-      <description>What is a smart home? A smart home links together home comfort, entertainment, appliances, thermostats, lighting, and other electronic devices in a home together such that they can be controlled by voice, gesture, computer, or phone.</description>
+      <description>&lt;h2 id=&#34;what-is-a-smart-home&#34;&gt;What is a smart home?&lt;/h2&gt;&#xA;&lt;p&gt;A smart home links together home comfort, entertainment, appliances, thermostats, lighting, and other electronic devices in a home together such that they can be controlled by voice, gesture, computer, or phone. Apple, Amazon, and other companies are trying to bring myriad smart home products from different manufacturers together through the &lt;a href=&#34;http://www.amazon.com/echo&#34;&gt;Echo&lt;/a&gt; and &lt;a href=&#34;http://www.apple.com/ios/homekit/&#34;&gt;HomeKit&lt;/a&gt;, respectively.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Altering Trace Widths in Cadence</title>
       <link>https://embedded-systems-design.github.io/altering-trace-widths/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/altering-trace-widths/</guid>
-      <description>Background Why do I need to change my trace widths? As you start to learn schematic and PCB design, you will have to learn how to alter your trace widths on boards.</description>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-do-i-need-to-change-my-trace-widths&#34;&gt;Why do I need to change my trace widths?&lt;/h3&gt;&#xA;&lt;p&gt;As you start to learn schematic and PCB design, you will have to learn how to alter your trace widths on boards. There are several different reasons that we have difference trace widths on boards. The specifications of traces for digital signals and power traces will be different. Therefore, we must change the widths of the traces on our boards. For more information about the importance of trace widths, &lt;a href=&#34;https://www.sfcircuits.com/pcb-school/pcb-trace-widths&#34;&gt;you can read more here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ASU PCB Fabrication Process</title>
       <link>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</guid>
-      <description>How are PCBs fabricated at ASU? The following video shows our PCB manufacturing process.</description>
+      <description>&lt;h2 id=&#34;how-are-pcbs-fabricated-at-asu&#34;&gt;How are PCBs fabricated at ASU?&lt;/h2&gt;&#xA;&lt;p&gt;The following video shows our PCB manufacturing process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ASU PCB Mill Specs</title>
       <link>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</guid>
-      <description>Please see this link</description>
+      <description>&lt;p&gt;Please see &lt;a href=&#34;https://peraltastudios.engineering.asu.edu/pcb-mill-specs/&#34;&gt;this link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Basic Resistor Info</title>
       <link>https://embedded-systems-design.github.io/resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/resistors/</guid>
-      <description>External Resources https://resistorcolorcodecalc.com/ </description>
+      <description>&lt;h2 id=&#34;external-resources&#34;&gt;External Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://resistorcolorcodecalc.com/&#34;&gt;https://resistorcolorcodecalc.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Bluetooth Connection Issues</title>
       <link>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</guid>
-      <description>Q: I have tried to connect the Cypress CySmart software to the USB dongle but it does not work.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; I have tried to connect the Cypress CySmart software to the USB dongle but it does not work. Help!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bluetooth Tutorial 1 - Thermometer</title>
       <link>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</guid>
-      <description>Introduction PSoC Setup Connect Header J2, pin P3[0] Header J3, pin VREF with a jumper wire.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;h2 id=&#34;psoc-setup&#34;&gt;PSoC Setup&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Connect Header J2, pin P3[0] Header J3, pin VREF with a jumper wire.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;psoc-creator&#34;&gt;PSoC Creator&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bluetooth Tutorial 2 - Find Me</title>
       <link>https://embedded-systems-design.github.io/bluetooth-tutorial-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/bluetooth-tutorial-2/</guid>
-      <description>Introduction PSoC Setup Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;h2 id=&#34;psoc-setup&#34;&gt;PSoC Setup&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bypass capacitor basics</title>
       <link>https://embedded-systems-design.github.io/bypass-capacitor-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/bypass-capacitor-basics/</guid>
-      <description>A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC.</description>
+      <description>&lt;p&gt;A bypass capacitor (aka &amp;ldquo;filter cap&amp;rdquo;) is a small capacitor that dampens electrical noise moving toward an IC. Electrical noise can cause circuit malfunctions. Unless otherwise specified in the data sheet of an IC, a 0.1 µF non-polarized ceramic capacitor usually makes a good bypass capacitor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence Forward Annotation Tutorial</title>
       <link>https://embedded-systems-design.github.io/forward-annotation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/forward-annotation/</guid>
-      <description>Cadence Forward Annotation Tutorial After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic.</description>
+      <description>&lt;h1 id=&#34;cadence-forward-annotation-tutorial&#34;&gt;Cadence Forward Annotation Tutorial&lt;/h1&gt;&#xA;&lt;p&gt;After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic. Fortunately, you do not need to start the PCB design over as a result! Forward annotation allows you to essentially export changes made in your schematic into an existing layout, and here is how to do this in Cadence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence Manuals</title>
       <link>https://embedded-systems-design.github.io/cadence-manuals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-manuals/</guid>
-      <description>Capture CIS Manuals https://resources.pcb.cadence.com/orcad-tutorials&#xA;OrCAD 17.2 Manuals:&#xA;OrCAD 17.2 Capture Quick Reference OrCAD 17.</description>
+      <description>&lt;h2 id=&#34;capture-cis-manuals&#34;&gt;Capture CIS Manuals&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://resources.pcb.cadence.com/orcad-tutorials&#34;&gt;https://resources.pcb.cadence.com/orcad-tutorials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;OrCAD 17.2 Manuals:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/m0u70be3zjvi2j7/capqrc.pdf?dl=0&#34;&gt;OrCAD 17.2 Capture Quick Reference&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/we2yl7u6r4v98lm/cap_ug.pdf?dl=0&#34;&gt;OrCAD 17.2 Capture User&amp;rsquo;s Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.dropbox.com/s/t6r1l9jz4a4y1df/cap_ref.pdf?dl=0&#34;&gt;OrCAD 17.2 Capture Reference Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Cadence Mounting Hole/Post Tutorial</title>
       <link>https://embedded-systems-design.github.io/mounting-holes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mounting-holes/</guid>
-      <description>Cadence Mounting Hole/Post Tutorial Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint.</description>
+      <description>&lt;h1 id=&#34;cadence-mounting-holepost-tutorial&#34;&gt;Cadence Mounting Hole/Post Tutorial&lt;/h1&gt;&#xA;&lt;p&gt;Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint. Otherwise, without mounting holes for these pins to go into, the component will not fit onto the board. This tutorial will demonstrate how to add the mounting holes to the footprint for a &lt;a href=&#34;https://www.ckswitches.com/media/2873/thb.pdf&#34;&gt;THB001P&lt;/a&gt; joystick.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence schematic tutorials</title>
       <link>https://embedded-systems-design.github.io/cadence-schematic-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-schematic-tutorials/</guid>
-      <description>There are a number of tutorials available for creating schematics in Cadence.</description>
+      <description>&lt;p&gt;There are a number of tutorials available for creating schematics in Cadence. The best tutorials are in videos, as the manuals and online help are poor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence simulation tutorials</title>
       <link>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</guid>
-      <description>This page lists tutorials for doing circuit simulations in Cadence.</description>
+      <description>&lt;p&gt;This page lists tutorials for doing circuit simulations in Cadence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence Walkthrough: PSoC 4 BLE Module</title>
       <link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid>
-      <description>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Calculating Current Limiting Resistor Value for LEDs</title>
       <link>https://embedded-systems-design.github.io/calculating-current-limiting-resistor-value-for-leds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/calculating-current-limiting-resistor-value-for-leds/</guid>
-      <description>When calculating the resistance value for your current limiting resistor there are a few variables to consider.</description>
+      <description>&lt;p&gt;When calculating the resistance value for your current limiting resistor there are a few variables to consider. First, what is the supply voltage that will be applied to the LED? Second, what is the forward voltage of the LED you chose? Third, what is the amount of current you want to flow through your LED? By answering these questions, you will be able to calculate the value for the resistor. To begin the process, you must know what supply voltage you will be giving the LED. Whether its 12V, 5V, or 3.3V this value is important to the calculation of the resistance. The next piece of information that is needed is the forward voltage for the particular LED that is being used. To find this information you must reference the datasheet for the part. The forward voltage can be found in the Electrical Characteristics section of the datasheet. Shown below is an image of the forward voltage for an Osram LED:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Capacitive Sensing Links</title>
       <link>https://embedded-systems-design.github.io/capacitive-sensing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/capacitive-sensing/</guid>
-      <description> Capacitive Sensing for Dummies Capacitive Sensing with Op-Amps Capacitive Sensing for Human Interfaces to Electronics Frequency to Voltage Circuits Circuits and Techniques for Implementing Capacitive Touch Sensing Analog Devices Capacitance Sensors Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems </description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.instructables.com/Capacitive-Sensing-for-Dummies/&#34;&gt;Capacitive Sensing for Dummies&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gasstationwithoutpumps.wordpress.com/2012/07/12/capacitive-sensing-with-op-amps/&#34;&gt;Capacitive Sensing with Op-Amps&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.analog.com/en/analog-dialogue/articles/capacitance-sensors-for-human-interfaces-to-electronics.html&#34;&gt;Capacitive Sensing for Human Interfaces to Electronics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://microcontrollerslab.com/frequency-to-voltage-converter-circuits/&#34;&gt;Frequency to Voltage Circuits&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.allaboutcircuits.com/technical-articles/circuits-and-techniques-for-implementing-capacitive-touch-sensing/&#34;&gt;Circuits and Techniques for Implementing Capacitive Touch Sensing &lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.analog.com/en/analog-dialogue/articles/capacitance-to-digital-converter-technology-healthcare.html&#34;&gt;Analog Devices Capacitance Sensors&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.analog.com/en/analog-dialogue/articles/cdc-facilitates-level-sensing-in-diagnostic-systems.html&#34;&gt;Capacitance-to-Digital Converter Facilitates Level Sensing in Diagnostic Systems&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Capacitors</title>
       <link>https://embedded-systems-design.github.io/capacitors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/capacitors/</guid>
-      <description>External Resources https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart </description>
+      <description>&lt;h2 id=&#34;external-resources&#34;&gt;External Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart&#34;&gt;https://www.arrow.com/en/research-and-events/articles/guide-to-capacitor-codes-and-tolerance-code-chart&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Changing a Hole Diameter in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</guid>
-      <description>Why would you need to change the hole diameter? The default diameter of holes in Cadence is 0.</description>
+      <description>&lt;h2 id=&#34;why-would-you-need-to-change-the-hole-diameter&#34;&gt;Why would you need to change the hole diameter?&lt;/h2&gt;&#xA;&lt;p&gt;The default diameter of holes in Cadence is 0.3 mm. This is too small for most components to fit through, as well as too small for proper through-plating of vias. According to the Peralta PCB Mill specifications, hole diameters should be at least 0.5 mm (19.7 mil). Therefore, the following settings are recommended:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing the Default Via Padstack in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</guid>
-      <description>Introduction A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A via is an electrical interconnection that connects one layer of a PCB to another layer of a PCB. Vias are typically used when two wires need to cross on the same side of a PCB design, but cannot without continuing the trace on a different layer. It is best to minimize the use of vias for boards being manufactured in Peralta to maximize reliability, but sometimes they are necessary in order to complete a design. If you do need a via, the default via padstack in Cadence is too small for the LPKF ProtoMat S63 PCB Mill that we use to manufacture PCBs in PRLTA 109. There are two ways to address this issue:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing the Library Search Path in Cadence Design Entry CIS</title>
       <link>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-design-entry-cis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-design-entry-cis/</guid>
-      <description>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</description>
+      <description>&lt;h2 id=&#34;why-would-i-need-to-change-the-library-search-path&#34;&gt;Why would I need to change the library search path?&lt;/h2&gt;&#xA;&lt;p&gt;When creating a custom PCB footprint for a component, it is stored somewhere on your computer. In order for Design Entry CIS to find where a custom footprint is stored and associate it with a schematic component, the &lt;em&gt;library search path&lt;/em&gt; must be changed so that Design Entry CIS knows where to look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing the Library Search Path in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</guid>
-      <description>Why would I need to change the library search path? When creating a custom PCB footprint for a component, it is stored somewhere on your computer.</description>
+      <description>&lt;h2 id=&#34;why-would-i-need-to-change-the-library-search-path&#34;&gt;Why would I need to change the library search path?&lt;/h2&gt;&#xA;&lt;p&gt;When creating a custom PCB footprint for a component, it is stored somewhere on your computer. In order for PCB Editor to find where a custom footprint is stored, the &lt;em&gt;library search path&lt;/em&gt; must be changed so that PCB Editor knows where to look.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Choosing transistors for high-power digital switching</title>
       <link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
-      <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
+      <description>&lt;p&gt;Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device. In order to determine the amount of current a microcontroller can supply (or sink) with an output pin, open the data sheet and look for the section describing &amp;ldquo;Absolute Maximum Ratings&amp;rdquo;. There, there should be a specification described as the maximum current for a single GPIO pin (see example, Figure 1).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring Cadence (Apporto)</title>
       <link>https://embedded-systems-design.github.io/configuring-cadence-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-cadence-cloud/</guid>
-      <description>Before using Cadence, configure it for optimal performance by following the instructions below.</description>
+      <description>&lt;p&gt;Before using Cadence, configure it for optimal performance by following the instructions below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring Cadence (Standalone Installation)</title>
       <link>https://embedded-systems-design.github.io/configuring-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-cadence/</guid>
-      <description>Before using Cadence, configure it for optimal performance by following the instructions below.</description>
+      <description>&lt;p&gt;Before using Cadence, configure it for optimal performance by following the instructions below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring the UART on PSoC</title>
       <link>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</guid>
-      <description>What is a UART (Universal Asynchronous Receiver/Transmitter)? UART is one serial protocol used for communicating data between two digital devices (e.</description>
+      <description>&lt;h2 id=&#34;what-is-a-uart-universal-asynchronous-receivertransmitter&#34;&gt;What is a UART (Universal Asynchronous Receiver/Transmitter)?&lt;/h2&gt;&#xA;&lt;p&gt;UART is one serial protocol used for communicating data between two digital devices (e.g., between the Pioneer Kit and the computer).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Connecting to the PSoC</title>
       <link>https://embedded-systems-design.github.io/connecting-to-the-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/connecting-to-the-psoc/</guid>
-      <description>Q: Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)</description>
+      <description>&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Connectors 101</title>
       <link>https://embedded-systems-design.github.io/connectors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/connectors-101/</guid>
-      <description>What is a connector? A connector is an electrical component that links two or more components together.</description>
+      <description>&lt;h2 id=&#34;what-is-a-connector&#34;&gt;What is a connector?&lt;/h2&gt;&#xA;&lt;p&gt;A connector is an electrical component that links two or more components together. The major types of connectors are:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a Board Outline in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</guid>
-      <description>What is a board outline? A board outline is the outermost boundary of a printed circuit board design.</description>
+      <description>&lt;h2 id=&#34;what-is-a-board-outline&#34;&gt;What is a board outline?&lt;/h2&gt;&#xA;&lt;p&gt;A board outline is the outermost boundary of a printed circuit board design. It is used by the PCB manufacturer to cut the printed circuit board to the specified size and shape.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</guid>
-      <description>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)</description>
+      <description>&lt;p&gt;Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom library in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-library-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-library-in-cadence/</guid>
-      <description>In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them.</description>
+      <description>&lt;p&gt;In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them. It is good practice to create a custom library for each project that you work on to save your schematic symbols. To create a custom library, do the following:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a Custom Padstack (old)</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-padstack-old/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-padstack-old/</guid>
-      <description>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://draft.blogger.com/blogger.g?rinli=1&amp;amp;pli=1&amp;amp;blogID=6469592703220698319&#34;&gt;&lt;/a&gt;A &lt;a href=&#34;https://www.speedingedge.com/PDF-Files/anatomy%20of%20a%20plated%20hole.pdf&#34;&gt;padstack&lt;/a&gt; is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1). You may need to create a custom padstack when creating custom parts to ensure that the pad and hole are big enough to be reliable. This tutorial describes the manual creation of custom padstacks using the Pad Designer application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom padstack in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</guid>
-      <description>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://www.speedingedge.com/PDF-Files/anatomy%20of%20a%20plated%20hole.pdf&#34;&gt;padstack&lt;/a&gt; is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1). You may need to create a custom padstack when creating custom parts to ensure that the pad and hole are big enough to be reliable. This tutorial describes the manual creation of custom padstacks using the Pad Designer application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom PCB footprint manually in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</guid>
-      <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Footprint_(electronics)&#34;&gt;PCB footprint&lt;/a&gt; is the physical layout on a PCB to which a component is soldered. Usually, you must create a custom PCB footprint for each custom schematic symbol that you create. Footprints can be made for many standard components (e.g., basic ICs) using the Package Symbol Wizard (see the &lt;a href=&#34;https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/&#34;&gt;Creating a PCB footprint using Package Designer in Cadence page&lt;/a&gt;), but more complex components (like switching power supply ICs with thermal reliefs) must be created by hand. This tutorial details the manual creation of a custom footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom PCB footprint using Package Designer in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</guid>
-      <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Footprint_(electronics)&#34;&gt;PCB footprint&lt;/a&gt; is the physical layout on a PCB to which a component is soldered. Usually, you must create a custom PCB footprint for each custom schematic symbol that you create. This tutorial details the easiest way to make custom footprints using the Package Symbol (Wizard).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom schematic symbol in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-schematic-symbol-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-schematic-symbol-in-cadence/</guid>
-      <description>Introduction In most designs, some components will not be available in built-in libraries.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In most designs, some components will not be available in built-in libraries. The purpose of this tutorial is to show how to make a custom schematic symbol that can be used in the design of schematics in Cadence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom SMD footprint manually in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</guid>
-      <description>Introduction This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually. A &lt;a href=&#34;http://www.onsemi.com/pub_link/Collateral/MCH3382-D.PDF&#34;&gt;MCH3382 Power MOSFET&lt;/a&gt; from ON Semiconductor will be used as an example.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a Ground Plane in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</guid>
-      <description>What is a ground plane? A ground plane is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</description>
+      <description>&lt;h2 id=&#34;what-is-a-ground-plane&#34;&gt;What is a ground plane?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Ground_plane&#34;&gt;ground plane&lt;/a&gt; is a large area of copper in a printed circuit board design that is connected to ground on the power supply.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a new project in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</guid>
-      <description>Creating a new project in Cadence&#xA;In Windows, open the Design Entry CIS program.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Creating a new project in Cadence&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;In Windows, open the Design Entry CIS program. This program allows you to edit schematics, and will be used to export a netlist describing your schematic into the PCB Editor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating Custom Footprints</title>
       <link>https://embedded-systems-design.github.io/creating-custom-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-custom-footprints/</guid>
-      <description>You can try to find existing footprints for components, but most components will require custom footprints.</description>
+      <description>&lt;p&gt;You can try to &lt;a href=&#34;https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/&#34;&gt;find existing footprints&lt;/a&gt; for components, but most components will require custom footprints.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DC Motors 101</title>
       <link>https://embedded-systems-design.github.io/dc-motors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/dc-motors-101/</guid>
-      <description>Watch the video mini-lecture on DC motor control from Dr. Jordan What types of DC motors are most common?</description>
+      <description>&lt;h4 id=&#34;watch-the-video-mini-lecture-on-dc-motor-control-from-drjordanhttpsyoutubenmhxy2hxcks&#34;&gt;&lt;a href=&#34;https://youtu.be/nMhxy2hxcKs&#34;&gt;Watch the video mini-lecture on DC motor control from Dr. Jordan&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/nMhxy2hxcKs&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h2 id=&#34;what-types-of-dc-motors-are-most-common&#34;&gt;What types of DC motors are most common?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Brushed DC motors. Current flowing in one direction makes the motor turn one direction, and current flowing in the opposite direction makes the motor turn the opposite direction.&lt;/li&gt;&#xA;&lt;li&gt;Stepper motors - provide absolute position control but require a special controller IC&lt;/li&gt;&#xA;&lt;li&gt;Servo motors - PWM signal controls the position of the motor&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-do-i-connect-a-brushed-dc-motor-to-a-microcontroller&#34;&gt;How do I connect a brushed DC motor to a microcontroller?&lt;/h2&gt;&#xA;&lt;p&gt;DC motors are inductive loads and therefore cannot be directly connected to a microcontroller without damaging the microcontroller. There are two protection mechanisms that go into a successful motor interface:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Debugging Code in PSoC Creator</title>
       <link>https://embedded-systems-design.github.io/debugging-psoc-creator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/debugging-psoc-creator/</guid>
-      <description>Introduction Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working. See below for some common symptoms and possible debugging remedies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Defining Constraints in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/setting-up-cadence-drc-constraints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/setting-up-cadence-drc-constraints/</guid>
-      <description>Introduction The PCB mills in Peralta have certain capabilities, so PCBs must be designed with their limitations in mind.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The PCB mills in Peralta have certain capabilities, so PCBs must be designed with their limitations in mind. The full specs of the machines can be found here: &lt;a href=&#34;https://peraltastudios.engineering.asu.edu/pcb-mill-specs/&#34;&gt;https://peraltastudios.engineering.asu.edu/pcb-mill-specs/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Design For Manufacturing (Cadence)</title>
       <link>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</guid>
-      <description>Coming Soon&amp;hellip;</description>
+      <description>&lt;p&gt;Coming Soon&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drawing Software</title>
       <link>https://embedded-systems-design.github.io/drawing-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/drawing-software/</guid>
-      <description>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</description>
+      <description>&lt;h2 id=&#34;what-is-drawing-software-used-for&#34;&gt;What is drawing software used for?&lt;/h2&gt;&#xA;&lt;p&gt;Drawing software is used to create diagrams for inclusion in presentations and reports.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Enabling Floating Point Support in PSoC Creator</title>
       <link>https://embedded-systems-design.github.io/enable-floating-point-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/enable-floating-point-support/</guid>
-      <description>Introduction Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exporting Gerber files from Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid>
-      <description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
+      <description>&lt;h2 id=&#34;what-is-a-gerber-file&#34;&gt;What is a Gerber file?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Gerber_format&#34;&gt;Gerber file&lt;/a&gt; (also known as &lt;em&gt;artwork&lt;/em&gt;) is a 2-D graphical representation of a single layer of a PCB. A typical design will have individual Gerber files for each layer (e.g., top copper, bottom copper, top silkscreen, bottom silkscreen, top soldermask, bottom soldermask) of a PCB.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exporting Gerber files from KiCad PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</guid>
-      <description>Introduction What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;h2 id=&#34;what-is-a-gerber-file&#34;&gt;What is a Gerber file?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Gerber_format&#34;&gt;Gerber file&lt;/a&gt; (also known as &lt;em&gt;artwork&lt;/em&gt;) is a 2-D graphical representation of a single layer of a PCB. A typical design will have individual Gerber files for each layer (e.g., top copper, bottom copper, top silkscreen, bottom silkscreen, top soldermask, bottom soldermask) of a PCB.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exporting Solder Mask Layers from Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</guid>
-      <description>What is a solder mask? Solder mask is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections.</description>
+      <description>&lt;h2 id=&#34;what-is-a-solder-mask&#34;&gt;What is a solder mask?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Solder_mask&#34;&gt;Solder mask&lt;/a&gt; is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections. It is often green, red, or blue, and is put over all parts of a PCB except where components are to be soldered.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Finding existing PCB footprints for Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</guid>
-      <description>Where can I find a list of existing PCB footprints for Cadence PCB Editor?</description>
+      <description>&lt;h2 id=&#34;where-can-i-find-a-list-of-existing-pcb-footprints-for-cadence-pcb-editor&#34;&gt;Where can I find a list of existing PCB footprints for Cadence PCB Editor?&lt;/h2&gt;&#xA;&lt;p&gt;While Cadence does have some built-in footprint libraries, they are limited due to the hundreds of thousands of different parts in existence. Additionally, most companies make their own footprints to match the specific manufacturing processes that they use.&lt;/p&gt;</description>
     </item>
     <item>
       <title>From where can I source parts?</title>
       <link>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</guid>
-      <description>Once you know the types of components that you need for your project, the next step is to find sources/vendors from which you can purchase the components (also known as sourcing parts).</description>
+      <description>&lt;p&gt;Once you know the types of components that you need for your project, the next step is to find sources/vendors from which you can purchase the components (also known as &lt;em&gt;sourcing parts&lt;/em&gt;). Follow the process below to source parts:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fuses 101</title>
       <link>https://embedded-systems-design.github.io/fuses-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/fuses-101/</guid>
-      <description>What are fuses and when do I need them? A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much current.</description>
+      <description>&lt;h2 id=&#34;what-are-fuses-and-when-do-i-need-them&#34;&gt;What are fuses and when do I need them?&lt;/h2&gt;&#xA;&lt;p&gt;A fuse is an electronic component that protects a circuit by creating an open circuit if it draws too much &lt;em&gt;current&lt;/em&gt;. **Fuses do not protect against voltages that are too high. **&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting Started with Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</guid>
-      <description>What is a printed circuit board (PCB)? See the What is a Printed Circuit Board?</description>
+      <description>&lt;h2 id=&#34;what-is-a-printed-circuit-board-pcb&#34;&gt;What is a printed circuit board (PCB)?&lt;/h2&gt;&#xA;&lt;p&gt;See the &lt;a href=&#34;https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/&#34;&gt;What is a Printed Circuit Board?&lt;/a&gt; page for more information about PCBs and the general design flow for creating a PCB.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grow Your Embedded Programming Skills After EGR 304/314</title>
       <link>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</guid>
-      <description>Personal Projects and Education&#xA;Arduino Project Hub is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs.</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Personal Projects and Education&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://create.arduino.cc/projecthub&#34;&gt;Arduino Project Hub&lt;/a&gt; is where you can learn about what all other beginner or advanced embedded systems designers are building for their own personal needs. By now, most of you may have an Arduino kit from a previous class so the learning doesn&amp;rsquo;t have to stop after 304/314.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World with UART (PIC)</title>
       <link>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</guid>
-      <description>Objectives The goal of this tutorial is to introduce you to the MPLabX IDE, and to verify that you can create a project, add a peripheral (EUSART), configure it to work across a virtual COM port, and communicate back and forth to your PC.</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this tutorial is to introduce you to the MPLabX IDE, and to verify that you can create a project, add a peripheral (EUSART), configure it to work across a virtual COM port, and communicate back and forth to your PC.&lt;/p&gt;</description>
     </item>
     <item>
       <title>House of Quality</title>
       <link>https://embedded-systems-design.github.io/house-of-quality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/house-of-quality/</guid>
-      <description>What is a House of Quality, and what is it used for?</description>
+      <description>&lt;h2 id=&#34;what-is-a-house-of-quality-and-what-is-it-used-for&#34;&gt;What is a House of Quality, and what is it used for?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/House_of_Quality&#34;&gt;House of Quality diagram&lt;/a&gt; is used to translate customer requirements, market research, patent benchmarking, and technical benchmarking into product capabilities that can be targeted in a new product design. It is an integral component of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Quality_function_deployment&#34;&gt;Quality Function Deployment (QFD)&lt;/a&gt; method for translating qualitative user needs into quantitative requirements.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How does X work?</title>
       <link>https://embedded-systems-design.github.io/how-does-x-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/how-does-x-work/</guid>
-      <description>Laser Rangefinders https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/ https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849 https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder Laser Thermometers (pyrometers) https://sciencing.com/laser-thermometers-work-4962575.html Record Players https://electronics.</description>
+      <description>&lt;h2 id=&#34;laser-rangefinders&#34;&gt;Laser Rangefinders&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/&#34;&gt;https://www.tme.eu/en/news/library-articles/page/21956/laser-rangefinders-how-do-they-work-which-one-should-you-choose/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849&#34;&gt;https://www.hackster.io/iliasam/making-a-cheap-laser-rangefinder-for-arduino-4dd849&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder&#34;&gt;https://sudonull.com/post/24300-Homemade-Scanning-Laser-Rangefinder&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;laser-thermometers-pyrometers&#34;&gt;Laser Thermometers (pyrometers)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sciencing.com/laser-thermometers-work-4962575.html&#34;&gt;https://sciencing.com/laser-thermometers-work-4962575.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;record-players&#34;&gt;Record Players&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://electronics.howstuffworks.com/record-player.htm&#34;&gt;https://electronics.howstuffworks.com/record-player.htm&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;digital-calipers&#34;&gt;Digital Calipers&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wonkeedonkeetools.co.uk/calipers/how-does-a-digital-caliper-work&#34;&gt;https://www.wonkeedonkeetools.co.uk/calipers/how-does-a-digital-caliper-work&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ultrasonic-distance-sensors&#34;&gt;Ultrasonic Distance Sensors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.arrow.com/en/research-and-events/articles/ultrasonic-sensors-how-they-work-and-how-to-use-them-with-arduino&#34;&gt;https://www.arrow.com/en/research-and-events/articles/ultrasonic-sensors-how-they-work-and-how-to-use-them-with-arduino&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.htm&#34;&gt;https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.htm&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=2ojWO1QNprw&#34;&gt;https://www.youtube.com/watch?v=2ojWO1QNprw&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1jGvzNrtF24&#34;&gt;https://www.youtube.com/watch?v=1jGvzNrtF24&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>How to Add Solar to Your Circuit</title>
       <link>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</guid>
-      <description>Adding solar to a project has a few more steps then just hard wiring a solar panel.</description>
+      <description>&lt;p&gt;Adding solar to a project has a few more steps then just hard wiring a solar panel. Solar panels fluctuate with power delivery to a system. To combat this, solar panels often charge a power cell or battery. This battery provides constant power to your project .&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to create a footprint for PSoC® 4100S Plus</title>
       <link>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</guid>
-      <description>This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.</description>
+      <description>&lt;p&gt;This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Create a Silkscreen in Cadence and Manually Add Text to it</title>
       <link>https://embedded-systems-design.github.io/adding-silkscreen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/adding-silkscreen/</guid>
-      <description>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</description>
+      <description>&lt;h1 id=&#34;how-to-create-a-silkscreen-in-cadence-and-manually-add-text-to-it&#34;&gt;How to Create a Silkscreen in Cadence and Manually Add Text to it&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a (finalized) PCB layout. Note that the amount of additional work required for a good silkscreen layer will depend on how your PCB footprints were designed. This example will use the board shown below:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;image1.PNG&#34;&gt;&lt;img src=&#34;image1.PNG&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to export a PDF from Capture and PCB Editor</title>
       <link>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</guid>
-      <description>Introduction This tutorial goes through how to save CIS schematics and PCB layers as a PDF.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial goes through how to save CIS schematics and PCB layers as a PDF.&lt;/p&gt;</description>
     </item>
     <item>
       <title>I2C Communication (PIC) with an 8-bit I/O Expander</title>
       <link>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</guid>
-      <description>Objectives In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC.</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC. This will be critical for your semester project as every team has at least two serial peripherals (e.g., wifi module, serial sensor). To prepare you for the next homework assignment and your semester project, you will create an array of LEDs that will increment by one each time a button is pressed. You will use an 8-bit I/O expander IC that is used in situations when you run out of I/O pins on a microcontroller and cannot swap the microcontroller for one with more I/O pins.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
-      <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
+      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts</title>
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts/</guid>
-      <description>What is an interrupt? Consider the following knock-knock joke:&#xA;Figure 1 Joker: &amp;ldquo;Knock, knock&amp;rdquo;</description>
+      <description>&lt;h2 id=&#34;what-is-an-interrupt&#34;&gt;What is an interrupt?&lt;/h2&gt;&#xA;&lt;p&gt;Consider the following knock-knock joke:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;https://embedded-systems-design.github.io/larger/image0171.jpg&#34;&gt;&lt;img src=&#34;https://embedded-systems-design.github.io/larger/image0171.jpg&#34; alt=&#34;Figure 1&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;Figure 1&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts on PSoC</title>
       <link>https://embedded-systems-design.github.io/interrupts-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts-on-psoc/</guid>
-      <description>An interrupt is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention.</description>
+      <description>&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Interrupt&#34;&gt;interrupt&lt;/a&gt; is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention. Interrupts are useful to avoid constant monitoring of electronic peripherals (e.g., sensors).&lt;/p&gt;</description>
     </item>
     <item>
       <title>IR Emitter/Detector Pairs and Op-Amps</title>
       <link>https://embedded-systems-design.github.io/ind-op-amps-sensors-and-adcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/ind-op-amps-sensors-and-adcs/</guid>
-      <description>Objectives Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor.</description>
+      <description>&lt;h1 id=&#34;objectives&#34;&gt;Objectives&lt;/h1&gt;&#xA;&lt;p&gt;Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor. They are tuned to emit and detect the same wavelength of light. They can be useful for sending light-based digital messages, detecting objects, or measuring distances. Because they are in the infrared portion of the light spectrum, they are invisible and less likely to be corrupted by visible light sources. See Scherz &amp;amp; Monk Section 5.7.1 for a complete explanation of how phototransistors work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keeping a Schematic Tidy</title>
       <link>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</guid>
-      <description>Introduction When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1).</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When drawing a schematic, crossing wires can make the schematic difficult to read and follow signals (see example, Figure 1). This tutorial shows several techniques for keeping your schematic tidy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>KiCad PCB FAQ</title>
       <link>https://embedded-systems-design.github.io/kicad-pcb-faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-pcb-faq/</guid>
-      <description>Why the width of the power traces needs to be larger than the signal traces?</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Why the width of the power traces needs to be larger than the signal traces?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Because the power traces will need to carry much more current than the signal traces. If not, they may be heat up and potentially melt, which leads to create an open circuit or cause a fire. Usually, we will use 40 mils for the width of power traces and 20 mils for the width of signal traces.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Why the traces should be wired on a 45-degree angle, not directly on a 90-degree angle path?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Because 90-degree wiring can cause problems at high-frequency situations because these points can act as miniature antennas and radiate signals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LCDs and Buttons</title>
       <link>https://embedded-systems-design.github.io/pic-lcd-button/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pic-lcd-button/</guid>
-      <description>Individual Assignment&#xA;Objectives To develop and demonstrate individual proficiency in:</description>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Individual Assignment&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;To develop and demonstrate individual proficiency in:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Level shifters</title>
       <link>https://embedded-systems-design.github.io/level-shifters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/level-shifters/</guid>
-      <description>Introduction: What is a level shifter? A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.</description>
+      <description>&lt;h2 id=&#34;introduction-what-is-a-level-shifter&#34;&gt;Introduction: What is a level shifter?&lt;/h2&gt;&#xA;&lt;p&gt;A level shifter either shifts the voltage of a data line up or down depending on what your circuit entails.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Make a Project Repository and Website</title>
       <link>https://embedded-systems-design.github.io/make-a-website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/make-a-website/</guid>
-      <description>Introduction The purpose of this post is to help you create a website to share your work.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this post is to help you create a website to share your work.  Sharing your work with the class and the broader community is important, as you should generate a persistent portfolio of class work to demonstrate your abilities when you apply for a job or academic career.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manual Routing in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</guid>
-      <description>How do I manually route a design in PCB Editor? Your design should have a board outline and components placed, and blue lines (the &amp;ldquo;rats nest&amp;rdquo;) between the components (see example, Figure 1).</description>
+      <description>&lt;h2 id=&#34;how-do-i-manually-route-a-design-in-pcb-editor&#34;&gt;How do I manually route a design in PCB Editor?&lt;/h2&gt;&#xA;&lt;p&gt;Your design should have a board outline and components placed, and blue lines (the &amp;ldquo;rats nest&amp;rdquo;) between the components (see example, Figure 1). These blue lines are not traces, but rather points that are connected on your schematic and should be converted to traces in your design.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Measurement in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/measurement-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/measurement-in-cadence-pcb-editor/</guid>
-      <description>How do I measure the spacing between pins to make sure my footprint matches the Datasheet?</description>
+      <description>&lt;h2 id=&#34;how-do-i-measure-the-spacing-between-pins-to-make-sure-my-footprint-matches-the-datasheet&#34;&gt;How do I measure the spacing between pins to make sure my footprint matches the Datasheet?&lt;/h2&gt;&#xA;&lt;p&gt;See the &lt;a href=&#34;https://www.youtube.com/watch?v=a4dhpmsF9f4&#34;&gt;How to check your footprints using the OrCAD PCB Editor Measurement tool&lt;/a&gt; video&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mechanical CAD Software</title>
       <link>https://embedded-systems-design.github.io/mechanical-cad-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mechanical-cad-software/</guid>
-      <description>What is CAD software used for? Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically.</description>
+      <description>&lt;h2 id=&#34;what-is-cad-software-used-for&#34;&gt;What is CAD software used for?&lt;/h2&gt;&#xA;&lt;p&gt;Computer Aided Drafting (CAD) software is used to capture and simulate designs electronically. It is commonly used for electrical or mechanical designs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Merging Multiple Schematics into a Single Schematic</title>
       <link>https://embedded-systems-design.github.io/merging-schematics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/merging-schematics/</guid>
-      <description>Merging Multiple Schematics into a Single Schematic Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</description>
+      <description>&lt;h1 id=&#34;merging-multiple-schematics-into-a-single-schematic&#34;&gt;Merging Multiple Schematics into a Single Schematic&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Take note of all the files involved in the schematics you are merging, and ensure you have all of them. These include .dsn (design), .opj (project) and .olb (library) files, in addition to .psm (Package symbol, a.k.a. PCB footprint) files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microchip AVR Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</guid>
-      <description>What microcontrollers does Atmel specialize in? Atmel was one of the top IC manufacturers that makes a number of 8-bit, 32-bit, and ARM microcontrollers, including the AVR microcontroller used in the Arduino.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-atmel-specialize-in&#34;&gt;What microcontrollers does Atmel specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;Atmel was one of the top IC manufacturers that makes a number of 8-bit, 32-bit, and ARM microcontrollers, including the AVR microcontroller used in the Arduino. Microchip purchased Atmel in 2017 and is maintaining the AVR line of microcontrollers. The following is a list of helpful resources for getting started with Microchip AVR microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microchip PIC Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
-      <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-microchip-specialize-in&#34;&gt;What microcontrollers does Microchip specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.microchip.com/pagehandler/en-us/products/picmicrocontrollers&#34;&gt;Microchip&lt;/a&gt; specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MicroPython Intro</title>
       <link>https://embedded-systems-design.github.io/micropython-and-esp32/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/micropython-and-esp32/</guid>
-      <description>What is Python? The #1 Programming language*&#xA;Python: 14.2% Matlab: 0.</description>
+      <description>&lt;h2 id=&#34;what-is-python&#34;&gt;What is Python?&lt;/h2&gt;&#xA;&lt;p&gt;The #1 Programming language*&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python: 14.2%&lt;/li&gt;&#xA;&lt;li&gt;Matlab: 0.8%&lt;/li&gt;&#xA;&lt;li&gt;Labview: 0.14%&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;* as of March 2022, &lt;a href=&#34;https://www.tiobe.com/tiobe-index/&#34;&gt;tiobe.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>MOSFET for use with a 3.3V and 5V Microcontroller</title>
       <link>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</guid>
-      <description>Selecting the MOSFET When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.</description>
+      <description>&lt;h2 id=&#34;selecting-the-mosfet&#34;&gt;Selecting the MOSFET&lt;/h2&gt;&#xA;&lt;p&gt;When selecting a MOSFET for either 3.3V or 5V applications there are three parameters to consider.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Motors</title>
       <link>https://embedded-systems-design.github.io/motors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/motors/</guid>
-      <description>There are many types of motors out there each with their own pros and cons.</description>
+      <description>&lt;p&gt;There are many types of motors out there each with their own pros and cons. There are two main types of motors, brushed and brushless, each with many subcategories within them. In this we will only be going over the most common types and their control. These include DC brushed, stepper, and 3-phase brushless.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oscilloscopes 101</title>
       <link>https://embedded-systems-design.github.io/oscilloscopes-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/oscilloscopes-101/</guid>
-      <description>Part I Part II </description>
+      <description>&lt;h2 id=&#34;part-i&#34;&gt;Part I&lt;/h2&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/K-hj1wrPU2w&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h2 id=&#34;part-ii&#34;&gt;Part II&lt;/h2&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Km9HLRMjnYY&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
     </item>
     <item>
       <title>Packaging Cadence Files for Submission</title>
       <link>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</guid>
-      <description>Introduction This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Particle Argon Wifi Board</title>
       <link>https://embedded-systems-design.github.io/particle-argon-wifi-board/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/particle-argon-wifi-board/</guid>
-      <description>What is the Particle Argon? What does it do? The Particle Argon is a &amp;ldquo;wi-fi for everything&amp;rdquo; development kit that includes a microcontroller, wi-fi hardware, and easy-to-use web-based IDE (Integrated Development Environment).</description>
+      <description>&lt;h2 id=&#34;what-is-the-particle-argon-what-does-it-do&#34;&gt;What is the Particle Argon? What does it do?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://docs.particle.io/argon/&#34;&gt;Particle Argon&lt;/a&gt; is a &amp;ldquo;wi-fi for everything&amp;rdquo; development kit that includes a microcontroller, wi-fi hardware, and easy-to-use web-based IDE (Integrated Development Environment). It is typically used to add wi-fi functionality into products without spending a huge amount of development time on the wi-fi hardware and software. A more detailed introduction is available &lt;a href=&#34;https://docs.particle.io/quickstart/argon/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Patents 101</title>
       <link>https://embedded-systems-design.github.io/patents-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/patents-101/</guid>
-      <description>What is a patent? &amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see General Information Concerning Patents from the USPTO).</description>
+      <description>&lt;h2 id=&#34;what-is-a-patent&#34;&gt;What is a patent?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;A patent for an invention is the grant of a property right to the inventor, issued by the United States Patent and Trademark Office&amp;rdquo; (for more information, see &lt;a href=&#34;http://www.uspto.gov/patents-getting-started/general-information-concerning-patents&#34;&gt;General Information Concerning Patents&lt;/a&gt; from the USPTO).&lt;/li&gt;&#xA;&lt;li&gt;Patents are the most common way of protecting intellectual property that is physically tangible (e.g., projects you might do in our engineering program).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-a-trademark&#34;&gt;What is a trademark?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;A trademark is a word, name, symbol, or device that is used in trade with goods to indicate the source of the goods and to distinguish them from the goods of others&amp;rdquo; (for more information, see &lt;a href=&#34;http://www.uspto.gov/patents-getting-started/general-information-concerning-patents#heading-2&#34;&gt;What is a Trademark or Servicemark?&lt;/a&gt; from the USPTO).&lt;/li&gt;&#xA;&lt;li&gt;Trademarks are typically used to protect a unique name for a product, but not the product itself. For example, Dr. Jordan&amp;rsquo;s engineering education research lab is called STEAM Labsâ„¢.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-is-a-copyright&#34;&gt;What is a copyright?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Copyright is a form of protection provided to the authors of &amp;lsquo;original works of authorship&amp;rsquo; including literary, dramatic, musical, artistic, and certain other intellectual works, both published and unpublished&amp;rdquo; (for more information, see &lt;a href=&#34;http://www.uspto.gov/patents-getting-started/general-information-concerning-patents#heading-2&#34;&gt;What is a Copyright?&lt;/a&gt; from the USPTO).&lt;/li&gt;&#xA;&lt;li&gt;As a student, you automatically own the copyright for any text that you write (e.g., your project reports). However, copyrights are typically not used to protect engineering designs.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;why-do-i-need-to-search-for-patents&#34;&gt;Why do I need to search for patents?&lt;/h2&gt;&#xA;&lt;p&gt;If you knowingly or unknowingly use intellectual property that is patented by someone else in your own commercial designs, you may become the target of lawsuits from the patent owner. Therefore, when designing new products it is best to search for the patents you may be infringing upon (either through the product as a whole or particular features, such as a touch display) so that you can either design around the patents or reach out to the patent owner to license the patent.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCB design checklist</title>
       <link>https://embedded-systems-design.github.io/pcb-design-checklist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-design-checklist/</guid>
-      <description>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors.</description>
+      <description>&lt;p&gt;Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors. Time invested verifying your design before manufacturing will make the assembly and testing process significantly easier.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCB Design Rules Setup in KiCAD</title>
       <link>https://embedded-systems-design.github.io/pcb-design-rules-setup-in-kicad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-design-rules-setup-in-kicad/</guid>
-      <description>Introduction Before reading this, review Peralta Lab PCB Mill Specs. We will pull information from there to set up PCB design rules in KiCAD.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Before reading this, review &lt;a href=&#34;https://peraltastudios.engineering.asu.edu/pcb-mill-specs/&#34;&gt;Peralta Lab PCB Mill Specs&lt;/a&gt;. We will pull information from there to set up PCB design rules in KiCAD. There are a few setting that are recommended above the actual mill capabilities. This knowledge may come in handy if you have a particular component that does not fit into the recommended settings.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCB Design Tutorial</title>
       <link>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</guid>
-      <description>Introduction This tutorial will go over how to get started with your PCB design, as well as go over the things you will use while designing your PCB.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial will go over how to get started with your PCB design, as well as go over the things you will use while designing your PCB.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCB Text</title>
       <link>https://embedded-systems-design.github.io/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/text/</guid>
-      <description>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Text is important on PCB layouts to identify the designers, project, version, components, etc. Typically, text can be placed on a silkscreen layer that sits on top of the copper. However, our manufacturing process in PRLTA 109 only supports text that is milled on the TOP COPPER or BOTTOM COPPER layers.&lt;br&gt;&#xA;&lt;br&gt;&#xA;**Note: **It is required that all PCB designs have your name, course, and team number so that the Peralta Engineering Studios staff can distinguish your board from others.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Peralta 103 Resources</title>
       <link>https://embedded-systems-design.github.io/peralta-103-resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/peralta-103-resources/</guid>
-      <description>What equipment is available at each of the benches? Function Generator (5 MHz)</description>
+      <description>&lt;h2 id=&#34;what-equipment-is-available-at-each-of-the-benches&#34;&gt;What equipment is available at each of the benches?&lt;/h2&gt;&#xA;&lt;p&gt;Function Generator (5 MHz)&lt;/p&gt;</description>
     </item>
     <item>
       <title>PIC Curiosity Nano and the TC74 I2C Temp Sensor</title>
       <link>https://embedded-systems-design.github.io/tc74-temp-sensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/tc74-temp-sensor/</guid>
-      <description>Objectives The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placing and moving components in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</guid>
-      <description>While it is easy to place components using the mouse, most designs require precise placement of some components (e.</description>
+      <description>&lt;p&gt;While it is easy to place components using the mouse, most designs require precise placement of some components (e.g., to align parallel headers). This tutorial walks through how to place components at a specific X-Y coordinate, determine the X-Y coordinates of a component, measure the distance between two components, move an existing component to a specific X-Y coordinate, and move an existing component relative to its current location.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Power Supplies 101</title>
       <link>https://embedded-systems-design.github.io/power-supplies-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/power-supplies-101/</guid>
-      <description>What are the components of a basic power supply subsystem? Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit What are the design considerations for a battery-operated circuit?</description>
+      <description>&lt;h2 id=&#34;what-are-the-components-of-a-basic-power-supply-subsystem&#34;&gt;What are the components of a basic power supply subsystem?&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Source of power - battery, AC adapter, solar&lt;/li&gt;&#xA;&lt;li&gt;Input electronic noise filtering circuit&lt;/li&gt;&#xA;&lt;li&gt;Voltage regulator to provide a constant supply voltage&lt;/li&gt;&#xA;&lt;li&gt;Output electronic noise filtering circuit&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-are-the-design-considerations-for-a-battery-operated-circuit&#34;&gt;What are the design considerations for a battery-operated circuit?&lt;/h2&gt;&#xA;&lt;p&gt;How many Amp-Hours of capacity are needed?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Printing a PCB Design in DFM Now</title>
       <link>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</guid>
-      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+      <description>&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: This tutorial shows how to print a PCB design on paper. Please see the &lt;a href=&#34;https://embedded-systems-design.github.io/asu-pcb-fabrication-process/&#34;&gt;ASU PCB Fabrication Process&lt;/a&gt; for instructions on how to manufacture / &amp;ldquo;print&amp;rdquo; a PCB design in copper.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Printing a PCB Layout in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</guid>
-      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+      <description>&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: This tutorial shows how to print a PCB design on paper. Please see the &lt;a href=&#34;https://embedded-systems-design.github.io/asu-pcb-fabrication-process/&#34;&gt;ASU PCB Fabrication Process&lt;/a&gt; for instructions on how to manufacture / &amp;ldquo;print&amp;rdquo; a PCB design in copper.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Printing Non-String Variables to the PSoC UART</title>
       <link>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</guid>
-      <description>Q: How do I print an integer (or other non-string variable) to the PSoC UART?</description>
+      <description>&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; How do I print an integer (or other non-string variable) to the PSoC UART?&lt;/p&gt;</description>
     </item>
     <item>
       <title>PSoC 4 Hardware Development Kits</title>
       <link>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</guid>
-      <description>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</description>
+      <description>&lt;p&gt;There are several &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; hardware development kits available for use in designs. The list below describes strengths of each kit and provides links to documentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PSoC Creator Project Structure</title>
       <link>https://embedded-systems-design.github.io/psoc-creator-project-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-creator-project-structure/</guid>
-      <description>I can&#39;t find my workspace/project in PSoC Creator&#xA;C files, top design files, etc.</description>
+      <description>&lt;p&gt;&lt;strong&gt;I can&#39;t find my workspace/project in PSoC Creator&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;C files, top design files, etc. are saved in project files&lt;/li&gt;&#xA;&lt;li&gt;Project files are saved in workspaces&lt;/li&gt;&#xA;&lt;li&gt;Workspaces are saved in the folder &amp;quot;PSoC Creator&amp;quot;&lt;/li&gt;&#xA;&lt;li&gt;The PSoC Creator folder can be found in the Documents folder of the user account&lt;/li&gt;&#xA;&lt;li&gt;Click *.cywrk to open a workspace&lt;/li&gt;&#xA;&lt;li&gt;Click *.cyprj to open a project&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>PSoC Hello World Lab</title>
       <link>https://embedded-systems-design.github.io/psoc-hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-hello-world/</guid>
-      <description>Introduction The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or CY8CKIT-042-BLE kit for the first time</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or  CY8CKIT-042-BLE kit for the first time&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pullup/Pulldown resistors</title>
       <link>https://embedded-systems-design.github.io/pull-down-resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pull-down-resistors/</guid>
-      <description>What are pullup resistors? Pull-up These are resistors used to pull a volage on a specific pin high.</description>
+      <description>&lt;h2 id=&#34;what-are-pullup-resistors&#34;&gt;What are pullup resistors?&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;pullup.png&#34;&gt;&lt;img src=&#34;pullup.png&#34; alt=&#34;Pull-up&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;Pull-up&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pushing PCB changes back to a schematic in Cadence</title>
       <link>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</guid>
-      <description>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</description>
+      <description>&lt;h2 id=&#34;why-would-i-need-to-back-annotate-a-design&#34;&gt;Why would I need to &lt;em&gt;back annotate&lt;/em&gt; a design?&lt;/h2&gt;&#xA;&lt;p&gt;If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must &lt;em&gt;back annotate&lt;/em&gt; (meaning, push changes) from the PCB design back into your original schematic. By doing this update, future changes to the schematic can be forward annotated (meaning, pushed forward) to your PCB design without having to start over from scratch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PWM Tutorial 1 -- Using PWM to make an LED &#34;Breathe&#34;</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-1/</guid>
-      <description>Objective In this exercise, you will wire and program an LED to &amp;ldquo;breathe&amp;rdquo; on and off (example).</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;In this exercise, you will wire and program an LED to &amp;ldquo;breathe&amp;rdquo; on and off (&lt;a href=&#34;https://www.youtube.com/watch?v=HC6_3h8Qfw8&#34;&gt;example&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>PWM Tutorial 2 -- Using PWM and an H-Bridge to Control Motor Speed</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-2/</guid>
-      <description>This tutorial continues from where PWM Tutorial 1 left off</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-1&#34;&gt;PWM Tutorial 1&lt;/a&gt; left off&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to apply the &amp;ldquo;breathing&amp;rdquo; PWM approach toward a motor driven by an H-Bridge&lt;/p&gt;</description>
     </item>
     <item>
       <title>PWM Tutorial 3 --  Using Low-Pass Filters with PWM Signals</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-3/</guid>
-      <description>This tutorial continues from where PWM Tutorial 2 left off</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-2&#34;&gt;PWM Tutorial 2&lt;/a&gt; left off&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to walk you through the steps of using a low-pass filter with a PWM output in order to generate an analog signal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python Basics</title>
       <link>https://embedded-systems-design.github.io/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/python/</guid>
-      <description>Python Basics Data Types Really Basic int, float, bool, complex</description>
+      <description>&lt;h1 id=&#34;python-basics&#34;&gt;Python Basics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;data-types&#34;&gt;Data Types&lt;/h2&gt;&#xA;&lt;h3 id=&#34;really-basic&#34;&gt;Really Basic&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;int&lt;/code&gt;, &lt;code&gt;float&lt;/code&gt;, &lt;code&gt;bool&lt;/code&gt;, &lt;code&gt;complex&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recreating a simple round padstack</title>
       <link>https://embedded-systems-design.github.io/recreating-a-simple-round-padstack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/recreating-a-simple-round-padstack/</guid>
-      <description>Recreating a simple round padstack This tutorial takes you through recreating a basic round thru-hole padstack.</description>
+      <description>&lt;h2 id=&#34;recreating-a-simple-round-padstack&#34;&gt;Recreating a simple round padstack&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial takes you through recreating a basic round thru-hole padstack.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Report Formatting Instructions</title>
       <link>https://embedded-systems-design.github.io/report-formatting-instructions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/report-formatting-instructions/</guid>
-      <description>Introduction Formatting is important. It makes documents more legible and helps direct the reader to more easily find the information they want, through consistency of styling and predictable flow.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Formatting is important.  It makes documents more legible and helps direct the reader to more easily find the information they want, through consistency of styling and predictable flow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resetting Reference Designators in Cadence Design Entry CIS</title>
       <link>https://embedded-systems-design.github.io/resetting-reference-designators-in-cadence-design-entry-cis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/resetting-reference-designators-in-cadence-design-entry-cis/</guid>
-      <description>Introduction When drawing a circuit, you will often move and delete components as part of the process, meaning that the reference designators (e.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When drawing a circuit, you will often move and delete components as part of the process, meaning that the reference designators (e.g., R1, C1, U1) may be out of order or scattered throughout your design. This tutorial walks through how to reset the reference designators so they are sequential.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Routing Traces</title>
       <link>https://embedded-systems-design.github.io/routing-traces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/routing-traces/</guid>
-      <description>See this video</description>
+      <description>&lt;p&gt;See this &lt;a href=&#34;https://www.youtube.com/watch?v=cBkEzYIe64Y&#34;&gt;video&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rubout Area for your PCB in KiCad</title>
       <link>https://embedded-systems-design.github.io/adding-a-rubout-area-in-kicad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/adding-a-rubout-area-in-kicad/</guid>
-      <description>Background What is a Rubout area? Some electrical components will contain an antenna for wireless communication.</description>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;h3 id=&#34;what-is-a-rubout-area&#34;&gt;What is a Rubout area?&lt;/h3&gt;&#xA;&lt;p&gt;Some electrical components will contain an antenna for wireless communication. These antennas can be affected by electromagnetic interference that are near the antenna. A &amp;ldquo;Rubout area&amp;rdquo; (also known as a &amp;ldquo;Keepout area&amp;rdquo;) prevents traces and components from being placed in a specific location. These can protect the antenna from any interference.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running a Design for Manufacturing Check in DFM Now</title>
       <link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid>
-      <description>This process has been replaced with a superior web-based Peralta Studios DFM Checker.</description>
+      <description>&lt;h2 id=&#34;this-process-has-been-replaced-with-a-superior-web-based-peralta-studios-dfm-checkerhttpsperaltastudiosengineeringasueduwp-contentuploads202108dfmcheckerhtml&#34;&gt;This process has been replaced with a superior web-based &lt;a href=&#34;https://peraltastudios.engineering.asu.edu/wp-content/uploads/2021/08/dfmchecker.html&#34;&gt;Peralta Studios DFM Checker&lt;/a&gt;.&lt;/h2&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment. This tutorial walks through how to use the program &lt;a href=&#34;https://www.numericalinnovations.com/pages/dfm-now-free-gerber-viewer&#34;&gt;DFM Now&lt;/a&gt; to verify that a design is able to be manufactured by the &lt;a href=&#34;https://www.lpkfusa.com/datasheets/prototyping/s63.pdf&#34;&gt;LPKF ProtoMat S63&lt;/a&gt; in PRLTA 109.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running Design Rules Check in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</guid>
-      <description>What is a Design Rules Check? Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s).</description>
+      <description>&lt;h2 id=&#34;what-is-a-design-rules-check&#34;&gt;What is a Design Rules Check?&lt;/h2&gt;&#xA;&lt;p&gt;Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s). A design that passes a DRC is not necessarily error-free, but rather has passed the limited set of tests that DRC conducts. You can (and should) run a DRC in both Design Entry CIS and PCB Editor, and they will look for different types of errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Schematic checklist</title>
       <link>https://embedded-systems-design.github.io/schematic-checklist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/schematic-checklist/</guid>
-      <description>Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic 1.</description>
+      <description>&lt;p&gt;Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic 1. It is significantly more difficult to fix errors later (either during the PCB layout stage or after manufacturing) than to spend time double-checking the schematic first.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
       <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
-      <description>Introduction Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller.</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller. The PIC&amp;rsquo;s ADC subsystem is the peripheral used to read analog values and convert it into a digital number for use in your program. It can be configured in a variety of ways. In this assignment, you will create an ADC subsystem and program your microcontroller to transmit the result of reading an analog voltage measured at an input pin, using the ADC subsystem in one of its simplest configurations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software design</title>
       <link>https://embedded-systems-design.github.io/software-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/software-design/</guid>
-      <description>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time.</description>
+      <description>&lt;h2 id=&#34;what-is-a-finite-state-machine&#34;&gt;What is a finite state machine?&lt;/h2&gt;&#xA;&lt;p&gt;A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Soldering and Desoldering Tips and Tricks</title>
       <link>https://embedded-systems-design.github.io/soldering-and-desoldering-tips-and-tricks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/soldering-and-desoldering-tips-and-tricks/</guid>
-      <description>Video Walkthrough How do I turn on the soldering irons in PRLTA 103?</description>
+      <description>&lt;h2 id=&#34;video-walkthrough&#34;&gt;Video Walkthrough&lt;/h2&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/4kwuq9Yoj5c&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h2 id=&#34;how-do-i-turn-on-the-soldering-irons-in-prlta-103&#34;&gt;How do I turn on the soldering irons in PRLTA 103?&lt;/h2&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/2WVQa1My0s4&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;h2 id=&#34;how-do-i-solder-through-hole-components-by-hand&#34;&gt;How do I solder through-hole components by hand?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/fYz5nIHH0iY&#34;&gt;Soldering through-hole components&lt;/a&gt; video from EEVblog&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://learn.sparkfun.com/tutorials/how-to-solder---through-hole-soldering&#34;&gt;How to solder - through hole soldering&lt;/a&gt; tutorial from sparkfun&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-do-i-solder-surface-mount-components-by-hand&#34;&gt;How do I solder surface mount components by hand?&lt;/h2&gt;&#xA;&lt;h4 id=&#34;capacitors-diodes-inductors-resistors&#34;&gt;Capacitors, diodes, inductors, resistors&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/PU7wLcuqc-I&#34;&gt;How to solder SMT 0805 components&lt;/a&gt; video from ItsInOurKernel&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=3NN7UGWYmBY&#34;&gt;Surface Mount Soldering 101&lt;/a&gt; video from CuriousInventor&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;dpak-style-components-mosfets-voltage-regulators&#34;&gt;DPAK-style components (MOSFETs, voltage regulators)&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/b9FC9fAlfQE?t=30m49s&#34;&gt;Soldering DPACK components&lt;/a&gt; video from EEVblog&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;integrated-circuits-ics&#34;&gt;Integrated circuits (ICs)&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/b9FC9fAlfQE&#34;&gt;Soldering large ICs&lt;/a&gt; video from EEVblog&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=3NN7UGWYmBY&#34;&gt;Surface Mount Soldering 101&lt;/a&gt; video from CuriousInventor&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=lhOKSqipwqg&#34;&gt;Soldering QFN and QFP package&lt;/a&gt; video from Nick Leijenhorst&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-do-i-solder-surface-mount-components-using-a-reflow-oven&#34;&gt;How do I solder surface mount components using a reflow oven?&lt;/h2&gt;&#xA;&lt;p&gt;This method involves applying solder paste to the pads on the PCB, manually placing your surface mount components into the solder paste, and baking the board in a special oven to solder the entire PCB at once. This method is not really easier than hand soldering for one-off PCBs; you are trading one set of challenges for a different set. If you are interested in using solder paste and the reflow oven to solder your components, please contact &lt;a href=&#34;mailto:osama.jameel@asu.edu&#34;&gt;Osama Jameel&lt;/a&gt; in PRLTA 109.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sources for Electrical and Electromechanical Components</title>
       <link>https://embedded-systems-design.github.io/sources-for-electrical-and-electromechanical-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/sources-for-electrical-and-electromechanical-components/</guid>
-      <description>Professional Distributors These distributors are often used by professionals in industry, and provide the most complete selection of different parts.</description>
+      <description>&lt;h3 id=&#34;professional-distributors&#34;&gt;Professional Distributors&lt;/h3&gt;&#xA;&lt;p&gt;These distributors are often used by professionals in industry, and provide the most complete selection of different parts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sources for Materials</title>
       <link>https://embedded-systems-design.github.io/sources-for-materials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/sources-for-materials/</guid>
-      <description>Adhesives &amp;amp; Tape Adhesives for Paper from ConservationWiki Electronic Grade Self-Leveling Silicone from American Sealants, Inc.</description>
+      <description>&lt;h3 id=&#34;adhesives--tape&#34;&gt;Adhesives &amp;amp; Tape&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.conservation-wiki.com/wiki/Adhesives_for_Paper&#34;&gt;Adhesives for Paper from ConservationWiki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.americansealantsinc.com/asi-306-electronic-grade-silicone-sealant-adhesive/&#34;&gt;Electronic Grade Self-Leveling Silicone from American Sealants, Inc.&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.profma.com/polyimide-copper.htm&#34;&gt;Flex Copper Clad PI Sheets from HB Professional Material&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://truetape.com/&#34;&gt;TrueTape, LLC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;casting-materials&#34;&gt;Casting Materials&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.reynoldsam.com/&#34;&gt;Reynolds Advanced Materials&lt;/a&gt; - 1727 E. Weber Dr., Tempe, AZ. (480) 967-7727&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.quantumsilicones.com/&#34;&gt;Quantum Silicones&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.smooth-on.com/&#34;&gt;Smooth-On&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;composites&#34;&gt;Composites&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.acpsales.com/home.html&#34;&gt;ACP Composites&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;fabric&#34;&gt;Fabric&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.seattlefabrics.com/&#34;&gt;&lt;/a&gt; &lt;a href=&#34;https://www.seattlefabrics.com/&#34;&gt;Seattle Fabrics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://mesasalesandsupply.com/fabric/&#34;&gt;Mesa Sales &amp;amp; Supply&lt;/a&gt; - 2233 E. Main St., Mesa, AZ. (480) 833-7025&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.yelp.com/biz/tempe-sales-company-tempe&#34;&gt;Tempe Sales Company&lt;/a&gt; - 412 W. Broadway Rd., Tempe, AZ. (480) 967-4811&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.sasfabrics.com/&#34;&gt;SAS Fabrics&lt;/a&gt; - 1700 E. Apache Blvd., Tempe, AZ. (480) 966-7557&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.sasfabrics.com/&#34;&gt;SAS Fabrics&lt;/a&gt; - 1111 E. Indian School Rd., Phoenix, AZ. (602) 279-2171&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sasfabricssuperstore.com/&#34;&gt;SAS Fabrics Superstore&lt;/a&gt; - 9840 N. 19th Ave., Phoenix, AZ. (602) 943-7777&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;general-parts-supplies-and-materials&#34;&gt;General Parts, Supplies, and Materials&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.acehardware.com/&#34;&gt;ACE Hardware&lt;/a&gt; - 2758 S. Crimson Rd., Mesa, AZ 85209. (480) 419-0199&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.grainger.com/&#34;&gt;Grainger&lt;/a&gt; - 775 E. Baseline Rd., Gilbert, AZ 85233. (480) 308-7980&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.hobbylobby.com/&#34;&gt;Hobby Lobby&lt;/a&gt; - 4095 S. Gilbert Rd., Ste. 106, Gilbert, AZ 85297. (480) 855-5109&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.homedepot.com/&#34;&gt;The Home Depot&lt;/a&gt; - 7401 S. Power Rd., Queen Creek, AZ 85142. (480) 988-6810&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.lowes.com/&#34;&gt;Lowe&amp;rsquo;s&lt;/a&gt; - 4730 S. Higley Rd., Gilbert, AZ 85297. (480) 840-6280&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.michaels.com/&#34;&gt;Michael&amp;rsquo;s&lt;/a&gt; - 5020 S. Power Rd., Gilbert, AZ 85212. (480) 840-3211&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;leather&#34;&gt;Leather&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.tandyleather.com/&#34;&gt;Tandy Leather&lt;/a&gt; - 2245 W. University Dr. #6, Tempe, AZ. (480) 966-4151&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;metal&#34;&gt;Metal&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.az-metals.net/&#34;&gt;AZ Metals&lt;/a&gt; - 526 E. Juanita Ave. #1, Mesa, AZ. (480) 353-2950&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.industrialmetalsupply.com/&#34;&gt;Industrial Metal Supply&lt;/a&gt; - 5150 S. 48th St., Phoenix, AZ. (602) 454-1500 (*Ask for the ASU student discount)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;plastic&#34;&gt;Plastic&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.portplastics.com/&#34;&gt;Port Plastics&lt;/a&gt; - 3191 N. Washington St., Ste. #7, Chandler, AZ. (480) 813-0849&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.professionalplastics.com/Phoenix_AZ&#34;&gt;Professional Plastics&lt;/a&gt; - 4449 S. 38th Pl., Phoenix, AZ. (800) 445-3303&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.curbellplastics.com/Discover-Curbell/Locations-Nationwide/Phoenix&#34;&gt;Curbell Plastics&lt;/a&gt; 405 North 75th Avenue, Bldg 1 Ste 100 Phoenix, AZ 85043 888-517-7176&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;telescoping-tubing&#34;&gt;Telescoping Tubing&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://alcobrametals.com/page/tubeandpipe&#34;&gt;Telescoping Tube and Pipe from Alcobra Metals&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;wood&#34;&gt;Wood&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.timberww.com/&#34;&gt;Timber Woodworking&lt;/a&gt; - 935 E. Southern Ave., Mesa, AZ. (480) 926-2131&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.woodworkerssource.com/&#34;&gt;Woodworker&amp;rsquo;s Source&lt;/a&gt; - 645 W. Elliot Rd., Tempe, AZ. (480) 355-5090&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Sources for Mechanical Components</title>
       <link>https://embedded-systems-design.github.io/sources-for-mechanical-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/sources-for-mechanical-components/</guid>
-      <description>General Berg Grainger (* ASU Preferred Supplier) McMaster-Carr Miki Pulley MSC Industrial (* ASU Preferred Supplier) Motor System Parts from Radical RC Stock Drive Products Bearings igus - plastic bushings, bearings, linear guides, and cable carriers.</description>
+      <description>&lt;h3 id=&#34;general&#34;&gt;General&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wmberg.com/products&#34;&gt;Berg&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.grainger.com/&#34;&gt;Grainger&lt;/a&gt; (* ASU Preferred Supplier)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.mcmaster.com/&#34;&gt;McMaster-Carr&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.mikipulley.co.jp/EN/&#34;&gt;Miki Pulley&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.blogger.com/&#34;&gt;MSC Industrial&lt;/a&gt; (* ASU Preferred Supplier)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.radicalrc.com/category/GWS-Motor-Sys-Parts-130&#34;&gt;Motor System Parts from Radical RC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://sdp-si.com/&#34;&gt;Stock Drive Products&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;bearings&#34;&gt;Bearings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.igus.com/&#34;&gt;igus&lt;/a&gt; - plastic bushings, bearings, linear guides, and cable carriers. &lt;a href=&#34;http://www.igus.com/wpck/4856?C=US&amp;amp;L=en&#34;&gt;Samples&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.kaydonbearings.com/drawings/mtseries.php#&#34;&gt;Kaydon Slewing Bearings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.nskprecision.com/&#34;&gt;NSK Motion and Control&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.vxb.com/Default.asp&#34;&gt;VXB Ball Bearings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;couplings&#34;&gt;Couplings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zero-max.com/abb-servoclass-double-flex&#34;&gt;ZeroMax Flexible Shaft Couplings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;gears&#34;&gt;Gears&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.didel.com/microkit/pricelist/&#34;&gt;Didel&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.radicalrc.com/category/Pinions-the-small-gears-133&#34;&gt;Pinion Gears from Radical RC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://rushgears.com/&#34;&gt;RushGears.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;springs&#34;&gt;Springs&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.smalley.com/&#34;&gt;Smalley&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.thespringstore.com/small-coil-springs-for-sale.html&#34;&gt;Small Coil Spring from TheSprinStore.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>SPI &amp; Shift Register Tutorial</title>
       <link>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</guid>
-      <description>Serial Communication - SPI &amp;amp; Shift Register Tutorial&#xA;Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Serial Communication - SPI &amp;amp; Shift Register Tutorial&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).&lt;/p&gt;</description>
     </item>
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
       <link>https://embedded-systems-design.github.io/spi-shift-register-timers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-timers/</guid>
-      <description>Objectives To develop and demonstrate individual proficiency in:&#xA;Using SPI communication to control LEDs connected to a shift register</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;To develop and demonstrate individual proficiency in:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Using SPI communication to control LEDs connected to a shift register&lt;/p&gt;</description>
     </item>
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers (Part 2)</title>
       <link>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</guid>
-      <description>Introduction This tutorial builds off of Part 1. Go Back and start there if you haven&amp;rsquo;t yet completed it.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial builds off of &lt;a href=&#34;https://embedded-systems-design.github.io/spi-shift-register-timers&#34;&gt;Part 1&lt;/a&gt;.  &lt;a href=&#34;https://embedded-systems-design.github.io/spi-shift-register-timers&#34;&gt;Go Back&lt;/a&gt; and start there if you haven&amp;rsquo;t yet completed it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SPI Motor Controller (PIC)</title>
       <link>https://embedded-systems-design.github.io/pic-spi-motor-controller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pic-spi-motor-controller/</guid>
-      <description>Introduction This is a basic tutorial for the steps required to get SPI working on the PIC18F47Q10 Curiosity Nano</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is a basic tutorial for the steps required to get SPI working on the PIC18F47Q10 Curiosity Nano&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stepper Motor Selection and Control</title>
       <link>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</guid>
-      <description>Stepper Motor Selection There are four variables to consider when selecting a stepper motor</description>
+      <description>&lt;h2 id=&#34;stepper-motor-selection&#34;&gt;Stepper Motor Selection&lt;/h2&gt;&#xA;&lt;p&gt;There are four variables to consider when selecting a stepper motor&lt;/p&gt;</description>
     </item>
     <item>
       <title>Steps and additional notes for Board Layout</title>
       <link>https://embedded-systems-design.github.io/pcb-tutorial-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-tutorial-notes/</guid>
-      <description>In the hopes that it will help anyone that is still working on the PCB, here is a list of the steps needed for this homework assignment with the corresponding blog posts and some of my comments.</description>
+      <description>&lt;p&gt;In the hopes that it will help anyone that is still working on the PCB, here is a list of the steps needed for this homework assignment with the corresponding blog posts and some of my comments. I also added some links at the bottom for specific errors I have seen mentioned so far. Please comment if there are any parts of the process that you would like more details on and I will try to add to this post.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Strategies for using 0 Ohm Resistors</title>
       <link>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</guid>
-      <description>Why use 0 ohm Resistors in a design? 0 ohm resistors act as a through hole jumper wire on manufactured PCBs.</description>
+      <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-0-ohm-resistors-in-a-design&#34;&gt;Why use 0 ohm Resistors in a design?&lt;/h2&gt;&#xA;&lt;p&gt;0 ohm resistors act as a through hole jumper wire on manufactured PCBs. Also known as &amp;ldquo;jumper chips&amp;rsquo;&amp;rsquo; or&amp;quot;jumper leads&amp;rdquo;, 0 ohm resistors can be substituted for vias to cross over line traces. This is useful for PCBs that have many vias already and PCBs that want to avoid vias altogether. In the PCB industry, using 0 ohm resistors over jumper wires in the design process allows one less specialized tool when assembling the PCB. It is cheaper and more practical to install a jump lead using readily available resistor placing machines over having a separate machine for just placing jumper wires. &lt;/p&gt;</description>
     </item>
     <item>
       <title>Surface Mount Soldering Tutorial</title>
       <link>https://embedded-systems-design.github.io/surface-mount-soldering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/surface-mount-soldering/</guid>
-      <description>Special thanks to Travis Kelley</description>
+      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/r6oD5bdy6EI&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Special thanks to Travis Kelley&lt;/p&gt;</description>
     </item>
     <item>
       <title>Texas Instruments Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/texas-instruments-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/texas-instruments-microcontrollers/</guid>
-      <description>What microcontrollers does Texas Instruments specialize in? Texas Instruments (TI) specializes in low-power, performance, and wireless microcontrollers.</description>
+      <description>&lt;h2 id=&#34;what-microcontrollers-does-texas-instruments-specialize-in&#34;&gt;What microcontrollers does Texas Instruments specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/overview.page&#34;&gt;Texas Instruments (TI)&lt;/a&gt; specializes in low-power, performance, and wireless microcontrollers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions</title>
       <link>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</guid>
-      <description>Are Connections Continuous? Conduct a continuity check on your board with a multimeter.</description>
+      <description>&lt;h2 id=&#34;are-connections-continuous&#34;&gt;Are Connections Continuous?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;em&gt;Conduct a continuity check on your board with a multimeter.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Timers and Interrupts on an LCD screen with the PIC</title>
       <link>https://embedded-systems-design.github.io/timers-and-interrupts-lcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/timers-and-interrupts-lcd/</guid>
-      <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results on your LCD.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Timers and Interrupts with the PIC</title>
       <link>https://embedded-systems-design.github.io/timers-and-interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/timers-and-interrupts/</guid>
-      <description>Objectives The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results over EUSART and with a LED.</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results over EUSART and with a LED.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trace Width Calculator</title>
       <link>https://embedded-systems-design.github.io/trace-width-calculator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/trace-width-calculator/</guid>
-      <description>Check this link</description>
+      <description>&lt;p&gt;Check this &lt;a href=&#34;https://www.4pcb.com/trace-width-calculator.html&#34;&gt;link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transferring a Cadence schematic to PCB Editor</title>
       <link>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</guid>
-      <description>Introduction In order to create a PCB, you must first prepare the schematic and check for errors, export a netlist of the schematic, import the netlist into PCB editor, and design the PCB.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In order to create a PCB, you must first prepare the schematic and check for errors, export a &lt;em&gt;netlist&lt;/em&gt; of the schematic, import the netlist into PCB editor, and design the PCB. A &lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Netlist&#34;&gt;netlist&lt;/a&gt;&lt;/em&gt; is a file that describes interconnections among components in a circuit. This tutorial describes the process of transferring a schematic to PCB Editor. It is assumed that you have a completed schematic (see example, Figure 1) before trying to migrate to PCB Editor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transistors</title>
       <link>https://embedded-systems-design.github.io/transistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/transistors/</guid>
-      <description>What is a transistor? A transistor is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</description>
+      <description>&lt;h2 id=&#34;what-is-a-transistor&#34;&gt;What is a transistor?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Transistor&#34;&gt;transistor&lt;/a&gt; is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Types of Logic Operators and How to Use Them</title>
       <link>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</guid>
-      <description>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</description>
+      <description>&lt;h2 id=&#34;what-are-logical-operators&#34;&gt;What are Logical Operators?&lt;/h2&gt;&#xA;&lt;p&gt;Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free. When you ask your friend about what sides they want, you may ask them one of the following 4 questions:&lt;/p&gt;</description>
     </item>
     <item>
       <title>UART PIC to Argon Tutorial</title>
       <link>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</guid>
-      <description>UART PIC to Argon Tutorial Objectives Getting familiar with UART on both PIC and Particle platforms.</description>
+      <description>&lt;h1 id=&#34;uart-pic-to-argon-tutorial&#34;&gt;UART PIC to Argon Tutorial&lt;/h1&gt;&#xA;&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;Getting familiar with UART on both PIC and Particle platforms. In this tutorial, you will set up the PIC as a black box that will respond to various inputs from the Argon. Utilizing the USB serial bus on the Argon, we can verify the project at the end.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Updating Library Parts in Cadence</title>
       <link>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</guid>
-      <description>Background Why do I need to update my parts? As you start to learn schematic and PCB design, you will have to learn to make your own symbols and footprints for your components.</description>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-do-i-need-to-update-my-parts&#34;&gt;Why do I need to update my parts?&lt;/h3&gt;&#xA;&lt;p&gt;As you start to learn schematic and PCB design, you will have to learn to make your own symbols and footprints for your components. Because of this, there is a chance that you accidentally mislabel or misread a data sheet and add a wrong pin/connection. Designs are also constantly being updated and revised.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Bitwise Operators in C</title>
       <link>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</guid>
-      <description>What are bitwise operators? Bitwise operators allow access to individual bits in a variable or register.</description>
+      <description>&lt;h2 id=&#34;what-are-bitwise-operators&#34;&gt;What are bitwise operators?&lt;/h2&gt;&#xA;&lt;p&gt;Bitwise operators allow access to individual bits in a variable or register. A typical register or variable is at least 1 byte (8 bits) in size.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using GitHub to Manage Project Files</title>
       <link>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</guid>
-      <description>GitHub is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same &amp;ldquo;repository&amp;rdquo; (or 304/314 project folder in layman&amp;rsquo;s terms).</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same &amp;ldquo;repository&amp;rdquo; (or 304/314 project folder in layman&amp;rsquo;s terms).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using the KiCad Footprint Editor</title>
@@ -1140,98 +1140,98 @@
       <link>https://embedded-systems-design.github.io/using-pymakr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-pymakr/</guid>
-      <description>pymaker install pymakr preview&#xA;code --install-extension Pycom.pymakr-preview Getting Started with Pymakr (from here) In File explorer(ctrl+shift+e) add or create a project folder for holding your micropython code (suggestion: name it &amp;ldquo;micropython&amp;rdquo;).</description>
+      <description>&lt;h2 id=&#34;pymaker&#34;&gt;pymaker&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;install pymakr preview&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;code --install-extension Pycom.pymakr-preview&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;getting-started-with-pymakr-from-herehttpsgithubcompycompymakr-vscblobheadget_startedmd&#34;&gt;Getting Started with Pymakr (from &lt;a href=&#34;https://github.com/pycom/pymakr-vsc/blob/HEAD/GET_STARTED.md&#34;&gt;here&lt;/a&gt;)&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In File explorer(&lt;code&gt;ctrl+shift+e&lt;/code&gt;)&#xA;&lt;ol&gt;&#xA;&lt;li&gt;add or create a project folder for holding your micropython code (suggestion: name it &amp;ldquo;micropython&amp;rdquo;).  Consider creating one in your &amp;ldquo;code&amp;rdquo; git repository.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;navigate to &amp;ldquo;Pymakr: Projects&amp;rdquo; tab in the workspace explorer window on the left&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;select &amp;ldquo;create project&amp;rdquo;.  Select the same code folder as above and specify a project name (like &amp;ldquo;hello-world&amp;rdquo;).  Select the option to create a subdirectory with the micropython folder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using VCC and GND Symbols</title>
       <link>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</guid>
-      <description>You can use VCC (power) and GND (ground) symbols to connect power and ground instead of manually routing wires across your schematic.</description>
+      <description>&lt;p&gt;You can use VCC (power) and GND (ground) symbols to connect power and ground instead of manually routing wires across your schematic. This is a common technique used by professional engineers to improve the readability of schematics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Version Control Part 1 -- What is Version Control?</title>
       <link>https://embedded-systems-design.github.io/version-control-part-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/version-control-part-1/</guid>
-      <description>Version control (sometimes called source control) keeps track of changes to files over time.</description>
+      <description>&lt;p&gt;Version control (sometimes called source control) keeps track of changes to files over time. Multiple users can edit the same projects. Some platforms that support version control are GitHub, GitLab, BitBucket, and Google Drive.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Version Control Part 2 -- GitHub and GitFlow Tutorial</title>
       <link>https://embedded-systems-design.github.io/version-control-part-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/version-control-part-2/</guid>
-      <description>Setting up GitHub Create an account on GitHub by going to github.</description>
+      <description>&lt;h2 id=&#34;setting-up-github&#34;&gt;Setting up GitHub&lt;/h2&gt;&#xA;&lt;p&gt;Create an account on GitHub by going to &lt;a href=&#34;github.com&#34;&gt;github.com&lt;/a&gt; and signing up. Once complete, click the profile circle on the top right. Most navigation items can be found through the pull down menu. Download a Git CLI, preferably (Git for Windows)[https://gitforwindows.org/], however, GitHub provides a CLI that is recently out of beta &lt;a href=&#34;https://cli.github.com/&#34;&gt;GitHub CLI&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Version Control Part 3 -- Setting up for PSoC</title>
       <link>https://embedded-systems-design.github.io/version-control-part-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/version-control-part-3/</guid>
-      <description>To use GitHub with PSoc code requires a very specific set up, this is mostly due to how PSoC creates and manages files.</description>
+      <description>&lt;p&gt;To use GitHub with PSoc code requires a very specific set up, this is mostly due to how PSoC creates and manages files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Voltage Regulators VS DC-DC converters</title>
       <link>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</guid>
-      <description>How do I choose a voltage regulator? There are three major types of voltage regulators that you will encounter in this program:</description>
+      <description>&lt;h2 id=&#34;how-do-i-choose-a-voltage-regulator&#34;&gt;How do I choose a voltage regulator?&lt;/h2&gt;&#xA;&lt;p&gt;There are three major types of voltage regulators that you will encounter in this program:&lt;/p&gt;</description>
     </item>
     <item>
       <title>VSCode Setup and Usage</title>
       <link>https://embedded-systems-design.github.io/vscode-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/vscode-setup/</guid>
-      <description>Installation Download from here&#xA;Installation Options&#xA;Accept the default installation path keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked keep &amp;ldquo;Add to PATH&amp;rdquo; checked other options: set to your preference Ubuntu-specific cd ~/Downloads sudo dpkg -i code_1.</description>
+      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Download from &lt;a href=&#34;https://code.visualstudio.com/Download&#34;&gt;here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Installation Options&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Accept the default installation path&lt;/li&gt;&#xA;&lt;li&gt;keep &amp;ldquo;Register Code as an editor for supported file types&amp;rdquo; checked&lt;/li&gt;&#xA;&lt;li&gt;keep &amp;ldquo;Add to PATH&amp;rdquo; checked&lt;/li&gt;&#xA;&lt;li&gt;other options: set to your preference&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;ubuntu-specific&#34;&gt;Ubuntu-specific&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#111&#34;&gt;cd&lt;/span&gt; ~/Downloads&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dpkg -i code_1.7* &lt;span style=&#34;color:#75715e&#34;&gt;#.... tab complete&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install -yf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;&#xA;&lt;iframe width=&#34;720&#34; height=&#34;480&#34; src=&#34;https://www.youtube.com/embed/Polis0zBkFQ&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Thanks to Wyatte for this helpful video&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is a Gantt Chart?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</guid>
-      <description>A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks.</description>
+      <description>&lt;p&gt;A Gantt Chart is a common project management tool that helps teams understand the phases of a project, deadlines, critical paths, and interdependencies between tasks. It is important to gain experience predicting how long tasks take in order to calibrate your time management.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is a printed circuit board?</title>
       <link>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</guid>
-      <description>A printed circuit board (PCB) is a board made of both conducive and non-conductive materials onto which components can be soldered to create a circuit.</description>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://www.madehow.com/Volume-2/Printed-Circuit-Board.html&#34;&gt;printed circuit board (PCB)&lt;/a&gt; is a board made of both conducive and non-conductive materials onto which components can be soldered to create a circuit. The circuit connections are made via copper traces on the board. An example PCB is shown in Figure 1.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is Cadence?</title>
       <link>https://embedded-systems-design.github.io/what-is-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-cadence/</guid>
-      <description>Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards.</description>
+      <description>&lt;p&gt;Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards. The following video by Casey Petersen describes the basics of Cadence:&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is PSoC?</title>
       <link>https://embedded-systems-design.github.io/what-is-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-psoc/</guid>
-      <description>The Cypress Programmable System on a Chip (PSoC®) is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing.</description>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing. The following is a list of helpful resources for getting started with the PSoC®:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Working with Libraries</title>
       <link>https://embedded-systems-design.github.io/working-with-libraries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/working-with-libraries/</guid>
-      <description>Working with Libraries - THIS IS A DUPLICATE TUTORIAL This tutorial details how to add and save a custom library.</description>
+      <description>&lt;h2 id=&#34;working-with-libraries---this-is-a-duplicate-tutorial&#34;&gt;Working with Libraries - THIS IS A DUPLICATE TUTORIAL&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial details how to add and save a custom library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Working with Thonny</title>
       <link>https://embedded-systems-design.github.io/working-with-thonny/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/working-with-thonny/</guid>
-      <description>Menu &amp;amp; Icons File File Menu File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
+      <description>&lt;h2 id=&#34;menu--icons&#34;&gt;Menu &amp;amp; Icons&lt;/h2&gt;&#xA;&lt;h3 id=&#34;file&#34;&gt;File&lt;/h3&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;filemenu.png&#34;&gt;&lt;img src=&#34;filemenu.png&#34; alt=&#34;File Menu&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;File Menu&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zipping Project Folders</title>
       <link>https://embedded-systems-design.github.io/zipping-folders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/zipping-folders/</guid>
-      <description>Windows has a ZIP utility built in that you can use to create compressed archives.</description>
+      <description>&lt;p&gt;Windows has a ZIP utility built in that you can use to create compressed archives. Assuming you have a workspace with two projects inside (one for timed blinking, the other for the button push), right click on the entire workspace folder, find the &amp;quot;send to&amp;quot; item in the context menu and select compressed folder. That will save everything the grading team will need to check your homework&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

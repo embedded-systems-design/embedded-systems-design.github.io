@@ -12,42 +12,42 @@
       <link>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</guid>
-      <description>Introduction A padstack is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1).</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://www.speedingedge.com/PDF-Files/anatomy%20of%20a%20plated%20hole.pdf&#34;&gt;padstack&lt;/a&gt; is a design for the exposed copper surface area for each hole or pad on the board where the component is mounted and soldered (see example, Figure 1). You may need to create a custom padstack when creating custom parts to ensure that the pad and hole are big enough to be reliable. This tutorial describes the manual creation of custom padstacks using the Pad Designer application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom PCB footprint manually in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</guid>
-      <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Footprint_(electronics)&#34;&gt;PCB footprint&lt;/a&gt; is the physical layout on a PCB to which a component is soldered. Usually, you must create a custom PCB footprint for each custom schematic symbol that you create. Footprints can be made for many standard components (e.g., basic ICs) using the Package Symbol Wizard (see the &lt;a href=&#34;https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/&#34;&gt;Creating a PCB footprint using Package Designer in Cadence page&lt;/a&gt;), but more complex components (like switching power supply ICs with thermal reliefs) must be created by hand. This tutorial details the manual creation of a custom footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom PCB footprint using Package Designer in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</guid>
-      <description>Introduction A PCB footprint is the physical layout on a PCB to which a component is soldered.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Footprint_(electronics)&#34;&gt;PCB footprint&lt;/a&gt; is the physical layout on a PCB to which a component is soldered. Usually, you must create a custom PCB footprint for each custom schematic symbol that you create. This tutorial details the easiest way to make custom footprints using the Package Symbol (Wizard).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom SMD footprint manually in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</guid>
-      <description>Introduction This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial will walk through the creation of a custom surface-mount device (SMD) footprint manually. A &lt;a href=&#34;http://www.onsemi.com/pub_link/Collateral/MCH3382-D.PDF&#34;&gt;MCH3382 Power MOSFET&lt;/a&gt; from ON Semiconductor will be used as an example.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating Custom Footprints</title>
       <link>https://embedded-systems-design.github.io/creating-custom-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-custom-footprints/</guid>
-      <description>You can try to find existing footprints for components, but most components will require custom footprints.</description>
+      <description>&lt;p&gt;You can try to &lt;a href=&#34;https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/&#34;&gt;find existing footprints&lt;/a&gt; for components, but most components will require custom footprints.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Finding existing PCB footprints for Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</guid>
-      <description>Where can I find a list of existing PCB footprints for Cadence PCB Editor?</description>
+      <description>&lt;h2 id=&#34;where-can-i-find-a-list-of-existing-pcb-footprints-for-cadence-pcb-editor&#34;&gt;Where can I find a list of existing PCB footprints for Cadence PCB Editor?&lt;/h2&gt;&#xA;&lt;p&gt;While Cadence does have some built-in footprint libraries, they are limited due to the hundreds of thousands of different parts in existence. Additionally, most companies make their own footprints to match the specific manufacturing processes that they use.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

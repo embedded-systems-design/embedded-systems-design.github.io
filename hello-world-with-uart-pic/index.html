@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.133.0">
+  <meta name="generator" content="Hugo 0.134.2">
 
   <!-- plugins -->
   
@@ -319,42 +319,42 @@
 </li>
 </ol>
 <table>
-<thead>
-<tr>
-<th><strong>Critical Information</strong></th>
-<th><strong>Importance</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a.  What the virtual COM port (that communicates over the Curiosity Nano&rsquo;s USB to your computer) is called</td>
-<td>Needed in order to connect PuTTY to the Curiosity Nano</td>
-</tr>
-<tr>
-<td>b.  Which EUSART subsystem connects to it</td>
-<td>Needed to determine which EUSART port to connect the PIC to in order to communicate with the debugger and computer</td>
-</tr>
-<tr>
-<td>c.  Which GPIO pin the onboard LED on the Curiosity Nano is connected to</td>
-<td>Needed to show activity later in this assignment</td>
-</tr>
-<tr>
-<td>d.  Which specific pins are used for receive and transmit on the PIC</td>
-<td>Needed to assign the correct pins to the EUSART component</td>
-</tr>
-<tr>
-<td>e.  Which pin of the Curiosity Nano board outputs the regulated power used by the &ldquo;target&rdquo; (the PIC18F47Q10)</td>
-<td>Needed to know where you can access power and ground on the Curiosity Nano board</td>
-</tr>
-<tr>
-<td>f.  All of the ground pins</td>
-<td></td>
-</tr>
-<tr>
-<td>g.  How much current can a digital I/O pin safely source or sink? (Hint: See the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>)</td>
-<td>Needed to match the current needs of external loads (e.g., LEDs) with the IC and determine whether you need interface circuitry (e.g., a transistor)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information</strong></th>
+          <th style="text-align: left"><strong>Importance</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">a.  What the virtual COM port (that communicates over the Curiosity Nano&rsquo;s USB to your computer) is called</td>
+          <td style="text-align: left">Needed in order to connect PuTTY to the Curiosity Nano</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">b.  Which EUSART subsystem connects to it</td>
+          <td style="text-align: left">Needed to determine which EUSART port to connect the PIC to in order to communicate with the debugger and computer</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">c.  Which GPIO pin the onboard LED on the Curiosity Nano is connected to</td>
+          <td style="text-align: left">Needed to show activity later in this assignment</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">d.  Which specific pins are used for receive and transmit on the PIC</td>
+          <td style="text-align: left">Needed to assign the correct pins to the EUSART component</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">e.  Which pin of the Curiosity Nano board outputs the regulated power used by the &ldquo;target&rdquo; (the PIC18F47Q10)</td>
+          <td style="text-align: left">Needed to know where you can access power and ground on the Curiosity Nano board</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">f.  All of the ground pins</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">g.  How much current can a digital I/O pin safely source or sink? (Hint: See the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>)</td>
+          <td style="text-align: left">Needed to match the current needs of external loads (e.g., LEDs) with the IC and determine whether you need interface circuitry (e.g., a transistor)</td>
+      </tr>
+  </tbody>
 </table>
 <ol start="5">
 <li>

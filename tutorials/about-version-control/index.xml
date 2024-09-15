@@ -12,21 +12,21 @@
       <link>https://embedded-systems-design.github.io/version-control-part-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/version-control-part-1/</guid>
-      <description>Version control (sometimes called source control) keeps track of changes to files over time.</description>
+      <description>&lt;p&gt;Version control (sometimes called source control) keeps track of changes to files over time. Multiple users can edit the same projects. Some platforms that support version control are GitHub, GitLab, BitBucket, and Google Drive.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Version Control Part 2 -- GitHub and GitFlow Tutorial</title>
       <link>https://embedded-systems-design.github.io/version-control-part-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/version-control-part-2/</guid>
-      <description>Setting up GitHub Create an account on GitHub by going to github.</description>
+      <description>&lt;h2 id=&#34;setting-up-github&#34;&gt;Setting up GitHub&lt;/h2&gt;&#xA;&lt;p&gt;Create an account on GitHub by going to &lt;a href=&#34;github.com&#34;&gt;github.com&lt;/a&gt; and signing up. Once complete, click the profile circle on the top right. Most navigation items can be found through the pull down menu. Download a Git CLI, preferably (Git for Windows)[https://gitforwindows.org/], however, GitHub provides a CLI that is recently out of beta &lt;a href=&#34;https://cli.github.com/&#34;&gt;GitHub CLI&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Version Control Part 3 -- Setting up for PSoC</title>
       <link>https://embedded-systems-design.github.io/version-control-part-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/version-control-part-3/</guid>
-      <description>To use GitHub with PSoc code requires a very specific set up, this is mostly due to how PSoC creates and manages files.</description>
+      <description>&lt;p&gt;To use GitHub with PSoc code requires a very specific set up, this is mostly due to how PSoC creates and manages files.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

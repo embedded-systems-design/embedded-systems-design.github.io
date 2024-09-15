@@ -12,21 +12,21 @@
       <link>https://embedded-systems-design.github.io/assign-kicad-footprints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/assign-kicad-footprints/</guid>
-      <description>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic&lt;/p&gt;</description>
     </item>
     <item>
       <title>Electrical Rules Check (ERC)</title>
       <link>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</guid>
-      <description>Introduction In the last tutorial you created a schematic. But is it any good?</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the last tutorial you created a schematic.  But is it any good?  The electrical rules check, or ERC, is a useful way to debug your circuit.  This example tutorial takes you through the process of finding and eliminating circuit design errors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Importing Netlist into KiCad PCB</title>
       <link>https://embedded-systems-design.github.io/importing-kicad-netlists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/importing-kicad-netlists/</guid>
-      <description>Introduction We are now ready to transfer over from Schematic Editor to PCB Editor.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;We are now ready to transfer over from Schematic Editor to PCB Editor. In order to get to this step, we had to make sure a couple things were taken care of:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using the KiCad Footprint Editor</title>

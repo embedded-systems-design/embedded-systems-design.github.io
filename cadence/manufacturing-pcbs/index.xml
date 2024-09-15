@@ -12,49 +12,49 @@
       <link>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</guid>
-      <description>Coming Soon&amp;hellip;</description>
+      <description>&lt;p&gt;Coming Soon&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exporting Gerber files from Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid>
-      <description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
+      <description>&lt;h2 id=&#34;what-is-a-gerber-file&#34;&gt;What is a Gerber file?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Gerber_format&#34;&gt;Gerber file&lt;/a&gt; (also known as &lt;em&gt;artwork&lt;/em&gt;) is a 2-D graphical representation of a single layer of a PCB. A typical design will have individual Gerber files for each layer (e.g., top copper, bottom copper, top silkscreen, bottom silkscreen, top soldermask, bottom soldermask) of a PCB.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exporting Solder Mask Layers from Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</guid>
-      <description>What is a solder mask? Solder mask is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections.</description>
+      <description>&lt;h2 id=&#34;what-is-a-solder-mask&#34;&gt;What is a solder mask?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Solder_mask&#34;&gt;Solder mask&lt;/a&gt; is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections. It is often green, red, or blue, and is put over all parts of a PCB except where components are to be soldered.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Printing a PCB Design in DFM Now</title>
       <link>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</guid>
-      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+      <description>&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: This tutorial shows how to print a PCB design on paper. Please see the &lt;a href=&#34;https://embedded-systems-design.github.io/asu-pcb-fabrication-process/&#34;&gt;ASU PCB Fabrication Process&lt;/a&gt; for instructions on how to manufacture / &amp;ldquo;print&amp;rdquo; a PCB design in copper.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Printing a PCB Layout in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</guid>
-      <description>Note: This tutorial shows how to print a PCB design on paper.</description>
+      <description>&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: This tutorial shows how to print a PCB design on paper. Please see the &lt;a href=&#34;https://embedded-systems-design.github.io/asu-pcb-fabrication-process/&#34;&gt;ASU PCB Fabrication Process&lt;/a&gt; for instructions on how to manufacture / &amp;ldquo;print&amp;rdquo; a PCB design in copper.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running a Design for Manufacturing Check in DFM Now</title>
       <link>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</guid>
-      <description>This process has been replaced with a superior web-based Peralta Studios DFM Checker.</description>
+      <description>&lt;h2 id=&#34;this-process-has-been-replaced-with-a-superior-web-based-peralta-studios-dfm-checkerhttpsperaltastudiosengineeringasueduwp-contentuploads202108dfmcheckerhtml&#34;&gt;This process has been replaced with a superior web-based &lt;a href=&#34;https://peraltastudios.engineering.asu.edu/wp-content/uploads/2021/08/dfmchecker.html&#34;&gt;Peralta Studios DFM Checker&lt;/a&gt;.&lt;/h2&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Designs created in an ECAD program may be electrically correct on the screen, but are ultimately constrained by the capabilities of your fabrication equipment. This tutorial walks through how to use the program &lt;a href=&#34;https://www.numericalinnovations.com/pages/dfm-now-free-gerber-viewer&#34;&gt;DFM Now&lt;/a&gt; to verify that a design is able to be manufactured by the &lt;a href=&#34;https://www.lpkfusa.com/datasheets/prototyping/s63.pdf&#34;&gt;LPKF ProtoMat S63&lt;/a&gt; in PRLTA 109.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running Design Rules Check in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</guid>
-      <description>What is a Design Rules Check? Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s).</description>
+      <description>&lt;h2 id=&#34;what-is-a-design-rules-check&#34;&gt;What is a Design Rules Check?&lt;/h2&gt;&#xA;&lt;p&gt;Design Rules Check (DRC) is a tool that looks for a limited set of errors in PCB designs, and generates error messages to help you identify and fix the problem(s). A design that passes a DRC is not necessarily error-free, but rather has passed the limited set of tests that DRC conducts. You can (and should) run a DRC in both Design Entry CIS and PCB Editor, and they will look for different types of errors.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

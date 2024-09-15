@@ -12,7 +12,7 @@
       <link>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</guid>
-      <description>Why use 0 ohm Resistors in a design? 0 ohm resistors act as a through hole jumper wire on manufactured PCBs.</description>
+      <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;h2 id=&#34;why-use-0-ohm-resistors-in-a-design&#34;&gt;Why use 0 ohm Resistors in a design?&lt;/h2&gt;&#xA;&lt;p&gt;0 ohm resistors act as a through hole jumper wire on manufactured PCBs. Also known as &amp;ldquo;jumper chips&amp;rsquo;&amp;rsquo; or&amp;quot;jumper leads&amp;rdquo;, 0 ohm resistors can be substituted for vias to cross over line traces. This is useful for PCBs that have many vias already and PCBs that want to avoid vias altogether. In the PCB industry, using 0 ohm resistors over jumper wires in the design process allows one less specialized tool when assembling the PCB. It is cheaper and more practical to install a jump lead using readily available resistor placing machines over having a separate machine for just placing jumper wires. &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

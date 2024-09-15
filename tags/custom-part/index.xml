@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</guid>
-      <description>Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)</description>
+      <description>&lt;p&gt;Creating a Custom DC Barrel Jack Schematic Symbol and PCB Footprint in Cadence (Includes Padstack Tutorial)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a custom library in Cadence</title>
       <link>https://embedded-systems-design.github.io/creating-a-custom-library-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-custom-library-in-cadence/</guid>
-      <description>In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them.</description>
+      <description>&lt;p&gt;In order to use schematic symbols imported from the web or custom created for your project (very common), you must create a custom symbol library in which to save them. It is good practice to create a custom library for each project that you work on to save your schematic symbols. To create a custom library, do the following:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

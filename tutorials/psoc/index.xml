@@ -12,112 +12,112 @@
       <link>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</guid>
-      <description>Q: I have tried to connect the Cypress CySmart software to the USB dongle but it does not work.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; I have tried to connect the Cypress CySmart software to the USB dongle but it does not work. Help!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bluetooth Tutorial 1 - Thermometer</title>
       <link>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</guid>
-      <description>Introduction PSoC Setup Connect Header J2, pin P3[0] Header J3, pin VREF with a jumper wire.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;h2 id=&#34;psoc-setup&#34;&gt;PSoC Setup&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Connect Header J2, pin P3[0] Header J3, pin VREF with a jumper wire.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;psoc-creator&#34;&gt;PSoC Creator&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bluetooth Tutorial 2 - Find Me</title>
       <link>https://embedded-systems-design.github.io/bluetooth-tutorial-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/bluetooth-tutorial-2/</guid>
-      <description>Introduction PSoC Setup Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;h2 id=&#34;psoc-setup&#34;&gt;PSoC Setup&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open PSoC Creator and selct file &amp;ndash;&amp;gt; Code Example&amp;hellip; from the top menu.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Connecting to the PSoC</title>
       <link>https://embedded-systems-design.github.io/connecting-to-the-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/connecting-to-the-psoc/</guid>
-      <description>Q: Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)</description>
+      <description>&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; Help! My computer won&amp;rsquo;t connect properly to the PSoC. (insert one of several error messages here - KitProg version not expected, upgrade the firmware)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Debugging Code in PSoC Creator</title>
       <link>https://embedded-systems-design.github.io/debugging-psoc-creator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/debugging-psoc-creator/</guid>
-      <description>Introduction Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working. See below for some common symptoms and possible debugging remedies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Enabling Floating Point Support in PSoC Creator</title>
       <link>https://embedded-systems-design.github.io/enable-floating-point-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/enable-floating-point-support/</guid>
-      <description>Introduction Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Integrated Development Environments for PSoC</title>
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
-      <description>In order to program a Cypress Programmable System on a Chip (PSoC®), you first need to install Integrated Development Environment (IDE) software on your computer.</description>
+      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts on PSoC</title>
       <link>https://embedded-systems-design.github.io/interrupts-on-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/interrupts-on-psoc/</guid>
-      <description>An interrupt is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention.</description>
+      <description>&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Interrupt&#34;&gt;interrupt&lt;/a&gt; is a signal received by a microcontroller and emitted by hardware or software that is signaling a system event that needs immediate attention. Interrupts are useful to avoid constant monitoring of electronic peripherals (e.g., sensors).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Printing Non-String Variables to the PSoC UART</title>
       <link>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</guid>
-      <description>Q: How do I print an integer (or other non-string variable) to the PSoC UART?</description>
+      <description>&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; How do I print an integer (or other non-string variable) to the PSoC UART?&lt;/p&gt;</description>
     </item>
     <item>
       <title>PSoC 4 Hardware Development Kits</title>
       <link>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</guid>
-      <description>There are several Cypress Programmable System on a Chip (PSoC®) hardware development kits available for use in designs.</description>
+      <description>&lt;p&gt;There are several &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; hardware development kits available for use in designs. The list below describes strengths of each kit and provides links to documentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PSoC Creator Project Structure</title>
       <link>https://embedded-systems-design.github.io/psoc-creator-project-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-creator-project-structure/</guid>
-      <description>I can&#39;t find my workspace/project in PSoC Creator&#xA;C files, top design files, etc.</description>
+      <description>&lt;p&gt;&lt;strong&gt;I can&#39;t find my workspace/project in PSoC Creator&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;C files, top design files, etc. are saved in project files&lt;/li&gt;&#xA;&lt;li&gt;Project files are saved in workspaces&lt;/li&gt;&#xA;&lt;li&gt;Workspaces are saved in the folder &amp;quot;PSoC Creator&amp;quot;&lt;/li&gt;&#xA;&lt;li&gt;The PSoC Creator folder can be found in the Documents folder of the user account&lt;/li&gt;&#xA;&lt;li&gt;Click *.cywrk to open a workspace&lt;/li&gt;&#xA;&lt;li&gt;Click *.cyprj to open a project&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>PSoC Hello World Lab</title>
       <link>https://embedded-systems-design.github.io/psoc-hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/psoc-hello-world/</guid>
-      <description>Introduction The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or CY8CKIT-042-BLE kit for the first time</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this lab is to get you through the first steps of opening and using PSoC Creator with either your CY8CKIT-042 or  CY8CKIT-042-BLE kit for the first time&lt;/p&gt;</description>
     </item>
     <item>
       <title>PWM Tutorial 1 -- Using PWM to make an LED &#34;Breathe&#34;</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-1/</guid>
-      <description>Objective In this exercise, you will wire and program an LED to &amp;ldquo;breathe&amp;rdquo; on and off (example).</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;p&gt;In this exercise, you will wire and program an LED to &amp;ldquo;breathe&amp;rdquo; on and off (&lt;a href=&#34;https://www.youtube.com/watch?v=HC6_3h8Qfw8&#34;&gt;example&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>PWM Tutorial 2 -- Using PWM and an H-Bridge to Control Motor Speed</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-2/</guid>
-      <description>This tutorial continues from where PWM Tutorial 1 left off</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-1&#34;&gt;PWM Tutorial 1&lt;/a&gt; left off&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to apply the &amp;ldquo;breathing&amp;rdquo; PWM approach toward a motor driven by an H-Bridge&lt;/p&gt;</description>
     </item>
     <item>
       <title>PWM Tutorial 3 --  Using Low-Pass Filters with PWM Signals</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-3/</guid>
-      <description>This tutorial continues from where PWM Tutorial 2 left off</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-2&#34;&gt;PWM Tutorial 2&lt;/a&gt; left off&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to walk you through the steps of using a low-pass filter with a PWM output in order to generate an analog signal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is PSoC?</title>
       <link>https://embedded-systems-design.github.io/what-is-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-psoc/</guid>
-      <description>The Cypress Programmable System on a Chip (PSoC®) is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing.</description>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt; is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing. The following is a list of helpful resources for getting started with the PSoC®:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</guid>
-      <description>Why would I need to back annotate a design? If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must back annotate (meaning, push changes) from the PCB design back into your original schematic.</description>
+      <description>&lt;h2 id=&#34;why-would-i-need-to-back-annotate-a-design&#34;&gt;Why would I need to &lt;em&gt;back annotate&lt;/em&gt; a design?&lt;/h2&gt;&#xA;&lt;p&gt;If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must &lt;em&gt;back annotate&lt;/em&gt; (meaning, push changes) from the PCB design back into your original schematic. By doing this update, future changes to the schematic can be forward annotated (meaning, pushed forward) to your PCB design without having to start over from scratch.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transferring a Cadence schematic to PCB Editor</title>
       <link>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</guid>
-      <description>Introduction In order to create a PCB, you must first prepare the schematic and check for errors, export a netlist of the schematic, import the netlist into PCB editor, and design the PCB.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In order to create a PCB, you must first prepare the schematic and check for errors, export a &lt;em&gt;netlist&lt;/em&gt; of the schematic, import the netlist into PCB editor, and design the PCB. A &lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Netlist&#34;&gt;netlist&lt;/a&gt;&lt;/em&gt; is a file that describes interconnections among components in a circuit. This tutorial describes the process of transferring a schematic to PCB Editor. It is assumed that you have a completed schematic (see example, Figure 1) before trying to migrate to PCB Editor.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

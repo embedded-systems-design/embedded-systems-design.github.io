@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/power-supplies-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/power-supplies-101/</guid>
-      <description>What are the components of a basic power supply subsystem? Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit What are the design considerations for a battery-operated circuit?</description>
+      <description>&lt;h2 id=&#34;what-are-the-components-of-a-basic-power-supply-subsystem&#34;&gt;What are the components of a basic power supply subsystem?&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Source of power - battery, AC adapter, solar&lt;/li&gt;&#xA;&lt;li&gt;Input electronic noise filtering circuit&lt;/li&gt;&#xA;&lt;li&gt;Voltage regulator to provide a constant supply voltage&lt;/li&gt;&#xA;&lt;li&gt;Output electronic noise filtering circuit&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-are-the-design-considerations-for-a-battery-operated-circuit&#34;&gt;What are the design considerations for a battery-operated circuit?&lt;/h2&gt;&#xA;&lt;p&gt;How many Amp-Hours of capacity are needed?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Voltage Regulators VS DC-DC converters</title>
       <link>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</guid>
-      <description>How do I choose a voltage regulator? There are three major types of voltage regulators that you will encounter in this program:</description>
+      <description>&lt;h2 id=&#34;how-do-i-choose-a-voltage-regulator&#34;&gt;How do I choose a voltage regulator?&lt;/h2&gt;&#xA;&lt;p&gt;There are three major types of voltage regulators that you will encounter in this program:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/particle-argon-wifi-board/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/particle-argon-wifi-board/</guid>
-      <description>What is the Particle Argon? What does it do? The Particle Argon is a &amp;ldquo;wi-fi for everything&amp;rdquo; development kit that includes a microcontroller, wi-fi hardware, and easy-to-use web-based IDE (Integrated Development Environment).</description>
+      <description>&lt;h2 id=&#34;what-is-the-particle-argon-what-does-it-do&#34;&gt;What is the Particle Argon? What does it do?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://docs.particle.io/argon/&#34;&gt;Particle Argon&lt;/a&gt; is a &amp;ldquo;wi-fi for everything&amp;rdquo; development kit that includes a microcontroller, wi-fi hardware, and easy-to-use web-based IDE (Integrated Development Environment). It is typically used to add wi-fi functionality into products without spending a huge amount of development time on the wi-fi hardware and software. A more detailed introduction is available &lt;a href=&#34;https://docs.particle.io/quickstart/argon/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software design</title>
       <link>https://embedded-systems-design.github.io/software-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/software-design/</guid>
-      <description>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time.</description>
+      <description>&lt;h2 id=&#34;what-is-a-finite-state-machine&#34;&gt;What is a finite state machine?&lt;/h2&gt;&#xA;&lt;p&gt;A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &amp;ldquo;states&amp;rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</guid>
-      <description>Overview See this excellent overview of the ESP32&#xA;RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project Devkit vs ESP32 module Pinouts / Schematics from https://randomnerdtutorials.</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;See this excellent &lt;a href=&#34;https://circuits4you.com/2018/12/31/esp32-devkit-esp32-wroom-gpio-pinout/&#34;&gt;overview&lt;/a&gt; of the ESP32&lt;/p&gt;&#xA;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;&#xA;RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&#39;t be used for UART in your project&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;dev-board.png&#34;&gt;&lt;img src=&#34;dev-board.png&#34; alt=&#34;Devkit vs ESP32 module&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;Devkit vs ESP32 module&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ESP32 Installation and Setup</title>
       <link>https://embedded-systems-design.github.io/esp32-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/esp32-installation-and-setup/</guid>
-      <description>Install Miniconda and packages You need to use Python on your PC to program the ESP32.</description>
+      <description>&lt;h2 id=&#34;install-miniconda-and-packages&#34;&gt;Install Miniconda and packages&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda installed.  For more instructions, see &lt;a href=&#34;https://embedded-systems-design.github.io/installing-anaconda-python/&#34;&gt;here&lt;/a&gt; for detailed instructions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Miniconda/Anaconda (Python) Installation Tutorial</title>
@@ -33,14 +33,14 @@
       <link>https://embedded-systems-design.github.io/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/python/</guid>
-      <description>Python Basics Data Types Really Basic int, float, bool, complex</description>
+      <description>&lt;h1 id=&#34;python-basics&#34;&gt;Python Basics&lt;/h1&gt;&#xA;&lt;h2 id=&#34;data-types&#34;&gt;Data Types&lt;/h2&gt;&#xA;&lt;h3 id=&#34;really-basic&#34;&gt;Really Basic&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;int&lt;/code&gt;, &lt;code&gt;float&lt;/code&gt;, &lt;code&gt;bool&lt;/code&gt;, &lt;code&gt;complex&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Working with Thonny</title>
       <link>https://embedded-systems-design.github.io/working-with-thonny/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/working-with-thonny/</guid>
-      <description>Menu &amp;amp; Icons File File Menu File &amp;ndash;&amp;gt; Open(ctrl+o): If the ESP32 is connected it permits you to open a file either on your computer or from the ESP32&amp;rsquo;s file space.</description>
+      <description>&lt;h2 id=&#34;menu--icons&#34;&gt;Menu &amp;amp; Icons&lt;/h2&gt;&#xA;&lt;h3 id=&#34;file&#34;&gt;File&lt;/h3&gt;&#xA;&lt;p&gt;&#xA;&lt;table&gt;&#xA;&lt;thead&gt;&lt;/thead&gt;&#xA;&lt;tr&gt;&lt;th&gt;&lt;div class=&#34;text-center&#34;&gt;&#xA;  &lt;a href=&#34;filemenu.png&#34;&gt;&lt;img src=&#34;filemenu.png&#34; alt=&#34;File Menu&#34;  style=&#34;max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;&#34;/&gt;&lt;/a&gt;&#xA;&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&#xA;&lt;tbody&gt;&#xA;&lt;tr&gt;&lt;td&gt;&lt;div style=&#34;text-align:center;&#34;&gt;File Menu&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&#xA;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

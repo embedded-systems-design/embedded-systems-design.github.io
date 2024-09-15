@@ -12,28 +12,28 @@
       <link>https://embedded-systems-design.github.io/getting-started-with-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/getting-started-with-cadence/</guid>
-      <description>Introduction A number of basic Cadence tutorial videos are available on YouTube.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A number of &lt;a href=&#34;https://www.youtube.com/watch?v=QyfyskwCqGA&amp;amp;list=PLL5qFpazhNPkiMll-tzyYYOK3y9xvoLk6&#34;&gt;basic Cadence tutorial videos&lt;/a&gt; are available on YouTube.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring Cadence (Apporto)</title>
       <link>https://embedded-systems-design.github.io/configuring-cadence-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-cadence-cloud/</guid>
-      <description>Before using Cadence, configure it for optimal performance by following the instructions below.</description>
+      <description>&lt;p&gt;Before using Cadence, configure it for optimal performance by following the instructions below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring Cadence (Standalone Installation)</title>
       <link>https://embedded-systems-design.github.io/configuring-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/configuring-cadence/</guid>
-      <description>Before using Cadence, configure it for optimal performance by following the instructions below.</description>
+      <description>&lt;p&gt;Before using Cadence, configure it for optimal performance by following the instructions below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is Cadence?</title>
       <link>https://embedded-systems-design.github.io/what-is-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/what-is-cadence/</guid>
-      <description>Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards.</description>
+      <description>&lt;p&gt;Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards. The following video by Casey Petersen describes the basics of Cadence:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -12,56 +12,56 @@
       <link>https://embedded-systems-design.github.io/installing-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
-      <description>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</description>
+      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;PC:&lt;/strong&gt; Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (&lt;a href=&#34;https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf&#34;&gt;Hardware and Software Requirements&lt;/a&gt;). Note that Cadence does not support Windows 10 Starter nor Home Basic.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Windows 7, 8, 8.1, 10, 11 or greater running on &lt;a href=&#34;https://www.apple.com/support/bootcamp/&#34;&gt;Boot Camp&lt;/a&gt; or &lt;a href=&#34;http://www.parallels.com/&#34;&gt;Parallels&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;before-installing&#34;&gt;Before Installing&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&amp;rsquo;s license server&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence Forward Annotation Tutorial</title>
       <link>https://embedded-systems-design.github.io/forward-annotation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/forward-annotation/</guid>
-      <description>Cadence Forward Annotation Tutorial After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic.</description>
+      <description>&lt;h1 id=&#34;cadence-forward-annotation-tutorial&#34;&gt;Cadence Forward Annotation Tutorial&lt;/h1&gt;&#xA;&lt;p&gt;After having started working on a PCB layout, sooner or later you will likely find changes need to be made to your original schematic. Fortunately, you do not need to start the PCB design over as a result! Forward annotation allows you to essentially export changes made in your schematic into an existing layout, and here is how to do this in Cadence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence Mounting Hole/Post Tutorial</title>
       <link>https://embedded-systems-design.github.io/mounting-holes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/mounting-holes/</guid>
-      <description>Cadence Mounting Hole/Post Tutorial Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint.</description>
+      <description>&lt;h1 id=&#34;cadence-mounting-holepost-tutorial&#34;&gt;Cadence Mounting Hole/Post Tutorial&lt;/h1&gt;&#xA;&lt;p&gt;Some components have, in addition to their electrical pins, mechanical supports that must be accounted for in the PCB footprint. Otherwise, without mounting holes for these pins to go into, the component will not fit onto the board. This tutorial will demonstrate how to add the mounting holes to the footprint for a &lt;a href=&#34;https://www.ckswitches.com/media/2873/thb.pdf&#34;&gt;THB001P&lt;/a&gt; joystick.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence simulation tutorials</title>
       <link>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</guid>
-      <description>This page lists tutorials for doing circuit simulations in Cadence.</description>
+      <description>&lt;p&gt;This page lists tutorials for doing circuit simulations in Cadence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cadence Walkthrough: PSoC 4 BLE Module</title>
       <link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid>
-      <description>Introduction This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Create a Silkscreen in Cadence and Manually Add Text to it</title>
       <link>https://embedded-systems-design.github.io/adding-silkscreen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/adding-silkscreen/</guid>
-      <description>How to Create a Silkscreen in Cadence and Manually Add Text to it Create a (finalized) PCB layout.</description>
+      <description>&lt;h1 id=&#34;how-to-create-a-silkscreen-in-cadence-and-manually-add-text-to-it&#34;&gt;How to Create a Silkscreen in Cadence and Manually Add Text to it&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a (finalized) PCB layout. Note that the amount of additional work required for a good silkscreen layer will depend on how your PCB footprints were designed. This example will use the board shown below:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;image1.PNG&#34;&gt;&lt;img src=&#34;image1.PNG&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Merging Multiple Schematics into a Single Schematic</title>
       <link>https://embedded-systems-design.github.io/merging-schematics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/merging-schematics/</guid>
-      <description>Merging Multiple Schematics into a Single Schematic Take note of all the files involved in the schematics you are merging, and ensure you have all of them.</description>
+      <description>&lt;h1 id=&#34;merging-multiple-schematics-into-a-single-schematic&#34;&gt;Merging Multiple Schematics into a Single Schematic&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Take note of all the files involved in the schematics you are merging, and ensure you have all of them. These include .dsn (design), .opj (project) and .olb (library) files, in addition to .psm (Package symbol, a.k.a. PCB footprint) files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packaging Cadence Files for Submission</title>
       <link>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</guid>
-      <description>Introduction This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial goes through how to package Cadence schematic and PCB files for submission to Canvas.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
