@@ -72,13 +72,6 @@
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the last tutorial you created a schematic.  But is it any good?  The electrical rules check, or ERC, is a useful way to debug your circuit.  This example tutorial takes you through the process of finding and eliminating circuit design errors.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>ESP32 Installation and Setup</title>
-      <link>https://embedded-systems-design.github.io/esp32-installation-and-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/esp32-installation-and-setup/</guid>
-      <description>&lt;h2 id=&#34;install-miniconda-and-packages&#34;&gt;Install Miniconda and packages&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda installed.  For more instructions, see &lt;a href=&#34;https://embedded-systems-design.github.io/installing-anaconda-python/&#34;&gt;here&lt;/a&gt; for detailed instructions.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Schematic Capture</title>
       <link>https://embedded-systems-design.github.io/kicad-schematic-capture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -168,6 +161,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/altering-trace-widths/</guid>
       <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-do-i-need-to-change-my-trace-widths&#34;&gt;Why do I need to change my trace widths?&lt;/h3&gt;&#xA;&lt;p&gt;As you start to learn schematic and PCB design, you will have to learn how to alter your trace widths on boards. There are several different reasons that we have difference trace widths on boards. The specifications of traces for digital signals and power traces will be different. Therefore, we must change the widths of the traces on our boards. For more information about the importance of trace widths, &lt;a href=&#34;https://www.sfcircuits.com/pcb-school/pcb-trace-widths&#34;&gt;you can read more here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Altium Resource List</title>
+      <link>https://embedded-systems-design.github.io/altium/altium-resource-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/altium/altium-resource-list/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=YTGzncKU5RY&#34;&gt;&lt;em&gt;Quick-Start Tutorial from Altium&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This video provides excellent resources for starting a project, creating a schematic, and selecting symbols from the manufacturers, similar to Cadence and their Ultra Library. They then made the PCB from that schematic. Lastly, they also showed how to create the Gerber Files and have the project ready to manufacture.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ASU PCB Fabrication Process</title>
@@ -497,6 +497,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</guid>
       <description>&lt;h2 id=&#34;what-is-a-solder-mask&#34;&gt;What is a solder mask?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Solder_mask&#34;&gt;Solder mask&lt;/a&gt; is the thin polymer layer that is applied to a printed circuit board to insulate copper traces from unwanted connections. It is often green, red, or blue, and is put over all parts of a PCB except where components are to be soldered.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fall 2024 Tutorials</title>
+      <link>https://embedded-systems-design.github.io/fall-2024-tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/fall-2024-tutorials/</guid>
+      <description>A list of tutorials created this Fall</description>
     </item>
     <item>
       <title>Finding existing PCB footprints for Cadence PCB Editor</title>

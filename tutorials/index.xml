@@ -22,6 +22,13 @@
       <description>&lt;h2 id=&#34;what-are-serial-protocols&#34;&gt;What are serial protocols?&lt;/h2&gt;&#xA;&lt;p&gt;I2C, SPI, and UART are three of the most common protocols for serial data transmission. An overview of these protocols can be found here:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Fall 2024 Tutorials</title>
+      <link>https://embedded-systems-design.github.io/fall-2024-tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/fall-2024-tutorials/</guid>
+      <description>A list of tutorials created this Fall</description>
+    </item>
+    <item>
       <title>Interrupts</title>
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
