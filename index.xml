@@ -520,6 +520,13 @@
       <description>&lt;h2 id=&#34;where-can-i-find-a-list-of-existing-pcb-footprints-for-cadence-pcb-editor&#34;&gt;Where can I find a list of existing PCB footprints for Cadence PCB Editor?&lt;/h2&gt;&#xA;&lt;p&gt;While Cadence does have some built-in footprint libraries, they are limited due to the hundreds of thousands of different parts in existence. Additionally, most companies make their own footprints to match the specific manufacturing processes that they use.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Fork and Set up a Report Website</title>
+      <link>https://embedded-systems-design.github.io/fork-report-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/fork-report-website/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this post is to help you create a report website to for a team project.  Sharing your work with the class and the broader community is important, as you should generate a persistent portfolio of class work to demonstrate your abilities when you apply for a job or academic career.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>From where can I source parts?</title>
       <link>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
