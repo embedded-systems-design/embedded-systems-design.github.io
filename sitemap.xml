@@ -62,8 +62,6 @@
     <loc>https://embedded-systems-design.github.io/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/ac-circuits/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/actuator/</loc>
@@ -200,6 +198,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/creating-custom-footprints/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/custom-part/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/cypress/</loc>
@@ -315,6 +315,8 @@
     <loc>https://embedded-systems-design.github.io/tags/logic/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/make-a-website/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/blink-led-the-right-way/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</loc>
   </url><url>
@@ -466,7 +468,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/sensors/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/mplabx-project-setup/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/analog-io-eusart/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/icsp-tutorial/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/silkscreen/</loc>
   </url><url>

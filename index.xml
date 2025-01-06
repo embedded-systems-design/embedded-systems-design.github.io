@@ -121,13 +121,6 @@
       <description>&lt;h2 id=&#34;generating-schematic-pdfs&#34;&gt;Generating Schematic PDFs&lt;/h2&gt;&#xA;&lt;h3 id=&#34;add-title-block-information&#34;&gt;Add Title Block Information&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Open your project and then your schematic.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>**Curiosity Nano &amp; MPLAB Tutorial**</title>
-      <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</guid>
-      <description>&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Adding Text to a Layout in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -443,6 +436,13 @@
       <description>&lt;p&gt;You can try to &lt;a href=&#34;https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/&#34;&gt;find existing footprints&lt;/a&gt; for components, but most components will require custom footprints.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Curiosity Nano &amp; MPLAB Tutorial</title>
+      <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</guid>
+      <description>&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>DC Motors 101</title>
       <link>https://embedded-systems-design.github.io/dc-motors-101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -672,6 +672,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/make-a-website/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this post is to help you create a website to share your work.  Sharing your work with the class and the broader community is important, as you should generate a persistent portfolio of class work to demonstrate your abilities when you apply for a job or academic career.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making a LED Blink -- The Right Way</title>
+      <link>https://embedded-systems-design.github.io/blink-led-the-right-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/blink-led-the-right-way/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Getting familiar with the MPLABX programming environment to program the PIC18F47Q10 microcontroller.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manual Routing in Cadence PCB Editor</title>
@@ -961,11 +968,25 @@
       <description>&lt;p&gt;Before exporting your schematic to create a PCB, you must verify the design and fix errors in the schematic 1. It is significantly more difficult to fix errors later (either during the PCB layout stage or after manufacturing) than to spend time double-checking the schematic first.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Setting up a new PIC project</title>
+      <link>https://embedded-systems-design.github.io/mplabx-project-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/mplabx-project-setup/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to get you familiar with the MPLabX programming environment to program the PIC18F47Q10 microcontroller to flash a LED.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
       <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller. The PIC&amp;rsquo;s ADC subsystem is the peripheral used to read analog values and convert it into a digital number for use in your program. It can be configured in a variety of ways. In this assignment, you will create an ADC subsystem and program your microcontroller to transmit the result of reading an analog voltage measured at an input pin, using the ADC subsystem in one of its simplest configurations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting up In-Circuit Serial Programming for PIC</title>
+      <link>https://embedded-systems-design.github.io/icsp-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/icsp-tutorial/</guid>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;In this tutorial, you will learn how to program a PIC using in-circuit serial programming with the MPLAB® Snap debugger/programmer. This will be critical for your semester project as you will be working with a surface mount microcontroller that cannot be easily removed for offboard programming and does not have a USB port.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software design</title>

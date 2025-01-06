@@ -8,7 +8,7 @@
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/tutorials/pic/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>**Curiosity Nano &amp; MPLAB Tutorial**</title>
+      <title>Curiosity Nano &amp; MPLAB Tutorial</title>
       <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</guid>
@@ -36,6 +36,13 @@
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Individual Assignment&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;To develop and demonstrate individual proficiency in:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Making a LED Blink -- The Right Way</title>
+      <link>https://embedded-systems-design.github.io/blink-led-the-right-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/blink-led-the-right-way/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Getting familiar with the MPLABX programming environment to program the PIC18F47Q10 microcontroller.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Microchip PIC Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,11 +57,25 @@
       <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Setting up a new PIC project</title>
+      <link>https://embedded-systems-design.github.io/mplabx-project-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/mplabx-project-setup/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to get you familiar with the MPLabX programming environment to program the PIC18F47Q10 microcontroller to flash a LED.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
       <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller. The PIC&amp;rsquo;s ADC subsystem is the peripheral used to read analog values and convert it into a digital number for use in your program. It can be configured in a variety of ways. In this assignment, you will create an ADC subsystem and program your microcontroller to transmit the result of reading an analog voltage measured at an input pin, using the ADC subsystem in one of its simplest configurations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setting up In-Circuit Serial Programming for PIC</title>
+      <link>https://embedded-systems-design.github.io/icsp-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/icsp-tutorial/</guid>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;In this tutorial, you will learn how to program a PIC using in-circuit serial programming with the MPLAB® Snap debugger/programmer. This will be critical for your semester project as you will be working with a surface mount microcontroller that cannot be easily removed for offboard programming and does not have a USB port.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
