@@ -36,13 +36,6 @@
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Individual Assignment&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;To develop and demonstrate individual proficiency in:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Making a LED Blink -- The Right Way</title>
-      <link>https://embedded-systems-design.github.io/blink-led-the-right-way/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/blink-led-the-right-way/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Getting familiar with the MPLABX programming environment to program the PIC18F47Q10 microcontroller.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Microchip PIC Microcontrollers</title>
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

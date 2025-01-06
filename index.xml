@@ -674,13 +674,6 @@
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this post is to help you create a website to share your work.  Sharing your work with the class and the broader community is important, as you should generate a persistent portfolio of class work to demonstrate your abilities when you apply for a job or academic career.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Making a LED Blink -- The Right Way</title>
-      <link>https://embedded-systems-design.github.io/blink-led-the-right-way/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/blink-led-the-right-way/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Getting familiar with the MPLABX programming environment to program the PIC18F47Q10 microcontroller.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Manual Routing in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
