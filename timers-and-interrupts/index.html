@@ -379,7 +379,7 @@
 <p>EUSART</p>
 <ul>
 <li>Add and configure a new EUSART peripheral, taking care to select the EUSART module that connects to the PIC Curiosity Nano&rsquo;s serial-to-USB connection.</li>
-<li>Make sure you check the &ldquo;connect to stdio&rdquo; box.</li>
+<li>Make sure you check the &ldquo;connect to printf&rdquo; (or &ldquo;connect to stdio&rdquo;) box.</li>
 </ul>
 </li>
 <li>
@@ -467,23 +467,30 @@
 <li>
 <p>In the while loop in main(), add code that</p>
 <ol>
-<li>computes the current time as a float in seconds (with milliseconds behind the decimal point)</li>
-<li>fills and prints a string with the current time in seconds, starting with &ldquo;t=&rdquo; and ending with &ldquo;s&rdquo; using <code>printf()</code></li>
-</ol>
+<li>
+<p>computes the current time as a float in seconds (with milliseconds behind the decimal point)</p>
+</li>
+<li>
+<p>fills a string with the current time in seconds, starting with &ldquo;t=&rdquo; and ending with &ldquo;s&rdquo; using <code>sprintf()</code></p>
 <p><em>Example</em>:</p>
 <pre><code> t=  45.34s
 </code></pre>
+</li>
+<li>
+<p>prints the string with <code>printf()</code></p>
 </li>
 </ol>
 <blockquote>
 <p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
 </blockquote>
+</li>
+</ol>
 <h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
 <p>In this section you will be implementing software-based debounce logic to ensure that button pushes are not over-counted.  We will create &ldquo;interrupt on change&rdquo; (IOC) handling that will run code whenever it detects a button-push, and use the</p>
 <p><em>This section assumes you have set up IOC-based interrupts in MCC and generated a new configuration file as specified in the MCC setup section above</em></p>
 <ol>
 <li>
-<p>**Identify the way to map callback functions to interrupts. **Open <code>pin_manager.h</code>. Find and note the name for the function that links callback functions to each of the two pins selected for your pushbutton switches. There should be two functions available, one for each pin you configured in MCC.</p>
+<p>**Identify the way to map callback functions to interrupts.**Open <code>pin_manager.h</code>. Find and note the name for the function that links callback functions to each of the two pins selected for your pushbutton switches. There should be two functions available, one for each pin you configured in MCC.</p>
 </li>
 <li>
 <p><strong>Create your first IOC callback.</strong> Create a function pin_down() above main. it should return type void and take no input variables.</p>
@@ -514,11 +521,14 @@
 </ol>
 </li>
 <li>
-<p>Fills and prints a string with the current duty cycle, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo; using <code>printf()</code>.</p>
-<p><em>Example</em>:</p>
+<p>Fills a string with the current duty cycle, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo; using <code>sprintf()</code>.</p>
+<p>Example:</p>
 <pre><code> t=  45.34s
  dc= 75%
 </code></pre>
+</li>
+<li>
+<p>prints the string with <code>printf()</code></p>
 </li>
 </ol>
 <blockquote>
@@ -526,9 +536,18 @@
 </blockquote>
 </li>
 <li>
-<p>Download and compile your code and demonstrate</p>
+<p>Download and compile your code.</p>
 </li>
 </ol>
+<h2 id="verification">Verification</h2>
+<h3 id="plain-chip-with-snap-programmer">Plain Chip with Snap Programmer</h3>
+<p>There are two ways you can verify functionality:</p>
+<ul>
+<li>add a breakpoint on the printf() lines, with a watch on the string variables.  Use your external programmer to query the state of the strings each time it pauses.</li>
+<li>connect the EUSART pins to an external device (such as a PSoC, Curiosity Nano w/ serial port, or ESP32) and verify what that device receives.  Connect that device to your computer&rsquo;s USB, connect to the COM port created by the USB-to-serial chip in Putty, and read the values it receives</li>
+</ul>
+<h3 id="curiosity-nano">Curiosity Nano</h3>
+<p>If you have a curiosity nano board, the easiest way to verify in this case is to connect the curiosity nano board to your computer&rsquo;s USB, connect to the COM port created by the USB-to-serial chip in Putty, and read the values it receives.</p>
 
         </div>
 
