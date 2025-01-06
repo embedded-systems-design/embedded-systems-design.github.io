@@ -277,12 +277,8 @@
 <p>In this assignment, you will learn how to use I$^{\text{2}}$C serial communication on the PIC18F47Q10 Curiosity Nano and MCC. This will be critical for your semester project as every team has at least two serial peripherals (e.g., wifi module, serial sensor). To prepare you for the next homework assignment and your semester project, you will create an array of LEDs that will increment by one each time a button is pressed. You will use an 8-bit I/O expander IC that is used in situations when you run out of I/O pins on a microcontroller and cannot swap the microcontroller for one with more I/O pins.</p>
 <p>With your partner, you must demonstrate proficiency in:</p>
 <ol>
-<li>
-<p>Configuring MCC for an external I$^{\text{2}}$C device.</p>
-</li>
-<li>
-<p>Controlling an external I/O expander using I$^{\text{2}}$C.</p>
-</li>
+<li>Configuring MCC for an external I$^{\text{2}}$C device.</li>
+<li>Controlling an external I/O expander using I$^{\text{2}}$C.</li>
 </ol>
 <p>
 <a href="image13.png"><img src="image13.png" alt=""  /></a>
@@ -348,42 +344,23 @@
 </table>
 <h2 id="resources">Resources</h2>
 <ul>
-<li>
-<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></p>
-</li>
-<li>
-<p><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> Microchip Main Page</p>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></li>
+<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> Microchip Main Page
 <ul>
-<li>
-<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a> - Figure 4-1. Curiosity Nano Pinout</p>
-</li>
-<li>
-<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf">Schematic</a></p>
-</li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a> - Figure 4-1. Curiosity Nano Pinout</li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf">Schematic</a></li>
 </ul>
 </li>
-<li>
-<p><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">MCP23008 Datasheet</a></p>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">MCP23008 Datasheet</a>
 <ul>
-<li>
-<p>Page 2 package Type (PDIP/SOIC)</p>
-</li>
-<li>
-<p>Table 1-1: Pinout Descriptions</p>
-</li>
-<li>
-<p>Table 1-2: Register Addresses</p>
-</li>
-<li>
-<p>Figure 1-4: I2C Addressing Registers</p>
-</li>
+<li>Page 2 package Type (PDIP/SOIC)</li>
+<li>Table 1-1: Pinout Descriptions</li>
+<li>Table 1-2: Register Addresses</li>
+<li>Figure 1-4: I2C Addressing Registers</li>
 </ul>
 </li>
-<li>
-<p><a href="http://ww1.microchip.com/downloads/en/devicedoc/i2c.pdf">Useful Description of I$^{\text{2}}$C in master mode</a></p>
-</li>
-<li>
-<p><a href="https://www.keysight.com/us/en/support/DSOX4024A/oscilloscope-200-mhz-4-analog-channels.html">Agilent InfiniiVision Mixed Signal Oscilloscope (Model 4024A)</a> (<a href="https://www.keysight.com/us/en/assets/9018-03807/user-manuals/9018-03807.pdf">manual</a>)</p>
+<li><a href="http://ww1.microchip.com/downloads/en/devicedoc/i2c.pdf">Useful Description of I$^{\text{2}}$C in master mode</a></li>
+<li><a href="https://www.keysight.com/us/en/support/DSOX4024A/oscilloscope-200-mhz-4-analog-channels.html">Agilent InfiniiVision Mixed Signal Oscilloscope (Model 4024A)</a> (<a href="https://www.keysight.com/us/en/assets/9018-03807/user-manuals/9018-03807.pdf">manual</a>)
 <ul>
 <li><a href="https://www.youtube.com/watch?v=VYHs0yie4P0">Agilent InfiniiVision Oscilloscope I2C Analysis video</a></li>
 </ul>
@@ -394,12 +371,8 @@
 <li>
 <p>Read and search the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Curiosity Nano datasheet</a> and find the following:</p>
 <ol>
-<li>
-<p>The recommended pins for I$^{\text{2}}$C communication.</p>
-</li>
-<li>
-<p>The 5V output pin on the Curiosity Nano.</p>
-</li>
+<li>The recommended pins for I$^{\text{2}}$C communication.</li>
+<li>The 5V output pin on the Curiosity Nano.</li>
 </ol>
 </li>
 <li>
@@ -519,26 +492,16 @@
 <li>
 <p>Open the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">datasheet</a> for the MCP23008</p>
 <ol>
-<li>
-<p>Note that the slave address for this circuit will be 0x20 because pins A2, A1, and A0 are grounded (see Section 1.4 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">datasheet</a> for more info)</p>
-</li>
-<li>
-<p>Find Table 1-2 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">datasheet</a> and note the register addresses for IODIR and GPIO.</p>
-</li>
+<li>Note that the slave address for this circuit will be 0x20 because pins A2, A1, and A0 are grounded (see Section 1.4 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">datasheet</a> for more info)</li>
+<li>Find Table 1-2 in the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">datasheet</a> and note the register addresses for IODIR and GPIO.</li>
 </ol>
 </li>
 <li>
 <p>In main.c:</p>
 <ol>
-<li>
-<p>#include the i2c1_master_example.h</p>
-</li>
-<li>
-<p>In main(), use the I$^{\text{2}}$C write command you noted earlier to set bit IO7 in the IODIR register as a digital input (see page 9 of the MCP23008 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">datasheet</a>).</p>
-</li>
-<li>
-<p>Create a variable named counter and initialize it to 1.</p>
-</li>
+<li>#include the i2c1_master_example.h</li>
+<li>In main(), use the I$^{\text{2}}$C write command you noted earlier to set bit IO7 in the IODIR register as a digital input (see page 9 of the MCP23008 <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf">datasheet</a>).</li>
+<li>Create a variable named counter and initialize it to 1.</li>
 </ol>
 </li>
 <li>
