@@ -19,7 +19,7 @@
       <link>https://embedded-systems-design.github.io/esp32-installation-and-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/esp32-installation-and-setup/</guid>
-      <description>&lt;h2 id=&#34;install-miniconda-and-packages&#34;&gt;Install Miniconda and packages&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda installed.  For more instructions, see &lt;a href=&#34;https://embedded-systems-design.github.io/installing-anaconda-python/&#34;&gt;here&lt;/a&gt; for detailed instructions.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;install-miniconda-and-packages&#34;&gt;Install Miniconda and packages&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda or cpython installed.  For more instructions, see &lt;a href=&#34;https://embedded-systems-design.github.io/installing-anaconda-python/&#34;&gt;installing anaconda python&lt;/a&gt; or &lt;a href=&#34;https://embedded-systems-design.github.io/installing-c-python&#34;&gt;installing c python&lt;/a&gt; for detailed instructions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MicroPython Intro</title>

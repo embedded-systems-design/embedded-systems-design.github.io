@@ -29,6 +29,13 @@
       <description>A list of tutorials created this Fall</description>
     </item>
     <item>
+      <title>Installing C Python</title>
+      <link>https://embedded-systems-design.github.io/installing-c-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/installing-c-python/</guid>
+      <description>&lt;h2 id=&#34;chocolatey-install-of-c-python&#34;&gt;Chocolatey Install of C Python&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;These instructions serve as an alternative to the Anaconda installation instructions, which you can use if the installation fails.  There is no need to install it both ways.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Interrupts</title>
       <link>https://embedded-systems-design.github.io/interrupts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
