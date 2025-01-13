@@ -299,9 +299,35 @@ choco install -y python
 </ol>
 <!-- once finished, close powershell and reopen to be able to use Python. -->
 <h3 id="package-install-steps">Package install steps</h3>
-<!-- In Windows, you need to add the ```--user``` flag and then add an item to the system %PATH environment variable.  See [Modifying System PATHs](#modifying-system-paths) to learn how to add a directory to your system PATH variable.  In this case you need to add: ```C:\Users\USERNAME\AppData\Roaming\Python\Python312\Scripts```. -->
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install --user esptool thonny
-</span></span></code></pre></div>
+<p>In Windows, you need to add add an item to the system %PATH environment variable in order to add <code>pip</code> to the system PATH</p>
+<ol>
+<li>open up windows explorer (<code>windows</code>+<code>e</code>)</li>
+<li>right click on &ldquo;this pc&rdquo; and select &ldquo;properties&rdquo;</li>
+<li>click on &ldquo;advanced system settings&rdquo; in the &ldquo;related links&rdquo; section</li>
+<li>click on &ldquo;environment variables&rdquo;</li>
+<li>The dialog that pops open has two windows.  In the top window, scroll down to see if you can find an entry for &ldquo;Path&rdquo;.  If so, &ldquo;edit&rdquo; the path.  If not, create it by selecting &ldquo;new&rdquo;.</li>
+<li>Add <code>C:\Users\&lt;USERNAME&gt;\AppData\Local\Programs\Python\Python&lt;VERSIONNUMBER&gt;\Scripts</code> to the list of folders
+<ol>
+<li>replace <USERNAME> with your user name</li>
+<li>replace <VERSIONNUMBER> with your version number</li>
+<li>the final example should be something like <code>C:\Users\danaukes\AppData\Local\Programs\Python\Python313\Scripts</code></li>
+</ol>
+</li>
+<li>also add <code>C:\Users\&lt;USERNAME&gt;\AppData\Roaming\Python\Python&lt;VERSIONNUMBER&gt;\Scripts</code>
+<ol>
+<li>replace <USERNAME> with your user name</li>
+<li>replace <VERSIONNUMBER> with your version number</li>
+<li>the final example should be something like <code>C:\Users\danaukes\AppData\Roaming\Python\Python313\Scripts</code></li>
+</ol>
+</li>
+<li>hit ok and close all the windows</li>
+<li>test this by opening a new powershell window (<code>windows</code>+<code>x</code>, then &ldquo;terminal&rdquo; or <code>i</code>)</li>
+<li>type
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#111">pip</span> <span style="color:#111">install</span> <span style="color:#111">-</span><span style="color:#111">-user</span> <span style="color:#111">esptool</span> <span style="color:#111">thonny</span>
+</span></span></code></pre></div></li>
+<li>once complete, type <code>thonny</code> to open thonny.</li>
+</ol>
+
         </div>
 
         
