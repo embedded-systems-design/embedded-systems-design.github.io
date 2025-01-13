@@ -272,19 +272,34 @@
 <blockquote>
 <p>These instructions serve as an alternative to the Anaconda installation instructions, which you can use if the installation fails.  There is no need to install it both ways.</p>
 </blockquote>
-<p>You can also install plain Python in Windows using chocolatey. To install chocolatey</p>
-<p>Open powershell in administrative mode</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#111">Set-ExecutionPolicy</span> <span style="color:#111">AllSigned</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">Set-ExecutionPolicy</span> <span style="color:#111">Bypass</span> <span style="color:#111">-Scope</span> <span style="color:#00a8c8">Process</span> <span style="color:#111">-Force</span><span style="color:#111">;</span> <span style="color:#111">`</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">[</span><span style="color:#00a8c8">System.Net.ServicePointManager</span><span style="color:#111">]::</span><span style="color:#111">SecurityProtocol</span> <span style="color:#111">=</span> <span style="color:#111">`</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">[</span><span style="color:#00a8c8">System.Net.ServicePointManager</span><span style="color:#111">]::</span><span style="color:#111">SecurityProtocol</span> <span style="color:#f92672">-bor</span> <span style="color:#ae81ff">3072</span><span style="color:#111">;</span> <span style="color:#111">`</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">iex </span><span style="color:#111">((</span><span style="color:#111">New-Object</span> <span style="color:#111">`</span>
-</span></span><span style="display:flex;"><span><span style="color:#111">System</span><span style="color:#111">.</span><span style="color:#111">Net</span><span style="color:#111">.</span><span style="color:#111">WebClient</span><span style="color:#111">).</span><span style="color:#111">DownloadString</span><span style="color:#111">(</span><span style="color:#d88200">&#39;https://chocolatey.org/install.ps1&#39;</span><span style="color:#111">))</span>
-</span></span></code></pre></div><p>Then, to install python, simply run</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#111">choco</span> <span style="color:#111">install</span> <span style="color:#111">-y</span> <span style="color:#111">python</span>
-</span></span></code></pre></div><p>once finished, close powershell and reopen to be able to use Python.</p>
+<!-- You can also install plain Python in Windows using chocolatey. To install chocolatey
+
+Open powershell in administrative mode
+
+```powershell
+Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy Bypass -Scope Process -Force; `
+[System.Net.ServicePointManager]::SecurityProtocol = `
+[System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+iex ((New-Object `
+System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+Then, to install python, simply run
+
+```powershell
+choco install -y python
+``` -->
+<ol>
+<li>Download and install python from <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>
+<ul>
+<li>use default settings</li>
+</ul>
+</li>
+</ol>
+<!-- once finished, close powershell and reopen to be able to use Python. -->
 <h3 id="package-install-steps">Package install steps</h3>
-<p>In Windows, you need to add the <code>--user</code> flag and then add an item to the system %PATH environment variable.  See <a href="#modifying-system-paths">Modifying System PATHs</a> to learn how to add a directory to your system PATH variable.  In this case you need to add: <code>C:\Users\USERNAME\AppData\Roaming\Python\Python312\Scripts</code>.</p>
+<!-- In Windows, you need to add the ```--user``` flag and then add an item to the system %PATH environment variable.  See [Modifying System PATHs](#modifying-system-paths) to learn how to add a directory to your system PATH variable.  In this case you need to add: ```C:\Users\USERNAME\AppData\Roaming\Python\Python312\Scripts```. -->
 <div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install --user esptool thonny
 </span></span></code></pre></div>
         </div>
