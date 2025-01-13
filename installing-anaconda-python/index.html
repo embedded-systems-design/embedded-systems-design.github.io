@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Miniconda/Anaconda (Python) Installation Tutorial | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Anaconda/Miniconda (Python) Installation Tutorial | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -244,7 +244,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/installing-anaconda-python/">Miniconda/Anaconda (Python) Installation Tutorial</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/installing-anaconda-python/">Anaconda/Miniconda (Python) Installation Tutorial</a></li>
 
 </ol>
 </nav>
@@ -255,7 +255,7 @@
 
 
 
-        <h2>Miniconda/Anaconda (Python) Installation Tutorial</h2>
+        <h2>Anaconda/Miniconda (Python) Installation Tutorial</h2>
         
         <div class="mb-1 post-meta">
           <span>By Dan Aukes</span>
@@ -277,8 +277,10 @@
         
         <div class="content mb-5">
           <h2 id="introduction">Introduction</h2>
-<p>Anaconda is a distribution of Python that includes the ability to manage packages using the conda package manager as well as the ability to create and manage <em>environments</em>, or collections of packages that work together.  Anaconda ships as a ~500 Mb installer.  This tutorial gets you started with miniconda, a slimmed down installer that allows you to install just the packages you need.  Below are the steps to gettting a working installation of Python with all the packages you need for <em>Foldable Robotics</em>.</p>
+<p>Anaconda is a distribution of Python that includes the ability to manage packages using the conda package manager as well as the ability to create and manage <em>environments</em>, or collections of packages that work together.  Anaconda ships as a ~500 Mb installer.  This tutorial gets you started with miniconda, a slimmed down installer for anaconda that allows you to install just the packages you need.  Below are the steps to gettting a working installation of Python with all the packages you need for <em>Foldable Robotics</em>.</p>
+<blockquote>
 <p>This tutorial is for installing the anaconda python distribution on windows.</p>
+</blockquote>
 <h2 id="windows-installation">Windows Installation</h2>
 <p>These installation instructions are for computers that <strong>do</strong> <strong>not</strong> have Python or Anaconda installed already. Python and Anaconda do not come installed by default on most computers so if you haven&rsquo;t installed them intentionally, these instructions likely apply to you. If you <strong>do</strong> have another version of Python installed, then please ask Dr. Aukes for further details.</p>
 <h3 id="anaconda-instructions">Anaconda Instructions</h3>
@@ -408,7 +410,28 @@
 </code></pre>
 </li>
 <li>
-<p>Install <a href="/esp32-installation-and-setup/">course-specific packages</a></p>
+<p><strong>Installing Thonny and other course-specific packages:</strong> Open up your anaconda environment (start&ndash;&gt;anaconda prompt)</p>
+<ol>
+<li>
+<p>(optional) Activate your desired environment <code>conda activate &lt;environment_name&gt;</code>.</p>
+<blockquote>
+<p>You can ignore if you want to install in the base environment</p>
+</blockquote>
+</li>
+<li>
+<p>type the following to install a prerequisite package</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -y -c conda-forge wrapt
+</span></span></code></pre></div></li>
+<li>
+<p>Install the ESP32 commandline flashing tool</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install esptool
+</span></span></code></pre></div></li>
+<li>
+<p>To install Thonny type the following <em>(This is optional)</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install thonny
+</span></span></code></pre></div><p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
+</li>
+</ol>
 </li>
 </ol>
 <h2 id="external-resources">External Resources</h2>

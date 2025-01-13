@@ -289,38 +289,11 @@
         </ul>
         
         <div class="content mb-5">
-          <h2 id="install-miniconda-and-packages">Install Miniconda and packages</h2>
-<blockquote>
+          <h2 id="install-python-and-packages">Install Python and packages</h2>
 <p>You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda or cpython installed.  For more instructions, see <a href="/installing-c-python">installing c python</a> or <a href="/installing-anaconda-python/">installing anaconda python</a> for detailed instructions.</p>
-</blockquote>
-<ol>
-<li><strong>Installing Thonny and other Packages:</strong> Open up your anaconda environment (start&ndash;&gt;anaconda prompt)
-<ol>
-<li>
-<p>(optional) Activate your desired environment <code>conda activate &lt;environment_name&gt;</code>.</p>
 <blockquote>
-<p>You can ignore if you want to install in the base environment</p>
+<p>Either C Python or anaconda installations will work; it depends on your preference and whether you already have one or the other installed.</p>
 </blockquote>
-</li>
-<li>
-<p>type the following to install a prerequisite package</p>
-<p>if you have anaconda installed, use</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -y -c conda-forge wrapt
-</span></span></code></pre></div><p>if you have regular cpython installed, use</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install wrapt
-</span></span></code></pre></div></li>
-<li>
-<p>Install the ESP32 commandline flashing tool</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install esptool
-</span></span></code></pre></div></li>
-<li>
-<p>To install Thonny type the following <em>(This is optional)</em>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install thonny
-</span></span></code></pre></div><p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
-</li>
-</ol>
-</li>
-</ol>
 <h2 id="install-device-drivers-required-for-windows">Install Device Drivers <em>(Required for Windows)</em></h2>
 <p>The device drivers will help your computer recognize the ESP32 as a USB Device</p>
 <ol>
