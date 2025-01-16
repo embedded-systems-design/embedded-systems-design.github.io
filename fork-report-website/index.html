@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.140.2">
+  <meta name="generator" content="Hugo 0.141.0">
 
   <!-- plugins -->
   
@@ -279,6 +279,19 @@
 <blockquote>
 <p><strong>Note:</strong> This template extends the <a href="/make-a-website/">basic website creation tutorial</a> by making it possible to clone an existing repository, which uses mkdocs</p>
 </blockquote>
+<h2 id="video-overviews">Video Overviews</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ZeT1-DjvlUY">Video overview for individuals</a></li>
+<li><a href="https://youtu.be/SgWRyKJ6bGE">Setting up organizations</a> to work with the report template</li>
+<li><a href="https://youtu.be/8EgFkG2HHxM">triggering that first build</a></li>
+</ul>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/devops/develop/git/what-is-git">https://learn.microsoft.com/en-us/devops/develop/git/what-is-git</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Git">https://en.wikipedia.org/wiki/Git</a></li>
+<li><a href="https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</a></li>
+<li>(older) Make a Project Repository and Website: &lt;/make-a-website/&gt;</li>
+</ul>
 <h2 id="procedure">Procedure</h2>
 <ol>
 <li>
@@ -388,7 +401,7 @@
 <p>Navigate to your web-page.  Your page should now be visible at <a href="https://your-username.github.io">https://your-username.github.io</a></p>
 </li>
 </ol>
-<h2 id="settings-to-check">Settings to check:</h2>
+<h2 id="settings-to-check">Settings to check</h2>
 <p>If you are forking the repository into <em>an organization</em>, check that</p>
 <ol>
 <li>Deploy keys are enabled
@@ -418,6 +431,14 @@
 <li>(settings&ndash;&gt;actions&ndash;&gt;general, then scroll down to workflow permissions and ensure that read/write permissions are enabled)</li>
 </ol>
 </li>
+</ol>
+<h2 id="help-my-site-is-not-building">Help, My site is not building</h2>
+<p>If, after you have checked the above settings, often renaming the workflow file will initiate builds, (for whatever reason).</p>
+<ol>
+<li>Either on your computer or on the github website, in the repositories files, navigate to <code>.github/workflows/</code>.</li>
+<li>Rename <code>pages.yml</code> to something else (<code>main.yml</code> worked for me).</li>
+<li>Stage, commit, and push your files, and</li>
+<li>Check the &ldquo;actions&rdquo; tab (found in your repository&rsquo;s main github page) to see that your commit is triggering the &ldquo;mkdocs-build&rdquo; action.</li>
 </ol>
 
         </div>
