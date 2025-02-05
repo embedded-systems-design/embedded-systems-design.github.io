@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.142.0">
+  <meta name="generator" content="Hugo 0.143.1">
 
   <!-- plugins -->
   
@@ -278,8 +278,7 @@
 <p>This assignment builds off the <a href="/pic-lcd-button">LCD and Button Tutorial</a>, with minor hardware modifications. Thus it is suggested that you keep all the components on the board as they were from that tutorial.</p>
 <p>The two exceptions are the two pushbutton pins. You will need to shift to using GPIO registers that support interrupt-on-change (IOC). See critical information section above for details.</p>
 <blockquote>
-<p>If you haven&rsquo;t completed the <a href="/pic-lcd-button/">LCD and pushbuttons tutorial</a>, we strongly suggest you review that first.</p>
-</blockquote>
+<p>If you haven&rsquo;t completed the <a href="/pic-lcd-button/">LCD and pushbuttons tutorial</a>, we strongly suggest you review that first.</p></blockquote>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></li>
@@ -350,8 +349,7 @@
 <li>
 <p>Open MCC and update the following settings:</p>
 <blockquote>
-<p>Note: These instructions are written for MCC Classic. MCC &ldquo;Melody&rdquo; has a slightly updated interface, but most of the instructions here should still apply.  Please be patient as we update the instructions</p>
-</blockquote>
+<p>Note: These instructions are written for MCC Classic. MCC &ldquo;Melody&rdquo; has a slightly updated interface, but most of the instructions here should still apply.  Please be patient as we update the instructions</p></blockquote>
 <ol>
 <li>
 <p>System</p>
@@ -421,8 +419,7 @@
 </li>
 </ol>
 <blockquote>
-<p><em>If set up correctly, your new callback function should be called once every millisecond</em></p>
-</blockquote>
+<p><em>If set up correctly, your new callback function should be called once every millisecond</em></p></blockquote>
 </li>
 <li>
 <p>Custom callback code: Now, create a new global variable, initializing it to zero, for storing the time in milliseconds. Create a second global variable (also initialized to zero) to store the time in seconds.</p>
@@ -437,12 +434,10 @@
 </li>
 </ol>
 <blockquote>
-<p><em>Note:</em> This code should work if the time in ms is any value over than 1 second.</p>
-</blockquote>
+<p><em>Note:</em> This code should work if the time in ms is any value over than 1 second.</p></blockquote>
  <p></p>
 <blockquote>
-<p><em>Note 2:</em> This code should be written so as it doesn&rsquo;t reset, clear, truncate, or lose time information.</p>
-</blockquote>
+<p><em>Note 2:</em> This code should be written so as it doesn&rsquo;t reset, clear, truncate, or lose time information.</p></blockquote>
 </li>
 <li>
 <p>In the while loop in main(), add code that</p>
@@ -455,14 +450,12 @@
 <pre><code> &quot;t=  45.34s      &quot;
 </code></pre>
 <blockquote>
-<p><em>Note:</em> the blank spaces within quotes correspond to valid lcd positions</p>
-</blockquote>
+<p><em>Note:</em> the blank spaces within quotes correspond to valid lcd positions</p></blockquote>
  <p></p>
 </li>
 </ol>
 <blockquote>
-<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
-</blockquote>
+<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p></blockquote>
 <h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
 <p><em>This section assumes you have set up IOC-based interrupts in MCC and generated a new configuration file as specified in the MCC setup section above</em></p>
 <ol start="6">
@@ -525,8 +518,7 @@
 <pre tabindex="0"><code>&#34;t=  45.34s      &#34;
 &#34;dc= 75%         &#34;
 </code></pre><blockquote>
-<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p>
-</blockquote>
+<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p></blockquote>
 <ol start="11">
 <li>Download and compile your code and demonstrate</li>
 </ol>

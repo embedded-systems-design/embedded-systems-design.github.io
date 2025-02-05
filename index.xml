@@ -895,14 +895,14 @@
       <link>https://embedded-systems-design.github.io/pwm-tutorial-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-2/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-1&#34;&gt;PWM Tutorial 1&lt;/a&gt; left off&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to apply the &amp;ldquo;breathing&amp;rdquo; PWM approach toward a motor driven by an H-Bridge&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-1&#34;&gt;PWM Tutorial 1&lt;/a&gt; left off&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to apply the &amp;ldquo;breathing&amp;rdquo; PWM approach toward a motor driven by an H-Bridge&lt;/p&gt;</description>
     </item>
     <item>
       <title>PWM Tutorial 3 --  Using Low-Pass Filters with PWM Signals</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pwm-tutorial-3/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-2&#34;&gt;PWM Tutorial 2&lt;/a&gt; left off&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to walk you through the steps of using a low-pass filter with a PWM output in order to generate an analog signal.&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;This tutorial continues from where &lt;a href=&#34;https://embedded-systems-design.github.io/pwm-tutorial-2&#34;&gt;PWM Tutorial 2&lt;/a&gt; left off&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutorial is to walk you through the steps of using a low-pass filter with a PWM output in order to generate an analog signal.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python Basics</title>

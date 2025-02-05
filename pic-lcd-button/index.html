@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.142.0">
+  <meta name="generator" content="Hugo 0.143.1">
 
   <!-- plugins -->
   
@@ -405,8 +405,7 @@
 <li>
 <p>Open Microchip Code Configurator and apply the following settings:</p>
 <blockquote>
-<p>Note: These instructions are written for MCC Classic. MCC &ldquo;Melody&rdquo; has a slightly updated interface, but most of the instructions here should still apply.  Please be patient as we update the instructions</p>
-</blockquote>
+<p>Note: These instructions are written for MCC Classic. MCC &ldquo;Melody&rdquo; has a slightly updated interface, but most of the instructions here should still apply.  Please be patient as we update the instructions</p></blockquote>
 <ol>
 <li>
 <p>System</p>
@@ -445,14 +444,12 @@
 <li>
 <p>Initialize the PWM duty cycle to 50% of its maximum value.</p>
 <blockquote>
-<p>(See pwmX.h for the API function to do this)</p>
-</blockquote>
+<p>(See pwmX.h for the API function to do this)</p></blockquote>
 </li>
 <li>
 <p>Read the current value of each button.</p>
 <blockquote>
-<p>(See pin_manager.h for the API function to do this)</p>
-</blockquote>
+<p>(See pin_manager.h for the API function to do this)</p></blockquote>
 </li>
 <li>
 <p>If the left button is pressed, decrease the current duty cycle by 25% of the total PWM resolution</p>
@@ -466,8 +463,7 @@
 <li>
 <p>Wait for 200 ms before repeating steps c - f.</p>
 <blockquote>
-<p><em>Note: This delay reduces the likelihood of a single button press causing a fast change in the duty cycle. A better way to do this is by processing button presses using interrupts, which you will do later in the semester in another homework assignment.</em></p>
-</blockquote>
+<p><em>Note: This delay reduces the likelihood of a single button press causing a fast change in the duty cycle. A better way to do this is by processing button presses using interrupts, which you will do later in the semester in another homework assignment.</em></p></blockquote>
 </li>
 </ol>
 </li>
@@ -476,8 +472,7 @@
 </li>
 </ol>
 <blockquote>
-<p><em>If this step doesn&rsquo;t work, debug by first checking all connections against the data sheet, looking for error messages in the IDE, and searching for the error messages on Google. Next, try adding a UART component and printing the value of the duty cycle variable to see if it changes. If you&rsquo;re still stuck, see the teaching team for help.</em></p>
-</blockquote>
+<p><em>If this step doesn&rsquo;t work, debug by first checking all connections against the data sheet, looking for error messages in the IDE, and searching for the error messages on Google. Next, try adding a UART component and printing the value of the duty cycle variable to see if it changes. If you&rsquo;re still stuck, see the teaching team for help.</em></p></blockquote>
 <h3 id="30-displaying-information-on-a-character-lcd-screen">3.0 Displaying information on a character LCD screen</h3>
 <ol>
 <li>Study the following critical information and concepts:</li>
@@ -615,8 +610,7 @@
 <li>
 <p>Modify the project hardware to add output pins that match those you selected and connected above. Make sure that none of the pins are set as analog. It is helpful to rename the pins in the Pin Module according to their purpose in the project.</p>
 <blockquote>
-<p><em>Note: If you added a UART to Port D you will have to remove it so that it doesn&rsquo;t conflict with the LCD.</em></p>
-</blockquote>
+<p><em>Note: If you added a UART to Port D you will have to remove it so that it doesn&rsquo;t conflict with the LCD.</em></p></blockquote>
 </li>
 </ol>
 </li>
@@ -625,12 +619,10 @@
 </li>
 </ol>
 <blockquote>
-<p>The next step involves referencing and modifying some example code given by the original developer of the library. <em><strong>You will need to read, modify, and fix</strong></em> this code in order to get it working and <em>customize</em> it according to the specific pins you are using.</p>
-</blockquote>
+<p>The next step involves referencing and modifying some example code given by the original developer of the library. <em><strong>You will need to read, modify, and fix</strong></em> this code in order to get it working and <em>customize</em> it according to the specific pins you are using.</p></blockquote>
 <p></p>
 <blockquote>
-<p><em>Context:</em> Finding code online is often fraught with problems. This can include incomplete documentation, outright errors, and code that is not written specifically for your device.</p>
-</blockquote>
+<p><em>Context:</em> Finding code online is often fraught with problems. This can include incomplete documentation, outright errors, and code that is not written specifically for your device.</p></blockquote>
 <p>a.  Include the LCD.h header file so that you can use the LCD library functions in main.c.</p>
 <p>b.  Configure and initialize the LCD screen according to the example in the <a href="https://github.com/ideras/pic-lcd-library/blob/master/README.md">README* *file</a> for pic-lcd-library-master. Pay special attention to ensure you are specifying the correct pins for &ldquo;register select&rdquo; and &ldquo;reset&rdquo; pins</p>
 <p>c.  Based on the <a href="https://github.com/ideras/pic-lcd-library/blob/master/README.md">README* *file example code</a> and the functions in LCD.h, add code to display your name and anything else you would like to write on the LCD.</p>

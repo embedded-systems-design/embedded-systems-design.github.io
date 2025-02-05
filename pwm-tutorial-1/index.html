@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.142.0">
+  <meta name="generator" content="Hugo 0.143.1">
 
   <!-- plugins -->
   
@@ -453,8 +453,7 @@
 <li>
 <p>Open <code>main.c</code> and add two lines of code in the line before the <code>for(;;)</code> loop: one to <em><strong>initialize</strong></em> and one to <em><strong>start</strong></em> the PWM subsystem.</p>
 <blockquote>
-<p><em>Hint:</em> In the Top Design, right-click on the PWM component, choose &ldquo;Open Datasheet&hellip;&rdquo;, scroll to the Application Programming Interface (API) section, and find the line of code to start the PWM component. Remember to use the name of your specific instance of the PWM component in the Top Design (e.g., <code>PWM_1_FunctionName()</code>).</p>
-</blockquote>
+<p><em>Hint:</em> In the Top Design, right-click on the PWM component, choose &ldquo;Open Datasheet&hellip;&rdquo;, scroll to the Application Programming Interface (API) section, and find the line of code to start the PWM component. Remember to use the name of your specific instance of the PWM component in the Top Design (e.g., <code>PWM_1_FunctionName()</code>).</p></blockquote>
 </li>
 <li>
 <p>Declare a new variable, <code>ii</code>, as an integer and initialize it to zero.</p>
@@ -468,8 +467,7 @@
 <li>Inside this second inner <code>for()</code> loop, change the duty cycle (via changing the Compare value), passing in the value of <code>ii</code>.</li>
 </ol>
 <blockquote>
-<p><em>Hint:</em> In the API section of the PWM component datasheet, find documentation about the function of the &ldquo;Compare&rdquo; value.</p>
-</blockquote>
+<p><em>Hint:</em> In the API section of the PWM component datasheet, find documentation about the function of the &ldquo;Compare&rdquo; value.</p></blockquote>
 </li>
 <li>
 <p>After the first inner <code>for()</code> loop, copy a duplicate of the first <code>for()</code> loop.</p>
@@ -484,8 +482,7 @@
 </li>
 </ol>
 <blockquote>
-<p>Continue on to <a href="/pwm-tutorial-2">PWM Tutorial 2 &ndash; Using PWM and an H-Bridge to Control Motor Speed</a></p>
-</blockquote>
+<p>Continue on to <a href="/pwm-tutorial-2">PWM Tutorial 2 &ndash; Using PWM and an H-Bridge to Control Motor Speed</a></p></blockquote>
 
         </div>
 
