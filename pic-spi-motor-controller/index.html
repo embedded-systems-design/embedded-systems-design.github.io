@@ -315,19 +315,18 @@
 <li>Clock Divider: 1</li>
 </ul>
 </li>
-<li>Add EUSARTX for communicating to your PC
+<li>Add UARTX for communicating to your PC
 <ul>
 <li>Select your desired baud rate</li>
-<li>ensure &ldquo;Redirect STDIO to USART&rdquo; is checked</li>
+<li>Ensure &ldquo;Redirect Printf to USART&rdquo; is checked</li>
 </ul>
 </li>
-<li>Add MSSPX.  Ensure MSSPX does not conflict with existing I2C devices
+<li>Add SPIX_Host. Add a Dependency Selector MSSPX that does not conflict with existing I2C devices.
 <ul>
-<li>Serial Protocol: SPI</li>
-<li>Mode: Master</li>
-<li>SPI Mode: (please determine from datasheet)</li>
 <li>Input Data Sampled At: (please determine datasheet)</li>
-<li>Clock Source Selection: FOSC/64</li>
+<li>SPI Mode: (please determine from datasheet)</li>
+<li>Data Input Sample At: (please determine from datasheet)</li>
+<li>Under MSSPX, check at Clock Source Selection: FOSC/64</li>
 </ul>
 </li>
 <li>Pin Manager
