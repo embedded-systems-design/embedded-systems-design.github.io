@@ -238,10 +238,15 @@
 
 
 
+
+
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
 
 
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/cadence/">Cadence Pages</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a></li>
 
 
 <li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/installing-cadence/">Installing Cadence</a></li>
@@ -398,6 +403,28 @@
 </ul>
 <h2 id="using-cadence-in-on-campus-housing-or-off-campus">Using Cadence in On Campus Housing or Off Campus</h2>
 <p>In order to use Cadence on your computer either in on-campus housing or off campus, you must have two-factor authentication enabled on your account (<a href="https://getprotected.asu.edu/services/identity-and-access-management/duo-two-factor">instructions</a>) and connect to the <a href="https://sslvpn.asu.edu/">ASU VPN</a> prior to launching Cadence. This allows Cadence to connect to the ASU license server.</p>
+<h2 id="fixing-the-cadence-license-server">Fixing the Cadence License Server</h2>
+<p>ASU changes where the license server is hosted yearly, and so you need to edit where Cadence looks for your license. Here&rsquo;s the steps:</p>
+<ol>
+<li>Using the Cadence License Client Configuration Tool</li>
+</ol>
+<p>This is the overall easiest solution:</p>
+<pre><code> Open the Cadence License Client Configuration Tool
+    This can be found by search on Windows (clicking the magnifying glass or the Windows logo, or pressing the windows key) through the term &quot;License Client&quot;.
+    Alternatively, you can navigate to your Cadence installation (Usually ```..\Cadence\SPB_17.4-silent\```, and navigating to the &quot;Licensing&quot; folder) and opening &quot;LicenseClientConfiguration.exe&quot;.
+Change your current license address (It should be ```5280@enlicense3.fulton.asu```.edu, or something like that) to ```5280@enlicense6.eas.asu.edu``` 
+Click Next. The environment variable should update.
+</code></pre>
+<p>If the above steps don&rsquo;t work (you receive an error), you need to manually change the environment variable:</p>
+<ol start="2">
+<li>
+<p>Manually editing your environment variable</p>
+<p>Navigate to the &ldquo;Advanced&rdquo; tab of your &ldquo;System Properties&rdquo; window by either going to Windows Start Menu-&gt;Settings-&gt;System-&gt;About-&gt;&ldquo;Advanced System Settings&rdquo; (On the right)-&gt;Advanced (in the new window that appears), or by searching for &ldquo;environment variable&rdquo; in the start menu.
+Click on &ldquo;Environment Variables&rdquo; at the bottom of the window.
+Navigate to your &ldquo;CDS_LIC_FILE&rdquo; Environment Variable, and click &ldquo;Edit.&rdquo;
+Change the &ldquo;Variable value&rdquo; to <code>5280@enlicense6.eas.asu.edu</code></p>
+</li>
+</ol>
 <h2 id="most-common-errors">Most Common Errors</h2>
 <p><strong>Q:</strong> What if I don&rsquo;t have enough hard drive space to install Cadence on my computer?</p>
 <p><strong>A:</strong></p>
@@ -475,7 +502,7 @@
 
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/cadence/installing-cadence/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/cadence/getting-started/installing-cadence/index.md"> Edit this Page</a></p>
         
         
         

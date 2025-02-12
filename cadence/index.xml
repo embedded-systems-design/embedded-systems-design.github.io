@@ -8,13 +8,6 @@
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/cadence/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installing Cadence</title>
-      <link>https://embedded-systems-design.github.io/installing-cadence/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
-      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;PC:&lt;/strong&gt; Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (&lt;a href=&#34;https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf&#34;&gt;Hardware and Software Requirements&lt;/a&gt;). Note that Cadence does not support Windows 10 Starter nor Home Basic.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Windows 7, 8, 8.1, 10, 11 or greater running on &lt;a href=&#34;https://www.apple.com/support/bootcamp/&#34;&gt;Boot Camp&lt;/a&gt; or &lt;a href=&#34;http://www.parallels.com/&#34;&gt;Parallels&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;before-installing&#34;&gt;Before Installing&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&amp;rsquo;s license server&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Cadence Forward Annotation Tutorial</title>
       <link>https://embedded-systems-design.github.io/forward-annotation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
