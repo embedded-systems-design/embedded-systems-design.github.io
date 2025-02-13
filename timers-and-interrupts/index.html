@@ -535,11 +535,9 @@
 </ol>
 <h2 id="verification">Verification</h2>
 <h3 id="plain-chip-with-snap-programmer">Plain Chip with Snap Programmer</h3>
-<p>There are two ways you can verify functionality:</p>
-<ul>
-<li>add a breakpoint on the printf() lines, with a watch on the string variables.  Use your external programmer to query the state of the strings each time it pauses.</li>
-<li>connect the EUSART pins to an external device (such as a PSoC, Curiosity Nano w/ serial port, or ESP32) and verify what that device receives.  Connect that device to your computer&rsquo;s USB, connect to the COM port created by the USB-to-serial chip in Putty, and read the values it receives</li>
-</ul>
+<!-- There are two ways you can verify functionality: -->
+<!-- * add a breakpoint on the printf() lines, with a watch on the string variables.  Use your external programmer to query the state of the strings each time it pauses. -->
+<p>To verify functionality, connect the EUSART pins to an external device (such as a PSoC, Curiosity Nano w/ serial port, or ESP32) and verify what that device receives.  Connect that device to your computer&rsquo;s USB, connect to the COM port created by the USB-to-serial chip in Putty, and read the values it receives</p>
 <h3 id="curiosity-nano">Curiosity Nano</h3>
 <p>If you have a curiosity nano board, the easiest way to verify in this case is to connect the curiosity nano board to your computer&rsquo;s USB, connect to the COM port created by the USB-to-serial chip in Putty, and read the values it receives.</p>
 
