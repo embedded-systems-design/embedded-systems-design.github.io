@@ -481,7 +481,7 @@
 </li>
 </ol>
 <h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
-<p>In this section you will be implementing software-based debounce logic to ensure that button pushes are not over-counted.  We will create &ldquo;interrupt on change&rdquo; (IOC) handling that will run code whenever it detects a button-push, and use the</p>
+<p>In this section you will be implementing software-based debounce logic to ensure that button pushes are not over-counted.  We will create &ldquo;interrupt on change&rdquo; (IOC) handling that will run code whenever it detects a button-push, and use those interrupts to increment or decrement a stored value in the microcontroller representing incrementing or decrementing a setpoint between 0% and 100% (by 5).</p>
 <p><em>This section assumes you have set up IOC-based interrupts in MCC and generated a new configuration file as specified in the MCC setup section above</em></p>
 <ol>
 <li>
@@ -510,16 +510,16 @@
 <li>
 <p>If the above two are both true, and if the current time reaches some internal delay (in a non-blocking way)</p>
 <ol>
-<li>Increments or decrements a &ldquo;duty cycle&rdquo; variable (once and only once per button push, using a flag or internal check variable)</li>
+<li>Increments or decrements a &ldquo;setpoint&rdquo; variable (once and only once per button push, using a flag or internal check variable) in 5% increments.</li>
 <li>Resets this flag if the buttons ever change state before reaching their limit.</li>
-<li>Ensures the duty cycle neither increments over 100% nor under 0%.</li>
+<li>Ensures the setpoint neither increments over 100% nor under 0%.</li>
 </ol>
 </li>
 <li>
-<p>Fills a string with the current duty cycle, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo; using <code>sprintf()</code>.</p>
+<p>Fills a string with the current setpoint, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo; using <code>sprintf()</code>.</p>
 <p>Example:</p>
 <pre><code> t=  45.34s
- dc= 75%
+ sp= 75%
 </code></pre>
 </li>
 <li>
