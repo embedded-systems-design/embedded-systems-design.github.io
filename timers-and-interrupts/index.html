@@ -481,7 +481,7 @@
 </li>
 </ol>
 <h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
-<p>In this section you will be implementing software-based debounce logic to ensure that button pushes are not over-counted.  We will create &ldquo;interrupt on change&rdquo; (IOC) handling that will run code whenever it detects a button-push, and use those interrupts to increment or decrement a stored value in the microcontroller representing incrementing or decrementing a setpoint between 0% and 100% (by 5).</p>
+<p>In this section you will be implementing software-based debounce logic to ensure that button pushes are not over-counted.  We will create &ldquo;interrupt on change&rdquo; (IOC) handling that will run code whenever it detects a button-push, and use those interrupts to increment or decrement a stored value in the microcontroller representing incrementing or decrementing a setpoint between 0% and 100% (by 5%).</p>
 <p><em>This section assumes you have set up IOC-based interrupts in MCC and generated a new configuration file as specified in the MCC setup section above</em></p>
 <ol>
 <li>
@@ -516,10 +516,10 @@
 </ol>
 </li>
 <li>
-<p>Fills a string with the current setpoint, starting with &ldquo;DC=&rdquo; and ending in &ldquo;%&rdquo; using <code>sprintf()</code>.</p>
+<p>Fills a string with the current setpoint, starting with &ldquo;SP=&rdquo; and ending in &ldquo;%&rdquo; using <code>sprintf()</code>.</p>
 <p>Example:</p>
 <pre><code> t=  45.34s
- sp= 75%
+ SP= 75%
 </code></pre>
 </li>
 <li>
