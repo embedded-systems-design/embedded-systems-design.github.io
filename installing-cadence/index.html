@@ -310,34 +310,20 @@
 <div class="alert alert-warning" role="alert">
       For other 2fa options see this <a href="https://getprotected.asu.edu/services/identity-and-access-management/duo-two-factor-authentication"> article </a>
 </div>
-<ol>
-<li>
-<p>Cadence has been known to change environment variables used by other software.  One of those is the HOME variable.  If left unset, it will add this variable and define it as <code>C:\Cadence\SPB_Data-Silent\</code></p>
-<p>It is therefore recommended to set that variable so that your other software remains working</p>
-<ol>
-<li>
-<p>Open up the file explorer (win+e)</p>
-</li>
-<li>
-<p>Navigate to &ldquo;This PC&rdquo;, right click and select properties.</p>
-</li>
-<li>
-<p>In the &ldquo;Related Settings&rdquo; section, select &ldquo;advanced system settings&ndash;&gt;environment variables&rdquo;</p>
-</li>
-<li>
-<p>In the <strong>top</strong> window (User Variables for &lt;yourusername&gt;), look for the HOME environment variable.  If it exists, you leave it as is</p>
-<ol>
-<li>If it doesn&rsquo;t exist, select &ldquo;new&rdquo;</li>
-<li>In variable name, type HOME (all caps)</li>
-<li>In the value field, enter the path to your user directory <code>C:\Users\MYUSERNAME</code>.  You can browse to the right directory</li>
-</ol>
-</li>
-<li>
-<p>Save your changes.</p>
-</li>
-</ol>
-</li>
-</ol>
+<!-- 1. Cadence has been known to change environment variables used by other software.  One of those is the HOME variable.  If left unset, it will add this variable and define it as ```C:\Cadence\SPB_Data-Silent\```
+
+    It is therefore recommended to set that variable so that your other software remains working
+
+    1. Open up the file explorer (win+e)
+    1. Navigate to "This PC", right click and select properties.
+    1. In the "Related Settings" section, select "advanced system settings -> environment variables"
+    1. In the **top** window (User Variables for \<yourusername\>), look for the HOME environment variable.  If it exists, you leave it as is
+
+        1.  If it doesn't exist, select "new"
+        2.  In variable name, type HOME (all caps)
+        3.  In the value field, enter the path to your user directory ```C:\Users\MYUSERNAME```.  You can browse to the right directory
+
+    1. Save your changes. -->
 <h3 id="instructions">Instructions</h3>
 <ol>
 <li>Go to Canvas and find the Pages tab.</li>

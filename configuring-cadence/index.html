@@ -290,13 +290,13 @@
 <li><code>Desktop\Cadence\Backups</code> - All backups saved by Design Entry CIS and PCB Editor will be saved here.</li>
 <li><code>Desktop\Cadence\Projects</code> - All project files that you generate should be saved here. Inside this folder, create a separate folder for each project or schematic so that the files do not get mixed up when you create a new project.</li>
 <li><code>Desktop\Cadence\step</code> - All .step files that you download or make to use with the PCB Editor 3-D View function should be stored in this folder. Downloadable .step files can be found at <a href="https://www.3dcontentcentral.com/">3D Content Central</a>.</li>
-<li><code>Desktop\Cadence\symbols</code> - All .pad, .bsm, .psm, and .dra files that you download or make should be stored in this folder. These files contain component footprints and mechanical pins that are used by Cadence. This folder also contains a special ASU <a href="https://en.wikipedia.org/wiki/Via_(electronics)">via</a> padstack (asuvia.pad) that improves manufacturability on the LPKF PCB mill in PRLTA 109. </li>
+<li><code>Desktop\Cadence\symbols</code> - All .pad, .bsm, .psm, and .dra files that you download or make should be stored in this folder. These files contain component footprints and mechanical pins that are used by Cadence. This folder also contains a special ASU <a href="https://en.wikipedia.org/wiki/Via_(electronics)">via</a> padstack (asuvia.pad) that improves manufacturability on the LPKF PCB mill in PRLTA 109.</li>
 </ul>
 <h2 id="step-2-configure-capture-cis">Step 2. Configure Capture CIS</h2>
 <p>CAPTURE.INI is the primary file in which Cadence stores all of the program settings for schematic editing in Capture CIS. We have created a custom CAPTURE.INI file for the ASU Polytechnic School engineering programs. Follow the instructions below to install and modify the custom CAPTURE.INI file:</p>
 <ol>
-<li>Open the Capture CIS application, which you will use to design schematics. When the &ldquo;Cadence Product Choices&rdquo; window (see Figure 4) appears, select Allegro PCB Design CIS L and click the checkbox next to Use as default. Click OK to continue.</li>
-</ol>
+<li>
+<p>Open the Capture CIS application, which you will use to design schematics. When the &ldquo;Cadence Product Choices&rdquo; window (see Figure 4) appears, select Allegro PCB Design CIS L and click the checkbox next to Use as default. Click OK to continue.</p>
 <p>
 <table>
 <thead></thead>
@@ -309,9 +309,9 @@
 </table>
 
 </p>
-<ol start="2">
+</li>
 <li>
-<p>Quit the &ldquo;Capture CIS 17.4&rdquo; application.</p>
+<p>Quit the &ldquo;Capture CIS&rdquo; application.</p>
 </li>
 <li>
 <p>Download the ASU Polytechnic School <a href="https://www.dropbox.com/s/nsiiaqydklkyd8e/Capture.ini?dl=0">custom Capture.INI file</a> to your computer. This custom file configures Cadence as follows:</p>
@@ -338,11 +338,11 @@
 <ol start="5">
 <li>Copy your edited custom <code>CAPTURE.INI</code> file to replace the default <code>CAPTURE.INI</code> file at one of the following paths:</li>
 </ol>
-<p><code>C:\ProgramData\SPB_Data\cdssetup\OrCAD_Capture\17.4.0\Capture.ini</code></p>
-<p>or</p>
-<p><code>C:\SPB_Data-Silent\cdssetup\OrCAD_Capture\17.4.0\Capture.ini</code></p>
-<p>or if you have defined your home directory differently according to the installation instructions, use</p>
-<p>`%HOME%\cdssetup\OrCAD_Capture\17.4.0\Capture.ini<code>where</code>%HOME%<code>is the location you set as your home directory (typcically</code>C:\Users\YOURUSERNAME```)</p>
+<p><code>C:\Users\&lt;your-user-name&gt;\AppData\Roaming\SPB_Data\cdssetup\OrCAD_Capture/22.1.0/Capture.ini</code></p>
+<blockquote>
+<p>Older directory locations for 17 and earlier include are:</p>
+<p><code>C:\ProgramData\SPB_Data\cdssetup\OrCAD_Capture\17.4.0\Capture.ini</code><br>
+<code>C:\SPB_Data-Silent\cdssetup\OrCAD_Capture\17.4.0\Capture.ini</code></p></blockquote>
 <p>
 <table>
 <thead></thead>
@@ -492,10 +492,10 @@
 </ol>
 <h2 id="step-4-set-up-constraints">Step 4. Set up Constraints</h2>
 <p>Follow <a href="/setting-up-cadence-drc-constraints">this tutorial</a> to set up Peralta constraints.</p>
-<h2 id="congratulations-you-have-configured-cadence">Congratulations, you have configured Cadence!</h2>
+<h2 id="congratulations-you-have-configured-cadence">Congratulations, you have configured Cadence</h2>
 <p>Next: <a href="/getting-started-with-cadence/">Get started creating a schematic</a></p>
 <h2 id="common-issues">Common Issues</h2>
-<p>If you can&rsquo;t find your config.ini file, make sure you </p>
+<p>If you can&rsquo;t find your config.ini file, make sure you</p>
 <p>Also, here is a video documenting an older version of this process:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QyfyskwCqGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
