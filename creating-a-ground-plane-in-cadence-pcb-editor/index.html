@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.144.2">
+  <meta name="generator" content="Hugo 0.145.0">
 
   <!-- plugins -->
   
@@ -521,66 +521,6 @@
 </p>
 <h2 id="what-is-a-void-rubout-or-anti-etch-and-when-do-i-use-one">What is a void, rubout, or anti-etch and when do I use one?</h2>
 <p>A void, rubout, or anti-etch is a place where the copper is fully removed from the PCB. A common use of rubouts is underneath Bluetooth or Wifi antennas (e.g., from a ESP32, Photon, or Argon) as having a ground plane underneath an antenna will effectively shield RF waves from reaching the antenna. At best this will mean reduced range for a wireless device, and at worst it will mean that the device will not connect wirelessly.</p>
-<h2 id="how-do-i-create-a-rubout-in-cadence">How do I create a rubout in Cadence?</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rec8kbkNtGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<ol>
-<li>
-<p>First, make sure you have placed all of the components on your PCB (and ideally have not started routing traces yet, though this can still be done even if you have routed traces).</p>
-</li>
-<li>
-<p>Choose Shape &gt; Manual Void/Cavity and choose a shape of your liking (see Figure 17).</p>
-</li>
-</ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/figures/figure_190.png"><img src="/figures/figure_190.png" alt="Figure 17: Anti-etch selection"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 17: Anti-etch selection</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<ol start="3">
-<li>Draw an anti-etch on the appropriate layer(s) in appropriate place(s) (e.g., underneath an antenna). If there are existing races or vias in the area of the anti-etch, you will need to move them. If you have ground (or power) planes on multiple layers, you should place an anti-etch on each of the copper layers (e.g., TOP and BOTTOM). See example in Figure 18.</li>
-</ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/figures/figure_192.png"><img src="/figures/figure_192.png" alt="Figure 18: Anti-etch example under a PSoC® 5 footprint"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 18: Anti-etch example under a PSoC® 5 footprint</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<ol start="4">
-<li>To delete an anti-etch, you need to use the special delete tool in the Manual Void/Cavity menu (see Figure 19).</li>
-</ol>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="/figures/figure_193.png"><img src="/figures/figure_193.png" alt="Figure 19: Delete tool for manual void/cavity"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Figure 19: Delete tool for manual void/cavity</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<ol start="5">
-<li>When generating your final Gerber files, you will need to add these anti-etches to the layers in the Artwork Control Form in order for them to be manufactured (see <a href="/exporting-gerber-files-from-cadence-pcb-editor/">How do I export Gerber files from Cadence?</a>).</li>
-</ol>
-<h2 id="additional-resources">Additional Resources</h2>
-<ul>
-<li><em><a href="https://www.youtube.com/watch?v=ZDIhdMQbjlw">Tutorial on Split Planes</a> from parsysEDA</em></li>
-<li>Based on a tutorial by Cody Van Cleve and updated by Jacob Lara in 2020.*</li>
-</ul>
 
         </div>
 

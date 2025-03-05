@@ -57,11 +57,25 @@
       <description>&lt;h2 id=&#34;what-is-a-board-outline&#34;&gt;What is a board outline?&lt;/h2&gt;&#xA;&lt;p&gt;A board outline is the outermost boundary of a printed circuit board design. It is used by the PCB manufacturer to cut the printed circuit board to the specified size and shape.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Creating a Differential Pair in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/creating-a-differential-pair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/creating-a-differential-pair/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-differential-pair&#34;&gt;What is a differential pair?&lt;/h2&gt;&#xA;&lt;p&gt;A differential pair is a pair of traces that together carry a signal between them.  Because of the circuitry involved, these traces may be isolated from the surrounding circuit, and thus, it is necessary to keep them near each other.  Why?  Maxwell&amp;rsquo;s law says that a changing magnetic field through a loop of wire causes a current.  In our cases, the pair of traces is a loop &amp;ndash; because they are connected to each other (through circuitry) at the ends of the trace &amp;ndash; the changing magnetic field could be from electromagnetic interference, and we are trying to keep a signal &amp;ldquo;clean&amp;rdquo; as it travels over our board.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Creating a Ground Plane in Cadence PCB Editor</title>
       <link>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</guid>
       <description>&lt;h2 id=&#34;what-is-a-ground-plane&#34;&gt;What is a ground plane?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Ground_plane&#34;&gt;ground plane&lt;/a&gt; is a large area of copper in a printed circuit board design that is connected to ground on the power supply.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Creating a Rubout in Cadence PCB Editor</title>
+      <link>https://embedded-systems-design.github.io/creating-a-rubout-in-cadence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/creating-a-rubout-in-cadence/</guid>
+      <description>&lt;h2 id=&#34;how-do-i-create-a-rubout-in-cadence&#34;&gt;How do I create a rubout in Cadence?&lt;/h2&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Rec8kbkNtGk&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;First, make sure you have placed all of the components on your PCB (and ideally have not started routing traces yet, though this can still be done even if you have routed traces).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Defining Constraints in Cadence PCB Editor</title>

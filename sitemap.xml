@@ -194,9 +194,13 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/creating-a-differential-pair/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/creating-a-rubout-in-cadence/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/creating-custom-footprints/</loc>
   </url><url>
@@ -370,9 +374,9 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/particle-argon-wifi-board/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tags/parts/</loc>
-  </url><url>
     <loc>https://embedded-systems-design.github.io/parts/</loc>
+  </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/parts/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/patents/</loc>
   </url><url>

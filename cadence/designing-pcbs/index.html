@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.144.2">
+  <meta name="generator" content="Hugo 0.145.0">
 
   <!-- plugins -->
   
@@ -427,11 +427,11 @@
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-ground-plane-in-cadence-pcb-editor/">Creating a Ground Plane in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-differential-pair/">Creating a Differential Pair in Cadence PCB Editor</a></h4>
       
 
-      <p><h2 id="what-is-a-ground-plane">What is a ground plane?</h2>
-<p>A <a href="https://en.wikipedia.org/wiki/Ground_plane">ground plane</a> is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</p></p>
+      <p><h2 id="what-is-a-differential-pair">What is a differential pair?</h2>
+<p>A differential pair is a pair of traces that together carry a signal between them.  Because of the circuitry involved, these traces may be isolated from the surrounding circuit, and thus, it is necessary to keep them near each other.  Why?  Maxwell&rsquo;s law says that a changing magnetic field through a loop of wire causes a current.  In our cases, the pair of traces is a loop &ndash; because they are connected to each other (through circuitry) at the ends of the trace &ndash; the changing magnetic field could be from electromagnetic interference, and we are trying to keep a signal &ldquo;clean&rdquo; as it travels over our board.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">

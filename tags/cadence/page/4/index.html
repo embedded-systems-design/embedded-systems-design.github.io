@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.144.2">
+  <meta name="generator" content="Hugo 0.145.0">
 
   <!-- plugins -->
   
@@ -250,11 +250,68 @@
   
 
     <div>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-differential-pair/">Creating a Differential Pair in Cadence PCB Editor</a></h4>
+      
+
+      <p><h2 id="what-is-a-differential-pair">What is a differential pair?</h2>
+<p>A differential pair is a pair of traces that together carry a signal between them.  Because of the circuitry involved, these traces may be isolated from the surrounding circuit, and thus, it is necessary to keep them near each other.  Why?  Maxwell&rsquo;s law says that a changing magnetic field through a loop of wire causes a current.  In our cases, the pair of traces is a loop &ndash; because they are connected to each other (through circuitry) at the ends of the trace &ndash; the changing magnetic field could be from electromagnetic interference, and we are trying to keep a signal &ldquo;clean&rdquo; as it travels over our board.</p></p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
+          class="text-primary">Cadence</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
+          class="text-primary">Pcb</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
       <h4 class="fw-bold mb-0"><a href="/creating-a-ground-plane-in-cadence-pcb-editor/">Creating a Ground Plane in Cadence PCB Editor</a></h4>
       
 
       <p><h2 id="what-is-a-ground-plane">What is a ground plane?</h2>
 <p>A <a href="https://en.wikipedia.org/wiki/Ground_plane">ground plane</a> is a large area of copper in a printed circuit board design that is connected to ground on the power supply.</p></p>
+      <ul class="list-inline">
+        
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
+          class="text-primary">Cadence</a>
+        </li>
+        <li class="list-inline-item mb-1 mr-2 mt-1">
+        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
+          class="text-primary">Pcb</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+          
+          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
+  
+  
+  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+  
+
+    <div>
+      <h4 class="fw-bold mb-0"><a href="/creating-a-rubout-in-cadence/">Creating a Rubout in Cadence PCB Editor</a></h4>
+      
+
+      <p><h2 id="how-do-i-create-a-rubout-in-cadence">How do I create a rubout in Cadence?</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rec8kbkNtGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ol>
+<li>
+<p>First, make sure you have placed all of the components on your PCB (and ideally have not started routing traces yet, though this can still be done even if you have routed traces).</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -412,68 +469,6 @@
 </div>
 
           
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/pcb-footprint-tutorial-for-psoc-4100-plus/">How to create a footprint for PSoC® 4100S Plus</a></h4>
-      
-
-      <p>This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/footprint"
-          class="text-primary">Footprint</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/psoc"
-          class="text-primary">Psoc</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/adding-silkscreen/">How to Create a Silkscreen in Cadence and Manually Add Text to it</a></h4>
-      
-
-      <p><h1 id="how-to-create-a-silkscreen-in-cadence-and-manually-add-text-to-it">How to Create a Silkscreen in Cadence and Manually Add Text to it</h1>
-<ol>
-<li>Create a (finalized) PCB layout. Note that the amount of additional work required for a good silkscreen layer will depend on how your PCB footprints were designed. This example will use the board shown below:</li>
-</ol>
-<p>
-<a href="image1.PNG"><img src="image1.PNG" alt=""  /></a>
-</p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/silkscreen"
-          class="text-primary">Silkscreen</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
         </div>
         
         <div class="row justify-content-center">
@@ -531,12 +526,9 @@
         
         
         
-
           
           
 
-
-        
         
 
       
@@ -558,14 +550,11 @@
         
         
         
-
           
           
             
           
 
-
-        
         
 
       
@@ -593,14 +582,11 @@
         
         
         
-
           
           
             
           
 
-
-        
         
 
       
@@ -628,14 +614,11 @@
         
         
         
-
           
           
             
           
 
-
-        
         
 
       
@@ -663,14 +646,11 @@
         
         
         
-
           
           
             
           
 
-
-        
         
 
       
@@ -698,14 +678,11 @@
         
         
         
-
           
           
             
           
 
-
-        
         
 
       
@@ -722,6 +699,30 @@
       
 
     
+    
+      
+
+      
+      
+      
+
+
+        
+        
+        
+          
+          
+
+        
+
+      
+      
+      
+
+      
+      
+
+    
 
     
     
@@ -735,7 +736,7 @@
     
     
     <li class="page-item">
-      <a class="page-link" href="/tags/cadence/page/6/">
+      <a class="page-link" href="/tags/cadence/page/7/">
         »»
       </a>
     </li>
