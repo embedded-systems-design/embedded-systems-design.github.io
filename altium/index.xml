@@ -4,7 +4,7 @@
     <title>Altium Pages on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/altium/</link>
     <description>Recent content in Altium Pages on Embedded Systems Design</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/altium/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://embedded-systems-design.github.io/altium/altium-resource-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/altium/altium-resource-list/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=YTGzncKU5RY&#34;&gt;&lt;em&gt;Quick-Start Tutorial from Altium&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This video provides excellent resources for starting a project, creating a schematic, and selecting symbols from the manufacturers, similar to Cadence and their Ultra Library. They then made the PCB from that schematic. Lastly, they also showed how to create the Gerber Files and have the project ready to manufacture.&lt;/p&gt;</description>
+      <description>Quick-Start Tutorial from Altium&#xA;This video provides excellent resources for starting a project, creating a schematic, and selecting symbols from the manufacturers, similar to Cadence and their Ultra Library.</description>
     </item>
   </channel>
 </rss>

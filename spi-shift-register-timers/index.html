@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.147.3">
+  <meta name="generator" content="Hugo 0.122.0">
 
   <!-- plugins -->
   
@@ -80,7 +80,7 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
           src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
@@ -97,7 +97,7 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
             src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
 
         <ul class="navbar-nav">
@@ -204,7 +204,7 @@
 
         
         <!-- search -->
-        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
+        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
         <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
       </form>
@@ -328,77 +328,78 @@
 </ul>
 <h2 id="parts-needed">Parts Needed</h2>
 <table>
-  <thead>
-      <tr>
-          <th><strong>Item</strong></th>
-          <th><strong>Quantity</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Breadboard</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> -or-</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td><a href="https://www.microchip.com/wwwproducts/en/PIC18F47Q10">PIC18F47Q10</a> DIP IC</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td><a href="https://www.ti.com/store/ti/en/p/product/?p=SN74HC595N">8-bit serial-in, parallel-out shift register</a></td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>LEDs</td>
-          <td>8</td>
-      </tr>
-      <tr>
-          <td>Current-limiting resistors for LEDs</td>
-          <td>8</td>
-      </tr>
-      <tr>
-          <td>Jumper wires</td>
-          <td>Many</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Quantity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Breadboard</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> -or-</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://www.microchip.com/wwwproducts/en/PIC18F47Q10">PIC18F47Q10</a> DIP IC</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.ti.com/store/ti/en/p/product/?p=SN74HC595N">8-bit serial-in, parallel-out shift register</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td>LEDs</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Current-limiting resistors for LEDs</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Jumper wires</td>
+<td>Many</td>
+</tr>
+</tbody>
 </table>
 <h2 id="background">Background</h2>
 <table>
-  <thead>
-      <tr>
-          <th><strong>Critical Information and Concepts</strong></th>
-          <th><strong>Importance and Source</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>a.  What a shift register is, why you would want to use one, and how it works</td>
-          <td>Needed to conceptually understand this assignment and figure out which connections to make. Can be found in Scherz &amp; Monk Section 12.8, and also in <a href="https://www.youtube.com/watch?v=ameNT2MKDyE">The Shift Register: Explained video</a>.</td>
-      </tr>
-      <tr>
-          <td>b.  How to wire a SN74HC595N serial in, parallel out shift register</td>
-          <td>Needed to create serially-addressable LEDs. See the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for wiring information</td>
-      </tr>
-      <tr>
-          <td>c.  How the SN74HC595N works</td>
-          <td>See Section 9.1 and Table 1 of the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for information on how the shift register clock and storage register clock work.</td>
-      </tr>
-      <tr>
-          <td>d.  How the SPI peripheral works in the PIC18F47Q10</td>
-          <td>Needed to understand how to wire and write SPI code for the PIC. Can be found in Section 27.2 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
-      </tr>
-      <tr>
-          <td>e.  Which pins on the PIC18F47Q10 can be used for SPI</td>
-          <td>Needed to understand how to wire a SPI device to the PIC. The default locations for SPI communication can be found in Table 4 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Critical Information and Concepts</strong></th>
+<th><strong>Importance and Source</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a.  What a shift register is, why you would want to use one, and how it works</td>
+<td>Needed to conceptually understand this assignment and figure out which connections to make. Can be found in Scherz &amp; Monk Section 12.8, and also in <a href="https://www.youtube.com/watch?v=ameNT2MKDyE">The Shift Register: Explained video</a>.</td>
+</tr>
+<tr>
+<td>b.  How to wire a SN74HC595N serial in, parallel out shift register</td>
+<td>Needed to create serially-addressable LEDs. See the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for wiring information</td>
+</tr>
+<tr>
+<td>c.  How the SN74HC595N works</td>
+<td>See Section 9.1 and Table 1 of the <a href="https://www.ti.com/lit/gpn/sn74hc595">SN74HC595N datasheet</a> for information on how the shift register clock and storage register clock work.</td>
+</tr>
+<tr>
+<td>d.  How the SPI peripheral works in the PIC18F47Q10</td>
+<td>Needed to understand how to wire and write SPI code for the PIC. Can be found in Section 27.2 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
+</tr>
+<tr>
+<td>e.  Which pins on the PIC18F47Q10 can be used for SPI</td>
+<td>Needed to understand how to wire a SPI device to the PIC. The default locations for SPI communication can be found in Table 4 of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></td>
+</tr>
+</tbody>
 </table>
 <h2 id="steps">Steps</h2>
 <blockquote>
-<p>In this assignment, you may use either the <a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> or a PIC18F47Q10 DIP IC connected to your breadboard.</p></blockquote>
+<p>In this assignment, you may use either the <a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> or a PIC18F47Q10 DIP IC connected to your breadboard.</p>
+</blockquote>
 <ol>
 <li>
 <p>Place the Curiosity Nano board as far to one edge of the breadboard as possible such that the micro USB port is accessible from the edge of the board. Connect 3.3V and GND from the Nano to the power rails of the breadboard.</p>
@@ -448,7 +449,8 @@
 <li>
 <p>Generate your MCC code. Then go to spi.h and identity the function that opens the SPI port along with the struct that contains the default operating mode. This is required to enable the SPI port.</p>
 <blockquote>
-<p>Note: This tutorial was originally written for MCC Classic. MCC &ldquo;Melody&rdquo; has a slightly updated interface, but most of the instructions here should still apply.  Please be patient as we update the instructions, and let us know if you find inconsistencies.</p></blockquote>
+<p>Note: This tutorial was originally written for MCC Classic. MCC &ldquo;Melody&rdquo; has a slightly updated interface, but most of the instructions here should still apply.  Please be patient as we update the instructions, and let us know if you find inconsistencies.</p>
+</blockquote>
 </li>
 </ol>
 </li>
@@ -464,7 +466,8 @@
 <li>
 <p>Write an 8-bit byte to illuminate some of the LEDs.</p>
 <blockquote>
-<p>(See spi1.h for the API function to do this)</p></blockquote>
+<p>(See spi1.h for the API function to do this)</p>
+</blockquote>
 </li>
 <li>
 <p>Wait 1 ms for the send operation to complete.</p>
@@ -480,7 +483,8 @@
 <li>
 <p>Compile, test, and (if necessary) debug the above code and hardware until you are able to light up LEDs connected to the shift register.</p>
 <blockquote>
-<p><em>If this step doesn&rsquo;t work, debug by first checking all connections against the data sheet, looking for error messages in the IDE, and analyzing your code. If you&rsquo;re still stuck, see the teaching team for help.</em></p></blockquote>
+<p><em>If this step doesn&rsquo;t work, debug by first checking all connections against the data sheet, looking for error messages in the IDE, and analyzing your code. If you&rsquo;re still stuck, see the teaching team for help.</em></p>
+</blockquote>
 </li>
 <li>
 <p>Modify the above code to display a pattern where a single LED &ldquo;chases&rdquo; from one end of the row to the other, and then reverses direction. See <a href="https://www.dropbox.com/s/r8rabjfkce8mgle/IMG_5835.MOV?dl=0">video example</a>.</p>
@@ -538,7 +542,7 @@
         </ul>
       </div>
       <div class="col-12 mb-5 text-center">
-        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       </div>
 
       <div class="col-12 mb-5 text-center">

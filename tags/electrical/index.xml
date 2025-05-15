@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Electrical on Embedded Systems Design</title>
+    <title>electrical on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/tags/electrical/</link>
-    <description>Recent content in Electrical on Embedded Systems Design</description>
-    <generator>Hugo</generator>
+    <description>Recent content in electrical on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/tags/electrical/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</guid>
-      <description>&lt;p&gt;Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device. In order to determine the amount of current a microcontroller can supply (or sink) with an output pin, open the data sheet and look for the section describing &amp;ldquo;Absolute Maximum Ratings&amp;rdquo;. There, there should be a specification described as the maximum current for a single GPIO pin (see example, Figure 1).&lt;/p&gt;</description>
+      <description>Microcontrollers make wonderful &amp;ldquo;brains&amp;rdquo; for embedded systems, but are severely limited in the amount of current they can supply to an external device.</description>
     </item>
   </channel>
 </rss>

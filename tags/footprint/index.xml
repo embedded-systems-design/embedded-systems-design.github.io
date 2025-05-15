@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Footprint on Embedded Systems Design</title>
+    <title>footprint on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/tags/footprint/</link>
-    <description>Recent content in Footprint on Embedded Systems Design</description>
-    <generator>Hugo</generator>
+    <description>Recent content in footprint on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/tags/footprint/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</guid>
-      <description>&lt;h2 id=&#34;what-is-a-gerber-file&#34;&gt;What is a Gerber file?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Gerber_format&#34;&gt;Gerber file&lt;/a&gt; (also known as &lt;em&gt;artwork&lt;/em&gt;) is a 2-D graphical representation of a single layer of a PCB. A typical design will have individual Gerber files for each layer (e.g., top copper, bottom copper, top silkscreen, bottom silkscreen, top soldermask, bottom soldermask) of a PCB.&lt;/p&gt;</description>
+      <description>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</description>
     </item>
     <item>
       <title>How to create a footprint for PSoC® 4100S Plus</title>
       <link>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</guid>
-      <description>&lt;p&gt;This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.&lt;/p&gt;</description>
+      <description>This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.</description>
     </item>
   </channel>
 </rss>

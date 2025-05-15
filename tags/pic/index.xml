@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pic on Embedded Systems Design</title>
+    <title>PIC on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/tags/pic/</link>
-    <description>Recent content in Pic on Embedded Systems Design</description>
-    <generator>Hugo</generator>
+    <description>Recent content in PIC on Embedded Systems Design</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/tags/pic/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,14 +12,14 @@
       <link>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</guid>
-      <description>&lt;h2 id=&#34;what-microcontrollers-does-microchip-specialize-in&#34;&gt;What microcontrollers does Microchip specialize in?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.microchip.com/pagehandler/en-us/products/picmicrocontrollers&#34;&gt;Microchip&lt;/a&gt; specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.&lt;/p&gt;</description>
+      <description>What microcontrollers does Microchip specialize in? Microchip specializes in 8-bit, 16-bit, and 32-bit PIC microcontrollers.</description>
     </item>
     <item>
       <title>Setting up Analog I/O and Unidirectional EUSART on the PIC18F47Q10</title>
       <link>https://embedded-systems-design.github.io/analog-io-eusart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/analog-io-eusart/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller. The PIC&amp;rsquo;s ADC subsystem is the peripheral used to read analog values and convert it into a digital number for use in your program. It can be configured in a variety of ways. In this assignment, you will create an ADC subsystem and program your microcontroller to transmit the result of reading an analog voltage measured at an input pin, using the ADC subsystem in one of its simplest configurations.&lt;/p&gt;</description>
+      <description>Introduction Many sensors have an analog output that must be digitized using an Analog to Digital converter (ADC) in order to use them in a microcontroller.</description>
     </item>
   </channel>
 </rss>
