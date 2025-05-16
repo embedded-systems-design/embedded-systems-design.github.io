@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Anaconda/Miniconda (Python) Installation Tutorial | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Altium
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/altium/">All Altium Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/altium/altium-resource-list/">Altium Resource List</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/circuit-design/">Circuit Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/esp32/">ESP32</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/psoc/">PSoC</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/tutorials/installing-anaconda-python/">Anaconda/Miniconda (Python) Installation Tutorial</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>Anaconda/Miniconda (Python) Installation Tutorial</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By Dan Aukes</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+          <li class="list-inline-item mb-3 mr-2 mt-1">
+          <a class="d-block p-2 bg-primary text-white" href="/tags/python"
+            class="text-primary">Python</a>
+          </li>
+          <li class="list-inline-item mb-3 mr-2 mt-1">
+          <a class="d-block p-2 bg-primary text-white" href="/tags/programming"
+            class="text-primary">Programming</a>
+          </li>
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>Anaconda is a distribution of Python that includes the ability to manage packages using the conda package manager as well as the ability to create and manage <em>environments</em>, or collections of packages that work together.  Anaconda ships as a ~500 Mb installer.  This tutorial gets you started with miniconda, a slimmed down installer for anaconda that allows you to install just the packages you need.  Below are the steps to gettting a working installation of Python with all the packages you need for <em>Foldable Robotics</em>.</p>
+<blockquote>
+<p>This tutorial is for installing the anaconda python distribution on windows.</p></blockquote>
+<h2 id="windows-installation">Windows Installation</h2>
+<p>These installation instructions are for computers that <strong>do</strong> <strong>not</strong> have Python or Anaconda installed already. Python and Anaconda do not come installed by default on most computers so if you haven&rsquo;t installed them intentionally, these instructions likely apply to you. If you <strong>do</strong> have another version of Python installed, then please ask Dr. Aukes for further details.</p>
+<h3 id="anaconda-instructions">Anaconda Instructions</h3>
+<p><strong>Note:</strong> These instructions are for the smaller &ldquo;Miniconda&rdquo; distribution, that includes only the <code>conda</code> package manager that you can use to install only the packages that you want.  You can also install the full <a href="https://www.anaconda.com/products/individual#Downloads">Anaconda</a> distribution, and follow the same basic instructions.</p>
+<ol>
+<li>
+<p>Download and install <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> (<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">win64 quick link</a>) with the following options:</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image00.png"><img src="image00.png" alt="Installer"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Installer</div></td></tr>
+</tbody>
+</table>
+
+
+
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image01.png"><img src="image01.png" alt="Select Agree"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select Agree</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<ol>
+<li>
+<p>Install for &ldquo;Just for Me&rdquo;</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image02.png"><img src="image02.png" alt="Select &ldquo;Just for Me&rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select &ldquo;Just for Me&rdquo;</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Accept the the default directory (e.g., C:\ProgramData\Miniconda3 )</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image03.png"><img src="image03.png" alt="Accept default directory"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Accept default directory</div></td></tr>
+</tbody>
+</table>
+
+</p>
+   <!-- > the "install for everyone" option no longer permits you to add python to the system PATH -->
+   <!-- - Check the "Add Miniconda3 to the system PATH environment variable" box -->
+</li>
+<li>
+<p>Keep the options page default, ensuring the &ldquo;Register Miniconda3 as the system Python&rdquo; box is checked</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image04.png"><img src="image04.png" alt="Keep default options"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Keep default options</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>Complete the installation</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image05.png"><img src="image05.png" alt="Complete the Install"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Complete the Install</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image06.png"><img src="image06.png" alt="Complete the Install"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Complete the Install</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Update Conda.</strong> In Windows, go to the search bar and type &ldquo;anaconda&rdquo;. Once you see the &ldquo;Anaconda Prompt&rdquo; app in the list, click on it.</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image08.png"><img src="image08.png" alt="Anaconda Prompt"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Anaconda Prompt</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>When the terminal opens, paste each of the following lines (one at a time) at the command prompt and press enter:</p>
+<pre><code> conda update --all
+</code></pre>
+</li>
+<li>
+<p><strong>Installing Thonny and other course-specific packages:</strong> Open up your anaconda environment (start&ndash;&gt;anaconda prompt)</p>
+<ol>
+<li>
+<p>(optional) Activate your desired environment <code>conda activate &lt;environment_name&gt;</code>.</p>
+<blockquote>
+<p>You can ignore if you want to install in the base environment</p></blockquote>
+</li>
+<li>
+<p>type the following to install a prerequisite package</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda install -y -c conda-forge wrapt
+</span></span></code></pre></div></li>
+<li>
+<p>Install the ESP32 commandline flashing tool</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install esptool
+</span></span></code></pre></div></li>
+<li>
+<p>To install Thonny type the following <em>(This is optional)</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install thonny
+</span></span></code></pre></div><p><strong>Note:</strong> on Mac, open up terminal or xterm and type <code>pip3 install esptool thonny</code></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Managing Conda Environments</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        
+
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/installing-anaconda-python/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script><script>
+
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        
+                        player.on('ready', (event) => {
+                            
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            
+
+    
+
+    
+
+</script>
+
+
+</body>
+</html>

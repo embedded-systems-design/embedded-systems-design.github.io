@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Timers and Interrupts with the PIC | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Altium
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/altium/">All Altium Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/altium/altium-resource-list/">Altium Resource List</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/circuit-design/">Circuit Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/esp32/">ESP32</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/psoc/">PSoC</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/tutorials/pic/timers-and-interrupts/">Timers and Interrupts with the PIC</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>Timers and Interrupts with the PIC</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By Dan Aukes</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="objectives">Objectives</h2>
+<p>The goal of this tutorial is to reintroduce you to the timer subsystem, implement a timer using an interrupt-based design, convert your pushbuttons from prior tutorials to interrupt-based functionality, and verify the results over EUSART and with a LED.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a></li>
+<li><a href="https://www.microchip.com/Developmenttools/ProductDetails/DM182029">PIC18F47Q10 Curiosity Nano</a> Microchip Main Page
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-Curiosity-Nano-Hardware-User-Guide-40002103B.pdf">Hardware User Guide</a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Design_Documentation_Rev5.zip">Design Documentation</a></li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F47Q10-CNANO_Schematics.pdf">Schematic</a></li>
+</ul>
+</li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_XC8_C_Compiler_User_Guide_for_PIC.pdf">XC8 Compiler Documentation</a></li>
+<li>Microchip developer <a href="https://microchipdeveloper.com/">tutorials site</a>
+<ul>
+<li><a href="https://microchipdeveloper.com/mcc:interrupts">Implementing Interrupts using MPLAB® Code Configurator</a></li>
+<li><a href="https://microchipdeveloper.com/mcc:mccgpio">Setting Up GPIO</a></li>
+</ul>
+</li>
+<li>Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a> (detailed explanation of many parts of MCC, including Pin Module acronyms)</li>
+<li>C Topics
+<ul>
+<li><a href="https://www.tutorialspoint.com/cprogramming/c_functions.htm">C Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">sprintf() function</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="components">Components</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Part</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>PIC18F47Q10 Curiosity Nano (or DIP IC)</td>
+      </tr>
+      <tr>
+          <td>Two breadboard-compatible SPST buttons</td>
+      </tr>
+      <tr>
+          <td>LED and an appropriate current-limiting resistor (or the onboard LED)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="instructions">Instructions</h2>
+<p>Study the following critical information and concepts</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Critical Information and Concepts</strong></th>
+          <th style="text-align: left"><strong>Importance</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">In TMRX.h, find the name of the function that permits the user to define a custom callback function</td>
+          <td style="text-align: left">We will be defining and using a custom callback function that runs whenever the timer interrupt is fired.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">In the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>, identify which GPIO pins can be used to trigger interrupts. Look for &ldquo;IOC&rdquo; or Interrupt-on-Change to learn more</td>
+          <td style="text-align: left">Can you use any GPIO pin to trigger an input-based interrupt?</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">In the Microchip MPLab Code Configurator <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1001463">User&rsquo;s Guide</a>, determine what WPU and OD stand for. WPU is explained better on <a href="https://microchipdeveloper.com/mcc:mccgpio">this page that discusses setting up GPIO</a>. Look up the explanation for OD by searching for &ldquo;ODC Registers&rdquo; on <a href="https://microchipdeveloper.com/16bit:io-ports">this page</a> to understand its use for a different PIC family.</td>
+          <td style="text-align: left">Determine the correct GPIO settings for I/O pins, as well as the best way to use these options in conjunction with a pushbutton switch.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">In this <a href="https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm">tutorial on sprintf()</a>, determine what library(or libraries) you need to include</td>
+          <td style="text-align: left">You will need to format a string.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Read through this <a href="https://microchipdeveloper.com/mcc:interrupts">tutorial</a> on interrupts in MCC to understand how linking a callback works</td>
+          <td style="text-align: left">You will need to create custom callbacks to process incoming interrupts</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Search for &ldquo;how to print the % character with sprintf()&rdquo;</td>
+          <td style="text-align: left">% is a special character and thus needs something special</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="mcc-setup">MCC Setup</h3>
+<ol>
+<li>
+<p>Launch MPLAB® X and create a new project for your PIC IC.</p>
+</li>
+<li>
+<p>Open MCC and update the following settings:</p>
+<blockquote>
+<p>Note: This tutorial was originally written for MCC Classic. MCC &ldquo;Melody&rdquo; has a slightly updated interface, but most of the instructions here should still apply.  Please be patient as we update the instructions, and let us know if you find inconsistencies.</p></blockquote>
+<ol>
+<li>
+<p>System</p>
+<ul>
+<li>System Clock: Configure your system clock to use the HFINTOSC at 4MHz</li>
+<li>Clock divider: select a clock divider of 4.</li>
+<li>Disable watchdog timer (unused)</li>
+<li>Disable low-freq programming</li>
+</ul>
+</li>
+<li>
+<p>EUSART</p>
+<ul>
+<li>Add and configure a new EUSART peripheral, taking care to select the EUSART module that connects to the PIC Curiosity Nano&rsquo;s serial-to-USB connection.</li>
+<li>Make sure you check the &ldquo;connect to printf&rdquo; (or &ldquo;connect to stdio&rdquo;) box.</li>
+</ul>
+</li>
+<li>
+<p>TMRX:</p>
+<ul>
+<li>clock: lfintosc</li>
+<li>Set timer prescaler and postscaler so that the timer period range is adjusted so that 1ms is within the range of values that can be specified for the timer period.</li>
+<li>Set the timer period to 1ms</li>
+<li>Enable interrupts</li>
+</ul>
+</li>
+<li>
+<p>Pin Manager: Grid View</p>
+<ul>
+<li>Ensure that the Package matches the package of the PIC you are using</li>
+<li>You will need to redefine your two pushbutton inputs to use two interrupt-capable pins as inputs. See the &ldquo;<a href="#fkmtqyl8x6c3">critical information</a>&rdquo; section above</li>
+<li>Configure the pin with the internal LED as a digital output.</li>
+</ul>
+</li>
+<li>
+<p>Pin Module</p>
+<ul>
+<li>For the two pushbutton pins, ensure they are defined as non-analog digital inputs. After identifying what WPU and OD mean(see above), set the checkboxes correctly.</li>
+<li>For IOC, select the transition type based on how you wired your pushbuttons</li>
+<li>For the LED output, ensure analog is not checked.</li>
+</ul>
+</li>
+<li>
+<p>System Interrupts Page</p>
+<ul>
+<li>Ensure the TMRX and IOC receive interrupts are enabled. Make sure the timer subsystem is at the top.</li>
+</ul>
+</li>
+<li>
+<p>Generate the MCC configuration and compile the project.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="creating-a-timer-based-callback-function">Creating a timer-based callback function</h3>
+<ol>
+<li>
+<p>Open TmrX.h</p>
+<ol>
+<li>Find and note the name for the function that links the timer subsystem callback to a user-defined function</li>
+<li>Find and note the name for the function that starts the timer.</li>
+</ol>
+</li>
+<li>
+<p>Open &ldquo;main.c&rdquo;</p>
+<ol>
+<li>Create a new function timer_callback() above main. it should return type void and take no input variables. Note the name of your new function</li>
+<li>Uncomment the two lines that enable global and peripheral interrupts</li>
+<li>In the main() function,
+<ol>
+<li>link the new timer_callback() function TimerX subsystem using the Callback linking function.</li>
+<li>immediately before the infinite while loop, start the timer.</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p><em>If set up correctly, your new callback function should be called once every millisecond</em></p></blockquote>
+</li>
+<li>
+<p>Custom callback code: Now, create a new global variable, initializing it to zero, for storing the time in milliseconds. Create a second global variable (also initialized to zero) to store the time in seconds.</p>
+<ol>
+<li>Implement custom code in timer_callback() that increments the new ms counter variable every time the function is called.</li>
+<li>Implement logic that ensures that if the current time in milliseconds is equal to or greater than one second, it:
+<ol>
+<li>Decrements its own value by the ms equivalent of one second.</li>
+<li>Increments the seconds variable by the equivalent of one second.</li>
+<li>Toggles the on-board LED digital output</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p><em>Note:</em> This code should work if the time in ms is any value over than 1 second.</p></blockquote>
+ <p></p>
+<blockquote>
+<p><em>Note 2:</em> This code should be written so as it doesn&rsquo;t reset, clear, truncate, or lose time information.</p></blockquote>
+</li>
+<li>
+<p>In the while loop in main(), add code that</p>
+<ol>
+<li>
+<p>computes the current time as a float in seconds (with milliseconds behind the decimal point)</p>
+</li>
+<li>
+<p>fills a string with the current time in seconds, starting with &ldquo;t=&rdquo; and ending with &ldquo;s&rdquo; using <code>sprintf()</code></p>
+<p><em>Example</em>:</p>
+<pre><code> t=  45.34s
+</code></pre>
+</li>
+<li>
+<p>prints the string with <code>printf()</code></p>
+</li>
+</ol>
+<blockquote>
+<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p></blockquote>
+</li>
+</ol>
+<h3 id="creating-ioc-based-callback-functions">Creating IOC-based callback functions</h3>
+<p>In this section you will be implementing software-based debounce logic to ensure that button pushes are not over-counted.  We will create &ldquo;interrupt on change&rdquo; (IOC) handling that will run code whenever it detects a button-push, and use those interrupts to increment or decrement a stored value in the microcontroller representing incrementing or decrementing a setpoint between 0% and 100% (by 5%).</p>
+<p><em>This section assumes you have set up IOC-based interrupts in MCC and generated a new configuration file as specified in the MCC setup section above</em></p>
+<ol>
+<li>
+<p>**Identify the way to map callback functions to interrupts.**Open <code>pin_manager.h</code>. Find and note the name for the function that links callback functions to each of the two pins selected for your pushbutton switches. There should be two functions available, one for each pin you configured in MCC.</p>
+</li>
+<li>
+<p><strong>Create your first IOC callback.</strong> Create a function pin_down() above main. it should return type void and take no input variables.</p>
+<p>In the main() function, link the new pin_down() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></p>
+</li>
+<li>
+<p><strong>Create your second callback.</strong> Create a function pin_up() above main. it should return type void and take no input variables.</p>
+<p>In the main() function, link the new pin_up() function using the first callback linking function found earlier. <em>This should be done before enabling interrupts</em></p>
+</li>
+<li>
+<p><strong>Write custom callback code.</strong> In pin_down() and pin_up() implement custom code that captures the current time that each button push occurs and save it into a new global variable.</p>
+</li>
+<li>
+<p><strong>Implement the debounce logic.</strong>  In the <code>while</code> loop in <code>main()</code>, add code that:</p>
+<ol>
+<li>
+<p>Checks the current time against the time the up or down buttons were pushed.</p>
+</li>
+<li>
+<p>Checks whether those buttons are still being pushed.</p>
+</li>
+<li>
+<p>If the above two are both true, and if the current time reaches some internal delay (in a non-blocking way)</p>
+<ol>
+<li>Increments or decrements a &ldquo;setpoint&rdquo; variable (once and only once per button push, using a flag or internal check variable) in 5% increments.</li>
+<li>Resets this flag if the buttons ever change state before reaching their limit.</li>
+<li>Ensures the setpoint neither increments over 100% nor under 0%.</li>
+</ol>
+</li>
+<li>
+<p>Fills a string with the current setpoint, starting with &ldquo;SP=&rdquo; and ending in &ldquo;%&rdquo; using <code>sprintf()</code>.</p>
+<p>Example:</p>
+<pre><code> t=  45.34s
+ SP= 75%
+</code></pre>
+</li>
+<li>
+<p>prints the string with <code>printf()</code></p>
+</li>
+</ol>
+<blockquote>
+<p><em>Note:</em> It is bad practice to put printf() or sprintf() functions in a callback because it takes so much time to process.</p></blockquote>
+</li>
+<li>
+<p>Download and compile your code.</p>
+</li>
+</ol>
+<h2 id="verification">Verification</h2>
+<h3 id="plain-chip-with-snap-programmer">Plain Chip with Snap Programmer</h3>
+<!-- There are two ways you can verify functionality: -->
+<!-- * add a breakpoint on the printf() lines, with a watch on the string variables.  Use your external programmer to query the state of the strings each time it pauses. -->
+<p>To verify functionality, connect the EUSART pins to an external device (such as a PSoC, Curiosity Nano w/ serial port, or ESP32) and verify what that device receives.  Connect that device to your computer&rsquo;s USB, connect to the COM port created by the USB-to-serial chip in Putty, and read the values it receives</p>
+<h3 id="curiosity-nano">Curiosity Nano</h3>
+<p>If you have a curiosity nano board, the easiest way to verify in this case is to connect the curiosity nano board to your computer&rsquo;s USB, connect to the COM port created by the USB-to-serial chip in Putty, and read the values it receives.</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        
+
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/pic/timers-and-interrupts.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script><script>
+
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        
+                        player.on('ready', (event) => {
+                            
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            
+
+    
+
+    
+
+</script>
+
+
+</body>
+</html>

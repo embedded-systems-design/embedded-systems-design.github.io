@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="generator" content="Hugo 0.147.3">
 
   <!-- plugins -->
   
@@ -80,7 +80,7 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
           src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
@@ -97,7 +97,7 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
             src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
 
         <ul class="navbar-nav">
@@ -136,7 +136,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -144,7 +144,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -204,7 +204,7 @@
 
         
         <!-- search -->
-        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
         <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
       </form>
@@ -285,10 +285,10 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/pcb-design-checklist/">PCB design checklist</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/pcb-design-checklist/">PCB design checklist</a></h4>
       
 
-      <p>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors.</p>
+      <p>Before exporting your PCB design for fabrication, you **must **verify the design and fix any errors. Time invested verifying your design before manufacturing will make the assembly and testing process significantly easier.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -311,10 +311,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/pcb-design-rules-setup-in-kicad/">PCB Design Rules Setup in KiCAD</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/kicad/kicad-pcb-design/pcb-design-rules-setup-in-kicad/">PCB Design Rules Setup in KiCAD</a></h4>
       
 
-      <p>Introduction Before reading this, review Peralta Lab PCB Mill Specs. We will pull information from there to set up PCB design rules in KiCAD.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>Before reading this, review <a href="https://peraltastudios.engineering.asu.edu/pcb-mill-specs/">Peralta Lab PCB Mill Specs</a>. We will pull information from there to set up PCB design rules in KiCAD. There are a few setting that are recommended above the actual mill capabilities. This knowledge may come in handy if you have a particular component that does not fit into the recommended settings.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -329,10 +330,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/kicad-pcb-design-tutorial/">PCB Design Tutorial</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/kicad/kicad-pcb-design/kicad-pcb-design-tutorial/">PCB Design Tutorial</a></h4>
       
 
-      <p>Introduction This tutorial will go over how to get started with your PCB design, as well as go over the things you will use while designing your PCB.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>This tutorial will go over how to get started with your PCB design, as well as go over the things you will use while designing your PCB.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -351,10 +353,13 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/text/">PCB Text</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/designing-pcbs/text/">PCB Text</a></h4>
       
 
-      <p>Introduction Text is important on PCB layouts to identify the designers, project, version, components, etc.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>Text is important on PCB layouts to identify the designers, project, version, components, etc. Typically, text can be placed on a silkscreen layer that sits on top of the copper. However, our manufacturing process in PRLTA 109 only supports text that is milled on the TOP COPPER or BOTTOM COPPER layers.<br>
+<br>
+**Note: **It is required that all PCB designs have your name, course, and team number so that the Peralta Engineering Studios staff can distinguish your board from others.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -369,10 +374,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/peralta-103-resources/">Peralta 103 Resources</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/peralta-103-resources/">Peralta 103 Resources</a></h4>
       
 
-      <p>What equipment is available at each of the benches? Function Generator (5 MHz)</p>
+      <p><h2 id="what-equipment-is-available-at-each-of-the-benches">What equipment is available at each of the benches?</h2>
+<p>Function Generator (5 MHz)</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -399,10 +405,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/tc74-temp-sensor/">PIC Curiosity Nano and the TC74 I2C Temp Sensor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/pic/tc74-temp-sensor/">PIC Curiosity Nano and the TC74 I2C Temp Sensor</a></h4>
       
 
-      <p>Objectives The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.</p>
+      <p><h2 id="objectives">Objectives</h2>
+<p>The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -417,10 +424,10 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/placing-and-moving-components-in-cadence-pcb-editor/">Placing and moving components in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/designing-pcbs/placing-and-moving-components-in-cadence-pcb-editor/">Placing and moving components in Cadence PCB Editor</a></h4>
       
 
-      <p>While it is easy to place components using the mouse, most designs require precise placement of some components (e.</p>
+      <p>While it is easy to place components using the mouse, most designs require precise placement of some components (e.g., to align parallel headers). This tutorial walks through how to place components at a specific X-Y coordinate, determine the X-Y coordinates of a component, measure the distance between two components, move an existing component to a specific X-Y coordinate, and move an existing component relative to its current location.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -443,10 +450,18 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/power-supplies-101/">Power Supplies 101</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/circuit-design/power-supplies-101/">Power Supplies 101</a></h4>
       
 
-      <p>What are the components of a basic power supply subsystem? Source of power - battery, AC adapter, solar Input electronic noise filtering circuit Voltage regulator to provide a constant supply voltage Output electronic noise filtering circuit What are the design considerations for a battery-operated circuit?</p>
+      <p><h2 id="what-are-the-components-of-a-basic-power-supply-subsystem">What are the components of a basic power supply subsystem?</h2>
+<ol>
+<li>Source of power - battery, AC adapter, solar</li>
+<li>Input electronic noise filtering circuit</li>
+<li>Voltage regulator to provide a constant supply voltage</li>
+<li>Output electronic noise filtering circuit</li>
+</ol>
+<h2 id="what-are-the-design-considerations-for-a-battery-operated-circuit">What are the design considerations for a battery-operated circuit?</h2>
+<p>How many Amp-Hours of capacity are needed?</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -473,10 +488,10 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-design-in-dfm-now/">Printing a PCB Design in DFM Now</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/manufacturing-pcbs/printing-a-pcb-design-in-dfm-now/">Printing a PCB Design in DFM Now</a></h4>
       
 
-      <p>Note: This tutorial shows how to print a PCB design on paper.</p>
+      <p><em>Note</em>: This tutorial shows how to print a PCB design on paper. Please see the <a href="/asu-pcb-fabrication-process/">ASU PCB Fabrication Process</a> for instructions on how to manufacture / &ldquo;print&rdquo; a PCB design in copper.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -499,10 +514,10 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-layout-in-cadence-pcb-editor/">Printing a PCB Layout in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/manufacturing-pcbs/printing-a-pcb-layout-in-cadence-pcb-editor/">Printing a PCB Layout in Cadence PCB Editor</a></h4>
       
 
-      <p>Note: This tutorial shows how to print a PCB design on paper.</p>
+      <p><em>Note</em>: This tutorial shows how to print a PCB design on paper. Please see the <a href="/asu-pcb-fabrication-process/">ASU PCB Fabrication Process</a> for instructions on how to manufacture / &ldquo;print&rdquo; a PCB design in copper.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -1161,7 +1176,7 @@ Hello and welcome to the embedded systems design website.
         </ul>
       </div>
       <div class="col-12 mb-5 text-center">
-        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       </div>
 
       <div class="col-12 mb-5 text-center">

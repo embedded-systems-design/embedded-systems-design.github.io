@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="generator" content="Hugo 0.147.3">
 
   <!-- plugins -->
   
@@ -80,7 +80,7 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
           src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
@@ -97,7 +97,7 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
             src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
 
         <ul class="navbar-nav">
@@ -136,7 +136,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -144,7 +144,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -204,7 +204,7 @@
 
         
         <!-- search -->
-        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
         <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
       </form>
@@ -250,10 +250,11 @@
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/software-design/">Software design</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/software-design/">Software design</a></h4>
       
 
-      <p>What is a finite state machine? A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite “states” that a system can be in, and that it can only be in one of those states at a time.</p>
+      <p><h2 id="what-is-a-finite-state-machine">What is a finite state machine?</h2>
+<p>A finite state machine (FSM) is a way of modeling a system such that there are a limited number of finite &ldquo;states&rdquo; that a system can be in, and that it can only be in one of those states at a time. Events (e.g., pushing a button) cause the system to change from one state to the next. Unexpected events do not cause the system to change states, which is useful for ignoring spurious inputs. Rather than coding for every possible input, you can instead code only for inputs that matter at the given time. The following resources provide a solid conceptual framing and implementation examples:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -288,11 +289,12 @@
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/spi-shift-register-tutorial/">SPI &amp; Shift Register Tutorial</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/spi-shift-register-tutorial/">SPI &amp; Shift Register Tutorial</a></h4>
       
 
-      <p>Serial Communication - SPI &amp; Shift Register Tutorial
-Objectives Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off.</p>
+      <p><p><strong>Serial Communication - SPI &amp; Shift Register Tutorial</strong></p>
+<h1 id="objectives"><strong>Objectives</strong></h1>
+<p>Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -311,10 +313,12 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/strategies-for-using-0-ohm-resistors/">Strategies for using 0 Ohm Resistors</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/strategies-for-using-0-ohm-resistors/">Strategies for using 0 Ohm Resistors</a></h4>
       
 
-      <p>Why use 0 ohm Resistors in a design? 0 ohm resistors act as a through hole jumper wire on manufactured PCBs.</p>
+      <p><p> </p>
+<h2 id="why-use-0-ohm-resistors-in-a-design">Why use 0 ohm Resistors in a design?</h2>
+<p>0 ohm resistors act as a through hole jumper wire on manufactured PCBs. Also known as &ldquo;jumper chips&rsquo;&rsquo; or&quot;jumper leads&rdquo;, 0 ohm resistors can be substituted for vias to cross over line traces. This is useful for PCBs that have many vias already and PCBs that want to avoid vias altogether. In the PCB industry, using 0 ohm resistors over jumper wires in the design process allows one less specialized tool when assembling the PCB. It is cheaper and more practical to install a jump lead using readily available resistor placing machines over having a separate machine for just placing jumper wires. </p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -337,10 +341,13 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/pcb-degugging-tips-and-solutions/">The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/pcb-degugging-tips-and-solutions/">The First Three Questions You Should Ask When Debugging Your PCB and Possible Solutions</a></h4>
       
 
-      <p>Are Connections Continuous? Conduct a continuity check on your board with a multimeter.</p>
+      <p><h2 id="are-connections-continuous">Are Connections Continuous?</h2>
+<ul>
+<li>
+<p><em>Conduct a continuity check on your board with a multimeter.</em></p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -359,10 +366,11 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/types-of-logic-operators-and-how-to-use-them/">Types of Logic Operators and How to Use Them</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/types-of-logic-operators-and-how-to-use-them/">Types of Logic Operators and How to Use Them</a></h4>
       
 
-      <p>What are Logical Operators? Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free.</p>
+      <p><h2 id="what-are-logical-operators">What are Logical Operators?</h2>
+<p>Say you are out grabbing lunch on behalf of a friend or a fellow student, and their lunch comes with a maximum of two sides for free. When you ask your friend about what sides they want, you may ask them one of the following 4 questions:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -385,10 +393,12 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/uart-pic-to-argon-tutorial/">UART PIC to Argon Tutorial</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/uart-pic-to-argon-tutorial/">UART PIC to Argon Tutorial</a></h4>
       
 
-      <p>UART PIC to Argon Tutorial Objectives Getting familiar with UART on both PIC and Particle platforms.</p>
+      <p><h1 id="uart-pic-to-argon-tutorial">UART PIC to Argon Tutorial</h1>
+<h2 id="objectives">Objectives</h2>
+<p>Getting familiar with UART on both PIC and Particle platforms. In this tutorial, you will set up the PIC as a black box that will respond to various inputs from the Argon. Utilizing the USB serial bus on the Argon, we can verify the project at the end.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -407,10 +417,11 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/using-bitwise-operators-in-c/">Using Bitwise Operators in C</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/using-bitwise-operators-in-c/">Using Bitwise Operators in C</a></h4>
       
 
-      <p>What are bitwise operators? Bitwise operators allow access to individual bits in a variable or register.</p>
+      <p><h2 id="what-are-bitwise-operators">What are bitwise operators?</h2>
+<p>Bitwise operators allow access to individual bits in a variable or register. A typical register or variable is at least 1 byte (8 bits) in size.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -429,10 +440,10 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/using-github-to-manage-project-files/">Using GitHub to Manage Project Files</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/using-github-to-manage-project-files/">Using GitHub to Manage Project Files</a></h4>
       
 
-      <p>GitHub is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same “repository” (or 304/314 project folder in layman’s terms).</p>
+      <p><a href="https://github.com/">GitHub</a> is a programing organization tool that not only can store all your programs nicely but allow you to collaborate with others on the same &ldquo;repository&rdquo; (or 304/314 project folder in layman&rsquo;s terms).</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -899,7 +910,7 @@ Objectives Getting familiar with the SPI serial communication protocol using MCC
         </ul>
       </div>
       <div class="col-12 mb-5 text-center">
-        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       </div>
 
       <div class="col-12 mb-5 text-center">

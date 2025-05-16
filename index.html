@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="generator" content="Hugo 0.147.3">
 
   <!-- plugins -->
   
@@ -80,7 +80,7 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
           src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
@@ -97,7 +97,7 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
             src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
 
         <ul class="navbar-nav">
@@ -136,7 +136,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -144,7 +144,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -204,7 +204,7 @@
 
         
         <!-- search -->
-        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
         <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
       </form>
@@ -285,7 +285,7 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/egr304-software-stack/">EGR304 Software Install</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/egr304-software-stack/">EGR304 Software Install</a></h4>
       
 
       <p>Software that will be used in the first semester</p>
@@ -303,7 +303,7 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/egr314-software-stack/">EGR314 Software Install</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/egr314-software-stack/">EGR314 Software Install</a></h4>
       
 
       <p>Software that will be used in the second semester</p>
@@ -321,10 +321,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/getting-started-with-cadence/">Getting Started with Cadence</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/getting-started/getting-started-with-cadence/">Getting Started with Cadence</a></h4>
       
 
-      <p>Introduction A number of basic Cadence tutorial videos are available on YouTube.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>A number of <a href="https://www.youtube.com/watch?v=QyfyskwCqGA&amp;list=PLL5qFpazhNPkiMll-tzyYYOK3y9xvoLk6">basic Cadence tutorial videos</a> are available on YouTube.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -347,10 +348,19 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/installing-cadence/">Installing Cadence</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/getting-started/installing-cadence/">Installing Cadence</a></h4>
       
 
-      <p>Installation System Requirements PC: Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (Hardware and Software Requirements).</p>
+      <p><h2 id="installation">Installation</h2>
+<h3 id="system-requirements">System Requirements</h3>
+<ul>
+<li><strong>PC:</strong> Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (<a href="https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf">Hardware and Software Requirements</a>). Note that Cadence does not support Windows 10 Starter nor Home Basic.</li>
+<li><strong>Mac:</strong> Windows 7, 8, 8.1, 10, 11 or greater running on <a href="https://www.apple.com/support/bootcamp/">Boot Camp</a> or <a href="http://www.parallels.com/">Parallels</a></li>
+</ul>
+<h3 id="before-installing">Before Installing</h3>
+<ol>
+<li>
+<p>Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&rsquo;s license server</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -381,11 +391,25 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/overview-of-the-esp32-devkit-doit-v1/">Overview of the ESP32 DevKit DOIT V1</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/esp32/overview-of-the-esp32-devkit-doit-v1/">Overview of the ESP32 DevKit DOIT V1</a></h4>
       
 
-      <p>Overview See this excellent overview of the ESP32
-RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&rsquo;t be used for UART in your project Devkit vs ESP32 module Pinouts / Schematics from https://randomnerdtutorials.</p>
+      <p><h2 id="overview">Overview</h2>
+<p>See this excellent <a href="https://circuits4you.com/2018/12/31/esp32-devkit-esp32-wroom-gpio-pinout/">overview</a> of the ESP32</p>
+<div class="alert alert-warning" role="alert">
+RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn't be used for UART in your project
+</div>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="dev-board.png"><img src="dev-board.png" alt="Devkit vs ESP32 module"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Devkit vs ESP32 module</div></td></tr>
+</tbody>
+</table>
+</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -412,10 +436,21 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&rsquo;t be 
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/kicad-symbol-creation/">Symbol Creation</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/kicad/kicad-schematic-design/kicad-symbol-creation/">Symbol Creation</a></h4>
       
 
-      <p>Introduction Resources LM3178 (On Digikey | datasheet) KiCad.org KiCad Documentation Common Pin Types and their Meanings Steps Open up KiCad (start –&gt; KiCad) and select the Symbol Editor</p>
+      <p><h2 id="introduction">Introduction</h2>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>LM3178 (<a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LM317BT/5308099">On Digikey</a> | <a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf">datasheet</a>)</li>
+<li><a href="https://www.kicad.org/">KiCad.org</a></li>
+<li><a href="https://docs.kicad.org/">KiCad Documentation</a></li>
+<li><a href="/kicad-common-pin-types">Common Pin Types and their Meanings</a></li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>Open up KiCad (start &ndash;&gt; KiCad) and select the Symbol Editor</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -430,10 +465,11 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&rsquo;t be 
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/assign-kicad-footprints/">Assigning Footprints</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/kicad/transferring-kicad-schematics-to-pcb/assign-kicad-footprints/">Assigning Footprints</a></h4>
       
 
-      <p>Introduction Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>Prior to transferring a schematic to a PCB design, it is necessary to assign footprints to each symbol in your schematic</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -448,10 +484,11 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&rsquo;t be 
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/kicad-electrical-rules-check/">Electrical Rules Check (ERC)</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/">Electrical Rules Check (ERC)</a></h4>
       
 
-      <p>Introduction In the last tutorial you created a schematic. But is it any good?</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>In the last tutorial you created a schematic.  But is it any good?  The electrical rules check, or ERC, is a useful way to debug your circuit.  This example tutorial takes you through the process of finding and eliminating circuit design errors.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -466,10 +503,11 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&rsquo;t be 
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/esp32-installation-and-setup/">ESP32 Installation and Setup</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/esp32/esp32-installation-and-setup/">ESP32 Installation and Setup</a></h4>
       
 
-      <p>Install Python and packages You need to use Python on your PC to program the ESP32.</p>
+      <p><h2 id="install-python-and-packages">Install Python and packages</h2>
+<p>You need to use Python on your PC to program the ESP32.  This assumes that you already have miniconda or cpython installed.  For more instructions, see <a href="/installing-c-python">installing c python</a> or <a href="/installing-anaconda-python/">installing anaconda python</a> for detailed instructions.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -500,10 +538,21 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&rsquo;t be 
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/kicad-schematic-capture/">Schematic Capture</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/kicad/kicad-schematic-design/kicad-schematic-capture/">Schematic Capture</a></h4>
       
 
-      <p>Introduction Resources LM3178 (On Digikey | datasheet) Symbol Creation Tutorial KiCad.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>LM3178 (<a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LM317BT/5308099">On Digikey</a> | <a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf">datasheet</a>)</li>
+<li>Symbol Creation Tutorial</li>
+<li><a href="https://www.kicad.org/">KiCad.org</a></li>
+<li><a href="https://docs.kicad.org/">KiCad Documentation</a></li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>Open KiCad</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -1218,7 +1267,7 @@ RX0 / TX0 are used by the onboard silabs USB/serial chip and shouldn&rsquo;t be 
         </ul>
       </div>
       <div class="col-12 mb-5 text-center">
-        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       </div>
 
       <div class="col-12 mb-5 text-center">

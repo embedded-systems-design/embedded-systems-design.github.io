@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
-  <meta name="generator" content="Hugo 0.122.0">
+  <meta name="generator" content="Hugo 0.147.3">
 
   <!-- plugins -->
   
@@ -80,7 +80,7 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
           src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
@@ -97,7 +97,7 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io"><img class="img-fluid"
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
             src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
 
         <ul class="navbar-nav">
@@ -136,7 +136,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad-installation-and-setup/">Install and Setup</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
               
@@ -144,7 +144,7 @@
               
               <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
               
-              <a class="dropdown-item" href="https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/">Packaging Files</a>
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
               
             </div>
           </li>
@@ -204,7 +204,7 @@
 
         
         <!-- search -->
-        <form action="https://embedded-systems-design.github.io/search" class="d-flex">
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
         <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
       </form>
@@ -285,10 +285,14 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-a-rubout-in-cadence/">Creating a Rubout in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/designing-pcbs/creating-a-rubout-in-cadence/">Creating a Rubout in Cadence PCB Editor</a></h4>
       
 
-      <p>How do I create a rubout in Cadence? First, make sure you have placed all of the components on your PCB (and ideally have not started routing traces yet, though this can still be done even if you have routed traces).</p>
+      <p><h2 id="how-do-i-create-a-rubout-in-cadence">How do I create a rubout in Cadence?</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rec8kbkNtGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ol>
+<li>
+<p>First, make sure you have placed all of the components on your PCB (and ideally have not started routing traces yet, though this can still be done even if you have routed traces).</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -311,10 +315,10 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/creating-custom-footprints/">Creating Custom Footprints</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/schematics-to-pcbs/footprints/creating-custom-footprints/">Creating Custom Footprints</a></h4>
       
 
-      <p>You can try to find existing footprints for components, but most components will require custom footprints.</p>
+      <p>You can try to <a href="/finding-existing-pcb-footprints-for-cadence-pcb-editor/">find existing footprints</a> for components, but most components will require custom footprints.</p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -337,10 +341,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/curiosity-nano-mplab-tutorial-and-lab/">Curiosity Nano &amp; MPLAB Tutorial</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/pic/curiosity-nano-mplab-tutorial-and-lab/">Curiosity Nano &amp; MPLAB Tutorial</a></h4>
       
 
-      <p>Objectives Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board.</p>
+      <p><h1 id="objectives"><strong>Objectives</strong></h1>
+<p>Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -355,10 +360,19 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/dc-motors-101/">DC Motors 101</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/circuit-design/dc-motors-101/">DC Motors 101</a></h4>
       
 
-      <p>Watch the video mini-lecture on DC motor control from Dr. Jordan What types of DC motors are most common?</p>
+      <p><h4 id="watch-the-video-mini-lecture-on-dc-motor-control-from-drjordan"><a href="https://youtu.be/nMhxy2hxcKs">Watch the video mini-lecture on DC motor control from Dr. Jordan</a></h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nMhxy2hxcKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="what-types-of-dc-motors-are-most-common">What types of DC motors are most common?</h2>
+<ul>
+<li>Brushed DC motors. Current flowing in one direction makes the motor turn one direction, and current flowing in the opposite direction makes the motor turn the opposite direction.</li>
+<li>Stepper motors - provide absolute position control but require a special controller IC</li>
+<li>Servo motors - PWM signal controls the position of the motor</li>
+</ul>
+<h2 id="how-do-i-connect-a-brushed-dc-motor-to-a-microcontroller">How do I connect a brushed DC motor to a microcontroller?</h2>
+<p>DC motors are inductive loads and therefore cannot be directly connected to a microcontroller without damaging the microcontroller. There are two protection mechanisms that go into a successful motor interface:</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -381,10 +395,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/debugging-psoc-creator/">Debugging Code in PSoC Creator</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/psoc/debugging-psoc-creator/">Debugging Code in PSoC Creator</a></h4>
       
 
-      <p>Introduction Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>Debugging is a process of systematically double-checking your assumptions, because if everything was correct then it would be working. See below for some common symptoms and possible debugging remedies.</p></p>
       <ul class="list-inline">
         
       </ul>
@@ -399,10 +414,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/setting-up-cadence-drc-constraints/">Defining Constraints in Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/designing-pcbs/setting-up-cadence-drc-constraints/">Defining Constraints in Cadence PCB Editor</a></h4>
       
 
-      <p>Introduction The PCB mills in Peralta have certain capabilities, so PCBs must be designed with their limitations in mind.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>The PCB mills in Peralta have certain capabilities, so PCBs must be designed with their limitations in mind. The full specs of the machines can be found here: <a href="https://peraltastudios.engineering.asu.edu/pcb-mill-specs/">https://peraltastudios.engineering.asu.edu/pcb-mill-specs/</a></p></p>
       <ul class="list-inline">
         
       </ul>
@@ -417,10 +433,10 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/cadence-design-for-manufacturing/">Design For Manufacturing (Cadence)</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/manufacturing-pcbs/cadence-design-for-manufacturing/">Design For Manufacturing (Cadence)</a></h4>
       
 
-      <p>Coming Soon…</p>
+      <p>Coming Soon&hellip;</p>
       <ul class="list-inline">
         
       </ul>
@@ -435,10 +451,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/drawing-software/">Drawing Software</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/misc/drawing-software/">Drawing Software</a></h4>
       
 
-      <p>What is drawing software used for? Drawing software is used to create diagrams for inclusion in presentations and reports.</p>
+      <p><h2 id="what-is-drawing-software-used-for">What is drawing software used for?</h2>
+<p>Drawing software is used to create diagrams for inclusion in presentations and reports.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -465,10 +482,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/enable-floating-point-support/">Enabling Floating Point Support in PSoC Creator</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/tutorials/psoc/enable-floating-point-support/">Enabling Floating Point Support in PSoC Creator</a></h4>
       
 
-      <p>Introduction Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>Floating point math is not enabled by default in PSoC Creator because of the larger memory footprint it imposes on the microcontroller.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -491,10 +509,11 @@ Hello and welcome to the embedded systems design website.
   
 
     <div>
-      <h4 class="fw-bold mb-0"><a href="/exporting-gerber-files-from-cadence-pcb-editor/">Exporting Gerber files from Cadence PCB Editor</a></h4>
+      <h4 class="fw-bold mb-0"><a href="/cadence/manufacturing-pcbs/exporting-gerber-files-from-cadence-pcb-editor/">Exporting Gerber files from Cadence PCB Editor</a></h4>
       
 
-      <p>What is a Gerber file? A Gerber file (also known as artwork) is a 2-D graphical representation of a single layer of a PCB.</p>
+      <p><h2 id="what-is-a-gerber-file">What is a Gerber file?</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Gerber_format">Gerber file</a> (also known as <em>artwork</em>) is a 2-D graphical representation of a single layer of a PCB. A typical design will have individual Gerber files for each layer (e.g., top copper, bottom copper, top silkscreen, bottom silkscreen, top soldermask, bottom soldermask) of a PCB.</p></p>
       <ul class="list-inline">
         
         <li class="list-inline-item mb-1 mr-2 mt-1">
@@ -1161,7 +1180,7 @@ Hello and welcome to the embedded systems design website.
         </ul>
       </div>
       <div class="col-12 mb-5 text-center">
-        <a href="https://embedded-systems-design.github.io"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
       </div>
 
       <div class="col-12 mb-5 text-center">

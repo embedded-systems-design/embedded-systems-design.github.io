@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bjt on Embedded Systems Design</title>
+    <title>Bjt on Embedded Systems Design</title>
     <link>https://embedded-systems-design.github.io/tags/bjt/</link>
-    <description>Recent content in bjt on Embedded Systems Design</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Bjt on Embedded Systems Design</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://embedded-systems-design.github.io/tags/bjt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transistors</title>
-      <link>https://embedded-systems-design.github.io/transistors/</link>
+      <link>https://embedded-systems-design.github.io/tutorials/circuit-design/transistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/transistors/</guid>
-      <description>What is a transistor? A transistor is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.</description>
+      <guid>https://embedded-systems-design.github.io/tutorials/circuit-design/transistors/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-transistor&#34;&gt;What is a transistor?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Transistor&#34;&gt;transistor&lt;/a&gt; is a type of semiconductor device that can be used as both an amplifier or as an electronic switch.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

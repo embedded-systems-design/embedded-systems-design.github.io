@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://embedded-systems-design.github.io/egr304-software-stack/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/egr304-software-stack/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/egr314-software-stack/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/egr314-software-stack/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/getting-started/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/getting-started-with-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/getting-started/getting-started-with-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/installing-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/getting-started/installing-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-installation-and-setup/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/overview-of-the-esp32-devkit-doit-v1/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/overview-of-the-esp32-devkit-doit-v1/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-symbol-creation/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-symbol-creation/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/assign-kicad-footprints/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/assign-kicad-footprints/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-electrical-rules-check/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-electrical-rules-check/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/esp32-installation-and-setup/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/esp32-installation-and-setup/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-schematic-capture/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-schematic-capture/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-generating-netlists/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-generating-netlists/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-common-pin-types/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-schematic-design/kicad-common-pin-types/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/esp32/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/importing-kicad-netlists/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/importing-kicad-netlists/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/</loc>
   </url><url>
@@ -44,11 +44,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/pic/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/installing-anaconda-python/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/installing-anaconda-python/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/psoc/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/packaging-kicad-files-for-submission/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
@@ -70,19 +70,19 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/adc/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/adding-text-to-a-layout-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/adding-text-to-a-layout-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/adding-text-to-pcb-in-kicad/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/adding-text-to-pcb-in-kicad/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/all-about-escape-rooms/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/all-about-escape-rooms/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/all-about-serial/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/all-about-serial/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/all-about-smart-homes/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/all-about-smart-homes/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/s3-module-info/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/s3-module-info/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/altering-trace-widths/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/altering-trace-widths/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/altium/</loc>
   </url><url>
@@ -94,67 +94,67 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/asu/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/asu-pcb-fabrication-process/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/asu-pcb-fabrication-process/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/asu-pcb-mill-specs/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/asu-pcb-mill-specs/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/resistors/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/resistors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/bjt/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/bluetooth/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/psoc-bluetooth-connection-issues/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/psoc-bluetooth-connection-issues/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/bluetooth-tutorial-1/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/bluetooth-tutorial-1/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/bluetooth-tutorial-2/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/bluetooth-tutorial-2/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/bypass-capacitor-basics/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/bypass-capacitor-basics/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/cad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/forward-annotation/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/forward-annotation/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/cadence-manuals/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/cadence-manuals/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/mounting-holes/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/mounting-holes/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/cadence-schematic-tutorials/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/cadence-schematic-tutorials/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/cadence-simulation-tutorials/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/cadence-walkthrough-psoc-4-ble-module/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/calculating-current-limiting-resistor-value-for-leds/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/calculating-current-limiting-resistor-value-for-leds/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/capacitive-sensing/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/sensors/capacitive-sensing/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/capacitor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/capacitors/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/capacitors/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/capacitors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/categories/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/changing-a-hole-diameter-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/changing-a-hole-diameter-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/changing-the-default-via-padstack-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/changing-the-default-via-padstack-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-design-entry-cis/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/changing-the-library-search-path-in-cadence-design-entry-cis/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/changing-the-library-search-path-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/changing-the-library-search-path-in-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/checklist/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/choosing-transistors-for-highpower-digital-switching/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/choosing-transistors-for-highpower-digital-switching/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/circuit-design/</loc>
   </url><url>
@@ -164,63 +164,63 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/components/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/configuring-cadence-cloud/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/getting-started/configuring-cadence-cloud/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/configuring-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/getting-started/configuring-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/configuring-the-uart-on-psoc/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/configuring-the-uart-on-psoc/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/connecting-to-the-psoc/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/connecting-to-the-psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/connectors/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/connectors-101/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/connectors-101/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-board-outline-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/creating-a-board-outline-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/creating-a-custom-dc-barrel-jack-schematic-symbol-and-pcb-footprint-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-library-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/creating-a-custom-library-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-padstack-old/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/creating-a-custom-padstack-old/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-padstack-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/creating-a-custom-padstack-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-manually-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/creating-a-custom-pcb-footprint-manually-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/creating-a-custom-pcb-footprint-using-package-designer-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-schematic-symbol-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/creating-a-custom-schematic-symbol-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-custom-smd-footprint-manually-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/creating-a-custom-smd-footprint-manually-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-differential-pair/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/creating-a-differential-pair/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-ground-plane-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/creating-a-ground-plane-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-new-project-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/creating-a-new-project-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-a-rubout-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/creating-a-rubout-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/creating-custom-footprints/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/creating-custom-footprints/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/curiosity-nano-mplab-tutorial-and-lab/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/custom-part/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/cypress/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/dc-motors-101/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/dc-motors-101/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/debugging/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/debugging-psoc-creator/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/debugging-psoc-creator/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/setting-up-cadence-drc-constraints/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/setting-up-cadence-drc-constraints/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/design/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/cadence-design-for-manufacturing/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/cadence-design-for-manufacturing/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/</loc>
   </url><url>
@@ -232,89 +232,89 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/drawing/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/drawing-software/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/drawing-software/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/ecad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/electrical/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/enable-floating-point-support/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/enable-floating-point-support/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/esp32/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/example-project/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/exporting-gerber-files-from-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/exporting-gerber-files-from-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/exporting-gerber-from-kicad/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/exporting-gerber-from-kicad/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/exporting-solder-mask-layers-from-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/exporting-solder-mask-layers-from-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/fall-2024-tutorials/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/fall-2024-tutorials/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/filter/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/finding-existing-pcb-footprints-for-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/finding-existing-pcb-footprints-for-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/footprint/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/footprints/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/fork-report-website/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/fork-report-website/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/from-where-can-i-source-parts/</loc>
+    <loc>https://embedded-systems-design.github.io/parts/from-where-can-i-source-parts/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/fuses/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/fuses-101/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/fuses-101/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/getting-started-with-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/getting-started-with-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/github/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/grow-your-embedded-programming-skills/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/grow-your-embedded-programming-skills/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/hardware/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/hello-world-with-uart-pic/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/house-of-quality/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/house-of-quality/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/how-does-x-work/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/sensors/how-does-x-work/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/how-to-add-solar-to-your-circuit/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/how-to-add-solar-to-your-circuit/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/pcb-footprint-tutorial-for-psoc-4100-plus/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/adding-silkscreen/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/adding-silkscreen/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/how-to-export-a-pdf-from-capture-and-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/how-to-export-a-pdf-from-capture-and-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/i2c-with-8-bit-io-expander/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/i2c-with-8-bit-io-expander/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/installing-c-python/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/installing-c-python/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/integrated-development-environments-for-psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/interfacing/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/interrupts/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/interrupts/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/interrupts-on-psoc/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/interrupts-on-psoc/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/ind-op-amps-sensors-and-adcs/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/ir-emitter-detector-pairs-and-op-amps/ind-op-amps-sensors-and-adcs/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/keeping-a-schematic-tidy/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/tips-and-tricks/keeping-a-schematic-tidy/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/kicad/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/kicad/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-pcb-faq/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/kicad-pcb-faq/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pic-lcd-button/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/pic-lcd-button/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/level-shifters/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/level-shifters/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/level-shifters/</loc>
   </url><url>
@@ -322,9 +322,9 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/logic/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/make-a-website/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/make-a-website/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/manual-routing-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/manual-routing-in-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/manufacturers/</loc>
   </url><url>
@@ -332,85 +332,85 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/materials/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/measurement-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/measurement-in-cadence-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/mechanical/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/mechanical-cad-software/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/mechanical-cad-software/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/merging-schematics/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/merging-schematics/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/microchip/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/microchip-avr-microcontrollers/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/microchip-avr-microcontrollers/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/microchip-pic-microcontrollers/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/microchip-pic-microcontrollers/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/microcontroller/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/micropython/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/micropython-and-esp32/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/micropython-and-esp32/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/misc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/mosfet/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/mosfet-for-use-with-a-3.3-v-and-5v-microcontroller/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/motors/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/motors/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/motors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/noise/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/ordering/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/oscilloscopes-101/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/oscilloscopes-101/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/packaging-cadence-files-for-submission/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/packaging-cadence-files-for-submission/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/particle/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/particle-argon-wifi-board/</loc>
-  </url><url>
-    <loc>https://embedded-systems-design.github.io/tags/parts/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/particle-argon-wifi-board/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/parts/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/tags/parts/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/patents/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/patents-101/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/patents-101/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pcb/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pcb-design-checklist/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/pcb-design-checklist/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pcb-design-rules-setup-in-kicad/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/pcb-design-rules-setup-in-kicad/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-pcb-design-tutorial/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/kicad-pcb-design-tutorial/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/text/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/text/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/peralta-103-resources/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/peralta-103-resources/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tc74-temp-sensor/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/tc74-temp-sensor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pic18f47q10/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/placing-and-moving-components-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/placing-and-moving-components-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/power-supplies-101/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/power-supplies-101/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/power-supplies/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/printing-a-pcb-design-in-dfm-now/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/printing-a-pcb-design-in-dfm-now/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/printing-a-pcb-layout-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/printing-a-pcb-layout-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/print-non-string-variables-to-psoc-uart/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/print-non-string-variables-to-psoc-uart/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/problem-definition/</loc>
   </url><url>
@@ -422,11 +422,11 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/psoc/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/psoc-hardware-development-kits/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/psoc-hardware-development-kits/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/psoc-creator-project-structure/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/psoc-creator-project-structure/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/psoc-hello-world/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/psoc-hello-world/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/psoc-creator/</loc>
   </url><url>
@@ -434,51 +434,51 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/pullup/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pull-down-resistors/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/pull-down-resistors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/purchasing/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pushing-pcb-changes-back-to-a-schematic-in-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/pushing-pcb-changes-back-to-a-schematic-in-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pwm-tutorial-1/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/pwm-tutorial-1/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pwm-tutorial-2/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/pwm-tutorial-2/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pwm-tutorial-3/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/pwm-tutorial-3/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/python/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/python/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/python/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/recreating-a-simple-round-padstack/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/recreating-a-simple-round-padstack/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/report-formatting-instructions/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/report-formatting-instructions/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/resetting-reference-designators-in-cadence-design-entry-cis/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/tips-and-tricks/resetting-reference-designators-in-cadence-design-entry-cis/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/resistor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/resistors/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/routing-traces/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/routing-traces/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/adding-a-rubout-area-in-kicad/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/kicad-pcb-design/adding-a-rubout-area-in-kicad/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/running-a-design-for-manufacturing-check-in-dfm-now/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/running-a-design-for-manufacturing-check-in-dfm-now/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/running-design-rules-check-in-cadence-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/running-design-rules-check-in-cadence-pcb-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/schematic-checklist/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/schematic-checklist/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/sensors/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/mplabx-project-setup/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/mplabx-project-setup/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/analog-io-eusart/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/analog-io-eusart/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/icsp-tutorial/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/icsp-tutorial/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/silkscreen/</loc>
   </url><url>
@@ -486,45 +486,45 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/software/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/tags/software-design/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/software-design/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/software-design/</loc>
+    <loc>https://embedded-systems-design.github.io/tags/software-design/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/solar/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/soldering/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/soldering-and-desoldering-tips-and-tricks/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/soldering-and-desoldering-tips-and-tricks/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/sources/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/sources-for-electrical-and-electromechanical-components/</loc>
+    <loc>https://embedded-systems-design.github.io/parts/sources-for-electrical-and-electromechanical-components/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/sources-for-materials/</loc>
+    <loc>https://embedded-systems-design.github.io/parts/sources-for-materials/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/sources-for-mechanical-components/</loc>
+    <loc>https://embedded-systems-design.github.io/parts/sources-for-mechanical-components/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/sourcing/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/spi/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/spi-shift-register-tutorial/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/spi-shift-register-timers/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/spi-shift-register-timers/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/spi-shift-register-timers-ii/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/spi-shift-register-timers-ii/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pic-spi-motor-controller/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/pic-spi-motor-controller/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/stepper-motor-selection-and-control/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/stepper-motor-selection-and-control/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pcb-tutorial-notes/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/pcb-tutorial-notes/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/strategies-for-using-0-ohm-resistors/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/strategies-for-using-0-ohm-resistors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/suppliers/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/surface-mount-soldering/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/surface-mount-soldering/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/surface-mount/</loc>
   </url><url>
@@ -538,84 +538,84 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/texas-instruments/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/texas-instruments-microcontrollers/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/texas-instruments-microcontrollers/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/pcb-degugging-tips-and-solutions/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/pcb-degugging-tips-and-solutions/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/thonny/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/timers-and-interrupts-lcd/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/timers-and-interrupts-lcd/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/timers-and-interrupts/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/pic/timers-and-interrupts/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/cadence/schematics/tips-and-tricks/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/trace-width-calculator/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/designing-pcbs/trace-width-calculator/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/transferring-a-cadence-schematic-to-pcb-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/transferring-a-cadence-schematic-to-pcb-editor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/transistor/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/transistors/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/transistors/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/transistors/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/tutorial/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/types-of-logic-operators-and-how-to-use-them/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/types-of-logic-operators-and-how-to-use-them/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/uart/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/uart-pic-to-argon-tutorial/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/uart-pic-to-argon-tutorial/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/updating-a-part-in-your-library/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/updating-a-part-in-your-library/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/using-bitwise-operators-in-c/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/using-bitwise-operators-in-c/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/using-github-to-manage-project-files/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/using-github-to-manage-project-files/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-footprint-editor/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-editor/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/kicad-footprint-wizard/</loc>
+    <loc>https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/kicad-footprint-wizard/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/using-pymakr/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/using-pymakr/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/using-vcc-and-gnd-symbols/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/schematics/tips-and-tricks/using-vcc-and-gnd-symbols/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/version-control/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/version-control-part-1/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/about-version-control/version-control-part-1/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/version-control-part-2/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/about-version-control/version-control-part-2/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/version-control-part-3/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/about-version-control/version-control-part-3/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tutorials/about-version-control/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/video/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/voltage-regulators-vs-dc-dc-converters/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/circuit-design/voltage-regulators-vs-dc-dc-converters/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/vscode/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/vscode-setup/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/vscode-setup/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/what-is-a-gantt-chart/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/what-is-a-gantt-chart/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/what-is-a-printed-circuit-board/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/what-is-cadence/</loc>
+    <loc>https://embedded-systems-design.github.io/cadence/getting-started/what-is-cadence/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/what-is-psoc/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/psoc/what-is-psoc/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/wireless/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/working-with-libraries/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/working-with-libraries/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/working-with-thonny/</loc>
+    <loc>https://embedded-systems-design.github.io/tutorials/esp32/working-with-thonny/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/zipping-folders/</loc>
+    <loc>https://embedded-systems-design.github.io/misc/zipping-folders/</loc>
   </url>
 </urlset>

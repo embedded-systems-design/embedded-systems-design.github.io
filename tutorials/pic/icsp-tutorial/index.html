@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <title> Setting up In-Circuit Serial Programming for PIC | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Embedded Systems Design Blog">
+  <meta name="author" content="ESD Faculty">
+  <meta name="generator" content="Hugo 0.147.3">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/plugins/venobox/venobox.css ">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://embedded-systems-design.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://embedded-systems-design.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    </head>
+
+    <body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+          src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://embedded-systems-design.github.io/"><img class="img-fluid"
+            src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Cadence
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/">All Cadence Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/getting-started/">Getting Started</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics/">Schematics</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/schematics-to-pcbs/">Cadence Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/designing-pcbs/">Designing PCBs</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/cadence/manufacturing-pcbs/">Manufacturing PCBs</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              KiCad
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/">All KiCad Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-installation-and-setup/">Install and Setup</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-schematic-design/">Schematic Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/transferring-kicad-schematics-to-pcb/">Transferring Schematics to PCB</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/kicad-pcb-design/">KiCad PCB Design Pages</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/kicad/packaging-kicad-files-for-submission/">Packaging Files</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Altium
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/altium/">All Altium Posts</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/altium/altium-resource-list/">Altium Resource List</a>
+              
+            </div>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/parts/">Parts</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://embedded-systems-design.github.io/misc/">Misc</a>
+          </li>
+          
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/">All Tutorials</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/circuit-design/">Circuit Design</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/esp32/">ESP32</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a>
+              
+              <a class="dropdown-item" href="https://embedded-systems-design.github.io/tutorials/psoc/">PSoC</a>
+              
+            </div>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <form action="https://embedded-systems-design.github.io//search" class="d-flex">
+        <input class="form-control me-2"  id="search-query"  name="s" type="s" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  type="submit"><i class="ti-search text-dark"></i></button>
+      </form>
+
+
+
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+<section class="section-sm">
+  <div class="container">
+
+
+
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+  
+
+
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/tutorials/pic/icsp-tutorial/">Setting up In-Circuit Serial Programming for PIC</a></li>
+
+</ol>
+</nav>
+</div>
+
+
+
+
+
+
+        <h2>Setting up In-Circuit Serial Programming for PIC</h2>
+        
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
+          
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="objectives">Objectives</h2>
+<p>In this tutorial, you will learn how to program a PIC using in-circuit serial programming with the MPLAB® Snap debugger/programmer. This will be critical for your semester project as you will be working with a surface mount microcontroller that cannot be easily removed for offboard programming and does not have a USB port.</p>
+<p>At the end of this tutorial you will be able to:</p>
+<ol>
+<li>Program a microcontroller in-system on a breadboard using an external programmer.</li>
+</ol>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>In-circuit debugger/programmer</td>
+          <td><a href="https://www.microchip.com/en-us/development-tool/PG164100">MPLAB® Snap</a><br>(<a href="https://www.thingiverse.com/thing:3074301">3-D printable enclosure</a>)</td>
+      </tr>
+      <tr>
+          <td>PIC 18F47Q10 microcontroller</td>
+          <td><a href="https://www.microchip.com/en-us/product/PIC18F47Q10">Part Website</a> (<a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">datasheet</a>)</td>
+      </tr>
+      <tr>
+          <td>Voltage Regulator</td>
+          <td>Can use either the adjustable regulators located at the lab benches, or one on your breadboard.  <strong>Set to 3.3V</strong></td>
+      </tr>
+      <tr>
+          <td>Breadboard</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Resistors</td>
+          <td>Various, as described in the datasheets below</td>
+      </tr>
+      <tr>
+          <td>Capacitors</td>
+          <td>Various, as describedin the datasheets below</td>
+      </tr>
+      <tr>
+          <td>Jumper wires</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Micro USB cable</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Male to male header</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a>
+<ul>
+<li>Figure 2-1. Recommended Minimum Connections</li>
+<li>Figure 2-2. considerations for programming regarding the capacitor</li>
+</ul>
+</li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/50002787C.pdf">MPLAB® Snap In-Circuit Debugger User&rsquo;s Guide</a>
+<ul>
+<li>Figure 3-4 has connections detailed plus pullup resistor specified</li>
+<li>Figure 3-6 identifies specific improper connections</li>
+<li>Figure 10-2 shows the SNAP header pinout</li>
+</ul>
+</li>
+<li><a href="https://www.bkprecision.com/products/power-supplies/1671A-triple-output-30v-5a-digital-display-dc-power-supply.html">BK Precision Triple-Output 30V, 5A Digital Display DC Power Supply (Model 1671)</a> (<a href="https://bkpmedia.s3.amazonaws.com/downloads/manuals/en-us/1671A_manual.pdf">manual</a>)</li>
+</ul>
+<h2 id="prior-to-demonstration-of-proficiency">Prior to Demonstration of Proficiency</h2>
+<ol>
+<li>
+<p>Read and search the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/50002787C.pdf">MPLAB® Snap In-Circuit Debugger User&rsquo;s Guide</a> to find answers to the following questions:</p>
+<ol>
+<li>How does In-Circuit Serial Programming work with the MPLAB® Snap In-Circuit Debugger?</li>
+<li>What circuitry is necessary to connect a PIC to the Snap?</li>
+<li>What is the pinout for the 8-pin SIL (single in-line) programming connector used to connect your circuit to the Snap? Note that pin 1 is marked by a black triangle.</li>
+</ol>
+</li>
+<li>
+<p>Read and search the <em>Pin Diagrams</em> and <em>ICSP™</em> sections of the <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10 Datasheet</a> to find answers to the following questions:</p>
+<ol>
+<li>How does In-Circuit Serial Programming work on the PIC18F47Q10?</li>
+<li>Which pins on the PIC18F47Q10-I/P must be connected in order for ICSP™ to work?</li>
+</ol>
+</li>
+<li>
+<p>Set the BK Precision DC power supply to output 3.3V. Then, turn off the power supply before connecting it to your circuit.</p>
+</li>
+<li>
+<p>Wire up your breadboard to connect the Snap and the PIC18F47Q10-I/P according to what you learned above. <strong>Make sure to connect all of the VDD and VSS pins in addition to the external 3.3V power supply.</strong> Whenever there is conflicting hardware configuration information between the Snap manual and the PIC18F47Q10 datasheet, follow the PIC datasheet as every PIC is a bit different and the Snap works with a number of different PICs.</p>
+<blockquote>
+<p><em>Tip:</em> If you attach an 8-pin male to male header to your breadboard (or PCB) then it makes it easier to quickly connect and disconnect the Snap from your circuit. |</p></blockquote>
+</li>
+<li>
+<p>Launch MPLAB® X and create a new project.  Set it up for use with the 18F47Q10 DIP version</p>
+<blockquote>
+<p><strong>Note:</strong> Other <a href="/mplabx-project-setup">tutorials</a> provide more detail regarding project setup.</p></blockquote>
+</li>
+</ol>
+<!-- 1. Open the MCC Pin Manager and configure a pin as a digital output to a LED. Then, modify your breadboard to add a series resistor and LED to this pin. -->
+<!-- 1. Open main.c and comment out the printf() line. The Snap does not support UART communications back to the computer, so printf() will not work. -->
+<ol>
+<li>Compile the project and fix any errors.</li>
+<li><strong>Turn on the external power supply and connect the Snap to your computer.</strong></li>
+<li>Download your code to the microcontroller. You should see the LED blinking on and off. <em>If this step doesn&rsquo;t work, debug by first checking all connections against the data sheet, looking for error messages in the IDE, and searching for the error messages on Google. Also see the <a href="https://microchipdeveloper.com/snap:troubleshooting">MPLAB® Snap Troubleshooting Guide</a> for more information.</em></li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 border-top py-4 text-center ">
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Arizona State University</li>
+          
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">External</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/embedded-systems-design">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 text-center">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/about/">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://embedded-systems-design.github.io/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 mb-5 text-center">
+        <a href="https://embedded-systems-design.github.io/"><img src="https://embedded-systems-design.github.io/images/esd6.png" alt="Embedded Systems Design"></a>
+      </div>
+
+      <div class="col-12 mb-5 text-center">
+        <p>|  copyright © 2022 Shawn Jordan and Dan Aukes.  All Rights Reserved.  |</p>
+        
+        
+        
+        
+        
+
+        
+        
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/pic/icsp-tutorial/index.md"> Edit this Page</a></p>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://embedded-systems-design.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://embedded-systems-design.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/mark.js"></script>
+
+<script src="https://embedded-systems-design.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://embedded-systems-design.github.io/js/script.min.js"></script><script>
+
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        
+                        player.on('ready', (event) => {
+                            
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            
+
+    
+
+    
+
+</script>
+
+
+</body>
+</html>
