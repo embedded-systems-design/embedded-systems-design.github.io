@@ -9,37 +9,37 @@
     <atom:link href="https://embedded-systems-design.github.io/cadence/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started with Cadence</title>
-      <link>https://embedded-systems-design.github.io/cadence/getting-started/getting-started-with-cadence/</link>
+      <link>https://embedded-systems-design.github.io/getting-started-with-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/cadence/getting-started/getting-started-with-cadence/</guid>
+      <guid>https://embedded-systems-design.github.io/getting-started-with-cadence/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A number of &lt;a href=&#34;https://www.youtube.com/watch?v=QyfyskwCqGA&amp;amp;list=PLL5qFpazhNPkiMll-tzyYYOK3y9xvoLk6&#34;&gt;basic Cadence tutorial videos&lt;/a&gt; are available on YouTube.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing Cadence</title>
-      <link>https://embedded-systems-design.github.io/cadence/getting-started/installing-cadence/</link>
+      <link>https://embedded-systems-design.github.io/installing-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/cadence/getting-started/installing-cadence/</guid>
+      <guid>https://embedded-systems-design.github.io/installing-cadence/</guid>
       <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;system-requirements&#34;&gt;System Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;PC:&lt;/strong&gt; Windows 10 (64-bit) Professional, Windows Server 2012 and 2012 R2, Windows Server 2016, or greater (&lt;a href=&#34;https://www.parallel-systems.co.uk/wp-content/uploads/2020/02/System_Requirements.pdf&#34;&gt;Hardware and Software Requirements&lt;/a&gt;). Note that Cadence does not support Windows 10 Starter nor Home Basic.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Windows 7, 8, 8.1, 10, 11 or greater running on &lt;a href=&#34;https://www.apple.com/support/bootcamp/&#34;&gt;Boot Camp&lt;/a&gt; or &lt;a href=&#34;http://www.parallels.com/&#34;&gt;Parallels&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;before-installing&#34;&gt;Before Installing&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install and connect to Cisco AnyConnect VPN client.  This will be necessary for connecting to ASU&amp;rsquo;s license server&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring Cadence (Apporto)</title>
-      <link>https://embedded-systems-design.github.io/cadence/getting-started/configuring-cadence-cloud/</link>
+      <link>https://embedded-systems-design.github.io/configuring-cadence-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/cadence/getting-started/configuring-cadence-cloud/</guid>
+      <guid>https://embedded-systems-design.github.io/configuring-cadence-cloud/</guid>
       <description>&lt;p&gt;Before using Cadence, configure it for optimal performance by following the instructions below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Configuring Cadence (Standalone Installation)</title>
-      <link>https://embedded-systems-design.github.io/cadence/getting-started/configuring-cadence/</link>
+      <link>https://embedded-systems-design.github.io/configuring-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/cadence/getting-started/configuring-cadence/</guid>
+      <guid>https://embedded-systems-design.github.io/configuring-cadence/</guid>
       <description>&lt;p&gt;Before using Cadence, configure it for optimal performance by following the instructions below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is Cadence?</title>
-      <link>https://embedded-systems-design.github.io/cadence/getting-started/what-is-cadence/</link>
+      <link>https://embedded-systems-design.github.io/what-is-cadence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/cadence/getting-started/what-is-cadence/</guid>
+      <guid>https://embedded-systems-design.github.io/what-is-cadence/</guid>
       <description>&lt;p&gt;Cadence is an electronic computer-aided drafting (ECAD) program commonly used in industry for the design and simulation of electronic circuits and printed circuit boards. The following video by Casey Petersen describes the basics of Cadence:&lt;/p&gt;</description>
     </item>
   </channel>

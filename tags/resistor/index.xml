@@ -9,9 +9,9 @@
     <atom:link href="https://embedded-systems-design.github.io/tags/resistor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Resistor Info</title>
-      <link>https://embedded-systems-design.github.io/tutorials/circuit-design/resistors/</link>
+      <link>https://embedded-systems-design.github.io/resistors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/tutorials/circuit-design/resistors/</guid>
+      <guid>https://embedded-systems-design.github.io/resistors/</guid>
       <description>&lt;h2 id=&#34;external-resources&#34;&gt;External Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://resistorcolorcodecalc.com/&#34;&gt;https://resistorcolorcodecalc.com/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

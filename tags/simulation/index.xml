@@ -9,9 +9,9 @@
     <atom:link href="https://embedded-systems-design.github.io/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cadence simulation tutorials</title>
-      <link>https://embedded-systems-design.github.io/cadence/cadence-simulation-tutorials/</link>
+      <link>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/cadence/cadence-simulation-tutorials/</guid>
+      <guid>https://embedded-systems-design.github.io/cadence-simulation-tutorials/</guid>
       <description>&lt;p&gt;This page lists tutorials for doing circuit simulations in Cadence.&lt;/p&gt;</description>
     </item>
   </channel>
