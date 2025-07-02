@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title> Hello World with UART (PIC18F57Q43 Curiosity Nano) | Embedded Systems Design </title>  <!-- mobile responsive meta -->
+      <title> Hello World (PIC18F57Q43 Curiosity Nano) | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -249,7 +249,7 @@
 <li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a></li>
 
 
-<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/hello-world-with-uart-pic18f57q43/">Hello World with UART (PIC18F57Q43 Curiosity Nano)</a></li>
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/hello-world-pic18f57q43/">Hello World (PIC18F57Q43 Curiosity Nano)</a></li>
 
 </ol>
 </nav>
@@ -260,7 +260,7 @@
 
 
 
-        <h2>Hello World with UART (PIC18F57Q43 Curiosity Nano)</h2>
+        <h2>Hello World (PIC18F57Q43 Curiosity Nano)</h2>
         
         <div class="mb-1 post-meta">
           <span>By Dan Aukes</span>
@@ -274,7 +274,7 @@
         
         <div class="content mb-5">
           <h2 id="introduction">Introduction</h2>
-<p>This tutorial will lead you through setting up a project in MPLabX for the PIC18F57Q43 Devkit.</p>
+<p>This tutorial will lead you through setting up a project in MPLabX for the PIC18F57Q43 Devkit and programming it.</p>
 <h2 id="resources">Resources</h2>
 <ul>
 <li>Microchip
@@ -313,10 +313,6 @@
           <td></td>
       </tr>
       <tr>
-          <td>Jumper wires</td>
-          <td></td>
-      </tr>
-      <tr>
           <td>USB-C Programming cable</td>
           <td></td>
       </tr>
@@ -347,10 +343,6 @@
       <tr>
           <td>How do you program the curiosity nano?</td>
           <td>The board can be directly programmed over USB from MPLabX.  For details on how to program it with a separate programmer, see figure 3-11.</td>
-      </tr>
-      <tr>
-          <td>Is it possible to communicate with it once programmed over USB?</td>
-          <td>Yes, see section 4.1.1 and  figure 4-1  for details on how the CDC RX/TX pins connect to the  microcontroller&rsquo;s UART pins.</td>
       </tr>
       <tr>
           <td>What other features are on-board?</td>
@@ -494,10 +486,10 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="image012.png"><img src="image012.png" alt="caption"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image012.png"><img src="image012.png" alt="Download Support Files"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">caption</div></td></tr>
+<tr><td><div style="text-align:center;">Download Support Files</div></td></tr>
 </tbody>
 </table>
 
@@ -509,10 +501,10 @@
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="image013.png"><img src="image013.png" alt="caption"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image013.png"><img src="image013.png" alt="MCC Configuration View "  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">caption</div></td></tr>
+<tr><td><div style="text-align:center;">MCC Configuration View </div></td></tr>
 </tbody>
 </table>
 
@@ -523,83 +515,13 @@
  <!-- ![caption](image016.png) -->
 </li>
 <li>
-<p>In the MCC window, select the &ldquo;Device Resource&rdquo; tab, scroll down and expand the &ldquo;UART&rdquo; item, and select &ldquo;Add UART&rdquo;</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="image017.png"><img src="image017.png" alt="Add UART"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Add UART</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>A dropdown list should become visible to the right.  Select &ldquo;UART1&rdquo;
-
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="image018.png"><img src="image018.png" alt="Select UART1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Select UART1</div></td></tr>
-</tbody>
-</table>
-
-</p>
-</li>
-<li>
-<p>A configuration window should open to the right.  Provide additional details for the UART subsystem</p>
-<ul>
-<li>Baudrate 9600</li>
-<li>Parity: None</li>
-<li>Data Size: 8</li>
-<li>Stop Bits: 1</li>
-<li>Flow Control: None</li>
-<li>Redirect Printf to UART: Turn on</li>
-<li>Interrupt Driven: Turn on</li>
-<li>Software Transmit Buffer Size: Set to 64</li>
-<li>Software Receive Buffer Size: Set to 64</li>
-</ul>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="image019.png"><img src="image019.png" alt="Configuration Page top"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Configuration Page top</div></td></tr>
-</tbody>
-</table>
-
-</p>
-<p>
-<table>
-<thead></thead>
-<tr><th><div class="text-center">
-  <a href="image020.png"><img src="image020.png" alt="Configuration Page bottom"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
-</div></th></tr>
-<tbody>
-<tr><td><div style="text-align:center;">Configuration Page bottom</div></td></tr>
-</tbody>
-</table>
-
-</p>
- <!-- ![caption](image021.png) -->
- <!-- ![caption](image022.png) -->
- <!-- ![caption](image023.png) -->
-</li>
-<li>
 <p>In the pins window, click on port F3 in the GPIO output row to enable RF3 as a digital output.</p>
+ <!-- ![Add an Output](image024.png) -->
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="image024.png"><img src="image024.png" alt="Add an Output"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image030.png"><img src="image030.png" alt="Add an Output"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
 <tr><td><div style="text-align:center;">Add an Output</div></td></tr>
@@ -607,9 +529,6 @@
 </table>
 
 </p>
-</li>
-<li>
-<p>Referring to the hardware user guide, figure 4-1, select the appropriate RX and TX pins for the UART subsystem.  These  should  match with the CDC TX and RX pins, respectively.</p>
 </li>
 <li>
 <p>Click the &ldquo;generate&rdquo; button to generate your MCC configuration</p>
@@ -641,8 +560,8 @@
 <p>Observe what happens.</p>
 </li>
 </ol>
-<!-- 1. Now, look at the code that was auto
-1. Modify your code -->
+<blockquote>
+<p>Continue on to the next tutorial, <a href="/enabling-uart-in-mplab">Enabling UART in MPLabX</a></p></blockquote>
 
         </div>
 
@@ -705,7 +624,7 @@
 
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/pic/hello-world-with-uart-pic18f57q43/index.md"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/pic/hello-world-pic18f57q43/index.md"> Edit this Page</a></p>
         
         
         

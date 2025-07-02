@@ -15,18 +15,25 @@
       <description>&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Enabling UART in MPLabX (PIC18F57Q43 Curiosity Nano)</title>
+      <link>https://embedded-systems-design.github.io/enabling-uart-in-mplab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/enabling-uart-in-mplab/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The purpose of this tutoial is to enable basic serial communication to your computer over the UART subsystem in your PIC microcontroller.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello World (PIC18F57Q43 Curiosity Nano)</title>
+      <link>https://embedded-systems-design.github.io/hello-world-pic18f57q43/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/hello-world-pic18f57q43/</guid>
+      <description>How to get the MPLabX IDE set up and communicating with the PIC18F57Q43 Dev Kit</description>
+    </item>
+    <item>
       <title>Hello World with UART (PIC18F47Q10 Curiosity Nano)</title>
       <link>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</guid>
       <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this tutorial is to introduce you to the MPLabX IDE, and to verify that you can create a project, add a peripheral (EUSART), configure it to work across a virtual COM port, and communicate back and forth to your PC.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello World with UART (PIC18F57Q43 Curiosity Nano)</title>
-      <link>https://embedded-systems-design.github.io/hello-world-with-uart-pic18f57q43/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://embedded-systems-design.github.io/hello-world-with-uart-pic18f57q43/</guid>
-      <description>How to get the MPLabX IDE set up and communicating with the PIC18F57Q43 Dev Kit</description>
     </item>
     <item>
       <title>I2C Communication (PIC) with an 8-bit I/O Expander</title>

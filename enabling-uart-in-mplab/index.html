@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title>Embedded Systems Design</title>  <!-- mobile responsive meta -->
+      <title> Enabling UART in MPLabX (PIC18F57Q43 Curiosity Nano) | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -223,830 +223,294 @@
 
 <section class="section-sm">
   <div class="container">
-    <h1>Welcome</h1>
-    <article>
-Hello and welcome to the embedded systems design website.
-</article>
-  </div>
-</section>
 
 
 
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
 
-<section class="section-sm">
-  <div class="container">
-   <h2>Featured</h2>
-    <div class="row justify-content-center">
-      <div class="col-10 featured-post-slider">
-        
-        
-        <article class="card featured-post">
-  <div class="row no-gutters align-items-center">
-    <div class="col-md-5">
-        <img src="https://embedded-systems-design.github.io/kicad/screenshot.png" class="card-img" alt="KiCad Design Workflow">
-
-    </div>
-    <div class="col-md-6 offset-md-1">
-      <div class="card-body">
-        <a href="https://embedded-systems-design.github.io/kicad/"
-          class="h1 font-weight-bold d-block text-dark mb-4 card-title">KiCad Design Workflow</a>
-          
-        <p class="card-text">The steps for designing PCBs using an open-source and free ECAD tool</p>
-      </div>
-    </div>
-  </div>
-</article>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section class="section-sm">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mb-5 mb-lg-0">
-    
-      <h2> Posts</h2>
-      
-        <div class="row">
-          
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
   
 
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/what-is-psoc/">What is PSoC?</a></h4>
-      
 
-      <p>The <a href="http://www.cypress.com/">Cypress</a> <a href="http://www.cypress.com/products/programmable-system-chip-psoc">Programmable System on a Chip (PSoC®)</a> is a mixed-signal electronic hardware platform that integrates a microcontroller core, programmable analog signal processing blocks, programmable digital hardware blocks, and capacitive touch sensing. The following is a list of helpful resources for getting started with the PSoC®:</p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cypress"
-          class="text-primary">Cypress</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/microcontroller"
-          class="text-primary">Microcontroller</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/example-project"
-          class="text-primary">Example project</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/documentation"
-          class="text-primary">Documentation</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/video"
-          class="text-primary">Video</a>
-        </li>
-      </ul>
-    </div>
+
+
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/pic/">PIC</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/enabling-uart-in-mplab/">Enabling UART in MPLabX (PIC18F57Q43 Curiosity Nano)</a></li>
+
+</ol>
+</nav>
 </div>
 
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
 
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/working-with-libraries/">Working with Libraries</a></h4>
-      
 
-      <p><h2 id="working-with-libraries---this-is-a-duplicate-tutorial">Working with Libraries - THIS IS A DUPLICATE TUTORIAL</h2>
-<p>This tutorial details how to add and save a custom library.</p></p>
-      <ul class="list-inline">
+
+
+
+        <h2>Enabling UART in MPLabX (PIC18F57Q43 Curiosity Nano)</h2>
         
-      </ul>
-    </div>
-</div>
-
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
           
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/working-with-thonny/">Working with Thonny</a></h4>
-      
-
-      <p><h2 id="menu--icons">Menu &amp; Icons</h2>
-<h3 id="file">File</h3>
+          
+          
+        </div>
+        <ul class="list-inline">
+          
+        </ul>
+        
+        <div class="content mb-5">
+          <h2 id="introduction">Introduction</h2>
+<p>The purpose of this tutoial is to enable basic serial communication to your computer over the UART subsystem in your PIC microcontroller.</p>
+<blockquote>
+<p>Note: This tutorial continues from the <a href="/hello-world-pic18f57q43">Hello World Tutorial</a> for the PIC18F57Q43 Curiosity Nano.  With small changes, it is applicable to a wide range of PIC microcontrollers, especially other Curiosity Nano Boards.</p></blockquote>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>Microchip
+<ul>
+<li>PIC18F57Q10 Microcontroller
+<ul>
+<li><a href="https://www.microchip.com/en-us/product/PIC18F57Q43">PIC18F57Q43 website</a></li>
+<li><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf">PIC18F57Q43 datasheet</a></li>
+</ul>
+</li>
+<li>PIC18F57Q10 Curiosity Nano Board
+<ul>
+<li><a href="https://www.microchip.com/en-us/development-tool/DM164150">Curiosity Nano website</a></li>
+<li><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf">Curiosity Nano hardware user guide</a></li>
+</ul>
+</li>
+<li><a href="https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide">MPLabX IDE</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="parts-required">Parts Required</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Item</th>
+          <th>Detail</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>PIC18F57Q43 Curiosity Nano</td>
+          <td><a href="https://www.microchip.com/en-us/development-tool/DM164150">Website</a> / <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf">User Guide</a></td>
+      </tr>
+      <tr>
+          <td>Breadboard</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>USB-C Programming cable</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="critical-information-and-concepts">Critical Information and Concepts</h2>
+<p>Before working through the tutorial, it is important to answer some key questions about the board.  Open up the <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf">curiosity nano hardware user guide</a> to find more detailed answers to the following questions:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Question</th>
+          <th>Answer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Is it possible to communicate with it once programmed over USB?</td>
+          <td>Yes, see section 4.1.1 and  figure 4-1  for details on how the CDC RX/TX pins connect to the  microcontroller&rsquo;s UART pins.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="instructions">Instructions</h2>
+<ol>
+<li>
+<p>If closed Open up MPLabX and load your <a href="/hello-world-pic18f57q43">previous</a> hello-world-uart project.</p>
+</li>
+<li>
+<p>Open MCC by clicking on the MCC icon in the top ribbon of MPLabX</p>
+</li>
+<li>
+<p>In the MCC window, select the &ldquo;Device Resource&rdquo; tab, scroll down and expand the &ldquo;UART&rdquo; item, and select &ldquo;Add UART&rdquo;</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="filemenu.png"><img src="filemenu.png" alt="File Menu"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="image017.png"><img src="image017.png" alt="Add UART"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">File Menu</div></td></tr>
+<tr><td><div style="text-align:center;">Add UART</div></td></tr>
 </tbody>
 </table>
-</p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/esp32"
-          class="text-primary">Esp32</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/python"
-          class="text-primary">Python</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/micropython"
-          class="text-primary">Micropython</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/thonny"
-          class="text-primary">Thonny</a>
-        </li>
-      </ul>
-    </div>
-</div>
 
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/zipping-folders/">Zipping Project Folders</a></h4>
-      
-
-      <p>Windows has a ZIP utility built in that you can use to create compressed archives. Assuming you have a workspace with two projects inside (one for timed blinking, the other for the button push), right click on the entire workspace folder, find the &quot;send to&quot; item in the context menu and select compressed folder. That will save everything the grading team will need to check your homework</p>
-      <ul class="list-inline">
-        
-      </ul>
-    </div>
-</div>
-
-          
-        </div>
-        
-        <div class="row justify-content-center">
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <ul class="pagination">
-    
-    
-    
-    <li class="page-item">
-      <a class="page-link" href="/">
-        ««
-      </a>
-    </li>
-    
-
-    
-    
-    <li class="page-item">
-      <a href="/page/18/" class="page-link">
-        «
-      </a>
-    </li>
-    
-  
-    
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-            
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-        <li class="page-item">
-          <a href="/page/15/" class="page-link">
-            15
-          </a>
-        </li>
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-            
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-        <li class="page-item">
-          <a href="/page/16/" class="page-link">
-            16
-          </a>
-        </li>
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-            
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-        <li class="page-item">
-          <a href="/page/17/" class="page-link">
-            17
-          </a>
-        </li>
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-            
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-        <li class="page-item">
-          <a href="/page/18/" class="page-link">
-            18
-          </a>
-        </li>
-      
-
-    
-    
-      
-
-      
-      
-      
-
-
-        
-        
-        
-
-          
-          
-            
-          
-
-
-        
-        
-
-      
-      
-      
-
-      
-      
-        <li class="page-item active">
-          <a href="/page/19/" class="page-link">
-            19
-          </a>
-        </li>
-      
-
-    
-
-    
-    
-
-    
-    
-
-  </ul>
-
+</p>
+</li>
+<li>
+<p>A dropdown list should become visible to the right.  Select &ldquo;UART1&rdquo;
+
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image018.png"><img src="image018.png" alt="Select UART1"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Select UART1</div></td></tr>
+</tbody>
+</table>
+
+</p>
+</li>
+<li>
+<p>A configuration window should open to the right.  Provide additional details for the UART subsystem</p>
+<ul>
+<li>Baudrate 9600</li>
+<li>Parity: None</li>
+<li>Data Size: 8</li>
+<li>Stop Bits: 1</li>
+<li>Flow Control: None</li>
+<li>Redirect Printf to UART: Turn on</li>
+<li>Interrupt Driven: Keep off</li>
+</ul>
+ <!-- * Software Transmit Buffer Size: Set to 64
+ * Software Receive Buffer Size: Set to 64 -->
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image027.png"><img src="image027.png" alt="Configuration Page"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">Configuration Page</div></td></tr>
+</tbody>
+</table>
+
+</p>
+ <!-- ![Configuration Page bottom](image020.png) -->
+ <!-- ![caption](image021.png) -->
+ <!-- ![caption](image022.png) -->
+ <!-- ![caption](image023.png) -->
+</li>
+<li>
+<p>Go to the pin manager window.  Referring to the hardware user guide, figure 4-1, select the appropriate RX and TX pins for the UART subsystem.  These  should  match with the CDC TX and RX pins, respectively.</p>
+ <!-- ![Enable RX and TX](image028.png) -->
+<blockquote>
+<p><strong>What do we mean?</strong>  The CDC RX and TX pins belong to the secondary programmer / communication microcontroller on the curiosity nano board that is wired to the pins of the USB connector.  Look at figure 4-1 to see which pins the CDC RX and TX pins connect to on the PIC microcontoller.  The CDC RX Pin connects to the microcontroller&rsquo;s TX pin, and the CDC TX pin connects to the PIC&rsquo;s RX pin.  Set up MCC to match this diagram.</p></blockquote>
+</li>
+<li>
+<p>Click the &ldquo;generate&rdquo; button to generate your MCC configuration</p>
+ <!-- ![Enable RX and TX](image028.png) -->
+</li>
+<li>
+<p>Once you&rsquo;ve generated MCC, click on the &ldquo;clean and compile&rdquo; button to build your project.</p>
+</li>
+<li>
+<p><strong>Research:</strong> Now it&rsquo;s time to do a bit more research into the functionality you just added.  In the project explorer window, click on &ldquo;source files&rdquo; -&gt; &ldquo;MCC generated files&rdquo; -&gt; &ldquo;uart&rdquo; -&gt; &ldquo;src&rdquo; -&gt; &ldquo;uart1.c&rdquo; to answer the following questions</p>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="image031.png"><img src="image031.png" alt="navigate to &ldquo;uart1.c&rdquo;"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">navigate to &ldquo;uart1.c&rdquo;</div></td></tr>
+</tbody>
+</table>
+
+</p>
+<table>
+  <thead>
+      <tr>
+          <th>Question</th>
+          <th>Answer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Which function enables the UART1 subsystem</td>
+          <td>Look in uart1.c</td>
+      </tr>
+      <tr>
+          <td>Which function tells you when a character is ready to be received?</td>
+          <td>Look in uart1.c</td>
+      </tr>
+      <tr>
+          <td>Which function receives a single character, and what datatype is returned?</td>
+          <td>Look in uart1.c</td>
+      </tr>
+      <tr>
+          <td>Which function tells you when the microcontroller is ready to send a single character?</td>
+          <td>Look in uart1.c</td>
+      </tr>
+      <tr>
+          <td>Which function sends a single character?</td>
+          <td>Look in uart1.c</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>Now we need to open and modify main.c in the project explorer.  Inside the curly brackets after the <code>while(1)</code> statement, comment out your previous code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75af00">__delay_ms</span><span style="color:#111">(</span><span style="color:#ae81ff">500</span><span style="color:#111">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">IO_RF3_Toggle</span><span style="color:#111">();</span>
+</span></span></code></pre></div><p>Your goal is to:</p>
+<ol>
+<li>create a variable to store a character</li>
+<li>check whether there is a character ready to receive</li>
+<li>if so, receive that character</li>
+<li>if you have received a character, check whether the microcontroller is ready to send</li>
+<li>if so, send the character and toggle pin RF3</li>
+</ol>
+</li>
+<li>
+<p>Select the &ldquo;clean and compile&rdquo; button to verify your project compiles.</p>
+</li>
+<li>
+<p>Select the &ldquo;download&rdquo; button, ensuring your Curiosity Nano device is connected.</p>
+</li>
+<li>
+<p>Next, open up windows device manager and look for communication ports mapped to the curiosity nano.  Record which COM port is used by the curiosity nano</p>
+</li>
+<li>
+<p>Next, open putty (or your serial communication program of choice), and, in serial mode, open up the COM port indicated from the last step.  Use the same settings as those you defined in MCC for UART1:</p>
+<ul>
+<li>Baudrate 9600</li>
+<li>Parity: None</li>
+<li>Data Size: 8</li>
+<li>Stop Bits: 1</li>
+<li>Flow Control: None</li>
+</ul>
+</li>
+<li>
+<p>Type something in the window and observe what happens.</p>
+<blockquote>
+<p>You should see the letters you type on the screen.  This is a function of the microcontroller transmitting back what it sees.  You should also see the user-defined LED on the curiosity nano board toggling each time you type a letter.</p></blockquote>
+</li>
+</ol>
+<!-- 1. Now, look at the code that was auto
+1. Modify your code -->
 
         </div>
+
+        
+        
       </div>
-      
-<div class="col-lg-4">
-  <div class="widgets">
-    
-        <div class="widget">
-      
-      <h4 class="widget-title">About</h4>
-      
-      
-      <div class="text-center" style="font-size:5rem;line-height:1;"><i class="bi bi-person-circle"></i></div>
-      
-      <p>This website is developed by Shawn Jordan and Dan Aukes</p>
-      <a href="https://embedded-systems-design.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">External</h4>
-      <ul class="list-inline social-links">
-        
-        <li class="list-inline-item"><a href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a></li>
-        
-      </ul>
-    </div>
-
-    
-    <div class="widget">
-      <img src="https://embedded-systems-design.github.io/images/promotion.png" alt="" class="img-fluid">
-    </div>
-  </div>
-</div>
-
-      
     </div>
   </div>
 </section>
-
 
 
 
@@ -1100,7 +564,7 @@ Hello and welcome to the embedded systems design website.
 
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/_index.html"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/pic/enabling-uart-in-mplab/index.md"> Edit this Page</a></p>
         
         
         

@@ -240,6 +240,8 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/enable-floating-point-support/</loc>
   </url><url>
+    <loc>https://embedded-systems-design.github.io/enabling-uart-in-mplab/</loc>
+  </url><url>
     <loc>https://embedded-systems-design.github.io/tags/esp32/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/example-project/</loc>
@@ -276,9 +278,9 @@
   </url><url>
     <loc>https://embedded-systems-design.github.io/tags/hardware/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</loc>
+    <loc>https://embedded-systems-design.github.io/hello-world-pic18f57q43/</loc>
   </url><url>
-    <loc>https://embedded-systems-design.github.io/hello-world-with-uart-pic18f57q43/</loc>
+    <loc>https://embedded-systems-design.github.io/hello-world-with-uart-pic/</loc>
   </url><url>
     <loc>https://embedded-systems-design.github.io/house-of-quality/</loc>
   </url><url>
