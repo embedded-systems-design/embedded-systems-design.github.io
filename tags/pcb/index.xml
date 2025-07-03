@@ -33,7 +33,7 @@
       <link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This Cadence walkthrough goes through the process of creating a PSoC 4 BLE module schematic symbol and PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing a Hole Diameter in Cadence PCB Editor</title>

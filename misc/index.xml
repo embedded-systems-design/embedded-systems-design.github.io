@@ -106,11 +106,11 @@
       <description>&lt;h2 id=&#34;what-is-a-house-of-quality-and-what-is-it-used-for&#34;&gt;What is a House of Quality, and what is it used for?&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/House_of_Quality&#34;&gt;House of Quality diagram&lt;/a&gt; is used to translate customer requirements, market research, patent benchmarking, and technical benchmarking into product capabilities that can be targeted in a new product design. It is an integral component of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Quality_function_deployment&#34;&gt;Quality Function Deployment (QFD)&lt;/a&gt; method for translating qualitative user needs into quantitative requirements.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How to create a footprint for PSoC® 4100S Plus</title>
+      <title>How to create a footprint for PSoC 4100S Plus</title>
       <link>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</guid>
-      <description>&lt;p&gt;This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This walkthrough goes through the process of creating a PSoC 4100S Plus prototyping board PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to export a PDF from Capture and PCB Editor</title>

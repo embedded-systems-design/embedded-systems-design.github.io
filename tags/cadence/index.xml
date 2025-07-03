@@ -75,7 +75,7 @@
       <link>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/cadence-walkthrough-psoc-4-ble-module/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This Cadence walkthrough goes through the process of creating a PSoC® 4 BLE module schematic symbol and PCB footprint.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This Cadence walkthrough goes through the process of creating a PSoC 4 BLE module schematic symbol and PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Changing a Hole Diameter in Cadence PCB Editor</title>
@@ -232,11 +232,11 @@
       <description>&lt;h2 id=&#34;what-is-a-printed-circuit-board-pcb&#34;&gt;What is a printed circuit board (PCB)?&lt;/h2&gt;&#xA;&lt;p&gt;See the &lt;a href=&#34;https://embedded-systems-design.github.io/what-is-a-printed-circuit-board/&#34;&gt;What is a Printed Circuit Board?&lt;/a&gt; page for more information about PCBs and the general design flow for creating a PCB.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How to create a footprint for PSoC® 4100S Plus</title>
+      <title>How to create a footprint for PSoC 4100S Plus</title>
       <link>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/pcb-footprint-tutorial-for-psoc-4100-plus/</guid>
-      <description>&lt;p&gt;This walkthrough goes through the process of creating a PSoC® 4100S Plus prototyping board PCB footprint.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This walkthrough goes through the process of creating a PSoC 4100S Plus prototyping board PCB footprint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Create a Silkscreen in Cadence and Manually Add Text to it</title>

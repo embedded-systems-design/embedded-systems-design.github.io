@@ -26,7 +26,7 @@
       <link>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/integrated-development-environments-for-psoc/</guid>
-      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC®)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In order to program a &lt;a href=&#34;http://www.cypress.com/&#34;&gt;Cypress&lt;/a&gt; &lt;a href=&#34;http://www.cypress.com/products/programmable-system-chip-psoc&#34;&gt;Programmable System on a Chip (PSoC)&lt;/a&gt;, you first need to install Integrated Development Environment (IDE) software on your computer. An IDE is program that you install on a computer to support the development of software for a particular hardware platform. It typically includes a text editor for editing source code, a compiler to covert source code into machine code, and a debugger for helping to identify the source of errors in source code.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microchip AVR Microcontrollers</title>

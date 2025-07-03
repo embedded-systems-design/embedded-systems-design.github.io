@@ -317,14 +317,14 @@
           <td></td>
       </tr>
       <tr>
-          <td>CY8CKIT-042 (Pioneer or BLE) PSoC® 4 Evaluation Board</td>
+          <td>CY8CKIT-042 (Pioneer or BLE) PSoC 4 Evaluation Board</td>
           <td>1</td>
           <td></td>
       </tr>
       <tr>
           <td>USB micro B cable</td>
           <td>1</td>
-          <td>Included in PSoC® kit</td>
+          <td>Included in PSoC kit</td>
       </tr>
       <tr>
           <td>AOTF2618L MOSFET driver circuit</td>
@@ -368,12 +368,12 @@
   </thead>
   <tbody>
       <tr>
-          <td>a.  Which ports on the PSoC® you can connect <em>external</em> LEDs and buttons to.</td>
-          <td>Needed in order to control an external LED and read the button in software. Can be connected to most unused GPIO pins listed in the Appendix of the appropriate <a href="#30j0zll">Prototyping Kit Guide</a>. (also discussed in Section 4.3.5 of the Pioneer Kit and Section 5.1.4 of the BLE Kit). <strong>Make sure you are not connecting to the PSoC® 5LP GPIO Header. The PSoC® 5LP is only used as a programmer.</strong></td>
+          <td>a.  Which ports on the PSoC you can connect <em>external</em> LEDs and buttons to.</td>
+          <td>Needed in order to control an external LED and read the button in software. Can be connected to most unused GPIO pins listed in the Appendix of the appropriate <a href="#30j0zll">Prototyping Kit Guide</a>. (also discussed in Section 4.3.5 of the Pioneer Kit and Section 5.1.4 of the BLE Kit). <strong>Make sure you are not connecting to the PSoC 5LP GPIO Header. The PSoC 5LP is only used as a programmer.</strong></td>
       </tr>
       <tr>
-          <td>b.  What the logic high (1) voltage coming out of the PSoC® I/O (GPIO) pins is.</td>
-          <td>Needed in order to calculate a proper current-limiting resistor value for an LED. Study section A.2 (including all subsections) in the appropriate <a href="#30j0zll">Prototyping Kit Guide</a> to determine where power and ground pins are located on the PSoC® board. With the PSoC® board plugged into the computer via USB, measure the supply voltage of the PSoC® board using a multimeter. This will be equal to the logic high voltage on a GPIO pin.</td>
+          <td>b.  What the logic high (1) voltage coming out of the PSoC I/O (GPIO) pins is.</td>
+          <td>Needed in order to calculate a proper current-limiting resistor value for an LED. Study section A.2 (including all subsections) in the appropriate <a href="#30j0zll">Prototyping Kit Guide</a> to determine where power and ground pins are located on the PSoC board. With the PSoC board plugged into the computer via USB, measure the supply voltage of the PSoC board using a multimeter. This will be equal to the logic high voltage on a GPIO pin.</td>
       </tr>
       <tr>
           <td>c.  How to calculate the value of a series current-limiting resistor for an LED circuit.</td>
@@ -381,7 +381,7 @@
       </tr>
       <tr>
           <td>d.  What a pullup resistor is and why it is necessary to properly interface a switch to a microcontroller.</td>
-          <td>Needed to understand how to properly wire the switch so that it is always providing a voltage to the PSoC®. Can be found in Section 12.6.9 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>.</td>
+          <td>Needed to understand how to properly wire the switch so that it is always providing a voltage to the PSoC. Can be found in Section 12.6.9 of <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541">Scherz &amp; Monk</a>.</td>
       </tr>
       <tr>
           <td>e.  What a PWM signal is.</td>
@@ -424,14 +424,14 @@
 </p>
 <ol>
 <li>Assuming that the forward voltage of the LED $ V_{f}$ = 1.7V and that the internal resistance of the AOTF2618 is near zero when on, use Ohm&rsquo;s Law to calculate the value of the current-limiting resistor in series with it that will maintain <em><strong>20mA or less</strong></em> when connected and turned on, as seen above.</li>
-<li>Connect a jumper wire from the selected PSoC® Pioneer board port/pin to the breadboard, for activating the above transistor. Add a LED and current-limiting resistor to the breadboard. Connect the PSoC® ground pin to the breadboard ground pin. Note that LEDs are polarized, and that current flows in the direction of the arrow.</li>
+<li>Connect a jumper wire from the selected PSoC Pioneer board port/pin to the breadboard, for activating the above transistor. Add a LED and current-limiting resistor to the breadboard. Connect the PSoC ground pin to the breadboard ground pin. Note that LEDs are polarized, and that current flows in the direction of the arrow.</li>
 </ol>
 </li>
 <li>
 <p>Connect the CY8CKIT-042 (or CY8CKIT-042-BLE) to your computer via USB.</p>
 </li>
 <li>
-<p>In PSoC® Creator™, create a new project for the CY8CKIT-042 (or CY8CKIT-042-BLE) in a new workspace for HW3.</p>
+<p>In PSoC Creator, create a new project for the CY8CKIT-042 (or CY8CKIT-042-BLE) in a new workspace for HW3.</p>
 </li>
 <li>
 <p>In the Top Design, create a <code>PWM(v3.30)</code> component (<em><strong>not the TCPWM mode version</strong></em>). Select <code>One Output</code>. Set the period to &ldquo;Max&rdquo; (remember this value) and the compare value to ```0``. Leave all other settings at their defaults.</p>

@@ -288,21 +288,21 @@
         <div class="content mb-5">
           <h2 id="introduction">Introduction</h2>
 <p>A <a href="https://en.wikipedia.org/wiki/Footprint_(electronics)">PCB footprint</a> is the physical layout on a PCB to which a component is soldered. Usually, you must create a custom PCB footprint for each custom schematic symbol that you create. This tutorial details the easiest way to make custom footprints using the Package Symbol (Wizard).</p>
-<p>The example custom PCB footprint created in this tutorial will be a <a href="http://www.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-049-4xxx-prototyping-kits">Cypress PSoC® 4 CY8CKIT-049 4xxx Prototyping Kit</a> (see Figure 1).</p>
+<p>The example custom PCB footprint created in this tutorial will be a <a href="http://www.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-049-4xxx-prototyping-kits">Cypress PSoC 4 CY8CKIT-049 4xxx Prototyping Kit</a> (see Figure 1).</p>
 <p>
 <table>
 <thead></thead>
 <tr><th><div class="text-center">
-  <a href="/larger/image0112.jpg"><img src="/larger/image0112.jpg" alt="Figure 1: PSoC® 4 Prototyping Kit"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+  <a href="/larger/image0112.jpg"><img src="/larger/image0112.jpg" alt="Figure 1: PSoC 4 Prototyping Kit"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
 </div></th></tr>
 <tbody>
-<tr><td><div style="text-align:center;">Figure 1: PSoC® 4 Prototyping Kit</div></td></tr>
+<tr><td><div style="text-align:center;">Figure 1: PSoC 4 Prototyping Kit</div></td></tr>
 </tbody>
 </table>
 
 </p>
 <h2 id="1-search-the-datasheet-for-the-footprint-specifications">1. Search the Datasheet for the Footprint Specifications</h2>
-<p>In order to build a custom footprint, you first need to find the footprint specifications in the datasheet for the component. However, sometimes a datasheet does not include a footprint. In this example, Cypress provides the <a href="http://www.cypress.com/file/126221/download">PCB design files for the PSoC® 4 CY8CKIT-049 4xxx Prototyping Kit</a>, where you can get more useful information. Figure 2 shows the PCB layout provided by Cypress. Of note is that while it does show the dimensions of the PCB, it does not show the spacing or position of the pins in relation to the edges of the PCB. In this case, you will need a pair of calipers to measure the pin spacing and position of the pins in relation to the edge. Most standard header pins in embedded systems have a 100 mil (0.1&quot;) spacing between pins, but it is always good to double-check to avoid unnecessary PCB respins later. Additionally, this board can be&quot;snapped&quot; to separate the programmer (left) from the processor (right). This tutorial will assume that the programmer will be snapped off and only the processor module will be used.</p>
+<p>In order to build a custom footprint, you first need to find the footprint specifications in the datasheet for the component. However, sometimes a datasheet does not include a footprint. In this example, Cypress provides the <a href="http://www.cypress.com/file/126221/download">PCB design files for the PSoC 4 CY8CKIT-049 4xxx Prototyping Kit</a>, where you can get more useful information. Figure 2 shows the PCB layout provided by Cypress. Of note is that while it does show the dimensions of the PCB, it does not show the spacing or position of the pins in relation to the edges of the PCB. In this case, you will need a pair of calipers to measure the pin spacing and position of the pins in relation to the edge. Most standard header pins in embedded systems have a 100 mil (0.1&quot;) spacing between pins, but it is always good to double-check to avoid unnecessary PCB respins later. Additionally, this board can be&quot;snapped&quot; to separate the programmer (left) from the processor (right). This tutorial will assume that the programmer will be snapped off and only the processor module will be used.</p>
 <p>
 <table>
 <thead></thead>
@@ -359,7 +359,7 @@
 </p>
 </li>
 <li>
-<p>Select the Package Type closest to the footprint that you are trying to make and click &ldquo;Next &gt;&rdquo;. The Package Symbol Wizard - Template window shown in Figure 5 will appear. For more information on package types, see the <a href="https://learn.sparkfun.com/tutorials/integrated-circuits/ic-packages">IC Packages tutorial on Sparkfun</a>. In this tutorial, the PSoC® footprint is closest to a Dual In-line Package (DIP), which is a common through-hole package.</p>
+<p>Select the Package Type closest to the footprint that you are trying to make and click &ldquo;Next &gt;&rdquo;. The Package Symbol Wizard - Template window shown in Figure 5 will appear. For more information on package types, see the <a href="https://learn.sparkfun.com/tutorials/integrated-circuits/ic-packages">IC Packages tutorial on Sparkfun</a>. In this tutorial, the PSoC footprint is closest to a Dual In-line Package (DIP), which is a common through-hole package.</p>
 <p>
 <table>
 <thead></thead>
