@@ -461,7 +461,7 @@
       <link>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/curiosity-nano-mplab-tutorial-and-lab/</guid>
-      <description>&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the MPLabX programming environment to program the PIC16F18446 Curiosity Nano development board. In this tutorial, you will learn to set up the general-purpose input/output pins (GPIO), external interrupts (ISR), pulse-width modulation (PWM), as well as the timer module for the PWM.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DC Motors 101</title>
@@ -1021,7 +1021,7 @@
       <link>https://embedded-systems-design.github.io/icsp-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/icsp-tutorial/</guid>
-      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;In this tutorial, you will learn how to program a PIC using in-circuit serial programming with the MPLAB® Snap debugger/programmer. This will be critical for your semester project as you will be working with a surface mount microcontroller that cannot be easily removed for offboard programming and does not have a USB port.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;In this tutorial, you will learn how to program a PIC using in-circuit serial programming with the MPLAB Snap debugger/programmer. This will be critical for your semester project as you will be working with a surface mount microcontroller that cannot be easily removed for offboard programming and does not have a USB port.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software design</title>
@@ -1063,7 +1063,7 @@
       <link>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/spi-shift-register-tutorial/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Serial Communication - SPI &amp;amp; Shift Register Tutorial&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the SPI serial communication protocol using MCC under the MPLAB X programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Serial Communication - SPI &amp;amp; Shift Register Tutorial&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;objectives&#34;&gt;&lt;strong&gt;Objectives&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Getting familiar with the SPI serial communication protocol using MCC under the MPLabX programming environment to program the PIC16F18446 Curiosity Nano development board and control a shift register to drive 8 LEDs on and off. In this tutorial, you will learn to set up the Serial Peripheral Interface (SPI), Shift Registers, and 3 of the major numeral system (decimal, binary, and hexadecimal).&lt;/p&gt;</description>
     </item>
     <item>
       <title>SPI Communication with the SN74HC595 Shift Register using Timers</title>
