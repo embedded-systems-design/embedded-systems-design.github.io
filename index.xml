@@ -919,6 +919,13 @@
       <description>&lt;h2 id=&#34;why-would-i-need-to-back-annotate-a-design&#34;&gt;Why would I need to &lt;em&gt;back annotate&lt;/em&gt; a design?&lt;/h2&gt;&#xA;&lt;p&gt;If you make changes to your design while in PCB Editor (for example, swapping a footprint), you must &lt;em&gt;back annotate&lt;/em&gt; (meaning, push changes) from the PCB design back into your original schematic. By doing this update, future changes to the schematic can be forward annotated (meaning, pushed forward) to your PCB design without having to start over from scratch.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>PWM Subsystem (PIC18F57Q43 Curiosity Nano)</title>
+      <link>https://embedded-systems-design.github.io/pwm-pic18f57q43/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-pic18f57q43/</guid>
+      <description>How to set up the PWM subsystem on the the PIC18F57Q43 Dev Kit</description>
+    </item>
+    <item>
       <title>PWM Tutorial 1 -- Using PWM to make an LED &#34;Breathe&#34;</title>
       <link>https://embedded-systems-design.github.io/pwm-tutorial-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

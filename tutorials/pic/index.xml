@@ -64,6 +64,13 @@
       <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;The goal of this tutorial is to introduce you to the timer subsystem, implement a timer using an interrupt-based design, and use that timing to perform some I$^{\text{2}}$C communication with the TC74 Temperature Sensor.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>PWM Subsystem (PIC18F57Q43 Curiosity Nano)</title>
+      <link>https://embedded-systems-design.github.io/pwm-pic18f57q43/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://embedded-systems-design.github.io/pwm-pic18f57q43/</guid>
+      <description>How to set up the PWM subsystem on the the PIC18F57Q43 Dev Kit</description>
+    </item>
+    <item>
       <title>Setting up a new PIC project</title>
       <link>https://embedded-systems-design.github.io/mplabx-project-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
