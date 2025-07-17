@@ -678,7 +678,7 @@
       <link>https://embedded-systems-design.github.io/op-amps-sensors-and-adcs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://embedded-systems-design.github.io/op-amps-sensors-and-adcs/</guid>
-      <description>&lt;h1 id=&#34;objectives&#34;&gt;Objectives&lt;/h1&gt;&#xA;&lt;p&gt;Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor. They are tuned to emit and detect the same wavelength of light. They can be useful for sending light-based digital messages, detecting objects, or measuring distances. Because they are in the infrared portion of the light spectrum, they are invisible and less likely to be corrupted by visible light sources. See Scherz &amp;amp; Monk Section 5.7.1 for a complete explanation of how phototransistors work.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor. They are tuned to emit and detect the same wavelength of light. They can be useful for sending light-based digital messages, detecting objects, or measuring distances. Because they are in the infrared portion of the light spectrum, they are invisible and less likely to be corrupted by visible light sources. See Scherz &amp;amp; Monk Section 5.7.1 for a complete explanation of how phototransistors work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keeping a Schematic Tidy</title>

@@ -273,26 +273,19 @@
         </ul>
         
         <div class="content mb-5">
-          <h1 id="objectives">Objectives</h1>
+          <h2 id="objectives">Objectives</h2>
 <p>Infrared (IR) emitters and detectors come as a pair of devices; one is a light source, and the other is a light sensor. They are tuned to emit and detect the same wavelength of light. They can be useful for sending light-based digital messages, detecting objects, or measuring distances. Because they are in the infrared portion of the light spectrum, they are invisible and less likely to be corrupted by visible light sources. See Scherz &amp; Monk Section 5.7.1 for a complete explanation of how phototransistors work.</p>
 <p>Operational amplifiers (Op-Amps), on the other hand, are an important part of analog signal processing. They are a fundamental component of many circuits, and knowing how to work with them will make it possible to work with and condition a wide array of non-ideal sensor signals</p>
 <p>The goal for this lab is to get to know the basics of op-amps and how to use them in order to properly condition and amplify small signals from sensors such as IR emitter-detector pairs. This will be important as you learn about the often non-ideal behavior of simple passive and active sensors.</p>
 <p>At the end of this tutorial you will be able to demonstrate knowledge of:</p>
 <ol>
-<li>
-<p>The basic rules governing ideal op-amps.</p>
-</li>
-<li>
-<p>What happens when op-amps are connected with negative feedback in a non-inverting configuration.</p>
-</li>
-<li>
-<p>How to drive infrared (IR) emitters and read IR detectors.</p>
-</li>
+<li>The basic rules governing ideal op-amps.</li>
+<li>What happens when op-amps are connected with negative feedback in a non-inverting configuration.</li>
+<li>How to drive infrared (IR) emitters and read IR detectors.</li>
 </ol>
-<h1 id="resources">Resources</h1>
+<h2 id="resources">Resources</h2>
 <ul>
-<li>
-<p>Scherz, P., &amp; Monk, S. (2016). <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1470699914&amp;sr=1-1&amp;keywords=practical+electronics+for+inventors+4th+edition">Practical electronics for inventors, fourth edition.</a> New York: McGraw Hill. ISBN: 978-1259587542</p>
+<li>Scherz, P., &amp; Monk, S. (2016). <a href="https://www.amazon.com/Practical-Electronics-Inventors-Fourth-Scherz/dp/1259587541/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1470699914&amp;sr=1-1&amp;keywords=practical+electronics+for+inventors+4th+edition">Practical electronics for inventors, fourth edition.</a> New York: McGraw Hill. ISBN: 978-1259587542
 <ul>
 <li>Chapter 8 (Op Amps)
 <ul>
@@ -324,14 +317,12 @@
 </li>
 </ul>
 </li>
-<li>
-<p>Op Amp Links</p>
+<li>Op Amp Links
 <ul>
 <li><a href="https://www.electronics-tutorials.ws/opamp/opamp_5.html">Differencing Amplifier</a></li>
 </ul>
 </li>
-<li>
-<p>Supporting Videos:</p>
+<li>Supporting Videos:
 <ul>
 <li><a href="https://youtu.be/Q3RMFpGGcZM">Introduction to the Op Amp</a></li>
 <li><a href="https://youtu.be/_CFR2gViJqo">Non-Inverting Op Amp Circuit</a></li>
@@ -339,7 +330,8 @@
 </ul>
 </li>
 </ul>
-<p><strong>You will need the following equipment and major components:</strong></p>
+<h2 id="required-components">Required Components</h2>
+<p>You will need the following equipment and major components:</p>
 <table>
   <thead>
       <tr>
@@ -369,7 +361,7 @@
           <td>Various</td>
       </tr>
       <tr>
-          <td>Emitter/Detector Pair (Amazon <a href="https://www.amazon.com/dp/B01MFCFLA7/ref=sspa_dk_detail_0?psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFIMTJJQVdIS0VDSEYmZW5jcnlwdGVkSWQ9QTAzMzkyMjIxQ1dUT0hPWjFLRzJHJmVuY3J5cHRlZEFkSWQ9QTAxNzg1OTMzSDVCMjM4SlVMUFcmd2lkZ2V0TmFtZT1zcF9kZXRhaWwyJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">link</a>)</td>
+          <td>Emitter/Detector Pair (Amazon <a href="https://www.amazon.com/dp/B01MFCFLA7/">link</a>)</td>
           <td>1</td>
       </tr>
       <tr>
@@ -378,9 +370,10 @@
       </tr>
   </tbody>
 </table>
+<h2 id="procedure">Procedure</h2>
 <ol>
-<li>First, read the textbook sections and watch the videos indicated in the Resources section above. <strong>This step is critical for understanding the circuitry you will be designing below.</strong></li>
-</ol>
+<li>
+<p>First, read the textbook sections and watch the videos indicated in the Resources section above. <strong>This step is critical for understanding the circuitry you will be designing below.</strong></p>
 <p>
 <table>
 <thead></thead>
@@ -393,11 +386,11 @@
 </table>
 
 </p>
-<ol start="2">
-<li>Create the infrared emitter/detector circuit shown above, using one of the two op-amps in the MCP6002.</li>
-</ol>
+</li>
+<li>
+<p>Create the infrared emitter/detector circuit shown above, using one of the two op-amps in the MCP6002.</p>
 <blockquote>
-<p>Tips and Tricks</p>
+<p><strong>Tips and Tricks</strong>                                                                                                                                                                                                                             |</p>
 <ul>
 <li><em>Make sure to point the emitter (clear) and detector (dark) towards each other in order to transmit more infrared light from the LED to the IR phototransistor.</em></li>
 <li><em>The V+ and V- pins (4 &amp; 8, on the left of Figure 1) are the power pins for the MCP6002. For this symbol they are drawn and included separately on this schematic. Other symbols may handle common pins differently.</em></li>
@@ -405,7 +398,7 @@
 <li><em>You can use a potentiometer as a <strong>voltage divider</strong> by connecting one of the outer pins to ground and the other outer pin to power. The middle wiper pin is then an adjustable, variable voltage that you can adjust from ground to power.</em></li>
 <li><em>Try both a 10k and 100kOhm potentiometer at R2 to identify a good gain, or <strong>use a simulation in PSPICE</strong> to model this circuit.</em></li>
 </ul></blockquote>
-<ol>
+</li>
 <li>
 <p>Attach an oscilloscope probe to the Vout1 pin (the output of the op-amp). Ensure that the ground clip is firmly attached to your breadboard&rsquo;s ground using a wire.</p>
 </li>
@@ -416,8 +409,6 @@
 <p>Using the oscilloscope, identify the minimum and maximum voltage of your signal when the card is inserted and removed. What gain would be required to boost that voltage range to 0-3.3V? What is the minimum voltage you ever see on Vout1? Why does the circuit never go below this minimum value?\</p>
 <blockquote>
 <p>(<em><strong>Hint:</strong> Look at Vref</em>)</p></blockquote>
-</li>
-</ol>
 <p>
 <table>
 <thead></thead>
@@ -430,17 +421,15 @@
 </table>
 
 </p>
-<ol start="6">
+</li>
 <li>
 <p>Remove the emitter and solder two 1-meter (~3ft) wires to the emitter&rsquo;s leads.</p>
 </li>
 <li>
 <p>Construct the above circuit. This adds a second stage to the original circuit, with a &ldquo;special&rdquo; function</p>
-</li>
-</ol>
 <blockquote>
 <p><em><strong>Note:</strong> The function of this circuit is discussed in Section 8.4 (Figure 8.14) of Scherz &amp; Monk. Why was this type of amplifier selected?</em></p></blockquote>
-<ol start="8">
+</li>
 <li>
 <p>Extend the emitter to its full length and shine it towards and away from the IR detector. Now what is the voltage swing? Reduce the value of R2 to achieve a 0V to 3.3V swing (without overly saturating the sensor).</p>
 </li>
