@@ -530,10 +530,13 @@
 </p>
 </li>
 <li>
-<p>Next, open up windows device manager and look for communication ports mapped to the curiosity nano.  Record which COM port is used by the curiosity nano</p>
+<p>Next, open up windows device manager and look for communication ports mapped to the curiosity nano.  Record which COM port is used by the curiosity nano.</p>
 </li>
-<li>
-<p>Next, open Putty (or your serial communication program of choice), and, in serial mode, open up the COM port indicated from the last step.  Use the same settings as those you defined in MCC for UART1:</p>
+</ol>
+<blockquote>
+<p>If you haven&rsquo;t already, download and install the <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a> terminal program (Windows only). This program will be used to display text sent over the USB port on the PIC.</p></blockquote>
+<ol start="2">
+<li>Next, open Putty (or your serial communication program of choice), and, in serial mode, open up the COM port indicated from the last step.  Use the same settings as those you defined in MCC for UART1:
 <ul>
 <li>Baudrate 9600</li>
 <li>Parity: None</li>
@@ -542,8 +545,7 @@
 <li>Flow Control: None</li>
 </ul>
 </li>
-<li>
-<p>Type something in the window and observe what happens.</p>
+<li>Type something in the window and observe what happens.
 <blockquote>
 <p>You should see the letters you type on the screen.  This is a function of the microcontroller transmitting back what it sees.  You should also see the user-defined LED on the curiosity nano board toggling each time you type a letter.</p></blockquote>
 </li>
