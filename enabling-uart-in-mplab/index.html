@@ -533,7 +533,7 @@
 <p>Next, open up windows device manager and look for communication ports mapped to the curiosity nano.  Record which COM port is used by the curiosity nano</p>
 </li>
 <li>
-<p>Next, open putty (or your serial communication program of choice), and, in serial mode, open up the COM port indicated from the last step.  Use the same settings as those you defined in MCC for UART1:</p>
+<p>Next, open Putty (or your serial communication program of choice), and, in serial mode, open up the COM port indicated from the last step.  Use the same settings as those you defined in MCC for UART1:</p>
 <ul>
 <li>Baudrate 9600</li>
 <li>Parity: None</li>
@@ -548,6 +548,21 @@
 <p>You should see the letters you type on the screen.  This is a function of the microcontroller transmitting back what it sees.  You should also see the user-defined LED on the curiosity nano board toggling each time you type a letter.</p></blockquote>
 </li>
 </ol>
+<blockquote>
+<p>[!TIP]
+If you do not see the characters you typed into Putty and want to see them to help see the echo, in the PuTTY Configuration window, you should see a section call &ldquo;Category.&rdquo; Find and select the &ldquo;Terminal&rdquo; to open the &ldquo;Options controlling the terminal emulation&rdquo; section. Here you will find <strong>&ldquo;Local echo&rdquo;</strong> and <strong>&ldquo;Local line editing&rdquo;</strong>. Select both to be <ins>&ldquo;Force on&rdquo;</ins> as shown below.</p></blockquote>
+<p>
+<table>
+<thead></thead>
+<tr><th><div class="text-center">
+  <a href="PuttyFix.png"><img src="PuttyFix.png" alt="PuttyFix"  style="max-width:80%; max-height:200px; width:auto; height: auto; text-align:center;"/></a>
+</div></th></tr>
+<tbody>
+<tr><td><div style="text-align:center;">PuttyFix</div></td></tr>
+</tbody>
+</table>
+
+</p>
 <!-- 1. Now, look at the code that was auto
 1. Modify your code -->
 
