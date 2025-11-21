@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
       <meta charset="utf-8">
-      <title>Embedded Systems Design</title>  <!-- mobile responsive meta -->
+      <title> Non-Blocking Code | Embedded Systems Design </title>  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Embedded Systems Design Blog">
   <meta name="author" content="ESD Faculty">
@@ -223,410 +223,61 @@
 
 <section class="section-sm">
   <div class="container">
-    <h1>Welcome</h1>
-    <article>
-Hello and welcome to the embedded systems design website.
-</article>
-  </div>
-</section>
 
 
 
+      <div class="row">
+      <div class="col-lg-8 mx-auto">
 
-<section class="section-sm">
-  <div class="container">
-   <h2>Featured</h2>
-    <div class="row justify-content-center">
-      <div class="col-10 featured-post-slider">
-        
-        
-        <article class="card featured-post">
-  <div class="row no-gutters align-items-center">
-    <div class="col-md-5">
-        <img src="https://embedded-systems-design.github.io/kicad/screenshot.png" class="card-img" alt="KiCad Design Workflow">
-
-    </div>
-    <div class="col-md-6 offset-md-1">
-      <div class="card-body">
-        <a href="https://embedded-systems-design.github.io/kicad/"
-          class="h1 font-weight-bold d-block text-dark mb-4 card-title">KiCad Design Workflow</a>
-          
-        <p class="card-text">The steps for designing PCBs using an open-source and free ECAD tool</p>
-      </div>
-    </div>
-  </div>
-</article>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section class="section-sm">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mb-5 mb-lg-0">
-    
-      <h2> Posts</h2>
-      
-        <div class="row">
-          
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
+      <div class="text-center">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
   
 
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/placing-and-moving-components-in-cadence-pcb-editor/">Placing and moving components in Cadence PCB Editor</a></h4>
-      
 
-      <p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
-      </ul>
-    </div>
+
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/">Welcome</a></li>
+
+
+<li class="breadcrumb-item"><a href="https://embedded-systems-design.github.io/tutorials/">Tutorials</a></li>
+
+
+<li class="breadcrumb-item active"><a href="https://embedded-systems-design.github.io/non-blocking-code/">Non-Blocking Code</a></li>
+
+</ol>
+</nav>
 </div>
 
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
 
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/power-supplies-101/">Power Supplies 101</a></h4>
-      
 
-      <p></p>
-      <ul class="list-inline">
+
+
+
+        <h2>Non-Blocking Code</h2>
         
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/circuit-design"
-          class="text-primary">Circuit design</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/noise"
-          class="text-primary">Noise</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/power-supplies"
-          class="text-primary">Power supplies</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
+        <div class="mb-1 post-meta">
+          <span>By ESD Faculty</span>
           
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-design-in-dfm-now/">Printing a PCB Design in DFM Now</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
           
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/printing-a-pcb-layout-in-cadence-pcb-editor/">Printing a PCB Layout in Cadence PCB Editor</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/print-non-string-variables-to-psoc-uart/">Printing Non-String Variables to the PSoC UART</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/psoc-hardware-development-kits/">PSoC 4 Hardware Development Kits</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/bluetooth"
-          class="text-primary">Bluetooth</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cypress"
-          class="text-primary">Cypress</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/hardware"
-          class="text-primary">Hardware</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/microcontroller"
-          class="text-primary">Microcontroller</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/example-project"
-          class="text-primary">Example project</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/documentation"
-          class="text-primary">Documentation</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/development-kit"
-          class="text-primary">Development kit</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/psoc-creator-project-structure/">PSoC Creator Project Structure</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/psoc"
-          class="text-primary">Psoc</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/psoc-creator"
-          class="text-primary">Psoc creator</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/psoc-hello-world/">PSoC Hello World Lab</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/pull-down-resistors/">Pullup/Pulldown resistors</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/circuit-design"
-          class="text-primary">Circuit design</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/resistors"
-          class="text-primary">Resistors</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pullup"
-          class="text-primary">Pullup</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pulldown"
-          class="text-primary">Pulldown</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
-          
-          <div class="col col-12 col-xl-12 d-flex align-items-start pb-3">
-  
-  
-  <i style="font-size:2rem;" class="bi text-muted flex-shrink-0 mr-3 bi bi-file-text"></i>
-  
-
-    <div>
-      <h4 class="fw-bold mb-0"><a href="/pushing-pcb-changes-back-to-a-schematic-in-cadence/">Pushing PCB changes back to a schematic in Cadence</a></h4>
-      
-
-      <p></p>
-      <ul class="list-inline">
-        
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/cadence"
-          class="text-primary">Cadence</a>
-        </li>
-        <li class="list-inline-item mb-1 mr-2 mt-1">
-        <a class="d-block p-2 bg-primary text-white" href="/tags/pcb"
-          class="text-primary">Pcb</a>
-        </li>
-      </ul>
-    </div>
-</div>
-
           
         </div>
+        <ul class="list-inline">
+          
+        </ul>
         
-        <div class="row justify-content-center">
-          
-          
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/12/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/11/" aria-label="Page 11" class="page-link" role="button">11</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/12/" aria-label="Page 12" class="page-link" role="button">12</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 13" class="page-link" role="button">13</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/15/" aria-label="Page 15" class="page-link" role="button">15</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/14/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/19/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+        <div class="content mb-5">
+          <p><a href="non_blocking_code.zip">non-blocking code example</a></p>
+
         </div>
+
+        
+        
       </div>
-      
-<div class="col-lg-4">
-  <div class="widgets">
-    
-        <div class="widget">
-      
-      <h4 class="widget-title">About</h4>
-      
-      
-      <div class="text-center" style="font-size:5rem;line-height:1;"><i class="bi bi-person-circle"></i></div>
-      
-      <p>This website is developed by Shawn Jordan and Dan Aukes</p>
-      <a href="https://embedded-systems-design.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">External</h4>
-      <ul class="list-inline social-links">
-        
-        <li class="list-inline-item"><a href="https://github.com/embedded-systems-design"><i class="ti-github"></i></a></li>
-        
-      </ul>
-    </div>
-
-    
-    <div class="widget">
-      <img src="https://embedded-systems-design.github.io/images/promotion.png" alt="" class="img-fluid">
-    </div>
-  </div>
-</div>
-
-      
     </div>
   </div>
 </section>
-
 
 
 
@@ -680,7 +331,7 @@ Hello and welcome to the embedded systems design website.
 
         
         
-        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/_index.html"> Edit this Page</a></p>
+        <p><a href="https://github.com/embedded-systems-design/project_esd_website_source/edit/main/content/tutorials/non-blocking-code/index.md"> Edit this Page</a></p>
         
         
         
